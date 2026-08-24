@@ -1,7 +1,7 @@
 # Continuation checkpoint
 
 This is the restart pointer for mathematical work after the accepted Round-8
-baseline `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`.
+baseline `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
 
 ## First: preserve the logical boundary
 
@@ -52,6 +52,13 @@ debt rank and every lower-bounded affine combination of the audited label
 depth/bitlength/debt variables are already refuted. Reopening Route AB requires
 a richer nonlinear/cross-label rank or a new uniformly smaller guarded target.
 
+L14 supplies an alternative exact decreasing normalizer based on
+`v_2(3x+1)` and `v_2(3x-1)`, terminating at `1`, `7 mod 8`, or `27 mod 32`.
+It does not change the route status: universal convergence on that residual
+set is Collatz-equivalent, and the set admits further finite reductions such
+as `U^3(64s+55)=54s+47`. Do not treat the displayed L14 normal form as an
+irreducibility or exhaustion theorem.
+
 For the minimal-counterexample synthesis, L11 is one-shot. A continuation must
 carry the immutable root across local descents, non-descending edges, infinite
 coefficient-stopping branches, band exits, and the zero-gap cycle branch.
@@ -68,6 +75,8 @@ coefficient-stopping branches, band exits, and the zero-gap cycle branch.
 - Affine hard-state ranks using only the audited label depth, parameter
   bitlength, and replay debt.
 - Treating the normalized hard return map as though it already decreases.
+- Treating the L14 terminal set as irreducible, or silently replacing its
+  fully accelerated odd map `U` by the one-division shortcut map `T`.
 
 See [FAILURE_LEDGER.md](proof-search/FAILURE_LEDGER.md) for the exact
 counterexamples and reopening conditions.

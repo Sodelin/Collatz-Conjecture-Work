@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9` (2026-08-24).
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
 
 ## Verdict
 
@@ -9,8 +9,14 @@ Accepted mathematical baseline:
 proof, positive nontrivial cycle, or rigorously divergent positive orbit in
 this repository.
 
-## What the latest baseline added
+## What the accepted chain currently contains
 
+- [`L14-3M1-NF`](proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md):
+  an exact strictly decreasing normalizer for the fully accelerated odd map,
+  terminating at `1`, `7 mod 8`, or `27 mod 32`. The remaining convergence
+  assertion is Collatz-equivalent, and the note records explicit
+  counterexamples to the rejected claim that this terminal set exhausts other
+  finite/local affine rewrites.
 - [`A-YAH-2STATE-001`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md):
   exact 8-row and 50-row cancellations kill additive labeled-symbol and
   labeled-edge orders, including finite lexicographic tuples, for one fixed
@@ -20,8 +26,8 @@ this repository.
   termination of that return map is Collatz-equivalent; the smallest reported
   growth-plus-recharge witness is `31 -> 182 -> 91`.
 
-The first item is a solved **route-class obstruction**. The second is a
-**Collatz-equivalent reformulation**. Neither is the still-open universal
+The YAH item is a solved **route-class obstruction**. Both normalizers are
+**Collatz-equivalent reductions**. None is the still-open universal
 termination proof.
 
 ## Current reading order

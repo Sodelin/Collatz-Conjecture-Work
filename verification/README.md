@@ -6,7 +6,7 @@ bounded computation or narrow formal theorem into a Collatz proof.
 
 ## Tested environment
 
-Fresh audit on 2026-08-24 at
+Base audit on 2026-08-24 at
 `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`:
 
 ```text
@@ -18,12 +18,16 @@ Lean 4.33.1 (commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)
 The Python checkers use the standard library. The Lean toolchain is pinned by
 [`lean-toolchain`](../lean-toolchain).
 
+The L14 regression was replayed under the same Python environment at artifact
+commit `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
+
 ## Freshly replayed promoted checks
 
 Run from the repository root.
 
 | Claim ID | Command | Expected decisive output | Exact scope |
 |---|---|---|---|
+| `L14-3M1-NF` regression | `python -B verification\trajectory_normal_form_regression.py` | 500,000 odd starts, maximum 19 normalizer edges, counterfamily through `s=10000`, then `PASS` | Exact finite replay through `n<=1000000`; checks the local identities and scope regressions, not the universal prose theorem or Collatz. |
 | `A-YAH-2LOCAL-001` | `python -B verification\yah_2local_edge_no_go.py` | `weighted strict lower bound = 1`, `W_(f,f) <= -1`, then `PASS` | Replays the 13-row cancellation for the stated unlabeled adjacent-edge additive class. |
 | `A-YAH-2STATE-001` | `python -B verification\yah_two_state_semantic_label_no_go.py` | `model equations = 22`, `fixed-terminal legal contexts = 441`, `symbol certificate rows = 8`, `edge certificate rows = 50`, then `PASS` | Reconstructs the fixed two-state labeled rule table and the two positive-integer cancellations. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
@@ -68,6 +72,9 @@ These commands have committed outputs, but they were not all rerun in the
 
 - `PASS` means that the checker reconstructed its finite algebra/certificate;
   it does not mean “Collatz passed.”
+- The L14 checker is a finite regression. Its default million-integer bound
+  does not prove the universal trajectory-normal-form theorem; that theorem is
+  currently supported by a self-contained prose derivation and hostile replay.
 - A clean Lean build checks only imported declarations and their stated
   hypotheses. It does not validate prose, novelty, source mapping, or omitted
   semantic bridges.

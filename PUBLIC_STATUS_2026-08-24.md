@@ -51,6 +51,7 @@ verification levels. The atomic claim registry is canonical for promotion.
 | Artifact | Status | What it establishes |
 |---|---|---|
 | [`proof-search/FAILURE_LEDGER.md`](proof-search/FAILURE_LEDGER.md) | Audited prose theorem | Exact Mersenne staircase and the impossibility of finite uniformly bounded direct-descent covers; scope limitations are explicit. |
+| [`proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md`](proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md) | Audited prose theorem plus finite regression | Gives an exact decreasing odd-only normalizer to `1`, `7 mod 8`, or `27 mod 32`; explicitly rejects the wrong shortcut-map convention and the false claim that the terminal set exhausts other rewrites. Residual convergence remains Collatz-equivalent. |
 | [`proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md`](proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md) | Audited theorem note | Easy-child coalescence, hard-child successor normalization, same-label replay debt, cross-label recharge, and the affine-rank obstruction. |
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Lean-checked, narrow | The easy-child arithmetic, iteration identity, and coalescence statement. It does not formalize the hard-family rank or Collatz. |
 | [`proof-search/routes/A_yah_2local_edge_potential_no_go.md`](proof-search/routes/A_yah_2local_edge_potential_no_go.md) | Exact certificate plus checker | A 13-row cancellation excludes bounded-below adjacent-pair additive potentials for the stated rewrite contexts. It does not exclude matrix, automaton, or nonadditive orders. |
@@ -114,6 +115,7 @@ integer satisfying every guard of a divergent itinerary.
 From the repository root:
 
 ```powershell
+python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
 python -B verification\disproof_cycle_search.py
@@ -123,6 +125,8 @@ C:\Users\Owner\.elan\bin\lake.exe build
 
 Expected key outputs are:
 
+- trajectory-normal-form regression: 500,000 odd starts, maximum 19
+  normalizer edges, and `PASS`; this is finite regression evidence only;
 - rewrite cancellation checker: `PASS`;
 - two-state semantic-label checker: `PASS`;
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
@@ -150,11 +154,11 @@ priority claim.
 ## Provenance checkpoint
 
 The complete accepted mathematical snapshot described by this file is
-`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. Its parent
-`fa3de5b04337d8cbffc9a360074539b852496ca2` introduced the initial dated
-public-status checkpoint; `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`
-is the earlier hard-successor-rank commit in that ancestry. Exact scope notes
-are recorded in the linked files and Git history.
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. Its parent
+`b3b9f4731937a2d7c999d1b8a6417c9e96597e46` introduced the audited claim
+registry and public research map; `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`
+is the preceding mathematical baseline in that ancestry. Exact scope notes are
+recorded in the linked files and Git history.
 
 The nonexistent string `409cb63b69b5fb6af676166573e752f1f4a5ff38`
 must never be used as provenance; the valid similarly prefixed object is

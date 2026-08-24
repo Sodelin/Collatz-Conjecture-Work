@@ -121,6 +121,14 @@ closed, but also shows it is Collatz-equivalent rather than a new induction
 bridge.  The smallest boundary-normalized rank recharge is
 `31 -> 182 -> 91`, where the replay debt changes from zero to one.
 
+`proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md` gives a
+different exact normalizer using `v_2(3x+1)` and `v_2(3x-1)` for the odd-only
+map `U`. It decreases to `1`, `7 mod 8`, or `27 mod 32`, preserving convergence
+at every macro edge. This again makes the residual universal assertion
+Collatz-equivalent, not solved. The terminal set is not irreducible:
+`U^3(64s+55)=54s+47<64s+55`, and L13 coalesces `23` with `17`. Composing the
+normalizers may refine the residual set but supplies no proved global rank.
+
 ### Main kill test
 
 Any proposed successor must cover the Mersenne refinement chain, including

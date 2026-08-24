@@ -1,7 +1,7 @@
 # Atomic claim and evidence registry
 
 **Canonical baseline:**
-`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9` (2026-08-24).
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
 
 **Global verdict:** Collatz is unresolved. No row below is a universal proof,
 a positive nontrivial cycle, or a rigorously divergent positive orbit.
@@ -91,7 +91,7 @@ the best candidates for a narrow technical note after external review; Round
 
 | ID | Exact scope | Grades | Evidence / provenance | Limitation |
 |---|---|---|---|---|
-| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted head `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | This is the status of the open problem and archive, not a graded project theorem. |
+| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted mathematical head `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. | This is the status of the open problem and archive, not a graded project theorem. |
 | `L0` | For the accelerated odd map, every odd `n>1` having a smaller iterate is equivalent to Collatz; a least counterexample cannot descend below itself. | `C3 V1 I3 N0 R1` | [L0](lemmas/L0_Global_Descent_Equivalence.md), commit `2456248bcb5f1c769d2ffdb369e8f63dfcd3a3be`. | Elementary equivalent reformulation; Lean pending; no progress without a descent mechanism. |
 | `6A-T1` | Quantitative beta-debt necessity on the stated repelling rational-period shadows. | `C2 V1 I3 N2 R2` | [Review note](../papers/round-6a/Theorem_6A1_Public_Review_Note.md), claim ledger/checker/output, commit `c3d1da2c5dc8db296089745951dda1cd8e89bb9d`. | Unreviewed; lift, endpoint valuation, scaling, and the proof chain are not Lean-checked. |
 | `6A-SUPPORT` | Principal-row realizations, prescribed minima, rational-period lift/scaling, debt-tail frontiers, arbitrary `F(v_2(n+1))` obstruction, and finite-center freezing, at the scopes stated in the Round 6A packet. | `C1 V1 I2 N? R1` | Same Round 6A packet; diagnostic checker prints `PASS A`–`PASS G`. | Several claims are prerequisites for `6A-T1`; checker agreement is not a universal proof. |
@@ -125,6 +125,7 @@ the best candidates for a narrow technical note after external review; Round
 | `L13-EASY` | For the parity-compatible refined family, `m=(3N-1)/4` is positive, smaller, and exactly coalesces. | `C3 V3 I2 N0 R1` | [L13](lemmas/L13_Refined_Mersenne_Child_Macros.md), [Lean](../lean/CollatzWork/RefinedMersenneChild.lean), commit `7be9977cddc2fe3786eb27d71e7914ff1e214509`. | Published in substance (not novel); hard child remains. |
 | `L13-HARD` | Through `0<=t<=L+2`, no uniformly admissible unrefined L4 inverse word produces an eventually smaller hard-child family; successor cells are exactly normalized by `v_2(Y+1)` and the mod-4 odd quotient. | `C2 V1 I3 N2 R1` | [L13](lemmas/L13_Refined_Mersenne_Child_Macros.md), final arithmetic commit `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`. | Retain the time and certificate-class qualifier; not Lean-formalized. |
 | `L13-RANK` | Same-label replay debt decreases, cross-label transitions can recharge it arbitrarily, and the exact guarded edge refutes the stated lower-bounded affine rank class. | `C2 V1 I3 N2 R1` | L13 equations (20)–(27), commit `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`. | Does not exclude richer state, nonlinear ranks, or all finite automata. |
+| `L14-3M1-NF` | The stated `v_2(3x+/-1)` reducer sends every positive odd `n` through finitely many strictly smaller convergence-equivalent macro edges to `1`, `7 mod 8`, or `27 mod 32`. | `C2 V1 I2 N1 R1` | [L14 theorem and hostile corrections](lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md), [finite regression](../verification/trajectory_normal_form_regression.py), artifact commit `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. | The residual universal assertion is Collatz-equivalent; the normal form is not maximal; the universal proof is prose and not Lean-formalized. |
 | `AB-BRIDGE` | Round-7 affine cylinders are an affine projection of the YAH mixed-base branch semantics; macro coalescence is a distinct certificate idea. | `C2 V1 I2 N1 R1` | [Representation bridge](routes/AB_mixed_radix_coalescence_bridge.md), commit `c7948930b1bf997c0ed0a9f857c5e0e6b2a71810`. | The certificate graph/rank is conjectural; Route AB is `BLOCKED_NO_MECHANISM`. |
 | `AB-HARD-RETURN-001` | A total decreasing normalizer sends every positive input to `1` or the hard family; the induced return map is Collatz-equivalent. The smallest reported growth-plus-recharge witness is `31 -> 182 -> 91`. | `C2 V1 I3 N1 R1` | [Hard return system](routes/AB_hard_boundary_return_system.md), commit `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | Compression/equivalence, not termination progress; “smallest” lacks a committed exhaustive transcript. |
 | `A-YAH-2LOCAL-001` | The 13-row cancellation excludes bounded-below scalar adjacent-edge additive potentials in the stated canonical contexts. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_2local_edge_potential_no_go.md), [checker](../verification/yah_2local_edge_no_go.py), commit `d1bc062c727041ed8e106478983e3b7281f33dae`. | Does not exclude labels, matrices, longer windows, or nonadditive orders. |
@@ -152,6 +153,7 @@ These items are `C0/R0` and must not be promoted.
 | A finite bounded direct-descent cover might prove Collatz. | False for all odd `n>1` when horizons are uniformly bounded. | `A-ARB/A-CYL`; ranked recursion remains logically open. |
 | The two-state YAH no-go rules out semantic labeling, matrix orders, or YAH termination. | False promotion. | It rules out only additive symbol/edge scalar and finite-lex orders in the fixed two-state algebra. |
 | The hard return map is a new descent theorem. | False promotion. | It is an exact Collatz-equivalent reformulation with a recharge witness. |
+| The L14 terminal set exhausts finite trajectory-preserving rewrites or local affine normal forms. | False. For every `s>=0`, `U^3(64s+55)=54s+47<64s+55`; L13 also coalesces `23` with `17`. | L14 is exact only relative to its displayed `(a,c)` reducer. Other refinements remain possible, but no global residual rank is known. |
 | Cyclic rotation supplies an independent two-pump resultant. | False: the resultant is identically zero. | `E-TWOPUMP-DEP`. |
 | `1903/145` and `1904/144` are contradictory reruns. | False: they refer to different ordinary/accelerated/certificate classes. | Always name the script, map convention, depth, and class. |
 | `409cb63b69b5fb6af676166573e752f1f4a5ff38` is a valid provenance hash. | False; no such object is accepted. | `409cb63d6805b00b3dcd96576ac172c58b16384e`. |
@@ -182,6 +184,12 @@ conclusions are:
   ([2023](https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.html)).
   Therefore `L13-EASY` is `N0`; its exact notation and Lean packaging do not
   create mathematical priority.
+- Monks proved every nonconstant arithmetic progression sufficient
+  ([2006](https://doi.org/10.1090/S0002-9939-06-08567-4)). Since
+  `7+8*N_0` is one component of the L14 terminal set, the consequence that
+  convergence on that terminal set suffices for Collatz is known in stronger
+  form. The exact decreasing two-branch packaging was not located in the
+  bounded audit, but is elementary repackaging and is graded `N1`, not novel.
 - Fixed parity-word cycle equations are classical in Böhm–Sontacchi
   ([1978](https://www.bdim.eu/item?id=RLINA_1978_8_64_3_260_0)) and Crandall
   ([1978](https://doi.org/10.1090/S0025-5718-1978-0480321-3)). Word powers and

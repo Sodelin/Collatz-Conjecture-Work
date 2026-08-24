@@ -9,7 +9,7 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > true or false.
 
 Accepted mathematical baseline: full Git object
-`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9` (2026-08-24).
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
 
 ## The two-minute map
 
