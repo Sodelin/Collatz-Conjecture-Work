@@ -17,6 +17,10 @@ scope exclusions, and immutable provenance, use the
 particular, distinguish a solved route-class obstruction from a
 Collatz-equivalent reformulation and from the still-open universal claim.
 
+For a visual path through those distinctions and every retained note, use the
+[research atlas](ATLAS.md). It is a navigation layer; the registries remain
+canonical for status.
+
 ## Plain-language summary
 
 The project found a valid shortcut for one half of a carefully refined

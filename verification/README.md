@@ -6,8 +6,10 @@ bounded computation or narrow formal theorem into a Collatz proof.
 
 ## Tested environment
 
-Base audit on 2026-08-24 at
-`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`:
+Complete closure replay on 2026-08-24 against source state
+`4a8845ef46c78e50b3c4303e3a3a110e3b66f045` and accepted mathematical
+baseline `b75ffec58ae20ac26271ff7d59a71d3591467994` (before the navigation-only
+patch that added the atlas and graph checker):
 
 ```text
 Python 3.14.5
@@ -18,8 +20,8 @@ Lean 4.33.1 (commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)
 The Python checkers use the standard library. The Lean toolchain is pinned by
 [`lean-toolchain`](../lean-toolchain).
 
-The L14 regression was replayed under the same Python environment at artifact
-commit `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
+Earlier artifact-level audits remain identifiable by their individual commit
+hashes; the table below was replayed together at the closure head above.
 
 The fixed-algebra YAH packet was independently replayed at Draft PR #8 head
 `d5390326226eb27d4dd14f64ec3d52fe7d92cbe5` (parent
@@ -52,6 +54,19 @@ the imported `.olean` files do not exist until the build has created them.
 
 If `lake` is not on `PATH`, invoke the executable installed by `elan`; do not
 hard-code another contributor's home directory into scripts or documentation.
+
+## Repository knowledge-graph QA
+
+The documentation graph has a separate standard-library check:
+
+```powershell
+python -B verification\check_note_graph.py
+```
+
+It verifies that local Markdown targets exist and that every Markdown note is
+reachable from `README.md`. `NOTE_GRAPH = PASS` certifies navigation only; it
+does not certify mathematics, citations, anchors, or novelty. The governing
+format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.md).
 
 ## Narrow Lean boundary
 

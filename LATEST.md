@@ -41,11 +41,12 @@ termination proof.
 ## Current reading order
 
 1. [README](README.md) — two-minute enthusiast/researcher map.
-2. [Public status](PUBLIC_STATUS_2026-08-24.md) — plain-language verdict and latest gap.
-3. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md) — confidence, verification, importance, novelty, readiness, and evidence.
-4. [Approach registry](proof-search/APPROACH_REGISTRY.md) — live route statuses.
-5. [Failure ledger](proof-search/FAILURE_LEDGER.md) — superseded and killed mechanisms.
-6. [Verification manifest](verification/README.md) — portable commands and exact scopes.
+2. [Research atlas](ATLAS.md) — visual dependency map, typed route links, and the complete note index.
+3. [Public status](PUBLIC_STATUS_2026-08-24.md) — plain-language verdict and latest gap.
+4. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md) — confidence, verification, importance, novelty, readiness, and evidence.
+5. [Approach registry](proof-search/APPROACH_REGISTRY.md) — live route statuses.
+6. [Failure ledger](proof-search/FAILURE_LEDGER.md) — superseded and killed mechanisms.
+7. [Verification manifest](verification/README.md) — portable commands and exact scopes.
 
 The older [Cycle-1 closure audit](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
 and [Round 6A review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
@@ -56,3 +57,7 @@ remain preserved as historical branch checkpoints.
 Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
 proof-assistant formalization of the prose chain or Collatz does not exist.
 Novelty and priority for project-specific claims are not certified.
+
+The [note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) explains how to
+use the same files as a GitHub knowledge base or optional Obsidian vault without
+creating a second source of mathematical status.

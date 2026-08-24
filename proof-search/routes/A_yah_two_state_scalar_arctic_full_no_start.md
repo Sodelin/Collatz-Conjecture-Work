@@ -176,3 +176,11 @@ its mixed-base system as useful future work. A bounded primary-source search
 found no exact match for this dimension-one no-first-step theorem. That is not
 a novelty or priority certification; external term-rewriting review remains
 required.
+
+## Connections
+
+- **Depends on:** [YAH source semantics](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md).
+- **Adds a separate carrier-specific obstruction alongside:** [fixed two-state additive cancellations](A_yah_two_state_semantic_label_no_go.md).
+- **Verified by:** [reproduction manifest](../../verification/README.md).
+- **Formalization pending:** [Lean targets](../../LEAN_TARGETS.md).
+- **Updates:** [Route A](../APPROACH_REGISTRY.md) and the [atomic claim registry](../CLAIM_REGISTRY.md).

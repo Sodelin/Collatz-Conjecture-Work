@@ -1,7 +1,7 @@
 # Continuation checkpoint
 
 This is the restart pointer for mathematical work after the accepted Round-8
-baseline `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
+mathematical baseline `b75ffec58ae20ac26271ff7d59a71d3591467994`.
 
 ## First: preserve the logical boundary
 
@@ -16,16 +16,17 @@ baseline `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
 
 Before proposing work, read:
 
-1. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md)
-2. [Approach registry](proof-search/APPROACH_REGISTRY.md)
-3. [Failure ledger](proof-search/FAILURE_LEDGER.md)
-4. [Verification manifest](verification/README.md)
+1. [Research atlas](ATLAS.md)
+2. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md)
+3. [Approach registry](proof-search/APPROACH_REGISTRY.md)
+4. [Failure ledger](proof-search/FAILURE_LEDGER.md)
+5. [Verification manifest](verification/README.md)
 
 ## Current route state
 
 | Routes | Status | Exact boundary |
 |---|---|---|
-| A, B, C | `ACTIVE` | No universal certificate candidate exists. Route A now excludes unlabeled adjacent-edge weights and one fixed two-state additive symbol/edge algebra. |
+| A, B, C | `ACTIVE` | No universal certificate candidate exists. Route A excludes the audited additive classes and every standard first dimension-one arctic-natural full/top step on the original YAH system and fixed two-state labeling. Richer classes remain open. |
 | E, F | `ACTIVE_LOW_COST` | No positive cycle or divergent positive witness exists. Keep witness searches bounded and exact. |
 | AB, D, G, H, I | `BLOCKED_NO_MECHANISM` | Each has exact obstructions but no new mechanism that crosses them. |
 | J | `BLOCKED_EQUIVALENT` as proof route | Any fixed computation leaves infinitely many cases. |
@@ -71,6 +72,9 @@ coefficient-stopping branches, band exits, and the zero-gap cycle branch.
 - Additive unlabeled adjacent-edge YAH weights.
 - Additive symbol/edge scalar or finite-lex weights in the fixed two-state
   suffix algebra.
+- A standard first dimension-one arctic-natural YAH step, whether full,
+  boundary-top, or reversed-dynamic-top, on the original system or the audited
+  fixed labeling.
 - Cyclic rotation alone as an independent two-pump resultant.
 - Affine hard-state ranks using only the audited label depth, parameter
   bitlength, and replay debt.
@@ -87,7 +91,7 @@ Use [LEAN_TARGETS.md](LEAN_TARGETS.md) and
 [`lean/VERIFICATION_POLICY.md`](lean/VERIFICATION_POLICY.md). The existing
 narrow modules are useful regressions; they do not formalize Round 6A, full L5,
 the L13 hard/rank statements, the hard return equivalence, the YAH
-cancellations, or Collatz.
+cancellations or scalar-arctic certificates, or Collatz.
 
 ## Required handoff packet for any new claim
 
@@ -100,6 +104,8 @@ Provide:
 5. adversarial counterexample search and remaining blocker;
 6. primary-source novelty classification using the grades in the
    [claim registry](proof-search/CLAIM_REGISTRY.md).
+7. related node IDs and typed graph edges under the
+   [note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
 
 Do not spend a full search cycle unless the proposal names the old blocker and
 the genuinely new mechanism that bypasses it.

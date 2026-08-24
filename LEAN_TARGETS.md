@@ -30,7 +30,22 @@ as `propext`, `Quot.sound`, and, for one arithmetic theorem,
 
 ## Highest-value pending targets
 
-### 1. L13 hard successor and rank obstruction
+### 1. Complete the scalar-arctic YAH formalization
+
+The fixed rule table, canonical/fixed-terminal context predicates, 13-row
+unlabeled adjacent-edge cancellation, and 8-/50-row fixed two-state labeled
+cancellations are formalized by `YAHFiniteObstruction`. The remaining target is
+to formalize the 11-/22-row all-positive scalar-arctic cancellations and a
+proof-assistant-checkable semantics for the ten Farkas/RUP top certificates.
+Preserve the narrow conclusion: these kill the standard first dimension-one
+arctic-natural full/top step, not all termination orders.
+
+The dependency-free scalar-arctic Python replayers are exact certificate
+checkers, but they are not Lean developments. Any formal port must reconstruct
+the YAH full-versus-top semantics and the equal-label lifting to the original
+system, not merely verify the stored integer sums.
+
+### 2. L13 hard successor and rank obstruction
 
 Formalize:
 
@@ -43,13 +58,13 @@ Formalize:
 Do not infer that unbounded valuation depth rules out every finite symbolic
 automaton.
 
-### 2. Hard boundary normalizer and equivalence
+### 3. Hard boundary normalizer and equivalence
 
 Formalize the decreasing boundary reducer, total normalizer, hard return map,
 and both directions of its Collatz equivalence. This would verify the
 reformulation; it would not prove termination of the return map.
 
-### 3. Round 6A rational-period beta-debt chain
+### 4. Round 6A rational-period beta-debt chain
 
 This remains the most important older theorem reconstruction. Isolate and prove:
 
@@ -61,7 +76,7 @@ This remains the most important older theorem reconstruction. Isolate and prove:
 
 The current Python checker is diagnostic and cannot replace these proofs.
 
-### 4. L0–L12 prose chain
+### 5. L0–L12 prose chain
 
 Formalize bounded arithmetic lemmas before importing external results. L7/L8
 must expose verified-range and Rozier–Terracol statements as named hypotheses

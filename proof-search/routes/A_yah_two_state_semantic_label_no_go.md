@@ -189,3 +189,11 @@ That file has SHA-256
 
 The two cancellation certificates are project-specific finite artifacts.  No
 claim of literature novelty is made.
+
+## Connections
+
+- **Depends on:** [YAH source semantics](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md).
+- **Parallel to:** [unlabeled adjacent-edge cancellation](A_yah_2local_edge_potential_no_go.md).
+- **Complemented in a separate scalar-arctic slice by:** [dimension-one no-start theorem](A_yah_two_state_scalar_arctic_full_no_start.md).
+- **Verified by:** [reproduction manifest](../../verification/README.md).
+- **Formalization pending:** [Lean targets](../../LEAN_TARGETS.md).

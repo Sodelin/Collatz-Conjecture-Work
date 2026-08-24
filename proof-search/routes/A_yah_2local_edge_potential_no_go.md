@@ -129,3 +129,10 @@ That file has SHA-256
 The 13-row cancellation is a project-specific finite certificate.  No exact
 published match was located in the bounded audit, but this is not a
 certified novelty claim and is not being submitted as a standalone theorem.
+
+## Connections
+
+- **Depends on:** [YAH source semantics](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md).
+- **Parallel to:** [fixed two-state symbol/edge cancellation](A_yah_two_state_semantic_label_no_go.md).
+- **Verified by:** [reproduction manifest](../../verification/README.md).
+- **Changes:** [Route A reopening conditions](../APPROACH_REGISTRY.md).
