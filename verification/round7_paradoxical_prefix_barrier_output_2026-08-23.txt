@@ -1,0 +1,54 @@
+Round 7 paradoxical-prefix finite barrier check
+Date: 2026-08-23
+Arithmetic mode: exact integers/rationals; decimal logs are diagnostic only
+
+Published verification threshold
+--------------------------------
+B = 2^71 = 2361183241434822606848
+
+PASS
+----
+For every integer pair
+
+  1 <= j <= 183,
+  0 <= q <= j,
+  3^q < 2^j,
+
+the Rozier-Terracol Theorem-2.4-derived extremal bound
+
+  F(j,q) = 2^(j-q) * (3^q - 2^q) / (2^j - 3^q)
+
+satisfies
+
+  F(j,q) < 2^71.
+
+Largest value in the checked j<=183 range
+-------------------------------------------
+(j,q) = (176,111)
+F =
+3368286247049896651850413229596046051312687879953237588612685733684051968
+/
+4483389639004442388280709442303812380810953936563989
+
+diagnostic log2(F) ~= 69.347914855316
+
+First j for which the extremal bound can reach 2^71
+-----------------------------------------------------
+(j,q) = (184,116)
+F =
+1309589692852999818271776319579212959661734169998690298226967608734433411072
+/
+466923261846322839553673870807890524045457468671845219
+
+diagnostic log2(F) ~= 71.248347495135
+
+Scope
+-----
+This finite output checks only the arithmetic corollary between external inputs. It does not independently verify:
+
+- Rozier-Terracol Theorem 2.4;
+- Rozier-Terracol Theorem 5.3;
+- Barina's published verification through 2^71;
+- the Collatz conjecture.
+
+Combined with those cited external results, the project lemma L7 concludes that a hypothetical least counterexample has no coefficient-contracting accelerated prefix through step 301,993.
