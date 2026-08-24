@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`f8558a566b682e8dbc4465206f9c26ac9b17760c` (2026-08-24).
+`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 
 ## Verdict
 
@@ -22,10 +22,12 @@ this repository.
   labeled-edge orders, including finite lexicographic tuples, for one fixed
   two-state semantic algebra; the edge certificate now proves that no such
   fixed-terminal potential can make its first uniform rule-removal step.
-- [`A-YAH-2STATE-AN1-001`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md):
-  an all-positive 49-mass cancellation proves that the global 22-rule labeling
-  has no first full/extended dimension-one arctic-natural rule-removal step.
-  Top, higher-dimensional, different-label, transformed, and local methods
+- [`A-YAH-AN1-001`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md):
+  exact 49-mass, Farkas, and RUP certificates prove that the original
+  eleven-rule YAH system has no first standard dimension-one arctic-natural
+  step: neither full/extended removal nor either Lemma-3.18 top entry point.
+  The fixed 22-rule labeling is certified as well. Higher-dimensional,
+  different-carrier/label, transformed, non-coefficientwise, and local methods
   remain open.
 - [`AB-HARD-RETURN-001`](proof-search/routes/AB_hard_boundary_return_system.md):
   an exact decreasing boundary normalizer and closed hard return map. Universal
