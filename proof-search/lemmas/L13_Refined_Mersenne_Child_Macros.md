@@ -260,9 +260,127 @@ search, and no novelty claim is made.
 
 ## 8. Exact unresolved obligation
 
-The compatible child closes by strong induction.  The other child maps by
-(18) into exact-valuation families with accumulating odd-modulus guards and
-contains recurrent hard-to-hard branches.  Neither `L`, the integer value,
-nor the affine parameter is presently a decreasing rank on all such
-transitions.  A proof route must still exhibit a total guarded transition
-system and a well-founded rank for this recurrent branch.
+There is an exact local rank for consecutive repetitions of one hard label,
+but it does not compose across labels.  Fix a hard label
+
+\[
+L\ge2,\qquad \varepsilon\in\{0,1\},\qquad
+\varepsilon\not\equiv L\pmod2,
+\]
+
+and define
+
+\[
+p_L=3^{L+1},\qquad M_L=2^{L+2},\qquad
+d_{L,\varepsilon}
+=\frac{3^{L+1+\varepsilon}+3}{4}-2^L(2\varepsilon+1)>0. \tag{20}
+\]
+
+If the normalized successor has the same label `(L,epsilon)`, its parameter
+is
+
+\[
+G_{L,\varepsilon}(z)
+=\frac{p_Lz+d_{L,\varepsilon}}{M_L}. \tag{21}
+\]
+
+For nonzero integers, let `v2` denote the exact exponent of two, and put
+
+\[
+D_{L,\varepsilon}(z)
+=v_2\bigl((M_L-p_L)z-d_{L,\varepsilon}\bigr),
+\qquad
+R_{L,\varepsilon}(z)
+=\left\lfloor\frac{D_{L,\varepsilon}(z)}{L+2}\right\rfloor. \tag{22}
+\]
+
+The argument of `v2` is never zero for `z>=0`, because `M_L-p_L<0` and
+`d_(L,epsilon)` is positive.  The same-label guard is equivalent to
+
+\[
+D_{L,\varepsilon}(z)\ge L+2. \tag{23}
+\]
+
+Whenever (23) holds, exact substitution into (21) gives
+
+\[
+D_{L,\varepsilon}(G_{L,\varepsilon}(z))
+=D_{L,\varepsilon}(z)-(L+2),
+\qquad
+R_{L,\varepsilon}(G_{L,\varepsilon}(z))
+=R_{L,\varepsilon}(z)-1. \tag{24}
+\]
+
+Thus `R` is a genuine natural-valued rank and exactly counts the maximum
+number of further consecutive same-label replays.
+
+It is not a global rank.  More strongly, for every hard source label
+`(L,epsilon)`, every different hard target label `(h,eta)`, and every
+`Q>=0`, the exact successor cell of label `(h,eta)` contains a parameter
+`z>=0` for which
+
+\[
+R_{L,\varepsilon}(z)=0,
+\qquad
+R_{h,\eta}(w)\ge Q,
+\]
+
+where `w` is the exact target parameter.  Indeed, (18) writes
+`w=p_L u+c`.  The coefficient of `u` in
+
+\[
+(M_h-p_h)(p_Lu+c)-d_{h,\eta}
+\]
+
+is odd, so one can choose `u` modulo any prescribed power of two to make the
+target `D` arbitrarily large.  Since the target label differs from the
+source label, the source fails (23), so its `R` is zero.  Cross-label edges
+can therefore recharge an arbitrarily large amount of the local replay debt.
+
+There is also a concrete obstruction to the natural affine composite ranks.
+The fully guarded exact transition
+
+\[
+(L,\varepsilon,z)=(5,0,134257)
+\longrightarrow (7,0,191159) \tag{25}
+\]
+
+is
+
+\[
+N_{5,0}(134257)=17184927
+\xrightarrow{\ O^5EO\ }
+97873535=N_{7,0}(191159). \tag{26}
+\]
+
+With `ell(0)=0` and `ell(z)` the binary bitlength for `z>0`, its data are
+
+\[
+(L,\ell,D,R):(5,18,5,0)\longrightarrow(7,18,10,1). \tag{27}
+\]
+
+Consequently no real constants `A,B,C,E_0,E_1` make either
+
+\[
+\Phi=A L+B\ell(z)+C D_{L,\varepsilon}(z)+E_\varepsilon
+\]
+
+or the analogous expression with `R` in place of `D` both bounded below on
+all hard states and strictly decreasing on every exact hard-to-hard
+successor.  The integer `d_(L,epsilon)` is odd, so boundedness below forces
+`A>=0` (take `z=0`, where `D=0`, and let `L` grow) and `B>=0` (fix a hard
+label and let even `z` grow, again with `D=0`).  Same-label guards form an
+infinite residue class; each replay has `G(z)>z` and decreases `D` by `L+2`,
+or `R` by one, so strict descent forces `C>0`.  But (27) changes the two
+candidate potentials by `2A+5C>0` and `2A+C>0`, respectively.
+
+This is an exact no-candidate verdict for that composite-rank class, not for
+richer nonlinear, ordinal, or additional-state ranks.  Equations (20)--(27)
+and the concrete transition were independently replayed with exact integer
+arithmetic, but this subsection is not yet formalized in Lean.  It is an
+elementary project-specific consequence of the affine/2-adic normalization,
+and no novelty claim is made.
+
+The compatible child still closes only conditionally by strong induction.
+The recurrent hard branch still requires a total guarded transition system
+and a well-founded rank that survives cross-label recharge.

@@ -8,7 +8,7 @@ This file is the canonical index of proof/disproof families. New work should upd
 |---|---|---|---|---|---|
 | A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Existing automated matrix-interpretation classes have not terminated the full system | Reproduce exact system; synthesize richer interpretation classes; prove certificate semantics in Lean |
 | B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
-| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | Unrefined whole-family inverse words provably fail on every Mersenne cylinder; no refinement-aware graph, canonical-boundary mechanism, or rank exists yet | Reopen with a concrete parameter-refining transition and explicit well-founded rank for the hard Mersenne child |
+| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | The hard successor is normalized exactly, but its self-replay rank can be recharged arbitrarily across labels; simple affine size/debt composites are refuted | Reopen with a richer cross-label well-founded rank or a uniform smaller-target macro that survives the exact successor guards |
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
 | D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `BLOCKED_NO_MECHANISM` | Infinite coefficient stopping is untouched, and L11 hard inheritance does not renew L9-L10 at the endpoint | Reopen with a concrete rooted transition and rank covering both infinite and finite coefficient-stopping branches |
 | E | Positive nontrivial cycle | Explicit finite cycle under accelerated or ordinary Collatz | `ACTIVE_LOW_COST` | Enormous existing computational/cycle exclusions; no witness known | Keep exact Diophantine/SAT witness search as low-cost lane; verify any hit immediately |
@@ -90,6 +90,15 @@ all-depth obstruction for that complete class. For
 original; equality only replays the same family. Refinement sends the hard
 child to `M_{K+1}`, so deeper search within the same unrefined class cannot
 close the route.
+
+`proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md` gives the exact
+hard-successor partition and a natural rank that counts consecutive
+same-label replays.  Exact cross-label cells can reset that rank from zero to
+arbitrarily large values.  A concrete guarded edge also refutes every
+lower-bounded affine combination of label depth, parameter bitlength, and
+that replay rank (or its underlying 2-adic depth).  This closes the proposed
+simple composite-rank test, but it does not exclude richer state or nonlinear
+well-founded interpretations.
 
 ### Main kill test
 
