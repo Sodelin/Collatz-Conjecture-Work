@@ -1,5 +1,9 @@
 # Issue #7 audit packet — reciprocal summability
 
+**Node ID:** `Collatz-Conjecture-Work:FLASH-RECIPROCAL-SUMMABILITY`
+
+**Node type:** `archive`
+
 **Upstream:** [GitHub issue #7](https://github.com/Sodelin/Collatz-Conjecture-Work/issues/7)
 
 **Status:** source-conditional and provenance-blocked; not an accepted claim
@@ -129,3 +133,10 @@ should be reviewed before any external claim is made.
 This note is not Lean-formalized, adds no claim-registry row, is not
 publication-ready, and neither proves Collatz nor constructs a positive
 counterexample.
+
+## Connections
+
+- **Depends on:** [L1 exact prefix identity](../lemmas/L1_Exact_Prefix_Descent_Bound.md)
+- **Parallel to:** [Route F](../APPROACH_REGISTRY.md#f--divergence-disproof-lane)
+- **Prior art:** [issue #7 provenance and MathOverflow gate](https://github.com/Sodelin/Collatz-Conjecture-Work/issues/7)
+- **Formalized by / pending:** [Lean boundary](../../LEAN_TARGETS.md)

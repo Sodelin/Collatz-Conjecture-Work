@@ -1,5 +1,9 @@
 # Effective-flash review notes
 
+**Node ID:** `Collatz-Conjecture-Work:EFFECTIVE-FLASHES`
+
+**Node type:** `map`
+
 This directory preserves conservative mathematical transcriptions of selected
 GitHub issue proposals. These notes are review aids, not accepted project
 claims. They add no row to the
@@ -28,3 +32,8 @@ formalized. None is publication-ready, establishes novelty or priority, proves
 Collatz, or produces a positive counterexample. Promotion would require the
 handoff packet and review gates in [`CONTINUATION.md`](../../CONTINUATION.md),
 including source verification where an external theorem is used.
+
+## Connections
+
+- **Parallel to:** [Route F and the other canonical route families](../APPROACH_REGISTRY.md)
+- **Blocked by:** [promotion and novelty gates](../CLAIM_REGISTRY.md)

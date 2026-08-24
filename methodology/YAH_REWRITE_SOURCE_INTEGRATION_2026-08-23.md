@@ -143,3 +143,9 @@ Do not say:
 - that failure of matrix search weakens the conjecture;
 - that Route AB is a proof merely because its certificate, if found, would be finite;
 - that absence of a follow-up in a targeted web search certifies novelty.
+
+## Connections
+
+- **Supplies semantics to:** [unlabeled adjacent-edge no-go](../proof-search/routes/A_yah_2local_edge_potential_no_go.md), [fixed two-state no-go](../proof-search/routes/A_yah_two_state_semantic_label_no_go.md), and [dimension-one scalar-arctic no-start](../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md).
+- **Feeds the parallel macro route:** [mixed-radix coalescence bridge](../proof-search/routes/AB_mixed_radix_coalescence_bridge.md).
+- **Navigated by:** [research atlas](../ATLAS.md).

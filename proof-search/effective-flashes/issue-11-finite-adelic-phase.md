@@ -1,5 +1,9 @@
 # Issue #11 audit packet — finite adelic phase freedom
 
+**Node ID:** `Collatz-Conjecture-Work:FLASH-FINITE-ADELIC-PHASE`
+
+**Node type:** `archive`
+
 **Upstream:** [GitHub issue #11](https://github.com/Sodelin/Collatz-Conjecture-Work/issues/11)
 
 **Status:** exact finite-prefix theorem; no fixed-orbit conclusion
@@ -95,3 +99,10 @@ one orbit. This does not close all residue, adelic, or S-unit methods.
 This note is not Lean-formalized, adds no claim-registry row, is not
 publication-ready, and neither proves Collatz nor constructs a positive
 counterexample.
+
+## Connections
+
+- **Depends on:** [L1 exact prefix identity](../lemmas/L1_Exact_Prefix_Descent_Bound.md)
+- **Depends on:** [conditional phase review](issue-10-phase-summability.md)
+- **Blocks / blocked by:** [finite-prefix inference failure F006](../FAILURE_LEDGER.md#f006--arbitrary-finite-valuation-prefix-enumeration-proves-collatz)
+- **Parallel to:** [Route F](../APPROACH_REGISTRY.md#f--divergence-disproof-lane)

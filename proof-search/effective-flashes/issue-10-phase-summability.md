@@ -1,5 +1,9 @@
 # Issue #10 audit packet — phase and reciprocal summability
 
+**Node ID:** `Collatz-Conjecture-Work:FLASH-PHASE-SUMMABILITY`
+
+**Node type:** `archive`
+
 **Upstream:** [GitHub issue #10](https://github.com/Sodelin/Collatz-Conjecture-Work/issues/10)
 
 **Status:** exact equivalence; equidistribution is conditional
@@ -101,3 +105,10 @@ exact affine orbit identity is in
 This note is not Lean-formalized, adds no claim-registry row, is not
 publication-ready, and neither proves Collatz nor constructs a positive
 counterexample.
+
+## Connections
+
+- **Depends on:** [reciprocal-summability review](issue-7-reciprocal-summability.md)
+- **Depends on:** [L1 exact prefix identity](../lemmas/L1_Exact_Prefix_Descent_Bound.md)
+- **Parallel to:** [Route F](../APPROACH_REGISTRY.md#f--divergence-disproof-lane)
+- **Formalized by / pending:** [Lean boundary](../../LEAN_TARGETS.md)

@@ -11,6 +11,11 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 Accepted mathematical baseline: full Git object
 `b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 
+For a visual, cross-linked map of claims, routes, evidence, historical notes,
+and reopening conditions, use the [research atlas](ATLAS.md). It is portable
+between GitHub and Obsidian and does not duplicate the canonical status
+registries.
+
 ## The two-minute map
 
 The project contains three logically different kinds of statement. Keeping
@@ -33,7 +38,7 @@ value, not by a claim that they solve more of Collatz.
 
 | Claim | Scoped status | Why it matters | Novelty / publication status |
 |---|---|---|---|
-| YAH scalar-arctic dimension-one no-start | Exact dependency-free full and top certificates; high confidence **within the standard first-step dimension-one arctic-natural class** | Closes full rule removal and both Lemma-3.18 top entry points on the original eleven-rule system; also certifies the fixed 22-rule labeling | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
+| YAH scalar-arctic dimension-one no-start | Exact dependency-free full and top certificates; high confidence **within the standard first-step dimension-one arctic-natural class** | Closes full rule removal and both Lemma-3.18 top entry points on the original eleven-rule system; also certifies the fixed 22-rule labeling | Exact match not found in a bounded primary-source audit; priority uncertified; [candidate packet is on HOLD](publication/YAH_SCALAR_ARCTIC_CANDIDATE.md) |
 | Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
 | Round 6A quantitative beta-debt theorem | Self-contained unreviewed derivation plus diagnostic checker | Strongest conceptual theorem candidate about corrected-log rankings and rational periodic shadows | Exact formulation not found; key lift/scaling chain lacks Lean and independent specialist reconstruction |
@@ -48,28 +53,29 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 
 ## Choose your path
 
-The repository is also a portable linked research notebook. The
-[knowledge home](knowledge/mocs/CW-MOC-HOME.md) exposes routes, claims,
-failures, and verification artifacts as a validated graph while keeping the
-registries authoritative. It works in GitHub and in Obsidian without a plugin;
-see the [notebook guide](knowledge/README.md).
+The [research atlas](ATLAS.md) is the hand-curated knowledge map. Generated
+[catalog and backlink supplements](knowledge/README.md) make every Markdown
+file searchable without creating a second claim or route ledger. Both views
+work in GitHub and Obsidian without a plugin.
 
 ### If you are a math enthusiast
 
 1. Read the [plain-language public status](PUBLIC_STATUS_2026-08-24.md).
-2. Use the [two-minute map](#the-two-minute-map) to distinguish a method
+2. Browse the [research atlas](ATLAS.md) to see how the ideas connect.
+3. Use the [two-minute map](#the-two-minute-map) to distinguish a method
    obstruction from an equivalent reformulation.
-3. Treat every finite computation as a bounded check, never as evidence for all
+4. Treat every finite computation as a bounded check, never as evidence for all
    integers.
 
 ### If you are reviewing the mathematics
 
-1. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
-2. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
-3. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
-4. [Reproduction manifest](verification/README.md)
-5. [Lean verification policy](lean/VERIFICATION_POLICY.md)
-6. [Provenance and dates](PROVENANCE.md)
+1. [Research atlas and dependency map](ATLAS.md)
+2. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
+3. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
+4. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
+5. [Reproduction manifest](verification/README.md)
+6. [Lean verification policy](lean/VERIFICATION_POLICY.md)
+7. [Provenance and dates](PROVENANCE.md)
 
 ### If you are continuing the project
 
@@ -95,18 +101,30 @@ See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 From the repository root:
 
 ```powershell
+python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
 python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
-python -B knowledge\tools\build_index.py --self-test --check
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
 ```
 
 Expected outputs, tested versions, scope limits, and retained transcripts are
 listed in [verification/README.md](verification/README.md).
+
+Repository navigation has a separate dependency-free check:
+
+```powershell
+python -B verification\check_note_graph.py
+python -B knowledge\tools\build_index.py --self-test --check
+```
+
+No Obsidian community plugin is required. Open the repository root as a vault;
+ordinary relative Markdown links drive GitHub navigation and Obsidian's built-in
+Graph and Backlinks views. See the
+[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
 
 ## Prior art and novelty discipline
 

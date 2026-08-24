@@ -80,6 +80,9 @@ Every new route or lemma gets a durable Markdown artifact containing:
 8. **Outcome** with one primary branch status.
 9. **Counterexample or repaired statement** if the original claim fails.
 10. **Reopening condition** if blocked.
+11. **Stable node ID and typed connections** to dependencies, evidence,
+    affected routes, and superseded claims, following
+    [the note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
 
 ## 6. Independence before synthesis
 
@@ -149,11 +152,18 @@ Every substantive new method, theorem candidate, counterexample, proof sketch, c
 
 Recommended structure:
 
+- `ATLAS.md` — map of content and visible dependency graph, never a duplicate
+  status registry.
 - `proof-search/` — theorem ladders, approach registry, active branches, failure ledger.
 - `proof-search/lemmas/` — durable mathematical lemmas and exact proof obligations.
 - `prompts/` — orchestration and hostile-audit prompts.
 - `lean/` — trusted statement files, proof code, build policy, CI notes.
 - `verification/` — diagnostic Python/SAT/SMT artifacts and outputs.
+
+Before committing a material state transition, run
+`python -B verification\check_note_graph.py`. A research handoff should name
+the node IDs and typed edges it adds or changes; this keeps continuation state
+searchable without transferring a giant transcript.
 
 A file's Git commit is a public timestamp from that point forward. Mathematical status must still be written explicitly inside the artifact.
 

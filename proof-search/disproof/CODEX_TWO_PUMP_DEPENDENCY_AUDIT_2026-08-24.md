@@ -184,3 +184,10 @@ From the repository root with Lean 4.33.1:
 
 The module prints the axiom dependencies of all five theorems. None uses
 `sorryAx`; only Lean's standard `propext` and `Quot.sound` appear.
+
+## Connections
+
+- **Blocks:** cyclic-rotation-only two-pump elimination in the [failure ledger](../FAILURE_LEDGER.md).
+- **Formalized by:** the two-pump module listed in [Lean targets](../../LEAN_TARGETS.md).
+- **Verified by:** [reproduction manifest](../../verification/README.md).
+- **Does not close:** the positive-cycle lane in the [approach registry](../APPROACH_REGISTRY.md).

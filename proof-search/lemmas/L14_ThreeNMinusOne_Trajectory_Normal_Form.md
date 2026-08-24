@@ -337,3 +337,9 @@ the infinite counterfamily symbolically instance by instance over a stated
 finite parameter range.  It is a regression test, not a proof of the universal
 theorem.  The proof above remains prose and is not Lean-formalized.
 
+## Connections
+
+- **Parallel to:** [L13 refined Mersenne macros](L13_Refined_Mersenne_Child_Macros.md) and the [hard boundary return system](../routes/AB_hard_boundary_return_system.md).
+- **Verified computationally within the stated finite scope by:** [reproduction manifest](../../verification/README.md).
+- **Formalization pending:** [Lean targets](../../LEAN_TARGETS.md).
+- **Status and novelty recorded in:** [atomic claim registry](../CLAIM_REGISTRY.md).

@@ -1,5 +1,9 @@
 # Issue #9 audit packet — global block-schedule rigidity
 
+**Node ID:** `Collatz-Conjecture-Work:FLASH-GLOBAL-CARRY-RIGIDITY`
+
+**Node type:** `archive`
+
 **Upstream:** [GitHub issue #9](https://github.com/Sodelin/Collatz-Conjecture-Work/issues/9)
 
 **Status:** exact recurrence/no-realization result; carry corollary provisional
@@ -96,3 +100,10 @@ prove, and audit independently before it can be connected to the recurrence.
 This note is not Lean-formalized, adds no claim-registry row, is not
 publication-ready, and neither proves Collatz nor constructs a positive
 counterexample.
+
+## Connections
+
+- **Depends on:** [L1 exact prefix identity](../lemmas/L1_Exact_Prefix_Descent_Bound.md)
+- **Blocks / blocked by:** [finite-prefix realizability failure F006](../FAILURE_LEDGER.md#f006--arbitrary-finite-valuation-prefix-enumeration-proves-collatz)
+- **Parallel to:** [Route F](../APPROACH_REGISTRY.md#f--divergence-disproof-lane)
+- **Formalized by / pending:** [Lean boundary](../../LEAN_TARGETS.md)

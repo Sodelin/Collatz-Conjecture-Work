@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Canonical atlas reachability
+        run: python -B verification/check_note_graph.py
       - name: Checker false controls
         run: python -B knowledge/tools/build_index.py --self-test --check
       - name: Optimized-mode validation
-        run: python -O -B knowledge/tools/build_index.py --check
+        run: python -O -B knowledge/tools/build_index.py --self-test --check
