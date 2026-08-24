@@ -1,0 +1,72 @@
+Round 7 accelerated mixed-radix macro coalescence diagnostic
+Date: 2026-08-23
+Map: T(n)=n/2 if even, (3n+1)/2 if odd
+Inverse macro depth: <=10 accelerated steps
+IMPORTANT: exact bounded certificate search only; not a Collatz proof/disproof
+
+Exact new macro certificate
+---------------------------
+For every integer x>=0,
+
+  N(x) = 4096*x + 1023
+  m(x) = 3072*x + 767
+
+satisfy 0 < m(x) < N(x), and
+
+  T^12(4096*x+1023) = 59049*x+14762
+  T^10(3072*x+767) = 59049*x+14762.
+
+The exact inverse word from the common target is
+
+  OEOOOOOOOO
+
+where E(y)=2y and O(y)=(2y-1)/3 on whole affine families satisfying the exact O-admissibility condition.
+
+This cylinder appeared unresolved in the previously committed ordinary-map reverse search with reverse depth <=16. The accelerated macro description is shorter because one odd accelerated step corresponds to the ordinary odd step followed by its division by two.
+
+Sweep
+-----
+K,total_odd,certified,unresolved
+3,4,2,2
+  first unresolved: [3, 7]
+4,8,5,3
+  first unresolved: [7, 11, 15]
+5,16,12,4
+  first unresolved: [7, 15, 27, 31]
+6,32,25,7
+  first unresolved: [7, 27, 31, 39, 47, 59, 63]
+7,64,53,11
+  first unresolved: [27, 31, 39, 47, 63, 71, 91, 103, 111, 123, 127]
+8,128,112,16
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255]
+9,256,229,27
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255, 283, 303, 327, 347, 359, 415, 423, 447]
+10,512,466,46
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 283, 303, 327, 359, 415, 447, 495, 511, 543]
+11,1024,944,80
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
+12,2048,1904,144
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
+13,4096,3853,243
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 239, 251, 327, 415, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743]
+14,8192,7753,439
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 239, 327, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743, 751, 763]
+15,16384,15575,809
+  first unresolved: [27, 31, 47, 71, 91, 103, 111, 159, 239, 327, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743, 751, 763, 767, 859]
+
+Comparison with prior ordinary-map depth-16 search
+--------------------------------------------------
+Prior unresolved counts were:
+K=12:145, K=13:245, K=14:443, K=15:819.
+
+The accelerated macro language at depth 10 yields:
+K=12:144, K=13:243, K=14:439, K=15:809.
+
+This is a modest but exact improvement in this bounded search class. It is not evidence that increasing macro depth will converge to a finite proof.
+
+Interpretation
+--------------
+- The accelerated convention aligns directly with the Yolcu-Aaronson-Heule mixed-radix rewriting representation.
+- Finite inverse words over E/O are auditable exact macro certificates.
+- The current search still leaves persistent unresolved families and therefore remains an exploratory certificate generator.
+- The highest-value next step is to classify successful/failed inverse words by exact mixed-radix suffix/carry state, not simply increase K or macro depth indefinitely.
