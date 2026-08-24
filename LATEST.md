@@ -2,19 +2,21 @@
 
 ## Latest research state: Round 6B
 
-**Round 6B: Terminal finite-sensor approximation barriers and nonuniformity of infinite 2-adic sensor rankings**
+The chronologically terminal research branch is **Round 6B: Terminal finite-sensor approximation barriers and nonuniformity of infinite 2-adic sensor rankings**. Its original dossier remains preserved in the source archive and is identified in the public SHA-256 manifest.
 
-- [Markdown source](papers/round-6b/Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.md)
-
-Round 6B is the terminal consolidation after 6A. It derives an approximation-gap theorem and related corollaries conditional on the Round 6A debt theorem.
+Round 6B is primarily a terminal corollary/approximation-barrier branch conditional on the Round 6A debt theorem. It should not replace Round 6A as the first external review target.
 
 ## Recommended expert starting point: Round 6A
 
-Round 6B explicitly recommends that specialists start with **Round 6A**, because Round 6A contains the core rational-period lifting and quantitative β-debt argument.
+Start with the public theorem/proof note:
 
-- [Round 6A full dossier](papers/round-6a/Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.md)
+- [Round 6A public review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
 - [Round 6A checker](verification/round-6a/collatz_round6a_checks.py)
+- [Round 6A claim ledger](verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv)
 - [Round 6A checker output](verification/round-6a/round6a_check_output.txt)
+- [Lean formalization targets](LEAN_TARGETS.md)
+
+The original Round 6A dossier, expert brief, and packet are preserved byte-for-byte in the source archive; their earlier hashes are recorded under `checksums/original/`, and their public-archive-time hashes are recorded in `checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`.
 
 ## Status
 
