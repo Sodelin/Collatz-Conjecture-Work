@@ -1,14 +1,33 @@
 # Latest and recommended reading
 
-## Latest research state: Round 6B
+## Latest research state: Codex Cycle 1 / Round 7
 
-The chronologically terminal research branch is **Round 6B: Terminal finite-sensor approximation barriers and nonuniformity of infinite 2-adic sensor rankings**. Its original dossier remains preserved in the source archive and is identified in the public SHA-256 manifest.
+The chronologically terminal research state is the 2026-08-23 hostile closure
+audit of the Round-7 chain:
 
-Round 6B is primarily a terminal corollary/approximation-barrier branch conditional on the Round 6A debt theorem. It should not replace Round 6A as the first external review target.
+- [Cycle-1 closure audit](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
+- [Corrected L5 inverse-word completeness theorem](proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md)
+- [L12 hard-exit gap transition](proof-search/lemmas/L12_Hard_Exit_Gap_Valuation_Transition.md)
+- [Mersenne-cylinder inverse-word no-go](proof-search/routes/AB_mersenne_inverse_word_no_go.md)
+- [Independent bounded oracle](verification/round7_first_crossing_oracle.py)
+- [Oracle output](verification/round7_first_crossing_oracle_output_2026-08-23.txt)
+- [Lean equal-slope boundary proof](lean/CollatzWork/InverseWordBoundary.lean)
+- [Lean clean-build record](verification/lean_inverse_word_boundary_build_output_2026-08-23.txt)
 
-## Recommended expert starting point: Round 6A
+The audit found no proof or disproof. It corrected a false completeness claim
+in L5, informally derived that the entire unrefined L4/L5 inverse-word class cannot reduce
+the persistent Mersenne cylinders, and showed that L11 hard-exit inheritance
+is not by itself a recursive renewal theorem.
 
-Start with the public theorem/proof note:
+The exact open bridge for this active synthesis is a total, non-circular,
+well-founded transition mechanism that covers the infinite coefficient-
+stopping branch and every finite first-contraction survivor. No such mechanism
+or complete Route-AB certificate currently exists; other proof/disproof
+architectures remain logically possible.
+
+## Stable earlier external-review target: Round 6A
+
+For the corrected-log / rational-period debt branch, start with:
 
 - [Round 6A public review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
 - [Round 6A checker](verification/round-6a/collatz_round6a_checks.py)
@@ -16,8 +35,15 @@ Start with the public theorem/proof note:
 - [Round 6A checker output](verification/round-6a/round6a_check_output.txt)
 - [Lean formalization targets](LEAN_TARGETS.md)
 
-The original Round 6A dossier, expert brief, and packet are preserved byte-for-byte in the source archive; their earlier hashes are recorded under `checksums/original/`, and their public-archive-time hashes are recorded in `checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`.
+Round 6B remains the terminal extension of that older ranking-function branch.
+The original Round 6A/6B dossiers are preserved in the source archive and
+identified in the public SHA-256 manifest.
 
 ## Status
 
-Neither Round 6A nor Round 6B is presented as a proof or disproof of the Collatz conjecture. Independent human reconstruction, Lean formalization, and novelty certification remain pending.
+- Full Collatz proof: **no**
+- Full Collatz disproof: **no**
+- Independent specialist verification: **pending**
+- Complete Lean formalization: **pending**
+- Corrected L5 equal-slope boundary/witness: **formally type-checked on Lean 4.33.1**
+- Novelty certification for Round-7 lemmas: **pending**

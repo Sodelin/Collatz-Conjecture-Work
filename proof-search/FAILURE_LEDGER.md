@@ -150,6 +150,57 @@ A syntactically short missing lemma can still carry essentially all the conjectu
 
 **Policy:** use `BLOCKED_EQUIVALENT` when this occurs.
 
+## F017 — strict leading-coefficient decrease is necessary for affine coalescence
+
+**Class:** `FALSE`.
+
+The exact families
+
+`N(x)=8x+5` and `m(x)=8x+4`
+
+satisfy `T^3(N(x))=T^3(m(x))=3x+2` and `0<m(x)<N(x)` for every
+`x>=0`, although both leading coefficients are `8`. The inverse word is
+`OEE`.
+
+**Replacement:** corrected L5. A successful whole-family inverse word has
+either strict slope decrease (`|w|<=t-1`) or equal slope with smaller
+intercept (necessarily `|w|=t`). The complete class bound is `|w|<=t`.
+
+## F018 — deeper unrefined inverse words will eventually close Mersenne cylinders
+
+**Class:** `FALSE` for the stated unrefined class. The broader refinement-aware
+Route AB has primary status `BLOCKED_NO_MECHANISM` in the approach registry.
+
+For `M_K(x)=2^K(x+1)-1`, every uniformly admissible inverse word after any
+uniform forward time has leading coefficient at least `2^K`. Equality forces
+the exact reverse odd word and reconstructs the same family, including its
+intercept. This quantifies over every inverse depth in the L4/L5 one-shot
+whole-family class.
+
+**Do not repeat:** increasing inverse depth in that same unrefined class as if
+the persistent Mersenne misses were search-depth artifacts.
+
+**Reopen only if:** the certificate refines the parameter, handles the
+canonical positive boundary, and supplies a well-founded rank for the hard
+transition `M_K(2y+1)=M_{K+1}(y)`, or uses a genuinely stronger semantic
+class.
+
+## F019 — L11 hard-exit inheritance automatically renews L9-L10
+
+**Class:** `FALSE` inference. The associated Route-D architecture has primary
+status `BLOCKED_NO_MECHANISM` in the approach registry.
+
+If `y=n_*+d`, least-counterexample minimality proves future iterates of `y`
+stay at least `n_*`. It does not prove they stay at least `y`, and it does not
+prove the coefficient stopping time local to `y` is finite. A local
+contraction into `[n_*,y)` is neither a contradiction nor another L10
+non-descending near-return.
+
+**Replacement:** carry the immutable root `n_*` in a total transition system.
+Every local contraction, non-descending contraction, infinite coefficient-
+stopping branch, band exit, and zero-gap cycle branch must be covered, and all
+back-edges must decrease an independently proved well-founded rank.
+
 ---
 
 # Reopening template

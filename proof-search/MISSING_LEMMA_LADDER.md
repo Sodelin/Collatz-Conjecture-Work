@@ -90,6 +90,12 @@ Partition positive odd integers into exact affine/congruence families. For each 
 
 **Needed new object:** a finite directed certificate graph plus a rank proving no unresolved infinite path.
 
+**Current exact obstruction:** the complete unrefined L4/L5 inverse-word class
+cannot reduce any Mersenne cylinder at any depth. Binary refinement maps its
+hard child to the next Mersenne cylinder. A viable graph must therefore make
+that refinement transition explicit, cover the canonical positive boundary,
+and decrease a separate rank.
+
 This is not a finite-depth residue tree. Stopping times are unbounded, so a finite tree with bounded maximum depth cannot prove the conjecture. The sought object is a **finite recursive graph with back-edges controlled by a rank**.
 
 ### Route C — Augmented-state global ranking
@@ -110,7 +116,16 @@ Round 5A–6B make simple corrected-log state-only/small-sensor potentials unatt
 
 Assume a least nonterminating odd `n_*`. L0 forces every iterate to remain at least `n_*`. L1 then gives an exact upper bound from every multiplicatively contracting valuation prefix.
 
-**Needed bridge lemma:** prove that the single positive-integer orbit of `n_*` must eventually realize a prefix whose L1 upper bound contradicts the certified lower bound on `n_*`.
+L8-L12 sharpen the finite first-contraction branch, but the hostile branch
+audit leaves four distinct walls: infinite coefficient stopping, the band
+`s>=n_*`, renewal/rank after an L11 endpoint, and the zero-gap cycle branch.
+In particular, L11 inheritance is not a renewal theorem: minimality is relative
+to `n_*`, not to each later endpoint.
+
+**Needed bridge lemma:** prove that the single positive-integer orbit of `n_*`
+enters a total rooted transition system whose well-founded rank forces a prefix
+whose L1 upper bound contradicts the certified lower bound on `n_*`, while
+explicitly covering every branch above.
 
 This must use more than arbitrary finite 2-adic word realizability, because periodic-shadow constructions show that extremely bad finite prefixes exist at arbitrarily large depths.
 

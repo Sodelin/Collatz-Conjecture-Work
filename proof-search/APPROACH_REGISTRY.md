@@ -1,6 +1,6 @@
 # Approach registry — Round 7
 
-Last structural update: 2026-08-23.
+Last structural update: 2026-08-23, Codex Cycle 1.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
@@ -8,9 +8,9 @@ This file is the canonical index of proof/disproof families. New work should upd
 |---|---|---|---|---|---|
 | A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Existing automated matrix-interpretation classes have not terminated the full system | Reproduce exact system; synthesize richer interpretation classes; prove certificate semantics in Lean |
 | B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
-| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `ACTIVE` | Need a finite/regular quotient of the unresolved affine state plus compositional macro semantics | Cluster survivor languages in YAH mixed-base states; synthesize macro certificates; formalize generic soundness |
+| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | Unrefined whole-family inverse words provably fail on every Mersenne cylinder; no refinement-aware graph, canonical-boundary mechanism, or rank exists yet | Reopen with a concrete parameter-refining transition and explicit well-founded rank for the hard Mersenne child |
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
-| D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `ACTIVE` | Arbitrarily long bad finite 2-adic shadows exist; need genuinely global positive-integer constraint | Use L1 bound plus recursive residue/rewrite structure; reject mere average-drift restatements |
+| D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `BLOCKED_NO_MECHANISM` | Infinite coefficient stopping is untouched, and L11 hard inheritance does not renew L9-L10 at the endpoint | Reopen with a concrete rooted transition and rank covering both infinite and finite coefficient-stopping branches |
 | E | Positive nontrivial cycle | Explicit finite cycle under accelerated or ordinary Collatz | `ACTIVE_LOW_COST` | Enormous existing computational/cycle exclusions; no witness known | Keep exact Diophantine/SAT witness search as low-cost lane; verify any hit immediately |
 | F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | 2-adic/rational ghosts need not contain a divergent positive natural orbit | Require positive membership and forward invariance as first kill test |
 | G | State-only corrected-log ranking with bounded/local correction | Universal descent ranking | `BLOCKED_NO_MECHANISM` | Rounds 3–6 construct long shadows and sharp debt obstructions | Reopen only with qualitatively new correction information |
@@ -76,13 +76,28 @@ for an exact uniformly smaller `m(x) < N(x)`. Strong induction then closes the f
 
 AB therefore searches for **finite mixed-radix macro states plus coalescence reductions**, using the published finite alphabet to compress the arithmetic while preserving the more permissive induction semantics.
 
-### Current exact supporting result
+### Current exact supporting results
 
 `proof-search/lemmas/L2_Cylinder_Refinement_and_Slope_Pruning.md` proves that refining one binary cylinder bit sends endpoint slope exponent `s` to exactly one child with exponent `s` and one with exponent `s+1`. The resulting cylinder counts obey the exact binomial law `C(K-1,s-1)`.
 
+Corrected L5 proves completeness of the one-shot whole-family inverse-word
+class at each fixed cylinder: strict-slope words have depth at most `t-1`, and
+the equal-slope/smaller-intercept boundary has depth exactly `t`.
+
+`proof-search/routes/AB_mersenne_inverse_word_no_go.md` then proves an
+all-depth obstruction for that complete class. For
+`M_K(x)=2^K(x+1)-1`, every admissible inverse word has slope at least the
+original; equality only replays the same family. Refinement sends the hard
+child to `M_{K+1}`, so deeper search within the same unrefined class cannot
+close the route.
+
 ### Main kill test
 
-If the intercept/carry information needed for exact macro coalescence cannot be quotiented into a finite or regular symbolic state without assuming global descent, AB remains an architecture gap rather than a proof route.
+Any proposed successor must cover the Mersenne refinement chain, including
+the finite canonical left boundary, and prove a well-founded rank. If the
+needed intercept/carry information cannot be quotiented into a finite or
+regular symbolic state without assuming global descent, AB remains an
+architecture gap rather than a proof route.
 
 ## C — Augmented-state ranking
 
@@ -92,9 +107,14 @@ This route should be developed mostly as the abstract semantics behind A, B, or 
 
 ## D — Minimal counterexample / exact prefix bound
 
-From L0, a least counterexample never falls below itself. From L1, any prefix with `2^A>3^t` gives an exact upper bound on that start.
+From L0, a least counterexample never falls below itself. From L1, any prefix with `2^A>3^t` gives an exact upper bound on that start. L8-L10 force an enormous first-contraction barrier and a tiny near-return defect under their stated hypotheses; L11-L12 constrain hard-exit endpoints and the valuation of a positive gap.
 
-The target is not another probabilistic drift estimate. The target is an arithmetic theorem forcing one fixed positive integer's infinite prefix sequence into a contradiction.
+The Cycle-1 branch audit shows that these facts do not yet recurse. Minimality
+gives future values at least `n_*`, not at least the endpoint `y=n_*+d`, and
+does not prove finite coefficient stopping from `y`. The target is not another
+probabilistic drift estimate. It is a total arithmetic transition theorem for
+one fixed positive integer, carrying the immutable root and a well-founded
+rank across local excess-decreasing edges as well as non-descending edges.
 
 Potential cross-pollination:
 - B/AB may show all bad residue families recursively reduce.
