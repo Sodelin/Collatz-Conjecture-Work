@@ -335,6 +335,40 @@ the current replay debt, so closure alone does not supply descent.
 hard return, or a new guarded macro coalesces with a uniformly smaller positive
 target. Renaming the return obligation is not progress.
 
+## F025 — a first scalar-arctic dimension-one step starts YAH rule removal
+
+**Class:** `FALSE` for the stated standard first-step classes.
+
+The exact certificates in
+[`routes/A_yah_two_state_scalar_arctic_full_no_start.md`](routes/A_yah_two_state_scalar_arctic_full_no_start.md)
+exclude every first standard dimension-one arctic-natural rule-removal step:
+
+- `A-YAH-AN1-001`: for the original eleven-rule YAH system, neither a
+  full/extended step nor either relative-top opportunity from YAH Lemma 3.18
+  can start;
+- `A-YAH-2STATE-AN1-001`: for the fixed global 22-rule two-state labeling,
+  neither a full/extended step nor any of the ten corresponding labeled top
+  targets can start.
+
+The full checker verifies the two coefficient-independent positive
+cancellations, each of total mass 49. The top checker verifies 491 integer
+Farkas lemmas and 426 RUP clauses across the ten target cases:
+
+```powershell
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
+```
+
+**Do not promote beyond scope:** this does not exclude dimension at least two,
+other carriers or label algebras, dependency-pair or other transformations,
+non-coefficientwise orders, a separately proved closed reachable relation, a
+later scalar step after some other removal, YAH termination, or Collatz.
+
+**Reopen only if:** the proposal enters one of those genuinely different
+classes and supplies an exact orientation or termination certificate. A
+larger coefficient search in the same scalar class cannot bypass the
+coefficient-independent full obstruction or the exact top certificates.
+
 ---
 
 # Reopening template

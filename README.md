@@ -48,6 +48,12 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 
 ## Choose your path
 
+The repository is also a portable linked research notebook. The
+[knowledge home](knowledge/mocs/CW-MOC-HOME.md) exposes routes, claims,
+failures, and verification artifacts as a validated graph while keeping the
+registries authoritative. It works in GitHub and in Obsidian without a plugin;
+see the [notebook guide](knowledge/README.md).
+
 ### If you are a math enthusiast
 
 1. Read the [plain-language public status](PUBLIC_STATUS_2026-08-24.md).
@@ -94,6 +100,7 @@ python -B verification\yah_two_state_semantic_label_no_go.py
 python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
+python -B knowledge\tools\build_index.py --self-test --check
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
 ```

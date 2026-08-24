@@ -35,8 +35,9 @@ Run from the repository root.
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
 | Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+| Linked notebook | `python -B knowledge\tools\build_index.py --self-test --check` | `KNOWLEDGE_NOTEBOOK_CHECK = PASS` and `KNOWLEDGE_NOTEBOOK_FALSE_CONTROLS = PASS` | Validates notebook metadata, typed links, canonical ratings, and generated views. It verifies navigation consistency, not mathematics. |
 
-All eight commands passed in the fresh audit. The YAH checkers currently
+All nine commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
 transcript. The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
