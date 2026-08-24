@@ -101,13 +101,17 @@ Hence `U^j(2^m-1)>2^m-1` for every `1<=j<m`.
 
 - **`A_cyl`:** no finite cover by power-of-two residue cylinders, each fixing
   a finite `U`-valuation prefix and carrying direct `U`-descent at a fixed
-  time, can cover all odd integers greater than one.
+  time `k_i>=1`, can cover all odd integers greater than one (or all
+  sufficiently large odd integers, with finitely many base cases handled
+  separately).
 - **`A_arb`:** more generally, if finitely many arbitrary sets cover all odd
   integers greater than one and the `i`-th set carries a direct-descent
-  guarantee at a fixed time `k_i` (or by a fixed horizon `K_i`), choosing `m`
-  larger than every such time (or horizon) contradicts the displayed
-  identity.  No cylinder or topological hypothesis is needed for this
-  maximum-horizon proof.
+  guarantee at a fixed time `k_i>=1` (or at some time `1<=j<=K_i` for a
+  fixed horizon `K_i`), choosing `m` larger than every such time (or horizon)
+  contradicts the displayed identity.  The same proof applies to a cover of
+  all sufficiently large odd integers by taking `m` beyond the base cases.
+  No cylinder or topological hypothesis is needed for this maximum-horizon
+  proof.
 
 This is prior-art territory, not a new lemma.  Sinyor, *The 3x + 1 Problem as
 a String Rewriting System* (2010), Section 3, explicitly records the Mersenne
