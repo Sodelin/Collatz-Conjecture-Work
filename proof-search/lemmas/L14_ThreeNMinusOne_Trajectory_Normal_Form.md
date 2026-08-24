@@ -1,8 +1,11 @@
 # L14 — A `3n-1` trajectory normal form for the odd Collatz map
 
-**Status:** `PROVED_AUX` / `FORMAL_PENDING` / `STOP_EQUIVALENT`  
-**Map:** fully accelerated odd map `U`  
-**Novelty:** elementary explicit packaging; no novelty claim  
+**Status:** `PROVED_AUX` / `FORMAL_PENDING` / `STOP_EQUIVALENT`
+
+**Map:** fully accelerated odd map `U`
+
+**Novelty:** elementary explicit packaging; no novelty claim
+
 **Global verdict:** Collatz remains unresolved
 
 ## 1. Map convention
@@ -336,4 +339,3 @@ identities and terminal classification over its stated finite range and checks
 the infinite counterfamily symbolically instance by instance over a stated
 finite parameter range.  It is a regression test, not a proof of the universal
 theorem.  The proof above remains prose and is not Lean-formalized.
-
