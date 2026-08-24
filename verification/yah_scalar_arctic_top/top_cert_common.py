@@ -392,4 +392,3 @@ def rup_valid(clauses: Iterable[tuple[int, ...]], candidate: tuple[int, ...], va
                     changed = True
         if not changed:
             return False
-

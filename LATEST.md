@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`f8558a566b682e8dbc4465206f9c26ac9b17760c` (2026-08-24).
+`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 
 ## Verdict
 

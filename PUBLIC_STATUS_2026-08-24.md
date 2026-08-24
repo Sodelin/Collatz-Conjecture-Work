@@ -168,8 +168,9 @@ priority claim.
 ## Provenance checkpoint
 
 The complete accepted mathematical snapshot described by this file is
-`f8558a566b682e8dbc4465206f9c26ac9b17760c`. Its parent chain includes
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, the accepted trajectory-normal
+`b75ffec58ae20ac26271ff7d59a71d3591467994`. Its parent chain includes
+`f8558a566b682e8dbc4465206f9c26ac9b17760c`, the preceding full scalar
+certificate, and `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, the trajectory-normal
 form snapshot, and `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`,
 the preceding route-obstruction baseline. Exact scope notes are
 recorded in the linked files and Git history.
