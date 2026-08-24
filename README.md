@@ -1,92 +1,124 @@
 # Collatz Conjecture Work
 
-Public archive of an AI-assisted mathematical research sequence on **corrected-log ranking functions, rational/2-adic periodic shadows, and necessary debt/approximation barriers for the accelerated odd-to-odd Collatz map**.
+An AI-assisted, adversarially audited research archive about exact Collatz
+arithmetic, proof-method obstructions, and reproducible verification artifacts.
 
-> **Status:** This repository does **not** claim a proof or disproof of the Collatz conjecture. The central results are unreviewed mathematical claims awaiting independent specialist reconstruction and proof-assistant formalization. Novelty is also not certified.
+> **Verdict:** the Collatz conjecture is **unresolved**. This repository contains
+> no universal proof, no positive nontrivial cycle, and no rigorously divergent
+> positive orbit. None of the ratings below is a probability that Collatz is
+> true or false.
 
-## Where to start
+Accepted mathematical baseline: full Git object
+`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9` (2026-08-24).
 
-For the newest plain-language checkpoint, including the exact global verdict,
-audited artifacts, reproduction commands, and the latest stopped proof bridge,
-start with:
+## The two-minute map
 
-1. [`PUBLIC_STATUS_2026-08-24.md`](PUBLIC_STATUS_2026-08-24.md)
-2. [`proof-search/APPROACH_REGISTRY.md`](proof-search/APPROACH_REGISTRY.md)
-3. [`CONTINUATION.md`](CONTINUATION.md)
+The project contains three logically different kinds of statement. Keeping
+them separate is the most important way to read the archive.
 
-The older Round 6A review sequence remains available below as the cleanest
-entry point to that earlier branch.
+| Kind | What has actually been established | What has **not** been established | Start here |
+|---|---|---|---|
+| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes for the YAH rewrite system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out other labels, longer memory, matrices, nonadditive orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
+| **Collatz-equivalent reformulation** | Global descent, termination of the exact YAH system, and termination of the normalized hard-return map are each equivalent ways to state the remaining universal problem. | An equivalent reformulation is not progress unless it supplies a new well-founded mechanism. No such universal mechanism is known here. | [Hard return system](proof-search/routes/AB_hard_boundary_return_system.md) |
+| **Still-open universal claim** | The exact acceptance gates are explicit and the main failed shortcuts are indexed. | No proof covers every positive integer; no disproof witness meets the positivity and replay gates. | [Public status](PUBLIC_STATUS_2026-08-24.md) and [approach registry](proof-search/APPROACH_REGISTRY.md) |
 
-The cleanest public review target is:
+In plain language: the project has found several rigorous reasons why tempting
+proof strategies fail, plus narrow identities that work on selected families.
+It has not found the missing argument that controls every Collatz orbit.
 
-1. [`papers/round-6a/Theorem_6A1_Public_Review_Note.md`](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
-2. [`verification/round-6a/collatz_round6a_checks.py`](verification/round-6a/collatz_round6a_checks.py)
-3. [`verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv`](verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv)
-4. [`verification/round-6a/round6a_check_output.txt`](verification/round-6a/round6a_check_output.txt)
-5. [`LEAN_TARGETS.md`](LEAN_TARGETS.md)
+## Most important review targets
 
-The public review note isolates the central Round 6A quantitative rational-period β-debt theorem and its proof, rather than presenting the work as a solution of Collatz.
+These are ordered by a combination of route importance and external-review
+value, not by a claim that they solve more of Collatz.
 
-## Current research method
+| Claim | Scoped status | Why it matters | Novelty / publication status |
+|---|---|---|---|
+| Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
+| Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
+| Round 6A quantitative beta-debt theorem | Self-contained unreviewed derivation plus diagnostic checker | Strongest conceptual theorem candidate about corrected-log rankings and rational periodic shadows | Exact formulation not found; key lift/scaling chain lacks Lean and independent specialist reconstruction |
+| L13 hard-successor normalization and rank recharge | Hostile-audited exact arithmetic; hard portion not Lean-formalized | Explains precisely why the refined Mersenne route does not close under simple replay debt or affine ranks | Classical parity arithmetic plus project-specific packaging; no priority claim |
+| Refined Mersenne easy child | Narrow Lean-checked coalescence theorem | Supplies a valid strong-induction edge for one child | Published in substance in earlier Collatz work; the Lean file is a verification artifact, not a novel theorem |
 
-The active proof-search process is now explicitly adversarial, artifact-first, mode-aware, and tool-routed.
+The complete ordinal ratings for correctness confidence, verification,
+importance, novelty, and release readiness are in the
+[claim registry](proof-search/CLAIM_REGISTRY.md). “Not located” never means
+“proved novel.” No repository-specific claim has external specialist or peer
+review, and no claim is submission-ready as a Collatz proof or disproof.
 
-Key files:
+## Choose your path
 
-- [`RESEARCH_PROTOCOL_V2.md`](RESEARCH_PROTOCOL_V2.md) — proof/disproof criteria, route statuses, hostile review, controls, computation and Lean policy.
-- [`prompts/COLLATZ_ORCHESTRATOR_V3.md`](prompts/COLLATZ_ORCHESTRATOR_V3.md) — current Prompt Intermediate Representation (PIR)-based orchestration prompt for Chat, Work, and Codex.
-- [`methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md`](methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md) — jurisdictions for Wolfram, Precise Special Functions, Python, Elicit, Consensus, Scholar Sidekick, Firecrawl, Zotero, Lean, GitHub, and Zenodo archival.
-- [`methodology/SHARED_PROOF_ATTACK_STRUCTURE.md`](methodology/SHARED_PROOF_ATTACK_STRUCTURE.md) — link to the reusable cross-project proof-attack framework.
+### If you are a math enthusiast
 
-The core rule is that adding tools changes the project's search and verification capacity, not the mathematical status of a claim. Numerical agreement, formal verification, novelty, and public archival remain separate statuses.
+1. Read the [plain-language public status](PUBLIC_STATUS_2026-08-24.md).
+2. Use the [two-minute map](#the-two-minute-map) to distinguish a method
+   obstruction from an equivalent reformulation.
+3. Treat every finite computation as a bounded check, never as evidence for all
+   integers.
 
-## Research sequence
+### If you are reviewing the mathematics
 
-| Stage | Main research state |
-|---|---|
-| Initial | Multi-agent research ledger |
-| Round 2 | Novelty and continuation |
-| Round 3 | Fixed-gap and rising-tail obstruction |
-| Round 4A | Shadow deficit and priority |
-| Round 4B | Shadow debt and compensation |
-| Round 5A | Skeleton sharpness and critical compensation |
-| Round 5B | Periodic ghost shadows and depth-tax obstructions |
-| Round 6A | Verification, distributed ghost stress, and quantitative debt necessity |
-| Round 6B | Terminal finite-sensor approximation barrier |
+1. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
+2. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
+3. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
+4. [Reproduction manifest](verification/README.md)
+5. [Lean verification policy](lean/VERIFICATION_POLICY.md)
+6. [Provenance and dates](PROVENANCE.md)
 
-**Round 6B is chronologically the terminal consolidation, but Round 6B itself recommends Round 6A as the better first target for specialist review because 6A is closer to the mathematical core.**
+### If you are continuing the project
 
-## Verification status
+Read [CONTINUATION.md](CONTINUATION.md). The live mathematical frontier is
+Round 8; older Round 6/7 files are retained as historical branches and may
+contain superseded route language.
 
-- Internal symbolic/algebraic reconstruction: **performed**
-- Executable diagnostic checks: **included for Round 6A**
-- Independent human specialist reconstruction: **pending**
-- Lean / proof-assistant formalization: **pending**
-- Certified novelty / priority: **pending**
-- Collatz convergence proof: **not claimed**
+## What is formally checked
 
-Finite computations in the included checker are diagnostic stress tests and are not presented as proofs of universal statements.
+The repository contains three narrow Lean developments:
 
-## Integrity and dates
+- [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
+- [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
+- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean).
 
-The research artifacts are dated **2026-08-01**, with the stored packet/library records extending into **2026-08-02 UTC**. This public GitHub repository was created later, on **2026-08-23**.
+The first two are included in the umbrella build. The two-pump module is
+compiled directly. A clean `lake build` does **not** formalize the full prose
+chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
+See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 
-The original per-round SHA-256 manifests from Rounds 4A through 6B are preserved unchanged in [`checksums/original/`](checksums/original/). A fresh byte-for-byte SHA-256 inventory of the archived source artifacts was computed at public archival time and is stored at [`checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`](checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt).
+## Reproduce the promoted checks
 
-Hashes establish **content identity**, not an earlier date by themselves. [`PROVENANCE.md`](PROVENANCE.md) records the distinction between the earlier artifact metadata and the later independently visible GitHub publication date.
+From the repository root:
 
-Zenodo may be used for milestone release archiving and DOI assignment. A Zenodo DOI would establish a citable deposited snapshot; it would not, by itself, mean peer review, journal acceptance, mathematical verification, or certified novelty.
+```powershell
+python -B verification\yah_2local_edge_no_go.py
+python -B verification\yah_two_state_semantic_label_no_go.py
+python -B verification\disproof_cycle_search.py
+lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
+lake build
+```
 
-## Current mirror scope
+Expected outputs, tested versions, scope limits, and retained transcripts are
+listed in [verification/README.md](verification/README.md).
 
-The repository currently publishes the central Round 6A theorem/proof, its executable checker, checker output, claim ledger, Lean formalization roadmap, provenance record, and the original checksum manifests for the broader research archive.
+## Prior art and novelty discipline
 
-The historical full-size dossier/PDF/ZIP originals remain preserved in the source file library and are identified byte-for-byte by the publication manifest. They are not being represented as if GitHub had hosted them on 2026-08-01.
+The mixed-base rewrite system and its Collatz equivalence are due to Yolcu,
+Aaronson, and Heule. Semantic labeling is classical term-rewriting theory.
+Parity-vector, cycle-equation, and Mersenne-staircase arithmetic are also
+classical. In particular, the refined Mersenne easy-child coalescence is
+published in substance; it must not be advertised as a new Collatz theorem.
 
-## Independent review requested
+The strongest potentially new artifacts are the exact narrow YAH cancellation
+certificates. A bounded primary-source search found no exact match, but their
+priority is **not certified**. The source-by-claim audit is recorded in the
+[claim registry](proof-search/CLAIM_REGISTRY.md#primary-source-novelty-audit).
 
-The most useful external question is:
+## Historical archive and integrity
 
-> Are the rational-period positive-lift/same-phase lemmas and the Round 6A quantitative β-debt theorem correct, and is the resulting distributed critical-debt law already known in rational-cycle / 2-adic Collatz theory or termination-ranking theory?
+- [LATEST.md](LATEST.md) is the short pointer to the accepted snapshot.
+- [Round 6A review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
+  remains the cleanest statement of that earlier corrected-log branch.
+- [Cycle-1 closure audit](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
+  records the Round-7 corrections.
+- Original checksum manifests are preserved under [checksums/](checksums/).
 
-A Lean formalization of the rational-period lift and Round 6A theorem chain would materially strengthen correctness confidence.
+Hashes establish content identity, not mathematical truth, peer review, or an
+earlier public date. See [PROVENANCE.md](PROVENANCE.md).

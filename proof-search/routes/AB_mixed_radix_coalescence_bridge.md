@@ -1,9 +1,17 @@
 # Route AB — Mixed-radix rewrite states + strong-induction coalescence
 
 **Cycle:** Round 7, 2026-08-23  
-**Status:** `ACTIVE` architecture synthesis  
+**Status:** historical architecture synthesis; current registry status
+`BLOCKED_NO_MECHANISM`
 **Mathematical status:** exact representation bridge proved below; global certificate not found  
 **Novelty:** no claim; the mixed-base SRS is prior art and the bridge uses its published affine semantics
+
+> **Round-8 supersession notice:** this note preserves the exact representation
+> bridge, but its old active-route recommendation is no longer current. The
+> hard successor/rank obstruction and exact Collatz-equivalent return system are
+> recorded in [`L13_Refined_Mersenne_Child_Macros.md`](../lemmas/L13_Refined_Mersenne_Child_Macros.md)
+> and [`AB_hard_boundary_return_system.md`](AB_hard_boundary_return_system.md).
+> Use the [`APPROACH_REGISTRY.md`](../APPROACH_REGISTRY.md) for live status.
 
 ## 1. Why merge Routes A and B?
 
@@ -230,6 +238,14 @@ Extend the existing termination-prover search space from primitive symbol interp
 
 ## 9. Current verdict
 
-**Keep A and B separately visible, but treat AB as the highest-value synthesis route.**
+**Historical Round-7 verdict, superseded in Round 8:** keep A and B separately
+visible. Route AB is now `BLOCKED_NO_MECHANISM`, not the current highest-value
+active route.
 
 The shared mathematical core is now explicit. The next question is not whether residue arithmetic and mixed-radix rewriting are analogous; they are exact representations of the same affine branch mechanics. The open question is whether coalescence supplies a finite macro progress notion that standard local termination interpretations fail to expose.
+
+The later hard-return analysis makes that open question exact: boundary
+normalization closes the state space, but universal termination of the resulting
+return map is Collatz-equivalent, and the audited simple replay-debt/affine ranks
+fail. Reopen this architecture only with a genuinely richer well-founded rank
+or a new guarded uniformly smaller target.

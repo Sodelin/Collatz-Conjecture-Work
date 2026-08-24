@@ -1,0 +1,79 @@
+# Verification and reproduction manifest
+
+This manifest maps promoted claims to their executable evidence. A successful
+command verifies only the scope in the final column; it does not promote a
+bounded computation or narrow formal theorem into a Collatz proof.
+
+## Tested environment
+
+Fresh audit on 2026-08-24 at
+`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`:
+
+```text
+Python 3.14.5
+Lake 5.0.0-src+819816b
+Lean 4.33.1 (commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)
+```
+
+The Python checkers use the standard library. The Lean toolchain is pinned by
+[`lean-toolchain`](../lean-toolchain).
+
+## Freshly replayed promoted checks
+
+Run from the repository root.
+
+| Claim ID | Command | Expected decisive output | Exact scope |
+|---|---|---|---|
+| `A-YAH-2LOCAL-001` | `python -B verification\yah_2local_edge_no_go.py` | `weighted strict lower bound = 1`, `W_(f,f) <= -1`, then `PASS` | Replays the 13-row cancellation for the stated unlabeled adjacent-edge additive class. |
+| `A-YAH-2STATE-001` | `python -B verification\yah_two_state_semantic_label_no_go.py` | `model equations = 22`, `fixed-terminal legal contexts = 441`, `symbol certificate rows = 8`, `edge certificate rows = 50`, then `PASS` | Reconstructs the fixed two-state labeled rule table and the two positive-integer cancellations. |
+| `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
+| `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+
+All five commands passed in the fresh audit. The two YAH checkers currently
+regenerate their evidence rather than comparing against a committed stdout
+transcript. The cycle-DP output is retained in
+[`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
+
+If `lake` is not on `PATH`, invoke the executable installed by `elan`; do not
+hard-code another contributor's home directory into scripts or documentation.
+
+## Narrow Lean boundary
+
+| Module | Formalized statement | Axiom report / caveat |
+|---|---|---|
+| [`CollatzWork/InverseWordBoundary.lean`](../lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the exact `8x+5 / 8x+4` regression witness. | `equalSlopeSmaller` is axiom-free; the witness reports standard `propext`, `Quot.sound`. |
+| [`CollatzWork/RefinedMersenneChild.lean`](../lean/CollatzWork/RefinedMersenneChild.lean) | Refined easy-child arithmetic, iterate identity, and coalescence. | Arithmetic theorem reports standard `propext`, `Classical.choice`, `Quot.sound`; remaining exported theorems report `propext`, `Quot.sound`. |
+| [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; not imported by `CollatzWork.lean`. |
+
+No module formalizes Round 6A, full L5, the L13 hard-child classification,
+the cross-label recharge/rank theorem, the hard return map, YAH relative
+termination, or Collatz.
+
+## Retained historical diagnostics
+
+These commands have committed outputs, but they were not all rerun in the
+2026-08-24 final documentation pass.
+
+| Area | Command | Retained output | Interpretation |
+|---|---|---|---|
+| Round 6A | `python -B verification\round-6a\collatz_round6a_checks.py` | [`round-6a/round6a_check_output.txt`](round-6a/round6a_check_output.txt), `PASS A`–`PASS G` | Indexing/construction stress tests; not a proof of the asymptotic theorem. |
+| L8 Farey barrier | `python -B verification\round7_farey_coefficient_barrier.py` | [`round7_farey_coefficient_barrier_output_2026-08-23.txt`](round7_farey_coefficient_barrier_output_2026-08-23.txt) | Exact arithmetic certificate conditional on named external inputs. |
+| L9–L12 oracle | `python -B verification\round7_first_crossing_oracle.py` | [`round7_first_crossing_oracle_output_2026-08-23.txt`](round7_first_crossing_oracle_output_2026-08-23.txt) | Finite regression/oracle only; it does not prove the universal prose statements. |
+| Exhaustive one-shot L4/L5 class | `python -B verification\round7_exhaustive_inverse_word_classifier.py` | [`round7_exhaustive_inverse_word_classifier_output_2026-08-23.txt`](round7_exhaustive_inverse_word_classifier_output_2026-08-23.txt) | Exact for the configured finite cylinders and corrected one-shot class. |
+| Accelerated macro sweep | `python -B verification\round7_accelerated_macro_coalescence_search.py` | [`round7_accelerated_macro_coalescence_output_2026-08-23.txt`](round7_accelerated_macro_coalescence_output_2026-08-23.txt) | Different certificate class from the ordinary `1903/145` sweep. |
+| Survivor signatures | `python -B verification\round7_survivor_language_signatures.py` | [`round7_survivor_language_signatures_output_2026-08-23.txt`](round7_survivor_language_signatures_output_2026-08-23.txt) | Finite structural diagnostic; no small-automaton theorem. |
+
+## Common interpretation errors
+
+- `PASS` means that the checker reconstructed its finite algebra/certificate;
+  it does not mean “Collatz passed.”
+- A clean Lean build checks only imported declarations and their stated
+  hypotheses. It does not validate prose, novelty, source mapping, or omitted
+  semantic bridges.
+- `1903/145` and `1904/144` belong to different map/certificate conventions.
+  Always cite the exact script and output.
+- The old arbitrary-representative cycle DP is superseded. Only the max-`C`
+  implementation and its bounded result may be cited.
+- The project verification policy is
+  [`lean/VERIFICATION_POLICY.md`](../lean/VERIFICATION_POLICY.md).

@@ -4,6 +4,10 @@ Last structural update: 2026-08-24, bounded closure sprint.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
+For atomic claim confidence, verification, importance, novelty, readiness, and
+evidence, use [`CLAIM_REGISTRY.md`](CLAIM_REGISTRY.md). A route may be active
+even when none of its current claims is a universal certificate.
+
 | ID | Family | Exact target | Current status | Main obstacle | Reopen / next action |
 |---|---|---|---|---|---|
 | A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Unlabeled adjacent-edge weights and the audited two-state semantic labeling both fail for additive symbol/edge orders, including every finite lexicographic version | Reopen only with a different semantic algebra, longer memory, matrix/nonadditive order, and an explicit candidate certificate |

@@ -1,70 +1,83 @@
-# Lean formalization targets
+# Lean verification status and targets
 
-The project does **not** currently include a Lean proof. This file records a suggested formalization order so that a future Lean effort has a bounded target rather than trying to formalize the entire Collatz project at once.
+The repository contains **three narrow Lean formalizations**. It does not
+contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
-## Target 1: accelerated odd map and valuations
+Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 
-Formalize the odd-to-odd map
+## Existing checked modules
 
-\[
-S(n)=\frac{3n+1}{2^{\nu_2(3n+1)}}
-\]
+| Module | Exact checked scope | Not checked |
+|---|---|---|
+| [`lean/CollatzWork/InverseWordBoundary.lean`](lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the `8x+5 / 8x+4` coalescence regression. | Full L4/L5 guards, completeness, or Collatz. |
+| [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
+| [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-for positive odd integers, together with the exact valuation facts needed to iterate a prescribed finite valuation word.
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) imports the first
+two modules. The two-pump module must also be compiled directly.
 
-## Target 2: affine valuation-word iterate
+```powershell
+lake build
+lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
+```
 
-For a word \(a=(a_0,\ldots,a_{m-1})\), total \(A=\sum a_i\), formalize
+The 2026-08-24 replay passed. The recorded theorem dependencies are summarized
+in [verification/README.md](verification/README.md). Standard Lean axioms such
+as `propext`, `Quot.sound`, and, for one arithmetic theorem,
+`Classical.choice` are not `sorryAx`; they still belong in the axiom footprint.
 
-\[
-S^m(x)=\frac{3^m x+C(a)}{2^A}
-\]
+## Highest-value pending targets
 
-on the residue class realizing the word.
+### 1. Exact YAH cancellation certificates
 
-## Target 3: rational periodic point
+Formalize the fixed rule table, canonical/fixed-terminal context predicates,
+the 13-row unlabeled adjacent-edge cancellation, and the 8-/50-row fixed
+two-state labeled cancellations. Preserve the narrow conclusion: these kill
+specific additive scalar/finite-lex classes, not all termination orders.
 
-Under \(3^m>2^A\), define the associated rational periodic point and prove it realizes the valuation word exactly.
+### 2. L13 hard successor and rank obstruction
 
-## Target 4: positive integer lift
+Formalize:
 
-This is the highest-priority fragile lemma. Prove that for every repetition depth \(r\) and adequate 2-adic reserve, a positive odd integer can be chosen whose accelerated trajectory realizes exactly \(r\) copies of the word, including the final valuation endpoint.
+1. the guarded hard-child classification through `t<=L+2` in the exact
+   unrefined L4 class;
+2. successor-cell normalization by `v_2(Y+1)` and the odd quotient modulo 4;
+3. same-label debt decrement and cross-label recharge;
+4. the exact guarded affine-rank counterexample.
 
-## Target 5: same-phase scaling
+Do not infer that unbounded valuation depth rules out every finite symbolic
+automaton.
 
-Prove exact return scaling around the rational periodic point:
+### 3. Hard boundary normalizer and equivalence
 
-\[
-n_{i+(k+1)m}-c_i
-=
-\lambda\,(n_{i+km}-c_i),
-\qquad
-\lambda=3^m/2^A.
-\]
+Formalize the decreasing boundary reducer, total normalizer, hard return map,
+and both directions of its Collatz equivalence. This would verify the
+reformulation; it would not prove termination of the return map.
 
-Extract the corresponding logarithmic asymptotic used by Round 6A.
+### 4. Round 6A rational-period beta-debt chain
 
-## Target 6: last-minimum β-debt theorem
+This remains the most important older theorem reconstruction. Isolate and prove:
 
-Formalize `Theorem_6A1_Public_Review_Note.md`, especially:
+1. accelerated odd-map and valuation-word semantics;
+2. rational periodic point and exact positive lift;
+3. endpoint valuation and same-phase scaling;
+4. last-global-minimum suffix/floor inequalities;
+5. the asymptotic beta-debt lower bound and explicit `w_m` limit.
 
-1. the last-global-minimum suffix property;
-2. the floor inequality;
-3. \(\log_2N_r=rA+k_r\log_2\lambda+O(1)\);
-4. the rearrangement yielding
-   \[
-   \liminf k_r/r\ge(m-\beta A)/(m+\beta\log_2\lambda);
-   \]
-5. the same-phase correction-debt lower bound.
+The current Python checker is diagnostic and cannot replace these proofs.
 
-## Target 7: explicit `w_m` limit
+### 5. L0–L12 prose chain
 
-For \(w_m=(2,1^{m-1})\), prove symbolically that the normalized necessary debt coefficient tends to
-
-\[
-\rho_\beta=\frac{1-\beta}{1+\beta\log_2(3/2)}.
-\]
+Formalize bounded arithmetic lemmas before importing external results. L7/L8
+must expose verified-range and Rozier–Terracol statements as named hypotheses
+until independently imported. L11 must retain the immutable-root limitation;
+do not formalize the superseded renewal inference.
 
 ## Verification policy
 
-Passing Python tests is not a substitute for the Lean proof. The Python checker is retained only as an executable diagnostic record and for finding indexing/valuation mistakes during formalization.
+Follow [`lean/VERIFICATION_POLICY.md`](lean/VERIFICATION_POLICY.md): pin the
+toolchain, inspect axiom footprints, reject `sorry`/`sorryAx` and hidden global
+assumptions, and keep semantic/source review separate from kernel checking.
+
+A successful build verifies the declarations it compiles. It does not certify
+novelty, public priority, omitted prose, or the Collatz conjecture.

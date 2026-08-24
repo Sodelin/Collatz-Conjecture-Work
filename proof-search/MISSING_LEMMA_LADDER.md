@@ -1,6 +1,14 @@
 # Missing-lemma ladder: from current work to an actual Collatz resolution
 
-This is the target-first map for Round 7. It separates **formalizing what we already have** from **inventing the theorem that would actually cross the remaining gap**.
+> **Historical Round-7 target map.** The arithmetic rungs remain useful, but
+> this file predates L13, the YAH cancellation certificates, and the exact hard
+> return system. For current claim status and the Round-8 missing object, start
+> with [`CLAIM_REGISTRY.md`](CLAIM_REGISTRY.md),
+> [`APPROACH_REGISTRY.md`](APPROACH_REGISTRY.md), and
+> [`../CONTINUATION.md`](../CONTINUATION.md).
+
+This target-first map separates **formalizing what we already have** from
+**inventing the theorem that would actually cross the remaining gap**.
 
 ## Rung 0 — Freeze the exact endpoint
 

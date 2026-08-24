@@ -1,148 +1,96 @@
 # Continuation checkpoint
 
-**Active ownership after 2026-08-23 handoff: Codex.**
+This is the restart pointer for mathematical work after the accepted Round-8
+baseline `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`.
 
-This file is the restart pointer for the Collatz project. The prior version emphasized Round 6A/6B because those were the earlier stable audit artifacts. The active mathematical frontier has since moved into **Round 7**.
+## First: preserve the logical boundary
 
-For the original transfer snapshot, read:
+- Overall verdict: **unresolved**.
+- A solved certificate-class obstruction is not a Collatz proof.
+- A Collatz-equivalent return map or termination statement is not progress by
+  itself; a new well-founded mechanism is required.
+- A disproof requires an exactly replayed positive nontrivial cycle or a
+  positive orbit with a rigorous divergence proof.
+- Rational, negative, 2-adic, noncanonical, auxiliary-only, and finite-shadow
+  loops do not pass the disproof gate.
 
-[`CODEX_HANDOFF_2026-08-23.md`](CODEX_HANDOFF_2026-08-23.md)
+Before proposing work, read:
 
-Then read the chronologically later hostile reconstruction:
+1. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md)
+2. [Approach registry](proof-search/APPROACH_REGISTRY.md)
+3. [Failure ledger](proof-search/FAILURE_LEDGER.md)
+4. [Verification manifest](verification/README.md)
 
-[`proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md`](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
+## Current route state
 
-## Current research frontier
+| Routes | Status | Exact boundary |
+|---|---|---|
+| A, B, C | `ACTIVE` | No universal certificate candidate exists. Route A now excludes unlabeled adjacent-edge weights and one fixed two-state additive symbol/edge algebra. |
+| E, F | `ACTIVE_LOW_COST` | No positive cycle or divergent positive witness exists. Keep witness searches bounded and exact. |
+| AB, D, G, H, I | `BLOCKED_NO_MECHANISM` | Each has exact obstructions but no new mechanism that crosses them. |
+| J | `BLOCKED_EQUIVALENT` as proof route | Any fixed computation leaves infinitely many cases. |
 
-### Stable earlier audit core
+The [approach registry](proof-search/APPROACH_REGISTRY.md) is canonical if this
+summary and an older route note disagree.
 
-- Round 6A remains the best externally reviewable statement of the corrected-log / rational-period debt theorem.
-- Round 6B remains the chronologically terminal extension of that older ranking-function branch.
-- Neither resolves Collatz.
+## Exact remaining proof object
 
-### Active Round-7 chain
+A proof must provide at least one of the following with full semantics and
+coverage:
 
-Read in order:
+- a well-founded interpretation for the exact YAH rewrite system, checking
+  every rule/context and Collatz reflection; or
+- a finite/regular guarded macro graph covering every positive input, with a
+  genuinely well-founded rank on every back-edge; or
+- another theorem that implies global descent for every odd `n>1` without
+  assuming an equivalent form of the conjecture.
 
-1. `proof-search/lemmas/L0_Global_Descent_Equivalence.md`
-2. `proof-search/lemmas/L2_Cylinder_Refinement_and_Slope_Pruning.md`
-3. `proof-search/lemmas/L4_General_Inverse_Word_Coalescence.md`
-4. `proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md`
-5. `proof-search/lemmas/L6_Minimal_Counterexample_Exit_Constraint.md`
-6. `proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md`
-7. `proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md`
-8. `proof-search/lemmas/L10_Near_Return_and_Dual_Residue_Certificate.md`
-9. `proof-search/lemmas/L11_Near_Return_Hard_Exit_Inheritance.md`
-10. `proof-search/lemmas/L12_Hard_Exit_Gap_Valuation_Transition.md`
+For the current hard-family synthesis, the return map in
+[`AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md)
+is exact and closed, but its termination is Collatz-equivalent. The same-label
+debt rank and every lower-bounded affine combination of the audited label
+depth/bitlength/debt variables are already refuted. Reopening Route AB requires
+a richer nonlinear/cross-label rank or a new uniformly smaller guarded target.
 
-The strongest current synthesis is:
+For the minimal-counterexample synthesis, L11 is one-shot. A continuation must
+carry the immutable root across local descents, non-descending edges, infinite
+coefficient-stopping branches, band exits, and the zero-gap cycle branch.
 
-> a hypothetical least counterexample either has infinite coefficient stopping time or, at its first contraction, obeys an exact near-mechanical prefix and tiny additive near-return constraint; inside the L11 band, both endpoints are hard `-1`-exit states and their positive gap obeys L12's exact valuation transition.
+## Do not duplicate these searches
 
-This is a necessary-condition branch architecture, **not a proof**. L11 does
-not make it recursive: minimality keeps later iterates above the immutable
-least counterexample, but does not keep them above each restarted endpoint or
-guarantee another finite coefficient stopping time.
+- Increasing depth in the same unrefined L4/L5 inverse-word class.
+- Finite uniformly bounded direct-descent covers.
+- The old arbitrary-representative cycle DP.
+- Additive unlabeled adjacent-edge YAH weights.
+- Additive symbol/edge scalar or finite-lex weights in the fixed two-state
+  suffix algebra.
+- Cyclic rotation alone as an independent two-pump resultant.
+- Affine hard-state ranks using only the audited label depth, parameter
+  bitlength, and replay debt.
+- Treating the normalized hard return map as though it already decreases.
 
-The Cycle-1 audit also corrected L5. A uniformly smaller affine inverse family
-may have the same leading coefficient as the original family when its
-intercept is smaller. The corrected complete class bound is `|w|<=t`, with
-the equal-slope boundary occurring exactly at depth `t`.
+See [FAILURE_LEDGER.md](proof-search/FAILURE_LEDGER.md) for the exact
+counterexamples and reopening conditions.
 
-## Main unsolved bridge
+## Formalization boundary
 
-A closure theorem within the current L8-L12/Route-AB synthesis must address
-every branch rather than merely enlarge a finite verification bound. It must:
+Use [LEAN_TARGETS.md](LEAN_TARGETS.md) and
+[`lean/VERIFICATION_POLICY.md`](lean/VERIFICATION_POLICY.md). The existing
+narrow modules are useful regressions; they do not formalize Round 6A, full L5,
+the L13 hard/rank statements, the hard return equivalence, the YAH
+cancellations, or Collatz.
 
-1. rule out or absorb infinite coefficient stopping time;
-2. handle finite contractions with odd count `s>=n_*`;
-3. turn `s<n_*` endpoint inheritance into a total rooted transition system
-   with a well-founded rank, including local descents into `[n_*,y)`;
-4. close the zero-gap positive-cycle branch; and
-5. supply complete coverage and exact semantics for any proposed finite graph.
+## Required handoff packet for any new claim
 
-The main active synthesis route is:
+Provide:
 
-`proof-search/routes/AB_mixed_radix_coalescence_bridge.md`
+1. claim ID and exact quantified statement;
+2. map/domain/encoding conventions and scope exclusions;
+3. dependencies and full Git object hash;
+4. proof, checker, or Lean artifact plus reproducible command;
+5. adversarial counterexample search and remaining blocker;
+6. primary-source novelty classification using the grades in the
+   [claim registry](proof-search/CLAIM_REGISTRY.md).
 
-The exact limitation of its current one-shot inverse-word semantics is:
-
-`proof-search/routes/AB_mersenne_inverse_word_no_go.md`
-
-That informal theorem derives that no unrefined L4/L5 inverse word, at any depth, can
-reduce a Mersenne cylinder. Route AB now requires parameter refinement, an
-explicit canonical-boundary mechanism, and a ranked recursive graph.
-
-## Do not restart these dead ends without a new mechanism
-
-Read:
-
-`proof-search/FAILURE_LEDGER.md`
-
-In particular, do not substitute:
-
-- fixed-depth residue enumeration;
-- average drift;
-- bounded/local corrected-log corrections;
-- rational/2-adic ghost trajectories;
-- or a renamed global-descent statement
-
-for the missing global arithmetic mechanism.
-
-## Formalization priorities
-
-Use `lean/VERIFICATION_POLICY.md`.
-
-Best bounded Lean targets are L0, L2, L4, corrected L5, L6, L9, L10,
-L11, L12, and the Mersenne no-go before trying to formalize the complete
-conjecture. L8 should expose its external inputs explicitly as hypotheses
-until independently imported/formalized.
-
-## Existing executable record
-
-Round 6A:
-
-- `verification/round-6a/collatz_round6a_checks.py`
-- `verification/round-6a/round6a_check_output.txt`
-- `verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv`
-
-Round 7 includes:
-
-- `verification/round7_exhaustive_inverse_word_classifier.py`
-- `verification/round7_exhaustive_inverse_word_classifier_output_2026-08-23.txt`
-- `verification/round7_farey_coefficient_barrier.py`
-- `verification/round7_farey_coefficient_barrier_output_2026-08-23.txt`
-- `verification/round7_first_crossing_oracle.py`
-- `verification/round7_first_crossing_oracle_output_2026-08-23.txt`
-- `lean/CollatzWork/InverseWordBoundaryStatement.lean`
-- `lean/CollatzWork/InverseWordBoundary.lean`
-- `verification/lean_inverse_word_boundary_build_output_2026-08-23.txt`
-- the earlier affine/macro search diagnostics.
-
-These scripts are diagnostic/certificate generators unless and until their semantics are independently proved/formalized.
-
-The Lean files above type-check only the corrected equal-slope affine boundary
-and its concrete `8x+5 / 8x+4` regression under pinned Lean 4.33.1. They do not
-formalize all of L5 or any Collatz resolution theorem.
-
-## Provenance and integrity
-
-See:
-
-- `PROVENANCE.md`
-- `checksums/`
-- `CODEX_HANDOFF_2026-08-23.md`
-
-Git history provides public provenance from commit time onward. Earlier August 1–2 chronology remains supported by the preserved source artifacts and original checksum records, not by backdated Git commits.
-
-## Claim discipline
-
-As of this checkpoint:
-
-- Full Collatz proof: **no**
-- Full Collatz disproof: **no**
-- Independent specialist verification: **pending**
-- Complete Lean formalization: **pending**
-- Novelty certification for Round-7 lemmas: **pending**
-
-The project is now intentionally handed off to Codex to avoid parallel agents independently extending the same active branch.
+Do not spend a full search cycle unless the proposal names the old blocker and
+the genuinely new mechanism that bypasses it.

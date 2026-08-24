@@ -266,6 +266,75 @@ Every local contraction, non-descending contraction, infinite coefficient-
 stopping branch, band exit, and zero-gap cycle branch must be covered, and all
 back-edges must decrease an independently proved well-founded rank.
 
+## F020 — scalar adjacent-edge weights orient the exact YAH system
+
+**Class:** `FALSE` for the stated canonical additive class.
+
+The 13-row positive-integer cancellation in
+[`routes/A_yah_2local_edge_potential_no_go.md`](routes/A_yah_2local_edge_potential_no_go.md)
+forces `W_(f,f)<=-1`. Repetition on canonical strings `^f^m$` then makes the
+potential unbounded below. The exact checker reconstructs the signed deltas and
+prints `PASS`.
+
+**Do not promote beyond scope:** this excludes scalar adjacent-pair additive
+weights on the audited contexts. It does not exclude semantic labels, longer
+windows, matrices, nonadditive orders, or termination of the rewrite system.
+
+## F021 — the fixed two-state suffix labeling rescues additive YAH orders
+
+**Class:** `FALSE` for additive labeled-symbol/edge scalar and finite-lex
+orders in this one algebra.
+
+For the exact two-state suffix maps recorded in
+[`routes/A_yah_two_state_semantic_label_no_go.md`](routes/A_yah_two_state_semantic_label_no_go.md),
+an 8-row symbol cancellation and 50-row adjacent-edge cancellation have zero
+weighted delta but strictly positive dynamic mass. The same coordinatewise
+identity kills every finite lexicographic tuple of those additive weights.
+
+**Reopen only if:** a proposal changes the semantic algebra, locality/memory,
+or order class and supplies an exact certificate. Do not infer that all
+semantic labeling or all matrix/nonadditive interpretations fail.
+
+## F022 — cyclic rotation supplies an independent two-pump resultant
+
+**Class:** `FALSE` algebraic independence claim.
+
+The exact coefficient identities `aB=cC` and `gA=dE` imply
+`cgAC-adBE=0` identically. Thus rotating the same two-pump word equation does
+not produce the hoped nonzero constant resultant. The derivation and a narrow
+Lean proof are linked from
+[`disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md).
+
+**Do not promote beyond scope:** this kills cyclic-rotation-only elimination,
+not every multi-pump method and not any positive cycle.
+
+## F023 — label depth, bitlength, and replay debt admit a universal affine rank
+
+**Class:** `FALSE` for the stated lower-bounded affine class.
+
+L13 equations (20)–(27) prove exact same-label debt decrease and arbitrary
+cross-label recharge. The guarded transition
+`17,184,927 -> 97,873,535` refutes every lower-bounded affine combination of
+the audited label depth, parameter bitlength, and `D`/`R` replay variables.
+
+**Reopen only if:** the rank uses genuinely richer state or nonlinear order and
+is checked on every guarded successor. This result does not rule out all finite
+automata or all well-founded ranks.
+
+## F024 — boundary normalization itself supplies Route-AB descent
+
+**Class:** `EQUIV risk`.
+
+The decreasing boundary reducer and total normalizer in
+[`routes/AB_hard_boundary_return_system.md`](routes/AB_hard_boundary_return_system.md)
+produce a closed return map on the hard set. Universal termination of that map
+is equivalent to Collatz. The exact `31 -> 182 -> 91` return grows and recharges
+the current replay debt, so closure alone does not supply descent.
+
+**Reopen only if:** an independently proved well-founded mechanism ranks every
+hard return, or a new guarded macro coalesces with a uniformly smaller positive
+target. Renaming the return obligation is not progress.
+
 ---
 
 # Reopening template

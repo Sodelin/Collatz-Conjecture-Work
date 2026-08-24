@@ -11,6 +11,12 @@ results that have survived adversarial replay. Their main value is to identify
 which proposed proof and disproof mechanisms are sound, which are incomplete,
 and which fail for precise reasons.
 
+For claim-by-claim confidence, verification, importance, novelty, readiness,
+scope exclusions, and immutable provenance, use the
+[`proof-search/CLAIM_REGISTRY.md`](proof-search/CLAIM_REGISTRY.md). In
+particular, distinguish a solved route-class obstruction from a
+Collatz-equivalent reformulation and from the still-open universal claim.
+
 ## Plain-language summary
 
 The project found a valid shortcut for one half of a carefully refined
@@ -38,6 +44,9 @@ These are proof-method audits, not a solution. They prevent future work from
 mistaking the same gaps for a proof.
 
 ## Audited artifacts
+
+This table is artifact-oriented and sometimes groups claims with different
+verification levels. The atomic claim registry is canonical for promotion.
 
 | Artifact | Status | What it establishes |
 |---|---|---|
@@ -140,9 +149,13 @@ priority claim.
 
 ## Provenance checkpoint
 
-The audited mathematical head before this public-status addition is
-`e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`. Earlier accepted objects and exact
-scope notes are recorded in the linked files and Git history. The nonexistent
-string `409cb63b69b5fb6af676166573e752f1f4a5ff38` must never be used as
-provenance; the valid similarly prefixed object is
+The complete accepted mathematical snapshot described by this file is
+`8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. Its parent
+`fa3de5b04337d8cbffc9a360074539b852496ca2` introduced the initial dated
+public-status checkpoint; `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`
+is the earlier hard-successor-rank commit in that ancestry. Exact scope notes
+are recorded in the linked files and Git history.
+
+The nonexistent string `409cb63b69b5fb6af676166573e752f1f4a5ff38`
+must never be used as provenance; the valid similarly prefixed object is
 `409cb63d6805b00b3dcd96576ac172c58b16384e`.
