@@ -6,6 +6,17 @@ Public archive of an AI-assisted mathematical research sequence on **corrected-l
 
 ## Where to start
 
+For the newest plain-language checkpoint, including the exact global verdict,
+audited artifacts, reproduction commands, and the latest stopped proof bridge,
+start with:
+
+1. [`PUBLIC_STATUS_2026-08-24.md`](PUBLIC_STATUS_2026-08-24.md)
+2. [`proof-search/APPROACH_REGISTRY.md`](proof-search/APPROACH_REGISTRY.md)
+3. [`CONTINUATION.md`](CONTINUATION.md)
+
+The older Round 6A review sequence remains available below as the cleanest
+entry point to that earlier branch.
+
 The cleanest public review target is:
 
 1. [`papers/round-6a/Theorem_6A1_Public_Review_Note.md`](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
