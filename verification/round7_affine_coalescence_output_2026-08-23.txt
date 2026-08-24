@@ -1,0 +1,32 @@
+Round 7 affine coalescence diagnostic
+Date: 2026-08-23
+Script: verification/round7_affine_coalescence_search.py
+Search settings: K=3..9, backward parity-word depth <=10
+
+IMPORTANT: This is a bounded certificate search, not a proof or disproof of Collatz.
+
+Exact demo found and independently algebraically readable:
+  U^5(32*x+3) = U(12*x+1), with 0 < 12*x+1 < 32*x+3 for x>=1
+
+Sweep:
+K,total_odd_cylinders,certified,uncertified
+3,4,2,2
+  first uncertified residues: [3, 7]
+4,8,4,4
+  first uncertified residues: [3, 7, 11, 15]
+5,16,10,6
+  first uncertified residues: [7, 11, 15, 23, 27, 31]
+6,32,20,12
+  first uncertified residues: [7, 11, 15, 23, 27, 31, 39, 43, 47, 55, 59, 63]
+7,64,44,20
+  first uncertified residues: [7, 11, 15, 27, 31, 39, 43, 47, 59, 63, 71, 75, 79, 91, 95, 103, 107, 111, 123, 127]
+8,128,96,32
+  first uncertified residues: [7, 15, 27, 31, 39, 47, 59, 63, 71, 79, 91, 95, 103, 111, 123, 127, 135, 143, 155, 159, 167, 175, 187, 191]
+9,256,200,56
+  first uncertified residues: [7, 27, 31, 39, 47, 59, 63, 71, 91, 95, 103, 111, 123, 127, 135, 155, 159, 167, 175, 187, 191, 199, 219, 223]
+
+Interpretation:
+- The search recovers exact strong-induction/coalescence shortcuts and increasingly many cylinders at larger K.
+- It does not close all residue classes in this shallow certificate class.
+- Increasing K alone is not the intended proof strategy; stopping times are unbounded.
+- The next target is a finite recursive graph/state machine with ranked back-edges, potentially using mixed binary/ternary state as in the exact string-rewriting formulation.
