@@ -28,14 +28,29 @@ as `propext`, `Quot.sound`, and, for one arithmetic theorem,
 
 ## Highest-value pending targets
 
-### 1. Exact YAH cancellation certificates
+### 1. Bounded-alphabet endpoint-residue gate
+
+Formalize `F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` as a reusable interface:
+
+1. affine-prefix coefficients and the unique endpoint representative;
+2. the exact bounded carry identity and normalized positive-carry gap;
+3. positive realization implies eventual zero carry;
+4. eventual zero carry reconstructs integral, positive, odd predecessors with
+   the prescribed exact valuations;
+5. the vanishing and cubic-root-rate dichotomy.
+
+This is an elementary, sharply scoped formalization target. It would certify
+the realizability gate, not decide the carry branch for any new infinite code
+and not prove or disprove Collatz.
+
+### 2. Exact YAH cancellation certificates
 
 Formalize the fixed rule table, canonical/fixed-terminal context predicates,
 the 13-row unlabeled adjacent-edge cancellation, and the 8-/50-row fixed
 two-state labeled cancellations. Preserve the narrow conclusion: these kill
 specific additive scalar/finite-lex classes, not all termination orders.
 
-### 2. L13 hard successor and rank obstruction
+### 3. L13 hard successor and rank obstruction
 
 Formalize:
 
@@ -48,13 +63,16 @@ Formalize:
 Do not infer that unbounded valuation depth rules out every finite symbolic
 automaton.
 
-### 3. Hard boundary normalizer and equivalence
+### 4. Hard boundary normalizer and mixed inverse layer
 
 Formalize the decreasing boundary reducer, total normalizer, hard return map,
-and both directions of its Collatz equivalence. This would verify the
-reformulation; it would not prove termination of the return map.
+and both directions of its Collatz equivalence. Add the L15 mixed inverse-word
+formula, exact inverse-fiber guards, and the explicit nonconfluence witness as
+separate theorems. This would verify the reformulation and arithmetic layer;
+it would not prove termination of the return map or universal certificate
+coverage.
 
-### 4. Round 6A rational-period beta-debt chain
+### 5. Round 6A rational-period beta-debt chain
 
 This remains the most important older theorem reconstruction. Isolate and prove:
 
@@ -66,7 +84,7 @@ This remains the most important older theorem reconstruction. Isolate and prove:
 
 The current Python checker is diagnostic and cannot replace these proofs.
 
-### 5. L0–L12 prose chain
+### 6. L0–L12 prose chain
 
 Formalize bounded arithmetic lemmas before importing external results. L7/L8
 must expose verified-range and Rozier–Terracol statements as named hypotheses

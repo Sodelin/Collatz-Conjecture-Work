@@ -1,7 +1,7 @@
 # Atomic claim and evidence registry
 
 **Canonical baseline:**
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
 
 **Global verdict:** Collatz is unresolved. No row below is a universal proof,
 a positive nontrivial cycle, or a rigorously divergent positive orbit.
@@ -75,15 +75,17 @@ Collatz is true. A formally checked prior-art identity can have `C3/V3` but
 
 | ID | Exact scoped claim | Grades | Why review it now | Primary missing evidence |
 |---|---|---|---|---|
+| `F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` | For every bounded infinite accelerated valuation code, positive-odd realizability is equivalent to eventual zero carry, normalized endpoint-residue vanishing, and strict subcubic root growth; failure has the exact full-rate alternative. | `C2 V2 I3 N2 R2` | Strongest exact new auxiliary theorem in the current snapshot: it isolates the fixed-seed infinite-tail gate without assuming Collatz. | Independent specialist proof reconstruction, Lean formalization, and a broader prior-art search; it still does not decide either branch for the hard `{1,3}` codes. |
 | `A-YAH-2STATE-001` | In the fixed two-state suffix algebra, positive-integer cancellations exclude additive labeled-symbol and labeled-adjacent-edge orders, including every finite lexicographic tuple. | `C3 V2 I3 N2 R2` | Strongest potentially new exact finite certificate in the archive. | Independent term-rewriting specialist reconstruction; formal certificate; broader literature audit. |
 | `A-YAH-2LOCAL-001` | A 13-row cancellation excludes bounded-below scalar adjacent-pair additive potentials on the stated canonical YAH contexts. | `C3 V2 I3 N2 R2` | Compact, reproducible route-class no-go. | Independent specialist reconstruction and exact placement among standard interpretation classes. |
 | `6A-T1` | Under the stated fast-descent and repelling rational-period lift hypotheses, last-minimum density and same-phase correction debt obey the explicit asymptotic lower bounds. | `C2 V1 I3 N2 R2` | Strongest conceptual theorem candidate in the older corrected-log branch. | Positive-lift/endpoint/scaling reconstruction, Lean, and specialist review. The Python checker is diagnostic only. |
 | `L13-RANK` | Same-label replay debt decreases exactly, but guarded cross-label successors recharge it arbitrarily; one exact edge refutes every lower-bounded affine combination in the stated label-depth/bitlength/debt class. | `C2 V1 I3 N2 R1` | Precisely stops the current simple-rank version of Route AB. | Lean or independent formal derivation; broader prior-art audit. |
 | `L8-BARRIER` | Conditional on the named verified-range and Rozier–Terracol inputs, an exact Farey certificate forces coefficient stopping time at least `114,208,327,604`. | `C2 V2 I2 N2 R1` | Strong exact necessary-condition corollary with retained arithmetic certificate. | Import/formalize the external inputs and the local theorem chain. |
 
-No entry is ready to submit as a Collatz proof or disproof. The two YAH rows are
-the best candidates for a narrow technical note after external review; Round
-6A is the best theorem-level reconstruction target.
+No entry is ready to submit as a Collatz proof or disproof. The bounded-
+alphabet endpoint gate is the strongest current auxiliary-theorem review
+target. The two YAH rows remain the best compact route-class certificates;
+Round 6A remains a separate theorem-level reconstruction target.
 
 ## Complete promoted-claim inventory
 
@@ -91,7 +93,8 @@ the best candidates for a narrow technical note after external review; Round
 
 | ID | Exact scope | Grades | Evidence / provenance | Limitation |
 |---|---|---|---|---|
-| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted mathematical head `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. | This is the status of the open problem and archive, not a graded project theorem. |
+| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted artifact head `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | This is the status of the open problem and archive, not a graded project theorem. |
+| `F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` | For `1<=a_k<=A`, the canonical endpoint representatives have eventual zero carry iff the infinite code is realized by one positive odd orbit iff their normalized residues vanish iff their root growth is strictly below `3`; otherwise positive carries recur and the root limsup is `3`. | `C2 V2 I3 N2 R2` | [Endpoint-residue gate](routes/F_bounded_alphabet_endpoint_residue_gate.md), [checker](../verification/bounded_alphabet_endpoint_residue_gate.py), [frozen output](../verification/bounded_alphabet_endpoint_residue_gate_output_2026-08-24.txt), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Exact characterization only. It does not decide eventual carry for a proposed aperiodic hard code, construct a positive divergent orbit, or prove Collatz. |
 | `L0` | For the accelerated odd map, every odd `n>1` having a smaller iterate is equivalent to Collatz; a least counterexample cannot descend below itself. | `C3 V1 I3 N0 R1` | [L0](lemmas/L0_Global_Descent_Equivalence.md), commit `2456248bcb5f1c769d2ffdb369e8f63dfcd3a3be`. | Elementary equivalent reformulation; Lean pending; no progress without a descent mechanism. |
 | `6A-T1` | Quantitative beta-debt necessity on the stated repelling rational-period shadows. | `C2 V1 I3 N2 R2` | [Review note](../papers/round-6a/Theorem_6A1_Public_Review_Note.md), claim ledger/checker/output, commit `c3d1da2c5dc8db296089745951dda1cd8e89bb9d`. | Unreviewed; lift, endpoint valuation, scaling, and the proof chain are not Lean-checked. |
 | `6A-SUPPORT` | Principal-row realizations, prescribed minima, rational-period lift/scaling, debt-tail frontiers, arbitrary `F(v_2(n+1))` obstruction, and finite-center freezing, at the scopes stated in the Round 6A packet. | `C1 V1 I2 N? R1` | Same Round 6A packet; diagnostic checker prints `PASS A`–`PASS G`. | Several claims are prerequisites for `6A-T1`; checker agreement is not a universal proof. |
@@ -126,8 +129,12 @@ the best candidates for a narrow technical note after external review; Round
 | `L13-HARD` | Through `0<=t<=L+2`, no uniformly admissible unrefined L4 inverse word produces an eventually smaller hard-child family; successor cells are exactly normalized by `v_2(Y+1)` and the mod-4 odd quotient. | `C2 V1 I3 N2 R1` | [L13](lemmas/L13_Refined_Mersenne_Child_Macros.md), final arithmetic commit `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`. | Retain the time and certificate-class qualifier; not Lean-formalized. |
 | `L13-RANK` | Same-label replay debt decreases, cross-label transitions can recharge it arbitrarily, and the exact guarded edge refutes the stated lower-bounded affine rank class. | `C2 V1 I3 N2 R1` | L13 equations (20)–(27), commit `e169d4bb7daf9fc4f70b1a0ab3297330846dccc8`. | Does not exclude richer state, nonlinear ranks, or all finite automata. |
 | `L14-3M1-NF` | The stated `v_2(3x+/-1)` reducer sends every positive odd `n` through finitely many strictly smaller convergence-equivalent macro edges to `1`, `7 mod 8`, or `27 mod 32`. | `C2 V1 I2 N1 R1` | [L14 theorem and hostile corrections](lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md), [finite regression](../verification/trajectory_normal_form_regression.py), artifact commit `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. | The residual universal assertion is Collatz-equivalent; the normal form is not maximal; the universal proof is prose and not Lean-formalized. |
+| `L15-MIXED-INVERSE` | Two further decreasing predecessor rewrites give the stated nonconfluent irreducible set; complete accelerated inverse fibers, canonical source reduction, mixed inverse-word congruences, the `91 mod 162` coalescence family, and the pure-`a=2` depth obstruction hold at their displayed scopes. | `C2 V2 I2 N1 R1` | [L15](lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md), [regression](../verification/expanded_rewrite_inverse_word_regression.py), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | The rewrite system is nonconfluent and not exhaustive. Universal forward-inverse certificate coverage is Collatz-equivalent; fixed-depth pure-`a=2` failure does not exclude adaptive mixed words. |
 | `AB-BRIDGE` | Round-7 affine cylinders are an affine projection of the YAH mixed-base branch semantics; macro coalescence is a distinct certificate idea. | `C2 V1 I2 N1 R1` | [Representation bridge](routes/AB_mixed_radix_coalescence_bridge.md), commit `c7948930b1bf997c0ed0a9f857c5e0e6b2a71810`. | The certificate graph/rank is conjectural; Route AB is `BLOCKED_NO_MECHANISM`. |
 | `AB-HARD-RETURN-001` | A total decreasing normalizer sends every positive input to `1` or the hard family; the induced return map is Collatz-equivalent. The smallest reported growth-plus-recharge witness is `31 -> 182 -> 91`. | `C2 V1 I3 N1 R1` | [Hard return system](routes/AB_hard_boundary_return_system.md), commit `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | Compression/equivalence, not termination progress; “smallest” lacks a committed exhaustive transcript. |
+| `F-DIRECT-H-RETURN-ARITHMETIC-001` | The four displayed partial hard-boundary transitions and the exact completed-switching criterion `v_2(3u+5)=3k+1` hold; an infinite positive direct ray would grow, switch infinitely, and be aperiodic. | `C2 V2 I2 N1 R1` | [Direct-return note](routes/AB_direct_H_return_and_renewal_filters.md), [regression](../verification/direct_H_return_renewal_regression.py), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | The direct system is partial. The conditional consequences neither construct nor exclude an infinite positive ray and do not control trajectories that exit the hard set. |
+| `F-RENEWAL-GCD-FILTER-001` | Renewal blocks satisfy the displayed affine identity; a separately hypothesized common odd divisor of all states or all shifted states must divide the corresponding gcd-of-lengths expression. | `C2 V2 I1 N1 R1` | Same [direct-return and renewal note](routes/AB_direct_H_return_and_renewal_filters.md) and checker, artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Neither persistent-divisor hypothesis is proved for generic orbits; the two hypotheses cannot be merged. |
+| `F-PRIME-RETURN-001 / D-HARD-PRIME-REFRESH-001` | Finite-word correction divisors exactly control prime return; the hard words have correction primes `5` and `23`; delayed pure-`1` returns, finite CRT concatenations, and finite rough-growth shadows exist exactly as stated. | `C2 V2 I2 N1 R1` | [Prime-renewal no-go](routes/AB_prime_renewal_finite_window_no_go.md), [regression](../verification/prime_renewal_regression.py), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Closes finite-window prime/roughness mechanisms only. The realizing seed depends on the finite script, so no infinite positive orbit follows. |
 | `A-YAH-2LOCAL-001` | The 13-row cancellation excludes bounded-below scalar adjacent-edge additive potentials in the stated canonical contexts. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_2local_edge_potential_no_go.md), [checker](../verification/yah_2local_edge_no_go.py), commit `d1bc062c727041ed8e106478983e3b7281f33dae`. | Does not exclude labels, matrices, longer windows, or nonadditive orders. |
 | `A-YAH-2STATE-001` | The fixed two-state suffix labeling cannot support additive labeled-symbol or labeled-edge scalar/finite-lex orders. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_two_state_semantic_label_no_go.md), [checker](../verification/yah_two_state_semantic_label_no_go.py), commit `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | One semantic algebra and locality class only; not a global termination theorem. |
 
@@ -139,6 +146,12 @@ the best candidates for a narrow technical note after external review; Round
 | `E-TWOPUMP-DEP` | Exact coefficient identities `aB=cC`, `gA=dE` force the cyclic two-pump resultant to vanish identically. | `C3 V3 I2 N1 R1` | [Audit](disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md), [Lean](../lean/CollatzWork/Disproof/TwoPumpDependency.lean), commit `974dbcb58ea40cf9365689a27de4df3ceafa0b75`. | Kills cyclic-rotation-only elimination; supplies no cycle or disproof. |
 | `B-EXAMPLE` | `U^9(64x+15)=U(54x+13)` is an exact uniformly smaller coalescence example. | `C3 V2 I1 N1 R1` | Route-B note and checker, commit `4dc711439598933dc79cd00ecabff163df964621`. | Pedagogical example, not a covering certificate. |
 | `B-SWEEPS` | The reported `1903/145`, `1904/144`, `15582/802`, and survivor-signature counts are exact only for their separately named finite certificate classes/ranges. | `C3 V2 I0 N1 R1` | Scripts and retained outputs under [verification](../verification/README.md). | Percentages and bounded misses are not evidence for or against Collatz. |
+
+### Provisional conditional artifacts — not promoted as proof or disproof
+
+| ID | Exact conditional scope | Grades | Evidence / provenance | Unresolved gate |
+|---|---|---|---|---|
+| `C-TM-MAHLER-ANCHOR-001` | The displayed Thue--Morse valuation code defines a specific odd `2`-adic anchor with an exact product identity; **if** that anchor is a positive ordinary integer, its accelerated orbit is exact and diverges at the displayed exponential lower rate. | `C1 V1 I1 N? R0` | [Conditional anchor note](disproof/CODEX_TM_MAHLER_ANCHOR_2026-08-24.md), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Membership in the positive ordinary integers is completely unproved. Finite-prefix realizability and the `2`-adic product do not supply it; this is not a counterexample or disproof. |
 
 ## Superseded, rejected, or quarantined statements
 
@@ -200,6 +213,15 @@ conclusions are:
   `m<=91` local-minimum cycles and Bařina's verified convergence range
   ([2025](https://doi.org/10.1007/s11227-025-07337-0)). The project DP is
   reproducible software engineering, not a competitive global bound.
+- Wang's E-sequence construction and Kramer's endpoint representatives supply
+  closely related finite-prefix, backward-integrality, and endpoint-rate
+  machinery. The bounded-alphabet converse/full-rate dichotomy was not located
+  in the bounded audit, so it is `N2`, not a certified priority claim. The
+  direct-return, inverse-word, correction-prime, and finite-CRT packages are
+  elementary specializations and are graded `N1`.
+- The Thue--Morse anchor has not received a sufficient priority audit and is
+  not promoted. Its unresolved positive-integer membership is an arithmetic
+  gate, not evidence of a Collatz disproof.
 
 For Round 6A, the bounded search inspected classical rational-cycle/parity
 machinery, including Lagarias's rational-cycle work, but found no exact

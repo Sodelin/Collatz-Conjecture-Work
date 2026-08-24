@@ -1,8 +1,9 @@
 # Missing-lemma ladder: from current work to an actual Collatz resolution
 
 > **Historical Round-7 target map.** The arithmetic rungs remain useful, but
-> this file predates L13, the YAH cancellation certificates, and the exact hard
-> return system. For current claim status and the Round-8 missing object, start
+> this file predates L13--L15, the YAH cancellation certificates, the exact
+> hard return system, and the bounded-alphabet endpoint-residue gate. For
+> current claim status and the Round-8 missing object, start
 > with [`CLAIM_REGISTRY.md`](CLAIM_REGISTRY.md),
 > [`APPROACH_REGISTRY.md`](APPROACH_REGISTRY.md), and
 > [`../CONTINUATION.md`](../CONTINUATION.md).
@@ -69,6 +70,29 @@ Formalize the last-minimum argument with the full `k_r log_2(lambda)` bit-length
 ## Rung 2 — Choose a bridge architecture that can imply global descent
 
 At least one of the following theorem families must be completed. They are intentionally different search spaces.
+
+### New exact interface — bounded-alphabet infinite-tail coupling
+
+`F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` now proves that a bounded valuation
+code is realized by one positive odd seed exactly when its canonical endpoint
+residues vanish after normalization, equivalently when the associated carries
+are eventually zero. This removes the old ambiguity between finite-prefix
+compatibility and positive realization, but it does **not** decide either
+branch for a new infinite code.
+
+For the guarded hard-block family
+
+\[
+(1^{L_0}3)(1^{L_1}3)\cdots,
+\qquad L_i\ge3,
+\]
+
+the exact disproof target is now: construct one explicit infinite sequence
+`(L_i)` and prove eventual zero carry. The exact local proof-side closure is:
+prove infinitely many positive carries for every code in this family. Either
+result must control one coherent infinite tail. More finite word catalogs,
+larger CRT scripts, prime-return windows, or finite residue bounds cannot cross
+this gate and should not be repeated without a genuinely global invariant.
 
 ### Route A — Exact rewrite termination
 
@@ -158,6 +182,12 @@ Find an explicitly defined set `A` of positive integers and a rank/size function
 
 **Needed certificate:** actual positive-integer membership and invariance, not merely a rational or 2-adic ghost orbit.
 
+**Current exact reduction:** for bounded valuation alphabets, positive-integer
+membership is equivalent to eventual zero carry of the canonical endpoint
+representatives. For guarded `{1,3}` hard blocks with every `L_i>=3`, such a
+realization is automatically unbounded. The remaining work is therefore a
+fixed-infinite-code carry theorem, not another finite-prefix construction.
+
 ---
 
 ## Rung 3 — Search-space compression
@@ -218,6 +248,7 @@ Only after all three should the repository status move to `PROOF_CANDIDATE` or `
 |---|---|---|
 | 1 | B — recursive residue-certificate graph | Directly operationalizes the partition idea while avoiding the bounded-depth trap; finite certificate may be synthesizable. |
 | 1 | A — exact rewrite termination | Exact equivalence already exists in peer-reviewed work and converts the problem into finite certificate synthesis. |
+| 1 experimental | F — bounded-code endpoint gate | The realizability interface is now exact. Continue only mechanisms that control carries for one coherent infinite guarded code; finite scripts are closed. |
 | 2 | D — minimal-counterexample valuation forcing | L0/L1 make the missing arithmetic bridge explicit and testable. |
 | 2 | C — augmented-state ranking | May unify A/B and can absorb the distributed-debt lessons of Round 6. |
 | 3 | E/F — disproof lanes | Cheap to keep alive; any explicit witness ends the problem immediately. |

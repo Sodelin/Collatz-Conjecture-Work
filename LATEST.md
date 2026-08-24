@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
 
 ## Verdict
 
@@ -11,6 +11,12 @@ this repository.
 
 ## What the accepted chain currently contains
 
+- [`F-BOUNDED-ALPHABET-ENDPOINT-GATE-001`](proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md):
+  an exact characterization of when one bounded infinite valuation code is
+  realized by a positive odd orbit. Positive realization is equivalent to
+  eventual zero carry and normalized endpoint-residue vanishing; the opposite
+  branch has infinitely many positive carries and full cubic root growth. The
+  theorem does not decide the branch for the hard aperiodic codes.
 - [`L14-3M1-NF`](proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md):
   an exact strictly decreasing normalizer for the fully accelerated odd map,
   terminating at `1`, `7 mod 8`, or `27 mod 32`. The remaining convergence
@@ -25,10 +31,26 @@ this repository.
   an exact decreasing boundary normalizer and closed hard return map. Universal
   termination of that return map is Collatz-equivalent; the smallest reported
   growth-plus-recharge witness is `31 -> 182 -> 91`.
+- [`L15-MIXED-INVERSE`](proof-search/lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md):
+  an expanded but nonconfluent decreasing rewrite boundary, complete
+  accelerated inverse fibers, mixed inverse-word congruences, and exact
+  finite-route obstructions. Universal certificate coverage remains
+  Collatz-equivalent.
+- [Direct-return/renewal filters](proof-search/routes/AB_direct_H_return_and_renewal_filters.md)
+  and the [prime-renewal finite-window no-go](proof-search/routes/AB_prime_renewal_finite_window_no_go.md):
+  exact stopped-useful filters showing why local hard returns, finite prime
+  scripts, and finite roughness windows do not settle one fixed infinite
+  orbit.
 
-The YAH item is a solved **route-class obstruction**. Both normalizers are
-**Collatz-equivalent reductions**. None is the still-open universal
-termination proof.
+The endpoint gate is the strongest exact new auxiliary theorem in this
+snapshot. The YAH item is a solved **route-class obstruction**. The
+normalizers are **Collatz-equivalent reductions**, and the finite route tools
+are **stopped-useful**. None is the still-open universal termination proof.
+
+The [Thue--Morse anchor](proof-search/disproof/CODEX_TM_MAHLER_ANCHOR_2026-08-24.md)
+is retained only as a provisional conditional construction. Its `2`-adic
+value has not been proved to be a positive ordinary integer, so it is not a
+counterexample or disproof.
 
 ## Current reading order
 
@@ -46,5 +68,6 @@ remain preserved as historical branch checkpoints.
 ## Formal status
 
 Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
-proof-assistant formalization of the prose chain or Collatz does not exist.
-Novelty and priority for project-specific claims are not certified.
+proof-assistant formalization of L14, L15, the bounded-alphabet endpoint gate,
+the route filters, the prose chain, or Collatz does not exist. Novelty and
+priority for project-specific claims are not certified.

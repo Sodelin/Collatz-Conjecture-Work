@@ -1,6 +1,6 @@
 # Approach registry — Round 8
 
-Last structural update: 2026-08-24, bounded closure sprint.
+Last structural update: 2026-08-24, endpoint-coupling audit.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
@@ -11,12 +11,12 @@ even when none of its current claims is a universal certificate.
 | ID | Family | Exact target | Current status | Main obstacle | Reopen / next action |
 |---|---|---|---|---|---|
 | A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Unlabeled adjacent-edge weights and the audited two-state semantic labeling both fail for additive symbol/edge orders, including every finite lexicographic version | Reopen only with a different semantic algebra, longer memory, matrix/nonadditive order, and an explicit candidate certificate |
-| B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
-| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | The hard successor is normalized exactly, but its self-replay rank can be recharged arbitrarily across labels; simple affine size/debt composites are refuted | Reopen with a richer cross-label well-founded rank or a uniform smaller-target macro that survives the exact successor guards |
+| B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Finite-depth covers, finite inverse-word catalogs, and finite valuation cylinders do not control one fixed infinite orbit | Search a finite graph with a proved back-edge rank or an exact fixed-seed coupling theorem, not a larger finite tree |
+| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | The hard successor is normalized exactly, but ranks recharge, the expanded rewrite is nonconfluent, and universal certificate coverage is Collatz-equivalent | Reopen with a richer cross-label rank, a uniform guarded smaller-target macro, or a global endpoint-carry theorem that decides the hard codes |
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
 | D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `BLOCKED_NO_MECHANISM` | Infinite coefficient stopping is untouched, and L11 hard inheritance does not renew L9-L10 at the endpoint | Reopen with a concrete rooted transition and rank covering both infinite and finite coefficient-stopping branches |
 | E | Positive nontrivial cycle | Explicit finite cycle under accelerated or ordinary Collatz | `ACTIVE_LOW_COST` | Enormous existing computational/cycle exclusions; no witness known | Keep exact Diophantine/SAT witness search as low-cost lane; verify any hit immediately |
-| F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | 2-adic/rational ghosts need not contain a divergent positive natural orbit | Require positive membership and forward invariance as first kill test |
+| F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | The endpoint gate exactly separates positive realizations from bounded-alphabet ghosts, but no hard aperiodic code has been placed on either side | For one fixed structured code, prove eventual zero carry/endpoint vanishing or prove infinitely many positive carries; finite-prefix realizability is inadmissible |
 | G | State-only corrected-log ranking with bounded/local correction | Universal descent ranking | `BLOCKED_NO_MECHANISM` | Rounds 3–6 construct long shadows and sharp debt obstructions | Reopen only with qualitatively new correction information |
 | H | Finite fixed 2-adic sensor ranking | Universal descent ranking from finitely many proximity sensors | `BLOCKED_NO_MECHANISM` | Round 5B/6A finite-center freezing; Round 6B approximation barrier | Reopen only if sensor architecture is non-frozen/nonlocal in a proved way |
 | I | Uniformly convergent countable sensor expansion | Universal fast corrected-log ranking | `BLOCKED_NO_MECHANISM` | Round 6B forces nonuniform/log-scale residual stress | Reopen with explicit nonuniform tail and a decrease theorem |
@@ -129,6 +129,34 @@ Collatz-equivalent, not solved. The terminal set is not irreducible:
 `U^3(64s+55)=54s+47<64s+55`, and L13 coalesces `23` with `17`. Composing the
 normalizers may refine the residual set but supplies no proved global rank.
 
+`proof-search/lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md` adds two
+more decreasing predecessor rewrites, identifies their exact irreducibles,
+and records complete accelerated inverse fibers and mixed inverse words. The
+relation is explicitly nonconfluent, its pure exponent-`2` policy has no
+uniform successful depth, and universal forward-inverse certificate coverage
+is Collatz-equivalent. This is a stopped-useful finite certificate toolkit,
+not a reason to enlarge the same word search.
+
+`proof-search/routes/AB_direct_H_return_and_renewal_filters.md` gives the exact
+partial typed hard-boundary transitions, completed switching-return arithmetic,
+and two distinct renewal gcd filters. Its infinite-ray conclusions are
+conditional and the typed system is partial. These formulas cheaply reject
+bad proposed itineraries but do not supply the missing total rank.
+
+`proof-search/routes/AB_prime_renewal_finite_window_no_go.md` shows that prime
+return, finite roughness, and every finite concatenation of individually
+admissible distinct-prime blocks can occur in genuine positive prefixes. This
+closes finite prime-window variants: the seed changes with the finite script,
+so the only meaningful continuation must couple all prefixes of one fixed
+ordinary seed.
+
+`proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md` supplies that
+coupling as an exact **test**, not a decision: a bounded valuation code comes
+from one positive odd seed exactly when its canonical endpoint carries vanish
+eventually (equivalently, normalized endpoint residues vanish). For the hard
+`{1,3}` block family, either proving eventual zero carry or proving infinitely
+many positive carries is now the exact global branch point.
+
 ### Main kill test
 
 Any proposed successor must cover the Mersenne refinement chain, including
@@ -136,6 +164,12 @@ the finite canonical left boundary, and prove a well-founded rank. If the
 needed intercept/carry information cannot be quotiented into a finite or
 regular symbolic state without assuming global descent, AB remains an
 architecture gap rather than a proof route.
+
+Finite inverse words, finite prime-return scripts, and larger bounded residue
+windows have already passed their cheapest falsifier and cannot resolve the
+infinite-tail branch. A continuation must state how it controls the canonical
+endpoint representatives for one fixed infinite code or how it ranks every
+return of one fixed positive orbit.
 
 ## C — Augmented-state ranking
 
@@ -169,6 +203,18 @@ Any candidate must be checked by direct integer iteration before doing anything 
 
 The first kill test is archimedean reality: does the construction contain a positive integer, or only a point in `Q_2`, `Z_2`, or `Q`? Round 5B/6A show why long positive shadows of nonpositive periodic objects are not themselves counterexamples.
 
+The bounded-alphabet endpoint gate is now the canonical realizability test.
+For any proposed bounded code, a positive ordinary realization is equivalent
+to eventual zero carry in its canonical endpoint representatives; failure has
+infinitely many positive carries and full cubic root growth. This theorem
+does not decide a code by itself.
+
+The Thue--Morse anchor in
+`proof-search/disproof/CODEX_TM_MAHLER_ANCHOR_2026-08-24.md` is provisional and
+conditional. Its exact `2`-adic product and conditional divergence bound do
+not establish that the anchor is a positive ordinary integer. Do not label it
+a witness, counterexample, or disproof unless that membership is proved.
+
 ## Duplicate-route rule
 
 Before starting a new route, answer:
@@ -178,3 +224,7 @@ Before starting a new route, answer:
 3. What exact old blocker does it bypass?
 
 If (2) or (3) has no answer, the route is probably a wording variant of an old branch and should not consume search budget.
+
+In particular, more finite words, finite prime/roughness windows, or finite
+compatible prefixes are not a new mechanism. The live bottleneck is the
+infinite-tail coupling for one fixed seed.

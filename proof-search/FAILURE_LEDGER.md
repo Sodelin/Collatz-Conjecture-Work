@@ -335,6 +335,68 @@ the current replay debt, so closure alone does not supply descent.
 hard return, or a new guarded macro coalesces with a uniformly smaller positive
 target. Renaming the return obligation is not progress.
 
+## F025 — extending the finite rewrite/inverse-word catalogue will close the residual set
+
+**Class:** `EQUIV / ARCH_GAP`.
+
+L15 adds valid decreasing predecessor rewrites, complete accelerated inverse
+fibers, and exact mixed-word residue classes. The enlarged relation is
+nonconfluent (`11` reduces to both `1` and irreducible `7`), its displayed
+irreducibles admit further mixed coalescences, and the pure exponent-`2`
+policy has no uniform successful depth. Most importantly, universal
+forward-inverse certificate coverage is logically equivalent to Collatz.
+
+**Do not repeat:** increasing finite inverse depth or adding isolated rewrite
+rules as though a larger catalogue by itself establishes universal coverage.
+
+**Reopen only if:** a new mechanism proves coverage by a weaker independently
+checkable invariant, or supplies a well-founded adaptive rank across every
+residual transition. The mechanism must survive nonconfluence and the exact
+pure-`a=2` obstruction.
+
+## F026 — finite prime-return or roughness windows exclude the divergent architecture
+
+**Class:** `TOO_WEAK / finite-window closure`.
+
+The correction-divisor identity gives exact first-return primes for finite
+valuation words. Prime-return gaps over pure valuation-`1` blocks are
+unbounded as the prime varies; every finite concatenation of individually
+admissible blocks for distinct designated primes is jointly realizable by a
+positive seed; and arbitrarily long growing prefixes can avoid every prime
+through any fixed threshold. The seed depends on the finite script.
+
+**Do not repeat:** larger finite prime lists, delayed-return windows, sieve
+thresholds, or rough-growth bounds as if they controlled one infinite orbit.
+
+**Reopen only if:** one fixed positive seed is retained and a genuinely global
+invariant couples all of its renewal blocks. The theorem must explain why the
+finite CRT constructions cannot persist for that same ordinary integer.
+
+## F027 — compatible finite valuation prefixes automatically give one positive infinite seed
+
+**Class:** `FALSE inference / 2-adic ghost`.
+
+Every finite valuation word has infinitely many positive realizations, but
+the compatible infinite residue system generally defines a `2`-adic point,
+not a positive ordinary integer. For bounded valuation alphabets,
+`F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` makes the missing condition exact:
+positive realization is equivalent to eventual zero carry, normalized
+endpoint-residue vanishing, and strict subcubic root growth. None follows from
+finite-prefix realizability alone.
+
+The conditional Thue--Morse anchor is an explicit instance of this boundary.
+Its `2`-adic product and conditional divergence theorem do not establish that
+the anchor lies in the positive ordinary integers.
+
+**Do not repeat:** compactness, nested congruences, a profinite limit, or a
+`2`-adic analytic identity as a positive-orbit construction without the
+ordinary-positive membership proof.
+
+**Reopen only if:** prove eventual zero carry/endpoint vanishing for the fixed
+code, prove the specific `2`-adic anchor is a positive ordinary integer, or
+supply another exact theorem that constructs and verifies one fixed positive
+seed through the entire infinite itinerary.
+
 ---
 
 # Reopening template

@@ -1,7 +1,7 @@
 # Continuation checkpoint
 
 This is the restart pointer for mathematical work after the accepted Round-8
-baseline `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
+baseline `6c8f77ef2b0b360f8f353f4508dcfec58e980331`.
 
 ## First: preserve the logical boundary
 
@@ -26,7 +26,8 @@ Before proposing work, read:
 | Routes | Status | Exact boundary |
 |---|---|---|
 | A, B, C | `ACTIVE` | No universal certificate candidate exists. Route A now excludes unlabeled adjacent-edge weights and one fixed two-state additive symbol/edge algebra. |
-| E, F | `ACTIVE_LOW_COST` | No positive cycle or divergent positive witness exists. Keep witness searches bounded and exact. |
+| E | `ACTIVE_LOW_COST` | No positive nontrivial cycle exists in the archive. Keep witness searches bounded and verify any candidate by exact iteration first. |
+| F | `ACTIVE_LOW_COST` | The bounded-alphabet endpoint gate exactly characterizes positive realizability, but no hard aperiodic code has been shown to have eventual zero carry or infinitely many positive carries. No positive divergent witness exists. |
 | AB, D, G, H, I | `BLOCKED_NO_MECHANISM` | Each has exact obstructions but no new mechanism that crosses them. |
 | J | `BLOCKED_EQUIVALENT` as proof route | Any fixed computation leaves infinitely many cases. |
 
@@ -42,6 +43,10 @@ coverage:
   every rule/context and Collatz reflection; or
 - a finite/regular guarded macro graph covering every positive input, with a
   genuinely well-founded rank on every back-edge; or
+- for a fixed bounded hard valuation code, an exact proof of eventual zero
+  carry (constructing one positive orbit) or of infinitely many positive
+  carries (eliminating that code; a uniform theorem would eliminate the
+  family); or
 - another theorem that implies global descent for every odd `n>1` without
   assuming an equivalent form of the conjecture.
 
@@ -58,6 +63,30 @@ It does not change the route status: universal convergence on that residual
 set is Collatz-equivalent, and the set admits further finite reductions such
 as `U^3(64s+55)=54s+47`. Do not treat the displayed L14 normal form as an
 irreducibility or exhaustion theorem.
+
+L15 expands the finite rewrite and inverse-word toolkit, but the relation is
+nonconfluent and universal forward-inverse certificate coverage is itself
+Collatz-equivalent. The pure exponent-`2` policy also has no uniform successful
+depth. Do not continue by merely increasing finite inverse depth or adding
+isolated rewrite rules.
+
+The direct hard-return, renewal-gcd, and prime-return notes are
+**stopped-useful**. They give exact local filters and prove that every finite
+list of individually admissible distinct-prime blocks, and every finite
+growth/roughness window of the stated kind, occurs in a positive prefix. They
+therefore redirect work away from larger finite windows.
+
+The exact live coupling object is in
+[`F_bounded_alphabet_endpoint_residue_gate.md`](proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md).
+For `1<=a_k<=A`, one positive ordinary realization exists exactly when the
+canonical carries are eventually zero, equivalently when `M_k/3^k -> 0`.
+Every finite prefix being positively realizable does not imply this condition.
+For the guarded `{1,3}` block codes, positive realization would give a genuine
+unbounded orbit; neither realization nor universal escape has been proved.
+
+The conditional Thue--Morse anchor is paused at the same ordinary-membership
+gate. Its `2`-adic series/product and conditional divergence bound are not a
+positive witness and must not be described as a disproof.
 
 For the minimal-counterexample synthesis, L11 is one-shot. A continuation must
 carry the immutable root across local descents, non-descending edges, infinite
@@ -77,6 +106,14 @@ coefficient-stopping branches, band exits, and the zero-gap cycle branch.
 - Treating the normalized hard return map as though it already decreases.
 - Treating the L14 terminal set as irreducible, or silently replacing its
   fully accelerated odd map `U` by the one-division shortcut map `T`.
+- Enlarging finite inverse-word or decreasing-rewrite catalogues without a
+  coverage mechanism that survives nonconfluence.
+- Enlarging finite prime-return, renewal, sieve, roughness, or separated-block
+  windows; the exact finite constructions already realize them.
+- Passing from compatible finite valuation prefixes to one positive infinite
+  seed by compactness, CRT, or a profinite/`2`-adic limit.
+- Treating the conditional Thue--Morse `2`-adic anchor as a positive ordinary
+  integer without an exact membership proof.
 
 See [FAILURE_LEDGER.md](proof-search/FAILURE_LEDGER.md) for the exact
 counterexamples and reopening conditions.
@@ -87,7 +124,8 @@ Use [LEAN_TARGETS.md](LEAN_TARGETS.md) and
 [`lean/VERIFICATION_POLICY.md`](lean/VERIFICATION_POLICY.md). The existing
 narrow modules are useful regressions; they do not formalize Round 6A, full L5,
 the L13 hard/rank statements, the hard return equivalence, the YAH
-cancellations, or Collatz.
+cancellations, L14, L15, the endpoint-residue gate, the renewal/prime filters,
+or Collatz.
 
 ## Required handoff packet for any new claim
 

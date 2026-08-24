@@ -9,7 +9,7 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > true or false.
 
 Accepted mathematical baseline: full Git object
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
 
 For a self-contained mathematician-facing review snapshot, see
 [MATHEMATICIAN_HANDOFF_2026-08-25.md](MATHEMATICIAN_HANDOFF_2026-08-25.md).
