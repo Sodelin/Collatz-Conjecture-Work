@@ -1,0 +1,10 @@
+Status: bounded exact search / not a proof or disproof
+Command: python verification/disproof_cycle_search.py --k-max 40 --d-max 250000
+
+self-test: DP residue sets and residue-zero maxima match brute force for k<=10
+regression: (k,q,D)=(4,2,7) retains max C=14 over merged [7,14]
+exhausted 91 pairs with k<= 40 and 0<D<= 250000
+maximum merged DP states: 47517
+trivial 1-2-cycle encodings found: 9
+nontrivial positive cycle candidates found: 0
+This is a bounded exact negative result, not a Collatz proof or disproof.
