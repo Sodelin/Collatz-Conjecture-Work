@@ -70,7 +70,7 @@ inequalities gives
 \qquad W_{ff}<0. \tag{3}
 \]
 
-But every `^f^m$` is syntactically canonical and
+But for every integer `m >= 1`, the word `^f^m$` is syntactically canonical and
 
 \[
 \mu({}^\wedge f^m\$)
@@ -79,8 +79,9 @@ But every `^f^m$` is syntactically canonical and
 
 which tends to minus infinity.  This contradicts boundedness below.
 
-The exact replay also normalizes the row-1 gap to one; then (3) reads
-`W_ff<=-1`.  It checks that every row has exactly one named redex, that row 1
+After rescaling a hypothetical real solution by its positive row-1 gap, we
+may normalize that gap to one; then (3) reads `W_ff<=-1`.  The exact replay
+checks that every row has exactly one named redex, that row 1
 represents `11 -> 17 = T(11)`, that rows 2--13 preserve value, and that the
 integer edge-count sum is exactly (2).
 
