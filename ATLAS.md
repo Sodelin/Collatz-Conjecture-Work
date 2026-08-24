@@ -64,6 +64,10 @@ flowchart LR
   subgraph E["Disproof lane"]
     DP["bounded cycle DP"] --> EW["no witness"]
     TP["two-pump dependency"] --> EW
+    BC["two-center collapse"] --> EW
+    FR["finite-residue invariant collapse"] --> EW
+    PR["normalized polynomial ratchet no-go"] --> EW
+    SR["ratio-convergent generator no-go"] --> EW
   end
 
   A2 --> G0
@@ -146,8 +150,25 @@ well-founded rank, not another unrooted near-return estimate.
 - The [two-pump dependency audit](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
   and its [Lean target](LEAN_TARGETS.md) prove that cyclic rotation alone gives
   a dependent resultant.
+- The [two-center branching shot](proof-search/disproof/CODEX_BRANCHING_CENTER_SHOT_2026-08-24.md),
+  [independent hostile audit](proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean arithmetic core](lean/CollatzWork/Disproof/BranchingCenter.lean)
+  close exactly the two-rational-center/three-single-edge architecture.
+- The [finite-residue first-integral shot](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_SHOT_2026-08-24.md),
+  [independent hostile audit](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean group-action core](lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean)
+  prove that a memoryless invariant coloring of one finite residue ring must
+  be constant.
+- The [normalized polynomial-ratchet theorem packet](proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md),
+  [hostile audit](proof-search/disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean arithmetic core](lean/CollatzWork/Disproof/PolynomialRatchet.lean)
+  close only the stated primitive-polynomial eigen/divisibility subclass.
+- The [smooth-ratio semiconjugacy packet](proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md)
+  proves that a positive accelerated orbit with a convergent successive-state
+  ratio eventually reaches `1`.
 
-Neither artifact supplies a positive nontrivial cycle or a divergent positive
+Every item in this section is a bounded diagnostic or an exact route-class
+obstruction. None supplies a positive nontrivial cycle or a divergent positive
 orbit.
 
 ## Evidence and formalization

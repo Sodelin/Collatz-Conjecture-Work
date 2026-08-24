@@ -6,7 +6,7 @@ bounded computation or narrow formal theorem into a Collatz proof.
 
 ## Tested environment
 
-Complete closure replay on 2026-08-24 against source state
+Baseline closure replay on 2026-08-24 against source state
 `4a8845ef46c78e50b3c4303e3a3a110e3b66f045` and accepted mathematical
 baseline `b75ffec58ae20ac26271ff7d59a71d3591467994` (before the navigation-only
 patch that added the atlas and graph checker):
@@ -21,7 +21,24 @@ The Python checkers use the standard library. The Lean toolchain is pinned by
 [`lean-toolchain`](../lean-toolchain).
 
 Earlier artifact-level audits remain identifiable by their individual commit
-hashes; the table below was replayed together at the closure head above.
+hashes. The original eight mathematical rows in the table below were replayed
+together at that closure head. The three later direct Lean rows were replayed
+together with the original eight and the note graph during the audited-route
+release pass; its immutable source commit and environment belong in the final
+release receipt.
+
+## One-command release replay
+
+From the repository root:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File verification\run_release_checks.ps1
+```
+
+The [release runner](run_release_checks.ps1) resolves Python and Lake without
+hard-coding a contributor's home directory, runs all eleven promoted
+mathematical commands below, and then runs the repository note-graph QA. It
+stops at the first nonzero exit code.
 
 ## Freshly replayed promoted checks
 
@@ -36,9 +53,12 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+| `F-BRANCH-CENTER-001` Lean core | `lake env lean lean\CollatzWork\Disproof\BranchingCenter.lean` | Three theorem dependency reports containing only standard Lean axioms | Checks rigidity of the eliminated center-consistency equation, not the full prose bridge or a divergent orbit. |
+| `F-FINITE-RESIDUE-FIRST-INTEGRAL-001` Lean core | `lake env lean lean\CollatzWork\Disproof\FiniteResidueFirstIntegral.lean` | Five axiom-free theorem dependency reports | Checks the abstract commutator/transitivity implication, not the all-moduli Collatz factor-descent bridge. |
+| `F-POLY-RATCHET-001` Lean core | `lake env lean lean\CollatzWork\Disproof\PolynomialRatchet.lean` | Four theorem dependency reports containing only standard Lean axioms | Checks normalized arithmetic consequences, not the primitive-polynomial macro premises or a Collatz invariant. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It imports none of the four disproof modules, which require the direct commands above. |
 
-All eight commands passed in the fresh audit. The YAH checkers currently
+All eleven mathematical commands passed in the audited release replay. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
 transcript. The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
@@ -66,10 +86,14 @@ format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.
 | [`CollatzWork/InverseWordBoundary.lean`](../lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the exact `8x+5 / 8x+4` regression witness. | `equalSlopeSmaller` is axiom-free; the witness reports standard `propext`, `Quot.sound`. |
 | [`CollatzWork/RefinedMersenneChild.lean`](../lean/CollatzWork/RefinedMersenneChild.lean) | Refined easy-child arithmetic, iterate identity, and coalescence. | Arithmetic theorem reports standard `propext`, `Classical.choice`, `Quot.sound`; remaining exported theorems report `propext`, `Quot.sound`. |
 | [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; not imported by `CollatzWork.lean`. |
+| [`CollatzWork/Disproof/BranchingCenter.lean`](../lean/CollatzWork/Disproof/BranchingCenter.lean) | Power-of-two/odd uniqueness and rigidity of the two-center consistency equation. | Reports standard `propext`, `Quot.sound`, and `Classical.choice`; formalizes only the eliminated arithmetic equation. |
+| [`CollatzWork/Disproof/FiniteResidueFirstIntegral.lean`](../lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean) | Invariance under inverse maps, commutators, and transitive iteration forces constancy. | All five exported theorems are axiom-free; the Collatz-specific quotient/lift bridge remains prose. |
+| [`CollatzWork/Disproof/PolynomialRatchet.lean`](../lean/CollatzWork/Disproof/PolynomialRatchet.lean) | Normalized leading telescope, nonresonant content-gain obstruction, and quotient-degree collapse. | Reports standard `propext`, `Quot.sound`; the polynomial/macro hypotheses remain prose. |
 
 No module formalizes Round 6A, full L5, the L13 hard-child classification,
 the cross-label recharge/rank theorem, the hard return map, YAH relative
-termination, or Collatz.
+termination, the complete prose versions of the three new route obstructions,
+or Collatz.
 
 ## Retained historical diagnostics
 

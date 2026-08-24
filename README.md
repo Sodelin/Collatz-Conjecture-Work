@@ -80,20 +80,31 @@ contain superseded route language.
 
 ## What is formally checked
 
-The repository contains three narrow Lean developments:
+The repository contains six narrow Lean developments:
 
 - [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
 - [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
-- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean).
+- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean);
+- [two-center branching rigidity](lean/CollatzWork/Disproof/BranchingCenter.lean);
+- [finite-residue first-integral group-action core](lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean); and
+- [normalized polynomial-ratchet arithmetic core](lean/CollatzWork/Disproof/PolynomialRatchet.lean).
 
-The first two are included in the umbrella build. The two-pump module is
-compiled directly. A clean `lake build` does **not** formalize the full prose
-chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
+The first two are included in the umbrella build. The four disproof modules
+are compiled directly. A clean `lake build` does **not** formalize the full
+prose chain, the route-to-Collatz bridges omitted by those modules, the
+hard-family rank claims, Round 6A, or the Collatz conjecture.
 See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 
 ## Reproduce the promoted checks
 
 From the repository root:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File verification\run_release_checks.ps1
+```
+
+That wrapper runs the full promoted mathematical suite and the note-graph QA.
+The individual mathematical commands are:
 
 ```powershell
 python -B verification\trajectory_normal_form_regression.py
@@ -103,6 +114,9 @@ python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
+lake env lean lean\CollatzWork\Disproof\BranchingCenter.lean
+lake env lean lean\CollatzWork\Disproof\FiniteResidueFirstIntegral.lean
+lake env lean lean\CollatzWork\Disproof\PolynomialRatchet.lean
 lake build
 ```
 

@@ -335,6 +335,70 @@ the current replay debt, so closure alone does not supply descent.
 hard return, or a new guarded macro coalesces with a uniformly smaller positive
 target. Renaming the return obligation is not progress.
 
+## F025 — two rational centers and three single-step edges support a genuine branch
+
+**Class:** `FALSE` for the stated architecture.
+
+For positive labels and exact center edges `A-a->A`, `A-b->B`, `B-c->A`,
+elimination gives
+
+\[
+2^b(2^c+3)=2^a(2^b+3).
+\]
+
+Uniqueness of the power-of-two times odd normal form forces `a=b=c`, after
+which the two centers coincide. Exact synchronization to finitely many
+rational centers with one fixed denominator also forces the integer
+displacement to be zero by unbounded power-of-two divisibility.
+
+**Reopen only if:** a structurally different construction proves why the
+collapse or fixed-denominator synchronization equation no longer applies.
+Larger graphs, longer tokens, or moving/nonrational centers are not by
+themselves such a proof. See the [hostile audit](disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md).
+
+## F026 — one finite residue supplies a nonconstant Collatz first integral
+
+**Class:** `FALSE` for the stated memoryless class.
+
+Every coloring of one finite residue ring preserved by every positive step of
+the full Collatz map is constant. Exact positive lifts remove the factors of
+`2` and `3` from the modulus; on the remaining quotient, invariance under the
+affine permutations `x->2x` and `x->3x+1` gives invariance under a transitive
+unit translation.
+
+**Reopen only if:** the proposed certificate contains genuinely path-dependent
+state, a changing modulus, a one-sided trap, or a ranked recursion not reducible
+to a memoryless invariant on one quotient. See the [hostile audit](disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md).
+
+## F027 — normalized polynomial divisibility yields a non-3 valuation ratchet
+
+**Class:** `FALSE` for the canonically normalized subclass.
+
+On a fixed finite cycle of genuine affine macros, primitive positive-degree
+integer state polynomials with minimally cleared powers-of-two denominators
+and integral polynomial quotients first telescope in degree to constant
+quotients. Leading coefficients then force the normalized odd content product
+to be a power of `3`; positive gain at a base coprime to `3` is impossible.
+The resonant `p=3` case reduces to periodic-point displacement in this class.
+
+**Reopen only if:** the architecture changes the mathematical premises—such as
+using a proved nonlinear/component-coupled mechanism—rather than rescaling
+polynomials statewise or changing normalization. See the [hostile audit](disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md).
+
+## F028 — a ratio-convergent positive generator can be Collatz-divergent
+
+**Class:** `FALSE` for pointwise ratio convergence.
+
+If a positive accelerated Collatz orbit has a finite real limit for
+`n_(k+1)/n_k`, discreteness forces the valuations eventually constant in the
+unbounded case. Valuation at least two gives eventual decrease; valuation one
+forces impossible divisibility of one fixed positive integer by every power
+of two. The bounded case eventually reaches the fixed orbit `1`.
+
+**Reopen only if:** the proposed generator's full one-step successive-state
+ratio has no finite real limit, together with exact ordinary-integer membership
+and forward invariance. See the [route packet](disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md).
+
 ---
 
 # Reopening template

@@ -1,6 +1,6 @@
 # Approach registry — Round 8
 
-Last structural update: 2026-08-24, scalar-arctic full/top certificate audit.
+Last structural update: 2026-08-24, audited disproof-route closure integration.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
@@ -16,7 +16,7 @@ even when none of its current claims is a universal certificate.
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
 | D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `BLOCKED_NO_MECHANISM` | Infinite coefficient stopping is untouched, and L11 hard inheritance does not renew L9-L10 at the endpoint | Reopen with a concrete rooted transition and rank covering both infinite and finite coefficient-stopping branches |
 | E | Positive nontrivial cycle | Explicit finite cycle under accelerated or ordinary Collatz | `ACTIVE_LOW_COST` | Enormous existing computational/cycle exclusions; no witness known | Keep exact Diophantine/SAT witness search as low-cost lane; verify any hit immediately |
-| F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | 2-adic/rational ghosts need not contain a divergent positive natural orbit | Require positive membership and forward invariance as first kill test |
+| F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | Ordinary-positive membership and exact invariance remain missing; several finite-center, memoryless-residue, normalized polynomial, and ratio-convergent architectures are now exactly closed | Require one fixed positive seed, exact invariance, and a rigorous nontermination/unboundedness bridge before asymptotics |
 | G | State-only corrected-log ranking with bounded/local correction | Universal descent ranking | `BLOCKED_NO_MECHANISM` | Rounds 3–6 construct long shadows and sharp debt obstructions | Reopen only with qualitatively new correction information |
 | H | Finite fixed 2-adic sensor ranking | Universal descent ranking from finitely many proximity sensors | `BLOCKED_NO_MECHANISM` | Round 5B/6A finite-center freezing; Round 6B approximation barrier | Reopen only if sensor architecture is non-frozen/nonlocal in a proved way |
 | I | Uniformly convergent countable sensor expansion | Universal fast corrected-log ranking | `BLOCKED_NO_MECHANISM` | Round 6B forces nonuniform/log-scale residual stress | Reopen with explicit nonuniform tail and a decrease theorem |
@@ -180,6 +180,26 @@ Any candidate must be checked by direct integer iteration before doing anything 
 ## F — Divergence disproof lane
 
 The first kill test is archimedean reality: does the construction contain a positive integer, or only a point in `Q_2`, `Z_2`, or `Q`? Round 5B/6A show why long positive shadows of nonpositive periodic objects are not themselves counterexamples.
+
+Four independently audited route closures now sharpen that gate:
+
+- `F-BRANCH-CENTER-001` collapses exactly the two-rational-center graph with
+  edges `A-a->A`, `A-b->B`, `B-c->A`; it does not justify enlarging the graph
+  without a structurally different synchronization mechanism.
+- `F-FINITE-RESIDUE-FIRST-INTEGRAL-001` proves that a memoryless invariant
+  coloring of one finite residue ring is constant; finite-state memory,
+  changing moduli, traps, and ranked recursive graphs are not covered.
+- `F-POLY-RATCHET-001` closes the canonically normalized primitive-polynomial
+  eigen/divisibility subclass on a fixed finite macro cycle; it does not close
+  nonlinear or component-coupled invariant mechanisms.
+- `F-SMOOTH-RATIO-SEMICONJ-001` rules out every positive termwise generator
+  whose successive-state ratio has a finite real limit; a hypothetical
+  divergent witness must have genuinely nonconvergent ratios.
+
+All four are method obstructions, not evidence that Collatz is true and not
+disproofs. A surviving construction must still provide an explicit ordinary
+positive seed, exact canonical forward invariance, and a well-founded proof
+that the orbit never reaches `1` and is unbounded or otherwise nonterminating.
 
 ## Duplicate-route rule
 

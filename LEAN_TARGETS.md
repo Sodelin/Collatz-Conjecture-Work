@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **three narrow Lean formalizations**. It does not
+The repository contains **six narrow Lean formalizations**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -12,13 +12,19 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/InverseWordBoundary.lean`](lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the `8x+5 / 8x+4` coalescence regression. | Full L4/L5 guards, completeness, or Collatz. |
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
+| [`lean/CollatzWork/Disproof/BranchingCenter.lean`](lean/CollatzWork/Disproof/BranchingCenter.lean) | Rigidity of the exact two-center/three-single-edge consistency equation: positive labels collapse to `a=b=c`. | Center elimination, positive-center classification, the fixed-denominator anchor obstruction, larger graphs, or Collatz. |
+| [`lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean`](lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean) | Abstract group-action core: invariance under two permutations and a transitive commutator forces a coloring to be constant. | The factor-descent and affine-commutator bridge for the full all-moduli Collatz theorem, finite-state memory, or Collatz. |
+| [`lean/CollatzWork/Disproof/PolynomialRatchet.lean`](lean/CollatzWork/Disproof/PolynomialRatchet.lean) | Power-of-two/odd normal-form uniqueness, normalized leading-coefficient telescope, non-3 content-gain obstruction, and degree telescope. | Primitive-polynomial macro bridges, guard invariance, the resonant `p=3` classification, or Collatz. |
 
 The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) imports the first
-two modules. The two-pump module must also be compiled directly.
+two modules. The four disproof modules must also be compiled directly.
 
 ```powershell
 lake build
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
+lake env lean lean\CollatzWork\Disproof\BranchingCenter.lean
+lake env lean lean\CollatzWork\Disproof\FiniteResidueFirstIntegral.lean
+lake env lean lean\CollatzWork\Disproof\PolynomialRatchet.lean
 ```
 
 The 2026-08-24 replay passed. The recorded theorem dependencies are summarized
