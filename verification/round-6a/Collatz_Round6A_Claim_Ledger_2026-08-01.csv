@@ -1,0 +1,13 @@
+claim_id,claim,origin,status_correctness,status_priority,usefulness,collatz_relevance,notes
+6A-V1,5A principal-row profile realization,5A verified in 6A,high confidence,exact application not located,technically useful,indirect architecture,"Unique factorization makes the correction genuinely state-only."
+6A-V2,5A arbitrary prescribed minimum schedules,5A verified in 6A,high confidence,exact form not located,technically useful,indirect architecture,"Potential decreases before d_K and increases after d_K."
+6A-V3,5A sharp debt-tail frontier,5A verified in 6A,high confidence,exact form not located,high methodological,indirect architecture,"f(rho)=(1-rho)/(1+rho log2(3/2)) is attained asymptotically."
+6A-V4,Rational periodic lift realizes repeated valuation word,5B verified in 6A,high confidence,prior-art machinery,foundational,indirect architecture,"Reserve bookkeeping and exact rational tests support no valuation slippage."
+6A-V5,Arbitrary F(v2(n+1)) near-full obstruction,5B verified in 6A,high confidence,exact ranking form not located,high methodological,indirect architecture,"For fixed m only finitely many F-values are used phasewise."
+6A-V6,Finite-center 2-adic sensor obstruction,5B verified in 6A,high confidence,exact form not located,high methodological,indirect architecture,"Finite feature vectors freeze phasewise on a disjoint periodic orbit."
+6A-T1,Rational-period beta-debt necessity,6A new synthesis,high confidence,exact form not located,high technical,necessary condition,"Universal beta-log descent forces linear same-phase debt with explicit eta_beta(m,A)."
+6A-C2,Distributed w_m critical-debt convergence,6A new synthesis,high confidence,exact form not located; best 6A candidate,high conceptual,necessary condition,"Normalized required debt Q_beta,m tends to rho_beta from 5A."
+6A-C3,Periodic singularity-transversal necessity,6A synthesis,high confidence,folklore-likely/exact form not located,methodological,necessary condition,"Every repelling orbit with m/A>beta must meet failure of two-sided local boundedness."
+6A-X1,Local lower boundedness alone controls debt,attempted strengthening,false,not applicable,guardrail,none,"Counterexample R_+(n)>=0 has principal-shadow debt K."
+6A-X2,Local upper boundedness alone controls debt,attempted strengthening,false,not applicable,guardrail,none,"Counterexample R_-(n)<=0 has principal-shadow debt K."
+6A-CC,Collatz conjecture resolved,project-wide,false/not claimed,not applicable,none,none,"No convergence theorem is obtained."

@@ -1,0 +1,12 @@
+COLLATZ ROUND 6A VERIFICATION CHECKS
+Purpose: independently stress 5A/5B and test the new distributed ghost-stress synthesis.
+
+PASS A: 5A single-state prescribed minima and sharp frontier reconstructed.
+PASS B: rational-period lift and same-phase scaling (500 random repelling words).
+PASS C: 5B arbitrary F(v2(n+1)) phase-freezing obstruction reconstructed.
+PASS D: rational-period beta-horizon debt coefficient algebra (2000 cases).
+PASS E: w_m distributed critical debt rate converges to the 5A inverse frontier.
+PASS F: finite-center feature freezing (18 disjoint w_m families).
+PASS G: explicit counterexamples show one-sided local boundedness cannot replace two-sided/local debt control.
+
+ALL ROUND-6A CHECKS PASSED
