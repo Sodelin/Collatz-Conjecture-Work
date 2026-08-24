@@ -27,7 +27,8 @@ Several tempting global promotions were then ruled out:
   descent, because minimality only gives a lower bound relative to the original
   root;
 - simple additive termination potentials fail for the exact Collatz-equivalent
-  rewrite system;
+  rewrite system, and the failure persists under the audited two-state
+  semantic labeling for both symbol and adjacent-edge weights;
 - cyclically rotating a two-pump parity-word equation gives an algebraically
   dependent condition, not a new nonzero resultant;
 - natural affine combinations of hard-state label depth, parameter bit length,
@@ -45,6 +46,9 @@ mistaking the same gaps for a proof.
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Lean-checked, narrow | The easy-child arithmetic, iteration identity, and coalescence statement. It does not formalize the hard-family rank or Collatz. |
 | [`proof-search/routes/A_yah_2local_edge_potential_no_go.md`](proof-search/routes/A_yah_2local_edge_potential_no_go.md) | Exact certificate plus checker | A 13-row cancellation excludes bounded-below adjacent-pair additive potentials for the stated rewrite contexts. It does not exclude matrix, automaton, or nonadditive orders. |
 | [`verification/yah_2local_edge_no_go.py`](verification/yah_2local_edge_no_go.py) | Reproducible checker | Replays the exact cancellation certificate and prints `PASS`. |
+| [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Exact labeled cancellation theorem | The fixed two-state suffix algebra cannot support additive labeled-symbol or adjacent-edge orders, including finite lexicographic tuples. It does not exclude other labels or nonadditive orders. |
+| [`verification/yah_two_state_semantic_label_no_go.py`](verification/yah_two_state_semantic_label_no_go.py) | Standard-library exact checker | Reconstructs the labeled rules and replays the fixed-terminal positive-integer cancellations exactly. |
+| [`proof-search/routes/AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md) | Exact reduction theorem | Gives a total decreasing boundary normalizer and the Collatz-equivalent hard return map; `31 -> 182 -> 91` is the smallest replay-rank recharge witness. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Lean-checked, narrow | The two rotated determinant pairs satisfy exact dependencies, so the hoped cyclic constant resultant vanishes identically. |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Audited derivation | Gives the coefficient provenance, factorization, scope, and prior-art classification for the two-pump route obstruction. |
 | [`verification/disproof_cycle_search.py`](verification/disproof_cycle_search.py) | Exact bounded computation | Exhausts the reported finite `(k,q,D)` region using a corrected maximum-`C` dynamic program; it finds no nontrivial positive cycle candidate in that region. |
@@ -78,6 +82,18 @@ every positive input `n>1` coalesces with some smaller positive start is
 equivalent to Collatz itself: strong induction turns that property into Collatz,
 while Collatz permits choosing the smaller start `1`.
 
+The exact boundary reducer can be iterated to skip every non-hard label and
+produce a closed return map `F` on the hard family.  This removes an ambiguity
+from the route, but it does not create descent: the smallest hard source whose
+normalized return both grows and recharges the current replay debt is
+
+```text
+31 --T^7--> 182 --T--> 91,
+```
+
+with debt `(D,R)` changing from `(0,0)` to `(6,1)`.  Universal termination of
+this `F` system is equivalent to the original convergence claim.
+
 The missing proof object is therefore still a genuinely well-founded mechanism
 covering every guarded hard and boundary transition, or a sound termination
 order for the exact Collatz-equivalent rewrite system. The missing disproof
@@ -90,6 +106,7 @@ From the repository root:
 
 ```powershell
 python -B verification\yah_2local_edge_no_go.py
+python -B verification\yah_two_state_semantic_label_no_go.py
 python -B verification\disproof_cycle_search.py
 C:\Users\Owner\.elan\bin\lake.exe env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 C:\Users\Owner\.elan\bin\lake.exe build
@@ -98,6 +115,7 @@ C:\Users\Owner\.elan\bin\lake.exe build
 Expected key outputs are:
 
 - rewrite cancellation checker: `PASS`;
+- two-state semantic-label checker: `PASS`;
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
   `1-2` encodings, and 0 nontrivial candidates;
 - two-pump Lean module: five theorem dependency reports containing only

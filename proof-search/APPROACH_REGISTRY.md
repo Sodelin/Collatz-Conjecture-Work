@@ -1,12 +1,12 @@
-# Approach registry — Round 7
+# Approach registry — Round 8
 
-Last structural update: 2026-08-23, Codex Cycle 1.
+Last structural update: 2026-08-24, bounded closure sprint.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
 | ID | Family | Exact target | Current status | Main obstacle | Reopen / next action |
 |---|---|---|---|---|---|
-| A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Existing automated matrix-interpretation classes have not terminated the full system | Reproduce exact system; synthesize richer interpretation classes; prove certificate semantics in Lean |
+| A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Unlabeled adjacent-edge weights and the audited two-state semantic labeling both fail for additive symbol/edge orders, including every finite lexicographic version | Reopen only with a different semantic algebra, longer memory, matrix/nonadditive order, and an explicit candidate certificate |
 | B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
 | AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | The hard successor is normalized exactly, but its self-replay rank can be recharged arbitrarily across labels; simple affine size/debt composites are refuted | Reopen with a richer cross-label well-founded rank or a uniform smaller-target macro that survives the exact successor guards |
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
@@ -31,6 +31,16 @@ A finite interpretation certificate assigning each rewrite symbol an object in a
 - Check the interpretation is genuinely well-founded on all encoded positive integers.
 - Check the encoding/decoding theorem covers the exact standard or accelerated map intended.
 - Reject any certificate that uses an unproved “eventual good block” assumption.
+
+### Latest exact obstruction
+
+`proof-search/routes/A_yah_two_state_semantic_label_no_go.md` checks the
+smallest nontrivial two-state suffix algebra suggested by the exact rules.
+Positive integer cancellations among legal labeled rewrite instances exclude
+additive weights on labeled symbols and labeled adjacent edges, even with a
+fixed canonical terminal state and even in any finite lexicographic ordered
+group.  This is stronger than a failed numerical search but narrow to that
+one algebra and additive locality class.
 
 ### Why high priority
 The endpoint equivalence and certificate semantics already exist in the literature. This is unusually close to a SAT/SMT-searchable finite object.
@@ -99,6 +109,13 @@ lower-bounded affine combination of label depth, parameter bitlength, and
 that replay rank (or its underlying 2-adic depth).  This closes the proposed
 simple composite-rank test, but it does not exclude richer state or nonlinear
 well-founded interpretations.
+
+`proof-search/routes/AB_hard_boundary_return_system.md` absorbs every easy
+and low-valuation boundary into a total decreasing normalizer `rho`, leaving
+an exact return map `F` on the hard family.  This makes the residual obligation
+closed, but also shows it is Collatz-equivalent rather than a new induction
+bridge.  The smallest boundary-normalized rank recharge is
+`31 -> 182 -> 91`, where the replay debt changes from zero to one.
 
 ### Main kill test
 
