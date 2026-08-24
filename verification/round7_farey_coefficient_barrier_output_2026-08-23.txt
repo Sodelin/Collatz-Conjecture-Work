@@ -1,0 +1,60 @@
+Round 7 Farey coefficient-barrier certificate
+Date: 2026-08-23
+Arithmetic mode: exact Python Fraction comparisons; decimal displays are diagnostic only
+
+B = 2^71 = 2361183241434822606848
+atanh-series terms per logarithm = 100
+
+Certified ordering
+------------------
+L < beta_B < M < alpha < R
+
+where
+
+L = 6586818670/10439860591
+M = 72057431991/114208327604
+R = 65470613321/103768467013
+
+alpha = log(2)/log(3)
+beta_B = log(2)/log(3 + 2^-71)
+
+Exact Farey certificate
+------------------------
+R_num*L_den - L_num*R_den = 1
+
+M_num = L_num + R_num
+M_den = L_den + R_den
+
+Therefore L and R are Farey neighbors and M is their mediant. Every rational strictly between L and R has denominator at least
+
+114208327604.
+
+Since (beta_B, alpha) is a subset of (L,R) and M lies in (beta_B, alpha), this is exactly the smallest possible denominator of a rational in (beta_B, alpha).
+
+Rigorous interval diagnostics
+-----------------------------
+The exact rational series bounds are much narrower than the digits shown here.
+
+beta_B ~= 0.630929753571457437099446039594463928267644569
+alpha  ~= 0.630929753571457437099527114342760854299585640
+
+The checker also proves
+
+72057431991/114208327604 < alpha < 72057431992/114208327604,
+
+so
+
+floor(alpha * 114208327604) = 72057431991.
+
+PASS
+----
+Subject to:
+
+1. Barina's published convergence verification through 2^71; and
+2. Rozier-Terracol Corollary 4.4,
+
+a hypothetical least Collatz counterexample cannot have a coefficient-contracting accelerated prefix before step
+
+114,208,327,604.
+
+This is a necessary-condition theorem, not a proof of the Collatz conjecture.
