@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact full/extended scalar-arctic no-start certificate for labelled YAH.
+"""Exact full/extended scalar-arctic no-start certificates for YAH.
 
 The checker reconstructs the 22 rules obtained by labeling the eleven-rule
 Yolcu--Aaronson--Heule Collatz system with the fixed two-state suffix algebra.
@@ -10,6 +10,9 @@ coefficients are therefore ordinary sums.  The cancellation forces every weak
 rule coefficient delta to be
 zero, so no labeled rule can be removed strictly at the first full/relative
 rule-removal step.
+
+Collapsing the two tail states gives a second all-positive cancellation on the
+original eleven-rule system itself.  The checker verifies both identities.
 
 This is not a top-termination certificate and says nothing about higher
 dimensions, other carriers or labelings, local/reachable-only relations, or
@@ -112,6 +115,22 @@ MULTIPLIER = {
     ("X_^2", 1): 1,
 }
 
+# The state-collapsed multiplier in the original eleven-rule order.  It is
+# derived by summing the two labeled-instance multipliers for each rule.
+UNLABELED_MULTIPLIER = {
+    "D_f": 4,
+    "D_t": 7,
+    "X_f0": 5,
+    "X_f1": 6,
+    "X_f2": 9,
+    "X_t0": 3,
+    "X_t1": 4,
+    "X_t2": 4,
+    "X_^0": 3,
+    "X_^1": 2,
+    "X_^2": 2,
+}
+
 
 def cleaned(counter: Counter[Token]) -> Counter[Token]:
     return Counter(
@@ -126,12 +145,27 @@ def main() -> None:
     assert set(MULTIPLIER) == expected_keys
     assert all(weight > 0 for weight in MULTIPLIER.values())
     assert sum(MULTIPLIER.values()) == 49
+    assert set(UNLABELED_MULTIPLIER) == {rule.name for rule in RULES}
+    assert all(weight > 0 for weight in UNLABELED_MULTIPLIER.values())
+    assert sum(UNLABELED_MULTIPLIER.values()) == 49
+    assert all(
+        UNLABELED_MULTIPLIER[rule.name]
+        == sum(MULTIPLIER[(rule.name, tail)] for tail in STATES)
+        for rule in RULES
+    )
 
     total: Counter[Token] = Counter()
+    unlabeled_total: Counter[str] = Counter()
     all_tokens: set[Token] = set()
     rows = 0
 
     for rule in RULES:
+        symbol_delta = Counter(rule.lhs)
+        symbol_delta.subtract(rule.rhs)
+        for symbol, coefficient in symbol_delta.items():
+            unlabeled_total[symbol] += (
+                UNLABELED_MULTIPLIER[rule.name] * coefficient
+            )
         for tail in STATES:
             assert eval_word(rule.lhs, tail) == eval_word(rule.rhs, tail)
             lhs = label_word(rule.lhs, tail)
@@ -148,7 +182,18 @@ def main() -> None:
         (symbol, state) for symbol in ALGEBRA for state in STATES
     }
     assert cleaned(total) == Counter()
+    assert Counter(
+        {
+            symbol: coefficient
+            for symbol, coefficient in unlabeled_total.items()
+            if coefficient
+        }
+    ) == Counter()
 
+    print("unlabeled certificate rows =", len(RULES))
+    print("unlabeled total multiplier =", sum(UNLABELED_MULTIPLIER.values()))
+    print("weighted unlabeled symbol-count delta = {}")
+    print("ORIGINAL_FULL_EXTENDED_SCALAR_ARCTIC_NO_START = PASS")
     print("semantic equations = 22")
     print("labeled tokens =", len(all_tokens))
     print("certificate rows =", rows)

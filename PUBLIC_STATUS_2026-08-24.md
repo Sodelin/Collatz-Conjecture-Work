@@ -35,10 +35,11 @@ Several tempting global promotions were then ruled out:
 - simple additive termination potentials fail for the exact Collatz-equivalent
   rewrite system, and the failure persists under the audited two-state
   semantic labeling for both symbol and adjacent-edge weights;
-- on that global 22-rule labeling, an all-positive cancellation rules out the
-  first full/extended dimension-one arctic-natural rule-removal step; this does
-  not cover top, higher-dimensional, different-label, transformed, or local
-  methods;
+- exact all-positive, Farkas, and RUP certificates rule out every standard
+  first dimension-one arctic-natural step on the original eleven-rule YAH
+  system: full/extended removal and both Lemma-3.18 top entry points. This does
+  not cover higher-dimensional, different-carrier/label, transformed,
+  non-coefficientwise, or local methods;
 - cyclically rotating a two-pump parity-word equation gives an algebraically
   dependent condition, not a new nonzero resultant;
 - natural affine combinations of hard-state label depth, parameter bit length,
@@ -62,8 +63,9 @@ verification levels. The atomic claim registry is canonical for promotion.
 | [`verification/yah_2local_edge_no_go.py`](verification/yah_2local_edge_no_go.py) | Reproducible checker | Replays the exact cancellation certificate and prints `PASS`. |
 | [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Exact labeled cancellation theorem | The fixed two-state suffix algebra cannot support additive labeled-symbol or adjacent-edge orders, including finite lexicographic tuples. It does not exclude other labels or nonadditive orders. |
 | [`verification/yah_two_state_semantic_label_no_go.py`](verification/yah_two_state_semantic_label_no_go.py) | Standard-library exact checker | Reconstructs the labeled rules and replays the fixed-terminal positive-integer cancellations exactly. |
-| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Exact coefficient-independent theorem | An all-positive 49-mass cancellation excludes every first full/extended dimension-one arctic-natural removal on the exact global 22-rule labeling. It does not cover top termination or richer interpretation classes. |
-| [`verification/yah_two_state_scalar_arctic_full_no_start.py`](verification/yah_two_state_scalar_arctic_full_no_start.py) | Standard-library exact checker | Reconstructs all 22 labeled rules and verifies the 14-coordinate cancellation over the unbounded coefficient domain. |
+| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Exact coefficient-independent theorem | Excludes every standard first dimension-one arctic-natural step on the original YAH system and the corresponding fixed labeling. It does not cover richer interpretation classes. |
+| [`verification/yah_two_state_scalar_arctic_full_no_start.py`](verification/yah_two_state_scalar_arctic_full_no_start.py) | Standard-library exact checker | Verifies the original 11-rule and labeled 22-rule full/extended cancellations, both of mass 49. |
+| [`verification/yah_scalar_arctic_top/verify_top_certificates.py`](verification/yah_scalar_arctic_top/verify_top_certificates.py) | Dependency-free exact checker plus payload | Checks 491 integer Farkas lemmas and 426 RUP clauses for all six boundary and four reversed-dynamic labeled top targets; equal-state lifting gives the original-system corollary. |
 | [`proof-search/routes/AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md) | Exact reduction theorem | Gives a total decreasing boundary normalizer and the Collatz-equivalent hard return map; `31 -> 182 -> 91` is the smallest replay-rank recharge witness. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Lean-checked, narrow | The two rotated determinant pairs satisfy exact dependencies, so the hoped cyclic constant resultant vanishes identically. |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Audited derivation | Gives the coefficient provenance, factorization, scope, and prior-art classification for the two-pump route obstruction. |
@@ -124,7 +126,8 @@ From the repository root:
 python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
-python -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
 C:\Users\Owner\.elan\bin\lake.exe env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 C:\Users\Owner\.elan\bin\lake.exe build
@@ -136,8 +139,10 @@ Expected key outputs are:
   normalizer edges, and `PASS`; this is finite regression evidence only;
 - rewrite cancellation checker: `PASS`;
 - two-state semantic-label checker: `PASS`;
-- full scalar-arctic no-start checker: 22 rows, total multiplier 49, zero
-  weighted token-count delta, and `PASS`;
+- scalar-arctic full checker: original 11 rows and labeled 22 rows, each with
+  total multiplier 49, zero weighted count delta, and `PASS`;
+- scalar-arctic top checker: 10 cases, 491 integer Farkas lemmas, 426 RUP
+  clauses, and `PASS`;
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
   `1-2` encodings, and 0 nontrivial candidates;
 - two-pump Lean module: five theorem dependency reports containing only
