@@ -21,6 +21,10 @@ The Python checkers use the standard library. The Lean toolchain is pinned by
 The L14 regression was replayed under the same Python environment at artifact
 commit `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`.
 
+The fixed-algebra YAH packet was independently replayed at Draft PR #8 head
+`d5390326226eb27d4dd14f64ec3d52fe7d92cbe5` (parent
+`e7a72cdc1fc6d5c45144c8bbb5925f6906541673`).
+
 ## Freshly replayed promoted checks
 
 Run from the repository root.
@@ -33,12 +37,17 @@ Run from the repository root.
 | `A-YAH-2STATE-AN1-001` | `python -B verification\yah_two_state_scalar_arctic_full_no_start.py` | `certificate rows = 22`, `total multiplier = 49`, `weighted token-count delta = {}`, then `FULL_EXTENDED_SCALAR_ARCTIC_NO_START = PASS` | Reconstructs the global 22-rule labeling and proves the coefficient-independent full/extended dimension-one arctic-natural no-first-removal theorem. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, `YAHFiniteObstruction` and their statement/data dependencies through the umbrella module. It does not import the two-pump module. |
 
-All seven commands passed in the fresh audit. The YAH checkers currently
-regenerate their evidence rather than comparing against a committed stdout
-transcript. The cycle-DP output is retained in
+All seven commands passed in the fresh audit. The YAH checkers regenerate
+their evidence rather than comparing it automatically against the retained
+replay transcript
+[`yah_finite_obstruction_replay_2026-08-24.txt`](yah_finite_obstruction_replay_2026-08-24.txt).
+The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
+
+In a fresh clone, run `lake build` before any direct `lake env lean` command:
+the imported `.olean` files do not exist until the build has created them.
 
 If `lake` is not on `PATH`, invoke the executable installed by `elan`; do not
 hard-code another contributor's home directory into scripts or documentation.
@@ -49,6 +58,8 @@ hard-code another contributor's home directory into scripts or documentation.
 |---|---|---|
 | [`CollatzWork/InverseWordBoundary.lean`](../lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the exact `8x+5 / 8x+4` regression witness. | `equalSlopeSmaller` is axiom-free; the witness reports standard `propext`, `Quot.sound`. |
 | [`CollatzWork/RefinedMersenneChild.lean`](../lean/CollatzWork/RefinedMersenneChild.lean) | Refined easy-child arithmetic, iterate identity, and coalescence. | Arithmetic theorem reports standard `propext`, `Classical.choice`, `Quot.sound`; remaining exported theorems report `propext`, `Quot.sound`. |
+| [`CollatzWork/YAHFiniteObstructionStatement.lean`](../lean/CollatzWork/YAHFiniteObstructionStatement.lean) | Trusted finite rule/model statement layer and executable predicates used by the YAH certificate proofs. | This is the statement/data layer; correspondence to the pinned upstream rule blob remains a prose/source-review obligation. |
+| [`CollatzWork/YAHFiniteObstruction.lean`](../lean/CollatzWork/YAHFiniteObstruction.lean) | Exact 13-, 8-, and 50-row cancellations, fixed-model equations, canonical embeddings for selected rows, pump identity, and ordered-additive no-go wrappers. | Core 8-/50-row cancellations and model equations are axiom-free; wrappers report only standard `propext`, `Quot.sound`; no global rewrite-relation or Collatz theorem is proved. |
 | [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; not imported by `CollatzWork.lean`. |
 
 No module formalizes Round 6A, full L5, the L13 hard-child classification,

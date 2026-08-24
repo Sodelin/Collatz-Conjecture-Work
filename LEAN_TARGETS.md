@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **three narrow Lean formalizations**. It does not
+The repository contains **four narrow Lean formalizations**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -11,10 +11,12 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 |---|---|---|
 | [`lean/CollatzWork/InverseWordBoundary.lean`](lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the `8x+5 / 8x+4` coalescence regression. | Full L4/L5 guards, completeness, or Collatz. |
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
+| [`lean/CollatzWork/YAHFiniteObstruction.lean`](lean/CollatzWork/YAHFiniteObstruction.lean) | Exact 13-row canonical 2-tile certificate, the fixed two-state model, exact 8-row labeled-symbol and 50-row labeled-edge cancellations, and their ordered-additive no-go consequences. | YAH termination, Collatz, other semantic algebras, longer windows, matrix/nonadditive orders, or novelty. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
 The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) imports the first
-two modules. The two-pump module must also be compiled directly.
+three theorem modules and their statement/data dependencies. The two-pump
+module must also be compiled directly.
 
 ```powershell
 lake build
@@ -28,14 +30,7 @@ as `propext`, `Quot.sound`, and, for one arithmetic theorem,
 
 ## Highest-value pending targets
 
-### 1. Exact YAH cancellation certificates
-
-Formalize the fixed rule table, canonical/fixed-terminal context predicates,
-the 13-row unlabeled adjacent-edge cancellation, and the 8-/50-row fixed
-two-state labeled cancellations. Preserve the narrow conclusion: these kill
-specific additive scalar/finite-lex classes, not all termination orders.
-
-### 2. L13 hard successor and rank obstruction
+### 1. L13 hard successor and rank obstruction
 
 Formalize:
 
@@ -48,13 +43,13 @@ Formalize:
 Do not infer that unbounded valuation depth rules out every finite symbolic
 automaton.
 
-### 3. Hard boundary normalizer and equivalence
+### 2. Hard boundary normalizer and equivalence
 
 Formalize the decreasing boundary reducer, total normalizer, hard return map,
 and both directions of its Collatz equivalence. This would verify the
 reformulation; it would not prove termination of the return map.
 
-### 4. Round 6A rational-period beta-debt chain
+### 3. Round 6A rational-period beta-debt chain
 
 This remains the most important older theorem reconstruction. Isolate and prove:
 
@@ -66,7 +61,7 @@ This remains the most important older theorem reconstruction. Isolate and prove:
 
 The current Python checker is diagnostic and cannot replace these proofs.
 
-### 5. L0–L12 prose chain
+### 4. L0–L12 prose chain
 
 Formalize bounded arithmetic lemmas before importing external results. L7/L8
 must expose verified-range and Rozier–Terracol statements as named hypotheses

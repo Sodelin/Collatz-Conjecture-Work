@@ -117,7 +117,7 @@ The upstream artifact is pinned at commit
 with SHA-256
 `e4777832e5cf8148a54299dffa48cf10254629680961006f2c15bcb6c55aa9d2`.
 
-## Candidate artifacts
+## Accepted Draft PR #8 artifacts
 
 - `lean/CollatzWork/YAHFiniteObstructionStatement.lean` — trusted exact data
   and executable predicates;
@@ -139,9 +139,14 @@ Tested with Python 3.14.5, Lean 4.33.1, and Lake 5.0.0:
 ```powershell
 python -B verification/yah_2local_edge_no_go.py
 python -B verification/yah_two_state_semantic_label_no_go.py
-C:\Users\Owner\.elan\bin\lake.exe env lean lean/CollatzWork/YAHFiniteObstruction.lean
-C:\Users\Owner\.elan\bin\lake.exe build
+lake build
+lake env lean lean/CollatzWork/YAHFiniteObstruction.lean
 ```
+
+Run `lake build` before the direct module command in a fresh clone. The build
+creates imported `.olean` files; reversing these two commands can fail before
+Lean reaches the target theorem. If `lake` is not on `PATH`, invoke the local
+`elan` installation without hard-coding another contributor's home directory.
 
 Expected decisive output:
 
