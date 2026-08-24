@@ -9,7 +9,7 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > true or false.
 
 Accepted mathematical baseline: full Git object
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
+`f8558a566b682e8dbc4465206f9c26ac9b17760c` (2026-08-24).
 
 ## The two-minute map
 
@@ -18,7 +18,7 @@ them separate is the most important way to read the archive.
 
 | Kind | What has actually been established | What has **not** been established | Start here |
 |---|---|---|---|
-| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes for the YAH rewrite system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out other labels, longer memory, matrices, nonadditive orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
+| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes and the first full dimension-one arctic-natural step for one labeled YAH system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out top or higher-dimensional interpretations, other labels, longer memory, transformed/nonadditive orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
 | **Collatz-equivalent reformulation** | Global descent, termination of the exact YAH system, and termination of the normalized hard-return map are each equivalent ways to state the remaining universal problem. | An equivalent reformulation is not progress unless it supplies a new well-founded mechanism. No such universal mechanism is known here. | [Hard return system](proof-search/routes/AB_hard_boundary_return_system.md) |
 | **Still-open universal claim** | The exact acceptance gates are explicit and the main failed shortcuts are indexed. | No proof covers every positive integer; no disproof witness meets the positivity and replay gates. | [Public status](PUBLIC_STATUS_2026-08-24.md) and [approach registry](proof-search/APPROACH_REGISTRY.md) |
 
@@ -33,6 +33,7 @@ value, not by a claim that they solve more of Collatz.
 
 | Claim | Scoped status | Why it matters | Novelty / publication status |
 |---|---|---|---|
+| Fixed two-state YAH scalar-arctic full no-start | Exact dependency-free 22-rule certificate; high confidence **within the global labeled dimension-one full/extended class** | Closes the unbounded coefficient domain for the first full scalar arctic-natural rule-removal step | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
 | Round 6A quantitative beta-debt theorem | Self-contained unreviewed derivation plus diagnostic checker | Strongest conceptual theorem candidate about corrected-log rankings and rational periodic shadows | Exact formulation not found; key lift/scaling chain lacks Lean and independent specialist reconstruction |
@@ -90,6 +91,7 @@ From the repository root:
 ```powershell
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
+python -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -B verification\disproof_cycle_search.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
@@ -107,8 +109,9 @@ classical. In particular, the refined Mersenne easy-child coalescence is
 published in substance; it must not be advertised as a new Collatz theorem.
 
 The strongest potentially new artifacts are the exact narrow YAH cancellation
-certificates. A bounded primary-source search found no exact match, but their
-priority is **not certified**. The source-by-claim audit is recorded in the
+certificates, including the 22-rule scalar-arctic full no-start theorem. A
+bounded primary-source search found no exact match, but their priority is
+**not certified**. The source-by-claim audit is recorded in the
 [claim registry](proof-search/CLAIM_REGISTRY.md#primary-source-novelty-audit).
 
 ## Historical archive and integrity

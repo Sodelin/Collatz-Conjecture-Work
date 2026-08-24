@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` (2026-08-24).
+`f8558a566b682e8dbc4465206f9c26ac9b17760c` (2026-08-24).
 
 ## Verdict
 
@@ -20,13 +20,19 @@ this repository.
 - [`A-YAH-2STATE-001`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md):
   exact 8-row and 50-row cancellations kill additive labeled-symbol and
   labeled-edge orders, including finite lexicographic tuples, for one fixed
-  two-state semantic algebra.
+  two-state semantic algebra; the edge certificate now proves that no such
+  fixed-terminal potential can make its first uniform rule-removal step.
+- [`A-YAH-2STATE-AN1-001`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md):
+  an all-positive 49-mass cancellation proves that the global 22-rule labeling
+  has no first full/extended dimension-one arctic-natural rule-removal step.
+  Top, higher-dimensional, different-label, transformed, and local methods
+  remain open.
 - [`AB-HARD-RETURN-001`](proof-search/routes/AB_hard_boundary_return_system.md):
   an exact decreasing boundary normalizer and closed hard return map. Universal
   termination of that return map is Collatz-equivalent; the smallest reported
   growth-plus-recharge witness is `31 -> 182 -> 91`.
 
-The YAH item is a solved **route-class obstruction**. Both normalizers are
+The YAH items are solved **route-class obstructions**. Both normalizers are
 **Collatz-equivalent reductions**. None is the still-open universal
 termination proof.
 

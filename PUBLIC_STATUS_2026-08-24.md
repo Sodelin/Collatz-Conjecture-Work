@@ -35,6 +35,10 @@ Several tempting global promotions were then ruled out:
 - simple additive termination potentials fail for the exact Collatz-equivalent
   rewrite system, and the failure persists under the audited two-state
   semantic labeling for both symbol and adjacent-edge weights;
+- on that global 22-rule labeling, an all-positive cancellation rules out the
+  first full/extended dimension-one arctic-natural rule-removal step; this does
+  not cover top, higher-dimensional, different-label, transformed, or local
+  methods;
 - cyclically rotating a two-pump parity-word equation gives an algebraically
   dependent condition, not a new nonzero resultant;
 - natural affine combinations of hard-state label depth, parameter bit length,
@@ -58,6 +62,8 @@ verification levels. The atomic claim registry is canonical for promotion.
 | [`verification/yah_2local_edge_no_go.py`](verification/yah_2local_edge_no_go.py) | Reproducible checker | Replays the exact cancellation certificate and prints `PASS`. |
 | [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Exact labeled cancellation theorem | The fixed two-state suffix algebra cannot support additive labeled-symbol or adjacent-edge orders, including finite lexicographic tuples. It does not exclude other labels or nonadditive orders. |
 | [`verification/yah_two_state_semantic_label_no_go.py`](verification/yah_two_state_semantic_label_no_go.py) | Standard-library exact checker | Reconstructs the labeled rules and replays the fixed-terminal positive-integer cancellations exactly. |
+| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Exact coefficient-independent theorem | An all-positive 49-mass cancellation excludes every first full/extended dimension-one arctic-natural removal on the exact global 22-rule labeling. It does not cover top termination or richer interpretation classes. |
+| [`verification/yah_two_state_scalar_arctic_full_no_start.py`](verification/yah_two_state_scalar_arctic_full_no_start.py) | Standard-library exact checker | Reconstructs all 22 labeled rules and verifies the 14-coordinate cancellation over the unbounded coefficient domain. |
 | [`proof-search/routes/AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md) | Exact reduction theorem | Gives a total decreasing boundary normalizer and the Collatz-equivalent hard return map; `31 -> 182 -> 91` is the smallest replay-rank recharge witness. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Lean-checked, narrow | The two rotated determinant pairs satisfy exact dependencies, so the hoped cyclic constant resultant vanishes identically. |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Audited derivation | Gives the coefficient provenance, factorization, scope, and prior-art classification for the two-pump route obstruction. |
@@ -118,6 +124,7 @@ From the repository root:
 python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
+python -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -B verification\disproof_cycle_search.py
 C:\Users\Owner\.elan\bin\lake.exe env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 C:\Users\Owner\.elan\bin\lake.exe build
@@ -129,6 +136,8 @@ Expected key outputs are:
   normalizer edges, and `PASS`; this is finite regression evidence only;
 - rewrite cancellation checker: `PASS`;
 - two-state semantic-label checker: `PASS`;
+- full scalar-arctic no-start checker: 22 rows, total multiplier 49, zero
+  weighted token-count delta, and `PASS`;
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
   `1-2` encodings, and 0 nontrivial candidates;
 - two-pump Lean module: five theorem dependency reports containing only
@@ -154,10 +163,10 @@ priority claim.
 ## Provenance checkpoint
 
 The complete accepted mathematical snapshot described by this file is
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. Its parent
-`b3b9f4731937a2d7c999d1b8a6417c9e96597e46` introduced the audited claim
-registry and public research map; `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`
-is the preceding mathematical baseline in that ancestry. Exact scope notes are
+`f8558a566b682e8dbc4465206f9c26ac9b17760c`. Its parent chain includes
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, the accepted trajectory-normal
+form snapshot, and `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`,
+the preceding route-obstruction baseline. Exact scope notes are
 recorded in the linked files and Git history.
 
 The nonexistent string `409cb63b69b5fb6af676166573e752f1f4a5ff38`
