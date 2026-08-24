@@ -6,65 +6,61 @@ Public archive of an AI-assisted mathematical research sequence on **corrected-l
 
 ## Where to start
 
-### Recommended expert starting point
-1. [`papers/round-6a/Collatz_Round6A_Expert_Audit_Brief_2026-08-01.pdf`](papers/round-6a/Collatz_Round6A_Expert_Audit_Brief_2026-08-01.pdf)
-2. [`papers/round-6a/Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.pdf`](papers/round-6a/Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.pdf)
-3. [`verification/round-6a/collatz_round6a_checks.py`](verification/round-6a/collatz_round6a_checks.py)
+The cleanest public review target is:
+
+1. [`papers/round-6a/Theorem_6A1_Public_Review_Note.md`](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
+2. [`verification/round-6a/collatz_round6a_checks.py`](verification/round-6a/collatz_round6a_checks.py)
+3. [`verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv`](verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv)
 4. [`verification/round-6a/round6a_check_output.txt`](verification/round-6a/round6a_check_output.txt)
+5. [`LEAN_TARGETS.md`](LEAN_TARGETS.md)
 
-### Chronologically latest research state
-[`papers/round-6b/Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.pdf`](papers/round-6b/Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.pdf)
-
-Round 6B is the terminal consolidation, but its own conclusion recommends **Round 6A** as the better first document for specialist review because 6A is closer to the mathematical core.
+The public review note isolates the central Round 6A quantitative rational-period β-debt theorem and its proof, rather than presenting the work as a solution of Collatz.
 
 ## Research sequence
 
-| Stage | Main artifact |
+| Stage | Main research state |
 |---|---|
 | Initial | Multi-agent research ledger |
-| Round 2 | Novelty and continuation dossier |
-| Round 3 | Fixed-gap and rising-tail dossier |
-| Round 4A | Shadow deficit and priority dossier |
-| Round 4B | Shadow debt and compensation dossier |
-| Round 5A | Skeleton sharpness and critical compensation dossier |
-| Round 5B | Periodic ghost shadows and depth-tax obstructions dossier |
-| Round 6A | Verification, distributed ghost stress, and debt necessity dossier |
-| Round 6B | Terminal finite-sensor approximation-barrier dossier |
+| Round 2 | Novelty and continuation |
+| Round 3 | Fixed-gap and rising-tail obstruction |
+| Round 4A | Shadow deficit and priority |
+| Round 4B | Shadow debt and compensation |
+| Round 5A | Skeleton sharpness and critical compensation |
+| Round 5B | Periodic ghost shadows and depth-tax obstructions |
+| Round 6A | Verification, distributed ghost stress, and quantitative debt necessity |
+| Round 6B | Terminal finite-sensor approximation barrier |
+
+**Round 6B is chronologically the terminal consolidation, but Round 6B itself recommends Round 6A as the better first target for specialist review because 6A is closer to the mathematical core.**
 
 ## Verification status
 
 - Internal symbolic/algebraic reconstruction: **performed**
-- Executable diagnostic checks: **included**
+- Executable diagnostic checks: **included for Round 6A**
 - Independent human specialist reconstruction: **pending**
 - Lean / proof-assistant formalization: **pending**
 - Certified novelty / priority: **pending**
 - Collatz convergence proof: **not claimed**
 
-Finite computations in the included checkers are diagnostic stress tests and are not presented as proofs of universal statements.
+Finite computations in the included checker are diagnostic stress tests and are not presented as proofs of universal statements.
 
 ## Integrity and dates
 
-The files were generated during the research sequence dated **2026-08-01**, with packet/library records extending into **2026-08-02 UTC**. They were first published to this GitHub repository on **2026-08-23**.
+The research artifacts are dated **2026-08-01**, with the stored packet/library records extending into **2026-08-02 UTC**. This public GitHub repository was created later, on **2026-08-23**.
 
-The original per-round SHA-256 files are preserved in [`checksums/original/`](checksums/original/). A fresh byte-for-byte SHA-256 manifest computed at public archival upload is in [`checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`](checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt).
+The original per-round SHA-256 manifests from Rounds 4A through 6B are preserved unchanged in [`checksums/original/`](checksums/original/). A fresh byte-for-byte SHA-256 inventory of the archived source artifacts was computed at public archival time and is stored at [`checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`](checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt).
 
-See [`PROVENANCE.md`](PROVENANCE.md) for the important distinction between **artifact-generation metadata** and **independently verifiable public timestamping**.
+Hashes establish **content identity**, not an earlier date by themselves. [`PROVENANCE.md`](PROVENANCE.md) records the distinction between the earlier artifact metadata and the later independently visible GitHub publication date.
 
-## Repository layout
+## Current mirror scope
 
-- `papers/` — dossiers, expert briefs, and source Markdown
-- `verification/` — executable checks, outputs, and claim ledgers
-- `audit-prompts/` — prompts intended for independent mathematical reconstruction
-- `bibliography/` — BibTeX/reference files
-- `checksums/` — original SHA-256 records plus the public-upload manifest
-- `archives/` — original round packet ZIPs
-- `PROVENANCE.md` — chronology and timestamp limitations
-- `LATEST.md` — current-result and expert-start pointers
+The repository currently publishes the central Round 6A theorem/proof, its executable checker, checker output, claim ledger, Lean formalization roadmap, provenance record, and the original checksum manifests for the broader research archive.
+
+The historical full-size dossier/PDF/ZIP originals remain preserved in the source file library and are identified byte-for-byte by the publication manifest. They are not being represented as if GitHub had hosted them on 2026-08-01.
 
 ## Independent review requested
 
-The most useful external review is not “Did this solve Collatz?” It is:
+The most useful external question is:
 
-> Are the Round 6A rational-period lifting argument and quantitative β-debt theorem correct, and is the resulting distributed critical-debt law already known in rational-cycle / 2-adic Collatz theory or termination-ranking theory?
+> Are the rational-period positive-lift/same-phase lemmas and the Round 6A quantitative β-debt theorem correct, and is the resulting distributed critical-debt law already known in rational-cycle / 2-adic Collatz theory or termination-ranking theory?
 
 A Lean formalization of the rational-period lift and Round 6A theorem chain would materially strengthen correctness confidence.
