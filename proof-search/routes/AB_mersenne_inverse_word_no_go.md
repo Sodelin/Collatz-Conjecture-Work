@@ -98,9 +98,15 @@ w\in\{E,O\}^j
 
 be any inverse word applied to the whole family `Y_t(x)`. Let
 
+- `j` be any natural number, including zero;
+- when `j=0`, `w=epsilon` be the empty word, whose output is `Y_t(x)` itself;
+
 - `e` be the number of `E` symbols in `w`;
 - `r` be the number of `O` symbols in `w`;
 - `j=e+r`.
+
+Consequently the theorem below includes direct descent as the definitional
+empty-suffix case, rather than only by analogy with inverse coalescence.
 
 Each `E` multiplies the affine leading coefficient by `2`, while each `O`
 multiplies it by `2/3`. Hence, if the word is uniformly admissible, its output

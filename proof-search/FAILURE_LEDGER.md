@@ -106,21 +106,28 @@ Hence `U^j(2^m-1)>2^m-1` for every `1<=j<m`.
   separately).
 - **`A_arb`:** more generally, if finitely many arbitrary sets cover all odd
   integers greater than one and the `i`-th set carries a direct-descent
-  guarantee at a fixed time `k_i>=1` (or at some time `1<=j<=K_i` for a
-  fixed horizon `K_i`), choosing `m` larger than every such time (or horizon)
-  contradicts the displayed identity.  The same proof applies to a cover of
-  all sufficiently large odd integers by taking `m` beyond the base cases.
-  No cylinder or topological hypothesis is needed for this maximum-horizon
-  proof.
+  guarantee at a fixed time `k_i>=1`, the same contradiction follows.  In
+  bounded-horizon form, require `K_i>=1` and, exactly,
+  `forall n in C_i, exists j, 1<=j<=K_i and U^j(n)<n`.  Choosing `m` larger
+  than every such time or horizon contradicts the displayed identity.  The
+  same proof applies to a cover of all sufficiently large odd integers by
+  taking `m` beyond the base cases.  No cylinder or topological hypothesis is
+  needed for this maximum-horizon proof.
 
 This is prior-art territory, not a new lemma.  Sinyor, *The 3x + 1 Problem as
 a String Rewriting System* (2010), Section 3, explicitly records the Mersenne
-forced-growth identity and arbitrarily long stopping times
+forced-growth identity and arbitrarily long stopping times under its
+one-division shortcut-map convention
 ([DOI](https://doi.org/10.1155/2010/458563)).  Applegate and Lagarias,
 *The 3x+1 Semigroup* (2005/2006), Section 2, prove a stronger
 architecture-specific obstruction for the class `-1 mod 2^j` under their
 finite multiplier/decrease method
 ([arXiv](https://arxiv.org/abs/math/0411140)).
+
+The displayed `U` identity is the odd-only translation strictly before the
+Mersenne endpoint: the two maps agree through `j<m` because every removed
+power of two there is exactly one.  At the endpoint their values and step
+counts must not be conflated.
 
 **Replacement architecture:** finite **recursive graph/automaton** with back-edges certified by a separate well-founded rank.
 

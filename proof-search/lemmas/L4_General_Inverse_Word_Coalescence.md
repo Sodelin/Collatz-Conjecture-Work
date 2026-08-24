@@ -70,6 +70,12 @@ be applied successively starting from `Y_0`:
 Y_i=w_i(Y_{i-1}).
 \]
 
+Here `j` is a natural number and may be zero.  When `j=0`, `w` is the empty
+word `epsilon`, no inverse operation is applied, and its output is `Y_0`
+itself.  Thus ordinary direct descent of the selected uniform forward
+endpoint is literally the empty-word special case of this inverse-word
+coalescence language.
+
 Let `r_i` be the number of `O` symbols among the first `i` letters, and let `r=r_j`.
 
 ## 3. Exact closed form
