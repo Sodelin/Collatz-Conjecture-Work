@@ -1,32 +1,62 @@
-Round 7 affine coalescence diagnostic
+Round 7 affine coalescence diagnostic — audited revision
 Date: 2026-08-23
 Script: verification/round7_affine_coalescence_search.py
-Search settings: K=3..9, backward parity-word depth <=10
+Search settings: K=3..12, exact uniform affine forward path, reverse depth <=16
 
 IMPORTANT: This is a bounded certificate search, not a proof or disproof of Collatz.
 
-Exact demo found and independently algebraically readable:
-  U^5(32*x+3) = U(12*x+1), with 0 < 12*x+1 < 32*x+3 for x>=1
+AUDIT CORRECTION
+----------------
+The first committed version artificially restricted the forward Collatz time to t<=K ordinary steps. That was too restrictive. A residue modulo 2^K fixes K *division-by-two decisions*, not merely K ordinary steps; intervening odd steps do not consume 2-adic precision. The script was rewritten to propagate the exact affine family until its x-coefficient becomes odd, which is exactly where parity begins to depend on x. Reverse/coalescence branches are now constructed symbolically rather than accepted from sample agreement.
 
-Sweep:
+The earlier shallow counts are therefore superseded by this file. Keeping this correction in Git history is intentional.
+
+Exact coalescence certificate
+-----------------------------
+For every integer x>=0,
+
+  N(x) = 64*x + 15
+  m(x) = 54*x + 13
+
+satisfy 0 < m(x) < N(x), and
+
+  U^9(64*x+15) = 162*x+40 = U(54*x+13).
+
+The direct uniform path of 64*x+15 has not descended by the last fully uniform state:
+
+  U^9(N)  = 162*x+40
+  U^10(N) = 81*x+20,
+
+whose leading coefficient 81 is still larger than 64. At the next step parity depends on x. Thus this is a genuine example where a strong-induction coalescence certificate closes a cylinder that the direct uniform-descent test does not.
+
+Audited sweep
+-------------
 K,total_odd_cylinders,certified,uncertified
 3,4,2,2
   first uncertified residues: [3, 7]
-4,8,4,4
-  first uncertified residues: [3, 7, 11, 15]
-5,16,10,6
-  first uncertified residues: [7, 11, 15, 23, 27, 31]
-6,32,20,12
-  first uncertified residues: [7, 11, 15, 23, 27, 31, 39, 43, 47, 55, 59, 63]
-7,64,44,20
-  first uncertified residues: [7, 11, 15, 27, 31, 39, 43, 47, 59, 63, 71, 75, 79, 91, 95, 103, 107, 111, 123, 127]
-8,128,96,32
-  first uncertified residues: [7, 15, 27, 31, 39, 47, 59, 63, 71, 79, 91, 95, 103, 111, 123, 127, 135, 143, 155, 159, 167, 175, 187, 191]
-9,256,200,56
-  first uncertified residues: [7, 27, 31, 39, 47, 59, 63, 71, 91, 95, 103, 111, 123, 127, 135, 155, 159, 167, 175, 187, 191, 199, 219, 223]
+4,8,5,3
+  first uncertified residues: [7, 11, 15]
+5,16,12,4
+  first uncertified residues: [7, 15, 27, 31]
+6,32,25,7
+  first uncertified residues: [7, 27, 31, 39, 47, 59, 63]
+7,64,53,11
+  first uncertified residues: [27, 31, 39, 47, 63, 71, 91, 103, 111, 123, 127]
+8,128,112,16
+  first uncertified residues: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255]
+9,256,229,27
+  first uncertified residues: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255, 283, 303, 327, 347, 359, 415, 423, 447]
+10,512,466,46
+  first uncertified residues: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 283, 303, 327, 359, 415, 447, 495, 511, 543]
+11,1024,944,80
+  first uncertified residues: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
+12,2048,1903,145
+  first uncertified residues: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
 
-Interpretation:
-- The search recovers exact strong-induction/coalescence shortcuts and increasingly many cylinders at larger K.
-- It does not close all residue classes in this shallow certificate class.
-- Increasing K alone is not the intended proof strategy; stopping times are unbounded.
-- The next target is a finite recursive graph/state machine with ranked back-edges, potentially using mixed binary/ternary state as in the exact string-rewriting formulation.
+Interpretation
+--------------
+- Exact affine coalescence genuinely closes residue cylinders that have no uniform direct descent before the cylinder's parity information runs out.
+- At K=12, this bounded search certifies 1903 of 2048 odd residue cylinders (about 92.9%) and leaves 145 unresolved.
+- This percentage is diagnostic only. It cannot be extrapolated to a proof.
+- Several unresolved branches persist coherently across increasing K, including Mersenne/-1-shadow-like cylinders. This is consistent with the old Round-4/5 lesson that arbitrarily long locally bad 2-adic shadows exist.
+- The next target remains a finite recursive graph/state representation with ranked back-edges, or an equivalent mixed binary/ternary rewrite interpretation. Merely increasing K is not a resolution strategy.
