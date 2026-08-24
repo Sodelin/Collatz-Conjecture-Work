@@ -14,9 +14,9 @@ reading the full historical log first.
   `b3b9f4731937a2d7c999d1b8a6417c9e96597e46`.
 - Its accepted mathematical parent-line snapshot:
   `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`.
-- Snapshot cutoff: the first stable packets from the live proof, disproof, and
-  two flash lanes on 2026-08-24. Those lanes may continue independently; a
-  later result is not silently included here.
+- Snapshot cutoff: the audited stable packets explicitly named in Sections 4
+  and 5 through this PR update on 2026-08-24. Live lanes may continue
+  independently; a result not named here is not silently included.
 - Canonical complete inventory before the cutoff:
   [claim registry](proof-search/CLAIM_REGISTRY.md).
 - Canonical route state before the cutoff:
@@ -105,7 +105,8 @@ The archive has three different kinds of useful statement:
   solve it.
 - **Narrow positive lemmas.** Selected residue families coalesce with smaller
   starts, and a least counterexample would obey strong residue restrictions.
-  No accepted family theorem covers all positive integers.
+  No accepted theorem resolves every resulting terminal case or proves
+  convergence for all positive integers.
 
 The strongest externally reviewable project-specific artifacts are the finite
 YAH cancellation certificates. Their exact forms were not found in a bounded
@@ -124,9 +125,10 @@ Publication readiness is correspondingly limited:
   Round 6A remains provisional.
 - **Verification infrastructure:** the max-`C` DP and the two-pump Lean module.
 - **Classical corollaries or routine specializations:** the Mersenne easy child,
-  least-counterexample valuation sieve, finite-prime-support lemma, and
-  memoryless single-modulus first-integral obstruction. These are useful but
-  should not be marketed as new Collatz theorems.
+  trajectory normal form, fixed-seed expansion threshold, finite-prime-support
+  and periodic-tail lemmas, and the memoryless single-modulus first-integral
+  obstruction. These are useful but should not be marketed as new Collatz
+  theorems.
 
 ## 4. Accepted and rigorously scoped repository results
 
@@ -154,12 +156,12 @@ argument.
 
 ## 5. Accepted snapshot additions without standalone Git artifacts
 
-The following five statements were independently reconstructed for this
+The following seven statements were independently reconstructed for this
 handoff after `b3b9f473...`. Their proofs are short enough to audit below, but
-the source lanes deliberately did not modify or publish the repository. They
-therefore have **no standalone artifact commit at the cutoff**. Treat them as
-accepted scoped prose in this snapshot, not as end-to-end formalized or
-priority-bearing repository theorems.
+the source lanes did not publish standalone artifacts into the reviewed Git
+lineage. They therefore have **no standalone public artifact commit at the
+cutoff**. Treat them as accepted scoped prose in this snapshot, not as
+end-to-end formalized or priority-bearing repository theorems.
 
 ### 5.1 Scalar relative interpretations of the YAH system
 
@@ -193,46 +195,61 @@ that do not satisfy the stated strict monotonicity, or noncompositional or
 genuinely context-sensitive semantics. No exact external match was found in a
 bounded source check; that is not a novelty certificate.
 
-### 5.2 Least-counterexample valuation sieve
+### 5.2 Deterministic trajectory normal form
 
-Let
-
-\[
-\mathcal B=\{m>0:m\text{ odd and }A^k(m)\ne1\text{ for all }k\ge0\},
-\]
-
-and suppose `n=min B`. Then
+`A-TRAJECTORY-NORMAL-FORM-001` supersedes the earlier three-cylinder
+least-counterexample sieve. Treat `1` as terminal. For a positive odd `x>1`,
+put
 
 \[
-v_2(3n+1)=1,\qquad v_2(3n-1)\in\{2,4,6\}.
+a=v_2(3x+1).
 \]
 
-The first statement follows because `v_2(3n+1)>=2` would give
-`A(n)<n`. Put `c=v_2(3n-1)` and `3n-1=2^c p` with `p` positive odd.
-For `c=2j+3`,
+If `a>=2`, use the actual accelerated edge `x -> A(x)`; it strictly decreases
+because `A(x)<=(3x+1)/4<x`. If `a=1`, put
 
 \[
-A^{j+2}(n)=A(3^j p),\qquad 3^j p<n,
+c=v_2(3x-1),\qquad p=(3x-1)/2^c,
 \]
 
-contradicting minimality. For `c=2j+2`,
+where `p` is positive odd. There are two decreasing cases. If `c=2j+3` with
+`j>=0`, then
 
 \[
-A^{j+2}(n)=3^{j+1}p+2<n\quad(j\ge3),
+A^{j+2}(x)=A(3^j p),\qquad 3^j p<x.
 \]
 
-because `(4^(j+1)-3^(j+2))p>5`. Thus odd `c` and even `c>=8` are
-excluded. Equivalently, for a positive odd `q`, `n` lies in exactly one of
+The abstract rewrite is `x ~> 3^j p`. It is a coalescence edge, not generally
+an edge of the orbit of `x`, but it preserves the property “reaches `1`.” If
+`c=2j+2` with `j>=2`, then
 
 \[
-n=4q+3,\qquad n=16q+11,\qquad n=64q+43,
+A^{j+1}(x)=2\cdot3^j p+1<x.
 \]
 
-or `n == 7 (mod 8)`, `27 (mod 32)`, or `107 (mod 128)`. These are 21
-disjoint residue classes modulo 128. No accepted theorem controls all those
-classes; the first includes Mersenne-type long-growth starts. This is an
-elementary stopping-time/residue reduction with no priority claim, not a
-near-proof.
+Every nonterminal abstract edge therefore strictly decreases a positive
+integer. Deterministic rewriting ends at `1` or in exactly one of
+
+\[
+H_1=\{4u+3:u>0\text{ odd}\},\qquad
+H_2=\{16u+11:u>0\text{ odd}\},
+\]
+
+which are the cases `c=2` and `c=4`. The former `64u+43` family is
+superseded: `c=6` is already the `j=2` decreasing case,
+
+\[
+A^3(x)=18p+1<x.
+\]
+
+This is an exact finite normal-form reduction, not a proof of Collatz. In
+particular, the coalescing abstract rewrites do not show that the original
+orbit itself enters `H_1` or `H_2`, and no accepted theorem resolves those two
+terminal families.
+
+Classification: **`OPEN-USEFUL / NO PROOF`**. The rewrite is deterministic,
+strictly decreasing, and reachability-preserving only in the abstract sense
+stated above.
 
 ### 5.3 Finite prime support forces eventual periodicity
 
@@ -367,6 +384,98 @@ graphs, state-dependent or growing moduli, non-residue invariants, or a
 Collatz counterexample. The argument is classified as elementary
 modular-semigroup folklore; no novelty or priority claim is made.
 
+### 5.6 Fixed-seed threshold for expansion blocks
+
+For `F-EXPANSION-BLOCK-THRESHOLD-001`, let `x_0=N` be one fixed positive odd
+accelerated orbit and put `a_i=v_2(3x_i+1)`. If `L>=1` and
+
+\[
+a_s=a_{s+1}=\cdots=a_{s+L-1}=1,
+\]
+
+then
+
+\[
+x_{s+k}+1=\frac{3^k(x_s+1)}{2^k}\quad(0\le k\le L),
+\]
+
+and exactness of the final valuation gives
+
+\[
+2^{L+1}\mid x_s+1.
+\]
+
+Every accelerated step also satisfies
+
+\[
+x_{i+1}+1\le\frac32(x_i+1).
+\]
+
+Consequently
+
+\[
+2^{L+1}\le x_s+1\le(3/2)^s(N+1),
+\]
+
+so the exact fixed-seed threshold is
+
+\[
+\boxed{L+1-s\log_2(3/2)\le\log_2(N+1).}
+\]
+
+The `+1`, accelerated-time index `s`, and dependence on the single seed `N`
+are essential. The inequality allows the permitted run length to grow with
+`s`; it is neither a uniform bounded-word theorem nor a convergence proof.
+
+### 5.7 Eventually periodic valuation tails are exact cycles
+
+For `A-VALUATION-TAIL-RIGIDITY-001`, suppose an actual positive accelerated
+orbit has an exactly periodic valuation tail, aligned from an odd state `y`.
+Let one period be `w=(a_0,...,a_(r-1))`, put
+
+\[
+A_i=\sum_{h<i}a_h,\qquad B=\sum_{i=0}^{r-1}a_i,
+\]
+
+and define
+
+\[
+D_w=\sum_{i=0}^{r-1}3^{r-1-i}2^{A_i}.
+\]
+
+One period acts by
+
+\[
+F(z)=A^r(z)=\frac{3^rz+D_w}{2^B}.
+\]
+
+For the aligned tail states `y_k=F^k(y)`, set
+
+\[
+\Delta_k=(2^B-3^r)y_k-D_w.
+\]
+
+Then `Delta_k` is an integer and
+
+\[
+\Delta_k=\frac{3^{rk}\Delta_0}{2^{Bk}}.
+\]
+
+Since `3` is odd, integrality for every `k` forces `2^(Bk)` to divide
+`Delta_0` for every `k`; hence `Delta_0=0`. Therefore
+
+\[
+\boxed{A^r(y)=y,\qquad y=\frac{D_w}{2^B-3^r},\qquad 2^B>3^r.}
+\]
+
+The period need not be primitive, and no boundedness hypothesis is required.
+This assertion begins only at an **infinite repeated tail**. In contrast,
+`V-PREFIX-FULLSHIFT-001` records that every finite exact valuation word is
+realized by infinitely many positive starting integers, so it supplies no
+finite forbidden-word or finite-separation theorem. Nothing here proves that
+a relevant trajectory becomes periodic or restricts its valuations to
+`{1,3}`; any density or alphabet condition of that kind remains conditional.
+
 ## 6. Decisive corrections and counterexamples
 
 These are especially useful when reviewing future claims.
@@ -389,6 +498,10 @@ These are especially useful when reviewing future claims.
 6. **Prime recycling is not growing prime support.** For example,
    `15 -> 23 -> 35 -> 53 -> 5 -> 1` under `A`; adjacent coprimality does not
    prevent a prime from reappearing later.
+7. **The old third terminal cylinder was spurious.** When
+   `v_2(3x-1)=6`, the exact identity `A^3(x)=18p+1<x` applies. The
+   `64u+43` family is therefore removed; only `H_1` and `H_2` remain in the
+   trajectory normal form.
 
 ## 7. Formal-check boundary
 
@@ -408,7 +521,8 @@ accepted module uses `sorryAx`.
 
 There is no Lean formalization of the complete YAH semantics, either YAH
 cancellation certificate, the hard-child rank theorem, the hard-return
-equivalence, Round 6A, the new valuation/S-unit/branching lemmas, or Collatz.
+equivalence, Round 6A, the trajectory-normal-form/expansion-threshold/tail
+lemmas, the S-unit/branching lemmas, or Collatz.
 The untracked residue-first-integral module checks only the abstract
 finite-action core described in Section 5.5. It is not part of this Git
 snapshot, and the all-moduli quotient/lift theorem remains a prose obligation.
@@ -470,10 +584,11 @@ objective is allowed to continue.
 | **LIVE** | Augmented-state ranking | A concrete nonlocal or richer symbolic rank may evade the periodic-shadow and hard-recharge barriers. Guessing another bounded scalar correction does not. |
 | **LIVE** | Positive cycle/divergence construction | Exact low-cost witness search remains legitimate. A divergent construction must permit infinitely growing prime support or else it becomes eventually periodic by the S-unit corollary. |
 | **STOPPED-USEFUL** | Refined Mersenne easy child and hard boundary | One child closes by induction; the other has exact successor cells and exact obstructions for the tested inverse/rank classes. A richer cross-label mechanism is needed. |
-| **STOPPED-USEFUL** | Least-counterexample valuation sieve | Reduces a hypothetical least counterexample to 21 residue classes mod 128, but supplies no mechanism controlling those classes. |
+| **LIVE / OPEN-USEFUL** | Trajectory normal form with terminals `H_1,H_2` | Every positive odd input abstracts downward to `1` or one of two terminal families. Coalescence edges preserve reachability but need not be orbit edges; neither terminal family is resolved. |
 | **STOPPED-USEFUL** | Fixed finite-prime-support divergence | Impossible unless the orbit is eventually periodic. This redirects divergence architectures toward unbounded prime support. |
 | **STOPPED-USEFUL** | Two-center branching and two-pump elimination | Both exact ansatzes collapse for algebraic reasons. Larger/different constructions remain untouched. |
 | **STOPPED-USEFUL** | Memoryless single-modulus residue first integrals (`KILLED_CLASS`) | Every coloring of one fixed finite residue ring invariant under every positive ordinary Collatz step is constant. Finite-state memory, forward traps, ranked residue graphs, state-dependent or growing moduli, non-residue invariants, and direct witnesses remain untouched. |
+| **STOPPED-USEFUL** | Eventually periodic exact valuation tails | Infinite repetition of an aligned finite valuation word forces its exact positive cycle equation. No theorem makes a relevant tail periodic; all finite valuation words remain realizable. |
 | **DEAD** | Finite uniformly bounded direct-descent cover | Mersenne starts defeat every maximum horizon. |
 | **DEAD** | Unrefined one-shot Mersenne inverse-word closure | The all-depth slope theorem closes exactly that certificate class, not ranked recursion or refinement. |
 | **DEAD** | Scalar YAH relative interpretation by strictly increasing `N`-self-maps | The two-rule contradiction already applies with the dynamic rule strict and the auxiliary rule weak. |
@@ -502,11 +617,12 @@ Collatz.”
    rank decrease on every back-edge, including the known Mersenne successor
    cells and recharge edge. “Every state eventually descends” by itself is
    equivalent to Collatz and is not an acceptable missing lemma.
-3. **A rooted transition theorem for the three least-counterexample
-   cylinders.** It must cover finite local descents, non-descending returns,
-   and infinite coefficient-stopping without renewing minimality at a moving
-   endpoint. A fixed explicit transition/rank theorem would be new; assuming a
-   smaller iterate exists would only restate Collatz.
+3. **A rooted transition/rank for `H_1` and `H_2`.** The trajectory normal form
+   reduces every positive odd input abstractly to `1` or these two families,
+   but a coalescing rewrite is not necessarily an orbit edge. A completion
+   must control both families, finite and infinite coefficient-stopping, and
+   nonperiodic valuation coupling without assuming the desired smaller orbit
+   iterate. Such an assumption would only restate Collatz.
 4. **The Round 6A formal foundation.** Independently reconstruct the positive
    rational-period lift, endpoint valuation, same-phase scaling, and beta-debt
    chain. These are specific conditional lemmas useful for judging a proposed
@@ -521,7 +637,7 @@ Collatz.”
 
 - Round 6A remains a specialist-review target, not an accepted global theorem.
 - The YAH auxiliary-normalization/confluence flash did not finish its audit.
-- Uncommitted source-lane files are not immutable GitHub artifacts. The five
+- Uncommitted source-lane files are not immutable GitHub artifacts. The seven
   short results in Section 5 are preserved here with
   their full accepted scope; any stronger source-lane wording is excluded.
 - Bounded survivor percentages, finite cycle searches, and finite verification
@@ -548,6 +664,12 @@ This project does **not** claim:
 - that the residue-first-integral obstruction excludes finite-state memory,
   forward traps, ranked recursive residue graphs, state-dependent or growing
   moduli, non-residue invariants, or a Collatz counterexample;
+- that the trajectory normal form makes the original orbit enter `H_1` or
+  `H_2`, or that either terminal family is solved;
+- that the expansion-block inequality uniformly bounds run length when `s`
+  varies, or applies across different seeds without its `N+1` term;
+- that a relevant valuation tail is eventually periodic or uses only the
+  alphabet `{1,3}`;
 - or that any potentially project-specific certificate is novel in the
   publication-priority sense.
 
@@ -587,7 +709,10 @@ search. Every other result above is classified as prior art, a routine
 specialization, a project-specific route obstruction of uncertified novelty,
 or an internal verification artifact. The single-modulus first-integral
 obstruction is classified as elementary modular-semigroup folklore; no
-priority claim is made for its exact packaging.
+priority claim is made for its exact packaging. The new normal-form,
+fixed-seed threshold, finite-prefix full-shift, and periodic-tail statements
+are elementary parity/affine consequences; no novelty claim is made for their
+packaging.
 
 ## 14. Suggested review order
 
@@ -602,7 +727,7 @@ For a first mathematical review:
    read the hard-return note to see why closure is still equivalent to Collatz.
 5. Check the max-`C` DP completeness proof before interpreting its bounded
    output.
-6. Independently reconstruct the five short snapshot additions in Section 5.
+6. Independently reconstruct the seven short snapshot additions in Section 5.
 7. Use the [claim registry](proof-search/CLAIM_REGISTRY.md),
    [failure ledger](proof-search/FAILURE_LEDGER.md), and
    [verification manifest](verification/README.md) for the complete archive.
