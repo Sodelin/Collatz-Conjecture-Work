@@ -384,3 +384,11 @@ and no novelty claim is made.
 The compatible child still closes only conditionally by strong induction.
 The recurrent hard branch still requires a total guarded transition system
 and a well-founded rank that survives cross-label recharge.
+
+## Connections
+
+- **Responds to:** [Mersenne inverse-word no-go](../routes/AB_mersenne_inverse_word_no_go.md).
+- **Feeds:** [mixed-radix coalescence bridge](../routes/AB_mixed_radix_coalescence_bridge.md) and [hard boundary return system](../routes/AB_hard_boundary_return_system.md).
+- **Parallel to:** [L14 trajectory normal form](L14_ThreeNMinusOne_Trajectory_Normal_Form.md).
+- **Partly formalized by:** [Lean targets](../../LEAN_TARGETS.md).
+- **Evidence boundary:** [verification manifest](../../verification/README.md).

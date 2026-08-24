@@ -23,6 +23,8 @@ The Collatz project adopts the shared framework's requirements for:
 - durable failure/no-go ledgers;
 - strict separation of mathematical, novelty, relevance, and formal-verification status;
 - Git-based provenance and continuation checkpoints;
+- portable note graphs with stable IDs, typed relative links, maps of content,
+  and automated orphan/broken-link checks;
 - candidate-resolution promotion gates.
 
 ## Collatz-specific additions retained here
@@ -43,7 +45,17 @@ Changes to the shared methodology repository do not silently change mathematical
 
 ## Current active search
 
-Round 7 remains focused on finite certificate search, especially:
+Round 8 closes with exact route-class obstructions and two
+Collatz-equivalent normalizers, but no universal certificate. Any later search
+must begin from the [research atlas](../ATLAS.md), current registries, and exact
+reopening conditions rather than the older Round-7 frontier.
+
+The Collatz-local implementation of the shared knowledge-graph convention is
+the [portable note-graph standard](NOTE_GRAPH_STANDARD.md). A generic version
+may be upstreamed to `Sodelin/Proof-attack-structure`; doing so does not alter
+any Collatz claim status.
+
+The remaining broad certificate families are:
 
 1. recursive affine residue/coalescence graphs;
 2. exact mixed binary/ternary rewrite termination certificates;

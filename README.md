@@ -11,6 +11,11 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 Accepted mathematical baseline: full Git object
 `b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 
+For a visual, cross-linked map of claims, routes, evidence, historical notes,
+and reopening conditions, use the [research atlas](ATLAS.md). It is portable
+between GitHub and Obsidian and does not duplicate the canonical status
+registries.
+
 ## The two-minute map
 
 The project contains three logically different kinds of statement. Keeping
@@ -51,19 +56,21 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 ### If you are a math enthusiast
 
 1. Read the [plain-language public status](PUBLIC_STATUS_2026-08-24.md).
-2. Use the [two-minute map](#the-two-minute-map) to distinguish a method
+2. Browse the [research atlas](ATLAS.md) to see how the ideas connect.
+3. Use the [two-minute map](#the-two-minute-map) to distinguish a method
    obstruction from an equivalent reformulation.
-3. Treat every finite computation as a bounded check, never as evidence for all
+4. Treat every finite computation as a bounded check, never as evidence for all
    integers.
 
 ### If you are reviewing the mathematics
 
-1. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
-2. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
-3. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
-4. [Reproduction manifest](verification/README.md)
-5. [Lean verification policy](lean/VERIFICATION_POLICY.md)
-6. [Provenance and dates](PROVENANCE.md)
+1. [Research atlas and dependency map](ATLAS.md)
+2. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
+3. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
+4. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
+5. [Reproduction manifest](verification/README.md)
+6. [Lean verification policy](lean/VERIFICATION_POLICY.md)
+7. [Provenance and dates](PROVENANCE.md)
 
 ### If you are continuing the project
 
@@ -89,6 +96,7 @@ See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 From the repository root:
 
 ```powershell
+python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
 python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
@@ -100,6 +108,17 @@ lake build
 
 Expected outputs, tested versions, scope limits, and retained transcripts are
 listed in [verification/README.md](verification/README.md).
+
+Repository navigation has a separate dependency-free check:
+
+```powershell
+python -B verification\check_note_graph.py
+```
+
+No Obsidian community plugin is required. Open the repository root as a vault;
+ordinary relative Markdown links drive GitHub navigation and Obsidian's built-in
+Graph and Backlinks views. See the
+[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
 
 ## Prior art and novelty discipline
 

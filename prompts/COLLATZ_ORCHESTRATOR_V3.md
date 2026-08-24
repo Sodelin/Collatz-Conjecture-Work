@@ -4,7 +4,7 @@
 
 **PIR version:** 1
 
-**Prompt version:** 3.0.0
+**Prompt version:** 3.1.0
 
 **Purpose:** compile the repository's research protocol into an execution prompt for Chat, Work, or Codex without changing the underlying mathematical success criteria.
 
@@ -16,14 +16,16 @@ Before acting, read the smallest relevant set from:
 
 1. `RESEARCH_PROTOCOL_V2.md`
 2. `LATEST.md`
-3. `proof-search/MISSING_LEMMA_LADDER.md`
-4. `proof-search/APPROACH_REGISTRY.md`
-5. `proof-search/lemmas/L0_Global_Descent_Equivalence.md`
-6. `proof-search/lemmas/L1_Exact_Prefix_Descent_Bound.md`
-7. `lean/VERIFICATION_POLICY.md`
-8. `methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md`
-9. shared framework `Sodelin/Proof-attack-structure/framework/PROMPT_PROGRAMMING.md`
-10. shared framework `Sodelin/Proof-attack-structure/framework/PRIOR_ART_AND_NOVELTY_PROTOCOL.md`
+3. `ATLAS.md`
+4. `proof-search/MISSING_LEMMA_LADDER.md`
+5. `proof-search/APPROACH_REGISTRY.md`
+6. `proof-search/lemmas/L0_Global_Descent_Equivalence.md`
+7. `proof-search/lemmas/L1_Exact_Prefix_Descent_Bound.md`
+8. `lean/VERIFICATION_POLICY.md`
+9. `methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md`
+10. `methodology/NOTE_GRAPH_STANDARD.md`
+11. shared framework `Sodelin/Proof-attack-structure/framework/PROMPT_PROGRAMMING.md`
+12. shared framework `Sodelin/Proof-attack-structure/framework/PRIOR_ART_AND_NOVELTY_PROTOCOL.md`
 
 Do not ingest the whole repository blindly. Retrieve additional files only when the current route requires them.
 
@@ -53,6 +55,7 @@ Maintain:
 - prior-art status;
 - formalization status;
 - latest continuation checkpoint.
+- stable node IDs and typed dependency/evidence edges for the active target.
 
 Never promote trusted state because a model sounds confident.
 
@@ -208,7 +211,8 @@ Produce a hostile verdict with a concrete failure or survived checklist.
 Update the gap graph using only previously externalized artifacts.
 
 ### Commit
-Persist the state transition.
+Persist the state transition. Update canonical status once, add typed links for
+new dependencies/evidence, and run the note-graph checker.
 
 ### Archive
 Freeze only milestone releases whose labels and metadata are explicit.
@@ -316,6 +320,8 @@ handoff:
   acceptance_tests: []
   forbidden_shortcuts: []
   output_paths: []
+  related_nodes: []
+  graph_edges_added_or_changed: []
 ```
 
 Use this instead of transferring a giant transcript.
