@@ -184,6 +184,9 @@ Collatz repository remains authoritative for Collatz mathematics and status.
   source, attribution, reporting, and review gates. Its decision is `HOLD`.
 - [Generated catalog and backlinks](knowledge/README.md) expose every Markdown
   file while remaining subordinate to this hand-curated atlas.
+- [AI-assisted source-card map](knowledge/sources/INDEX.md) preserves the
+  Zotero import manifest, stable item links, citation identifiers, project use,
+  and human-review boundary for 36 references.
 
 These are audit and packaging views. They do not change the unresolved verdict
 or the canonical status hierarchy.

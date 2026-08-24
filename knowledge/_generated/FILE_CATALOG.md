@@ -3,13 +3,50 @@
 
 > Supplement to `ATLAS.md`. Collatz remains unresolved; this is structural navigation, not mathematical evidence.
 
-Indexed 57 human-edited Markdown files.
+Indexed 95 human-edited Markdown files.
 
 ## `knowledge`
 
 | File | Title | Node | Out | In |
 |---|---|---|---:|---:|
-| [`knowledge/README.md`](../README.md) | Generated notebook supplements | `Collatz-Conjecture-Work:KNOWLEDGE-SUPPLEMENTS` / `map` | 2 | 3 |
+| [`knowledge/README.md`](../README.md) | Generated notebook supplements | `Collatz-Conjecture-Work:KNOWLEDGE-SUPPLEMENTS` / `map` | 3 | 3 |
+| [`knowledge/sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md`](../sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md) | Some Results on the Collatz Problem | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md`](../sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md) | About the Collatz Conjecture | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md`](../sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md) | The 3x+1 Semigroup | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BARINA-2025-VERIFICATION.md`](../sources/CW-SRC-BARINA-2025-VERIFICATION.md) | Improved Verification Limit for the Convergence of the Collatz Conjecture | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md`](../sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md) | SAT Compilation for Termination Proofs via Semantic Labelling | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md`](../sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md) | The 3x+1 Conjugacy Map | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md`](../sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md) | Böhm–Sontacchi cycle equations | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md`](../sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md) | Verifying an Incremental Theory Solver for Linear Arithmetic in Isabelle/HOL | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-BROX-2000-FEW-DESCENTS.md`](../sources/CW-SRC-BROX-2000-FEW-DESCENTS.md) | Collatz Cycles with Few Descents | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md`](../sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md) | On Unsettleable Arithmetical Problems | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-CRANDALL-1978-3X1.md`](../sources/CW-SRC-CRANDALL-1978-3X1.md) | On the '3x+1' Problem | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md`](../sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md) | Matrix Interpretations for Proving Termination of Term Rewriting | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-EVERETT-1977-ITERATION.md`](../sources/CW-SRC-EVERETT-1977-ITERATION.md) | Iteration of the Number-Theoretic Function f(2n)=n, f(2n+1)=3n+2 | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-EVERTSE-1984-S-UNITS.md`](../sources/CW-SRC-EVERTSE-1984-S-UNITS.md) | On Equations in S-Units and the Thue–Mahler Equation | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md`](../sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md) | S-Unit Equations and Their Applications | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md`](../sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md) | A Note on the Generalized 3n+1 Problem | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md`](../sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md) | Sparse Tiling through Overlap Closures for Termination of String Rewriting | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md`](../sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md) | There Are No Collatz-m-Cycles with m ≤ 91 | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md`](../sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md) | Termination of String Rewriting with Matrix Interpretations | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md`](../sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md) | Semantic Labelling in Practice | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md`](../sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md) | Arctic Termination ... Below Zero | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md`](../sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md) | Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md`](../sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md) | The 3x+1 Problem and Its Generalizations | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md`](../sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md) | The Sufficiency of Arithmetic Progressions for the 3x+1 Conjecture | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md`](../sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md) | Strongly Sufficient Sets and the Distribution of Arithmetic Sequences in the 3x+1 Graph | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md`](../sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md) | Paradoxical Behavior in Collatz Sequences | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md`](../sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md) | On the Nonexistence of 2-Cycles for the 3x+1 Problem | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md`](../sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md) | The 3x+1 Problem as a String Rewriting System | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md`](../sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md) | Formalizing Monotone Algebras for Certification of Termination and Complexity Proofs | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md`](../sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md) | A Stopping Time Problem on the Positive Integers | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md`](../sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md) | The Collatz Problem in the Light of an Infinite Free Semigroup | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-WANG-2019-E-SEQUENCE.md`](../sources/CW-SRC-WANG-2019-E-SEQUENCE.md) | An E-Sequence Approach to the 3x+1 Problem | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md`](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md) | Mixed Base Rewriting for the Collatz Conjecture | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md`](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md) | An Automated Approach to the Collatz Conjecture | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md`](../sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md) | rewriting-collatz software | — | 1 | 1 |
+| [`knowledge/sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md`](../sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md) | Termination of Term Rewriting by Semantic Labelling | — | 1 | 1 |
+| [`knowledge/sources/INDEX.md`](../sources/INDEX.md) | Collatz source-card index | — | 36 | 38 |
 
 ## `lean`
 
@@ -22,7 +59,8 @@ Indexed 57 human-edited Markdown files.
 | File | Title | Node | Out | In |
 |---|---|---|---:|---:|
 | [`methodology/ANTHROPIC_RH_WORKFLOW_NOTES.md`](../../methodology/ANTHROPIC_RH_WORKFLOW_NOTES.md) | Methodology note — what to borrow from Anthropic's August 2026 Riemann-zeta campaign | — | 0 | 1 |
-| [`methodology/NOTE_GRAPH_STANDARD.md`](../../methodology/NOTE_GRAPH_STANDARD.md) | Portable proof-note graph standard | `Collatz-Conjecture-Work:NOTE-GRAPH-STANDARD` / `standard` | 0 | 8 |
+| [`methodology/MARKDOWN_MATH_STYLE.md`](../../methodology/MARKDOWN_MATH_STYLE.md) | Portable Markdown math style | `Collatz-Conjecture-Work:MARKDOWN-MATH-STYLE` / `standard` | 2 | 3 |
+| [`methodology/NOTE_GRAPH_STANDARD.md`](../../methodology/NOTE_GRAPH_STANDARD.md) | Portable proof-note graph standard | `Collatz-Conjecture-Work:NOTE-GRAPH-STANDARD` / `standard` | 1 | 9 |
 | [`methodology/ROZIER_TERRACOL_BARINA_SOURCE_INTEGRATION_2026-08-23.md`](../../methodology/ROZIER_TERRACOL_BARINA_SOURCE_INTEGRATION_2026-08-23.md) | Source integration — paradoxical prefixes + verified base range | — | 0 | 1 |
 | [`methodology/SHARED_PROOF_ATTACK_STRUCTURE.md`](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md) | Shared proof-attack structure integration | — | 2 | 1 |
 | [`methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md`](../../methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md) | Collatz Toolchain and Prompt-Programming Integration | — | 0 | 1 |
@@ -91,18 +129,18 @@ Indexed 57 human-edited Markdown files.
 
 | File | Title | Node | Out | In |
 |---|---|---|---:|---:|
-| [`ATLAS.md`](../../ATLAS.md) | Collatz research atlas | `Collatz-Conjecture-Work:ATLAS` / `map` | 52 | 7 |
+| [`ATLAS.md`](../../ATLAS.md) | Collatz research atlas | `Collatz-Conjecture-Work:ATLAS` / `map` | 53 | 7 |
 | [`CODEX_HANDOFF_2026-08-23.md`](../../CODEX_HANDOFF_2026-08-23.md) | Codex handoff — Collatz project | — | 0 | 1 |
 | [`CONTINUATION.md`](../../CONTINUATION.md) | Continuation checkpoint | — | 11 | 4 |
 | [`LATEST.md`](../../LATEST.md) | Latest accepted research state | — | 15 | 2 |
 | [`LEAN_TARGETS.md`](../../LEAN_TARGETS.md) | Lean verification status and targets | — | 2 | 15 |
 | [`PROVENANCE.md`](../../PROVENANCE.md) | Provenance and timestamp notes | — | 0 | 2 |
 | [`PUBLIC_STATUS_2026-08-24.md`](../../PUBLIC_STATUS_2026-08-24.md) | Public status — 2026-08-24 | — | 11 | 4 |
-| [`README.md`](../../README.md) | Collatz Conjecture Work | — | 17 | 2 |
+| [`README.md`](../../README.md) | Collatz Conjecture Work | — | 18 | 2 |
 | [`RESEARCH_PROTOCOL_V2.md`](../../RESEARCH_PROTOCOL_V2.md) | Research Protocol V2: adversarial, artifact-first Collatz search | — | 1 | 1 |
 
 ## `verification`
 
 | File | Title | Node | Out | In |
 |---|---|---|---:|---:|
-| [`verification/README.md`](../../verification/README.md) | Verification and reproduction manifest | — | 2 | 13 |
+| [`verification/README.md`](../../verification/README.md) | Verification and reproduction manifest | — | 3 | 14 |

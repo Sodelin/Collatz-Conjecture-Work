@@ -37,6 +37,8 @@ ALLOWED_NODE_TYPES = {
     "archive",
 }
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\n]+)\)")
+URI_SCHEME_RE = re.compile(r"^[A-Za-z][A-Za-z0-9+.-]*:")
+WINDOWS_ABSOLUTE_RE = re.compile(r"^[A-Za-z]:/")
 BODY_NODE_ID_RE = re.compile(r"^\*\*Node ID:\*\*\s*`([^`]+)`\s*$", re.MULTILINE)
 BODY_NODE_TYPE_RE = re.compile(r"^\*\*Node type:\*\*\s*`([^`]+)`\s*$", re.MULTILINE)
 FRONT_NODE_ID_RE = re.compile(r"^node_id:\s*[\"']?([^\"'\s]+)[\"']?\s*$", re.MULTILINE)
@@ -127,7 +129,7 @@ def normalized_local_part(raw: str) -> str | None:
     target = unquote(raw_link_target(raw)).replace("\\", "/")
     if not target or target.startswith("#"):
         return None
-    if target.lower().startswith(("http://", "https://", "mailto:", "obsidian://")):
+    if URI_SCHEME_RE.match(target) and not WINDOWS_ABSOLUTE_RE.match(target):
         return None
     return target.split("#", 1)[0].split("?", 1)[0]
 
@@ -371,6 +373,10 @@ def run_self_test() -> None:
         raise ValidationError(f"self-test: fenced-code false control failed: {found}")
     if normalized_local_part("<../README.md#top>") != "../README.md":
         raise ValidationError("self-test: angle/anchor target normalization failed")
+    if normalized_local_part("zotero://select/library/items/ABC123") is not None:
+        raise ValidationError("self-test: external application URI was treated as a local path")
+    if normalized_local_part("C:/absolute/path.md") != "C:/absolute/path.md":
+        raise ValidationError("self-test: Windows absolute path escaped local-path validation")
     if should_validate("x") or not should_validate("README.md"):
         raise ValidationError("self-test: mathematical-call/file-link distinction failed")
     if not exact_case_exists(ROOT / "README.md"):

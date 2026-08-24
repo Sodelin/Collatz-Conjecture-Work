@@ -13,9 +13,9 @@ either registry.
 
 Throughout these notes,
 
-\[
+$$
 U(n)=\frac{3n+1}{2^{\nu_2(3n+1)}}
-\]
+$$
 
 denotes the fully accelerated map on positive odd integers. This convention
 must not be confused with a one-division shortcut map.

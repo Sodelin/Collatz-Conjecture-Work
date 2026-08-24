@@ -3,8 +3,8 @@
 
 > Supplement to `ATLAS.md`. Collatz remains unresolved; this is structural navigation, not mathematical evidence.
 
-- Human-edited Markdown files: `57`
-- Local file targets checked: `306`
+- Human-edited Markdown files: `95`
+- Local file targets checked: `389`
 - Broken or case-mismatched targets: `0`
 - Duplicate optional node IDs: `0`
 - Node metadata errors: `0`

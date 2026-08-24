@@ -76,6 +76,191 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [CONTINUATION.md](../../CONTINUATION.md)
 - [README.md](../../README.md)
 
+## [Some Results on the Collatz Problem](../sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [About the Collatz Conjecture](../sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The 3x+1 Semigroup](../sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Improved Verification Limit for the Convergence of the Collatz Conjecture](../sources/CW-SRC-BARINA-2025-VERIFICATION.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [SAT Compilation for Termination Proofs via Semantic Labelling](../sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The 3x+1 Conjugacy Map](../sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Böhm–Sontacchi cycle equations](../sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Verifying an Incremental Theory Solver for Linear Arithmetic in Isabelle/HOL](../sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Collatz Cycles with Few Descents](../sources/CW-SRC-BROX-2000-FEW-DESCENTS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [On Unsettleable Arithmetical Problems](../sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [On the '3x+1' Problem](../sources/CW-SRC-CRANDALL-1978-3X1.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Matrix Interpretations for Proving Termination of Term Rewriting](../sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Iteration of the Number-Theoretic Function f(2n)=n, f(2n+1)=3n+2](../sources/CW-SRC-EVERETT-1977-ITERATION.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [On Equations in S-Units and the Thue–Mahler Equation](../sources/CW-SRC-EVERTSE-1984-S-UNITS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [S-Unit Equations and Their Applications](../sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [A Note on the Generalized 3n+1 Problem](../sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Sparse Tiling through Overlap Closures for Termination of String Rewriting](../sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [There Are No Collatz-m-Cycles with m ≤ 91](../sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Termination of String Rewriting with Matrix Interpretations](../sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Semantic Labelling in Practice](../sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Arctic Termination ... Below Zero](../sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints](../sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The 3x+1 Problem and Its Generalizations](../sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The Sufficiency of Arithmetic Progressions for the 3x+1 Conjecture](../sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Strongly Sufficient Sets and the Distribution of Arithmetic Sequences in the 3x+1 Graph](../sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Paradoxical Behavior in Collatz Sequences](../sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [On the Nonexistence of 2-Cycles for the 3x+1 Problem](../sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The 3x+1 Problem as a String Rewriting System](../sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Formalizing Monotone Algebras for Certification of Termination and Complexity Proofs](../sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [A Stopping Time Problem on the Positive Integers](../sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [The Collatz Problem in the Light of an Infinite Free Semigroup](../sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [An E-Sequence Approach to the 3x+1 Problem](../sources/CW-SRC-WANG-2019-E-SEQUENCE.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Mixed Base Rewriting for the Collatz Conjecture](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [An Automated Approach to the Collatz Conjecture](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [rewriting-collatz software](../sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Termination of Term Rewriting by Semantic Labelling](../sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md)
+
+- [knowledge/sources/INDEX.md](../sources/INDEX.md)
+
+## [Collatz source-card index](../sources/INDEX.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [knowledge/README.md](../README.md)
+- [knowledge/sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md](../sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md)
+- [knowledge/sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md](../sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md)
+- [knowledge/sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md](../sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md)
+- [knowledge/sources/CW-SRC-BARINA-2025-VERIFICATION.md](../sources/CW-SRC-BARINA-2025-VERIFICATION.md)
+- [knowledge/sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md](../sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md)
+- [knowledge/sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md](../sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md)
+- [knowledge/sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md](../sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md)
+- [knowledge/sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md](../sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md)
+- [knowledge/sources/CW-SRC-BROX-2000-FEW-DESCENTS.md](../sources/CW-SRC-BROX-2000-FEW-DESCENTS.md)
+- [knowledge/sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md](../sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md)
+- [knowledge/sources/CW-SRC-CRANDALL-1978-3X1.md](../sources/CW-SRC-CRANDALL-1978-3X1.md)
+- [knowledge/sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md](../sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md)
+- [knowledge/sources/CW-SRC-EVERETT-1977-ITERATION.md](../sources/CW-SRC-EVERETT-1977-ITERATION.md)
+- [knowledge/sources/CW-SRC-EVERTSE-1984-S-UNITS.md](../sources/CW-SRC-EVERTSE-1984-S-UNITS.md)
+- [knowledge/sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md](../sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md)
+- [knowledge/sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md](../sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md)
+- [knowledge/sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md](../sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md)
+- [knowledge/sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md](../sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md)
+- [knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md](../sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md)
+- [knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md](../sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md)
+- [knowledge/sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md](../sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md)
+- [knowledge/sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md](../sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md)
+- [knowledge/sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md](../sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md)
+- [knowledge/sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md](../sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md)
+- [knowledge/sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md](../sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md)
+- [knowledge/sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md](../sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md)
+- [knowledge/sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md](../sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md)
+- [knowledge/sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md](../sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md)
+- [knowledge/sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md](../sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md)
+- [knowledge/sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md](../sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md)
+- [knowledge/sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md](../sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md)
+- [knowledge/sources/CW-SRC-WANG-2019-E-SEQUENCE.md](../sources/CW-SRC-WANG-2019-E-SEQUENCE.md)
+- [knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md)
+- [knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md](../sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md)
+- [knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md](../sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md)
+- [knowledge/sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md](../sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md)
+
 ## [Hardened Lean verification policy](../../lean/VERIFICATION_POLICY.md)
 
 - [ATLAS.md](../../ATLAS.md)
@@ -88,6 +273,12 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 
 - [ATLAS.md](../../ATLAS.md)
 
+## [Portable Markdown math style](../../methodology/MARKDOWN_MATH_STYLE.md)
+
+- [README.md](../../README.md)
+- [methodology/NOTE_GRAPH_STANDARD.md](../../methodology/NOTE_GRAPH_STANDARD.md)
+- [verification/README.md](../../verification/README.md)
+
 ## [Portable proof-note graph standard](../../methodology/NOTE_GRAPH_STANDARD.md)
 
 - [ATLAS.md](../../ATLAS.md)
@@ -96,6 +287,7 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [README.md](../../README.md)
 - [RESEARCH_PROTOCOL_V2.md](../../RESEARCH_PROTOCOL_V2.md)
 - [knowledge/README.md](../README.md)
+- [methodology/MARKDOWN_MATH_STYLE.md](../../methodology/MARKDOWN_MATH_STYLE.md)
 - [methodology/SHARED_PROOF_ATTACK_STRUCTURE.md](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md)
 - [verification/README.md](../../verification/README.md)
 
@@ -390,6 +582,7 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [LATEST.md](../../LATEST.md)
 - [LEAN_TARGETS.md](../../LEAN_TARGETS.md)
 - [README.md](../../README.md)
+- [methodology/MARKDOWN_MATH_STYLE.md](../../methodology/MARKDOWN_MATH_STYLE.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
 - [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)

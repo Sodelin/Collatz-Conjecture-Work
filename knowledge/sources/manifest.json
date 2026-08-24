@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-08-24",
+  "import_performed": false,
+  "collection": {
+    "parent": "Codex Submissions",
+    "child": "Collatz Conjecture — AI-Assisted Research",
+    "display_path": "Codex Submissions / Collatz Conjecture — AI-Assisted Research"
+  },
+  "required_tags": [
+    "project/collatz",
+    "origin/codex-ai",
+    "review/human-required"
+  ],
+  "deduplication_key_order": [
+    "doi",
+    "arxiv",
+    "normalized_title+first_author+year"
+  ],
+  "source_count": 36,
+  "software_count": 1,
+  "records": [
+    {
+      "index": 1,
+      "citekey": "YolcuAaronsonHeule2023Automated",
+      "type": "journal_article",
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "authors": ["Emre Yolcu", "Scott Aaronson", "Marijn J. H. Heule"],
+      "year": 2023,
+      "doi": "10.1007/s10817-022-09658-8",
+      "arxiv": "2105.14697",
+      "url": "https://doi.org/10.1007/s10817-022-09658-8"
+    },
+    {
+      "index": 2,
+      "citekey": "YolcuAaronsonHeuleRewritingCollatzSoftware",
+      "type": "software",
+      "title": "rewriting-collatz: Reproducibility Software for Mixed-Base Collatz Rewriting",
+      "authors": ["Emre Yolcu", "Scott Aaronson", "Marijn J. H. Heule"],
+      "year": null,
+      "url": "https://github.com/emreyolcu/rewriting-collatz",
+      "accessed": "2026-08-24",
+      "pinned_commit": "8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340"
+    },
+    {
+      "index": 3,
+      "citekey": "YolcuAaronsonHeule2021MixedBase",
+      "type": "workshop_paper",
+      "title": "Mixed Base Rewriting for the Collatz Conjecture",
+      "authors": ["Emre Yolcu", "Scott Aaronson", "Marijn J. H. Heule"],
+      "year": 2021,
+      "url": "https://www.cs.cmu.edu/~mheule/publications/WST21.pdf"
+    },
+    {
+      "index": 4,
+      "citekey": "Zantema1995SemanticLabelling",
+      "type": "journal_article",
+      "title": "Termination of Term Rewriting by Semantic Labelling",
+      "authors": ["Hans Zantema"],
+      "year": 1995,
+      "doi": "10.3233/FI-1995-24124",
+      "url": "https://doi.org/10.3233/FI-1995-24124"
+    },
+    {
+      "index": 5,
+      "citekey": "HofbauerWaldmann2026SemanticLabelling",
+      "type": "workshop_preprint",
+      "title": "Semantic Labelling in Practice",
+      "authors": ["Dieter Hofbauer", "Johannes Waldmann"],
+      "year": 2026,
+      "arxiv": "2607.00521",
+      "url": "https://arxiv.org/abs/2607.00521"
+    },
+    {
+      "index": 6,
+      "citekey": "GeserHofbauerWaldmann2020SparseTiling",
+      "type": "conference_paper",
+      "title": "Sparse Tiling through Overlap Closures for Termination of String Rewriting",
+      "authors": ["Alfons Geser", "Dieter Hofbauer", "Johannes Waldmann"],
+      "year": 2020,
+      "arxiv": "2003.01696",
+      "url": "https://arxiv.org/abs/2003.01696"
+    },
+    {
+      "index": 7,
+      "citekey": "KoprowskiWaldmann2008Arctic",
+      "type": "conference_paper",
+      "title": "Arctic Termination ... Below Zero",
+      "authors": ["Adam Koprowski", "Johannes Waldmann"],
+      "year": 2008,
+      "doi": "10.1007/978-3-540-70590-1_14",
+      "url": "https://doi.org/10.1007/978-3-540-70590-1_14"
+    },
+    {
+      "index": 8,
+      "citekey": "RozierTerracol2026Paradoxical",
+      "type": "journal_article",
+      "title": "Paradoxical Behavior in Collatz Sequences",
+      "authors": ["Olivier Rozier", "Claude Terracol"],
+      "year": 2026,
+      "doi": "10.1016/j.disc.2026.115167",
+      "arxiv": "2502.00948v5",
+      "url": "https://doi.org/10.1016/j.disc.2026.115167"
+    },
+    {
+      "index": 9,
+      "citekey": "Barina2025ImprovedVerification",
+      "type": "journal_article",
+      "title": "Improved Verification Limit for the Convergence of the Collatz Conjecture",
+      "authors": ["David Bařina"],
+      "year": 2025,
+      "doi": "10.1007/s11227-025-07337-0",
+      "url": "https://doi.org/10.1007/s11227-025-07337-0"
+    },
+    {
+      "index": 10,
+      "citekey": "BohmSontacchi1978Cycles",
+      "type": "journal_article",
+      "title": "On the Existence of Cycles of Given Length in Integer Sequences Like x(n+1)=x(n)/2 if x(n) Even, and x(n+1)=3x(n)+1",
+      "authors": ["Corrado Böhm", "Giovanna Sontacchi"],
+      "year": 1978,
+      "url": "https://www.bdim.eu/item?id=RLINA_1978_8_64_3_260_0"
+    },
+    {
+      "index": 11,
+      "citekey": "Truemper2014InfiniteFreeSemigroup",
+      "type": "journal_article",
+      "title": "The Collatz Problem in the Light of an Infinite Free Semigroup",
+      "authors": ["Manfred Trümper"],
+      "year": 2014,
+      "doi": "10.1155/2014/756917",
+      "url": "https://doi.org/10.1155/2014/756917"
+    },
+    {
+      "index": 12,
+      "citekey": "Wang2019ESequence",
+      "type": "journal_article",
+      "title": "An E-Sequence Approach to the 3x+1 Problem",
+      "authors": ["Sanmin Wang"],
+      "year": 2019,
+      "doi": "10.3390/sym11111415",
+      "arxiv": "1809.02278",
+      "url": "https://doi.org/10.3390/sym11111415",
+      "metadata_note": "Author corrected from the incoming working-list form 'Jin Wen Wang' to the publication's 'Sanmin Wang'."
+    },
+    {
+      "index": 13,
+      "citekey": "Kramer2026AdaptiveSearch",
+      "type": "preprint",
+      "title": "Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints",
+      "authors": ["Oliver Kramer"],
+      "year": 2026,
+      "arxiv": "2607.10041",
+      "url": "https://arxiv.org/abs/2607.10041"
+    },
+    {
+      "index": 14,
+      "citekey": "Evertse1984SUnits",
+      "type": "journal_article",
+      "title": "On Equations in S-Units and the Thue–Mahler Equation",
+      "authors": ["Jan-Hendrik Evertse"],
+      "year": 1984,
+      "doi": "10.1007/BF01388644",
+      "url": "https://doi.org/10.1007/BF01388644"
+    },
+    {
+      "index": 15,
+      "citekey": "EvertseGyoryStewartTijdeman1988SUnitApplications",
+      "type": "book_chapter",
+      "title": "S-Unit Equations and Their Applications",
+      "authors": ["Jan-Hendrik Evertse", "Kálmán Győry", "Cameron L. Stewart", "Robert Tijdeman"],
+      "year": 1988,
+      "url": "https://ir.cwi.nl/pub/1716"
+    },
+    {
+      "index": 16,
+      "citekey": "GarciaTal1999Generalized",
+      "type": "journal_article",
+      "title": "A Note on the Generalized 3n+1 Problem",
+      "authors": ["Manuel V. P. Garcia", "Fabio A. Tal"],
+      "year": 1999,
+      "doi": "10.4064/aa-90-3-245-250",
+      "url": "https://doi.org/10.4064/aa-90-3-245-250"
+    },
+    {
+      "index": 17,
+      "citekey": "HofbauerWaldmann2006MatrixInterpretations",
+      "type": "conference_paper",
+      "title": "Termination of String Rewriting with Matrix Interpretations",
+      "authors": ["Dieter Hofbauer", "Johannes Waldmann"],
+      "year": 2006,
+      "doi": "10.1007/11805618_25",
+      "url": "https://doi.org/10.1007/11805618_25"
+    },
+    {
+      "index": 18,
+      "citekey": "EndrullisWaldmannZantema2008MatrixInterpretations",
+      "type": "journal_article",
+      "title": "Matrix Interpretations for Proving Termination of Term Rewriting",
+      "authors": ["Jörg Endrullis", "Johannes Waldmann", "Hans Zantema"],
+      "year": 2008,
+      "doi": "10.1007/s10817-007-9087-9",
+      "url": "https://doi.org/10.1007/s10817-007-9087-9"
+    },
+    {
+      "index": 19,
+      "citekey": "SternagelThiemann2014MonotoneAlgebras",
+      "type": "conference_paper",
+      "title": "Formalizing Monotone Algebras for Certification of Termination and Complexity Proofs",
+      "authors": ["Christian Sternagel", "René Thiemann"],
+      "year": 2014,
+      "doi": "10.1007/978-3-319-08918-8_30",
+      "url": "https://doi.org/10.1007/978-3-319-08918-8_30"
+    },
+    {
+      "index": 20,
+      "citekey": "BotteschHaslbeckThiemann2019LinearArithmetic",
+      "type": "conference_paper",
+      "title": "Verifying an Incremental Theory Solver for Linear Arithmetic in Isabelle/HOL",
+      "authors": ["Ralph Bottesch", "Maximilian W. Haslbeck", "René Thiemann"],
+      "year": 2019,
+      "doi": "10.1007/978-3-030-29007-8_13",
+      "url": "https://doi.org/10.1007/978-3-030-29007-8_13",
+      "metadata_note": "First author corrected from the incoming working-list form 'Maxime Bottesch' to the publisher's 'Ralph Bottesch'."
+    },
+    {
+      "index": 21,
+      "citekey": "BauEndrullisWaldmann2013SATCompilation",
+      "type": "workshop_paper",
+      "title": "SAT Compilation for Termination Proofs via Semantic Labelling",
+      "authors": ["Alexander Bau", "Jörg Endrullis", "Johannes Waldmann"],
+      "year": 2013,
+      "url": "https://www.imn.htwk-leipzig.de/~waldmann/WST2013/papers/paper_6.pdf"
+    },
+    {
+      "index": 22,
+      "citekey": "Terras1976StoppingTime",
+      "type": "journal_article",
+      "title": "A Stopping Time Problem on the Positive Integers",
+      "authors": ["Riho Terras"],
+      "year": 1976,
+      "doi": "10.4064/aa-30-3-241-252",
+      "url": "https://doi.org/10.4064/aa-30-3-241-252"
+    },
+    {
+      "index": 23,
+      "citekey": "Everett1977Iteration",
+      "type": "journal_article",
+      "title": "Iteration of the Number-Theoretic Function f(2n)=n, f(2n+1)=3n+2",
+      "authors": ["C. J. Everett"],
+      "year": 1977,
+      "doi": "10.1016/0001-8708(77)90087-1",
+      "url": "https://doi.org/10.1016/0001-8708(77)90087-1"
+    },
+    {
+      "index": 24,
+      "citekey": "Lagarias1985ProblemGeneralizations",
+      "type": "journal_article",
+      "title": "The 3x+1 Problem and Its Generalizations",
+      "authors": ["Jeffrey C. Lagarias"],
+      "year": 1985,
+      "doi": "10.1080/00029890.1985.11971528",
+      "url": "https://doi.org/10.1080/00029890.1985.11971528"
+    },
+    {
+      "index": 25,
+      "citekey": "AndreiMasalagiu1998AboutCollatz",
+      "type": "journal_article",
+      "title": "About the Collatz Conjecture",
+      "authors": ["Ștefan Andrei", "Cristian Masalagiu"],
+      "year": 1998,
+      "doi": "10.1007/s002360050117",
+      "url": "https://doi.org/10.1007/s002360050117"
+    },
+    {
+      "index": 26,
+      "citekey": "AndreiKudlekNiculescu2000SomeResults",
+      "type": "journal_article",
+      "title": "Some Results on the Collatz Problem",
+      "authors": ["Ștefan Andrei", "Manfred Kudlek", "Radu Ștefan Niculescu"],
+      "year": 2000,
+      "doi": "10.1007/s002360000039",
+      "url": "https://doi.org/10.1007/s002360000039"
+    },
+    {
+      "index": 27,
+      "citekey": "Conway2013Unsettleable",
+      "type": "journal_article",
+      "title": "On Unsettleable Arithmetical Problems",
+      "authors": ["John H. Conway"],
+      "year": 2013,
+      "doi": "10.4169/amer.math.monthly.120.03.192",
+      "url": "https://gwern.net/doc/cs/computable/2013-conway.pdf"
+    },
+    {
+      "index": 28,
+      "citekey": "Sinyor2010StringRewriting",
+      "type": "journal_article",
+      "title": "The 3x+1 Problem as a String Rewriting System",
+      "authors": ["Joseph Sinyor"],
+      "year": 2010,
+      "doi": "10.1155/2010/458563",
+      "url": "https://doi.org/10.1155/2010/458563"
+    },
+    {
+      "index": 29,
+      "citekey": "ApplegateLagarias2006Semigroup",
+      "type": "journal_article",
+      "title": "The 3x+1 Semigroup",
+      "authors": ["David Applegate", "Jeffrey C. Lagarias"],
+      "year": 2006,
+      "arxiv": "math/0411140",
+      "url": "https://arxiv.org/abs/math/0411140"
+    },
+    {
+      "index": 30,
+      "citekey": "Monks2006SufficiencyArithmeticProgressions",
+      "type": "journal_article",
+      "title": "The Sufficiency of Arithmetic Progressions for the 3x+1 Conjecture",
+      "authors": ["Kenneth M. Monks"],
+      "year": 2006,
+      "doi": "10.1090/S0002-9939-06-08567-4",
+      "url": "https://doi.org/10.1090/S0002-9939-06-08567-4"
+    },
+    {
+      "index": 31,
+      "citekey": "MonksEtAl2013StronglySufficient",
+      "type": "journal_article",
+      "title": "Strongly Sufficient Sets and the Distribution of Arithmetic Sequences in the 3x+1 Graph",
+      "authors": ["Keenan Monks", "Kenneth G. Monks", "Kenneth M. Monks", "Maria Monks"],
+      "year": 2013,
+      "arxiv": "1204.3904",
+      "url": "https://arxiv.org/abs/1204.3904"
+    },
+    {
+      "index": 32,
+      "citekey": "Crandall1978ThreeXPlusOne",
+      "type": "journal_article",
+      "title": "On the '3x+1' Problem",
+      "authors": ["Richard E. Crandall"],
+      "year": 1978,
+      "doi": "10.1090/S0025-5718-1978-0480321-3",
+      "url": "https://doi.org/10.1090/S0025-5718-1978-0480321-3"
+    },
+    {
+      "index": 33,
+      "citekey": "Simons2005NoTwoCycles",
+      "type": "journal_article",
+      "title": "On the Nonexistence of 2-Cycles for the 3x+1 Problem",
+      "authors": ["John L. Simons"],
+      "year": 2005,
+      "doi": "10.1090/S0025-5718-04-01728-4",
+      "url": "https://doi.org/10.1090/S0025-5718-04-01728-4"
+    },
+    {
+      "index": 34,
+      "citekey": "Brox2000FewDescents",
+      "type": "journal_article",
+      "title": "Collatz Cycles with Few Descents",
+      "authors": ["T. Brox"],
+      "year": 2000,
+      "doi": "10.4064/aa-92-2-181-188",
+      "url": "https://doi.org/10.4064/aa-92-2-181-188"
+    },
+    {
+      "index": 35,
+      "citekey": "Hercher2023NoCollatzMCycles",
+      "type": "journal_article",
+      "title": "There Are No Collatz-m-Cycles with m ≤ 91",
+      "authors": ["Christian Hercher"],
+      "year": 2023,
+      "arxiv": "2201.00406",
+      "url": "https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.html"
+    },
+    {
+      "index": 36,
+      "citekey": "BernsteinLagarias1996ConjugacyMap",
+      "type": "journal_article",
+      "title": "The 3x+1 Conjugacy Map",
+      "authors": ["Daniel J. Bernstein", "Jeffrey C. Lagarias"],
+      "year": 1996,
+      "doi": "10.4153/CJM-1996-060-x",
+      "url": "https://doi.org/10.4153/CJM-1996-060-x"
+    }
+  ]
+}
