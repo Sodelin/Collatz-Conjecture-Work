@@ -145,6 +145,11 @@ local and untracked.
 GitHub remains the public, reviewable source of truth. Obsidian is a viewer and
 editor for the same files, not a separate database.
 
+Mathematical notation follows the
+[portable Markdown math style](MARKDOWN_MATH_STYLE.md): `$...$` inline and
+standalone `$$` delimiters for display math. This shared form renders on both
+GitHub and Obsidian and is checked independently of theorem validity.
+
 ## 9. Platform references
 
 - [Obsidian internal links](https://obsidian.md/help/links)

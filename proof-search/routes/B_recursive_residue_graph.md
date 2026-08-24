@@ -10,9 +10,9 @@ Global Descent (L0) is enough for Collatz, but a strong-induction proof can use 
 
 Suppose for a parametric family `N(x)` there is a uniformly smaller positive integer `m(x)<N(x)` and fixed nonnegative integers `t,j` such that
 
-\[
+$$
 U^t(N(x))=U^j(m(x)),
-\]
+$$
 
 where `U` is the ordinary Collatz map.
 
@@ -26,9 +26,9 @@ This is strictly more flexible than demanding that `N(x)` itself have already de
 
 For every integer `x>=0`,
 
-\[
+$$
 U^5(32x+3)=U(12x+1)=36x+4,
-\]
+$$
 
 and `12x+1<32x+3`. This is an exact shortcut identity. A later hostile audit noticed that this example is *not* genuinely beyond direct descent: continuing the same uniform affine cylinder a little farther gives direct descent as well.
 
@@ -38,39 +38,39 @@ That correction exposed an implementation mistake in the first search, described
 
 For every integer `x>=0`, let
 
-\[
+$$
 N=64x+15,
 \qquad
 m=54x+13.
-\]
+$$
 
 The exact uniform forward path of `N` gives
 
-\[
+$$
 U^9(N)=162x+40,
 \qquad
 U^{10}(N)=81x+20.
-\]
+$$
 
 Neither endpoint is uniformly below `N` asymptotically, since `162>64` and `81>64`. At the next ordinary step the parity depends on `x`, so the residue cylinder has exhausted its uniform local information.
 
 But
 
-\[
+$$
 U(m)=3(54x+13)+1=162x+40.
-\]
+$$
 
 Hence
 
-\[
+$$
 \boxed{U^9(64x+15)=U(54x+13),}
-\]
+$$
 
 while
 
-\[
+$$
 0<54x+13<64x+15
-\]
+$$
 
 for every `x>=0`.
 
@@ -82,17 +82,17 @@ This identity is not claimed novel. Its significance is that it demonstrates the
 
 A coalescence certificate is
 
-\[
+$$
 (K,R,A,B,t,j)
-\]
+$$
 
 meaning
 
-\[
+$$
 N(x)=2^Kx+R,
 \qquad
 m(x)=Ax+B,
-\]
+$$
 
 with proofs that for all integers `x>=x_0`:
 
@@ -110,17 +110,17 @@ If `x_0>0`, the finitely many excluded values are explicit base cases and must b
 
 For a fixed residue class
 
-\[
+$$
 N(x)=2^Kx+R,
-\]
+$$
 
 one should **not** restrict to `t<=K` ordinary Collatz steps. That was the first implementation's error.
 
 The correct invariant is the 2-adic valuation of the affine coefficient. As long as
 
-\[
+$$
 N_t(x)=A_t x+B_t
-\]
+$$
 
 has even `A_t`, the parity of the entire family is fixed by `B_t`, so one more ordinary Collatz step is uniform:
 
@@ -131,9 +131,9 @@ Odd steps do not consume a factor of two from `A_t`. The cylinder branches exact
 
 For coalescence, rather than enumerate all parity words blindly, start from a target affine family
 
-\[
+$$
 y(x)=Ax+B
-\]
+$$
 
 and generate exact one-step affine predecessors:
 
@@ -142,9 +142,9 @@ and generate exact one-step affine predecessors:
 
 Every candidate is then checked for the exact inequalities
 
-\[
+$$
 0<m(x)<N(x)
-\]
+$$
 
 for the whole tail `x>=x_0`.
 

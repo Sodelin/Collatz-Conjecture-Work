@@ -87,15 +87,15 @@ A finite tree with a bounded maximum macro-depth would imply a global bounded st
 It is useful to separate two quantified versions of the bounded-time
 obstruction.  Let
 
-\[
+$$
 U(n)=\frac{3n+1}{2^{v_2(3n+1)}}
-\]
+$$
 
 on positive odd integers.  For `m>=2` and `0<=j<m`, direct induction gives
 
-\[
+$$
 U^j(2^m-1)=2^{m-j}3^j-1.
-\]
+$$
 
 Hence `U^j(2^m-1)>2^m-1` for every `1<=j<m`.
 

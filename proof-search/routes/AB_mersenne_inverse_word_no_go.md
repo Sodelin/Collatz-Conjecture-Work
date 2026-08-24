@@ -12,11 +12,11 @@ L3 proves that the pure trailing-ternary-`2` inversion is neutral on the
 Mersenne cylinder at its depth-`K` endpoint. L4 permits arbitrary mixed inverse
 words over
 
-\[
+$$
 E(y)=2y,
 \qquad
 O(y)=\frac{2y-1}{3},
-\]
+$$
 
 and L5 bounds the search for inverse words whose leading coefficient is
 strictly smaller than the original cylinder coefficient.
@@ -37,41 +37,41 @@ loophole.
 
 Fix `K>=1` and define
 
-\[
+$$
 \boxed{M_K(x)=2^Kx+2^K-1=2^K(x+1)-1,\qquad x\ge0.}\tag{1}
-\]
+$$
 
 Use the accelerated Collatz map
 
-\[
+$$
 T(n)=
 \begin{cases}
 n/2,&n\text{ even},\\
 (3n+1)/2,&n\text{ odd}.
 \end{cases}
-\]
+$$
 
 For the odd branch `F(n)=(3n+1)/2`, one has
 
-\[
+$$
 F(n)+1=\frac32(n+1).
-\]
+$$
 
 Therefore, for every `0<=t<=K`,
 
-\[
+$$
 \boxed{
 T^t(M_K(x))
 =F^t(M_K(x))
 =2^{K-t}3^t(x+1)-1.
 }\tag{2}
-\]
+$$
 
 The branch claim is uniform: for `0<=j<K`,
 
-\[
+$$
 F^j(M_K(x))+1=2^{K-j}3^j(x+1)
-\]
+$$
 
 is even, so `F^j(M_K(x))` is odd for every `x>=0`. At `t=K` the
 leading coefficient becomes odd and the next parity decision can depend on
@@ -79,22 +79,22 @@ leading coefficient becomes odd and the next parity decision can depend on
 
 Write the forward state in (2) as
 
-\[
+$$
 Y_t(x)=A_t x+B_t,
 \qquad
 A_t=2^{K-t}3^t,
 \qquad
 B_t=2^{K-t}3^t-1.
 \tag{3}
-\]
+$$
 
 ## 3. Arbitrary uniformly admissible inverse word
 
 Let
 
-\[
+$$
 w\in\{E,O\}^j
-\]
+$$
 
 be any inverse word applied to the whole family `Y_t(x)`. Let
 
@@ -111,25 +111,25 @@ empty-suffix case, rather than only by analogy with inverse coalescence.
 Each `E` multiplies the affine leading coefficient by `2`, while each `O`
 multiplies it by `2/3`. Hence, if the word is uniformly admissible, its output
 
-\[
+$$
 m_w(x)=A_wx+D_w
-\]
+$$
 
 has leading coefficient
 
-\[
+$$
 \boxed{
 A_w
 =2^{K-t}3^t\frac{2^{e+r}}{3^r}
 =2^{K-t+e+r}3^{t-r}.
 }\tag{4}
-\]
+$$
 
 Uniform admissibility forces
 
-\[
+$$
 \boxed{r\le t.}\tag{5}
-\]
+$$
 
 Indeed, after `t` odd inverses have removed all factors of `3` from the
 leading coefficient, that coefficient is coprime to `3`. The residue modulo
@@ -140,18 +140,18 @@ restore a factor of `3`.
 
 Dividing (4) by the original leading coefficient `2^K` gives the exact ratio
 
-\[
+$$
 \boxed{
 \frac{A_w}{2^K}
 =2^e\left(\frac32\right)^{t-r}.
 }\tag{6}
-\]
+$$
 
 By `e>=0` and (5),
 
-\[
+$$
 \boxed{A_w\ge2^K.}\tag{7}
-\]
+$$
 
 Thus strict leading-coefficient improvement is impossible at every forward
 time and every inverse-word depth.
@@ -160,42 +160,42 @@ time and every inverse-word depth.
 
 Suppose
 
-\[
+$$
 A_w=2^K.
-\]
+$$
 
 Equation (6) gives
 
-\[
+$$
 2^e\left(\frac32\right)^{t-r}=1.
-\]
+$$
 
 Both factors are at least one. Hence
 
-\[
+$$
 \boxed{e=0,\qquad r=t.}\tag{8}
-\]
+$$
 
 Since the word contains no `E` symbols and exactly `t` `O` symbols, necessarily
 
-\[
+$$
 \boxed{w=O^t.}\tag{9}
-\]
+$$
 
 This word is the exact inverse of the `t` legitimate odd forward branches.
 More explicitly, for `0<=i<=t`,
 
-\[
+$$
 O^i(Y_t(x))
 =2^{K-t+i}3^{t-i}(x+1)-1,
 \tag{10}
-\]
+$$
 
 so at `i=t`,
 
-\[
+$$
 \boxed{O^t(Y_t(x))=2^K(x+1)-1=M_K(x).}\tag{11}
-\]
+$$
 
 The equal-slope word therefore has the same intercept `2^K-1`, not a smaller
 one. It reconstructs the original family exactly.
@@ -213,19 +213,19 @@ affine family `m_w(x)=A_wx+D_w` satisfies exactly one of:
 
 In particular, there is no threshold `x_0` for which
 
-\[
+$$
 0<m_w(x)<M_K(x)
 \qquad\text{for every }x\ge x_0.
-\]
+$$
 
 ### Proof
 
 Equations (5)-(7) exclude `A_w<2^K`. If `A_w>2^K`, then
 
-\[
+$$
 m_w(x)-M_K(x)
 =(A_w-2^K)x+\bigl(D_w-(2^K-1)\bigr)
-\]
+$$
 
 is positive for all sufficiently large `x`. If `A_w=2^K`, Section 4 proves
 that `w=O^t` and equation (11) gives exact equality of the two affine
@@ -236,20 +236,20 @@ families. These cases exhaust all uniformly admissible words. ∎
 The no-go theorem applies only while the entire parameter family is kept
 unrefined. Refining the next binary digit gives
 
-\[
+$$
 M_K(2y)=2^{K+1}y+2^K-1
 \tag{12}
-\]
+$$
 
 and
 
-\[
+$$
 \boxed{
 M_K(2y+1)
 =2^{K+1}y+2^{K+1}-1
 =M_{K+1}(y).
 }\tag{13}
-\]
+$$
 
 Thus one child exits the exact Mersenne form, while the high child is the next
 Mersenne cylinder. This is the precise recursive obstruction that a stronger
@@ -259,10 +259,10 @@ For a fixed positive parameter `x=2y+1`, the quotient `y` is smaller than `x`,
 so a rank based on the unprocessed high binary prefix can justify only the act
 of reading/refining the finite input. It does not close the boundary family
 
-\[
+$$
 M_K(0)=2^K-1
 \qquad(K\ge1).
-\]
+$$
 
 Those are infinitely many positive starts. They cannot be dismissed as one
 finite collection of exceptional values merely because each fixed cylinder
@@ -305,10 +305,10 @@ Mersenne cylinders, not a failed bounded search.
 Corrected L5 classifies all uniformly smaller affine families and includes the
 boundary
 
-\[
+$$
 A_w=2^K,
 \qquad D_w<2^K-1.
-\]
+$$
 
 The present theorem specializes that corrected equal-slope boundary to the
 Mersenne family and proves that it yields only exact reconstruction. Thus the

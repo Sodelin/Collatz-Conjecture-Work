@@ -18,11 +18,11 @@ Prove that convergence of every positive odd integer under the accelerated odd-t
 ### L0.2 Global descent equivalence
 Prove
 
-\[
+$$
 \forall n>1\text{ odd},\;\exists k\ge1:S^k(n)<n
 \iff
 \text{Collatz}.
-\]
+$$
 
 **Current status:** elementary informal proof complete in `lemmas/L0_Global_Descent_Equivalence.md`; Lean pending.
 
@@ -36,17 +36,17 @@ This is the project's endpoint interface. Any proof route that does not terminat
 
 For a realized valuation word `a_0,...,a_{t-1}` prove
 
-\[
+$$
 S^t(n)=\frac{3^t n+C_t}{2^{A_t}}.
-\]
+$$
 
 ### L1.2 Exact prefix-descent bound
 
 If `2^{A_t}>3^t` and the endpoint has not descended, prove
 
-\[
+$$
 n\le C_t/(2^{A_t}-3^t).
-\]
+$$
 
 **Current status:** direct algebra recorded in `lemmas/L1_Exact_Prefix_Descent_Bound.md`; Lean pending.
 
@@ -110,9 +110,9 @@ This is not a finite-depth residue tree. Stopping times are unbounded, so a fini
 
 Construct a well-founded potential on a richer state than the integer alone, for example
 
-\[
+$$
 \Phi(n,q,\text{radix state},\text{carry state},\ldots),
-\]
+$$
 
 such that an exact macro-step always decreases `Phi`.
 
