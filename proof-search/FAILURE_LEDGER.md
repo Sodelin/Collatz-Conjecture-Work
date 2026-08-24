@@ -84,7 +84,44 @@ Average/probabilistic drift can prove density or almost-everywhere results witho
 
 A finite tree with a bounded maximum macro-depth would imply a global bounded stopping-time depth for the represented encoding, while stopping times are known to be unbounded. The correct object cannot be a fixed-depth partition tree alone.
 
+It is useful to separate two quantified versions of the bounded-time
+obstruction.  Let
+
+\[
+U(n)=\frac{3n+1}{2^{v_2(3n+1)}}
+\]
+
+on positive odd integers.  For `m>=2` and `0<=j<m`, direct induction gives
+
+\[
+U^j(2^m-1)=2^{m-j}3^j-1.
+\]
+
+Hence `U^j(2^m-1)>2^m-1` for every `1<=j<m`.
+
+- **`A_cyl`:** no finite cover by power-of-two residue cylinders, each fixing
+  a finite `U`-valuation prefix and carrying direct `U`-descent at a fixed
+  time, can cover all odd integers greater than one.
+- **`A_arb`:** more generally, if finitely many arbitrary sets cover all odd
+  integers greater than one and the `i`-th set carries a direct-descent
+  guarantee at a fixed time `k_i` (or by a fixed horizon `K_i`), choosing `m`
+  larger than every such time (or horizon) contradicts the displayed
+  identity.  No cylinder or topological hypothesis is needed for this
+  maximum-horizon proof.
+
+This is prior-art territory, not a new lemma.  Sinyor, *The 3x + 1 Problem as
+a String Rewriting System* (2010), Section 3, explicitly records the Mersenne
+forced-growth identity and arbitrarily long stopping times
+([DOI](https://doi.org/10.1155/2010/458563)).  Applegate and Lagarias,
+*The 3x+1 Semigroup* (2005/2006), Section 2, prove a stronger
+architecture-specific obstruction for the class `-1 mod 2^j` under their
+finite multiplier/decrease method
+([arXiv](https://arxiv.org/abs/math/0411140)).
+
 **Replacement architecture:** finite **recursive graph/automaton** with back-edges certified by a separate well-founded rank.
+
+The argument above does not obstruct parameter refinement, unbounded
+derivations, coalescence with a smaller start, or ranked recursion.
 
 ## F009 — pure computation beyond a fixed threshold
 
@@ -184,6 +221,23 @@ the persistent Mersenne misses were search-depth artifacts.
 canonical positive boundary, and supplies a well-founded rank for the hard
 transition `M_K(2y+1)=M_{K+1}(y)`, or uses a genuinely stronger semantic
 class.
+
+**Relation to F008:** call the F018 result **`B_inv`**.  Its word language
+includes the empty inverse suffix (`j=e=r=0`), whose output is the selected
+uniform forward iterate itself.  Direct descent is therefore literally the
+empty-suffix special case of its coalescence semantics.  Within the shared
+power-of-two cylinder / uniform-certificate language, `A_cyl` is strictly
+weaker than `B_inv`: `B_inv` excludes that empty-suffix case and also every
+nonempty uniformly admissible inverse suffix at arbitrary inverse depth.
+
+At their full quantified scopes, `A_arb` and `B_inv` are incomparable as
+architecture filters.  `A_arb` permits arbitrary covering sets but rules out
+only finitely bounded direct descent.  `B_inv` handles the stronger one-shot
+coalescence semantics and quantifies over every admissible inverse depth, but
+only for the unrefined whole-family `E/O` certificate language on Mersenne
+cylinders.  Neither result rules out parameter refinement, a refinement-aware
+mixed-radix system with unbounded derivations, or an independently checked
+well-founded recursion rank.
 
 ## F019 — L11 hard-exit inheritance automatically renews L9-L10
 
