@@ -1,51 +1,111 @@
 # Continuation checkpoint
 
-This file is the restart point if the project is resumed.
+**Active ownership after 2026-08-23 handoff: Codex.**
 
-## Current mathematical state
+This file is the restart pointer for the Collatz project. The prior version emphasized Round 6A/6B because those were the earlier stable audit artifacts. The active mathematical frontier has since moved into **Round 7**.
 
-### Core result to verify first
+For the complete transfer state, read first:
 
-**Round 6A, Theorem 6A.1:** under a universal corrected-log descent guarantee within `β log_2 n` accelerated odd Collatz steps, every sufficiently expansive repelling rational periodic shadow forces linearly growing same-phase correction debt, with an explicit coefficient.
+[`CODEX_HANDOFF_2026-08-23.md`](CODEX_HANDOFF_2026-08-23.md)
 
-Public review version: [`papers/round-6a/Theorem_6A1_Public_Review_Note.md`](papers/round-6a/Theorem_6A1_Public_Review_Note.md).
+## Current research frontier
 
-### Terminal extension
+### Stable earlier audit core
 
-**Round 6B:** if a simpler surrogate is phasewise frozen on a periodic shadow and approximates the correction with error `e_r`, then the Round 6A debt lower bound forces `e_r = Ω(r)`. For the high-period `w_m` family, the normalized approximation-gap lower bound tends to one half of the Round 5A inverse frontier.
+- Round 6A remains the best externally reviewable statement of the corrected-log / rational-period debt theorem.
+- Round 6B remains the chronologically terminal extension of that older ranking-function branch.
+- Neither resolves Collatz.
 
-Round 6B is useful as a closure/corollary statement, but its own audit recommends returning to Round 6A for external verification.
+### Active Round-7 chain
 
-## Do not restart theorem generation before these checks
+Read in order:
 
-1. **Formalize the rational-period positive-lift lemma.** Exact valuation preservation, including the endpoint, is the most fragile technical step.
-2. **Formalize exact same-phase scaling.** This should be clean once the rational periodic point is in place.
-3. **Formalize Theorem 6A.1.** Preserve the `k_r log_2 λ` term and the floor endpoint.
-4. **Run an independent priority search.** Search rational cycles, 2-adic dynamics, amortized/ranking functions, and program termination for an equivalent β-debt statement.
-5. **Only then decide whether a new theorem branch is warranted.**
+1. `proof-search/lemmas/L0_Global_Descent_Equivalence.md`
+2. `proof-search/lemmas/L2_Cylinder_Refinement_and_Slope_Pruning.md`
+3. `proof-search/lemmas/L4_General_Inverse_Word_Coalescence.md`
+4. `proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md`
+5. `proof-search/lemmas/L6_Minimal_Counterexample_Exit_Constraint.md`
+6. `proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md`
+7. `proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md`
+8. `proof-search/lemmas/L10_Near_Return_and_Dual_Residue_Certificate.md`
+9. `proof-search/lemmas/L11_Near_Return_Hard_Exit_Inheritance.md`
+
+The strongest current synthesis is:
+
+> a hypothetical least counterexample must remain multiplicatively noncontracting for an enormous prefix (conditional on L8's external inputs); its first possible non-descending contraction has an exact near-mechanical parity structure; its endpoint must be a very small additive near-return; and, when the odd-count is smaller than the least counterexample, that endpoint inherits the same hard `-1`-exit state.
+
+This is a recursive necessary-condition architecture, **not a proof**.
+
+## Main unsolved bridge
+
+The next high-value theorem should close the recursive state space rather than merely enlarge a finite verification bound.
+
+Target:
+
+> show that repeated near-critical / near-return / hard-exit states either force descent below the least counterexample, enter a finite well-founded mixed-radix macro graph, or become incompatible with any positive integer.
+
+The main active synthesis route is:
+
+`proof-search/routes/AB_mixed_radix_coalescence_bridge.md`
+
+## Do not restart these dead ends without a new mechanism
+
+Read:
+
+`proof-search/FAILURE_LEDGER.md`
+
+In particular, do not substitute:
+
+- fixed-depth residue enumeration;
+- average drift;
+- bounded/local corrected-log corrections;
+- rational/2-adic ghost trajectories;
+- or a renamed global-descent statement
+
+for the missing global arithmetic mechanism.
+
+## Formalization priorities
+
+Use `lean/VERIFICATION_POLICY.md`.
+
+Best bounded Lean targets are L0, L2, L4, L5, L6, L9, L10, and L11 before trying to formalize the complete conjecture. L8 should expose its external inputs explicitly as hypotheses until independently imported/formalized.
 
 ## Existing executable record
+
+Round 6A:
 
 - `verification/round-6a/collatz_round6a_checks.py`
 - `verification/round-6a/round6a_check_output.txt`
 - `verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv`
 
-These are diagnostic checks, not substitutes for proof.
+Round 7 includes:
 
-## Formalization plan
+- `verification/round7_exhaustive_inverse_word_classifier.py`
+- `verification/round7_exhaustive_inverse_word_classifier_output_2026-08-23.txt`
+- `verification/round7_farey_coefficient_barrier.py`
+- `verification/round7_farey_coefficient_barrier_output_2026-08-23.txt`
+- the earlier affine/macro search diagnostics.
 
-See [`LEAN_TARGETS.md`](LEAN_TARGETS.md).
+These scripts are diagnostic/certificate generators unless and until their semantics are independently proved/formalized.
 
 ## Provenance and integrity
 
-The earlier research artifacts are indexed by both the original per-round checksum manifests and the fresh public-archive-time SHA-256 manifest. See [`PROVENANCE.md`](PROVENANCE.md) and `checksums/`.
+See:
+
+- `PROVENANCE.md`
+- `checksums/`
+- `CODEX_HANDOFF_2026-08-23.md`
+
+Git history provides public provenance from commit time onward. Earlier August 1–2 chronology remains supported by the preserved source artifacts and original checksum records, not by backdated Git commits.
 
 ## Claim discipline
 
-Until independent verification changes the status, use:
+As of this checkpoint:
 
-- **Correctness:** high internal confidence / unreviewed
-- **Priority:** exact formulation not located / unverified
-- **Usefulness:** proof-architecture necessary condition
-- **Collatz relevance:** indirect architecture / necessary condition
-- **Full Collatz solution:** no
+- Full Collatz proof: **no**
+- Full Collatz disproof: **no**
+- Independent specialist verification: **pending**
+- Complete Lean formalization: **pending**
+- Novelty certification for Round-7 lemmas: **pending**
+
+The project is now intentionally handed off to Codex to avoid parallel agents independently extending the same active branch.
