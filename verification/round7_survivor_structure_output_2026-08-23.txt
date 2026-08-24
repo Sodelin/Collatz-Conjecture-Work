@@ -1,0 +1,43 @@
+Round 7 survivor-structure diagnostic
+IMPORTANT: bounded certificate search only; not a Collatz proof/disproof
+
+K,total_odd,slope_hard,coalescence_unresolved,unresolved_fraction,unresolved_of_hard
+3,4,3,2,0.500000000,0.666666667
+4,8,4,3,0.375000000,0.750000000
+5,16,5,4,0.250000000,0.800000000
+6,32,16,7,0.218750000,0.437500000
+7,64,22,11,0.171875000,0.500000000
+8,128,29,16,0.125000000,0.551724138
+9,256,93,27,0.105468750,0.290322581
+10,512,130,46,0.089843750,0.353846154
+11,1024,386,80,0.078125000,0.207253886
+12,2048,562,145,0.070800781,0.258007117
+13,4096,794,245,0.059814453,0.308564232
+14,8192,2380,443,0.054077148,0.186134454
+15,16384,3473,819,0.049987793,0.235819177
+
+Child-survival patterns from K=12 to K=13
+pattern=(low-child-survives, high-child-survives)
+  (False, True): 18
+  (True, False): 27
+  (True, True): 100
+By parent endpoint exponent s:
+  s=8: {(True, False): 22, (False, True): 16}
+  s=9: {(True, True): 55, (True, False): 4, (False, True): 1}
+  s=10: {(True, True): 34, (True, False): 1, (False, True): 1}
+  s=11: {(True, True): 10}
+  s=12: {(True, True): 1}
+
+K=12 survivors by endpoint slope exponent
+  s=8: unresolved=38, slope-hard population=330
+  s=9: unresolved=60, slope-hard population=165
+  s=10: unresolved=36, slope-hard population=55
+  s=11: unresolved=10, slope-hard population=11
+  s=12: unresolved=1, slope-hard population=1
+
+Interpretive cautions
+---------------------
+- `slope_hard` means only that the maximal uniform affine endpoint has coefficient 3^s >= 2^K, so direct descent does not follow from the leading coefficient alone.
+- `coalescence_unresolved` means the current bounded reverse/coalescence certificate search (depth <=16) found no certificate. It does not mean the cylinder contains a divergent orbit.
+- The falling unresolved fraction cannot be extrapolated into a proof. Stopping/coalescence depth is unbounded and persistent 2-adic shadow families are expected.
+- The exact one-bit refinement lemma explains why every s=8 parent at K=12 has at most one slope-hard child at K=13: the child preserving s has 3^8 < 2^13 and is therefore asymptotically direct-descent certified. The other child has exponent 9.
