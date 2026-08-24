@@ -8,7 +8,8 @@ This file is the canonical index of proof/disproof families. New work should upd
 |---|---|---|---|---|---|
 | A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Existing automated matrix-interpretation classes have not terminated the full system | Reproduce exact system; synthesize richer interpretation classes; prove certificate semantics in Lean |
 | B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
-| C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B; search lexicographic/vector ranks |
+| AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `ACTIVE` | Need a finite/regular quotient of the unresolved affine state plus compositional macro semantics | Cluster survivor languages in YAH mixed-base states; synthesize macro certificates; formalize generic soundness |
+| C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
 | D | Minimal-counterexample valuation forcing | Contradict existence of least nonterminating odd `n_*` via exact prefix bounds | `ACTIVE` | Arbitrarily long bad finite 2-adic shadows exist; need genuinely global positive-integer constraint | Use L1 bound plus recursive residue/rewrite structure; reject mere average-drift restatements |
 | E | Positive nontrivial cycle | Explicit finite cycle under accelerated or ordinary Collatz | `ACTIVE_LOW_COST` | Enormous existing computational/cycle exclusions; no witness known | Keep exact Diophantine/SAT witness search as low-cost lane; verify any hit immediately |
 | F | Positive divergent invariant set | Explicit nonempty invariant set + proof its positive orbit never reaches 1 | `ACTIVE_LOW_COST` | 2-adic/rational ghosts need not contain a divergent positive natural orbit | Require positive membership and forward invariance as first kill test |
@@ -61,11 +62,33 @@ A finite **tree** would impose a bounded stopping-time depth and therefore canno
 - Back-edges must decrease a proved well-founded rank.
 - No unresolved strongly connected component may remain.
 
+## AB — Mixed-radix state grammar with strong-induction coalescence
+
+`proof-search/routes/AB_mixed_radix_coalescence_bridge.md` proves the representation bridge: the Round-7 affine cylinder refinement is the cylinder-level affine semantics of the same binary/ternary branch arithmetic encoded by the Yolcu–Aaronson–Heule rewriting system.
+
+### Why this is not merely a duplicate of A
+
+Standard termination interpretations seek a well-founded orientation of primitive rewrite behavior. A Route-B coalescence certificate can tolerate temporary growth and instead prove
+
+`T^a(N(x)) = T^b(m(x))`
+
+for an exact uniformly smaller `m(x) < N(x)`. Strong induction then closes the family.
+
+AB therefore searches for **finite mixed-radix macro states plus coalescence reductions**, using the published finite alphabet to compress the arithmetic while preserving the more permissive induction semantics.
+
+### Current exact supporting result
+
+`proof-search/lemmas/L2_Cylinder_Refinement_and_Slope_Pruning.md` proves that refining one binary cylinder bit sends endpoint slope exponent `s` to exactly one child with exponent `s` and one with exponent `s+1`. The resulting cylinder counts obey the exact binomial law `C(K-1,s-1)`.
+
+### Main kill test
+
+If the intercept/carry information needed for exact macro coalescence cannot be quotiented into a finite or regular symbolic state without assuming global descent, AB remains an architecture gap rather than a proof route.
+
 ## C — Augmented-state ranking
 
 The Round-6 lesson is treated as a design constraint: a simple `alpha log n + R(n)` with bounded/finitely sensed correction is too weak for fixed-fraction fast descent. A viable potential may need carry/radix/residue state or a nonuniform infinite-memory surrogate.
 
-This route should be developed mostly as the abstract semantics behind A or B rather than by guessing scalar functions blindly.
+This route should be developed mostly as the abstract semantics behind A, B, or AB rather than by guessing scalar functions blindly.
 
 ## D — Minimal counterexample / exact prefix bound
 
@@ -74,7 +97,7 @@ From L0, a least counterexample never falls below itself. From L1, any prefix wi
 The target is not another probabilistic drift estimate. The target is an arithmetic theorem forcing one fixed positive integer's infinite prefix sequence into a contradiction.
 
 Potential cross-pollination:
-- B may show all bad residue families recursively reduce.
+- B/AB may show all bad residue families recursively reduce.
 - A may encode the same mechanism as termination.
 - C may supply the well-founded measure.
 
