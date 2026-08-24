@@ -2,13 +2,35 @@ Round 7 exhaustive whole-family inverse-word classifier
 Date: 2026-08-23
 Map: T(n)=n/2 if even, (3n+1)/2 if odd
 Search class: exact uniform forward prefix + exact whole-family inverse word over E/O + eventual affine smaller-family inequality
-Completeness theorem: proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md
+Completeness theorem: corrected proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md
 
 IMPORTANT
 ---------
-There is no arbitrary inverse-depth parameter in this classifier. For a forward state at time t with s odd branches, L5 proves that every successful inverse word has fewer than t-s even inverses and total length at most t-1. The search exhausts that finite class.
+There is no arbitrary inverse-depth parameter in this classifier. For a forward state at time t with s odd branches:
+
+- a strict-slope winner has e<t-s even inverses and total length at most t-1, as proved in L5;
+- the only remaining slope boundary has r=s odd inverses, e=t-s even inverses, total length t, leading coefficient exactly 2^K, and succeeds exactly when its intercept is smaller than R (with the positivity threshold checked separately).
+
+The corrected search exhausts both cases.
+
+The final validator recomputes the exact uniform forward affine state and odd
+count, replays every inverse E/O operation with its divisibility guard,
+compares the resulting affine pair exactly, and verifies the exact threshold.
+Concrete samples remain only as a redundant implementation guardrail.
 
 A `class_miss` therefore means no certificate exists in THIS WHOLE-FAMILY INVERSE-WORD CLASS for the tested cylinder. It does not imply divergence and is not evidence against Collatz.
+
+Exact equal-slope boundary regression
+-------------------------------------
+For every integer x>=0,
+
+  T^3(8*x+5) = T^3(8*x+4) = 3*x+2,
+
+and the inverse word from the common target is OEE. Thus
+
+  0 < 8*x+4 < 8*x+5
+
+despite the two affine families having the same leading coefficient 8. This certificate is redundant with a shorter strict-slope certificate for the same cylinder, but it is an exact regression for the boundary case omitted by the original classifier.
 
 K,total_odd,certified,class_miss
 3,4,2,2
@@ -38,6 +60,8 @@ K,total_odd,certified,class_miss
 15,16384,15582,802
   first class misses: [27, 31, 47, 71, 91, 103, 111, 159, 239, 327, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743, 751, 763, 767, 859]
 
+The corrected equal-slope layer changes none of the K=3..15 certified or class-miss counts above. Equal-slope certificates occur in this range, but every cylinder having one was already closed by a strict-slope certificate.
+
 Comparison to the earlier depth-10 accelerated diagnostic
 ---------------------------------------------------------
 Earlier depth-10 unresolved counts:
@@ -52,7 +76,7 @@ Exhaustive class-miss counts:
   K=14: 436
   K=15: 802
 
-The difference is small numerically but epistemically important: these latest counts are not limited by an arbitrary inverse-word depth inside the defined certificate class.
+The difference is small numerically but epistemically important: these latest counts are not limited by an arbitrary inverse-word depth inside the corrected certificate class.
 
 New longer certificates recovered by exhaustion include families using words such as
 
@@ -64,7 +88,7 @@ which lie beyond the previous depth-10 cutoff at higher K.
 
 Interpretation
 --------------
-- The whole-family inverse-word class is now mathematically bounded and exhaustible at each fixed cylinder.
+- The corrected whole-family affine-smaller inverse-word class is mathematically bounded and exhaustible at each fixed cylinder.
 - Persistent misses must be attacked by a genuinely stronger certificate semantics, not by saying “search this same class deeper.”
 - Candidate stronger mechanisms include parameter refinement during a macro, recursive state-graph transitions, or a ranked mixed-radix automaton.
 - This is exactly the distinction between SEARCH_DEPTH_MISS and CLASS_MISS required by the shared Proof-Attack framework.

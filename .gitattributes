@@ -1,0 +1,5 @@
+lean-toolchain text eol=lf
+lakefile.toml text eol=lf
+lake-manifest.json text eol=lf
+*.lean text eol=lf
+verification/lean_*_2026-08-23.txt text eol=lf

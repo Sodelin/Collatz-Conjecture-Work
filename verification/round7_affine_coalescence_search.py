@@ -70,10 +70,14 @@ class Certificate:
 def minimum_x_for_smaller(M: int, R: int, A: int, B: int) -> int | None:
     """Least x0>=0 such that 0 < A*x+B < M*x+R for every x>=x0.
 
-    Since both inequalities are affine and M>A is required asymptotically,
-    this is exact integer arithmetic.
+    This is exact integer arithmetic.  Strict slope decrease A<M gives an
+    eventual threshold; the equal-slope case A=M is also valid exactly when
+    the inverse-family intercept is smaller, B<R.
     """
-    if A < 0 or A >= M:
+    if A < 0 or A > M:
+        return None
+
+    if A == M and B >= R:
         return None
 
     x0 = 0
@@ -83,10 +87,11 @@ def minimum_x_for_smaller(M: int, R: int, A: int, B: int) -> int | None:
     elif B <= 0:
         x0 = max(x0, (-B) // A + 1)
 
-    D = M - A  # positive
-    E = R - B
-    if E <= 0:
-        x0 = max(x0, (-E) // D + 1)
+    if A < M:
+        D = M - A  # positive
+        E = R - B
+        if E <= 0:
+            x0 = max(x0, (-E) // D + 1)
 
     return x0
 
@@ -118,11 +123,40 @@ def uniform_forward_path(K: int, R: int) -> list[tuple[int, int, int]]:
 
 
 def validate(cert: Certificate, extra_samples: Iterable[int] = (0, 1, 2, 3, 7, 11, 29)) -> bool:
-    """Diagnostic replay of an already-symbolic candidate on concrete values.
+    """Exact symbolic validation, followed by redundant concrete replay.
 
-    Search correctness does not rely on these samples; they are a guardrail
-    against implementation mistakes.
+    The affine replay proves the identity for the whole parameter family.
+    Samples are retained only as an independent implementation guardrail.
     """
+    M = 1 << cert.K
+    if not (0 < cert.R < M and cert.R % 2 == 1):
+        return False
+    if cert.j != len(cert.word):
+        return False
+
+    states = {t: (A, B) for t, A, B in uniform_forward_path(cert.K, cert.R)}
+    target = states.get(cert.t)
+    if target is None:
+        return False
+
+    A, B = cert.A, cert.B
+    for parity in cert.word:
+        if parity == 0:
+            if A % 2 != 0 or B % 2 != 0:
+                return False
+            A, B = A // 2, B // 2
+        elif parity == 1:
+            if A % 2 != 0 or B % 2 != 1:
+                return False
+            A, B = 3 * A, 3 * B + 1
+        else:
+            return False
+
+    if (A, B) != target:
+        return False
+    if minimum_x_for_smaller(M, cert.R, cert.A, cert.B) != cert.x0:
+        return False
+
     for x in sorted(set([cert.x0, cert.x0 + 1, cert.x0 + 2, *extra_samples])):
         if x < cert.x0:
             continue
@@ -206,6 +240,16 @@ def search_residue(
 
 
 def exact_demo_64x_plus_15() -> None:
+    # Hostile-audit regression for the equal-slope comparison boundary:
+    #
+    #   U^4(8x+5) = 3x+2 = U^4(8x+4),
+    #
+    # while 8x+4 < 8x+5 for every x>=0.  The first version of the shared
+    # affine comparison helper incorrectly rejected A==2^K unconditionally.
+    equal = Certificate(K=3, R=5, t=4, j=4, A=8, B=4, word=(0, 0, 1, 0), x0=0)
+    assert minimum_x_for_smaller(8, 5, 8, 4) == 0
+    assert validate(equal)
+
     # The maximal uniform forward path of N=64x+15 does not directly descend:
     # after 9 steps it is 162x+40 and after 10 steps 81x+20, still larger
     # asymptotically than 64x+15.  But it coalesces at step 9 with a uniformly
@@ -214,6 +258,10 @@ def exact_demo_64x_plus_15() -> None:
     #   U^9(64x+15) = 162x+40 = U(54x+13).
     cert = Certificate(K=6, R=15, t=9, j=1, A=54, B=13, word=(1,), x0=0)
     assert validate(cert)
+    print("Equal-slope comparison regression:")
+    print("  U^4(8*x+5) = U^4(8*x+4) = 3*x+2")
+    print("  and 0 < 8*x+4 < 8*x+5 for every x>=0")
+    print()
     print("Exact coalescence demo:")
     print("  U^9(64*x+15) = U(54*x+13) = 162*x+40")
     print("  and 0 < 54*x+13 < 64*x+15 for every x>=0")

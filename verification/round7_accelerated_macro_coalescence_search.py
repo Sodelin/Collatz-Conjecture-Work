@@ -71,7 +71,10 @@ def uniform_T_path(K: int, R: int) -> list[tuple[int, int, int]]:
 
 
 def minimum_x_for_smaller(M: int, R: int, A: int, B: int) -> int | None:
-    if A < 0 or A >= M:
+    """Exact eventual comparison, including equal-slope smaller translations."""
+    if A < 0 or A > M:
+        return None
+    if A == M and B >= R:
         return None
     x0 = 0
     if A == 0:
@@ -80,10 +83,11 @@ def minimum_x_for_smaller(M: int, R: int, A: int, B: int) -> int | None:
     elif B <= 0:
         x0 = max(x0, (-B) // A + 1)
 
-    D = M - A
-    E = R - B
-    if E <= 0:
-        x0 = max(x0, (-E) // D + 1)
+    if A < M:
+        D = M - A
+        E = R - B
+        if E <= 0:
+            x0 = max(x0, (-E) // D + 1)
     return x0
 
 
@@ -101,6 +105,19 @@ def apply_inverse_word(A: int, B: int, word: str) -> tuple[int, int] | None:
 
 
 def validate(cert: MacroCertificate) -> bool:
+    """Exact whole-family affine validation plus redundant sample replay."""
+    M = 1 << cert.K
+    if not (0 < cert.R < M and cert.R % 2 == 1):
+        return False
+    states = {t: (A, B) for t, A, B in uniform_T_path(cert.K, cert.R)}
+    target = states.get(cert.forward_steps)
+    if target is None:
+        return False
+    if apply_inverse_word(*target, cert.inverse_word) != (cert.A, cert.B):
+        return False
+    if minimum_x_for_smaller(M, cert.R, cert.A, cert.B) != cert.x0:
+        return False
+
     samples = sorted(set([cert.x0, cert.x0 + 1, cert.x0 + 2, 0, 1, 2, 3, 7, 29]))
     for x in samples:
         if x < cert.x0:
@@ -161,9 +178,20 @@ def search_residue(K: int, R: int, max_inverse_depth: int = 10) -> MacroCertific
 
 
 def exact_demo() -> None:
+    # Equal-slope boundary omitted by the original affine comparison helper.
+    assert apply_inverse_word(3, 2, "OEE") == (8, 4)
+    assert minimum_x_for_smaller(8, 5, 8, 4) == 0
+    equal = MacroCertificate(3, 5, 3, "OEE", 8, 4, 0)
+    assert validate(equal)
+
     cert = search_residue(12, 1023, max_inverse_depth=10)
     assert cert is not None
     assert cert.A == 3072 and cert.B == 767
+    print("Equal-slope comparison regression:")
+    print("  T^3(8*x+5) = T^3(8*x+4) = 3*x+2")
+    print("  inverse word: OEE")
+    print("  and 0 < 8*x+4 < 8*x+5 for every x>=0")
+    print()
     print("Exact new macro certificate:")
     print("  T^12(4096*x+1023) = T^10(3072*x+767)")
     print("  inverse word:", cert.inverse_word)

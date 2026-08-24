@@ -1,0 +1,7 @@
+name = "collatz_work"
+version = "0.1.0"
+defaultTargets = ["CollatzWork"]
+
+[[lean_lib]]
+name = "CollatzWork"
+srcDir = "lean"

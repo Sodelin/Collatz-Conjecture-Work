@@ -5,6 +5,24 @@ Search settings: K=3..12, exact uniform affine forward path, reverse depth <=16
 
 IMPORTANT: This is a bounded certificate search, not a proof or disproof of Collatz.
 
+HOSTILE-AUDIT CORRECTION
+------------------------
+The affine comparison helper previously recognized only strict leading-
+coefficient decrease. It now also recognizes an equal leading coefficient
+with a smaller intercept. The K=3..12 sweep counts below are unchanged.
+
+Exact boundary regression: for every integer x>=0,
+
+  U^4(8*x+5) = U^4(8*x+4) = 3*x+2,
+  and 0 < 8*x+4 < 8*x+5.
+
+This is the equal-slope case omitted by the original L5 completeness claim.
+
+The final validator recomputes the exact uniform forward affine state, replays
+every recorded parity branch symbolically, checks equality of the affine
+target pair, and verifies the exact threshold. Concrete samples remain only as
+a redundant implementation guardrail.
+
 AUDIT CORRECTION
 ----------------
 The first committed version artificially restricted the forward Collatz time to t<=K ordinary steps. That was too restrictive. A residue modulo 2^K fixes K *division-by-two decisions*, not merely K ordinary steps; intervening odd steps do not consume 2-adic precision. The script was rewritten to propagate the exact affine family until its x-coefficient becomes odd, which is exactly where parity begins to depend on x. Reverse/coalescence branches are now constructed symbolically rather than accepted from sample agreement.

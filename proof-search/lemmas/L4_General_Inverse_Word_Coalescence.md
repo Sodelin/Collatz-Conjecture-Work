@@ -110,7 +110,7 @@ At the end,
 
 \[
 \boxed{
-Y_j(x)=2^j3^{s-r}x+rac{2^jB-c_w}{3^r},
+Y_j(x)=2^j3^{s-r}x+\frac{2^jB-c_w}{3^r},
 }\tag{5}
 \]
 
@@ -168,7 +168,21 @@ If
 
 then `m_w(x)<2^Kx+R` for all sufficiently large `x`. The remaining finite threshold is computed exactly from the intercept in (5).
 
-Consequently, an admissible inverse word satisfying (9) is an eventual strong-induction certificate for the entire cylinder.
+There is one additional possibility omitted from the first version of this lemma.  If
+
+\[
+A_w=2^K
+\]
+
+and the intercept
+
+\[
+B_w=\frac{2^jB-c_w}{3^r}
+\]
+
+satisfies `B_w<R`, then `m_w(x)<2^Kx+R` for every `x` for which `m_w(x)>0`.  L5 classifies this equal-slope case exactly: for a generic forward state at time `t`, it requires `r=s`, `e=t-s`, and `|w|=t`.  In the present endpoint setup, `t=K` and `e=j-r`, so the conditions read `r=s`, `e=K-s`, and `j=K`.
+
+Consequently, an admissible inverse word satisfying either the strict-slope condition (9) or the equal-slope/smaller-intercept condition is an eventual strong-induction certificate for the entire cylinder.
 
 ## 6. Certificate search interpretation
 
@@ -177,7 +191,8 @@ The search space is now explicit:
 - state: the current affine pair plus the inverse-word counters `(i,r,c_i)`;
 - move `E`: always legal;
 - move `O`: legal only under the exact modulo-3 test (6);
-- success: coefficient inequality (9), plus finite threshold check.
+- success: either coefficient inequality (9), or equal coefficient with a
+  smaller intercept, plus the exact positivity/threshold check.
 
 No trajectory sampling is necessary.
 

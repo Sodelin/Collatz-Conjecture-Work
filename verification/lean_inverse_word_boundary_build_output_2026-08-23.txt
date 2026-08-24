@@ -1,0 +1,41 @@
+Lean auxiliary formalization clean-build record
+Date: 2026-08-23
+Scope: corrected L5 equal-slope affine boundary and concrete 8x+5 / 8x+4 witness
+Collatz relevance: auxiliary regression only; not a proof or disproof
+
+Pinned toolchain
+----------------
+lean-toolchain: leanprover/lean4:v4.33.1
+Lean: 4.33.1
+Lake: 5.0.0-src+819816b
+
+Clean-build commands
+--------------------
+C:\Users\Owner\.elan\bin\lake.exe clean
+C:\Users\Owner\.elan\bin\lake.exe build
+C:\Users\Owner\.elan\bin\lake.exe env lean lean\CollatzWork\InverseWordBoundary.lean
+
+Clean-build output
+------------------
+Built CollatzWork.InverseWordBoundaryStatement
+Built CollatzWork.InverseWordBoundary
+'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+Built CollatzWork
+Build completed successfully (5 jobs).
+
+Direct module replay output
+---------------------------
+'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+
+Trusted-statement split
+-----------------------
+Statement module:
+  lean/CollatzWork/InverseWordBoundaryStatement.lean
+Proof module:
+  lean/CollatzWork/InverseWordBoundary.lean
+
+No `sorry`, project axiom, unsafe cast, unchecked declaration API, or generated
+theorem declaration occurs in these sources. This record formalizes only the
+named auxiliary comparison theorem and exact regression witness.

@@ -4,6 +4,24 @@ Map: T(n)=n/2 if even, (3n+1)/2 if odd
 Inverse macro depth: <=10 accelerated steps
 IMPORTANT: exact bounded certificate search only; not a Collatz proof/disproof
 
+Hostile-audit boundary correction
+---------------------------------
+The affine comparison helper now includes equal leading coefficient with a
+smaller intercept. The K=3..15 sweep counts below are unchanged.
+
+For every integer x>=0,
+
+  T^3(8*x+5) = T^3(8*x+4) = 3*x+2,
+
+using inverse word OEE from the common target, and
+
+  0 < 8*x+4 < 8*x+5.
+
+The final validator recomputes the exact uniform forward affine state, replays
+every E/O inverse operation with its whole-family divisibility guard, compares
+the resulting affine pair exactly, and verifies the exact threshold. Concrete
+samples remain only as a redundant implementation guardrail.
+
 Exact new macro certificate
 ---------------------------
 For every integer x>=0,
