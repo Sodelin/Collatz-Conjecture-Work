@@ -36,6 +36,11 @@ mode changes only matched legacy delimiter pairs and standalone display
 delimiter lines; it does not edit the TeX bodies. Review the resulting diff,
 then rerun the checker without `--fix`.
 
+The fixer fails closed when a legacy delimiter appears in an HTML code element
+or near a Markdown, reference-style, autolink, or raw-HTML link destination.
+Those uncommon cases require a manual edit so a URL can never be mistaken for
+mathematics.
+
 This is presentation QA. It does not validate any equation or mathematical
 claim.
 

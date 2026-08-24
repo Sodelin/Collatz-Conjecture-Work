@@ -24,6 +24,8 @@ LEGACY_DISPLAY = re.compile(r"(?<!\\)\\[\[\]]")
 UNESCAPED_DOLLAR = re.compile(r"(?<!\\)\$")
 RAW_TEX_COMMAND = re.compile(r"(?<!\\)\\[A-Za-z]+")
 RAW_HTML_CODE = re.compile(r"</?(?:code|pre)(?:\s|>)", re.IGNORECASE)
+RAW_HTML_LINK = re.compile(r"<(?:a|area|img|source)\b", re.IGNORECASE)
+REFERENCE_DEFINITION = re.compile(r"^\s*\[[^\]\n]+\]:")
 MARKDOWN_LINK = re.compile(r"!?\[[^\]\n]*\]\((?P<destination>(?:\\.|[^)\n])*)\)")
 AUTOLINK = re.compile(r"<(?:https?://|mailto:)[^>\n]+>", re.IGNORECASE)
 LITERAL_DOLLAR_SPAN = re.compile(r"<span>\$</span>", re.IGNORECASE)
@@ -69,6 +71,12 @@ def transform_plain_segment(segment: str, *, fix: bool, label: str, line_number:
         return segment, pairs, errors
     if RAW_HTML_CODE.search(segment):
         errors.append(f"{label}:{line_number}: raw HTML code/pre container is unsupported")
+        return segment, pairs, errors
+    has_legacy_inline = INLINE_OPEN.search(segment) or INLINE_CLOSE.search(segment)
+    if has_legacy_inline and (
+        "](" in segment or REFERENCE_DEFINITION.search(segment) or RAW_HTML_LINK.search(segment)
+    ):
+        errors.append(f"{label}:{line_number}: legacy math near a link requires manual review")
         return segment, pairs, errors
     for link in [*MARKDOWN_LINK.finditer(segment), *AUTOLINK.finditer(segment)]:
         destination = link.groupdict().get("destination", link.group(0))
@@ -320,6 +328,25 @@ a&=b\\\\[1mm]
     )
     if not linked_tex.errors or linked_tex.changed:
         raise RuntimeError("self-test link-destination false control was accepted")
+    balanced_link = transform_text(
+        "[literal](https://example/a(b)/\\(BODY\\))\n",
+        fix=True,
+        label="balanced-link-false-control",
+    )
+    if not balanced_link.errors or balanced_link.changed:
+        raise RuntimeError("self-test balanced-link false control was accepted")
+    reference_link = transform_text(
+        "[id]: https://example/\\(BODY\\)\n", fix=True, label="reference-link-false-control"
+    )
+    if not reference_link.errors or reference_link.changed:
+        raise RuntimeError("self-test reference-link false control was accepted")
+    html_link = transform_text(
+        '<a href="https://example/\\(BODY\\)">link</a>\n',
+        fix=True,
+        label="html-link-false-control",
+    )
+    if not html_link.errors or html_link.changed:
+        raise RuntimeError("self-test HTML-link false control was accepted")
     literal_dollar = transform_text(
         "The symbol <span>$</span> differs from $x$.\n", fix=False, label="literal-dollar-control"
     )
