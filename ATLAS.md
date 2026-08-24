@@ -174,6 +174,7 @@ orbit.
 ## Evidence and formalization
 
 - [Verification and reproduction manifest](verification/README.md)
+- [Audited-route release receipt](verification/RELEASE_AUDIT_2026-08-24.md)
 - [Lean target boundary](LEAN_TARGETS.md)
 - [Lean verification policy](lean/VERIFICATION_POLICY.md)
 - [Provenance policy and immutable objects](PROVENANCE.md)

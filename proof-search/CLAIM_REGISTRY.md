@@ -1,7 +1,7 @@
 # Atomic claim and evidence registry
 
 **Canonical baseline:**
-`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
+`3619c756e136318520153ced00ce30eaf37ed33d` (2026-08-24).
 
 **Global verdict:** Collatz is unresolved. No row below is a universal proof,
 a positive nontrivial cycle, or a rigorously divergent positive orbit.
@@ -93,7 +93,7 @@ the best candidates for a narrow technical note after external review; Round
 
 | ID | Exact scope | Grades | Evidence / provenance | Limitation |
 |---|---|---|---|---|
-| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted mathematical baseline `b75ffec58ae20ac26271ff7d59a71d3591467994`. | This is the status of the open problem and archive, not a graded project theorem. |
+| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted mathematical baseline `3619c756e136318520153ced00ce30eaf37ed33d`. | This is the status of the open problem and archive, not a graded project theorem. |
 | `L0` | For the accelerated odd map, every odd `n>1` having a smaller iterate is equivalent to Collatz; a least counterexample cannot descend below itself. | `C3 V1 I3 N0 R1` | [L0](lemmas/L0_Global_Descent_Equivalence.md), commit `2456248bcb5f1c769d2ffdb369e8f63dfcd3a3be`. | Elementary equivalent reformulation; Lean pending; no progress without a descent mechanism. |
 | `6A-T1` | Quantitative beta-debt necessity on the stated repelling rational-period shadows. | `C2 V1 I3 N2 R2` | [Review note](../papers/round-6a/Theorem_6A1_Public_Review_Note.md), claim ledger/checker/output, commit `c3d1da2c5dc8db296089745951dda1cd8e89bb9d`. | Unreviewed; lift, endpoint valuation, scaling, and the proof chain are not Lean-checked. |
 | `6A-SUPPORT` | Principal-row realizations, prescribed minima, rational-period lift/scaling, debt-tail frontiers, arbitrary `F(v_2(n+1))` obstruction, and finite-center freezing, at the scopes stated in the Round 6A packet. | `C1 V1 I2 N? R1` | Same Round 6A packet; diagnostic checker prints `PASS A`–`PASS G`. | Several claims are prerequisites for `6A-T1`; checker agreement is not a universal proof. |

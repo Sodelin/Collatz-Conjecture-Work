@@ -7,7 +7,7 @@ bounded computation or narrow formal theorem into a Collatz proof.
 ## Tested environment
 
 Baseline closure replay on 2026-08-24 against source state
-`4a8845ef46c78e50b3c4303e3a3a110e3b66f045` and accepted mathematical
+`4a8845ef46c78e50b3c4303e3a3a110e3b66f045` and the then-accepted mathematical
 baseline `b75ffec58ae20ac26271ff7d59a71d3591467994` (before the navigation-only
 patch that added the atlas and graph checker):
 
@@ -24,8 +24,9 @@ Earlier artifact-level audits remain identifiable by their individual commit
 hashes. The original eight mathematical rows in the table below were replayed
 together at that closure head. The three later direct Lean rows were replayed
 together with the original eight and the note graph during the audited-route
-release pass; its immutable source commit and environment belong in the final
-release receipt.
+release pass against exact source commit
+`3619c756e136318520153ced00ce30eaf37ed33d`; see the
+[release receipt](RELEASE_AUDIT_2026-08-24.md).
 
 ## One-command release replay
 
@@ -58,7 +59,8 @@ Run from the repository root.
 | `F-POLY-RATCHET-001` Lean core | `lake env lean lean\CollatzWork\Disproof\PolynomialRatchet.lean` | Four theorem dependency reports containing only standard Lean axioms | Checks normalized arithmetic consequences, not the primitive-polynomial macro premises or a Collatz invariant. |
 | Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It imports none of the four disproof modules, which require the direct commands above. |
 
-All eleven mathematical commands passed in the audited release replay. The YAH checkers currently
+All eleven mathematical commands passed in the audited release replay recorded
+in the [release receipt](RELEASE_AUDIT_2026-08-24.md). The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
 transcript. The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).

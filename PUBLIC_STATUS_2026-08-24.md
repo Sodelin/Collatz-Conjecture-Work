@@ -46,6 +46,14 @@ Several tempting global promotions were then ruled out:
   non-coefficientwise, or local methods;
 - cyclically rotating a two-pump parity-word equation gives an algebraically
   dependent condition, not a new nonzero resultant;
+- a two-rational-center/three-single-edge branching construction collapses
+  before it supplies an ordinary positive anchor;
+- a memoryless invariant coloring of one fixed finite residue ring must be
+  constant;
+- canonical primitive-polynomial divisibility on one fixed macro cycle
+  collapses to scalar eigenforms and supplies no divergent integer; and
+- a positive accelerated orbit with a finite successive-state-ratio limit
+  eventually reaches `1`;
 - natural affine combinations of hard-state label depth, parameter bit length,
   and replay debt cannot rank every hard successor.
 
@@ -73,6 +81,10 @@ verification levels. The atomic claim registry is canonical for promotion.
 | [`proof-search/routes/AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md) | Exact reduction theorem | Gives a total decreasing boundary normalizer and the Collatz-equivalent hard return map; `31 -> 182 -> 91` is the smallest replay-rank recharge witness. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Lean-checked, narrow | The two rotated determinant pairs satisfy exact dependencies, so the hoped cyclic constant resultant vanishes identically. |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Audited derivation | Gives the coefficient provenance, factorization, scope, and prior-art classification for the two-pump route obstruction. |
+| [`proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md) | Independent hostile audit plus Lean core | Closes only the exact two-center/three-single-edge architecture. |
+| [`proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md) | Independent hostile audit plus partial Lean core | Proves constancy for memoryless invariant colorings of one fixed finite residue ring; stateful residue systems remain open. |
+| [`proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md`](proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md) | Standalone theorem, hostile audit, and Lean arithmetic core | Closes only the canonically normalized fixed-cycle primitive-polynomial divisibility/eigenform subclass. |
+| [`proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md`](proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md) | Hostile-reconstructed exact prose theorem | Rules out divergent positive accelerated generators whose full successive-state ratio has a finite real limit. |
 | [`verification/disproof_cycle_search.py`](verification/disproof_cycle_search.py) | Exact bounded computation | Exhausts the reported finite `(k,q,D)` region using a corrected maximum-`C` dynamic program; it finds no nontrivial positive cycle candidate in that region. |
 | [`proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md) | Audit note | Proves why the fixed-bound DP merge is complete and states the finite boundary precisely. |
 
@@ -127,14 +139,7 @@ integer satisfying every guard of a divergent itinerary.
 From the repository root:
 
 ```powershell
-python -B verification\trajectory_normal_form_regression.py
-python -B verification\yah_2local_edge_no_go.py
-python -B verification\yah_two_state_semantic_label_no_go.py
-python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
-python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
-python -B verification\disproof_cycle_search.py
-C:\Users\Owner\.elan\bin\lake.exe env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
-C:\Users\Owner\.elan\bin\lake.exe build
+powershell -NoProfile -ExecutionPolicy Bypass -File verification\run_release_checks.ps1
 ```
 
 Expected key outputs are:
@@ -150,9 +155,12 @@ Expected key outputs are:
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
   `1-2` encodings, and 0 nontrivial candidates;
 - two-pump Lean module: five theorem dependency reports containing only
-  Lean's standard `propext` and `Quot.sound`.
+  Lean's standard `propext` and `Quot.sound`;
+- the three new Lean cores compile with the exact axiom footprints in the
+  [release receipt](verification/RELEASE_AUDIT_2026-08-24.md); and
+- note graph: all 58 Markdown notes reachable, no broken local Markdown links.
 
-The two-pump module is compiled directly by the command above; it is not yet
+The four disproof modules are compiled directly by the wrapper; none is
 imported by the umbrella `CollatzWork.lean` file.
 
 ## What can be said publicly
@@ -172,11 +180,12 @@ priority claim.
 ## Provenance checkpoint
 
 The complete accepted mathematical snapshot described by this file is
-`b75ffec58ae20ac26271ff7d59a71d3591467994`. Its parent chain includes
-`f8558a566b682e8dbc4465206f9c26ac9b17760c`, the preceding full scalar
-certificate, and `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, the trajectory-normal
-form snapshot, and `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`,
-the preceding route-obstruction baseline. Exact scope notes are
+`3619c756e136318520153ced00ce30eaf37ed33d`. Its parent is the navigation
+snapshot `2e7eae2bb998b14e5443e6c440154130a0049467`; its ancestry includes
+`b75ffec58ae20ac26271ff7d59a71d3591467994`, the preceding scalar-certificate
+baseline, `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, the trajectory-normal-form
+snapshot, and `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`, the preceding
+route-obstruction baseline. Exact scope notes are
 recorded in the linked files and Git history.
 
 The nonexistent string `409cb63b69b5fb6af676166573e752f1f4a5ff38`

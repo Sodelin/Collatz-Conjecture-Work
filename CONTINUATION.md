@@ -1,7 +1,7 @@
 # Continuation checkpoint
 
 This is the restart pointer for mathematical work after the accepted Round-8
-mathematical baseline `b75ffec58ae20ac26271ff7d59a71d3591467994`.
+mathematical baseline `3619c756e136318520153ced00ce30eaf37ed33d`.
 
 ## First: preserve the logical boundary
 

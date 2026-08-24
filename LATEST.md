@@ -1,7 +1,7 @@
 # Latest accepted research state
 
 Accepted mathematical baseline:
-`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
+`3619c756e136318520153ced00ce30eaf37ed33d` (2026-08-24).
 
 ## Verdict
 
@@ -33,10 +33,23 @@ this repository.
   an exact decreasing boundary normalizer and closed hard return map. Universal
   termination of that return map is Collatz-equivalent; the smallest reported
   growth-plus-recharge witness is `31 -> 182 -> 91`.
+- [`F-BRANCH-CENTER-001`](proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md):
+  the exact two-rational-center/three-single-edge branching architecture
+  collapses; its eliminated arithmetic equation has a narrow Lean replay.
+- [`F-FINITE-RESIDUE-FIRST-INTEGRAL-001`](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md):
+  every memoryless coloring of one fixed finite residue ring preserved by all
+  positive ordinary Collatz steps is constant; the finite-action core is
+  Lean-checked.
+- [`F-POLY-RATCHET-001`](proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md):
+  canonical normalization closes the fixed-cycle primitive-polynomial
+  divisibility/eigenform subclass; its arithmetic telescope is Lean-checked.
+- [`F-SMOOTH-RATIO-SEMICONJ-001`](proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md):
+  a positive accelerated orbit with a finite successive-state-ratio limit
+  eventually reaches `1`.
 
-The YAH items are solved **route-class obstructions**. Both normalizers are
-**Collatz-equivalent reductions**. None is the still-open universal
-termination proof.
+The YAH items and the four Route-F additions are solved **route-class
+obstructions**. Both normalizers are **Collatz-equivalent reductions**. None
+is the still-open universal termination proof or a disproof witness.
 
 ## Current reading order
 
@@ -54,7 +67,7 @@ remain preserved as historical branch checkpoints.
 
 ## Formal status
 
-Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
+Six narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
 proof-assistant formalization of the prose chain or Collatz does not exist.
 Novelty and priority for project-specific claims are not certified.
 

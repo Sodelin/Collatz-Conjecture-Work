@@ -9,7 +9,7 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > true or false.
 
 Accepted mathematical baseline: full Git object
-`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
+`3619c756e136318520153ced00ce30eaf37ed33d` (2026-08-24).
 
 For a visual, cross-linked map of claims, routes, evidence, historical notes,
 and reopening conditions, use the [research atlas](ATLAS.md). It is portable
