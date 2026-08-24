@@ -124,8 +124,9 @@ Publication readiness is correspondingly limited:
   Round 6A remains provisional.
 - **Verification infrastructure:** the max-`C` DP and the two-pump Lean module.
 - **Classical corollaries or routine specializations:** the Mersenne easy child,
-  least-counterexample valuation sieve, and finite-prime-support lemma. These
-  are useful but should not be marketed as new Collatz theorems.
+  least-counterexample valuation sieve, finite-prime-support lemma, and
+  memoryless single-modulus first-integral obstruction. These are useful but
+  should not be marketed as new Collatz theorems.
 
 ## 4. Accepted and rigorously scoped repository results
 
@@ -153,12 +154,12 @@ argument.
 
 ## 5. Accepted snapshot additions without standalone Git artifacts
 
-The following four statements were independently reconstructed for this
+The following five statements were independently reconstructed for this
 handoff after `b3b9f473...`. Their proofs are short enough to audit below, but
 the source lanes deliberately did not modify or publish the repository. They
 therefore have **no standalone artifact commit at the cutoff**. Treat them as
-accepted scoped prose in this snapshot, not as formalized or priority-bearing
-repository theorems.
+accepted scoped prose in this snapshot, not as end-to-end formalized or
+priority-bearing repository theorems.
 
 ### 5.1 Scalar relative interpretations of the YAH system
 
@@ -301,6 +302,71 @@ notes were replayed in the source lane, but they were untracked and are not
 part of this Git snapshot; the Lean result covered only the displayed natural
 number equation rigidity, not the prose bridge.
 
+### 5.5 Memoryless single-modulus residue first integrals are constant
+
+Let `m>=1`, let `S` be any set, and let
+
+\[
+I_m:\mathbb Z/m\mathbb Z\longrightarrow S
+\]
+
+satisfy
+
+\[
+I_m([C(n)]_m)=I_m([n]_m)
+\]
+
+for every positive integer `n`, where `C` is the ordinary Collatz map from
+Section 1. Then `I_m` is constant. Consequently, no positive `n_0` can be
+separated from `1` by a memoryless coloring of one fixed residue modulus.
+
+If `m=2d`, the positive even lifts `2R` and `2R+m` force
+`I_m(R)=I_m(R+d)`, so the coloring factors through modulus `d`. Once the
+modulus is odd, if `m=3d`, positive odd lifts separated by `2d` have Collatz
+outputs differing by `2m`; hence
+`I_m(r)=I_m(r+2d)=I_m(r+d)`, and the coloring again factors through `d`.
+After stripping all factors of `2` and `3`, define the residue permutations
+
+\[
+P(x)=2x,\qquad Q(x)=3x+1.
+\]
+
+Positive even and odd lifts make the coloring invariant under `P` and `Q`.
+Their right-to-left commutator is
+
+\[
+Q^{-1}P^{-1}QP(x)=x-1/6.
+\]
+
+Because `-1/6` is a unit modulo the remaining modulus, this translation is
+transitive, so the coloring is constant.
+
+The complete all-moduli argument was independently reconstructed in prose.
+An untracked source-lane Lean module was also replayed: all five declarations
+reported no axioms. It checks only the abstract facts that invariance passes
+to the displayed commutator and that invariance under a transitive map forces
+constancy. It does **not** formalize `Z/mZ`, the positive parity-controlled
+lifts, factor descent, the affine commutator calculation, or translation
+transitivity, and it is not a public artifact of this review branch. For
+audit provenance, the frozen, untracked source-lane files at detached base
+`b3b9f473...` were:
+
+- `proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_SHOT_2026-08-24.md`,
+  SHA-256
+  `737224441621F0466A517E38E5CCDA1B745956640A76A6C715A8C1130A7F092D`;
+- `lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean`, SHA-256
+  `EF19D5151CBE2C8C22824BAD1CE380063027136AA5924DC21FE2AC5E287A21FF`;
+- `proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md`,
+  SHA-256
+  `F69FD82B43D9B5CC34857E0134091A216181B4D02A21798102D9B393C53ED0EA`.
+
+Classification: **`STOPPED-USEFUL / KILLED_CLASS / NO DISPROOF`**. This kills
+only memoryless first integrals determined by one fixed finite modulus. It
+does not exclude finite-state memory, forward traps, ranked recursive residue
+graphs, state-dependent or growing moduli, non-residue invariants, or a
+Collatz counterexample. The argument is classified as elementary
+modular-semigroup folklore; no novelty or priority claim is made.
+
 ## 6. Decisive corrections and counterexamples
 
 These are especially useful when reviewing future claims.
@@ -343,6 +409,9 @@ accepted module uses `sorryAx`.
 There is no Lean formalization of the complete YAH semantics, either YAH
 cancellation certificate, the hard-child rank theorem, the hard-return
 equivalence, Round 6A, the new valuation/S-unit/branching lemmas, or Collatz.
+The untracked residue-first-integral module checks only the abstract
+finite-action core described in Section 5.5. It is not part of this Git
+snapshot, and the all-moduli quotient/lift theorem remains a prose obligation.
 
 ## 8. Reproduction commands and expected outcomes
 
@@ -404,6 +473,7 @@ objective is allowed to continue.
 | **STOPPED-USEFUL** | Least-counterexample valuation sieve | Reduces a hypothetical least counterexample to 21 residue classes mod 128, but supplies no mechanism controlling those classes. |
 | **STOPPED-USEFUL** | Fixed finite-prime-support divergence | Impossible unless the orbit is eventually periodic. This redirects divergence architectures toward unbounded prime support. |
 | **STOPPED-USEFUL** | Two-center branching and two-pump elimination | Both exact ansatzes collapse for algebraic reasons. Larger/different constructions remain untouched. |
+| **STOPPED-USEFUL** | Memoryless single-modulus residue first integrals (`KILLED_CLASS`) | Every coloring of one fixed finite residue ring invariant under every positive ordinary Collatz step is constant. Finite-state memory, forward traps, ranked residue graphs, state-dependent or growing moduli, non-residue invariants, and direct witnesses remain untouched. |
 | **DEAD** | Finite uniformly bounded direct-descent cover | Mersenne starts defeat every maximum horizon. |
 | **DEAD** | Unrefined one-shot Mersenne inverse-word closure | The all-depth slope theorem closes exactly that certificate class, not ranked recursion or refinement. |
 | **DEAD** | Scalar YAH relative interpretation by strictly increasing `N`-self-maps | The two-rule contradiction already applies with the dynamic rule strict and the auxiliary rule weak. |
@@ -451,8 +521,8 @@ Collatz.”
 
 - Round 6A remains a specialist-review target, not an accepted global theorem.
 - The YAH auxiliary-normalization/confluence flash did not finish its audit.
-- Uncommitted exploratory files from the live lanes are not immutable GitHub
-  artifacts. The four short results in Section 5 are preserved here with
+- Uncommitted source-lane files are not immutable GitHub artifacts. The five
+  short results in Section 5 are preserved here with
   their full accepted scope; any stronger source-lane wording is excluded.
 - Bounded survivor percentages, finite cycle searches, and finite verification
   ranges are diagnostics. They are not statistical evidence that Collatz is
@@ -475,6 +545,9 @@ This project does **not** claim:
 - that an equivalent hard-return system constitutes progress toward its
   universal termination;
 - that the S-unit corollary rules out a nontrivial cycle;
+- that the residue-first-integral obstruction excludes finite-state memory,
+  forward traps, ranked recursive residue graphs, state-dependent or growing
+  moduli, non-residue invariants, or a Collatz counterexample;
 - or that any potentially project-specific certificate is novel in the
   publication-priority sense.
 
@@ -512,7 +585,9 @@ The exact finite YAH cancellations are the leading candidates for a narrow
 technical note after specialist reconstruction and a broader literature
 search. Every other result above is classified as prior art, a routine
 specialization, a project-specific route obstruction of uncertified novelty,
-or an internal verification artifact.
+or an internal verification artifact. The single-modulus first-integral
+obstruction is classified as elementary modular-semigroup folklore; no
+priority claim is made for its exact packaging.
 
 ## 14. Suggested review order
 
@@ -527,7 +602,7 @@ For a first mathematical review:
    read the hard-return note to see why closure is still equivalent to Collatz.
 5. Check the max-`C` DP completeness proof before interpreting its bounded
    output.
-6. Independently reconstruct the four short snapshot additions in Section 5.
+6. Independently reconstruct the five short snapshot additions in Section 5.
 7. Use the [claim registry](proof-search/CLAIM_REGISTRY.md),
    [failure ledger](proof-search/FAILURE_LEDGER.md), and
    [verification manifest](verification/README.md) for the complete archive.
