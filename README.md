@@ -16,6 +16,19 @@ The cleanest public review target is:
 
 The public review note isolates the central Round 6A quantitative rational-period β-debt theorem and its proof, rather than presenting the work as a solution of Collatz.
 
+## Current research method
+
+The active proof-search process is now explicitly adversarial, artifact-first, mode-aware, and tool-routed.
+
+Key files:
+
+- [`RESEARCH_PROTOCOL_V2.md`](RESEARCH_PROTOCOL_V2.md) — proof/disproof criteria, route statuses, hostile review, controls, computation and Lean policy.
+- [`prompts/COLLATZ_ORCHESTRATOR_V3.md`](prompts/COLLATZ_ORCHESTRATOR_V3.md) — current Prompt Intermediate Representation (PIR)-based orchestration prompt for Chat, Work, and Codex.
+- [`methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md`](methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md) — jurisdictions for Wolfram, Precise Special Functions, Python, Elicit, Consensus, Scholar Sidekick, Firecrawl, Zotero, Lean, GitHub, and Zenodo archival.
+- [`methodology/SHARED_PROOF_ATTACK_STRUCTURE.md`](methodology/SHARED_PROOF_ATTACK_STRUCTURE.md) — link to the reusable cross-project proof-attack framework.
+
+The core rule is that adding tools changes the project's search and verification capacity, not the mathematical status of a claim. Numerical agreement, formal verification, novelty, and public archival remain separate statuses.
+
 ## Research sequence
 
 | Stage | Main research state |
@@ -50,6 +63,8 @@ The research artifacts are dated **2026-08-01**, with the stored packet/library 
 The original per-round SHA-256 manifests from Rounds 4A through 6B are preserved unchanged in [`checksums/original/`](checksums/original/). A fresh byte-for-byte SHA-256 inventory of the archived source artifacts was computed at public archival time and is stored at [`checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt`](checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt).
 
 Hashes establish **content identity**, not an earlier date by themselves. [`PROVENANCE.md`](PROVENANCE.md) records the distinction between the earlier artifact metadata and the later independently visible GitHub publication date.
+
+Zenodo may be used for milestone release archiving and DOI assignment. A Zenodo DOI would establish a citable deposited snapshot; it would not, by itself, mean peer review, journal acceptance, mathematical verification, or certified novelty.
 
 ## Current mirror scope
 
