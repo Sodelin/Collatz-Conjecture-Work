@@ -1,0 +1,47 @@
+Round 7 exact first-crossing and hard-gap oracle
+Date: 2026-08-23
+Script: verification/round7_first_crossing_oracle.py
+Bounded theorem regression only; not a Collatz proof/disproof
+first-crossing horizon: tau <= 27
+Runtime guard: Python assertions are required; optimized `python -O` execution is rejected
+
+tau,s,first_crossing_words,non_descending,positive_gap
+2,1,1,1,0
+4,2,1,0,0
+5,3,2,0,0
+7,4,3,0,0
+8,5,7,0,0
+10,6,12,0,0
+12,7,30,0,0
+13,8,85,0,0
+15,9,173,0,0
+16,10,476,0,0
+18,11,961,0,0
+20,12,2652,0,0
+21,13,8045,0,0
+23,14,17637,0,0
+24,15,51033,0,0
+26,16,108950,0,0
+27,17,312455,0,0
+
+L9 mechanical extremizer: PASS (unique at every listed (tau,s))
+L10 identities for encountered non-descending cases: PASS
+coverage caveat: only tau=2,s=1 is non-descending (n=y=1,D=1)
+nontrivial positive-gap cases exercised: 0
+
+L12 hard-pair range: odd states <= 4096
+  q'<q: 43691 pairs
+  q'=q: 43435 pairs
+  q'>q: 43690 pairs
+L12 valuation and odd-part congruences: PASS
+
+Interpretation
+--------------
+The first section exhausts every positive-odd-count first coefficient-crossing
+word through the stated horizon, rather than sampling starts. Its only
+non-descending canonical realization is the exact-cycle edge `n=y=1`; it does
+not exercise a positive near-return gap or a nontrivial `D`-residue. The
+hard-pair section independently exhausts all pairs of L6 hard-exit states in
+its stated range. These are regression checks for exact finite arithmetic
+only. Neither finite horizon addresses the infinite coefficient-stopping
+branch or supplies the missing renewal/rank theorem.

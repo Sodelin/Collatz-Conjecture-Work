@@ -72,6 +72,12 @@ Write
 s=q_\tau.
 \]
 
+The nontrivial branch considered below has `s>=1`.  The edge case `s=0`
+forces `tau=1`; it occurs only when the first branch is even, in which case
+`T(n)=n/2<n` immediately.  In particular, `s=0` cannot occur for a
+non-descending first contraction or for the odd least-counterexample state
+used in L8-L12.
+
 The step at `tau` must be even. Indeed, if step `tau` were odd then
 
 \[

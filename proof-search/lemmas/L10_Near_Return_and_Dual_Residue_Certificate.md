@@ -39,6 +39,10 @@ T^\tau(n)=\frac{3^s n+C}{2^\tau}
 
 for a positive integer remainder `C` determined by the parity word.
 
+L9's trivial `s=0`, `tau=1` edge has `T(n)=n/2<n`.  It is therefore
+automatically excluded once the non-descending hypothesis in Section 2 is
+imposed.  On the branch studied here, `s>=1` and `C>0`.
+
 If the odd positions are
 
 \[
@@ -316,26 +320,31 @@ From (10), reduction modulo `D` gives
 2^\tau d\equiv C\pmod D.
 \]
 
-Since
+If `D>1`, then
 
 \[
 \gcd(2^\tau,D)=1,
 \]
 
-we have
+so `2^tau` has a unique multiplicative inverse modulo `D` and
 
 \[
 \boxed{
 d\equiv C(2^\tau)^{-1}\pmod D.}\tag{19}
 \]
 
-Combining this with (8), a paradoxical first contraction requires the canonical residue of `C(2^tau)^{-1}` modulo `D` to land in
+Combining this with (8), for `D>1` a paradoxical first contraction requires the canonical residue of `C(2^tau)^{-1}` modulo `D` to land in
 
 \[
 \boxed{
 0\le d\le\left\lfloor\frac{s-1}{3}\right\rfloor.
 }\tag{20}
 \]
+
+When `D=1`, reduction modulo `D` is the trivial congruence modulo one and
+supplies no additional residue restriction; no modular-inverse representative
+is needed.  The legitimate edge example `s=1`, `tau=2`, `n=1` lies in this
+degenerate case.
 
 At a near-critical Diophantine scale, `D` can be much smaller than `2^tau` or `3^s`, but it is still an exact third modulus tied to the additive near-return defect.
 
@@ -353,7 +362,7 @@ Its contribution is to replace a vague paradoxical-prefix search by an exact fin
 
 1. compute `C` exactly;
 2. compute `D=2^tau-3^s`;
-3. compute the canonical residues `r_2`, `r_3`, and `d mod D`;
+3. compute the canonical residues `r_2`, `r_3`, and, when `D>1`, `d mod D`;
 4. check the explicit short interval conditions.
 
 The next useful theorem must exploit structure of the **near-mechanical first-contraction words from L9**, rather than attempting unrestricted parity enumeration.
@@ -367,6 +376,7 @@ Formalize:
 3. modular inverses and start-residue statement (11);
 4. endpoint-residue statement (14);
 5. interval equivalence (16)-(18);
-6. gap-residue congruence (19)-(20).
+6. gap-residue congruence (19)-(20) under `D>1`, with `D=1` proved
+   separately to be the vacuous modulus-one case.
 
 These are finite arithmetic statements once L9's affine prefix theorem is available.

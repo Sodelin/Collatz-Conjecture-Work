@@ -4,7 +4,7 @@
 **Status:** `PROVED_AUX` / `FORMAL_PENDING`  
 **Novelty:** exact formulation not priority-certified; no novelty claim  
 **Usefulness:** propagates the L6 hard-exit constraint from a least counterexample to its first coefficient-contraction endpoint when the L10 near-return is sufficiently small  
-**Collatz relevance:** recursive necessary condition; not a resolution
+**Collatz relevance:** one-step inherited necessary condition; not a resolution
 
 ## 1. Setup
 
@@ -18,6 +18,10 @@ T(n)=\begin{cases}
 n/2,&n\text{ even}.
 \end{cases}
 \]
+
+The least counterexample is odd.  If it were even, its first iterate would be
+the smaller positive integer `n_*/2`; minimality would make that iterate's
+orbit reach `1`, and hence the orbit of `n_*` would reach `1` as well.
 
 Suppose the coefficient stopping time of `n_*` is finite, and let `tau` be its first coefficient contraction. Let
 
@@ -282,7 +286,7 @@ Therefore a least counterexample contracting for the first time at the L8 Farey 
 1. L9's near-mechanical first-contraction parity constraints;
 2. L10's dual tiny-residue and near-return equations;
 3. `d` divisible by four;
-4. the endpoint `n_*+d` is odd and begins another L6 hard-exit block.
+4. the endpoint `n_*+d` is odd and is itself an L6 hard-exit state.
 
 This still leaves many possibilities, but the constraint now propagates *past* the first contraction rather than terminating there.
 
@@ -292,7 +296,11 @@ The inheritance theorem uses `s<n_*`. A first coefficient contraction occurring 
 
 Even under `s<n_*`, the hard exit is not itself contradictory. Long positive integers can realize hard-exit blocks.
 
-The next route must therefore determine whether repeated near-minimum/hard-exit constraints generate a finite forbidden-state grammar or whether the surviving state complexity continues to grow.
+The next route must first construct a total rooted transition system.  Only
+then can it determine whether successive near-minimum/hard-exit constraints
+generate a finite forbidden-state grammar or whether the surviving state
+complexity continues to grow.  Repetition of the full L9-L11 state is a target,
+not a consequence of this lemma.
 
 ## 9. Lean targets
 
