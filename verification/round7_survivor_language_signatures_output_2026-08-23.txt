@@ -1,0 +1,56 @@
+Round 7 finite-horizon unresolved-language signatures
+IMPORTANT: diagnostic of one bounded certificate search, not a Collatz invariant
+
+h=1
+K,parent_survivors,distinct_extension_signatures,largest_signature_multiplicity
+5,4,2,3
+6,7,3,4
+7,11,3,5
+8,16,2,11
+9,27,3,19
+10,46,3,34
+11,80,3,65
+12,145,3,100
+13,245,3,198
+14,443,3,376
+
+h=2
+K,parent_survivors,distinct_extension_signatures,largest_signature_multiplicity
+5,4,4,1
+6,7,6,2
+7,11,4,3
+8,16,6,5
+9,27,7,7
+10,46,7,19
+11,80,11,28
+12,145,7,53
+13,245,7,131
+
+h=3
+K,parent_survivors,distinct_extension_signatures,largest_signature_multiplicity
+5,4,4,1
+6,7,7,1
+7,11,8,2
+8,16,10,3
+9,27,19,4
+10,46,28,6
+11,80,28,23
+12,145,31,37
+
+h=4
+K,parent_survivors,distinct_extension_signatures,largest_signature_multiplicity
+5,4,4,1
+6,7,7,1
+7,11,9,2
+8,16,14,2
+9,27,26,2
+10,46,41,2
+11,80,57,7
+
+Interpretation
+--------------
+- At one-bit horizon there are only the expected low-only, high-only, and both-child survivor patterns.
+- At horizon two, the observed signature count remains small in several later levels (7 signatures at K=12 and K=13), but it is not monotone and briefly reaches 11 at K=11.
+- At horizons three and four, distinct signatures grow substantially (31 at K=12 for h=3; 57 at K=11 for h=4).
+- Therefore the raw bounded-search survivor bitmask is NOT presently evidence for a tiny finite automaton. It is too coarse an observable and its apparent state complexity grows with horizon.
+- This does not refute Route AB. The next quotient should use exact mixed-radix/carry state from the Yolcu-Aaronson-Heule representation rather than survivor bitmasks alone.
