@@ -91,7 +91,10 @@ def markdown_files() -> list[Path]:
         if relative.parts[:2] == ("knowledge", "_generated"):
             continue
         files.append(path.resolve())
-    return sorted(files)
+    # pathlib ordering follows the host path flavour: Windows folds case while
+    # POSIX does not. Sort by the exact repository-relative POSIX spelling so
+    # committed views are byte-identical across runners.
+    return sorted(files, key=lambda path: path.relative_to(ROOT).as_posix())
 
 
 def strip_fenced_code(text: str) -> str:
@@ -302,7 +305,10 @@ def generate_backlinks(data: RepositoryData) -> str:
         target_link = relative_link(GENERATED, note.path)
         lines.append(f"## [{note.title}]({target_link})")
         lines.append("")
-        sources = sorted(data.incoming[note.path])
+        sources = sorted(
+            data.incoming[note.path],
+            key=lambda path: path.relative_to(ROOT).as_posix(),
+        )
         if not sources:
             lines.append("_No incoming local Markdown links._")
         else:
@@ -369,6 +375,10 @@ def run_self_test() -> None:
         raise ValidationError("self-test: mathematical-call/file-link distinction failed")
     if not exact_case_exists(ROOT / "README.md"):
         raise ValidationError("self-test: canonical README path was not found")
+    mixed = [ROOT / "z.md", ROOT / "A.md", ROOT / "a.md"]
+    ordered = sorted(mixed, key=lambda path: path.relative_to(ROOT).as_posix())
+    if [path.name for path in ordered] != ["A.md", "a.md", "z.md"]:
+        raise ValidationError("self-test: platform-neutral path ordering failed")
 
 
 def main(argv: Iterable[str] | None = None) -> int:

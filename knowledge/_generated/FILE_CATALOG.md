@@ -49,14 +49,15 @@ Indexed 57 human-edited Markdown files.
 | [`proof-search/APPROACH_REGISTRY.md`](../../proof-search/APPROACH_REGISTRY.md) | Approach registry — Round 8 | — | 1 | 15 |
 | [`proof-search/CLAIM_REGISTRY.md`](../../proof-search/CLAIM_REGISTRY.md) | Atomic claim and evidence registry | — | 29 | 11 |
 | [`proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md`](../../proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md) | Codex Cycle 1 — Round-7 closure and hostile audit | — | 0 | 3 |
+| [`proof-search/FAILURE_LEDGER.md`](../../proof-search/FAILURE_LEDGER.md) | Failure ledger — do-not-repeat index | — | 5 | 10 |
+| [`proof-search/MISSING_LEMMA_LADDER.md`](../../proof-search/MISSING_LEMMA_LADDER.md) | Missing-lemma ladder: from current work to an actual Collatz resolution | — | 3 | 1 |
 | [`proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md`](../../proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md) | Audited bounded positive-cycle search | — | 0 | 3 |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Two-pump cyclic-elimination dependency audit | — | 4 | 4 |
+| [`proof-search/effective-flashes/README.md`](../../proof-search/effective-flashes/README.md) | Effective-flash review notes | `Collatz-Conjecture-Work:EFFECTIVE-FLASHES` / `map` | 7 | 2 |
 | [`proof-search/effective-flashes/issue-10-phase-summability.md`](../../proof-search/effective-flashes/issue-10-phase-summability.md) | Issue #10 audit packet — phase and reciprocal summability | `Collatz-Conjecture-Work:FLASH-PHASE-SUMMABILITY` / `archive` | 4 | 2 |
 | [`proof-search/effective-flashes/issue-11-finite-adelic-phase.md`](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md) | Issue #11 audit packet — finite adelic phase freedom | `Collatz-Conjecture-Work:FLASH-FINITE-ADELIC-PHASE` / `archive` | 4 | 1 |
 | [`proof-search/effective-flashes/issue-7-reciprocal-summability.md`](../../proof-search/effective-flashes/issue-7-reciprocal-summability.md) | Issue #7 audit packet — reciprocal summability | `Collatz-Conjecture-Work:FLASH-RECIPROCAL-SUMMABILITY` / `archive` | 3 | 2 |
 | [`proof-search/effective-flashes/issue-9-global-carry-rigidity.md`](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md) | Issue #9 audit packet — global block-schedule rigidity | `Collatz-Conjecture-Work:FLASH-GLOBAL-CARRY-RIGIDITY` / `archive` | 4 | 1 |
-| [`proof-search/effective-flashes/README.md`](../../proof-search/effective-flashes/README.md) | Effective-flash review notes | `Collatz-Conjecture-Work:EFFECTIVE-FLASHES` / `map` | 7 | 2 |
-| [`proof-search/FAILURE_LEDGER.md`](../../proof-search/FAILURE_LEDGER.md) | Failure ledger — do-not-repeat index | — | 5 | 10 |
 | [`proof-search/lemmas/L0_Global_Descent_Equivalence.md`](../../proof-search/lemmas/L0_Global_Descent_Equivalence.md) | L0 — Global descent is equivalent to Collatz | — | 0 | 2 |
 | [`proof-search/lemmas/L10_Near_Return_and_Dual_Residue_Certificate.md`](../../proof-search/lemmas/L10_Near_Return_and_Dual_Residue_Certificate.md) | L10 — Near-return theorem and dual 2-adic/3-adic residue certificate | — | 0 | 2 |
 | [`proof-search/lemmas/L11_Near_Return_Hard_Exit_Inheritance.md`](../../proof-search/lemmas/L11_Near_Return_Hard_Exit_Inheritance.md) | L11 — Hard-exit inheritance across a sufficiently small first near-return | — | 0 | 2 |
@@ -72,13 +73,12 @@ Indexed 57 human-edited Markdown files.
 | [`proof-search/lemmas/L7_Least_Counterexample_Coefficient_Barrier.md`](../../proof-search/lemmas/L7_Least_Counterexample_Coefficient_Barrier.md) | L7 — Least-counterexample coefficient barrier through 301,993 accelerated steps | — | 0 | 2 |
 | [`proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md`](../../proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md) | L8 — Farey-certified coefficient barrier: 114,208,327,604 accelerated steps | — | 0 | 2 |
 | [`proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md`](../../proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md) | L9 — Mechanical-envelope theorem for the first coefficient contraction | — | 0 | 2 |
-| [`proof-search/MISSING_LEMMA_LADDER.md`](../../proof-search/MISSING_LEMMA_LADDER.md) | Missing-lemma ladder: from current work to an actual Collatz resolution | — | 3 | 1 |
-| [`proof-search/routes/A_yah_2local_edge_potential_no_go.md`](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md) | Route A no-go — canonical adjacent-edge additive potentials | — | 4 | 6 |
-| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Route A obstruction — no first scalar-arctic dimension-one step | — | 6 | 8 |
-| [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Route A no-go — one exact two-state semantic labeling | — | 5 | 8 |
 | [`proof-search/routes/AB_hard_boundary_return_system.md`](../../proof-search/routes/AB_hard_boundary_return_system.md) | Route AB checkpoint — exact hard-boundary return system | — | 5 | 10 |
 | [`proof-search/routes/AB_mersenne_inverse_word_no_go.md`](../../proof-search/routes/AB_mersenne_inverse_word_no_go.md) | Route AB no-go — Mersenne cylinders defeat every unrefined whole-family inverse word | — | 0 | 3 |
 | [`proof-search/routes/AB_mixed_radix_coalescence_bridge.md`](../../proof-search/routes/AB_mixed_radix_coalescence_bridge.md) | Route AB — Mixed-radix rewrite states + strong-induction coalescence | — | 3 | 4 |
+| [`proof-search/routes/A_yah_2local_edge_potential_no_go.md`](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md) | Route A no-go — canonical adjacent-edge additive potentials | — | 4 | 6 |
+| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Route A obstruction — no first scalar-arctic dimension-one step | — | 6 | 8 |
+| [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Route A no-go — one exact two-state semantic labeling | — | 5 | 8 |
 | [`proof-search/routes/B_recursive_residue_graph.md`](../../proof-search/routes/B_recursive_residue_graph.md) | Route B — Recursive residue/coalescence certificate graph | — | 0 | 1 |
 
 ## `publication`

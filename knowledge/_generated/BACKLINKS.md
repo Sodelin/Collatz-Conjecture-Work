@@ -8,12 +8,12 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 ## [Collatz research atlas](../../ATLAS.md)
 
 - [CONTINUATION.md](../../CONTINUATION.md)
-- [knowledge/README.md](../README.md)
 - [LATEST.md](../../LATEST.md)
-- [methodology/SHARED_PROOF_ATTACK_STRUCTURE.md](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md)
-- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
 - [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 - [README.md](../../README.md)
+- [knowledge/README.md](../README.md)
+- [methodology/SHARED_PROOF_ATTACK_STRUCTURE.md](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md)
+- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
 
 ## [Codex handoff — Collatz project](../../CODEX_HANDOFF_2026-08-23.md)
 
@@ -22,19 +22,58 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 ## [Continuation checkpoint](../../CONTINUATION.md)
 
 - [ATLAS.md](../../ATLAS.md)
-- [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
-- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
 - [README.md](../../README.md)
+- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
+- [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
+
+## [Latest accepted research state](../../LATEST.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [README.md](../../README.md)
+
+## [Lean verification status and targets](../../LEAN_TARGETS.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [CONTINUATION.md](../../CONTINUATION.md)
+- [LATEST.md](../../LATEST.md)
+- [README.md](../../README.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
+- [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
+- [proof-search/effective-flashes/issue-10-phase-summability.md](../../proof-search/effective-flashes/issue-10-phase-summability.md)
+- [proof-search/effective-flashes/issue-7-reciprocal-summability.md](../../proof-search/effective-flashes/issue-7-reciprocal-summability.md)
+- [proof-search/effective-flashes/issue-9-global-carry-rigidity.md](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
+- [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
+- [proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
+- [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
+- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
+- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
+- [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
+
+## [Provenance and timestamp notes](../../PROVENANCE.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [README.md](../../README.md)
+
+## [Public status — 2026-08-24](../../PUBLIC_STATUS_2026-08-24.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [LATEST.md](../../LATEST.md)
+- [README.md](../../README.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
+
+## [Collatz Conjecture Work](../../README.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [LATEST.md](../../LATEST.md)
+
+## [Research Protocol V2: adversarial, artifact-first Collatz search](../../RESEARCH_PROTOCOL_V2.md)
+
+- [ATLAS.md](../../ATLAS.md)
 
 ## [Generated notebook supplements](../README.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [CONTINUATION.md](../../CONTINUATION.md)
-- [README.md](../../README.md)
-
-## [Latest accepted research state](../../LATEST.md)
-
-- [ATLAS.md](../../ATLAS.md)
 - [README.md](../../README.md)
 
 ## [Hardened Lean verification policy](../../lean/VERIFICATION_POLICY.md)
@@ -45,24 +84,6 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [README.md](../../README.md)
 - [verification/README.md](../../verification/README.md)
 
-## [Lean verification status and targets](../../LEAN_TARGETS.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [CONTINUATION.md](../../CONTINUATION.md)
-- [LATEST.md](../../LATEST.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
-- [proof-search/effective-flashes/issue-10-phase-summability.md](../../proof-search/effective-flashes/issue-10-phase-summability.md)
-- [proof-search/effective-flashes/issue-7-reciprocal-summability.md](../../proof-search/effective-flashes/issue-7-reciprocal-summability.md)
-- [proof-search/effective-flashes/issue-9-global-carry-rigidity.md](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
-- [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
-- [proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
-- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
-- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
-- [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
-- [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
-- [README.md](../../README.md)
-
 ## [Methodology note — what to borrow from Anthropic's August 2026 Riemann-zeta campaign](../../methodology/ANTHROPIC_RH_WORKFLOW_NOTES.md)
 
 - [ATLAS.md](../../ATLAS.md)
@@ -71,11 +92,11 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 
 - [ATLAS.md](../../ATLAS.md)
 - [CONTINUATION.md](../../CONTINUATION.md)
-- [knowledge/README.md](../README.md)
 - [LATEST.md](../../LATEST.md)
-- [methodology/SHARED_PROOF_ATTACK_STRUCTURE.md](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md)
 - [README.md](../../README.md)
 - [RESEARCH_PROTOCOL_V2.md](../../RESEARCH_PROTOCOL_V2.md)
+- [knowledge/README.md](../README.md)
+- [methodology/SHARED_PROOF_ATTACK_STRUCTURE.md](../../methodology/SHARED_PROOF_ATTACK_STRUCTURE.md)
 - [verification/README.md](../../verification/README.md)
 
 ## [Source integration — paradoxical prefixes + verified base range](../../methodology/ROZIER_TERRACOL_BARINA_SOURCE_INTEGRATION_2026-08-23.md)
@@ -101,9 +122,9 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 
 - [ATLAS.md](../../ATLAS.md)
 - [LATEST.md](../../LATEST.md)
+- [README.md](../../README.md)
 - [papers/round-6b/Round6B_Public_Summary.md](../../papers/round-6b/Round6B_Public_Summary.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [README.md](../../README.md)
 
 ## [Round 6B public summary](../../papers/round-6b/Round6B_Public_Summary.md)
 
@@ -123,32 +144,32 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [ATLAS.md](../../ATLAS.md)
 - [CONTINUATION.md](../../CONTINUATION.md)
 - [LATEST.md](../../LATEST.md)
+- [README.md](../../README.md)
+- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
 - [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
+- [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
 - [proof-search/effective-flashes/issue-10-phase-summability.md](../../proof-search/effective-flashes/issue-10-phase-summability.md)
 - [proof-search/effective-flashes/issue-11-finite-adelic-phase.md](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
 - [proof-search/effective-flashes/issue-7-reciprocal-summability.md](../../proof-search/effective-flashes/issue-7-reciprocal-summability.md)
 - [proof-search/effective-flashes/issue-9-global-carry-rigidity.md](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
-- [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
-- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
-- [proof-search/routes/A_yah_2local_edge_potential_no_go.md](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
-- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
 - [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
 - [proof-search/routes/AB_mixed_radix_coalescence_bridge.md](../../proof-search/routes/AB_mixed_radix_coalescence_bridge.md)
-- [README.md](../../README.md)
+- [proof-search/routes/A_yah_2local_edge_potential_no_go.md](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
+- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
 
 ## [Atomic claim and evidence registry](../../proof-search/CLAIM_REGISTRY.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [CONTINUATION.md](../../CONTINUATION.md)
 - [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [README.md](../../README.md)
 - [proof-search/APPROACH_REGISTRY.md](../../proof-search/APPROACH_REGISTRY.md)
+- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
 - [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
 - [proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
-- [proof-search/MISSING_LEMMA_LADDER.md](../../proof-search/MISSING_LEMMA_LADDER.md)
 - [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 - [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
-- [README.md](../../README.md)
 
 ## [Codex Cycle 1 — Round-7 closure and hostile audit](../../proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
 
@@ -156,23 +177,45 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [LATEST.md](../../LATEST.md)
 - [README.md](../../README.md)
 
+## [Failure ledger — do-not-repeat index](../../proof-search/FAILURE_LEDGER.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [CONTINUATION.md](../../CONTINUATION.md)
+- [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [README.md](../../README.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
+- [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
+- [proof-search/effective-flashes/issue-11-finite-adelic-phase.md](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
+- [proof-search/effective-flashes/issue-9-global-carry-rigidity.md](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
+- [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
+
+## [Missing-lemma ladder: from current work to an actual Collatz resolution](../../proof-search/MISSING_LEMMA_LADDER.md)
+
+- [ATLAS.md](../../ATLAS.md)
+
 ## [Audited bounded positive-cycle search](../../proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md)
 
 - [ATLAS.md](../../ATLAS.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 
 ## [Two-pump cyclic-elimination dependency audit](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
 
 - [ATLAS.md](../../ATLAS.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+
+## [Effective-flash review notes](../../proof-search/effective-flashes/README.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [CONTINUATION.md](../../CONTINUATION.md)
 
 ## [Issue #10 audit packet — phase and reciprocal summability](../../proof-search/effective-flashes/issue-10-phase-summability.md)
 
-- [proof-search/effective-flashes/issue-11-finite-adelic-phase.md](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
 - [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
+- [proof-search/effective-flashes/issue-11-finite-adelic-phase.md](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
 
 ## [Issue #11 audit packet — finite adelic phase freedom](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
 
@@ -180,30 +223,12 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 
 ## [Issue #7 audit packet — reciprocal summability](../../proof-search/effective-flashes/issue-7-reciprocal-summability.md)
 
-- [proof-search/effective-flashes/issue-10-phase-summability.md](../../proof-search/effective-flashes/issue-10-phase-summability.md)
 - [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
+- [proof-search/effective-flashes/issue-10-phase-summability.md](../../proof-search/effective-flashes/issue-10-phase-summability.md)
 
 ## [Issue #9 audit packet — global block-schedule rigidity](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
 
 - [proof-search/effective-flashes/README.md](../../proof-search/effective-flashes/README.md)
-
-## [Effective-flash review notes](../../proof-search/effective-flashes/README.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [CONTINUATION.md](../../CONTINUATION.md)
-
-## [Failure ledger — do-not-repeat index](../../proof-search/FAILURE_LEDGER.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [CONTINUATION.md](../../CONTINUATION.md)
-- [LATEST.md](../../LATEST.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
-- [proof-search/effective-flashes/issue-11-finite-adelic-phase.md](../../proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
-- [proof-search/effective-flashes/issue-9-global-carry-rigidity.md](../../proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
-- [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
-- [README.md](../../README.md)
 
 ## [L0 — Global descent is equivalent to Collatz](../../proof-search/lemmas/L0_Global_Descent_Equivalence.md)
 
@@ -228,20 +253,20 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 ## [L13 — Refined Mersenne child macros and exact successor normalization](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
 
 - [ATLAS.md](../../ATLAS.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
 - [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
 - [proof-search/routes/AB_mixed_radix_coalescence_bridge.md](../../proof-search/routes/AB_mixed_radix_coalescence_bridge.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 
 ## [L14 — A `3n-1` trajectory normal form for the odd Collatz map](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
 - [proof-search/routes/AB_hard_boundary_return_system.md](../../proof-search/routes/AB_hard_boundary_return_system.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
 
 ## [L1 — Exact affine prefix formula and non-descent upper bound](../../proof-search/lemmas/L1_Exact_Prefix_Descent_Bound.md)
 
@@ -292,53 +317,18 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [ATLAS.md](../../ATLAS.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 
-## [Missing-lemma ladder: from current work to an actual Collatz resolution](../../proof-search/MISSING_LEMMA_LADDER.md)
-
-- [ATLAS.md](../../ATLAS.md)
-
-## [Route A no-go — canonical adjacent-edge additive potentials](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
-- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
-
-## [Route A obstruction — no first scalar-arctic dimension-one step](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [LATEST.md](../../LATEST.md)
-- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
-- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
-- [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
-
-## [Route A no-go — one exact two-state semantic labeling](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [LATEST.md](../../LATEST.md)
-- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
-- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
-- [proof-search/routes/A_yah_2local_edge_potential_no_go.md](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
-- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
-
 ## [Route AB checkpoint — exact hard-boundary return system](../../proof-search/routes/AB_hard_boundary_return_system.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [CONTINUATION.md](../../CONTINUATION.md)
 - [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [README.md](../../README.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
 - [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
 - [proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md](../../proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md)
 - [proof-search/routes/AB_mixed_radix_coalescence_bridge.md](../../proof-search/routes/AB_mixed_radix_coalescence_bridge.md)
-- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
-- [README.md](../../README.md)
 
 ## [Route AB no-go — Mersenne cylinders defeat every unrefined whole-family inverse word](../../proof-search/routes/AB_mersenne_inverse_word_no_go.md)
 
@@ -353,35 +343,45 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
 
-## [Route B — Recursive residue/coalescence certificate graph](../../proof-search/routes/B_recursive_residue_graph.md)
+## [Route A no-go — canonical adjacent-edge additive potentials](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
 
 - [ATLAS.md](../../ATLAS.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
+- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
+- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
 
-## [Provenance and timestamp notes](../../PROVENANCE.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [README.md](../../README.md)
-
-## [Public status — 2026-08-24](../../PUBLIC_STATUS_2026-08-24.md)
+## [Route A obstruction — no first scalar-arctic dimension-one step](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
-- [README.md](../../README.md)
+- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
+- [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
+- [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
+
+## [Route A no-go — one exact two-state semantic labeling](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
+
+- [ATLAS.md](../../ATLAS.md)
+- [LATEST.md](../../LATEST.md)
+- [PUBLIC_STATUS_2026-08-24.md](../../PUBLIC_STATUS_2026-08-24.md)
+- [methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md)
+- [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
+- [proof-search/FAILURE_LEDGER.md](../../proof-search/FAILURE_LEDGER.md)
+- [proof-search/routes/A_yah_2local_edge_potential_no_go.md](../../proof-search/routes/A_yah_2local_edge_potential_no_go.md)
+- [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
+
+## [Route B — Recursive residue/coalescence certificate graph](../../proof-search/routes/B_recursive_residue_graph.md)
+
+- [ATLAS.md](../../ATLAS.md)
 
 ## [YAH scalar-arctic method-obstruction candidate](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
 
 - [ATLAS.md](../../ATLAS.md)
 - [README.md](../../README.md)
-
-## [Collatz Conjecture Work](../../README.md)
-
-- [ATLAS.md](../../ATLAS.md)
-- [LATEST.md](../../LATEST.md)
-
-## [Research Protocol V2: adversarial, artifact-first Collatz search](../../RESEARCH_PROTOCOL_V2.md)
-
-- [ATLAS.md](../../ATLAS.md)
 
 ## [Verification and reproduction manifest](../../verification/README.md)
 
@@ -389,6 +389,7 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [CONTINUATION.md](../../CONTINUATION.md)
 - [LATEST.md](../../LATEST.md)
 - [LEAN_TARGETS.md](../../LEAN_TARGETS.md)
+- [README.md](../../README.md)
 - [proof-search/CLAIM_REGISTRY.md](../../proof-search/CLAIM_REGISTRY.md)
 - [proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md](../../proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
 - [proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md](../../proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md)
@@ -397,4 +398,3 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md](../../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md)
 - [proof-search/routes/A_yah_two_state_semantic_label_no_go.md](../../proof-search/routes/A_yah_two_state_semantic_label_no_go.md)
 - [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
-- [README.md](../../README.md)
