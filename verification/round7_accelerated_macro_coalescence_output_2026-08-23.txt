@@ -3,6 +3,7 @@ Date: 2026-08-23
 Map: T(n)=n/2 if even, (3n+1)/2 if odd
 Inverse macro depth: <=10 accelerated steps
 IMPORTANT: exact bounded certificate search only; not a Collatz proof/disproof
+Runtime guard: Python assertions are required; optimized `python -O` execution is rejected.
 
 Hostile-audit boundary correction
 ---------------------------------

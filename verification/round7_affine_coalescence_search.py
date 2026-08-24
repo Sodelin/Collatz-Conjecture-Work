@@ -284,5 +284,9 @@ def sweep(max_K: int = 12, max_back_depth: int = 16) -> None:
 
 
 if __name__ == "__main__":
+    if not __debug__:
+        raise RuntimeError(
+            "This certificate verifier requires assertions; do not run Python with -O."
+        )
     exact_demo_64x_plus_15()
     sweep()

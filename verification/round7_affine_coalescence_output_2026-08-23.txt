@@ -4,6 +4,7 @@ Script: verification/round7_affine_coalescence_search.py
 Search settings: K=3..12, exact uniform affine forward path, reverse depth <=16
 
 IMPORTANT: This is a bounded certificate search, not a proof or disproof of Collatz.
+Runtime guard: Python assertions are required; optimized `python -O` execution is rejected.
 
 HOSTILE-AUDIT CORRECTION
 ------------------------

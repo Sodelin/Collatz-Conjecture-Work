@@ -6,6 +6,8 @@ Completeness theorem: corrected proof-search/lemmas/L5_Inverse_Word_Search_Compl
 
 IMPORTANT
 ---------
+Python assertions are required; optimized `python -O` execution is rejected.
+
 There is no arbitrary inverse-depth parameter in this classifier. For a forward state at time t with s odd branches:
 
 - a strict-slope winner has e<t-s even inverses and total length at most t-1, as proved in L5;

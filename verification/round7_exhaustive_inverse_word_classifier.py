@@ -260,5 +260,9 @@ def sweep(max_K: int = 15) -> None:
 
 
 if __name__ == "__main__":
+    if not __debug__:
+        raise RuntimeError(
+            "This certificate verifier requires assertions; do not run Python with -O."
+        )
     exact_regression()
     sweep()
