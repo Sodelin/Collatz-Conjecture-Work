@@ -11,6 +11,9 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 Accepted mathematical baseline: full Git object
 `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9` (2026-08-24).
 
+For a self-contained mathematician-facing review snapshot, see
+[MATHEMATICIAN_HANDOFF_2026-08-25.md](MATHEMATICIAN_HANDOFF_2026-08-25.md).
+
 ## The two-minute map
 
 The project contains three logically different kinds of statement. Keeping
