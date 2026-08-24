@@ -1,6 +1,6 @@
 # Approach registry — Round 8
 
-Last structural update: 2026-08-24, bounded closure sprint.
+Last structural update: 2026-08-24, scalar-arctic publication audit.
 
 This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
@@ -10,7 +10,7 @@ even when none of its current claims is a universal certificate.
 
 | ID | Family | Exact target | Current status | Main obstacle | Reopen / next action |
 |---|---|---|---|---|---|
-| A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | Unlabeled adjacent-edge weights and the audited two-state semantic labeling both fail for additive symbol/edge orders, including every finite lexicographic version | Reopen only with a different semantic algebra, longer memory, matrix/nonadditive order, and an explicit candidate certificate |
+| A | Mixed-radix string rewriting | Well-founded interpretation proving termination of the exact Collatz-equivalent rewrite system | `ACTIVE` | In the fixed two-state labeling, additive symbol/edge orders have no first step, and full/extended dimension-one arctic-natural removal has no first step | Reopen with dimension at least two, a natural/mixed method, different labels, a transformed/nonadditive order, or a closed local relation, always with an explicit candidate certificate |
 | B | Recursive residue certificate graph | Finite affine/congruence graph + rank implying global descent | `ACTIVE` | Naive finite-depth covers cannot handle unbounded stopping times | Search finite graph with well-founded back-edge rank, not a tree |
 | AB | Mixed-radix macro coalescence | Finite mixed-radix state grammar whose exact macros coalesce with strictly smaller starts and cover all canonical inputs | `BLOCKED_NO_MECHANISM` | The hard successor is normalized exactly, but its self-replay rank can be recharged arbitrarily across labels; simple affine size/debt composites are refuted | Reopen with a richer cross-label well-founded rank or a uniform smaller-target macro that survives the exact successor guards |
 | C | Augmented-state ranking | Computable well-founded potential on integer + finite symbolic state | `ACTIVE` | State must be rich enough to evade Round-6 periodic-shadow debt barriers without encoding the answer | Derive state variables from A/B/AB; search lexicographic/vector ranks |
@@ -44,7 +44,16 @@ Positive integer cancellations among legal labeled rewrite instances exclude
 additive weights on labeled symbols and labeled adjacent edges, even with a
 fixed canonical terminal state and even in any finite lexicographic ordered
 group.  This is stronger than a failed numerical search but narrow to that
-one algebra and additive locality class.
+one algebra and additive locality class.  The 50-row adjacent-edge certificate
+has positive support on every fixed-terminal realizable labeled rule, so no
+such potential can make its first uniform removal step.
+
+`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md` adds an
+all-positive cancellation on all 22 global labeled rules.  It excludes every
+first **full/extended** dimension-one arctic-natural removal over the unbounded
+coefficient domain.  It deliberately does not claim the weakly-monotone top
+cases, higher dimensions, other carriers or labels, transformations, or local
+termination.
 
 ### Why high priority
 The endpoint equivalence and certificate semantics already exist in the literature. This is unusually close to a SAT/SMT-searchable finite object.
