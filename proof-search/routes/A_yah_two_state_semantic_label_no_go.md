@@ -86,7 +86,9 @@ The complete integer row table is embedded in the verifier.  It reconstructs
 each row from the original rule, suffix state, and immediate context, rejects
 any illegal boundary or label, and then checks the cancellation using only
 integer `Counter` arithmetic.  No boundedness or graph-potential inequality
-is part of either cancellation.
+is part of either cancellation.  The 50 rows have positive support on exactly
+all 20 labeled rule instances realizable in a fixed-terminal canonical word;
+the two absent instances are the impossible dynamic tail-`1` cases.
 
 ## Consequence for scalar and finite lex-additive orders
 
@@ -99,6 +101,16 @@ cancellations therefore exclude respectively:
 1. scalar potentials additive over labeled symbols; and
 2. scalar potentials additive over adjacent labeled edges.
 
+There is a stronger first-removal consequence for the adjacent-edge class.
+Assume all 441 legal fixed-terminal contexts are weak.  If any one of the 20
+realizable labeled rules were uniformly strict in all its canonical contexts,
+then at least one of its positively supported certificate rows would be
+strict.  The positive weighted sum could not be zero.  Hence an
+adjacent-edge-additive proof cannot make even its first uniform rule-removal
+step on this fixed-terminal canonical relation.  This is a contextual-potential
+obstruction; an arbitrary adjacent-window potential is not automatically a
+compositional interpretation satisfying YAH Theorem 2.15.
+
 The same identities exclude every finite lexicographic tuple of potentials
 of the corresponding additive kind.  In the first component, every supported
 row difference is nonnegative and their positive combination is zero, so
@@ -106,6 +118,14 @@ every supported row has first component zero.  Repeating this argument
 component by component forces each supported dynamic difference to be the
 zero tuple, contradicting strict lexicographic orientation.  This argument
 does not require a separate boundedness assumption.
+
+## Full scalar-arctic strengthening
+
+An additional all-positive cancellation supports every one of the 22 global
+labeled instances.  In the dimension-one extended arctic-natural class, it
+proves that no labeled rule can be removed at the first full relative step.
+See
+[`A_yah_two_state_scalar_arctic_full_no_start.md`](A_yah_two_state_scalar_arctic_full_no_start.md).
 
 ## Reproduction
 
@@ -121,6 +141,7 @@ Expected output ends with:
 symbol certificate rows = 8; dynamic mass = 5
 symbol weighted delta = {}
 edge certificate rows = 50; dynamic mass = 144057
+edge supported labeled instances = 20
 edge weighted delta = {}
 PASS
 ```
@@ -129,7 +150,9 @@ PASS
 
 This is a no-go theorem for this **specific two-state algebra and suffix
 labeling**, with potentials additive either over labeled symbols or over
-adjacent labeled edges.  It does not exclude:
+adjacent labeled edges.  The first-removal corollary forces at least one
+supported context per labeled rule to have zero delta; it does not assert that
+all 441 contextual deltas vanish.  It does not exclude:
 
 - a different finite algebra or label set;
 - labels carrying more boundary, phase, or history information;
@@ -141,10 +164,18 @@ adjacent labeled edges.  It does not exclude:
 
 The YAH system and its Collatz simulation theorem are from Yolcu, Aaronson,
 and Heule, *An Automated Approach to the Collatz Conjecture*, Journal of
-Automated Reasoning 67 (2023), Theorem 3:
+Automated Reasoning 67 (2023), Theorem 3.17:
 <https://doi.org/10.1007/s10817-022-09658-8>.  The exact rules are in the
 authors' source repository:
 <https://github.com/emreyolcu/rewriting-collatz/blob/main/rules/collatz-T.srs>.
 
 The two cancellation certificates are project-specific finite artifacts.  No
 claim of literature novelty is made.
+
+## Connections
+
+- **Depends on:** [YAH source semantics](../../methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md).
+- **Parallel to:** [unlabeled adjacent-edge cancellation](A_yah_2local_edge_potential_no_go.md).
+- **Complemented in a separate scalar-arctic slice by:** [dimension-one no-start theorem](A_yah_two_state_scalar_arctic_full_no_start.md).
+- **Verified by:** [reproduction manifest](../../verification/README.md).
+- **Formalization pending:** [Lean targets](../../LEAN_TARGETS.md).

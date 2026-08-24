@@ -285,12 +285,13 @@ def validate_symbol_certificate() -> int:
     return dynamic_mass
 
 
-def validate_edge_certificate() -> int:
+def validate_edge_certificate() -> tuple[int, int]:
     assert len(EDGE_CERTIFICATE) == 50
     assert len({row[1:] for row in EDGE_CERTIFICATE}) == 50
     total: Counter[Edge] = Counter()
     dynamic_rows = 0
     dynamic_mass = 0
+    supported_instances: Counter[tuple[str, int]] = Counter()
 
     for multiplier, name, tail, left, right in EDGE_CERTIFICATE:
         rule = RULE_BY_NAME[name]
@@ -302,6 +303,7 @@ def validate_edge_certificate() -> int:
         assert (left, right) in legal, (name, tail, left, right)
         lhs, rhs = legal[(left, right)]
         add_scaled(total, edge_delta(lhs, rhs), multiplier)
+        supported_instances[(name, tail)] += multiplier
         if rule.dynamic:
             dynamic_rows += 1
             dynamic_mass += multiplier
@@ -309,7 +311,16 @@ def validate_edge_certificate() -> int:
     assert dynamic_rows == 3
     assert dynamic_mass == 144057
     assert cleaned(total) == Counter(), cleaned(total)
-    return dynamic_mass
+    realizable_instances = {
+        (rule.name, tail)
+        for rule in RULES
+        for tail in VALUES
+        if tuple(legal_contexts(rule, tail))
+    }
+    assert set(supported_instances) == realizable_instances
+    assert len(supported_instances) == 20
+    assert all(mass > 0 for mass in supported_instances.values())
+    return dynamic_mass, len(supported_instances)
 
 
 def main() -> None:
@@ -324,13 +335,14 @@ def main() -> None:
     assert context_count == 441
 
     symbol_mass = validate_symbol_certificate()
-    edge_mass = validate_edge_certificate()
+    edge_mass, edge_support = validate_edge_certificate()
 
     print("model equations = 22")
     print("fixed-terminal legal contexts =", context_count)
     print("symbol certificate rows = 8; dynamic mass =", symbol_mass)
     print("symbol weighted delta = {}")
     print("edge certificate rows = 50; dynamic mass =", edge_mass)
+    print("edge supported labeled instances =", edge_support)
     print("edge weighted delta = {}")
     print("PASS")
 

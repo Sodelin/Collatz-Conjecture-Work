@@ -6,9 +6,11 @@ bounded computation or narrow formal theorem into a Collatz proof.
 
 ## Tested environment
 
-Fresh artifact audit on 2026-08-24 at
-`6c8f77ef2b0b360f8f353f4508dcfec58e980331`, based on public
-`origin/main` `67068bf0493c25514ebdd1b635ecd6a0e0af643f`:
+Fresh combined artifact audit on 2026-08-24 after normally merging current
+main `2e7eae2bb998b14e5443e6c440154130a0049467` into the PR branch. The replay
+combines endpoint/global-coupling baseline
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331` with scalar-arctic baseline
+`b75ffec58ae20ac26271ff7d59a71d3591467994`:
 
 ```text
 Python 3.14.5
@@ -21,7 +23,9 @@ The Python checkers use the standard library. The Lean toolchain is pinned by
 
 The L14 regression first entered the public history at artifact commit
 `cc33bdb470da849a5eb9d63921dcd37a8f37e94d`. L15 and the three route checkers
-below were added and freshly replayed at `6c8f77e...`.
+below were added at `6c8f77e...`. Earlier artifact-level audits remain
+identifiable by their individual commit hashes; the table below was replayed
+together after the merge.
 
 ## Freshly replayed promoted checks
 
@@ -35,18 +39,33 @@ Run from the repository root.
 | `F-DIRECT-H-RETURN-ARITHMETIC-001` regression | `python -B verification\direct_H_return_renewal_regression.py` | 50,000 typed parameters, 3,570 completed switching returns, 50,000 renewal states, two nontrivial divisor witnesses, then `PASS` | Finite replay of the exact typed-edge domains, completed-return iff, renewal identities, and divisor-filter witnesses. It neither constructs nor excludes an infinite positive direct ray. |
 | `F-PRIME-RETURN-001` regression | `python -B verification\prime_renewal_regression.py` | 10,000 correction prefixes, 10,000 hard parameters, 44 primes through 199, largest checked gap 178, one five-prime script, 48 rough-growth pairs, then `PASS` | Finite replay of the correction, CRT, return, and rough-growth constructions. It does not turn finite scripts into one infinite seed. |
 | `A-YAH-2LOCAL-001` | `python -B verification\yah_2local_edge_no_go.py` | `weighted strict lower bound = 1`, `W_(f,f) <= -1`, then `PASS` | Replays the 13-row cancellation for the stated unlabeled adjacent-edge additive class. |
-| `A-YAH-2STATE-001` | `python -B verification\yah_two_state_semantic_label_no_go.py` | `model equations = 22`, `fixed-terminal legal contexts = 441`, `symbol certificate rows = 8`, `edge certificate rows = 50`, then `PASS` | Reconstructs the fixed two-state labeled rule table and the two positive-integer cancellations. |
+| `A-YAH-2STATE-001` | `python -B verification\yah_two_state_semantic_label_no_go.py` | `model equations = 22`, `fixed-terminal legal contexts = 441`, `edge certificate rows = 50`, `edge supported labeled instances = 20`, then `PASS` | Reconstructs the fixed two-state labeled rule table, the two positive-integer cancellations, and exact fixed-terminal support for the no-first-removal corollary. |
+| `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` full | `python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py` | Original 11-row and labeled 22-row cancellations, both mass 49 and zero delta; both `PASS` | Proves the coefficient-independent full/extended dimension-one arctic-natural no-first-removal theorem for the original and fixed labeled systems. |
+| `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
 | Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
 
-All ten commands passed in the fresh audit. The two YAH checkers currently
+All twelve commands passed in the fresh combined audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
 transcript. The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
 
 If `lake` is not on `PATH`, invoke the executable installed by `elan`; do not
 hard-code another contributor's home directory into scripts or documentation.
+
+## Repository knowledge-graph QA
+
+The documentation graph has a separate standard-library check:
+
+```powershell
+python -B verification\check_note_graph.py
+```
+
+It verifies that local Markdown targets exist and that every Markdown note is
+reachable from `README.md`. `NOTE_GRAPH = PASS` certifies navigation only; it
+does not certify mathematics, citations, anchors, or novelty. The governing
+format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.md).
 
 ## Narrow Lean boundary
 

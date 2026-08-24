@@ -1,7 +1,11 @@
 # Latest accepted research state
 
-Accepted mathematical baseline:
-`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
+Accepted mathematical component baselines:
+
+- `6c8f77ef2b0b360f8f353f4508dcfec58e980331` — endpoint, inverse-word,
+  renewal, and global-coupling artifacts;
+- `b75ffec58ae20ac26271ff7d59a71d3591467994` — scalar-arctic full/top
+  certificate artifacts.
 
 ## Verdict
 
@@ -26,7 +30,15 @@ this repository.
 - [`A-YAH-2STATE-001`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md):
   exact 8-row and 50-row cancellations kill additive labeled-symbol and
   labeled-edge orders, including finite lexicographic tuples, for one fixed
-  two-state semantic algebra.
+  two-state semantic algebra; the edge certificate now proves that no such
+  fixed-terminal potential can make its first uniform rule-removal step.
+- [`A-YAH-AN1-001`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md):
+  exact 49-mass, Farkas, and RUP certificates prove that the original
+  eleven-rule YAH system has no first standard dimension-one arctic-natural
+  step: neither full/extended removal nor either Lemma-3.18 top entry point.
+  The fixed 22-rule labeling is certified as well. Higher-dimensional,
+  different-carrier/label, transformed, non-coefficientwise, and local methods
+  remain open.
 - [`AB-HARD-RETURN-001`](proof-search/routes/AB_hard_boundary_return_system.md):
   an exact decreasing boundary normalizer and closed hard return map. Universal
   termination of that return map is Collatz-equivalent; the smallest reported
@@ -43,7 +55,7 @@ this repository.
   orbit.
 
 The endpoint gate is the strongest exact new auxiliary theorem in this
-snapshot. The YAH item is a solved **route-class obstruction**. The
+snapshot. The YAH items are solved **route-class obstructions**. The
 normalizers are **Collatz-equivalent reductions**, and the finite route tools
 are **stopped-useful**. None is the still-open universal termination proof.
 
@@ -55,11 +67,12 @@ counterexample or disproof.
 ## Current reading order
 
 1. [README](README.md) — two-minute enthusiast/researcher map.
-2. [Public status](PUBLIC_STATUS_2026-08-24.md) — plain-language verdict and latest gap.
-3. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md) — confidence, verification, importance, novelty, readiness, and evidence.
-4. [Approach registry](proof-search/APPROACH_REGISTRY.md) — live route statuses.
-5. [Failure ledger](proof-search/FAILURE_LEDGER.md) — superseded and killed mechanisms.
-6. [Verification manifest](verification/README.md) — portable commands and exact scopes.
+2. [Research atlas](ATLAS.md) — visual dependency map, typed route links, and the complete note index.
+3. [Public status](PUBLIC_STATUS_2026-08-24.md) — plain-language verdict and latest gap.
+4. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md) — confidence, verification, importance, novelty, readiness, and evidence.
+5. [Approach registry](proof-search/APPROACH_REGISTRY.md) — live route statuses.
+6. [Failure ledger](proof-search/FAILURE_LEDGER.md) — superseded and killed mechanisms.
+7. [Verification manifest](verification/README.md) — portable commands and exact scopes.
 
 The older [Cycle-1 closure audit](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
 and [Round 6A review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
@@ -69,5 +82,10 @@ remain preserved as historical branch checkpoints.
 
 Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
 proof-assistant formalization of L14, L15, the bounded-alphabet endpoint gate,
-the route filters, the prose chain, or Collatz does not exist. Novelty and
-priority for project-specific claims are not certified.
+the route filters, the YAH scalar-arctic certificates, the prose chain, or
+Collatz does not exist. Novelty and priority for project-specific claims are
+not certified.
+
+The [note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) explains how to
+use the same files as a GitHub knowledge base or optional Obsidian vault without
+creating a second source of mathematical status.

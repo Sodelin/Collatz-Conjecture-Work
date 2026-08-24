@@ -17,6 +17,10 @@ scope exclusions, and immutable provenance, use the
 particular, distinguish a solved route-class obstruction from a
 Collatz-equivalent reformulation and from the still-open universal claim.
 
+For a visual path through those distinctions and every retained note, use the
+[research atlas](ATLAS.md). It is a navigation layer; the registries remain
+canonical for status.
+
 ## Plain-language summary
 
 The strongest exact new auxiliary theorem concerns one infinite sequence of
@@ -44,6 +48,11 @@ Several tempting global promotions were then ruled out:
 - simple additive termination potentials fail for the exact Collatz-equivalent
   rewrite system, and the failure persists under the audited two-state
   semantic labeling for both symbol and adjacent-edge weights;
+- exact all-positive, Farkas, and RUP certificates rule out every standard
+  first dimension-one arctic-natural step on the original eleven-rule YAH
+  system: full/extended removal and both Lemma-3.18 top entry points. This does
+  not cover higher-dimensional, different-carrier/label, transformed,
+  non-coefficientwise, or local methods;
 - cyclically rotating a two-pump parity-word equation gives an algebraically
   dependent condition, not a new nonzero resultant;
 - natural affine combinations of hard-state label depth, parameter bit length,
@@ -79,6 +88,9 @@ verification levels. The atomic claim registry is canonical for promotion.
 | [`verification/yah_2local_edge_no_go.py`](verification/yah_2local_edge_no_go.py) | Reproducible checker | Replays the exact cancellation certificate and prints `PASS`. |
 | [`proof-search/routes/A_yah_two_state_semantic_label_no_go.md`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md) | Exact labeled cancellation theorem | The fixed two-state suffix algebra cannot support additive labeled-symbol or adjacent-edge orders, including finite lexicographic tuples. It does not exclude other labels or nonadditive orders. |
 | [`verification/yah_two_state_semantic_label_no_go.py`](verification/yah_two_state_semantic_label_no_go.py) | Standard-library exact checker | Reconstructs the labeled rules and replays the fixed-terminal positive-integer cancellations exactly. |
+| [`proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md) | Exact coefficient-independent theorem | Excludes every standard first dimension-one arctic-natural step on the original YAH system and the corresponding fixed labeling. It does not cover richer interpretation classes. |
+| [`verification/yah_two_state_scalar_arctic_full_no_start.py`](verification/yah_two_state_scalar_arctic_full_no_start.py) | Standard-library exact checker | Verifies the original 11-rule and labeled 22-rule full/extended cancellations, both of mass 49. |
+| [`verification/yah_scalar_arctic_top/verify_top_certificates.py`](verification/yah_scalar_arctic_top/verify_top_certificates.py) | Dependency-free exact checker plus payload | Checks 491 integer Farkas lemmas and 426 RUP clauses for all six boundary and four reversed-dynamic labeled top targets; equal-state lifting gives the original-system corollary. |
 | [`proof-search/routes/AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md) | Exact reduction theorem | Gives a total decreasing boundary normalizer and the Collatz-equivalent hard return map; `31 -> 182 -> 91` is the smallest replay-rank recharge witness. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Lean-checked, narrow | The two rotated determinant pairs satisfy exact dependencies, so the hoped cyclic constant resultant vanishes identically. |
 | [`proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md`](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md) | Audited derivation | Gives the coefficient provenance, factorization, scope, and prior-art classification for the two-pump route obstruction. |
@@ -141,6 +153,8 @@ python -B verification\direct_H_return_renewal_regression.py
 python -B verification\prime_renewal_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
@@ -161,6 +175,10 @@ Expected key outputs are:
   `199`, one five-prime script, 48 rough-growth pairs, and `PASS`;
 - rewrite cancellation checker: `PASS`;
 - two-state semantic-label checker: `PASS`;
+- scalar-arctic full checker: original 11 rows and labeled 22 rows, each with
+  total multiplier 49, zero weighted count delta, and `PASS`;
+- scalar-arctic top checker: 10 cases, 491 integer Farkas lemmas, 426 RUP
+  clauses, and `PASS`;
 - cycle DP: 91 eligible pairs, peak 47,517 merged states, 9 trivial
   `1-2` encodings, and 0 nontrivial candidates;
 - two-pump Lean module: five theorem dependency reports containing only
@@ -186,13 +204,20 @@ priority claim.
 
 ## Provenance checkpoint
 
-The complete accepted mathematical snapshot described by this file is
-`6c8f77ef2b0b360f8f353f4508dcfec58e980331`. Its parent
+The complete combined snapshot described by this file has two accepted
+mathematical component baselines. Endpoint, inverse-word, renewal, and
+global-coupling artifacts are pinned at
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331`; its parent
 `77fe81f17b71335f3e68349d9d8ae13d14dae0f1` is the reviewed documentation
-snapshot on the replacement branch; public `origin/main`
-`67068bf0493c25514ebdd1b635ecd6a0e0af643f` is the branch base, and
-`cc33bdb470da849a5eb9d63921dcd37a8f37e94d` first introduced L14. Exact scope
-notes are recorded in the linked files and Git history.
+snapshot and `67068bf0493c25514ebdd1b635ecd6a0e0af643f` is that branch's base.
+Scalar-arctic artifacts are pinned at
+`b75ffec58ae20ac26271ff7d59a71d3591467994`; its parent chain includes
+`f8558a566b682e8dbc4465206f9c26ac9b17760c`, the preceding full scalar
+certificate. Both chains include
+`cc33bdb470da849a5eb9d63921dcd37a8f37e94d`, which first introduced L14.
+Current-main commit `2e7eae2bb998b14e5443e6c440154130a0049467`
+adds the portable atlas and graph QA without changing those mathematical
+scopes. Exact scope notes are recorded in the linked files and Git history.
 
 The nonexistent string `409cb63b69b5fb6af676166573e752f1f4a5ff38`
 must never be used as provenance; the valid similarly prefixed object is

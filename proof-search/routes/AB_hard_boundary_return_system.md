@@ -189,3 +189,11 @@ is simply iterating a Collatz-equivalent return map.
 No novelty claim is made.  The arithmetic uses the L13 specialization of
 standard parity-affine identities; the contribution here is the exact route
 normalization and obstruction bookkeeping.
+
+## Connections
+
+- **Depends on:** [L13 refined Mersenne macros](../lemmas/L13_Refined_Mersenne_Child_Macros.md).
+- **Parallel to:** [L14 trajectory normal form](../lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md).
+- **Blocked by:** the rank frontier recorded in the [failure ledger](../FAILURE_LEDGER.md).
+- **Updates:** [Route AB](../APPROACH_REGISTRY.md).
+- **Formalization pending:** [Lean targets](../../LEAN_TARGETS.md).

@@ -1,7 +1,10 @@
 # Atomic claim and evidence registry
 
-**Canonical baseline:**
-`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
+**Canonical component baselines:**
+
+- `6c8f77ef2b0b360f8f353f4508dcfec58e980331` — endpoint/global-coupling
+  artifacts;
+- `b75ffec58ae20ac26271ff7d59a71d3591467994` — scalar-arctic artifacts.
 
 **Global verdict:** Collatz is unresolved. No row below is a universal proof,
 a positive nontrivial cycle, or a rigorously divergent positive orbit.
@@ -76,6 +79,8 @@ Collatz is true. A formally checked prior-art identity can have `C3/V3` but
 | ID | Exact scoped claim | Grades | Why review it now | Primary missing evidence |
 |---|---|---|---|---|
 | `F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` | For every bounded infinite accelerated valuation code, positive-odd realizability is equivalent to eventual zero carry, normalized endpoint-residue vanishing, and strict subcubic root growth; failure has the exact full-rate alternative. | `C2 V2 I3 N2 R2` | Strongest exact new auxiliary theorem in the current snapshot: it isolates the fixed-seed infinite-tail gate without assuming Collatz. | Independent specialist proof reconstruction, Lean formalization, and a broader prior-art search; it still does not decide either branch for the hard `{1,3}` codes. |
+| `A-YAH-AN1-001` | The original eleven-rule YAH system admits no first standard dimension-one arctic-natural step, either full/extended or through the boundary/dynamic relative-top opportunities of YAH Lemma 3.18. | `C3 V2 I3 N2 R2` | Directly closes the scalar first-step slice of a method class central to the published YAH program. | External term-rewriting reconstruction; proof-assistant formalization; broader literature audit. |
+| `A-YAH-2STATE-AN1-001` | The global 22-rule two-state labeling admits no first full/extended scalar arctic-natural step and none of the ten corresponding boundary/reversed-dynamic top targets is feasible. | `C3 V2 I3 N2 R2` | Exact 49-mass, Farkas, and RUP certificates over the unbounded coefficient domain. | External term-rewriting reconstruction; proof-assistant formalization; broader literature audit. |
 | `A-YAH-2STATE-001` | In the fixed two-state suffix algebra, positive-integer cancellations exclude additive labeled-symbol and labeled-adjacent-edge orders, including every finite lexicographic tuple. | `C3 V2 I3 N2 R2` | Strongest potentially new exact finite certificate in the archive. | Independent term-rewriting specialist reconstruction; formal certificate; broader literature audit. |
 | `A-YAH-2LOCAL-001` | A 13-row cancellation excludes bounded-below scalar adjacent-pair additive potentials on the stated canonical YAH contexts. | `C3 V2 I3 N2 R2` | Compact, reproducible route-class no-go. | Independent specialist reconstruction and exact placement among standard interpretation classes. |
 | `6A-T1` | Under the stated fast-descent and repelling rational-period lift hypotheses, last-minimum density and same-phase correction debt obey the explicit asymptotic lower bounds. | `C2 V1 I3 N2 R2` | Strongest conceptual theorem candidate in the older corrected-log branch. | Positive-lift/endpoint/scaling reconstruction, Lean, and specialist review. The Python checker is diagnostic only. |
@@ -84,7 +89,7 @@ Collatz is true. A formally checked prior-art identity can have `C3/V3` but
 
 No entry is ready to submit as a Collatz proof or disproof. The bounded-
 alphabet endpoint gate is the strongest current auxiliary-theorem review
-target. The two YAH rows remain the best compact route-class certificates;
+target. The YAH rows remain the best compact route-class certificates;
 Round 6A remains a separate theorem-level reconstruction target.
 
 ## Complete promoted-claim inventory
@@ -93,7 +98,7 @@ Round 6A remains a separate theorem-level reconstruction target.
 
 | ID | Exact scope | Grades | Evidence / provenance | Limitation |
 |---|---|---|---|---|
-| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted artifact head `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | This is the status of the open problem and archive, not a graded project theorem. |
+| `G0` | The archive contains no accepted universal proof, positive nontrivial cycle, or rigorously divergent positive orbit. | `N/A` (archive status) | [Public status](../PUBLIC_STATUS_2026-08-24.md); accepted component baselines `6c8f77ef2b0b360f8f353f4508dcfec58e980331` and `b75ffec58ae20ac26271ff7d59a71d3591467994`. | This is the status of the open problem and archive, not a graded project theorem. |
 | `F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` | For `1<=a_k<=A`, the canonical endpoint representatives have eventual zero carry iff the infinite code is realized by one positive odd orbit iff their normalized residues vanish iff their root growth is strictly below `3`; otherwise positive carries recur and the root limsup is `3`. | `C2 V2 I3 N2 R2` | [Endpoint-residue gate](routes/F_bounded_alphabet_endpoint_residue_gate.md), [checker](../verification/bounded_alphabet_endpoint_residue_gate.py), [frozen output](../verification/bounded_alphabet_endpoint_residue_gate_output_2026-08-24.txt), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Exact characterization only. It does not decide eventual carry for a proposed aperiodic hard code, construct a positive divergent orbit, or prove Collatz. |
 | `L0` | For the accelerated odd map, every odd `n>1` having a smaller iterate is equivalent to Collatz; a least counterexample cannot descend below itself. | `C3 V1 I3 N0 R1` | [L0](lemmas/L0_Global_Descent_Equivalence.md), commit `2456248bcb5f1c769d2ffdb369e8f63dfcd3a3be`. | Elementary equivalent reformulation; Lean pending; no progress without a descent mechanism. |
 | `6A-T1` | Quantitative beta-debt necessity on the stated repelling rational-period shadows. | `C2 V1 I3 N2 R2` | [Review note](../papers/round-6a/Theorem_6A1_Public_Review_Note.md), claim ledger/checker/output, commit `c3d1da2c5dc8db296089745951dda1cd8e89bb9d`. | Unreviewed; lift, endpoint valuation, scaling, and the proof chain are not Lean-checked. |
@@ -136,7 +141,9 @@ Round 6A remains a separate theorem-level reconstruction target.
 | `F-RENEWAL-GCD-FILTER-001` | Renewal blocks satisfy the displayed affine identity; a separately hypothesized common odd divisor of all states or all shifted states must divide the corresponding gcd-of-lengths expression. | `C2 V2 I1 N1 R1` | Same [direct-return and renewal note](routes/AB_direct_H_return_and_renewal_filters.md) and checker, artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Neither persistent-divisor hypothesis is proved for generic orbits; the two hypotheses cannot be merged. |
 | `F-PRIME-RETURN-001 / D-HARD-PRIME-REFRESH-001` | Finite-word correction divisors exactly control prime return; the hard words have correction primes `5` and `23`; delayed pure-`1` returns, finite CRT concatenations, and finite rough-growth shadows exist exactly as stated. | `C2 V2 I2 N1 R1` | [Prime-renewal no-go](routes/AB_prime_renewal_finite_window_no_go.md), [regression](../verification/prime_renewal_regression.py), artifact commit `6c8f77ef2b0b360f8f353f4508dcfec58e980331`. | Closes finite-window prime/roughness mechanisms only. The realizing seed depends on the finite script, so no infinite positive orbit follows. |
 | `A-YAH-2LOCAL-001` | The 13-row cancellation excludes bounded-below scalar adjacent-edge additive potentials in the stated canonical contexts. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_2local_edge_potential_no_go.md), [checker](../verification/yah_2local_edge_no_go.py), commit `d1bc062c727041ed8e106478983e3b7281f33dae`. | Does not exclude labels, matrices, longer windows, or nonadditive orders. |
-| `A-YAH-2STATE-001` | The fixed two-state suffix labeling cannot support additive labeled-symbol or labeled-edge scalar/finite-lex orders. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_two_state_semantic_label_no_go.md), [checker](../verification/yah_two_state_semantic_label_no_go.py), commit `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | One semantic algebra and locality class only; not a global termination theorem. |
+| `A-YAH-2STATE-001` | The fixed two-state suffix labeling cannot support the stated additive labeled-symbol orders; in fixed-terminal canonical contexts, labeled-edge scalar/finite-lex orders cannot make a first uniform rule-removal step. | `C3 V2 I3 N2 R2` | [Certificate note](routes/A_yah_two_state_semantic_label_no_go.md), [checker](../verification/yah_two_state_semantic_label_no_go.py), base commit `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`, strengthened at `f8558a566b682e8dbc4465206f9c26ac9b17760c`. | One semantic algebra and additive locality class; adjacent-window potentials are not automatically YAH compositional interpretations. |
+| `A-YAH-AN1-001` | On the original eleven-rule system, no first standard dimension-one arctic-natural rule-removal step exists: neither full/extended nor either Lemma-3.18 relative-top entry point. | `C3 V2 I3 N2 R2` | [Theorem note](routes/A_yah_two_state_scalar_arctic_full_no_start.md), [full checker](../verification/yah_two_state_scalar_arctic_full_no_start.py), [top checker](../verification/yah_scalar_arctic_top/verify_top_certificates.py), artifact commit `b75ffec58ae20ac26271ff7d59a71d3591467994`. | Does not cover dimension at least two, other carriers, transformations beyond those top shortcuts, or local systems. |
+| `A-YAH-2STATE-AN1-001` | On the exact global 22-rule labeling, the 49-mass cancellation excludes every first full/extended scalar step; 491 integer Farkas lemmas and 426 RUP clauses exclude the six original boundary and four reversed-dynamic top targets. | `C3 V2 I3 N2 R2` | Same [theorem note](routes/A_yah_two_state_scalar_arctic_full_no_start.md), [full checker](../verification/yah_two_state_scalar_arctic_full_no_start.py), [top checker/payload](../verification/yah_scalar_arctic_top/verify_top_certificates.py), artifact commit `b75ffec58ae20ac26271ff7d59a71d3591467994`. | The labeled top result is a syntactic interpretation no-go, not a separately proved semantic-label top-reflection theorem; richer methods remain open. |
 
 ### Disproof lane and bounded diagnostics
 
@@ -164,7 +171,7 @@ These items are `C0/R0` and must not be promoted.
 | L11 hard inheritance automatically renews L9–L10 at each endpoint. | False; minimality is relative to the fixed root. | F019 rooted three-way split. |
 | “Complete hard child” without a time/certificate-class qualifier. | Overbroad. | `L13-HARD` only through `t<=L+2` followed by a uniformly admissible unrefined L4 inverse word. |
 | A finite bounded direct-descent cover might prove Collatz. | False for all odd `n>1` when horizons are uniformly bounded. | `A-ARB/A-CYL`; ranked recursion remains logically open. |
-| The two-state YAH no-go rules out semantic labeling, matrix orders, or YAH termination. | False promotion. | It rules out only additive symbol/edge scalar and finite-lex orders in the fixed two-state algebra. |
+| The scalar YAH no-go rules out matrix interpretations generally or proves YAH termination. | False promotion. | It closes only the standard dimension-one arctic-natural first step: full/extended and the two Lemma-3.18 top entry points. Higher-dimensional, different-carrier/label, transformed, non-coefficientwise, and local methods remain open. |
 | The hard return map is a new descent theorem. | False promotion. | It is an exact Collatz-equivalent reformulation with a recharge witness. |
 | The L14 terminal set exhausts finite trajectory-preserving rewrites or local affine normal forms. | False. For every `s>=0`, `U^3(64s+55)=54s+47<64s+55`; L13 also coalesces `23` with `17`. | L14 is exact only relative to its displayed `(a,c)` reducer. Other refinements remain possible, but no global residual rank is known. |
 | Cyclic rotation supplies an independent two-pump resultant. | False: the resultant is identically zero. | `E-TWOPUMP-DEP`. |
@@ -184,8 +191,13 @@ conclusions are:
   [official artifact](https://github.com/emreyolcu/rewriting-collatz).
 - Semantic labeling is a classical termination transformation due to Zantema:
   [paper](https://doi.org/10.3233/FI-1995-24124). No exact published match was
-  located for the repository's 13-, 8-, or 50-row YAH cancellations. That makes
-  them `N2`, not certified novel.
+  located for the repository's 13-, 8-, 11-, 22-, 50-, or top-certificate YAH
+  cancellations. That
+  makes them `N2`, not certified novel. YAH itself identifies nonexistence of
+  suitable matrix interpretations for its mixed-base system as an interesting
+  possible result; the new theorem establishes only the dimension-one
+  arctic-natural first-step subcase, including its two special top entry
+  points.
 - Parity-residue and affine-word mechanics are classical; see Terras
   ([1976](https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/30/3/101028/a-stopping-time-problem-on-the-positive-integers)),
   Everett ([1977](https://doi.org/10.1016/0001-8708(77)90087-1)), and Lagarias

@@ -8,11 +8,18 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > positive orbit. None of the ratings below is a probability that Collatz is
 > true or false.
 
-Accepted mathematical baseline: full Git object
-`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (2026-08-24).
+Accepted mathematical component baselines are full Git objects
+`6c8f77ef2b0b360f8f353f4508dcfec58e980331` (endpoint/global-coupling
+artifacts) and `b75ffec58ae20ac26271ff7d59a71d3591467994`
+(scalar-arctic artifacts), both dated 2026-08-24.
 
 For a self-contained mathematician-facing review snapshot, see
 [MATHEMATICIAN_HANDOFF_2026-08-25.md](MATHEMATICIAN_HANDOFF_2026-08-25.md).
+
+For a visual, cross-linked map of claims, routes, evidence, historical notes,
+and reopening conditions, use the [research atlas](ATLAS.md). It is portable
+between GitHub and Obsidian and does not duplicate the canonical status
+registries.
 
 ## The two-minute map
 
@@ -21,7 +28,7 @@ them separate is the most important way to read the archive.
 
 | Kind | What has actually been established | What has **not** been established | Start here |
 |---|---|---|---|
-| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes for the YAH rewrite system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out other labels, longer memory, matrices, nonadditive orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
+| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes and every standard first dimension-one arctic-natural step for the original YAH system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out higher-dimensional interpretations, different carriers or labels, transformed/non-coefficientwise orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
 | **Collatz-equivalent reformulation** | Global descent, termination of the exact YAH system, and termination of the normalized hard-return map are each equivalent ways to state the remaining universal problem. | An equivalent reformulation is not progress unless it supplies a new well-founded mechanism. No such universal mechanism is known here. | [Hard return system](proof-search/routes/AB_hard_boundary_return_system.md) |
 | **Still-open universal claim** | The exact acceptance gates are explicit and the main failed shortcuts are indexed. | No proof covers every positive integer; no disproof witness meets the positivity and replay gates. | [Public status](PUBLIC_STATUS_2026-08-24.md) and [approach registry](proof-search/APPROACH_REGISTRY.md) |
 
@@ -36,6 +43,7 @@ value, not by a claim that they solve more of Collatz.
 
 | Claim | Scoped status | Why it matters | Novelty / publication status |
 |---|---|---|---|
+| YAH scalar-arctic dimension-one no-start | Exact dependency-free full and top certificates; high confidence **within the standard first-step dimension-one arctic-natural class** | Closes full rule removal and both Lemma-3.18 top entry points on the original eleven-rule system; also certifies the fixed 22-rule labeling | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
 | Round 6A quantitative beta-debt theorem | Self-contained unreviewed derivation plus diagnostic checker | Strongest conceptual theorem candidate about corrected-log rankings and rational periodic shadows | Exact formulation not found; key lift/scaling chain lacks Lean and independent specialist reconstruction |
@@ -53,19 +61,21 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 ### If you are a math enthusiast
 
 1. Read the [plain-language public status](PUBLIC_STATUS_2026-08-24.md).
-2. Use the [two-minute map](#the-two-minute-map) to distinguish a method
+2. Browse the [research atlas](ATLAS.md) to see how the ideas connect.
+3. Use the [two-minute map](#the-two-minute-map) to distinguish a method
    obstruction from an equivalent reformulation.
-3. Treat every finite computation as a bounded check, never as evidence for all
+4. Treat every finite computation as a bounded check, never as evidence for all
    integers.
 
 ### If you are reviewing the mathematics
 
-1. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
-2. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
-3. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
-4. [Reproduction manifest](verification/README.md)
-5. [Lean verification policy](lean/VERIFICATION_POLICY.md)
-6. [Provenance and dates](PROVENANCE.md)
+1. [Research atlas and dependency map](ATLAS.md)
+2. [Atomic claim and evidence registry](proof-search/CLAIM_REGISTRY.md)
+3. [Current route statuses](proof-search/APPROACH_REGISTRY.md)
+4. [Do-not-repeat failure ledger](proof-search/FAILURE_LEDGER.md)
+5. [Reproduction manifest](verification/README.md)
+6. [Lean verification policy](lean/VERIFICATION_POLICY.md)
+7. [Provenance and dates](PROVENANCE.md)
 
 ### If you are continuing the project
 
@@ -91,8 +101,11 @@ See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 From the repository root:
 
 ```powershell
+python -B verification\trajectory_normal_form_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
@@ -100,6 +113,17 @@ lake build
 
 Expected outputs, tested versions, scope limits, and retained transcripts are
 listed in [verification/README.md](verification/README.md).
+
+Repository navigation has a separate dependency-free check:
+
+```powershell
+python -B verification\check_note_graph.py
+```
+
+No Obsidian community plugin is required. Open the repository root as a vault;
+ordinary relative Markdown links drive GitHub navigation and Obsidian's built-in
+Graph and Backlinks views. See the
+[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
 
 ## Prior art and novelty discipline
 
@@ -110,8 +134,10 @@ classical. In particular, the refined Mersenne easy-child coalescence is
 published in substance; it must not be advertised as a new Collatz theorem.
 
 The strongest potentially new artifacts are the exact narrow YAH cancellation
-certificates. A bounded primary-source search found no exact match, but their
-priority is **not certified**. The source-by-claim audit is recorded in the
+certificates, including the original-system scalar-arctic dimension-one
+no-first-step theorem and its fixed-label certificate. A
+bounded primary-source search found no exact match, but their priority is
+**not certified**. The source-by-claim audit is recorded in the
 [claim registry](proof-search/CLAIM_REGISTRY.md#primary-source-novelty-audit).
 
 ## Historical archive and integrity

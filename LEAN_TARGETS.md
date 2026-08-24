@@ -47,8 +47,16 @@ and not prove or disprove Collatz.
 
 Formalize the fixed rule table, canonical/fixed-terminal context predicates,
 the 13-row unlabeled adjacent-edge cancellation, and the 8-/50-row fixed
-two-state labeled cancellations. Preserve the narrow conclusion: these kill
-specific additive scalar/finite-lex classes, not all termination orders.
+two-state labeled cancellations. Also formalize the 11-/22-row all-positive
+scalar-arctic cancellations and a proof-assistant-checkable semantics for the
+ten Farkas/RUP top certificates. Preserve the narrow conclusion: these kill
+specific additive scalar/finite-lex classes and the standard first
+dimension-one arctic-natural full/top step, not all termination orders.
+
+The dependency-free Python replayers are exact certificate checkers, but they
+are not Lean developments. Any formal port must reconstruct the YAH
+full-versus-top semantics and the equal-label lifting to the original system,
+not merely verify the stored integer sums.
 
 ### 3. L13 hard successor and rank obstruction
 

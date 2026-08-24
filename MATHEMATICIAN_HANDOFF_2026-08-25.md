@@ -10,12 +10,16 @@ archive. It is designed to let a mathematician separate exact narrow results,
 equivalent reformulations, bounded computations, and unfinished ideas without
 reading the full historical log first.
 
-- Public `origin/main` base reviewed here:
+- Current public `origin/main` integrated here:
+  `2e7eae2bb998b14e5443e6c440154130a0049467`, including the portable
+  [research atlas](ATLAS.md) and note-graph QA.
+- Accepted endpoint/global-coupling artifact snapshot reviewed here:
+  `6c8f77ef2b0b360f8f353f4508dcfec58e980331`; its branch base is
   `67068bf0493c25514ebdd1b635ecd6a0e0af643f`.
-- Accepted artifact snapshot reviewed here:
-  `6c8f77ef2b0b360f8f353f4508dcfec58e980331`.
-  This review commit adds scoped notes and regressions on top of the public
-  base; it is not itself a correctness or novelty certificate.
+- Accepted scalar-arctic artifact snapshot reviewed here:
+  `b75ffec58ae20ac26271ff7d59a71d3591467994`.
+  These hashes identify the two mathematical component histories combined by
+  this review branch; none is itself a correctness or novelty certificate.
 - Snapshot cutoff: the audited packets explicitly named in Sections 4, 5,
   and 11 through 2026-08-24. Live research may continue independently; a
   result not named here is not silently included.
@@ -116,10 +120,10 @@ The strongest new exact gate in this snapshot is
 code it characterizes positive-integer realizability by eventual vanishing of
 an explicit carry sequence, equivalently by decay of normalized endpoint
 representatives. It does **not** determine the branch for any unresolved
-aperiodic hard code. The finite YAH cancellation certificates remain the most
-developed externally reviewable route-class obstructions, and the strongest
-formal artifacts remain three narrow Lean modules. None is a proof or
-disproof of Collatz.
+aperiodic hard code. The finite YAH cancellations and the full/top
+dimension-one scalar-arctic certificates are the most developed externally
+reviewable route-class obstructions, and the strongest formal artifacts remain
+three narrow Lean modules. None is a proof or disproof of Collatz.
 
 The new inverse-word, direct-return, renewal, and prime-return notes sharpen
 the route map. In particular, every finite valuation script and every finite
@@ -132,8 +136,8 @@ Publication readiness is correspondingly limited:
 
 - **Submission-ready proof/disproof:** none.
 - **Best candidate for a narrow technical note:** the checker-backed YAH
-  cancellations, after independent term-rewriting specialist review, formal
-  certification, and a broader novelty search.
+  additive and scalar-arctic obstructions, after independent term-rewriting
+  specialist review, formal certification, and a broader novelty search.
 - **Research-review material:** the bounded-alphabet endpoint gate, L14/L15,
   the direct hard-return and prime-renewal filters, the L13 hard/rank
   obstruction, and the scalar YAH two-rule contradiction. Round 6A and the
@@ -160,6 +164,8 @@ registry. Each statement below has immutable Git provenance.
 | Finite bounded-horizon cover no-go | No finite cover of all odd `n>1` by cells with uniformly bounded positive direct-descent horizons can prove descent: for any maximum horizon `K`, a sufficiently large `2^m-1` has `S^j(2^m-1)>2^m-1` for every `1<=j<=K`. | [Failure ledger F008](proof-search/FAILURE_LEDGER.md#f008--finite-depth-residue-tree), repaired object `409cb63d6805b00b3dcd96576ac172c58b16384e`. | Known finite-method obstruction. Ranked recursion and unbounded derivations remain open. |
 | Unlabeled YAH adjacent-edge no-go | No bounded-below scalar potential obtained by summing weights of adjacent pairs on the stated canonical YAH contexts can be weak on all auxiliary rule instances and strict on both dynamic rules. | [Certificate](proof-search/routes/A_yah_2local_edge_potential_no_go.md), [checker](verification/yah_2local_edge_no_go.py), object `d1bc062c727041ed8e106478983e3b7281f33dae`. | A 13-row cancellation gives `W_(f,f)<=-1`, contradicting boundedness on `^f^m$`. Exact match not located; priority uncertified. Labels, matrices, longer windows, and nonadditive orders remain. |
 | Fixed two-state labeled YAH no-go | For the exact two-state suffix algebra in the note, neither additive labeled-symbol nor additive labeled-adjacent-edge weights can orient the required rules; the same positive cancellation kills every finite lexicographic tuple of such weights. | [Certificate](proof-search/routes/A_yah_two_state_semantic_label_no_go.md), [checker](verification/yah_two_state_semantic_label_no_go.py), object `8a93ea5e8377f16be5b54f5fe0de9f8d9a85b3a9`. | Exact 8-row and 50-row certificates. Potentially interesting but only one algebra/locality class; priority uncertified. |
+| Original-system scalar-arctic no-start (`A-YAH-AN1-001`) | On the original eleven-rule YAH system, no first standard dimension-one arctic-natural step exists: neither full/extended removal nor either Lemma-3.18 boundary/dynamic relative-top opportunity. | [Theorem note](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md), [full checker](verification/yah_two_state_scalar_arctic_full_no_start.py), [top checker](verification/yah_scalar_arctic_top/verify_top_certificates.py), object `b75ffec58ae20ac26271ff7d59a71d3591467994`. | Exact 49-mass, Farkas, and RUP certificates. Higher dimensions, other carriers, transformed/non-coefficientwise orders, and local systems remain open; priority is uncertified. |
+| Fixed-label scalar-arctic no-start (`A-YAH-2STATE-AN1-001`) | On the exact global 22-rule two-state labeling, no first full/extended scalar step exists and none of the six original boundary or four reversed-dynamic top targets is feasible. | Same [theorem note](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md), full/top checkers, and object `b75ffec58ae20ac26271ff7d59a71d3591467994`. | The labeled top result is a syntactic interpretation no-go, not a separately proved semantic-label top-reflection theorem. Richer methods remain open. |
 | Two-pump cyclic dependency | For the exact determinant coefficients in the audit, `aB=cC` and `gA=dE`; hence `cgAC-adBE=0` identically. Cyclic rotation supplies no independent constant resultant. | [Audit](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md), [Lean module](lean/CollatzWork/Disproof/TwoPumpDependency.lean), object `974dbcb58ea40cf9365689a27de4df3ceafa0b75`. | Formal route-design obstruction, not a cycle exclusion. Elementary specialization of classical fixed-word algebra; no priority claim. |
 | Corrected max-`C` cycle DP | For each fixed `(k,q)`, keeping the maximum exact affine coefficient `C` in each residue state is complete. With `k<=40` and `0<D=2^k-3^q<=250000`, the run exhausts 91 pairs, peaks at 47,517 merged states, finds 9 trivial `1`/`2` encodings and 0 nontrivial candidates. | [Audit](proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md), [script](verification/disproof_cycle_search.py), [output](verification/disproof_cycle_search_output_2026-08-24.txt), object `4e883e4deaa881b843f26473692c5483a220d91d`. | Exact bounded computation only, much weaker than published cycle/computational bounds. The earlier arbitrary-representative DP is superseded. |
 | Conditional coefficient-stopping barrier | Assuming the named `2^71` verified range and the Rozier–Terracol input, a least counterexample has no coefficient contraction before accelerated time `114,208,327,604`. | [L8 statement](proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md), checker/output indexed in the [verification manifest](verification/README.md), statement object `03f4049cca8b5c5cc87856b8ac807e126ef8e5d2`. | Strong necessary-condition certificate, conditional on external inputs and not Lean-formalized. It is not a global convergence theorem. |
@@ -792,10 +798,10 @@ compiled directly. The exact dependency reports contain only the standard
 axioms recorded in the [verification manifest](verification/README.md); no
 accepted module uses `sorryAx`.
 
-There is no Lean formalization of the complete YAH semantics, either YAH
-cancellation certificate, the hard-child rank theorem, the hard-return
-equivalence, Round 6A, L14, L15, the direct-return or renewal filters, the
-prime-window no-go, the bounded-alphabet endpoint gate, the
+There is no Lean formalization of the complete YAH semantics, any YAH
+cancellation or scalar-arctic certificate, the hard-child rank theorem, the
+hard-return equivalence, Round 6A, L14, L15, the direct-return or renewal
+filters, the prime-window no-go, the bounded-alphabet endpoint gate, the
 expansion-threshold/tail lemmas, the S-unit/branching lemmas, the conditional
 Thue--Morse construction, or Collatz.
 The untracked residue-first-integral module checks only the abstract
@@ -815,9 +821,12 @@ python -B verification\direct_H_return_renewal_regression.py
 python -B verification\prime_renewal_regression.py
 python -B verification\yah_2local_edge_no_go.py
 python -B verification\yah_two_state_semantic_label_no_go.py
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
+python -B verification\check_note_graph.py
 ```
 
 Expected decisive outputs:
@@ -843,15 +852,23 @@ Expected decisive outputs:
 - fixed two-state YAH: `model equations = 22`,
   `fixed-terminal legal contexts = 441`, `symbol certificate rows = 8`,
   `edge certificate rows = 50`, then `PASS`;
+- scalar-arctic full/extended: original 11-row and labeled 22-row
+  cancellations, both with total multiplier 49 and zero weighted delta, then
+  both `PASS`;
+- scalar-arctic top: 10 cases, 491 integer Farkas lemmas, 426 RUP clauses,
+  then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS`;
 - max-`C` DP: 91 pairs, peak 47,517 states, 9 trivial encodings, 0
   nontrivial candidates;
 - direct two-pump Lean replay: five dependency reports with only `propext` and
   `Quot.sound`;
-- umbrella Lean: `Build completed successfully`.
+- umbrella Lean: `Build completed successfully`;
+- note graph: 56 Markdown notes, 273 local links, 0 broken links, 0
+  unreachable notes, then `NOTE_GRAPH = PASS`.
 
-The fresh artifact audit recorded all ten commands as passing with Python
-3.14.5, Lake `5.0.0-src+819816b`, and Lean 4.33.1. The exact command-to-claim
-mapping, formal axiom boundary, and retained historical diagnostics are in the
+The fresh combined audit recorded all twelve claim/check/build commands plus
+the separate note-graph command as passing with Python 3.14.5, Lake
+`5.0.0-src+819816b`, and Lean 4.33.1. The exact command-to-claim mapping,
+formal axiom boundary, and retained historical diagnostics are in the
 [verification manifest](verification/README.md). A checker `PASS` validates
 only its displayed finite or algebraic scope; it does not machine-check the
 universal prose proofs or Collatz.
@@ -865,7 +882,7 @@ objective is allowed to continue.
 |---|---|---|
 | **LIVE / FOCAL** | Bounded-alphabet endpoint carries | Positive realization is exactly eventual zero carry, equivalently normalized endpoint decay. For guarded `{1,3}` hard-block codes, eventual zero carry would construct a positive divergent orbit; infinitely many carries exclude the chosen code. Neither branch is known for an unresolved infinite code. |
 | **LIVE / FOCAL** | Fixed-seed infinite-tail coupling | Every relevant finite script has positive realizations, but those starts vary with the prefix. A useful next result must control the canonical endpoint sequence or one fixed positive seed across the infinite tail; another finite CRT or larger bound does not address this gate. |
-| **LIVE** | Non-scalar/context-sensitive YAH termination | Scalar symbol/edge/function classes have small cancellations, but matrix, multidimensional, nonadditive, or richer context semantics remain possible. Any candidate must orient every required rule and preserve the published Collatz reflection. |
+| **LIVE** | Richer/context-sensitive YAH termination | Scalar symbol/edge/function classes have cancellations, and the standard first dimension-one scalar-arctic full/top routes are closed; matrix, multidimensional, transformed, nonadditive, or richer context semantics remain possible. Any candidate must orient every required rule and preserve the published Collatz reflection. |
 | **LIVE** | Finite guarded residue graph with a genuine rank | Finite bounded-depth trees are dead, but a concrete finite graph with exact whole-family edges and a proved well-founded back-edge rank would be new. No such graph/rank is currently known. |
 | **LIVE** | Augmented-state ranking | A concrete nonlocal or richer symbolic rank may evade the periodic-shadow and hard-recharge barriers. Guessing another bounded scalar correction does not. |
 | **LIVE** | Positive cycle/divergence construction | Exact low-cost witness search remains legitimate. A divergent construction must permit infinitely growing prime support or else it becomes eventually periodic by the S-unit corollary. |
@@ -1058,8 +1075,9 @@ priority claim merely because their exact packaging was not found quickly.
 
 For a first mathematical review:
 
-1. Read Sections 1–3 and verify the two snapshot hashes and the proof/disproof
-   gates. Nothing in this packet is presented as a Collatz solution.
+1. Read Sections 1–3 and verify the current-main hash, the two mathematical
+   component hashes, and the proof/disproof gates. Nothing in this packet is
+   presented as a Collatz solution.
 2. Read the [bounded-alphabet endpoint gate](proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md)
    first. Check the carry bounds, the positive-orbit growth bound, and every
    integrality/parity step in the eventual-zero-carry converse; then run its
@@ -1075,9 +1093,9 @@ For a first mathematical review:
    notes, then run their regressions. Verify that every conclusion is finite or
    conditional and that no CRT paragraph silently changes the seed with the
    prefix.
-5. Replay the two YAH checkers and inspect their linked cancellation notes;
-   then compile the three narrow Lean modules and compare declarations with the
-   prose scopes in Sections 4 and 7.
+5. Replay all four YAH checkers and inspect their linked additive and
+   scalar-arctic notes; then compile the three narrow Lean modules and compare
+   declarations with the prose scopes in Sections 4 and 7.
 6. Check the max-`C` DP completeness proof before interpreting its bounded
    output. Audit L13 and the older short results only as needed for route
    context.
@@ -1085,7 +1103,8 @@ For a first mathematical review:
    last and only as provisional work. The decisive question is not the formal
    product identity; it is the entirely open assertion that its 2-adic value
    is a positive ordinary integer.
-8. Use the [claim registry](proof-search/CLAIM_REGISTRY.md),
+8. Use the [research atlas](ATLAS.md),
+   [claim registry](proof-search/CLAIM_REGISTRY.md),
    [failure ledger](proof-search/FAILURE_LEDGER.md), and
    [verification manifest](verification/README.md) for the complete archive.
 
