@@ -1,0 +1,70 @@
+Round 7 exhaustive whole-family inverse-word classifier
+Date: 2026-08-23
+Map: T(n)=n/2 if even, (3n+1)/2 if odd
+Search class: exact uniform forward prefix + exact whole-family inverse word over E/O + eventual affine smaller-family inequality
+Completeness theorem: proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md
+
+IMPORTANT
+---------
+There is no arbitrary inverse-depth parameter in this classifier. For a forward state at time t with s odd branches, L5 proves that every successful inverse word has fewer than t-s even inverses and total length at most t-1. The search exhausts that finite class.
+
+A `class_miss` therefore means no certificate exists in THIS WHOLE-FAMILY INVERSE-WORD CLASS for the tested cylinder. It does not imply divergence and is not evidence against Collatz.
+
+K,total_odd,certified,class_miss
+3,4,2,2
+  first class misses: [3, 7]
+4,8,5,3
+  first class misses: [7, 11, 15]
+5,16,12,4
+  first class misses: [7, 15, 27, 31]
+6,32,25,7
+  first class misses: [7, 27, 31, 39, 47, 59, 63]
+7,64,53,11
+  first class misses: [27, 31, 39, 47, 63, 71, 91, 103, 111, 123, 127]
+8,128,112,16
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255]
+9,256,229,27
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 255, 283, 303, 327, 347, 359, 415, 423, 447]
+10,512,466,46
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 155, 159, 167, 191, 231, 239, 251, 283, 303, 327, 359, 415, 447, 495, 511, 543]
+11,1024,944,80
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
+12,2048,1904,144
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 191, 239, 251, 303, 327, 415, 447, 495, 511, 559, 603, 623, 639, 667]
+13,4096,3854,242
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 239, 251, 327, 415, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743]
+14,8192,7756,436
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 127, 159, 167, 239, 327, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743, 751, 763]
+15,16384,15582,802
+  first class misses: [27, 31, 47, 71, 91, 103, 111, 159, 239, 327, 447, 495, 511, 559, 603, 639, 667, 671, 703, 743, 751, 763, 767, 859]
+
+Comparison to the earlier depth-10 accelerated diagnostic
+---------------------------------------------------------
+Earlier depth-10 unresolved counts:
+  K=12: 144
+  K=13: 243
+  K=14: 439
+  K=15: 809
+
+Exhaustive class-miss counts:
+  K=12: 144
+  K=13: 242
+  K=14: 436
+  K=15: 802
+
+The difference is small numerically but epistemically important: these latest counts are not limited by an arbitrary inverse-word depth inside the defined certificate class.
+
+New longer certificates recovered by exhaustion include families using words such as
+
+  OEOOOOOOOOO
+  OEOOOOOOOOOO
+  OEOOOOOOOOOOO
+
+which lie beyond the previous depth-10 cutoff at higher K.
+
+Interpretation
+--------------
+- The whole-family inverse-word class is now mathematically bounded and exhaustible at each fixed cylinder.
+- Persistent misses must be attacked by a genuinely stronger certificate semantics, not by saying “search this same class deeper.”
+- Candidate stronger mechanisms include parameter refinement during a macro, recursive state-graph transitions, or a ranked mixed-radix automaton.
+- This is exactly the distinction between SEARCH_DEPTH_MISS and CLASS_MISS required by the shared Proof-Attack framework.
