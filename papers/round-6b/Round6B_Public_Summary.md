@@ -8,66 +8,66 @@ Round 6B asks what Round 6A implies when the correction term in a candidate fast
 
 Let
 
-\[
+$$
 V(n)=\alpha\log n+R(n)
-\]
+$$
 
-satisfy the same hypothetical universal descent guarantee as Round 6A. On a depth-\(r\) positive periodic shadow, suppose a surrogate \(G\) is constant on same-phase returns and define
+satisfy the same hypothetical universal descent guarantee as Round 6A. On a depth-$r$ positive periodic shadow, suppose a surrogate $G$ is constant on same-phase returns and define
 
-\[
+$$
 e_r=\max_j|R(n_j)-G(n_j)|.
-\]
+$$
 
-Because \(G\) contributes no same-phase debt, for every same-phase pair
+Because $G$ contributes no same-phase debt, for every same-phase pair
 
-\[
+$$
 R(n_i)-R(n_{i+km})
 =
 (R-G)(n_i)-(R-G)(n_{i+km})
 \le 2e_r.
-\]
+$$
 
 Hence the maximal same-phase correction debt obeys
 
-\[
+$$
 \Delta_r\le2e_r.
-\]
+$$
 
-Round 6A supplies, on a repelling rational periodic orbit of length \(m\), total valuation \(A\), and multiplier \(\lambda=3^m/2^A>1\), the necessary lower bound
+Round 6A supplies, on a repelling rational periodic orbit of length $m$, total valuation $A$, and multiplier $\lambda=3^m/2^A>1$, the necessary lower bound
 
-\[
+$$
 \liminf_{r\to\infty}\frac{\Delta_r}{r}
 \ge
 \alpha\log(\lambda)
 \frac{m-\beta A}{m+\beta\log_2\lambda}.
-\]
+$$
 
 Combining the inequalities gives the Round 6B approximation-gap bound
 
-\[
+$$
 \boxed{
 \liminf_{r\to\infty}\frac{e_r}{r}
 \ge
 \frac{\alpha\log(\lambda)}{2}
 \frac{m-\beta A}{m+\beta\log_2\lambda}.
 }
-\]
+$$
 
 Thus a successful universal fast corrected-log ranking cannot be approximated to sublinear error, on all relevant stress shadows, by a surrogate that becomes phasewise frozen there.
 
 For the high-period family
 
-\[
+$$
 w_m=(2,1^{m-1}),
-\]
+$$
 
 the corresponding normalized approximation-gap lower bound tends to
 
-\[
+$$
 \frac{\rho_\beta}{2},
 \qquad
 \rho_\beta=\frac{1-\beta}{1+\beta\log_2(3/2)}.
-\]
+$$
 
 ## Consequence for sensor architectures
 

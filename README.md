@@ -115,10 +115,17 @@ Repository navigation has a separate dependency-free check:
 python -B verification\check_note_graph.py
 ```
 
+Mathematical notation has a separate presentation check:
+
+```powershell
+python -B verification\check_markdown_math.py --self-test
+```
+
 No Obsidian community plugin is required. Open the repository root as a vault;
 ordinary relative Markdown links drive GitHub navigation and Obsidian's built-in
 Graph and Backlinks views. See the
-[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
+[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) and
+[portable Markdown math style](methodology/MARKDOWN_MATH_STYLE.md).
 
 ## Prior art and novelty discipline
 

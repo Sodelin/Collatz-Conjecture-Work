@@ -59,6 +59,16 @@ reachable from `README.md`. `NOTE_GRAPH = PASS` certifies navigation only; it
 does not certify mathematics, citations, anchors, or novelty. The governing
 format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.md).
 
+Markdown mathematics has a separate dependency-free presentation check:
+
+```powershell
+python -B verification\check_markdown_math.py --self-test
+```
+
+It rejects legacy human-facing math delimiters that GitHub may expose as raw
+LaTeX, while ignoring fenced, inline, and indented code. See the
+[portable Markdown math style](../methodology/MARKDOWN_MATH_STYLE.md).
+
 ## Narrow Lean boundary
 
 | Module | Formalized statement | Axiom report / caveat |

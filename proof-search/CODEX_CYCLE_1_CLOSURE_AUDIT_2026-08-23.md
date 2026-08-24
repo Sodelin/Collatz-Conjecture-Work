@@ -16,9 +16,9 @@ The two external inputs supporting L8 were checked against their primary sources
 
 - Barina's 2025 paper states convergence verification through `2^71` for the same once-accelerated map used here: <https://doi.org/10.1007/s11227-025-07337-0>.
 - Rozier-Terracol Corollary 4.4 gives, for a paradoxical length-`j` prefix with `j>=2`, the harmonic-mean bound
-  \[
+  $$
   h\le \frac{1}{2^{j/\lfloor(\log 2/\log 3)j\rfloor}-3}.
-  \]
+  $$
   <https://arxiv.org/abs/2502.00948> (v5, 2026-05-17; journal reference *Discrete Mathematics* 349, 115167).
 - The same paper's Theorem 5.3 states that no paradoxical sequence has length `93<=j<=301,993`, matching the older L7 integration.
 - Yolcu-Aaronson-Heule's mixed-radix rewrite system is an exact Collatz-equivalent representation, but their work does not terminate the full system: <https://doi.org/10.1007/s10817-022-09658-8>.
@@ -55,29 +55,29 @@ At the first L8 denominator `J`, `s<n_*` is automatic.  It is not automatic for 
 
 L11 proves that
 
-\[
+$$
 y=T^\tau(n_*)=n_*+d
-\]
+$$
 
 inherits the L6 hard-exit congruence when `s<n_*`.  It does not prove that L9-L10 can be restarted at `y`.
 
 If `tau_y` denotes the coefficient stopping time measured from `y`, a restart requires both
 
-\[
+$$
 \tau_y<\infty
-\]
+$$
 
 and, to obtain another nonnegative L10 defect relative to `y`,
 
-\[
+$$
 T^{\tau_y}(y)\ge y.
-\]
+$$
 
 Minimality supplies only
 
-\[
+$$
 T^k(y)\ge n_*,
-\]
+$$
 
 not `T^k(y)>=y`, and it does not imply `tau_y<infinity`.  A local contraction landing in `[n_*,y)` decreases the excess above the immutable minimum but is not a contradiction.
 
@@ -89,19 +89,19 @@ The first L5 theorem claimed that eventual affine smallness requires inverse-fam
 
 The exact witness is
 
-\[
+$$
 N(x)=8x+5,
 \qquad
 T^3(N(x))=3x+2,
-\]
+$$
 
 and the inverse word `OEE` gives
 
-\[
+$$
 m(x)=8x+4,
 \qquad
 T^3(m(x))=3x+2.
-\]
+$$
 
 Thus `0<m(x)<N(x)` for every `x>=0`, although both affine families have leading coefficient `8`.
 
@@ -118,31 +118,31 @@ The corrected global class bound is therefore `|w|<=t`, and the classifier must 
 
 For
 
-\[
+$$
 M_K(x)=2^K(x+1)-1,
-\]
+$$
 
 every uniform forward state is
 
-\[
+$$
 T^t(M_K(x))=2^{K-t}3^t(x+1)-1,
 \qquad 0\le t\le K.
-\]
+$$
 
 An arbitrary uniformly admissible inverse word with `e` even inverses and `r` odd inverses has leading-coefficient ratio
 
-\[
+$$
 \frac{A_w}{2^K}
 =2^e\left(\frac32\right)^{t-r}\ge1,
-\]
+$$
 
 because uniform admissibility forces `r<=t`.  Equality forces `e=0`, `r=t`, and hence `w=O^t`, which reconstructs `M_K` exactly with the same intercept.
 
 Consequently no word in the full unrefined L4/L5 class can reduce any Mersenne cylinder, at any inverse depth.  This converts a persistent numerical miss into a symbolic certificate-class no-go.  The exact refinement
 
-\[
+$$
 M_K(2y+1)=M_{K+1}(y)
-\]
+$$
 
 shows why Route AB now needs parameter refinement plus an explicit positive-boundary rank; searching the same unrefined inverse-word class deeper cannot help.
 
@@ -152,21 +152,21 @@ See `proof-search/routes/AB_mersenne_inverse_word_no_go.md`.
 
 When `d>0` and both `n` and `n+d` are L6 hard-exit states, put
 
-\[
+$$
 q=v_2(n+1),\qquad q'=v_2(n+d+1),\qquad e=v_2(d).
-\]
+$$
 
 Elementary 2-adic subtraction proves
 
-\[
+$$
 q\ne q'\Longrightarrow e=\min(q,q'),
-\]
+$$
 
 whereas
 
-\[
+$$
 q=q'\Longrightarrow e\ge q+2.
-\]
+$$
 
 The exact odd part of `d` modulo four is also fixed in both unequal-valuation directions.  At the first Farey frontier, L10 gives `d<=24,019,143,996<2^35`.  Therefore a positive-gap survivor has
 

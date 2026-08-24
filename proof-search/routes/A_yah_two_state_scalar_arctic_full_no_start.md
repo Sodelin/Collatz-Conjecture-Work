@@ -37,16 +37,16 @@ semantic labeling reflects top termination is needed here.
 
 The arctic-natural carrier is
 
-\[
+$$
 \mathbb A_{\mathbb N}=\mathbb N\cup\{-\infty\},\qquad
 a\oplus b=\max(a,b),\qquad a\otimes b=a+b.
-\]
+$$
 
 In the standard extended class used by YAH, a dimension-one token has
 
-\[
+$$
 [s](x)=m_s+x,\qquad m_s\in\mathbb N,
-\]
+$$
 
 and its constant is `-infinity`. A word coefficient is therefore the ordinary
 sum of its symbol coefficients. If `Delta_i` is the left-minus-right symbol
@@ -62,9 +62,9 @@ X_t0=3, X_t1=4, X_t2=4, X_^0=3, X_^1=2, X_^2=2.
 
 They have total mass 49 and satisfy
 
-\[
+$$
 \sum_i \lambda_i\Delta_i=0
-\]
+$$
 
 in every unlabelled symbol coordinate. Hence every weak delta is zero and no
 original rule can be strict.
@@ -79,10 +79,10 @@ is a finite coefficient search.
 
 In the weakly monotone scalar class, a labeled token is
 
-\[
+$$
 [s](x)=\max(m_s+x,v_s),\qquad
 m_s,v_s\in\mathbb N\cup\{-\infty\},
-\]
+$$
 
 with at least one of `m_s,v_s` finite. Word composition produces a slope and
 the maximum of finitely many prefix-plus-intercept terms.
@@ -94,7 +94,7 @@ and reversed labeled instances. For each of the ten targets it expands:
 - the exact word slope and every possible intercept-max term;
 - coefficientwise weak comparison for every rule; and
 - coefficientwise arctic strict comparison for the target, including the
-  convention `-infinity` \(\gg\) `-infinity`.
+  convention `-infinity` $\gg$ `-infinity`.
 
 Natural strictness is first encoded exactly as an integer gap of at least one.
 Each resulting branch is then relaxed from nonnegative natural coefficients

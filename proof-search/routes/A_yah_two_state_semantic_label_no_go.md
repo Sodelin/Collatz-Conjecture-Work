@@ -7,9 +7,9 @@ classes
 Use the eleven-rule mixed binary/ternary string-rewriting system of Yolcu,
 Aaronson, and Heule (YAH), on canonical strings
 
-\[
+$$
 {}^\wedge w\$,\qquad w\in\{f,t,0,1,2\}^*.
-\]
+$$
 
 Its dynamic rules are
 

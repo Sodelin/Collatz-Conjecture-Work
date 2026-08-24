@@ -10,27 +10,27 @@
 
 The first committed version asserted that a successful affine reduction must have
 
-\[
+$$
 A_w<2^K.
-\]
+$$
 
 That necessity claim was false.  If `A_w=2^K` and the inverse-family intercept is smaller than the original intercept, then the two families are parallel and the inverse family is still strictly smaller for every parameter.
 
 The smallest concrete witness found by the hostile audit is
 
-\[
+$$
 N(x)=8x+5,
 \qquad
 T^3(N(x))=3x+2.
-\]
+$$
 
 The inverse word `OEE` gives
 
-\[
+$$
 m(x)=8x+4,
 \qquad
 T^3(m(x))=3x+2,
-\]
+$$
 
 so `0<m(x)<N(x)` for every `x>=0` even though the two leading coefficients are equal.  The old bound `|w|<=t-1` excluded this valid certificate.
 
@@ -40,42 +40,42 @@ The corrected theorem below proves that this is the only additional coefficient 
 
 Use the accelerated Collatz map
 
-\[
+$$
 T(n)=\begin{cases}
 n/2,&n\text{ even},\\
 (3n+1)/2,&n\text{ odd}.
 \end{cases}
-\]
+$$
 
 Fix an odd binary cylinder
 
-\[
+$$
 N(x)=2^Kx+R.
-\]
+$$
 
 After a uniform prefix of `t` accelerated steps, suppose `s` of those steps were odd branches. Then the exact affine state has the form
 
-\[
+$$
 \boxed{
 Y(x)=T^t(N(x))=2^{K-t}3^s x+B.
 }\tag{1}
-\]
+$$
 
 This follows because each accelerated step consumes one factor of two from the leading coefficient; an odd step also contributes one factor of three.
 
 Now apply an admissible inverse word
 
-\[
+$$
 w\in\{E,O\}^j,
-\]
+$$
 
 where
 
-\[
+$$
 E(y)=2y,
 \qquad
 O(y)=\frac{2y-1}{3}
-\]
+$$
 
 and every `O` is required to be uniformly valid for the entire affine family at the point where it occurs.
 
@@ -87,41 +87,41 @@ Let
 
 Because a uniform `O` requires the current leading coefficient to remain divisible by three,
 
-\[
+$$
 \boxed{r\le s.}\tag{2}
-\]
+$$
 
 ## 2. Exact leading coefficient and eventual-smaller criterion
 
 Each `E` multiplies the leading coefficient by `2`; each `O` multiplies it by `2/3`. Therefore the coalescing inverse family
 
-\[
+$$
 m_w(x)
-\]
+$$
 
 has leading coefficient
 
-\[
+$$
 \boxed{
 A_w=2^{K-t+e+r}3^{s-r}.
 }\tag{3}
-\]
+$$
 
 A complete coefficient/intercept criterion for
 
-\[
+$$
 0<m_w(x)<N(x)
-\]
+$$
 
 for all sufficiently large `x` is:
 
-\[
+$$
 \boxed{
 A_w<2^K
 \quad\text{or}\quad
 \bigl(A_w=2^K\ \text{and}\ B_w<R\bigr),
 }\tag{4}
-\]
+$$
 
 where `m_w(x)=A_w x+B_w`.  Positivity supplies only the usual finite lower threshold because every inverse-family leading coefficient here is positive.
 
@@ -131,37 +131,37 @@ Indeed, if `A_w>2^K`, then `m_w(x)-N(x)` is eventually positive.  If the coeffic
 
 First assume the strict branch of (4):
 
-\[
+$$
 A_w<2^K.
-\]
+$$
 
 Since `3>=2`,
 
-\[
+$$
 3^{s-r}\ge2^{s-r}.
-\]
+$$
 
 Using (3),
 
-\[
+$$
 A_w
 \ge
 2^{K-t+e+r}2^{s-r}
 =
 2^{K-t+e+s}.
-\]
+$$
 
 If `A_w<2^K`, then necessarily
 
-\[
+$$
 K-t+e+s<K,
-\]
+$$
 
 hence
 
-\[
+$$
 \boxed{e<t-s.}\tag{5}
-\]
+$$
 
 But `t-s` is exactly the number of **even forward branches** in the prefix.
 
@@ -175,67 +175,67 @@ This is an exact arithmetic restriction, not a heuristic search bound.
 
 Combining
 
-\[
+$$
 e\le t-s-1
-\]
+$$
 
 with
 
-\[
+$$
 r\le s,
-\]
+$$
 
 we get
 
-\[
+$$
 j=e+r
 \le(t-s-1)+s
 =t-1.
-\]
+$$
 
 Therefore every strict-slope certificate satisfies
 
-\[
+$$
 \boxed{|w|\le t-1}.\tag{6}
-\]
+$$
 
 ## 5. Equal-slope classification
 
 Now suppose
 
-\[
+$$
 A_w=2^K.
-\]
+$$
 
 Using (3) and unique factorization,
 
-\[
+$$
 2^{K-t+e+r}3^{s-r}=2^K
-\]
+$$
 
 is possible exactly when the remaining power of three disappears,
 
-\[
+$$
 r=s,
-\]
+$$
 
 and the powers of two then agree,
 
-\[
+$$
 e=t-s.
-\]
+$$
 
 Conversely these two count equalities give `A_w=2^K`.  Thus an equal-slope candidate must use exactly all `s` available odd inverses and exactly as many even inverses as the forward prefix used even branches.  In particular,
 
-\[
+$$
 \boxed{|w|=e+r=t.}\tag{7}
-\]
+$$
 
 It is a genuine reduction exactly when its intercept satisfies
 
-\[
+$$
 \boxed{B_w<R.}\tag{8}
-\]
+$$
 
 The `8x+5 -> 8x+4` witness in Section 0 is this case with `t=3`, `s=1`, `r=1`, and `e=2`.
 
@@ -252,15 +252,15 @@ No successful certificate in this class can occur at inverse depth greater than 
 
 Taking all forward times
 
-\[
+$$
 1\le t\le K
-\]
+$$
 
 makes inverse depth at most
 
-\[
+$$
 K.
-\]
+$$
 
 Thus the arbitrary `max_inverse_depth` used in the first Round-7 diagnostics can be replaced by an exact finite exhaustive search for each fixed binary cylinder.
 
