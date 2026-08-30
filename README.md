@@ -16,6 +16,22 @@ and reopening conditions, use the [research atlas](ATLAS.md). It is portable
 between GitHub and Obsidian and does not duplicate the canonical status
 registries.
 
+## Research control and shared-bank boundary
+
+[Collatz Orchestrator V4](prompts/COLLATZ_ORCHESTRATOR_V4.md) composes the PIR
+V2 harness, Evidence-Gated Discovery Control 0.1.0, Bounded-Capacity Portfolio
+Control 0.1.0, and non-waivable Collatz arithmetic/formalization gates. Its
+[machine-readable profile](prompts/COLLATZ_EGDC_PROFILE.json) pins imports and
+keeps typed outcomes separate from termination reasons.
+
+This repository remains authoritative for mutable Collatz mathematics, route
+and claim status, Lean source, verification artifacts, and corrections. The
+shared research bank may receive only immutable source-bound snapshots and
+annotations under the [bank boundary](methodology/RESEARCH_OBJECT_BANK_BOUNDARY.md)
+and [source-side export manifest](research-objects/BANK_EXPORT_MANIFEST.json).
+The [source synthesis](methodology/AI_ASSISTED_DISCOVERY_CONTROL_SOURCE_SYNTHESIS_2026-08-30.md)
+records why the new controls were added and their evidence limits.
+
 ## The two-minute map
 
 The project contains three logically different kinds of statement. Keeping
@@ -77,6 +93,9 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 Read [CONTINUATION.md](CONTINUATION.md). The live mathematical frontier is
 Round 8; older Round 6/7 files are retained as historical branches and may
 contain superseded route language.
+
+Use the V4 prompt/profile for new controlled cycles. The V4 methodology changes
+research control only; it does not alter any mathematical or release status.
 
 ## What is formally checked
 

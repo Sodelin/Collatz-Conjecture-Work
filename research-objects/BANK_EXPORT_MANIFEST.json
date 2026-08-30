@@ -1,0 +1,84 @@
+{
+  "manifest_schema": "research-bank-source-export/1.0",
+  "manifest_id": "collatz.bank-export/2026-08-30",
+  "source_repository": "Sodelin/Collatz-Conjecture-Work",
+  "source_commit": "2e7eae2bb998b14e5443e6c440154130a0049467",
+  "mutable_source_owner": "Sodelin/Collatz-Conjecture-Work",
+  "bank_role": "immutable source-bound snapshots and annotations",
+  "bank_may_promote_source_status": false,
+  "created_at": "2026-08-30",
+  "objects": [
+    {
+      "object_id": "collatz.endpoint/global-descent-equivalence",
+      "object_type": "lemma",
+      "origin_path": "proof-search/lemmas/L0_Global_Descent_Equivalence.md",
+      "digest_algorithm": "sha256",
+      "digest": "26398b48174e67f61b36353dca96997b379990fa771777177cf59adbd5993f5e",
+      "scope": "Canonical global-descent endpoint and its relation to ordinary positive-integer Collatz dynamics.",
+      "status_at_snapshot": "accepted project endpoint; not a proof of the endpoint",
+      "verification_boundary": {
+        "establishes": ["the frozen project target and equivalence interface as stated in the source note"],
+        "does_not_establish": ["global descent", "Collatz convergence"]
+      },
+      "mutable_in_bank": false
+    },
+    {
+      "object_id": "collatz.round6a/positive-shadow-review-note",
+      "object_type": "theorem-candidate-source",
+      "origin_path": "papers/round-6a/Theorem_6A1_Public_Review_Note.md",
+      "digest_algorithm": "sha256",
+      "digest": "8da1589428fb97259489574952024cd055eed146e7d5db24ebe35f630fc5b56b",
+      "scope": "Round 6A corrected-log and rational-period positive-shadow source note.",
+      "status_at_snapshot": "self-contained unreviewed derivation; external review and Lean formalization absent",
+      "verification_boundary": {
+        "establishes": ["source-bound statement and derivation for review"],
+        "does_not_establish": ["Collatz convergence", "novelty", "external certification"]
+      },
+      "mutable_in_bank": false
+    },
+    {
+      "object_id": "collatz.route-b/residue-coalescence-route",
+      "object_type": "route",
+      "origin_path": "proof-search/routes/B_recursive_residue_graph.md",
+      "digest_algorithm": "sha256",
+      "digest": "aab006d6b7680ab694080d7dfe8c414d4c80ad73bdea87863d4a635ba4d9604c",
+      "scope": "Recursive residue/coalescence certificate route and its unresolved global-coverage obligations.",
+      "status_at_snapshot": "route specification; no global certificate",
+      "verification_boundary": {
+        "establishes": ["the route's source-bound proposal and stated obligations"],
+        "does_not_establish": ["complete residue coverage", "a universal finite-to-Collatz bridge", "Collatz convergence"]
+      },
+      "mutable_in_bank": false
+    },
+    {
+      "object_id": "collatz.lean/verification-policy",
+      "object_type": "lean-policy",
+      "origin_path": "lean/VERIFICATION_POLICY.md",
+      "digest_algorithm": "sha256",
+      "digest": "061a88a0957002a7f47509b7cdb2634962c4721dda9474e584bf08d1336fc7de",
+      "scope": "Hardened Lean trust, build, axiom, and semantic-review requirements.",
+      "status_at_snapshot": "active repository policy",
+      "verification_boundary": {
+        "establishes": ["the policy text at the pinned source commit"],
+        "does_not_establish": ["that any particular theorem passed the policy"]
+      },
+      "mutable_in_bank": false
+    },
+    {
+      "object_id": "collatz.memory/portable-note-graph-standard",
+      "object_type": "methodology",
+      "origin_path": "methodology/NOTE_GRAPH_STANDARD.md",
+      "digest_algorithm": "sha256",
+      "digest": "76886d5330df740cf4c68561709537e438858dfc4e7848e0eee6cfd42371d721",
+      "scope": "Portable stable IDs, typed links, canonical status ownership, and graph-delta handoff rules.",
+      "status_at_snapshot": "active repository standard",
+      "verification_boundary": {
+        "establishes": ["the navigation and handoff convention"],
+        "does_not_establish": ["mathematical correctness", "citation correctness", "novelty", "graph optimality"]
+      },
+      "mutable_in_bank": false
+    }
+  ],
+  "future_export_rule": "New or revised objects require a new source commit, content digest, status-at-snapshot, verification boundary, license review, and supersession link. They must not be inserted by mutating this historical manifest.",
+  "source_boundary": "methodology/RESEARCH_OBJECT_BANK_BOUNDARY.md"
+}
