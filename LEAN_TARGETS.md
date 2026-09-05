@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **three narrow Lean formalizations**. It does not
+The repository contains **four narrow Lean formalizations**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,8 +13,20 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) imports the first
-two modules. The two-pump module must also be compiled directly.
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all four
+proof modules, including the two-pump module and
+[`Convergence.lean`](lean/CollatzWork/Convergence.lean).
+
+The new convergence module proves finite-prefix and coalescence invariance,
+the all-positive smaller-coalescence and direct-descent equivalences, and
+strong-induction applicability of the compatible child. The
+[trusted statements](lean/CollatzWork/ConvergenceStatement.lean) import no
+solution proofs. The universal certificate premises remain unproved.
+[Official Lean 4.33.1 CI](https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33965738739)
+passed commit `192e62b707205ae6181212eeb25ee304f6b12c71`; its nine new
+axiom reports use only `propext`, `Quot.sound`, and (where inherited from the
+existing arithmetic lemma) `Classical.choice`.
+L15's phase theorem and the frozen-debt polynomial no-go remain unformalized.
 
 ```powershell
 lake build

@@ -36,7 +36,7 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all four proof modules: `InverseWordBoundary`, `RefinedMersenneChild`, `Convergence`, and `Disproof.TwoPumpDependency`. The August baseline had imported only the first two. |
 
 All eight commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
@@ -101,3 +101,19 @@ These commands have committed outputs, but they were not all rerun in the
   implementation and its bounded result may be cited.
 - The project verification policy is
   [`lean/VERIFICATION_POLICY.md`](../lean/VERIFICATION_POLICY.md).
+
+## 2026-09-05 contribution checks
+
+| Claim | Command / evidence | Scope |
+|---|---|---|
+| `L15-QUARTER-GAP` | `python -B verification/near_return_quarter_bound.py`; [retained output](near_return_quarter_bound_output_2026-09-05.txt) | Exact phase-maxima certificate and 107 base inequalities supporting the universal prose argument; not a finite orbit extrapolation or Lean proof. |
+| `AB-FROZEN-DEBT-001` | `python -B verification/hard_return_frozen_debt_check.py`; [retained output](hard_return_frozen_debt_output_2026-09-05.txt) | Symbolic affine guards/factors for the universal family, plus 1,003 direct replay regressions. The general polynomial consequence is proved in prose. |
+| `L0-COALESCENCE-LEAN` | `lake build` and `lake env lean lean/CollatzWork/Convergence.lean`; [retained CI axiom log](lean_convergence_ci_2026-09-05.txt) | Exact shortcut-map convergence/coalescence criteria and compatible-child induction rule; no universal certificate or Collatz proof. |
+
+The [research pass](../ASTRA_RESEARCH_PASS_2026-09-05.md) records independent
+review scopes, runtime limitations, source comparison, and recovery. Python
+checks passed with Python 3.12.13; formal checking passed on the standard
+GitHub Linux runner using the unchanged pinned Lean 4.33.1 release.
+The [workflow](../.github/workflows/verify.yml) repeats these checks for pushes
+and pull requests. A configured workflow is not a pass: inspect the actual
+run and source commit when reviewing later changes.

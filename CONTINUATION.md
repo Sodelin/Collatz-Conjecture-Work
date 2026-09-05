@@ -109,3 +109,21 @@ Provide:
 
 Do not spend a full search cycle unless the proposal names the old blocker and
 the genuinely new mechanism that bypasses it.
+
+## 2026-09-05 continuation delta
+
+Read the [reviewed research pass](ASTRA_RESEARCH_PASS_2026-09-05.md) before
+reopening these routes. L15 improves `d<s/3` to `d<s/4` and the existing
+conditional frontier to `17,340,869,984` with L11. This does not reduce L12's
+valuation ceiling or repair recursive renewal.
+
+F025 rules out arbitrary-degree polynomial ranks in the existing parameter,
+bitlength and debt variables, including coordinatewise lower-bounded finite
+lex tuples. The concrete family beginning `47771 -> 80615 -> 204059` must
+be a first falsification test for any proposed replacement.
+
+The exact next proof-search admission question is: what additional arithmetic
+state or stronger smaller-target relation distinguishes the frozen-debt
+endpoints? Without such a mechanism, keep Route AB blocked. Formalizing the
+new phase-block theorem is a bounded verification target, not a promised
+route to closure. The new convergence criteria already passed pinned Lean CI.

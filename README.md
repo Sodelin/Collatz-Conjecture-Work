@@ -1,5 +1,7 @@
 # Collatz Conjecture Work
 
+Latest reviewed contribution: [2026-09-05 research pass](ASTRA_RESEARCH_PASS_2026-09-05.md) — quarter-gap bound, broader rank obstruction, and checked convergence semantics. Collatz remains unresolved.
+
 An AI-assisted, adversarially audited research archive about exact Collatz
 arithmetic, proof-method obstructions, and reproducible verification artifacts.
 
@@ -39,7 +41,7 @@ them separate is the most important way to read the archive.
 
 | Kind | What has actually been established | What has **not** been established | Start here |
 |---|---|---|---|
-| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes and every standard first dimension-one arctic-natural step for the original YAH system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out higher-dimensional interpretations, different carriers or labels, transformed/non-coefficientwise orders, nonlinear ranks, parameter refinement, or Collatz itself. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
+| **Solved route-class obstruction** | Exact certificates rule out particular proposed mechanisms: two additive potential classes and every standard first dimension-one arctic-natural step for the original YAH system, one unrefined Mersenne inverse-word class, simple affine hard-state ranks, and cyclic-rotation-only two-pump elimination. | These results do not rule out higher-dimensional interpretations, different carriers or labels, transformed/non-coefficientwise orders, all nonpolynomial/additional-state ranks, parameter refinement, or Collatz itself. The new frozen-debt result also excludes the stated polynomial size/debt ranks. | [Claim registry](proof-search/CLAIM_REGISTRY.md#highest-value-external-review-targets) |
 | **Collatz-equivalent reformulation** | Global descent, termination of the exact YAH system, and termination of the normalized hard-return map are each equivalent ways to state the remaining universal problem. | An equivalent reformulation is not progress unless it supplies a new well-founded mechanism. No such universal mechanism is known here. | [Hard return system](proof-search/routes/AB_hard_boundary_return_system.md) |
 | **Still-open universal claim** | The exact acceptance gates are explicit and the main failed shortcuts are indexed. | No proof covers every positive integer; no disproof witness meets the positivity and replay gates. | [Public status](PUBLIC_STATUS_2026-08-24.md) and [approach registry](proof-search/APPROACH_REGISTRY.md) |
 
@@ -99,14 +101,15 @@ research control only; it does not alter any mathematical or release status.
 
 ## What is formally checked
 
-The repository contains three narrow Lean developments:
+The repository contains four narrow Lean developments:
 
 - [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
 - [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
-- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean).
+- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean);
+- [convergence and induction semantics](lean/CollatzWork/Convergence.lean), with [trusted definitions](lean/CollatzWork/ConvergenceStatement.lean).
 
-The first two are included in the umbrella build. The two-pump module is
-compiled directly. A clean `lake build` does **not** formalize the full prose
+All four are included in the umbrella build, including the previously omitted
+two-pump module. A clean `lake build` does **not** formalize the full prose
 chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
 See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 

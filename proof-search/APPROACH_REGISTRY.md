@@ -190,3 +190,17 @@ Before starting a new route, answer:
 3. What exact old blocker does it bypass?
 
 If (2) or (3) has no answer, the route is probably a wording variant of an old branch and should not consume search budget.
+
+## 2026-09-05 scope update
+
+Route AB remains `BLOCKED_NO_MECHANISM`. The
+[frozen-debt obstruction](routes/AB_frozen_debt_size_rank_no_go.md) now excludes
+arbitrary-degree label-dependent polynomial size/debt ranks and finite lex
+tuples under the stated lower-bound hypotheses, strengthening the affine-only
+F023 boundary. Higher degree in the same features is not a reopening mechanism.
+
+Route D gains the [quarter-gap certificate](lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md)
+and a wider sufficient L11 inheritance band. The root, stopping-finiteness,
+zero-gap, and renewal obligations remain, so its route status is unchanged.
+The [formal convergence criteria](../lean/CollatzWork/Convergence.lean) verify
+certificate semantics without constructing a universal certificate.

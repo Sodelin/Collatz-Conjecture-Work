@@ -198,3 +198,9 @@ must not override the current registries.
 
 If a proposal cannot name the old blocker and the new mechanism that bypasses
 it, it belongs in the failure ledger rather than a new route.
+
+## 2026-09-05 additions
+
+- [L15 rotation-block / quarter-gap certificate](proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md) strengthens L10 and feeds L11/L12.
+- [Frozen-debt rank obstruction](proof-search/routes/AB_frozen_debt_size_rank_no_go.md) strengthens F023 and blocks polynomial versions of Route AB.
+- [Research pass and independent audit](ASTRA_RESEARCH_PASS_2026-09-05.md) records exact verification and source roles.

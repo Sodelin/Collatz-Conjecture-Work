@@ -36,3 +36,7 @@ jobs:
           python3 -B verification/trajectory_normal_form_regression.py
           python3 -S -B verification/yah_scalar_arctic_top/verify_top_certificates.py
           python3 -B verification/check_note_graph.py
+      - name: Verify new arithmetic certificates
+        run: |
+          python3 -B verification/near_return_quarter_bound.py
+          python3 -B verification/hard_return_frozen_debt_check.py

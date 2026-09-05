@@ -380,3 +380,10 @@ Formalize:
    separately to be the vacuous modulus-one case.
 
 These are finite arithmetic statements once L9's affine prefix theorem is available.
+
+## 2026-09-05 sharpening
+
+[ L15's quarter-gap certificate](L15_Quarter_Gap_and_Rotation_Block_Certificate.md)
+strengthens the gap estimate to `4d<s` and the sufficient inheritance condition
+to `3*floor((s-1)/4)+1<n_*`. The original argument remains valid as a weaker
+historical bound; its renewal and stopping-time limitations remain.

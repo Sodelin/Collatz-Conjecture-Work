@@ -54,10 +54,19 @@ remain preserved as historical branch checkpoints.
 
 ## Formal status
 
-Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
+Four narrow Lean proof modules now exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
 proof-assistant formalization of the prose chain or Collatz does not exist.
 Novelty and priority for project-specific claims are not certified.
 
 The [note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) explains how to
 use the same files as a GitHub knowledge base or optional Obsidian vault without
 creating a second source of mathematical status.
+
+## Reviewed additions, 2026-09-05
+
+The [research pass](ASTRA_RESEARCH_PASS_2026-09-05.md) adds
+[L15's universal quarter-gap bound](proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md),
+the [frozen-debt polynomial-rank obstruction](proof-search/routes/AB_frozen_debt_size_rank_no_go.md),
+and Lean-checked convergence/coalescence semantics. These extend the baseline;
+the conjecture and Route-AB universal return obligation remain unresolved.
+The new mathematical notes are internally reconstructed, not externally peer reviewed.

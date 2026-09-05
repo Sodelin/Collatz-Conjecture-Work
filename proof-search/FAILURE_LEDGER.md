@@ -335,6 +335,23 @@ the current replay debt, so closure alone does not supply descent.
 hard return, or a new guarded macro coalesces with a uniformly smaller positive
 target. Renaming the return obligation is not progress.
 
+
+## F025 — higher-degree polynomial size/debt ranks rescue the hard return map
+
+**Class:** `FALSE` for the exact stated class.
+
+[AB-FROZEN-DEBT-001](routes/AB_frozen_debt_size_rank_no_go.md) gives the exact
+family `65536u+47771 -> 110592u+80615 -> 279936u+204059` for every `u>=0`.
+The endpoints have the same `(L,epsilon,D,R)=(2,1,2,0)`, and parameter/size
+grows by more than fourfold. This excludes all lower-bounded label-dependent
+polynomials in parameter, bitlength, D and R, of arbitrary finite degree,
+and finite lex tuples when every coordinate is lower bounded.
+
+**Reopen only if:** the proposed rank uses additional arithmetic information,
+nonpolynomial behavior outside the proved obstruction, or a stronger smaller-target
+coalescence relation. It must distinguish or validly bypass this exact family.
+This strengthens F023 without excluding all nonlinear ranks or proving divergence.
+
 ---
 
 # Reopening template

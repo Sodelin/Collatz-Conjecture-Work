@@ -1,0 +1,38 @@
+Pinned Lean convergence verification
+Source commit: 192e62b707205ae6181212eeb25ee304f6b12c71
+Run: https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33965738739
+Job: 101305431682
+Selected version/build/axiom lines from the successful official runner:
+
+2026-09-05T12:20:17.9969743Z Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-09-05T12:20:19.8703385Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:174:0: 'CollatzWork.Disproof.twoPumpCoefficientDependencies' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:19.8717245Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:175:0: 'CollatzWork.Disproof.firstRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:19.8742520Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:176:0: 'CollatzWork.Disproof.secondRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:19.8745361Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:177:0: 'CollatzWork.Disproof.twoPumpConstantObstructionVanishes' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:19.8783416Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:178:0: 'CollatzWork.Disproof.twoPumpSyzygy' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:20.0681909Z info: lean/CollatzWork/InverseWordBoundary.lean:49:0: 'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+2026-09-05T12:20:20.0684096Z info: lean/CollatzWork/InverseWordBoundary.lean:50:0: 'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.3678293Z info: lean/CollatzWork/RefinedMersenneChild.lean:238:0: 'CollatzWork.refinedChild_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T12:20:21.3680763Z info: lean/CollatzWork/RefinedMersenneChild.lean:239:0: 'CollatzWork.refinedParent_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.3682689Z info: lean/CollatzWork/RefinedMersenneChild.lean:240:0: 'CollatzWork.refinedChild_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.3684762Z info: lean/CollatzWork/RefinedMersenneChild.lean:241:0: 'CollatzWork.refinedMersenneChild_coalesces' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.8684498Z info: lean/CollatzWork/Convergence.lean:142:0: 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T12:20:21.8686449Z info: lean/CollatzWork/Convergence.lean:143:0: 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T12:20:21.8688303Z info: lean/CollatzWork/Convergence.lean:144:0: 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T12:20:21.8690861Z info: lean/CollatzWork/Convergence.lean:145:0: 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.8712585Z info: lean/CollatzWork/Convergence.lean:146:0: 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.8722366Z info: lean/CollatzWork/Convergence.lean:147:0: 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.8724303Z info: lean/CollatzWork/Convergence.lean:148:0: 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:21.8727142Z info: lean/CollatzWork/Convergence.lean:149:0: 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T12:20:21.8729556Z info: lean/CollatzWork/Convergence.lean:150:0: 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T12:20:22.2683821Z Build completed successfully (9 jobs).
+2026-09-05T12:20:22.7364208Z 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T12:20:22.7365211Z 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T12:20:22.7366220Z 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T12:20:22.7367538Z 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:22.7368826Z 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:22.7369830Z 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:22.7371243Z 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T12:20:22.7372565Z 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T12:20:22.7373978Z 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+

@@ -221,3 +221,17 @@ See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
 computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the three existing
 narrow Lean modules and the unformalized theorem chain.
+
+## Reviewed additions from the 2026-09-05 pass
+
+Input commit: `343ddb2cbfadb91af65328f2614c572dc91a2d69`.
+These rows extend the older baseline without promoting Collatz or certifying novelty.
+
+| ID | Exact scope | Grades | Evidence | Limitation |
+|---|---|---|---|---|
+| `L15-QUARTER-GAP` | Every non-descending first coefficient contraction with odd count s has `4d<s`; exact arbitrary-phase block certificates sharpen the conditional frontier bound. | `C2 V2 I2 N1 R1` | [L15 proof](lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md), [checker](../verification/near_return_quarter_bound.py), independent reconstruction. | L9/phase analysis not Lean-formalized; no stopping-finiteness, renewal, or cycle exclusion. |
+| `AB-FROZEN-DEBT-001` | Explicit two-return family freezes label/debt while size grows; rules out lower-bounded label-dependent polynomials in z, bitlength, D, R, and finite lex tuples with coordinatewise lower bounds. | `C2 V2 I3 N1 R1` | [Proof](routes/AB_frozen_debt_size_rank_no_go.md), [checker](../verification/hard_return_frozen_debt_check.py), independent mixed-polynomial review. | Does not exclude every nonlinear/nonpolynomial/additional-state rank; not Lean-formalized. |
+| `L0-COALESCENCE-LEAN` | For the exact shortcut map, all-positive convergence is equivalent to universal smaller coalescence and all-start descent; local compatible-child induction is justified. | `C3 V3 I2 N0 R1` | [Trusted definitions](../lean/CollatzWork/ConvergenceStatement.lean), [proof](../lean/CollatzWork/Convergence.lean), [CI log](../verification/lean_convergence_ci_2026-09-05.txt). | Universal premises remain unproved; the original odd-only L0 prose statement is not silently relabeled as fully formalized. |
+
+See [the research pass](../ASTRA_RESEARCH_PASS_2026-09-05.md) for process and
+inference audits. No entry is externally peer-reviewed or resolution-level.

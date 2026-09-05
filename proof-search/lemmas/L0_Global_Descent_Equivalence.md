@@ -126,3 +126,13 @@ This should be the project's trusted top-level interface: later search code can 
 ## 7. Kill test
 
 Any proposed “bridge lemma” should be tested by deleting its explanatory prose and asking whether its conclusion alone actually implies `GlobalDescent`. If not, record the remaining exact theorem-strength gap rather than describing the route as “close to Collatz.”
+
+## Formal companion, 2026-09-05
+
+The [trusted convergence statements](../../lean/CollatzWork/ConvergenceStatement.lean)
+and [checked solution](../../lean/CollatzWork/Convergence.lean) formalize the
+all-positive shortcut-map descent and smaller-coalescence equivalences.
+They also connect the compatible Mersenne child to strong induction.
+This is a precisely scoped companion, not a claim that every map-equivalence
+or odd-only statement in this prose note was formalized. See the
+[Lean boundary](../../LEAN_TARGETS.md) and [CI log](../../verification/lean_convergence_ci_2026-09-05.txt).

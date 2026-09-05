@@ -313,3 +313,10 @@ Formalize:
 5. both L6 good-exit contradictions below `n_*`;
 6. inherited hard condition (11)-(12);
 7. `4 | d`.
+
+## 2026-09-05 sharpening
+
+[ L15's quarter-gap certificate](L15_Quarter_Gap_and_Rotation_Block_Certificate.md)
+strengthens the gap estimate to `4d<s` and the sufficient inheritance condition
+to `3*floor((s-1)/4)+1<n_*`. The original argument remains valid as a weaker
+historical bound; its renewal and stopping-time limitations remain.
