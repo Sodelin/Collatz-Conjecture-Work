@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **four narrow Lean formalizations**. It does not
+The repository contains **nine Lean proof modules**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,7 +13,7 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all four
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all nine
 proof modules, including the two-pump module and
 [`Convergence.lean`](lean/CollatzWork/Convergence.lean).
 
@@ -26,7 +26,9 @@ solution proofs. The universal certificate premises remain unproved.
 passed commit `192e62b707205ae6181212eeb25ee304f6b12c71`; its nine new
 axiom reports use only `propext`, `Quot.sound`, and (where inherited from the
 existing arithmetic lemma) `Classical.choice`.
-L15's phase theorem and the frozen-debt polynomial no-go remain unformalized.
+The universal L15 quarter-gap theorem is now fully formalized through the
+integer certificate path. The general arbitrary-block real-phase theorem,
+1024-block refinement and polynomial no-go proofs retain separate status.
 
 ```powershell
 lake build
@@ -88,7 +90,9 @@ The current Python checker is diagnostic and cannot replace these proofs.
 
 ### 5. L0–L12 prose chain
 
-Formalize bounded arithmetic lemmas before importing external results. L7/L8
+The actual-orbit affine identity, mechanical envelope, exact first crossing
+time, and universal third/quarter gap are now checked. Formalize remaining
+bounded arithmetic lemmas before importing external results. L7/L8
 must expose verified-range and Rozier–Terracol statements as named hypotheses
 until independently imported. L11 must retain the immutable-root limitation;
 do not formalize the superseded renewal inference.
@@ -101,3 +105,18 @@ assumptions, and keep semantic/source review separate from kernel checking.
 
 A successful build verifies the declarations it compiles. It does not certify
 novelty, public priority, omitted prose, or the Collatz conjecture.
+
+
+## Completed universal arithmetic chain, third pass
+
+| Added proof module | Exact checked result |
+|---|---|
+| [QuarterGap](lean/CollatzWork/QuarterGap.lean) | Actual-orbit affine identity, universal mechanical upper envelope, general certificate soundness and the small finite certificate. |
+| [FirstContraction](lean/CollatzWork/FirstContraction.lean) | Exact first crossing time and universal old third-gap bound. |
+| [FloorPower](lean/CollatzWork/FloorPower.lean) | Exact two-bin dyadic scaling, expressed only with integers. |
+| [BlockArithmetic](lean/CollatzWork/BlockArithmetic.lean) | All twelve ordered threshold regions and the exact block upper bound. |
+| [QuarterGapUniversal](lean/CollatzWork/QuarterGapUniversal.lean) | Universal actual-orbit quarter gap; normalized envelope for all `s>=16`; exact failure at 15. |
+
+[Scope and provenance](verification/Quarter_Gap_Formal_Scope_2026-09-05.md)
+record the successful 17-job build and axiom audit. No first-contraction
+existence theorem or global termination premise was discharged.

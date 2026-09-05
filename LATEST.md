@@ -54,7 +54,7 @@ remain preserved as historical branch checkpoints.
 
 ## Formal status
 
-Four narrow Lean proof modules now exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
+Nine Lean proof modules now exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
 proof-assistant formalization of the prose chain or Collatz does not exist.
 Novelty and priority for project-specific claims are not certified.
 
@@ -77,3 +77,13 @@ a [primary-source bridge audit](proof-search/sources/Primary_Bridge_Audit_2026-0
 and a [bounded dimension 2 matrix search](verification/yah_natural_matrix_2d/README.md).
 None closes the conjecture. Their exact evidence and reopening conditions
 are integrated into the canonical registries.
+
+
+## Third-pass verified milestone
+
+The universal L15 `4d<s` theorem now has a complete integer Lean proof;
+the supporting normalized envelope holds sharply from s=16 onward.
+[Formal evidence](verification/Quarter_Gap_Formal_Scope_2026-09-05.md) and
+[the continuation](ASTRA_CONTINUATION_2026-09-05.md) also distinguish the
+working residue-20 normalizer, its unranked returns, and exact smaller-target
+escapes from the new scoped rank obstructions. No universal Collatz proof exists.

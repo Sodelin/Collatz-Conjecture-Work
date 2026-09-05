@@ -1,7 +1,9 @@
 # L15: exact rotation-block certificates and a quarter-gap bound
 
-**Status:** elementary proof with finite exact arithmetic certificate;
-independently reconstructed in this pass; Lean formalization pending.  
+**Status:** the universal quarter-gap theorem is Lean-verified; its exact
+integer proof also sharpens the supporting envelope threshold to 16.
+The general arbitrary-block phase theorem and 1024-block refinement retain
+their separate prose/exact-Python status.
 **Novelty:** unchecked; no priority claim. This is a project-specific tightening
 of L9/L10, using their classical parity-affine machinery.  
 **Scope:** auxiliary necessary condition; no proof or disproof of Collatz.
@@ -253,10 +255,14 @@ two frontier substitutions. The 1024-term improvement uses the same
 proved finite-candidate formula. It never assumes universal Collatz
 convergence or searches finitely many trajectories and extrapolates.
 
-Remaining trust boundary: ordinary prose analysis and exact Python
-arithmetic. Neither the phase theorem nor L9 is yet Lean-formalized.
-The finite certificate is small and independently reproducible; it is
-not being presented as a kernel-checked proof.
+The [completed integer formalization](../../verification/Quarter_Gap_Formal_Scope_2026-09-05.md)
+now checks the actual-orbit affine identity, mechanical upper envelope, exact
+crossing time, twelve-region certificate and universal quarter-gap conclusion.
+It proves `4*Cmax(s)<=s*3^s` for every `s>=16`, with a checked failure at
+`s=15`; thus 16 is the sharp eventual threshold for this normalized envelope.
+The proof above's threshold 108 remains valid but is weaker.
+The general real-phase theorem for arbitrary block length and the 1024-term
+conditional frontier calculation remain prose/exact-Python results.
 
 ## Connections
 

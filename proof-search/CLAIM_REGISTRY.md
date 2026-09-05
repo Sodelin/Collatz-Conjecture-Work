@@ -219,8 +219,8 @@ may be folklore or an immediate corollary.
 
 See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
-computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the four existing
-narrow Lean proof modules and the unformalized theorem chain.
+computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the nine existing
+Lean proof modules and the unformalized theorem chain.
 
 ## Reviewed additions from the 2026-09-05 pass
 
@@ -229,7 +229,7 @@ These rows extend the older baseline without promoting Collatz or certifying nov
 
 | ID | Exact scope | Grades | Evidence | Limitation |
 |---|---|---|---|---|
-| `L15-QUARTER-GAP` | Every non-descending first coefficient contraction with odd count s has `4d<s`; exact arbitrary-phase block certificates sharpen the conditional frontier bound. | `C2 V2 I2 N1 R1` | [L15 proof](lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md), [checker](../verification/near_return_quarter_bound.py), independent reconstruction. | L9/phase analysis not Lean-formalized; no stopping-finiteness, renewal, or cycle exclusion. |
+| `L15-QUARTER-GAP` | Every existing non-descending first coefficient contraction with odd count s has `4d<s`. | `C3 V3 I2 N1 R1` | [Trusted statement and complete kernel proof](../verification/Quarter_Gap_Formal_Scope_2026-09-05.md), exact independent reconstruction. | No stopping-finiteness, renewal or cycle exclusion. The separate 1024-block frontier refinement remains prose/exact Python. |
 | `AB-FROZEN-DEBT-001` | Explicit two-return family freezes label/debt while size grows; rules out lower-bounded label-dependent polynomials in z, bitlength, D, R, and finite lex tuples with coordinatewise lower bounds. | `C2 V2 I3 N1 R1` | [Proof](routes/AB_frozen_debt_size_rank_no_go.md), [checker](../verification/hard_return_frozen_debt_check.py), independent mixed-polynomial review. | Does not exclude every nonlinear/nonpolynomial/additional-state rank; not Lean-formalized. |
 | `L0-COALESCENCE-LEAN` | For the exact shortcut map, all-positive convergence is equivalent to universal smaller coalescence and all-start descent; local compatible-child induction is justified. | `C3 V3 I2 N0 R1` | [Trusted definitions](../lean/CollatzWork/ConvergenceStatement.lean), [proof](../lean/CollatzWork/Convergence.lean), [CI log](../verification/lean_convergence_ci_2026-09-05.txt). | Universal premises remain unproved; the original odd-only L0 prose statement is not silently relabeled as fully formalized. |
 
@@ -250,3 +250,18 @@ theorem: [exact encoding and outcomes](../verification/yah_natural_matrix_2d/REA
 The Dhiman–Pandey encoding limitation does not prohibit Route B's finite
 ranked graph; the [source audit](sources/Primary_Bridge_Audit_2026-09-05.md)
 supplies an explicit separating example.
+
+
+## Third continuation: verified arithmetic and scoped return mechanisms
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `L9-INTEGER-LEAN` | Actual-orbit affine identity, universal mechanical upper bound and exact first coefficient-crossing time. | `C3 V3 I2 N0 R1` | [Formal scope](../verification/Quarter_Gap_Formal_Scope_2026-09-05.md). Does not include all L9 extremizer/displacement claims. |
+| `L15-SIXTEEN-ENVELOPE` | `4*Cmax(s)<=s*3^s` for every s>=16, with exact failure at15 establishing the sharp eventual threshold. | `C3 V3 I2 N1 R1` | [Universal proof](../lean/CollatzWork/QuarterGapUniversal.lean); no priority claim or global-convergence consequence. |
+| `AB-FINITE-RESIDUE-001` | For every fixed modulus, expanding original-F paths freeze all stated endpoint data; excludes the specified polynomial/finite-lex ranks. | `C2 V2 I2 N1 R1` | [Proof](routes/AB_finite_residue_original_return_no_go.md). Applies to ranks on every original F edge, not arbitrary smaller-target strategies. |
+| `AB-CORE-RESIDUE-OBSTRUCTION-001` | Explicit expanding core and residue-20 return families freeze arbitrary fixed residue refinements; specified polynomial ranks fail. | `C2 V2 I2 N1 R1` | [Proof and exact smaller-target escapes](routes/AB_ternary_normalized_core_residue_obstruction.md). Further target selection removes these witnesses; no all-certificates claim. |
+| `B-MOD27-RANK-001` | A finite lexicographic rank stops every positive shortcut orbit at1,2,or20 mod27. | `C2 V2 I2 N0 R1` | [Explicit rank](sources/Sufficiency_Rank_Audit_2026-09-05.md), known Monks theorem reconstructed; no rank across20 returns. |
+| `AB-COMPOSITION-LOOP-001` | First return followed by decreasing inverse coalescence can loop:425 ->638 ->319 ->479 ->c425. | `C2 V2 I2 N0 R1` | [Exact cycle in the auxiliary system and clock audit](routes/AB_ternary_normalized_core_residue_obstruction.md). Final edge is inverse coalescence; this is not a Collatz cycle. |
+
+The [third-pass report](../ASTRA_CONTINUATION_2026-09-05.md) records proof
+scope, source roles, successful CI and explicit reopening conditions.

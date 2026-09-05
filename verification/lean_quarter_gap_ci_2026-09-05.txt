@@ -1,0 +1,111 @@
+Lean verification provenance — universal quarter gap
+
+Repository: Sodelin/Collatz-Conjecture-Work
+Source revision: b3b299e6acd5ac84fcaa640ae4158ac93adfdaad
+Workflow: Verify exact mathematics
+Run: https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33970405108
+Conclusion: success
+Toolchain: official unchanged Lean 4.33.1, archive checksum pinned in workflow.
+Scope: excerpt of the complete build and explicit axiom/type checks, retained verbatim.
+
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-09-05T13:58:14.5866990Z ✔ [2/17] Built CollatzWork.InverseWordBoundaryStatement (660ms)
+2026-09-05T13:58:15.3020146Z ✔ [3/17] Built CollatzWork.ConvergenceStatement (784ms)
+2026-09-05T13:58:16.0080784Z ℹ [4/17] Built CollatzWork.InverseWordBoundary (1.5s)
+2026-09-05T13:58:16.0082245Z info: lean/CollatzWork/InverseWordBoundary.lean:49:0: 'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+2026-09-05T13:58:16.0109575Z info: lean/CollatzWork/InverseWordBoundary.lean:50:0: 'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0169341Z ℹ [5/17] Built CollatzWork.Disproof.TwoPumpDependency (2.1s)
+2026-09-05T13:58:16.0253492Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:174:0: 'CollatzWork.Disproof.twoPumpCoefficientDependencies' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0309993Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:175:0: 'CollatzWork.Disproof.firstRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0339424Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:176:0: 'CollatzWork.Disproof.secondRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0369512Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:177:0: 'CollatzWork.Disproof.twoPumpConstantObstructionVanishes' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0429444Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:178:0: 'CollatzWork.Disproof.twoPumpSyzygy' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:16.0479156Z ✔ [6/17] Built CollatzWork.QuarterGapStatement (771ms)
+2026-09-05T13:58:16.8118339Z ✔ [7/17] Built CollatzWork.FirstContractionStatement (760ms)
+2026-09-05T13:58:17.0160062Z ✔ [8/17] Built CollatzWork.QuarterGapUniversalStatement (915ms)
+2026-09-05T13:58:17.7180031Z ⚠ [9/17] Built CollatzWork.BlockArithmetic (3.9s)
+2026-09-05T13:58:17.7209621Z warning: lean/CollatzWork/BlockArithmetic.lean:23:50: Variable name `hB` is not explicitly referenced.
+2026-09-05T13:58:17.7258513Z 
+2026-09-05T13:58:17.7298854Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-09-05T13:58:17.7300510Z   [apply] _hB
+2026-09-05T13:58:17.7300718Z 
+2026-09-05T13:58:17.7301094Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-09-05T13:58:17.7302361Z info: lean/CollatzWork/BlockArithmetic.lean:141:0: 'CollatzWork.blockNumerator12_exact_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:17.7303961Z info: lean/CollatzWork/BlockArithmetic.lean:142:0: 'CollatzWork.blockNumerator12_strict_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:17.7305472Z info: lean/CollatzWork/BlockArithmetic.lean:143:0: 'CollatzWork.blockNumerator12_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.2151932Z ℹ [10/17] Built CollatzWork.RefinedMersenneChild (2.2s)
+2026-09-05T13:58:18.2178071Z info: lean/CollatzWork/RefinedMersenneChild.lean:238:0: 'CollatzWork.refinedChild_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.2179833Z info: lean/CollatzWork/RefinedMersenneChild.lean:239:0: 'CollatzWork.refinedParent_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.2187734Z info: lean/CollatzWork/RefinedMersenneChild.lean:240:0: 'CollatzWork.refinedChild_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.2189944Z info: lean/CollatzWork/RefinedMersenneChild.lean:241:0: 'CollatzWork.refinedMersenneChild_coalesces' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.3180421Z ⚠ [11/17] Built CollatzWork.QuarterGap (1.5s)
+2026-09-05T13:58:18.3189077Z warning: lean/CollatzWork/QuarterGap.lean:49:49: This simp argument is unused:
+2026-09-05T13:58:18.3208498Z   Nat.mul_assoc
+2026-09-05T13:58:18.3228428Z 
+2026-09-05T13:58:18.3258461Z Hint: Omit it from the simp argument list.
+2026-09-05T13:58:18.3319106Z   [apply] simp [Nat.pow_succ, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm, Nat.add_assoc]
+2026-09-05T13:58:18.3348411Z 
+2026-09-05T13:58:18.3349917Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T13:58:18.3385184Z info: lean/CollatzWork/QuarterGap.lean:140:0: 'CollatzWork.orbitAffine' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.3409069Z info: lean/CollatzWork/QuarterGap.lean:141:0: 'CollatzWork.mechanicalEnvelope' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.3439178Z info: lean/CollatzWork/QuarterGap.lean:142:0: 'CollatzWork.affineQuarterCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.3442268Z info: lean/CollatzWork/QuarterGap.lean:143:0: 'CollatzWork.smallMechanicalCertificate' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.3469787Z info: lean/CollatzWork/QuarterGap.lean:144:0: 'CollatzWork.firstContraction_quarter_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.3499268Z info: lean/CollatzWork/QuarterGap.lean:145:0: 'CollatzWork.smallFirstContractionQuarterGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.7176977Z ℹ [12/17] Built CollatzWork.Convergence (561ms)
+2026-09-05T13:58:18.7249345Z info: lean/CollatzWork/Convergence.lean:142:0: 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T13:58:18.7279539Z info: lean/CollatzWork/Convergence.lean:143:0: 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T13:58:18.7281514Z info: lean/CollatzWork/Convergence.lean:144:0: 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T13:58:18.7299529Z info: lean/CollatzWork/Convergence.lean:145:0: 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.7324954Z info: lean/CollatzWork/Convergence.lean:146:0: 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.7330762Z info: lean/CollatzWork/Convergence.lean:147:0: 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.7332612Z info: lean/CollatzWork/Convergence.lean:148:0: 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.7335198Z info: lean/CollatzWork/Convergence.lean:149:0: 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.7337469Z info: lean/CollatzWork/Convergence.lean:150:0: 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:18.9168558Z ⚠ [13/17] Built CollatzWork.FloorPower (633ms)
+2026-09-05T13:58:18.9169189Z warning: lean/CollatzWork/FloorPower.lean:41:20: This simp argument is unused:
+2026-09-05T13:58:18.9169610Z   Nat.mul_left_comm
+2026-09-05T13:58:18.9169742Z 
+2026-09-05T13:58:18.9169868Z Hint: Omit it from the simp argument list.
+2026-09-05T13:58:18.9170263Z   [apply] simp only [Nat.pow_add, Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm]
+2026-09-05T13:58:18.9170553Z 
+2026-09-05T13:58:18.9170789Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T13:58:18.9171495Z info: lean/CollatzWork/FloorPower.lean:51:0: 'CollatzWork.floorPower_mul' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:18.9172284Z info: lean/CollatzWork/FloorPower.lean:52:0: 'CollatzWork.floorPower_mul_canonical' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.0171332Z ⚠ [14/17] Built CollatzWork.FirstContraction (672ms)
+2026-09-05T13:58:19.0172395Z warning: lean/CollatzWork/FirstContraction.lean:38:43: This simp argument is unused:
+2026-09-05T13:58:19.0173097Z   Nat.mul_add
+2026-09-05T13:58:19.0173277Z 
+2026-09-05T13:58:19.0173445Z Hint: Omit it from the simp argument list.
+2026-09-05T13:58:19.0174109Z   [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+2026-09-05T13:58:19.0174482Z 
+2026-09-05T13:58:19.0174701Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T13:58:19.0175259Z warning: lean/CollatzWork/FirstContraction.lean:38:56: This simp argument is unused:
+2026-09-05T13:58:19.0175713Z   Nat.mul_assoc
+2026-09-05T13:58:19.0175835Z 
+2026-09-05T13:58:19.0175952Z Hint: Omit it from the simp argument list.
+2026-09-05T13:58:19.0176363Z   [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm]
+2026-09-05T13:58:19.0176677Z 
+2026-09-05T13:58:19.0176898Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T13:58:19.0177597Z info: lean/CollatzWork/FirstContraction.lean:64:0: 'CollatzWork.firstContractionTime' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.0178757Z info: lean/CollatzWork/FirstContraction.lean:65:0: 'CollatzWork.mechanicalCoarseBound' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.0179712Z info: lean/CollatzWork/FirstContraction.lean:66:0: 'CollatzWork.firstContractionThirdGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:19.9172780Z ℹ [15/17] Built CollatzWork.QuarterGapUniversal (953ms)
+2026-09-05T13:58:19.9175560Z info: lean/CollatzWork/QuarterGapUniversal.lean:163:0: 'CollatzWork.mechanical_twelve_identity' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.9176873Z info: lean/CollatzWork/QuarterGapUniversal.lean:164:0: 'CollatzWork.mechanical_twelve_propagation' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.9178284Z info: lean/CollatzWork/QuarterGapUniversal.lean:165:0: 'CollatzWork.mechanical_large_base' does not depend on any axioms
+2026-09-05T13:58:19.9179341Z info: lean/CollatzWork/QuarterGapUniversal.lean:166:0: 'CollatzWork.mechanical_large_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.9180745Z info: lean/CollatzWork/QuarterGapUniversal.lean:167:0: 'CollatzWork.mechanical_fifteen_failure' does not depend on any axioms
+2026-09-05T13:58:19.9182361Z info: lean/CollatzWork/QuarterGapUniversal.lean:168:0: 'CollatzWork.universalMechanicalQuarterCertificate' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:19.9184168Z info: lean/CollatzWork/QuarterGapUniversal.lean:169:0: 'CollatzWork.firstContractionQuarterGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:20.3178579Z ✔ [16/17] Built CollatzWork (381ms)
+2026-09-05T13:58:20.3183358Z Build completed successfully (17 jobs).
+2026-09-05T13:58:20.7700485Z 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T13:58:20.7701507Z 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T13:58:20.7702411Z 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T13:58:20.7703346Z 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:20.7703990Z 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:20.7704536Z 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:20.7705075Z 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T13:58:20.7705811Z 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T13:58:20.7706575Z 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -42,3 +42,7 @@ jobs:
           python3 -B verification/hard_return_frozen_debt_check.py
           python3 -B verification/three_adic_hard_return_check.py
           python3 -B verification/primary_bridge_counterexamples.py
+          python3 -B verification/block_arithmetic_certificate.py
+          python3 -B verification/finite_residue_hard_return_check.py
+          python3 -B verification/core_residue_obstruction_check.py
+          python3 -B verification/mod27_rank_check.py

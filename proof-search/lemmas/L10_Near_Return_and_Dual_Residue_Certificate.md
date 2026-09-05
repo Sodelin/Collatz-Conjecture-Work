@@ -387,3 +387,10 @@ These are finite arithmetic statements once L9's affine prefix theorem is availa
 strengthens the gap estimate to `4d<s` and the sufficient inheritance condition
 to `3*floor((s-1)/4)+1<n_*`. The original argument remains valid as a weaker
 historical bound; its renewal and stopping-time limitations remain.
+
+
+## Third-pass formalization update
+
+The actual-orbit universal `3d<s` bound and its stronger `4d<s` replacement
+are now [Lean-checked](../../verification/Quarter_Gap_Formal_Scope_2026-09-05.md).
+Other dual-residue and source-level statements keep their original scope.

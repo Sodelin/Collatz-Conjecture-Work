@@ -204,3 +204,12 @@ it, it belongs in the failure ledger rather than a new route.
 - [L15 rotation-block / quarter-gap certificate](proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md) strengthens L10 and feeds L11/L12.
 - [Frozen-debt rank obstruction](proof-search/routes/AB_frozen_debt_size_rank_no_go.md) strengthens F023 and blocks polynomial versions of Route AB.
 - [Research pass and independent audit](ASTRA_RESEARCH_PASS_2026-09-05.md) records exact verification and source roles.
+
+
+## Third-pass nodes
+
+- [Continuation and decisions](ASTRA_CONTINUATION_2026-09-05.md).
+- [Complete quarter-gap formal scope](verification/Quarter_Gap_Formal_Scope_2026-09-05.md).
+- [Original-F arbitrary-modulus obstruction](proof-search/routes/AB_finite_residue_original_return_no_go.md).
+- [Stronger core, smaller targets and composition loop](proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md).
+- [Published sufficiency and explicit modulo27 rank](proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md).

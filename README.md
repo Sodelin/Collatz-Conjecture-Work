@@ -56,6 +56,7 @@ value, not by a claim that they solve more of Collatz.
 
 | Claim | Scoped status | Why it matters | Novelty / publication status |
 |---|---|---|---|
+| Universal first-contraction quarter gap | Complete Lean proof for every eligible odd count; sharp supporting threshold 16 | Verifies the actual-orbit bound `4d<s` and its mechanical arithmetic dependencies | Internal formalization milestone; priority unassessed; no global convergence conclusion |
 | YAH scalar-arctic dimension-one no-start | Exact dependency-free full and top certificates; high confidence **within the standard first-step dimension-one arctic-natural class** | Closes full rule removal and both Lemma-3.18 top entry points on the original eleven-rule system; also certifies the fixed 22-rule labeling | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
 | Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
@@ -101,14 +102,15 @@ research control only; it does not alter any mathematical or release status.
 
 ## What is formally checked
 
-The repository contains four narrow Lean developments:
+The repository contains nine Lean proof modules:
 
 - [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
 - [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
 - [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean);
 - [convergence and induction semantics](lean/CollatzWork/Convergence.lean), with [trusted definitions](lean/CollatzWork/ConvergenceStatement.lean).
+- five modules completing the [universal first-contraction quarter-gap chain](verification/Quarter_Gap_Formal_Scope_2026-09-05.md), including the sharp normalized-envelope threshold 16.
 
-All four are included in the umbrella build, including the previously omitted
+All nine are included in the umbrella build, including the previously omitted
 two-pump module. A clean `lake build` does **not** formalize the full prose
 chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
 See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
@@ -168,3 +170,11 @@ bounded primary-source search found no exact match, but their priority is
 
 Hashes establish content identity, not mathematical truth, peer review, or an
 earlier public date. See [PROVENANCE.md](PROVENANCE.md).
+
+
+### Third-pass continuation
+
+The [new continuation report](ASTRA_CONTINUATION_2026-09-05.md) records the
+completed universal Lean proof of L15, its sharper envelope threshold16,
+an explicit known residue-20 normalizer, and new smaller-target and
+composition checks. Collatz remains unresolved.

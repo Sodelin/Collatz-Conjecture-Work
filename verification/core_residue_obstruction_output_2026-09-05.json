@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "exact_certificate": {
+    "universal_word": "OOEO",
+    "n": "1536*M*v-5",
+    "m": "1728*M*v-5",
+    "domain": "M>=1, v>=1",
+    "same_labels": [
+      2,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "growth_ratio_limit": "9/8",
+    "residue20_corollary": "M divisible by 27: first-return word OEO, growth 9/8",
+    "stronger_targets": "odd 4 mod 9; within 20 mod 27",
+    "auxiliary_composition_self_loop": [
+      425,
+      638,
+      319,
+      479,
+      425
+    ]
+  },
+  "replay": {
+    "core_witness_replays": 726,
+    "F026_replays": 101
+  },
+  "scope": "auxiliary finite-residue polynomial-rank obstruction; no Collatz closure"
+}

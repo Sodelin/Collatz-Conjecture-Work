@@ -358,3 +358,11 @@ Formalize:
 8. displacement identity (15).
 
 No external analytic theorem is needed for L9 itself beyond standard real-log facts and irrationality of `log_2 3` at the equality-avoidance point.
+
+
+## Third-pass formalization update
+
+The actual-orbit affine identity, mechanical upper envelope and exact first
+coefficient-crossing time are now [Lean-checked](../../verification/Quarter_Gap_Formal_Scope_2026-09-05.md).
+This does not silently formalize the separate extremizer uniqueness and
+displacement-penalty statements in this note.

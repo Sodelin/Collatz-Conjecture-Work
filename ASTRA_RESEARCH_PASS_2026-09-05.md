@@ -6,6 +6,11 @@ tags: [collatz, proof-audit, exact-certificate, formal-verification]
 
 # Collatz research pass: stronger gap bounds, a rank obstruction, and checked semantics
 
+**Later same-day continuation:** the quarter-gap theorem and its integer
+mechanical dependency chain are now Lean-verified. See the [third-pass report](ASTRA_CONTINUATION_2026-09-05.md)
+for the current formal scope; the first two passes below retain their historical
+verification descriptions.
+
 ## 0. Executive decision brief
 
 **Verdict: a substantive contribution to this project, with Collatz still unresolved.**

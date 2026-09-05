@@ -212,3 +212,13 @@ certificate semantics without constructing a universal certificate.
 - **B remains active:** nondefinability of full reachability does not prohibit finite guarded graphs with unbounded ranks; [exact separating example](sources/Primary_Bridge_Audit_2026-09-05.md).
 - **AB/C:** [3-adic augmentation](routes/AB_three_adic_rank_no_go.md) fails to rescue the audited polynomial ranks. F026 is the new falsification test.
 - **F and analytic routes:** the [source audit](sources/Primary_Bridge_Audit_2026-09-05.md) blocks importing the asserted mixing weakening or invariant-measure uniqueness. No positive counterexample or universal orbitwise bridge was obtained.
+
+
+## Third-pass route decisions
+
+- **B:** the [modulo27 finite lexicographic rank](sources/Sufficiency_Rank_Audit_2026-09-05.md) is a working all-input normalizer. Universal control of returns from20 mod27 remains open.
+- **AB:** [smaller ternary predecessors](routes/AB_ternary_normalized_core_residue_obstruction.md) remove the old F026 sources from a minimal-root argument. Stronger return families defeat fixed-modulus polynomial ranks, but still admit further smaller targets. Keep each no-go attached to its exact transition relation.
+- **Composition:** the425 auxiliary loop refutes automatic progress when combining a return map with inverse coalescence. Reopening needs a proved rank or an appropriate signed-time progress argument; positive time advance alone does not prove Collatz.
+- **D:** the quarter-gap arithmetic chain is now Lean-verified, with supporting normalized threshold16. Infinite coefficient stopping, the immutable root, renewal and the zero-gap branch remain open.
+
+No route is promoted to a universal solution by these updates.

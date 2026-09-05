@@ -36,7 +36,7 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all four proof modules: `InverseWordBoundary`, `RefinedMersenneChild`, `Convergence`, and `Disproof.TwoPumpDependency`. The August baseline had imported only the first two. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all nine proof modules: `InverseWordBoundary`, `RefinedMersenneChild`, `Convergence`, and `Disproof.TwoPumpDependency`. The August baseline had imported only the first two. |
 
 All eight commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
@@ -129,3 +129,17 @@ run and source commit when reviewing later changes.
 
 The two standard-library counterexample checkers are CI gates. The optional
 Z3 search is a retained bounded experiment, not a required CI gate.
+
+
+## Third continuation checks
+
+| Claim | Command / evidence | Scope |
+|---|---|---|
+| Universal `L15-QUARTER-GAP` and the threshold 16 | `lake build`; [formal scope](Quarter_Gap_Formal_Scope_2026-09-05.md), [axiom log](lean_quarter_gap_ci_2026-09-05.txt) | Complete actual-orbit auxiliary theorem, with all its arithmetic dependencies. No existence of coefficient stopping or global convergence. |
+| Independent integer block audit | `python -B verification/block_arithmetic_certificate.py`; [output](block_arithmetic_certificate_output_2026-09-05.txt) | All 12 exact threshold regions, normalized bases 16..27 and failing 15, plus dyadic regressions. Lean does not import these answers. |
+| `AB-FINITE-RESIDUE-001` | `python -B verification/finite_residue_hard_return_check.py`; [output](finite_residue_hard_return_output_2026-09-05.txt) | Uniform CRT families for 18 moduli and 90 positive replays totaling 6330 F edges; universal quantifiers have a prose proof. |
+| Core obstruction, positive targets, composition loop | `python -B verification/core_residue_obstruction_check.py`; [output](core_residue_obstruction_output_2026-09-05.json) | Exact guarded affine identities and finite replay; the final inverse edge in the 425 loop is not a T step. |
+| `B-MOD27-RANK-001` | `python -B verification/mod27_rank_check.py`; [output](mod27_rank_output_2026-09-05.txt) | All 25 core edges with symbolic all-input inequalities; 200000 state regressions and a 1024-step self-loop. Global stopping proof is in the source note, not Lean. |
+
+The configured workflow repeats all four new Python checks. Claims about a
+later revision require its own successful run; use the actual PR-head status.

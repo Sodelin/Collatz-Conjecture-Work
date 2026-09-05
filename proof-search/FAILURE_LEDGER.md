@@ -383,6 +383,33 @@ for each required positive orbit, with its tail and cycle obligations intact.
 Neither finite-modulus mixing nor a 2-adic almost-everywhere assertion is
 that pointwise bridge. These failures are not a no-go for every ergodic method.
 
+
+## F028 — Fixed residue refinement does not repair the stated polynomial ranks
+
+The [original-F CRT construction](routes/AB_finite_residue_original_return_no_go.md)
+freezes any fixed modulus across expanding true F paths. The [stronger-core
+construction](routes/AB_ternary_normalized_core_residue_obstruction.md) does
+the same for its specified normalized return and for first returns to20 mod27.
+These are distinct transition relations. Their polynomial/finite-lex no-go
+proofs do not prohibit variable moduli, unbounded valuations or different
+smaller-target selection. Indeed, exact inverse macros remove the displayed
+families from still-stronger minimal-root arguments.
+
+**Reopen with:** an explicit mechanism beyond fixed-modulus polynomial size
+ranks, with exact handling of the relevant family and its unbounded shadow debt.
+
+## F029 — Decreasing coalescence normalization need not advance a return map
+
+The exact auxiliary loop is `425 ->638 ->319 ->479 ->c425`, where the first
+three arrows are actual T steps and `c(y)=(8y-7)/9` is a smaller coalescing
+predecessor. The signed time advance is `+3-3=0`. Thus a decreasing normalizer
+cannot inherit the original F termination-equivalence proof automatically.
+See [the proof, prefix guards and clock conditions](routes/AB_ternary_normalized_core_residue_obstruction.md).
+
+**Reopen with:** a proved global rank or sufficient accumulated progress
+condition on the exact composition. Conditional stopping-time equivalence
+does not itself establish unconditional termination.
+
 # Reopening template
 
 When reopening a ledger item, add:

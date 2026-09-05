@@ -144,3 +144,23 @@ has only a solver-reported bounded exclusion and a larger-bound timeout.
 Do not repeat the same template or import the audited source claims as closure.
 Route A can be reopened by a concrete different interpretation or transformation;
 Route AB requires a mechanism that passes the strengthened frozen-state test.
+
+
+## Third-pass handoff
+
+Start with [ASTRA_CONTINUATION_2026-09-05.md](ASTRA_CONTINUATION_2026-09-05.md).
+L15's universal quarter inequality and its integer mechanical dependency chain
+are now Lean-verified. Do not repeat that formalization; arbitrary block lengths
+and the 1024-block frontier refinement remain separate pending work.
+
+The [explicit modulo27 rank](proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md)
+provides a useful total frontend stopping at1,2,or20 mod27. Its first returns
+still need a separate mechanism. Fixed-residue polynomial return ranks face
+the new families, but smaller-target selection can remove those families;
+see [the exact scope and positive macros](proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md).
+
+The 425 auxiliary loop is the first falsification test for any proposal that
+combines return and inverse coalescence. Track the immutable induction root
+and actual progress; never infer termination merely from separately valid
+coalescence identities. The original-F arbitrary-modulus obstruction has
+[its own distinct proof](proof-search/routes/AB_finite_residue_original_return_no_go.md).
