@@ -36,7 +36,7 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all twelve proof modules listed in [the imports](../lean/CollatzWork.lean), including the guarded `RootDescent` and complete uniform `ResidueAncestor` modules. The August baseline had imported only the first two. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds the active proof modules listed in [the imports](../lean/CollatzWork.lean), including the guarded `RootDescent` and complete uniform `ResidueAncestor` modules. The August baseline had imported only the first two. |
 
 All eight commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
@@ -168,3 +168,16 @@ All four Python checkers use explicit failures and are run both normally and und
 | Complementary ancestors and first-return structure | `python -B verification/complementary_ancestor_check.py`; [output](complementary_ancestor_output_2026-09-05.json) |2004 fixed-cylinder,581 new-coordinate,3800 first-return and70 exact residual-recharge replays; universal prefix/selector and transition proofs remain prose. |
 
 The three new dependency-free checkers join the existing four in the normal/optimized Python CI step. [The continuation report](../RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) gives the exact coverage delta and remaining q5 target. Initial formal acceptance does not substitute for checking the final integrated revision's own CI run.
+
+
+## Blind derivation and repository-informed word recurrence
+
+Run `python -B verification/blind_word_recurrence_check.py` and the same command
+with `-O`. The [verification record](Blind_Recurrence_Verification_2026-09-05.md)
+records 136,000 exact repetition comparisons, 120 growing families, 40 coded
+prefix returns, actual-orbit tests, and retained cycle/false controls.
+[PrefixCollision](../lean/CollatzWork/PrefixCollision.lean) and
+[AffineRepetition](../lean/CollatzWork/AffineRepetition.lean) are in the umbrella.
+The [complete Thue–Morse exclusion](../proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+is an analytic proof; finite checks and component formalization do not silently
+upgrade its entire proof chain to `V3`.

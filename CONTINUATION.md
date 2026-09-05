@@ -184,3 +184,20 @@ Read [RECHARGE_ESCAPE_PROGRESS_2026-09-05.md](RECHARGE_ESCAPE_PROGRESS_2026-09-0
 New guarded q1 and q2 exit families give actual later returns below the original root. The q1 family tolerates an unbounded larger recharge and two growing bursts. They do not supply all-unit coverage. The second ancestor coordinate removes every root with v3(128r−157)≥17 in the v3(r+7)=4 branch, plus two fixed cylinders. No rank or exhaustion theorem follows.
 
 The next concrete mathematical target is the cylinder `r=22619+186624s`, s≥0. It has q(r)=5 and an increasing first return `y=38171+314928s`, with q(y)=4+v2(2386+19683s) unbounded. Its source has old ancestor state(v,theta)=(4,4), and its q2 unit is3mod8, so both older selected guards miss it. Prove a new smaller-target or whole-excursion descent certificate relative to r on a specified subcylinder; do not assume q decreases, or claim every member lacks all possible certificates. The all-residual-class bridge remains open.
+
+
+## Independent attempt and repository-informed recurrence extension
+
+Read [the reconciliation](BLIND_RECONCILIATION_2026-09-05.md). The blind descent,
+inverse, and OOE calculations overlap existing results and are archived as
+rediscoveries. The new actual-parity collision and generic affine/numerical
+bounds are Lean-checked. The analytic prefix-return theorem shows that every
+positive realization of a fixed nonempty binary Thue–Morse valuation encoding
+must lie on a cycle. Growth excludes that possibility for PR6's exact `1+t_i`
+anchor and for the fixed `(1^p,3)/(1^q,3)` family with p,q≥3.
+
+This settles those positive-membership candidates negatively; it does not
+exclude general aperiodic valuation sequences or nontrivial positive cycles.
+The full odd-word/substitution implication remains analytic. Its formalization
+is a bounded verification target. Universal early prefix recurrence for the
+residual actual orbit is unproved and must not be assumed as a closure bridge.

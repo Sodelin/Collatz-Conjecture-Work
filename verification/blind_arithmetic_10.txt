@@ -1,0 +1,8 @@
+PASS: 15 core residues, 25 internal colored edges, all-input contraction <=20/21
+h = {1: 2, 2: 1, 4: 0, 5: 1, 7: 2, 8: 0, 10: 2, 11: 1, 14: 1, 16: 2, 17: 0, 19: 2, 22: 0, 23: 1, 25: 2}
+rank phases: 3(divisible by3), 2(core linear), 1(26/13 exit debt), 0(target)
+PASS: 200000 starting-state rank regressions; phase counts {0: 7409, 1: 14814, 2: 111111, 3: 66666}
+PASS: prescribed 26-loop lengths through 1024 odd steps
+Ansari n=1 claimed equality fails: [3, 7, 11, 15, 19, 23, 27, 31] != [3, 7, 15, 19]
+Witness11 belongs to F'_1\A' but notF2; this refutes the proof step, not Collatz.
+Ansari Lemma3.2 also omits3: all ternary digits zero put3 in every F_n.

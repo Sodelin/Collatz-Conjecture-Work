@@ -238,3 +238,18 @@ No global route status is promoted by partial family coverage.
 - **B:** [actual recharge escape](lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestors](lemmas/Complementary_Ancestor_Cylinders.md) supply distinct constructive guarded families. The complete uniform first-coordinate ancestor theorem is now Lean-checked.
 - **AB:** the q10 rank obstruction remains valid outside the new escape guards. There is no universal rank or total all-unit return control, so the global status remains blocked.
 - **Concrete next cylinder:** r=22619+186624s has an increasing first return and unbounded q recharge. It is a precise admission target for a new escape mechanism, not a theorem of nontermination or irreducibility.
+
+
+## Prefix-recurrence exclusion after an independent derivation
+
+- **F:** [Fixed binary Thue–Morse valuation encodings](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+  cannot realize positive divergent orbits. The old PR6 exact `1+t_i` anchor
+  and expanding hard-block family have no positive realization. Mark that
+  membership subtask `NEGATIVE_SUPPORTED`; Route F overall stays `ACTIVE_LOW_COST`.
+- **AB/C:** The result does not prove recurrence for arbitrary residual roots,
+  and is not a recharge-or-escape mechanism. Keep the previous global blockers.
+- **Verification:** Actual parity-prefix collision and affine/numerical cores
+  are formalized. Odd-word coding and the substitution theorem remain analytic.
+
+Reopen the excluded code class only if the code, domain, or required conclusion
+changes. A larger finite prefix or different fixed p,q≥3 does not bypass it.

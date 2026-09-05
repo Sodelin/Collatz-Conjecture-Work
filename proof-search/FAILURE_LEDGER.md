@@ -433,3 +433,25 @@ For the specified stronger-core return S, [the exact family](routes/AC_shadow_de
 ## Constructive qualification of F030
 
 [The two-burst theorem](lemmas/Two_Burst_Recharge_Escape.md) proves strict original-root descent through a different guarded recharge mechanism, including an unbounded increase in q. F030's q10→7→4→10 family remains an exact obstruction for its stated polynomial rank class. The new theorem assumes a recharged depth divisible by3 and sufficient final halving; neither follows for F030's family. This is partial positive target selection, not a retraction of the scoped negative result.
+
+
+## F031 — A fixed Thue–Morse valuation code can be lifted to a positive divergent seed
+
+**Old blocker:** the PR6 exact `1+t_i` anchor was a valid 2-adic construction,
+with positive-integer membership explicitly unresolved.
+
+**New mechanism:** [early returns of arbitrarily long initial words](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+force the same positive seed to violate an effective finite separation bound,
+unless the orbit returns exactly to that seed. Every nonerasing encoding by
+two fixed finite valuation words therefore has only periodic positive
+realizations. Growth excludes even those for the old anchor and the displayed
+fixed hard blocks p,q≥3.
+
+**First falsification controls:** code both symbols by `(2)` and start at1;
+this cycle must remain allowed by the general statement. The block `(1,1,3)`
+at55 reaches47, so the growing hard-block specialization requires p,q≥3.
+
+**Exact outcome:** the named code-family divergence mechanism is excluded;
+Collatz itself is not. Full proof is analytic, with narrow formal arithmetic.
+**Reopen only with:** a code outside the specified fixed morphic family or
+a different mathematical target. No universal recurrence theorem is assumed.

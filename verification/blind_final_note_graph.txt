@@ -1,0 +1,6 @@
+markdown notes = 80
+local Markdown links checked = 528
+broken local Markdown links = 0
+notes reachable from README.md = 80
+unreachable notes = 0
+NOTE_GRAPH = PASS

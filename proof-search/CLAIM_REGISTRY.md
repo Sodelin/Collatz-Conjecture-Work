@@ -219,7 +219,7 @@ may be folklore or an immediate corollary.
 
 See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
-computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the twelve existing
+computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the current
 Lean proof modules and the unformalized theorem chain.
 
 ## Reviewed additions from the 2026-09-05 pass
@@ -289,3 +289,16 @@ These are repository-level elementary specializations, not priority claims. Univ
 | `B-SECOND-TERNARY-ANCESTOR-001` | Every positive residue20 root with v3(128r−157)≥17 has an explicit smaller residue20 ancestor; two additional fixed cylinders and an exact first-return transition are included with separate scopes. | `C2 V2 I2 N1 R1` | [New-prefix proof and boundaries](lemmas/Complementary_Ancestor_Cylinders.md), actual inverse/forward replay. Uniform family lies wholly in v3(r+7)=4,v3(4r+1)=3. Old finite tails are reused; the new prefix/selector is not Lean-formalized. |
 
 The q5 cylinder `22619+186624s` is a precise remaining transition target, not a claimed escape theorem or an irreducibility result. These elementary specializations carry no external priority claim. Global verdict remains unresolved.
+
+
+## Independent recurrence derivation and repository reconciliation
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `FINITE-PARITY-COLLISION-001` | Equal first k parity bits of actual shortcut orbits imply equal residues modulo `2^k`; distinct starts differ by at least `2^k`. | `C3 V3 I2 N1 R1` | [Trusted statement and proof](../lean/CollatzWork/PrefixCollision.lean), [verification](../verification/Blind_Recurrence_Verification_2026-09-05.md). Elementary parity arithmetic; no infinite recurrence claim. |
+| `AFFINE-REPETITION-BOUND-001` | Coprime fixed affine recurrences with positive shifted initial height satisfy the stated denominator-power budget; `2*32^d<27^d*(n+1)` implies `10d+27<27n`. | `C3 V3 I2 N1 R1` | [Formal proof](../lean/CollatzWork/AffineRepetition.lean). Numerical return bound is conditional; changing blocks do not share a proved budget. |
+| `F-TM-POSITIVE-EXCLUSION-001` | Any positive realization of a nonerasing fixed binary Thue–Morse valuation encoding lies on a cycle. The specific `(1),(2)` anchor and fixed `(1^p,3)/(1^q,3)` encodings, p,q≥3, have no positive realization. | `C2 V1 I2 N? R1`; finite supporting checks `V2` | [Complete analytic proof](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md). Supersedes PR6 anchor's pending positive-membership gate. Full coding/odd-word argument is not Lean-checked; no exclusion of arbitrary aperiodic words or nontrivial cycles. |
+
+The [blind-phase record and comparison](../BLIND_RECONCILIATION_2026-09-05.md)
+identify descent/OOE/inverse rediscoveries explicitly. Historical novelty of
+the recurrence exclusion has not been searched; `N?` does not mean new.

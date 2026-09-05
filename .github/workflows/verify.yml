@@ -31,6 +31,8 @@ jobs:
           lean --version
           lake build
           lake env lean lean/CollatzWork/Convergence.lean
+          lake env lean lean/CollatzWork/PrefixCollision.lean
+          lake env lean lean/CollatzWork/AffineRepetition.lean
       - name: Replay existing mathematical regressions
         run: |
           python3 -B verification/trajectory_normal_form_regression.py
@@ -52,3 +54,10 @@ jobs:
             python3 -B "verification/${checker}.py"
             python3 -O -B "verification/${checker}.py"
           done
+      - name: Verify word recurrence and preserved blind derivations
+        run: |
+          python3 -B verification/blind_word_recurrence_check.py
+          python3 -O -B verification/blind_word_recurrence_check.py
+          lean research/blind-2026-09-05/Descent.lean
+          lean research/blind-2026-09-05/AlternatingGrowth.lean
+          lean research/blind-2026-09-05/RepetitionBound.lean

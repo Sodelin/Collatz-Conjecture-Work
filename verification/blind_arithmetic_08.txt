@@ -1,0 +1,20 @@
+M=1: period=1, positive seed bits=18, uniform progression PASS
+M=2: period=1, positive seed bits=18, uniform progression PASS
+M=3: period=1, positive seed bits=18, uniform progression PASS
+M=4: period=1, positive seed bits=18, uniform progression PASS
+M=5: period=5, positive seed bits=57, uniform progression PASS
+M=7: period=1, positive seed bits=21, uniform progression PASS
+M=9: period=1, positive seed bits=18, uniform progression PASS
+M=16: period=1, positive seed bits=18, uniform progression PASS
+M=25: period=25, positive seed bits=239, uniform progression PASS
+M=27: period=1, positive seed bits=21, uniform progression PASS
+M=32: period=1, positive seed bits=18, uniform progression PASS
+M=67: period=67, positive seed bits=617, uniform progression PASS
+M=125: period=125, positive seed bits=1141, uniform progression PASS
+M=335: period=335, positive seed bits=3025, uniform progression PASS
+M=512: period=1, positive seed bits=21, uniform progression PASS
+M=729: period=1, positive seed bits=23, uniform progression PASS
+M=1001: period=60, positive seed bits=561, uniform progression PASS
+M=73240200550326335474382902222999263676077178880: period=5, positive seed bits=200, uniform progression PASS
+PASS: 18 uniform affine certificates; 90 integer path replays; 6330 F edges
+Scope: finite positive shadows with residue return; not a positive cycle or a divergence proof.

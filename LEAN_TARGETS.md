@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **twelve Lean proof modules**. It does not
+The repository contains **fourteen Lean proof modules**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,7 +13,7 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all twelve
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all fourteen
 proof modules, including the two-pump module and
 [`Convergence.lean`](lean/CollatzWork/Convergence.lean). The new
 [`RootDescent.lean`](lean/CollatzWork/RootDescent.lean) is scoped below.
@@ -147,3 +147,20 @@ The [trusted public statements](lean/CollatzWork/ResidueAncestorStatement.lean),
 `residueAncestor_of_divisibility` constructs the positive unit factorization; it does not assume its existence. The proof includes all selector branches, their actual forward orbit identities, target congruences, and a uniform strict size comparison. Initial acceptance is [commit eac4dad7](verification/residue_ancestor_ci_2026-09-05.txt), with22 Lake build tasks passing on unchanged Lean4.33.1. All six new aggregate/headline axiom outputs contain only `propext` and `Quot.sound`.
 
 The formalization covers the uniform ≥13 theorem. The exact sharper lower-row thresholds, selected-table sharpness, the new [q2 exit theorem](proof-search/lemmas/Q2_Exit_Descent.md), [two-burst recharge escape](proof-search/lemmas/Two_Burst_Recharge_Escape.md), and [second-coordinate ancestor construction](proof-search/lemmas/Complementary_Ancestor_Cylinders.md) retain separate prose/Python scope. No global coalescence or termination premise is discharged.
+
+
+## Finite-prefix collision and affine repetition
+
+[PrefixCollisionStatement](lean/CollatzWork/PrefixCollisionStatement.lean) and
+[PrefixCollision](lean/CollatzWork/PrefixCollision.lean) prove equality of actual
+shortcut parity prefixes forces equality modulo `2^k`, with separation for
+distinct starts. [AffineRepetitionStatement](lean/CollatzWork/AffineRepetitionStatement.lean)
+and [AffineRepetition](lean/CollatzWork/AffineRepetition.lean) prove coprime
+fixed-block divisibility/bounds and the conditional arithmetic implication
+`2*32^d < 27^d*(n+1) -> 10*d+27 < 27*n`.
+
+The [verification record](verification/Blind_Recurrence_Verification_2026-09-05.md)
+retains trusted-type checks and axiom evidence. The exact odd-word bridge,
+accelerated height bound, and Thue–Morse substitution/exclusion proof remain
+analytic. No universal convergence theorem or full Thue–Morse formalization
+is claimed.

@@ -10,6 +10,10 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > positive orbit. None of the ratings below is a probability that Collatz is
 > true or false.
 
+For the independent derivation, its overlap with existing lemmas, and the new
+Thue–Morse membership exclusion, read the
+[repository reconciliation](BLIND_RECONCILIATION_2026-09-05.md).
+
 Accepted mathematical baseline: full Git object
 `b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 

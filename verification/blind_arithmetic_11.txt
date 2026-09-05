@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "finite_replays": 24930,
+  "universal_theorem": "all r=20 mod27 with v3(4r+1)>=21 have explicit smaller S ancestor",
+  "covered_old_self_loop_example": {
+    "root": 18305618105,
+    "target": 264241136,
+    "steps": 24,
+    "valuation": 21,
+    "unit_class": 5,
+    "h": 2,
+    "e": 4
+  },
+  "uncovered_425": true,
+  "valuation20_t4_counterexample_to_unguarded_descent": {
+    "root": 11332049303,
+    "candidate": 15703473152
+  },
+  "scope": "guarded infinite family; no universal termination proof"
+}
