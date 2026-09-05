@@ -1,0 +1,119 @@
+[
+  {
+    "id": "first-contraction-quarter-gap",
+    "title": "Universal quarter gap at an existing first coefficient contraction",
+    "status": "formal_auxiliary",
+    "statement": "For n,k,d in Nat with n>0, FirstCoefficientContraction n k, and shortcutIter k n=n+d, put s=orbitOddCount n k. Then 4*d<s and d<=(s-1)/4 using natural-number division. FirstCoefficientContraction means k>0, 3^s<2^k, and 2^j<=3^(orbitOddCount n j) for every j<k. The map is T(n)=n/2 for even n and (3*n+1)/2 for odd n.",
+    "limitations": "Auxiliary theorem conditional on an existing first contraction and a nonnegative defect. It proves neither universal first-contraction existence, universal descent, universal convergence, nor exclusion of the zero-defect case or other cycles. Novelty and external priority are uncertified.",
+    "source_paths": ["lean/CollatzWork/QuarterGapUniversalStatement.lean", "lean/CollatzWork/QuarterGapUniversal.lean", "lean/CollatzWork/QuarterGapStatement.lean", "lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/InverseWordBoundaryStatement.lean", "verification/Quarter_Gap_Formal_Scope_2026-09-05.md", "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md"],
+    "lean_declarations": ["CollatzWork.firstContractionQuarterGap"]
+  },
+  {
+    "id": "mechanical-envelope-sharp-threshold",
+    "title": "Universal mechanical certificate and sharp eventual threshold 16",
+    "status": "formal_auxiliary",
+    "statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range.",
+    "limitations": "The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
+    "source_paths": ["lean/CollatzWork/QuarterGapUniversalStatement.lean", "lean/CollatzWork/QuarterGapUniversal.lean", "lean/CollatzWork/FloorPower.lean", "lean/CollatzWork/BlockArithmetic.lean", "lean/CollatzWork/QuarterGapStatement.lean", "verification/block_arithmetic_certificate.py"],
+    "lean_declarations": ["CollatzWork.mechanical_large_bound", "CollatzWork.mechanical_fifteen_failure", "CollatzWork.universalMechanicalQuarterCertificate", "CollatzWork.mechanical_twelve_identity", "CollatzWork.mechanical_twelve_propagation", "CollatzWork.floorPower_mul", "CollatzWork.blockNumerator12_exact_bound"]
+  },
+  {
+    "id": "actual-orbit-affine-and-crossing",
+    "title": "Actual-orbit affine envelope and first crossing time",
+    "status": "formal_auxiliary",
+    "statement": "For every finite actual shortcut prefix, 2^k*T^k(n)=3^(q_k)*n+C_k. Under every prior coefficient barrier 2^j<=3^(q_j) for j<k, C_k<=Cmax(q_k). At a first coefficient contraction, k=floor(log2(3^(q_k)))+1. For positive n and a nonnegative first-contraction defect d, the older inequality 3*d<q_k also follows.",
+    "limitations": "First-contraction existence is assumed for the crossing and defect claims. Full extremizer uniqueness and displacement-penalty formulations in the prose L9 note are outside these formal statements.",
+    "source_paths": ["lean/CollatzWork/QuarterGapStatement.lean", "lean/CollatzWork/QuarterGap.lean", "lean/CollatzWork/FirstContractionStatement.lean", "lean/CollatzWork/FirstContraction.lean", "proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md"],
+    "lean_declarations": ["CollatzWork.orbitAffine", "CollatzWork.mechanicalEnvelope", "CollatzWork.affineQuarterCertificate", "CollatzWork.firstContractionTime", "CollatzWork.firstContractionThirdGap"]
+  },
+  {
+    "id": "formal-convergence-criteria",
+    "title": "Formal descent and smaller-coalescence equivalences",
+    "status": "formal_auxiliary",
+    "statement": "AllPositiveConverge is equivalent both to UniversalDescent and to UniversalSmallerCoalescence. The latter requires, for every n>1, a positive m<n and r,s in Nat such that T^r(n)=T^s(m). Converges means an actual finite shortcut iterate reaches 1. Convergence is preserved by finite prefixes and by coalescence.",
+    "limitations": "These are induction criteria and semantic equivalences. UniversalSmallerCoalescence and UniversalDescent are not proved; each is Collatz-equivalent. The map keeps the cycle 1->2->1 rather than making 1 absorbing. No novelty claim for the criteria.",
+    "source_paths": ["lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/Convergence.lean", "proof-search/lemmas/L0_Global_Descent_Equivalence.md"],
+    "lean_declarations": ["CollatzWork.smallerCoalescenceCriterion", "CollatzWork.descentCriterion", "CollatzWork.allPositiveConverge_of_smallerCoalescence", "CollatzWork.converges_shortcutIter_iff", "CollatzWork.converges_iff_of_coalesces"]
+  },
+  {
+    "id": "compatible-refined-mersenne-child",
+    "title": "One guarded family of smaller coalescing starts",
+    "status": "formal_auxiliary",
+    "statement": "For natural L,epsilon,z with L>=2, epsilon<=1, and epsilon mod 2=L mod 2, put A=4*z+2*epsilon+1, parent=2^L*A-1, and child=3*2^(L-2)*A-1. The child is positive and strictly smaller, T^(L+2)(parent)=T^L(child), and the two starts converge equivalently. Parent convergence follows if all smaller positive starts converge.",
+    "limitations": "The parity-compatibility guard is essential. This supplies one explicit family, not a universal smaller-target selector. The convergence application retains its strong-induction hypothesis.",
+    "source_paths": ["lean/CollatzWork/RefinedMersenneChild.lean", "lean/CollatzWork/Convergence.lean", "proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md"],
+    "lean_declarations": ["CollatzWork.refinedMersenneChild_coalesces", "CollatzWork.refinedChild_arithmetic", "CollatzWork.refinedParent_has_smaller_coalescence", "CollatzWork.refinedParent_converges_iff_child", "CollatzWork.refinedParent_converges_of_smaller"]
+  },
+  {
+    "id": "equal-slope-boundary",
+    "title": "Equal-slope affine comparison and concrete coalescence witness",
+    "status": "formal_auxiliary",
+    "statement": "For natural A,B,R, the statement that A*x+B<A*x+R for every natural x is equivalent to B<R. For every natural x, the starts 8*x+5 and 8*x+4 reach 3*x+2 after three shortcut steps, with 0<8*x+4<8*x+5.",
+    "limitations": "A correction to a local inverse-word classifier and one witnessed family. It is not a complete inverse-word search or universal convergence result.",
+    "source_paths": ["lean/CollatzWork/InverseWordBoundaryStatement.lean", "lean/CollatzWork/InverseWordBoundary.lean", "proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md"],
+    "lean_declarations": ["CollatzWork.equalSlopeSmaller", "CollatzWork.equalSlopeWitness"]
+  },
+  {
+    "id": "two-pump-dependency-obstruction",
+    "title": "Two-pump cyclic-elimination coefficient dependency",
+    "status": "formal_auxiliary",
+    "statement": "For the integer coefficient expressions A,B,C,E defined in TwoPumpDependency.lean, a*B=c*C and g*A=d*E; consequently c*g*A*C-a*d*B*E=0. The hoped-for constant resultant in this cyclic-elimination construction vanishes identically.",
+    "limitations": "An algebraic obstruction for the specified route. It proves neither existence of a positive nontrivial cycle nor a disproof of Collatz. The module namespace Disproof describes the research route only.",
+    "source_paths": ["lean/CollatzWork/Disproof/TwoPumpDependency.lean", "proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md"],
+    "lean_declarations": ["CollatzWork.Disproof.twoPumpCoefficientDependencies", "CollatzWork.Disproof.twoPumpConstantObstructionVanishes", "CollatzWork.Disproof.twoPumpSyzygy"]
+  },
+  {
+    "id": "general-rotation-block-bound",
+    "title": "Arbitrary-phase rotation-block bound and conditional larger-block refinement",
+    "status": "exact_checked_prose",
+    "statement": "With L=log2(3), w(k)=2^(-fractional_part(k*L)), and M_b=max over 0<=i<b of sum over 0<=k<b of w(k-i), every real phase theta satisfies sum over 0<=k<b of 2^(-fractional_part(theta+k*L))<=M_b. The finite maxima use exact rational values; the note also gives a 1024-block refinement at its explicitly conditional L8 frontier.",
+    "limitations": "The arbitrary-block real-phase theorem and 1024-block refinement have prose and exact-Python status. The headline Lean development formalizes the required twelve-term integer specialization, not these entire general statements. The larger-block application retains the frontier assumptions stated in L15.",
+    "source_paths": ["proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md", "verification/near_return_quarter_bound.py", "verification/Quarter_Gap_Formal_Scope_2026-09-05.md"],
+    "lean_declarations": []
+  },
+  {
+    "id": "original-hard-return-fixed-residue-obstruction",
+    "title": "Fixed-residue polynomial rank obstruction on original hard returns",
+    "status": "exact_checked_prose",
+    "statement": "For every fixed modulus M>=1, explicit positive arithmetic progressions follow finite paths of the original hard-return relation F whose endpoints have identical (L,e,b,D,R,n mod M)=(2,1,1,2,0,n mod M) and expand by more than 4^j over 2*j edges. This obstructs ranks polynomial in size and bitlength with arbitrary dependence on those states, bounded below on hard states, and finite lexicographic tuples whose coordinates individually satisfy that lower-bound requirement.",
+    "limitations": "The original F and all state definitions are those in the cited route note. Unbounded valuations, history-dependent state, nonpolynomial ranks, and different transition or coalescence relations are outside the claim. The universal argument is in prose; exact replay of examples alone is not its proof. Novelty unassessed.",
+    "source_paths": ["proof-search/routes/AB_finite_residue_original_return_no_go.md", "proof-search/routes/AB_frozen_debt_size_rank_no_go.md", "proof-search/routes/AB_three_adic_rank_no_go.md", "verification/finite_residue_hard_return_check.py"],
+    "lean_declarations": []
+  },
+  {
+    "id": "normalized-core-and-composition-boundary",
+    "title": "Smaller ternary targets, a separate core obstruction, and failed composition",
+    "status": "exact_checked_prose",
+    "statement": "For positive n congruent to 2 mod 3, gamma(n)=(2*n-1)/3 is positive, smaller, and T(gamma(n))=n. On the separately normalized core relation S defined in the route note, n=1536*M*v-5 maps to m=1728*M*v-5 for M,v>=1. The exact auxiliary composition 425->638->319->479 followed by the coalescing predecessor c(479)=(8*479-7)/9=425 returns to its input.",
+    "limitations": "S is not the original hard-return relation F. Frozen labels and allowed rank classes must be read for each relation separately. The 425 loop contains a backward coalescing-target selection and is not a Collatz cycle. These identities and scoped obstructions do not rule out all target selectors or establish global termination.",
+    "source_paths": ["proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md", "verification/core_residue_obstruction_check.py"],
+    "lean_declarations": []
+  },
+  {
+    "id": "mod27-stopping-rank",
+    "title": "Ranked reconstruction of a known residue-hitting consequence",
+    "status": "known_reconstruction",
+    "statement": "Every positive shortcut orbit reaches 1, 2, or an integer congruent to 20 mod 27. The source audit attributes the relevant known theorem to Monks, Monks, Monks and Monks and reconstructs the stopping consequence using a finite lexicographic rank, core weights (16,28,49), and a v2(n+1) argument for the residue-26 loop.",
+    "limitations": "Prose proof and exact finite certificate, not a Lean formalization in this snapshot. This is known mathematics with no novelty claim. The stopping rank is zero on the target and supplies no decrease on subsequent target-to-target returns; it does not prove Collatz convergence.",
+    "source_paths": ["proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md", "verification/mod27_rank_check.py", "ASTRA_REFERENCES_2026-09-05.bib"],
+    "lean_declarations": []
+  },
+  {
+    "id": "bounded-natural-matrix-search",
+    "title": "Finite-template matrix-search UNSAT report and larger-bound timeout",
+    "status": "bounded_solver_result",
+    "statement": "For the documented dimension-two natural affine interpretation template on all eleven YAH rewrite rules, Z3 reports UNSAT with coefficients in 0..2 and timeout/UNKNOWN with coefficients in 0..8. The source's Example 4.3 serves as a positive control for the encoding and independent integer checker.",
+    "limitations": "The UNSAT report has no independently checked UNSAT proof certificate. Timeout establishes no exclusion at its bound. Neither outcome rules out arbitrary coefficients, other dimensions, carriers, orders, or termination methods, and no Collatz closure was obtained.",
+    "source_paths": ["verification/yah_natural_matrix_2d/README.md", "verification/yah_natural_matrix_2d/result.json", "verification/yah_natural_matrix_2d/search_natural_matrices.py"],
+    "lean_declarations": []
+  },
+  {
+    "id": "global-collatz-bridges-open",
+    "title": "Global convergence and required universal bridges remain open",
+    "status": "unproved",
+    "statement": "The project has not proved AllPositiveConverge, UniversalDescent, or UniversalSmallerCoalescence. The quarter-gap route still requires universal first-contraction existence and a valid global descent or renewal mechanism that handles the zero-gap case. The residue-20 route requires progress across target returns or another complete smaller-target selection mechanism.",
+    "limitations": "An explicit statement of missing obligations. Definitions and proved implication/equivalence wrappers are not proofs of their universal premises. This snapshot contains no claimed proof or disproof of the positive-integer Collatz conjecture.",
+    "source_paths": ["lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/Convergence.lean", "ASTRA_CONTINUATION_2026-09-05.md", "proof-search/MISSING_LEMMA_LADDER.md"],
+    "lean_declarations": []
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "repository": "Sodelin/Collatz-Conjecture-Work",
+  "source_commit": "33922a42e86646258d227d1e19c6cf7546a2f548",
+  "headline_declaration": "CollatzWork.firstContractionQuarterGap",
+  "title": "Collatz first-contraction quarter gap: formal auxiliary results and open bridges",
+  "date": "2026-09-05",
+  "maintainer": "Nolan Downard",
+  "conjecture_status": "unresolved",
+  "novelty_status": "not independently established",
+  "vibemathed": {
+    "name": "Collatz: a first-contraction quarter-gap bound",
+    "shortName": "Collatz quarter gap (partial)",
+    "solveType": "proved",
+    "statement": "Does every positive integer reach 1 under the Collatz map? This proposal concerns only a conditional first-contraction bound within that open problem. It is not a claimed resolution of Collatz.",
+    "solveDate": "2026-09-05",
+    "sourceName": "Collatz Conjecture Work: scoped quarter-gap research announcement",
+    "sourceUrl": "{source_url}/blob/{publisher_commit}/publication/announcement.md",
+    "aiContribution": "ai-assisted",
+    "model": "Astra (repository label; exact model version undisclosed)",
+    "modelMaker": "OpenAI",
+    "aiRole": "AI-assisted development of auxiliary mathematical arguments, counterexample searches, exact arithmetic certificates, Lean proof code, and adversarial internal reviews. The repository calls this the Astra pass. Exact model versions and a per-step human/model attribution log are not published; the lower contribution tier is used. Internal AI review is not independent expert review.",
+    "verification": "lean-checked",
+    "publication": "announcement",
+    "verificationNote": "The release rebuilds the pinned Lean 4.33.1 source and records a headline axiom audit in verification.json. The quarter-gap theorem is checked for its stated hypotheses; its expected axioms are propext, Classical.choice and Quot.sound. The informal-to-formal correspondence and novelty lack independent external review. Other archive claims retain their separate prose, finite-checker, or open status. This submission is not a Lean-verified proof of Collatz.",
+    "fieldGroup": "Number theory",
+    "field": "Collatz dynamics; first coefficient contraction",
+    "resolution": "partial",
+    "humanCollaborators": "Nolan Downard",
+    "resolutionMethod": "argument",
+    "resultNote": "For n>0, assume an actual shortcut Collatz orbit has a first coefficient contraction at time k and its endpoint is n+d with d a natural number. If s is the number of odd steps before k, then 4d<s, hence d <= floor((s-1)/4). Lean checks the actual-orbit affine identity, envelope and exact block certificate used in this proof. A supporting envelope holds for all s>=16 and fails at 15. Existence of a contraction for every positive start, universal descent, and a well-founded return mechanism remain unproved. Novelty is not independently certified.",
+    "submitterNote": "Please assess eligibility as a partial auxiliary result, not as a Collatz solution. The archive also contains known reconstructions and negative results scoped to restricted proof methods; those are not separate claimed solves. Independent novelty and statement review are still needed. If the first-contraction bound is already known or insufficient for the site's inclusion rule, please decline or request the appropriate narrower framing. No priority, award or payout claim is made."
+  },
+  "links": [
+    {"label": "Mathematical formal-scope audit", "url": "{source_url}/blob/{source_commit}/verification/Quarter_Gap_Formal_Scope_2026-09-05.md", "kind": "paper"},
+    {"label": "Frozen Lean source and pinned build configuration", "url": "{source_url}/tree/{source_commit}/lean", "kind": "code"},
+    {"label": "Trusted universal quarter-gap statement", "url": "{source_url}/blob/{source_commit}/lean/CollatzWork/QuarterGapUniversalStatement.lean", "kind": "lean-statement"},
+    {"label": "Universal quarter-gap proof", "url": "{source_url}/blob/{source_commit}/lean/CollatzWork/QuarterGapUniversal.lean", "kind": "lean-proof"},
+    {"label": "Research continuation and limitations", "url": "{source_url}/blob/{source_commit}/ASTRA_CONTINUATION_2026-09-05.md", "kind": "other"},
+    {"label": "Claim registry", "url": "{source_url}/blob/{source_commit}/proof-search/CLAIM_REGISTRY.md", "kind": "other"},
+    {"label": "Versioned research package and fresh verification logs", "url": "{release_url}", "kind": "other"}
+  ]
+}

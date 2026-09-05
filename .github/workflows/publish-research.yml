@@ -1,0 +1,146 @@
+name: Verify and publish research
+
+on:
+  pull_request:
+    paths:
+      - 'publication/**'
+      - 'tests/test_publication*.py'
+      - '.github/workflows/publish-research.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'publication/**'
+      - 'tests/test_publication*.py'
+      - '.github/workflows/publish-research.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-publication-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    outputs:
+      source_commit: ${{ steps.package.outputs.source_commit }}
+      publisher_commit: ${{ steps.package.outputs.publisher_commit }}
+      release_tag: ${{ steps.package.outputs.release_tag }}
+    steps:
+      - name: Check out the publisher
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Test publication guards and export formats
+        run: python3 -B -m unittest discover -s tests -v
+
+      - name: Read the pinned research manifest
+        id: metadata
+        run: |
+          python3 -B - <<'PY'
+          import json
+          import os
+          from publication.verify_source import validate_metadata
+          with open('publication/metadata.json', encoding='utf-8') as handle:
+              metadata = json.load(handle)
+          validate_metadata(metadata)
+          if metadata['repository'] != os.environ['GITHUB_REPOSITORY']:
+              raise SystemExit('The research manifest must name this repository')
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as handle:
+              handle.write(f"source_commit={metadata['source_commit']}\n")
+              handle.write(f"repository={metadata['repository']}\n")
+          PY
+
+      - name: Check out the exact mathematical source separately
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: ${{ steps.metadata.outputs.repository }}
+          ref: ${{ steps.metadata.outputs.source_commit }}
+          path: source
+          persist-credentials: false
+
+      - name: Install the unchanged pinned Lean release
+        run: |
+          test "$(cat source/lean-toolchain)" = 'leanprover/lean4:v4.33.1'
+          curl --fail --location --retry 3 -o "$RUNNER_TEMP/lean.tar.zst" \
+            https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst
+          echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check
+          tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.33.1-linux/bin" >> "$GITHUB_PATH"
+
+      - name: Rebuild every Lean source and replay all arithmetic certificates
+        run: python3 -B publication/verify_source.py --source source --output dist
+
+      - name: Build the publication package and validate release identity
+        id: package
+        run: |
+          python3 -B publication/build.py --source source --output dist --verification dist/verification.json
+          python3 -B - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+          manifest = json.loads(Path('dist/manifest.json').read_text(encoding='utf-8'))
+          expected_publisher = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          source = manifest['source_commit']
+          publisher = manifest['publisher_commit']
+          if not re.fullmatch(r'[0-9a-f]{40}', source):
+              raise SystemExit('Invalid source commit in built manifest')
+          if publisher != expected_publisher:
+              raise SystemExit('Publisher commit does not match this checkout')
+          metadata = json.loads(Path('publication/metadata.json').read_text(encoding='utf-8'))
+          if source != metadata['source_commit']:
+              raise SystemExit('Built source does not match selected research manifest')
+          tag = f'research-{source[:12]}-{publisher[:12]}'
+          if manifest['release_tag'] != tag:
+              raise SystemExit('Release identity does not match verified source and publisher')
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as handle:
+              for key, value in [('source_commit', source), ('publisher_commit', publisher), ('release_tag', tag)]:
+                  handle.write(f'{key}={value}\n')
+          PY
+
+      - name: Preserve verification evidence, including failed runs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: research-publication-${{ github.run_id }}-${{ github.run_attempt }}
+          path: dist/
+          if-no-files-found: warn
+          retention-days: 30
+
+  publish-prerelease:
+    needs: verify-and-package
+    # Pull requests and manual runs on other branches never receive write scope.
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the verified publisher commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ needs.verify-and-package.outputs.publisher_commit }}
+          persist-credentials: false
+
+      - name: Download the verified package from this run
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: research-publication-${{ github.run_id }}-${{ github.run_attempt }}
+          path: dist
+
+      - name: Stage, verify, and publish the complete research prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.verify-and-package.outputs.release_tag }}
+          SOURCE_COMMIT: ${{ needs.verify-and-package.outputs.source_commit }}
+          PUBLISHER_COMMIT: ${{ needs.verify-and-package.outputs.publisher_commit }}
+        run: python3 -B publication/publish_release.py --package dist

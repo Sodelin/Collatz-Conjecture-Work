@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-05",
+  "upstream_repository": "https://github.com/mrconter1/vibemathed",
+  "upstream_commit": "f2b04892c53c414b85d9446c2bddb262378966c8",
+  "description": "Observed VibeMathed submission-form contract, not a supported public submission API or the published dataset schema. Unknown future changes require rechecking the upstream contract.",
+  "sources": {
+    "submission": "https://vibemathed.com/submit",
+    "methodology": "https://vibemathed.com/methodology",
+    "contributing": "https://vibemathed.com/contributing",
+    "reviewing": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/docs/reviewing.md",
+    "fields": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/lib/editable.ts",
+    "submission_fields": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/lib/submission.ts",
+    "submission_action": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/app/actions/submit-problem.ts",
+    "draft_restore": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/components/SubmitForm.tsx",
+    "field_groups": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/lib/problems.ts",
+    "link_kinds": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/lib/link-kinds.ts",
+    "character_count": "https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/src/lib/char-length.ts"
+  },
+  "transport": {
+    "value_type": "string",
+    "empty_value": "",
+    "normalization": "trim then Unicode NFC",
+    "length_unit": "Unicode code points after NFC normalization",
+    "draft_storage_key": "vibemathed:submit-draft",
+    "draft_page": "https://vibemathed.com/submit",
+    "draft_status": "Observed first-party localStorage restore mechanism; implementation detail, not a documented import API. Recheck source before use. Writing a draft does not submit.",
+    "public_submission_api": false,
+    "requires_sign_in": true,
+    "authentication_providers": [
+      "Google",
+      "GitHub"
+    ],
+    "curator_review_required": true,
+    "max_submissions_per_rolling_24_hours": 10
+  },
+  "fields": {
+    "name": {
+      "label": "Name",
+      "kind": "text",
+      "required": true,
+      "max_length": 200,
+      "plain_text": false
+    },
+    "shortName": {
+      "label": "Short name",
+      "kind": "text",
+      "required": true,
+      "max_length": 60,
+      "plain_text": false
+    },
+    "problemNumber": {
+      "label": "Erdős number",
+      "kind": "number",
+      "required": false,
+      "plain_text": false
+    },
+    "solveType": {
+      "label": "Result",
+      "kind": "choice",
+      "required": true,
+      "plain_text": false,
+      "options": [
+        {
+          "value": "proved",
+          "label": "Proved"
+        },
+        {
+          "value": "disproved",
+          "label": "Disproved"
+        },
+        {
+          "value": "independent",
+          "label": "Independent of the axioms"
+        }
+      ]
+    },
+    "fieldGroup": {
+      "label": "Field",
+      "kind": "choice",
+      "required": true,
+      "options": [
+        {
+          "value": "Number theory",
+          "label": "Number theory"
+        },
+        {
+          "value": "Combinatorics",
+          "label": "Combinatorics"
+        },
+        {
+          "value": "Geometry & topology",
+          "label": "Geometry & topology"
+        },
+        {
+          "value": "Algebra",
+          "label": "Algebra"
+        },
+        {
+          "value": "Analysis",
+          "label": "Analysis"
+        },
+        {
+          "value": "Probability & statistics",
+          "label": "Probability & statistics"
+        },
+        {
+          "value": "Algorithms & optimization",
+          "label": "Algorithms & optimization"
+        },
+        {
+          "value": "Theoretical computer science",
+          "label": "Theoretical computer science"
+        },
+        {
+          "value": "Differential equations",
+          "label": "Differential equations"
+        },
+        {
+          "value": "Mathematical physics",
+          "label": "Mathematical physics"
+        },
+        {
+          "value": "Quantum information & computing",
+          "label": "Quantum information & computing"
+        },
+        {
+          "value": "Logic & foundations",
+          "label": "Logic & foundations"
+        }
+      ],
+      "plain_text": false
+    },
+    "field": {
+      "label": "Field detail",
+      "kind": "text",
+      "required": false,
+      "max_length": 80,
+      "plain_text": false
+    },
+    "resolution": {
+      "label": "Status",
+      "kind": "choice",
+      "required": true,
+      "options": [
+        {
+          "value": "resolved",
+          "label": "Resolved"
+        },
+        {
+          "value": "partial",
+          "label": "Partial result"
+        },
+        {
+          "value": "variant",
+          "label": "Variant only"
+        },
+        {
+          "value": "candidate",
+          "label": "Candidate (review pending)"
+        },
+        {
+          "value": "retracted",
+          "label": "Retracted"
+        }
+      ],
+      "plain_text": false
+    },
+    "aiContribution": {
+      "label": "AI contribution",
+      "kind": "choice",
+      "required": false,
+      "options": [
+        {
+          "value": "ai-discovered",
+          "label": "AI-discovered"
+        },
+        {
+          "value": "ai-co-developed",
+          "label": "AI co-developed"
+        },
+        {
+          "value": "ai-assisted",
+          "label": "AI-assisted"
+        }
+      ],
+      "plain_text": false
+    },
+    "claimIssueNote": {
+      "label": "Claim issue",
+      "kind": "textarea",
+      "required": false,
+      "max_length": 1000,
+      "plain_text": false
+    },
+    "statement": {
+      "label": "Statement",
+      "kind": "textarea",
+      "required": false,
+      "max_length": 1200,
+      "plain_text": false
+    },
+    "posedBy": {
+      "label": "Posed by",
+      "kind": "text",
+      "required": false,
+      "max_length": 200,
+      "plain_text": false
+    },
+    "yearPosed": {
+      "label": "Year posed",
+      "kind": "number",
+      "required": false,
+      "plain_text": false
+    },
+    "solveDate": {
+      "label": "Solve date",
+      "kind": "text",
+      "required": true,
+      "plain_text": false
+    },
+    "model": {
+      "label": "Model",
+      "kind": "text",
+      "required": true,
+      "max_length": 120,
+      "plain_text": false
+    },
+    "modelMaker": {
+      "label": "Vendor",
+      "kind": "text",
+      "required": false,
+      "max_length": 120,
+      "plain_text": false
+    },
+    "humanCollaborators": {
+      "label": "Collaborators",
+      "kind": "list",
+      "required": false,
+      "plain_text": false
+    },
+    "aiRole": {
+      "label": "What the AI did",
+      "kind": "textarea",
+      "required": false,
+      "max_length": 1500,
+      "plain_text": false
+    },
+    "verification": {
+      "label": "Verification",
+      "kind": "choice",
+      "required": true,
+      "options": [
+        {
+          "value": "lean-verified",
+          "label": "Lean-verified"
+        },
+        {
+          "value": "expert-verified",
+          "label": "Independently expert-verified"
+        },
+        {
+          "value": "site-confirmed",
+          "label": "Site-confirmed"
+        },
+        {
+          "value": "lean-checked",
+          "label": "Lean-checked, statement unaudited"
+        },
+        {
+          "value": "unreviewed",
+          "label": "Unreviewed"
+        },
+        {
+          "value": "contested",
+          "label": "Contested"
+        }
+      ],
+      "plain_text": false
+    },
+    "publication": {
+      "label": "Publication",
+      "kind": "choice",
+      "required": false,
+      "options": [
+        {
+          "value": "announcement",
+          "label": "Announcement"
+        },
+        {
+          "value": "preprint",
+          "label": "Preprint"
+        },
+        {
+          "value": "peer-reviewed",
+          "label": "Peer-reviewed"
+        }
+      ],
+      "plain_text": false
+    },
+    "resolutionMethod": {
+      "label": "Method",
+      "kind": "choice",
+      "required": false,
+      "options": [
+        {
+          "value": "construction",
+          "label": "Construction (explicit object)"
+        },
+        {
+          "value": "computation",
+          "label": "Computation (finite certificate)"
+        },
+        {
+          "value": "argument",
+          "label": "Argument (conceptual proof)"
+        }
+      ],
+      "plain_text": false
+    },
+    "verificationNote": {
+      "label": "Verification note",
+      "kind": "textarea",
+      "required": false,
+      "max_length": 1500,
+      "plain_text": false
+    },
+    "solveCostUsd": {
+      "label": "Disclosed cost (USD)",
+      "kind": "number",
+      "required": false,
+      "plain_text": false
+    },
+    "solveCostNote": {
+      "label": "Cost note",
+      "kind": "text",
+      "required": false,
+      "max_length": 300,
+      "plain_text": false
+    },
+    "resultNote": {
+      "label": "What was actually shown",
+      "kind": "textarea",
+      "required": false,
+      "max_length": 1000,
+      "plain_text": false
+    },
+    "ageNote": {
+      "label": "Age footnote",
+      "kind": "text",
+      "required": false,
+      "max_length": 400,
+      "plain_text": false
+    },
+    "citations": {
+      "label": "Citations",
+      "kind": "number",
+      "required": false,
+      "plain_text": false
+    },
+    "citationsPaper": {
+      "label": "Cited paper",
+      "kind": "text",
+      "required": false,
+      "max_length": 300,
+      "plain_text": false
+    },
+    "citationsSource": {
+      "label": "Citation source",
+      "kind": "text",
+      "required": false,
+      "max_length": 120,
+      "plain_text": false
+    },
+    "citationsUrl": {
+      "label": "Citation URL",
+      "kind": "url",
+      "required": false,
+      "plain_text": false
+    },
+    "sourceUrl": {
+      "label": "Source URL",
+      "kind": "url",
+      "required": true,
+      "plain_text": false
+    },
+    "sourceName": {
+      "label": "Source name",
+      "kind": "text",
+      "required": true,
+      "max_length": 200,
+      "plain_text": false
+    },
+    "links": {
+      "label": "More links",
+      "kind": "links",
+      "required": false,
+      "plain_text": false
+    },
+    "submitterNote": {
+      "label": "Anything else worth knowing",
+      "kind": "textarea",
+      "required": false,
+      "plain_text": false,
+      "max_length": 1000
+    }
+  },
+  "validation": {
+    "solve_date": {
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+      "year_min": 1000,
+      "year_max": 3000,
+      "month_min": 1,
+      "month_max": 12,
+      "day_min": 1,
+      "day_max": 31,
+      "calendar_validation_note": "Upstream checks component ranges, not full month/day calendar validity; local validation may be stricter."
+    },
+    "year_posed": {
+      "integer_only": true,
+      "minimum": 1000,
+      "maximum": 3000
+    },
+    "number_fields": "Nonnegative whole-number decimal strings; optional values may be empty.",
+    "url_protocols": [
+      "http",
+      "https"
+    ],
+    "human_collaborators": "Comma-separated names, trimmed, empty segments removed.",
+    "top_verification_evidence": {
+      "choices": [
+        "lean-verified",
+        "expert-verified",
+        "lean-checked"
+      ],
+      "requires_any_nonempty": [
+        "verificationNote",
+        "links"
+      ],
+      "note": "Semantic evidence review remains necessary even when the form accepts a nonempty field."
+    }
+  },
+  "link_rules": {
+    "encoding": "JSON string containing an array of objects",
+    "object_fields": [
+      "label",
+      "url",
+      "kind"
+    ],
+    "max_items": 16,
+    "label_max_length": 120,
+    "url_protocols": [
+      "http",
+      "https"
+    ],
+    "kinds": [
+      "paper",
+      "lean-proof",
+      "lean-statement",
+      "palomar",
+      "code",
+      "independent",
+      "transcript",
+      "announcement",
+      "problem-record",
+      "wikipedia",
+      "discussion",
+      "other"
+    ],
+    "blank_rows": "Completely blank rows are ignored; half-filled rows are rejected.",
+    "duplicates": "No duplicate extra links or links duplicating the primary source. Upstream compares canonical document identities, including arXiv versions and abs/pdf variants.",
+    "kind_fallback": "Missing or unknown kinds are inferred from URL and label by upstream. Emit an explicit supported kind.",
+    "label_length_unit": "UTF-16 code units after trimming"
+  },
+  "excluded_submission_fields": [
+    "relations",
+    "slug",
+    "status",
+    "renownLangs",
+    "renownNote",
+    "significance",
+    "significanceNote"
+  ],
+  "notes": [
+    "resolution is the public mathematical status; status is the private moderation state and must not be submitted.",
+    "A PDF hosted in a repository uses publication=announcement, not preprint.",
+    "Claim only lean-checked when the selected theorem has a clean build and axiom evidence but no independent statement audit; lean-verified requires the additional independent anchor.",
+    "The statement describes the question as posed; resultNote describes exactly what was proved and what remains open.",
+    "The upstream help text requests plain prose for hover-note fields, but the inspected field specs currently do not set plainText=true on those submission fields; plain_text records implementation accurately.",
+    "These form constraints do not establish VibeMathed eligibility or mathematical novelty."
+  ]
+}
