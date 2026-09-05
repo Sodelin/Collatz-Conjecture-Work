@@ -1,6 +1,14 @@
 # Continuation checkpoint
 
-Use the [2026-09-05 consolidated checkpoint](CONSOLIDATION_2026-09-05.md) for all incorporated source heads and current scope. The guidance below preserves useful route-specific obligations from earlier passes. The latest PR17 guarded TwoBurst theorem is Lean-checked; the old fixed Thue–Morse positive-realization candidate is excluded by the newer analytic recurrence theorem.
+Use the [2026-09-05 consolidated checkpoint](CONSOLIDATION_2026-09-05.md) for incorporated source heads and the canonical registries below for claim status. [PR #21](https://github.com/Sodelin/Collatz-Conjecture-Work/pull/21) integrated PRs #6, #8, #12, #13, #16, #17, #19 and #20 into main at `ec9c61afee164eb8da84b25a14afa122c87ea732`. Start a continuation from current main after checking for later changes; do not reopen or reapply those incorporated heads. Repository recovery does not imply mathematical closure.
+
+## Current restart queue
+
+1. **Already complete within their stated hypotheses:** the universal first-contraction quarter gap, uniform residue20 ancestor theorem, guarded TwoBurst theorem, fixed-algebra additive YAH certificates, and natural-valued finite-palette obstruction have Lean proofs. See [formal scope](LEAN_TARGETS.md). Do not spend another pass redoing those formalizations.
+2. **Current original-root research target:** handle failed final-halving guards and later recharge after independently long postspell growth. The [latest original-root packet](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md) and [guarded postspell theorem](proof-search/lemmas/Postspell_Guarded_Root_Descent.md) supersede the earlier request merely to find one descending subcylinder. Preserve the unchanged root, all accumulated growth, the four exit classes and possible re-entry. A new unbounded escape/coalescence mechanism is still required.
+3. **Separate bounded formalization target:** connect actual odd valuation words and their terminal oddness to the collision modulus, then formalize the height and balanced-substitution steps in the [Thue–Morse exclusion](https://github.com/Sodelin/Collatz-Conjecture-Work/blob/ec9c61afee164eb8da84b25a14afa122c87ea732/proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md). Its analytic theorem is complete as recorded; its entire semantic chain is not yet Lean-checked. This is verification work, not a new positive-realization search or a Collatz proof.
+
+The pass-by-pass sections at the end are historical context, not competing task queues. In particular, the old fixed Thue–Morse anchor is excluded, the uniform ancestor tail-table proof is complete, and PR19's formal module is now integrated.
 
 ## First: preserve the logical boundary
 
@@ -38,19 +46,24 @@ summary and an older route note disagree.
 
 ## Exact remaining proof object
 
-A proof must provide at least one of the following with full semantics and
-coverage:
+For universal convergence, candidate proof objects include the following,
+with full semantics and coverage. These are sufficient targets, not a claim
+that all possible approaches have been classified:
 
 - a well-founded interpretation for the exact YAH rewrite system, checking
   every rule/context and Collatz reflection; or
 - a finite/regular guarded macro graph covering every positive input, with a
   genuinely well-founded rank on every back-edge; or
-- for a fixed bounded hard valuation code, an exact proof of eventual zero
-  carry (constructing one positive orbit) or of infinitely many positive
-  carries (eliminating that code; a uniform theorem would eliminate the
-  family); or
 - another theorem that implies global descent for every odd `n>1` without
   assuming an equivalent form of the conjecture.
+
+A different, route-F task is to decide the endpoint-carry criterion for a
+specified bounded valuation code. Eventual zero carry constructs one
+positive realization; infinitely many positive carries exclude that code.
+Neither outcome alone proves universal convergence. A realized code is a
+disproof only with a rigorous divergence argument (or a verified nontrivial
+positive cycle); excluding a family requires a theorem uniform over that
+family and still need not exhaust all possible orbits.
 
 For the current hard-family synthesis, the return map in
 [`AB_hard_boundary_return_system.md`](proof-search/routes/AB_hard_boundary_return_system.md)
@@ -66,7 +79,8 @@ set is Collatz-equivalent, and the set admits further finite reductions such
 as `U^3(64s+55)=54s+47`. Do not treat the displayed L14 normal form as an
 irreducibility or exhaustion theorem.
 
-L15 expands the finite rewrite and inverse-word toolkit, but the relation is
+The older L15 expanded-rewrite and mixed-inverse result (distinct from the
+newer L15 quarter-gap theorem) expands the finite toolkit, but the relation is
 nonconfluent and universal forward-inverse certificate coverage is itself
 Collatz-equivalent. The pure exponent-`2` policy also has no uniform successful
 depth. Do not continue by merely increasing finite inverse depth or adding
@@ -83,12 +97,20 @@ The exact live coupling object is in
 For `1<=a_k<=A`, one positive ordinary realization exists exactly when the
 canonical carries are eventually zero, equivalently when `M_k/3^k -> 0`.
 Every finite prefix being positively realizable does not imply this condition.
-For the guarded `{1,3}` block codes, positive realization would give a genuine
-unbounded orbit; neither realization nor universal escape has been proved.
+For the remaining guarded `{1,3}` hard block codes covered by that note,
+positive realization would give a genuine unbounded orbit; a decision for
+all such codes has not been proved. The fixed binary Thue–Morse subclasses
+are no longer unresolved examples of this gate.
 
-The conditional Thue--Morse anchor is paused at the same ordinary-membership
-gate. Its `2`-adic series/product and conditional divergence bound are not a
-positive witness and must not be described as a disproof.
+The [analytic prefix-return theorem](https://github.com/Sodelin/Collatz-Conjecture-Work/blob/ec9c61afee164eb8da84b25a14afa122c87ea732/proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+forces a positive realization of any fixed nonempty two-word Thue–Morse
+valuation morphism onto a cycle. The growth arguments exclude the original
+`a_i=1+t_i` anchor and fixed `1^p3`/`1^q3` codes with `p,q>=3` altogether.
+The old `2`-adic calculation is historical, not a pending positive witness.
+The general theorem retains its cycle exception: coding both symbols by
+`(2)` is realized at `N=1`. Arbitrary valuation codes and nontrivial positive
+cycles are not excluded. The full odd-word/height/substitution argument
+remains analytic, separately from its existing Lean components.
 
 For the minimal-counterexample synthesis, L11 is one-shot. A continuation must
 carry the immutable root across local descents, non-descending edges, infinite
@@ -117,20 +139,34 @@ coefficient-stopping branches, band exits, and the zero-gap cycle branch.
   windows; the exact finite constructions already realize them.
 - Passing from compatible finite valuation prefixes to one positive infinite
   seed by compactness, CRT, or a profinite/`2`-adic limit.
-- Treating the conditional Thue--Morse `2`-adic anchor as a positive ordinary
-  integer without an exact membership proof.
+- Reopening the excluded fixed Thue–Morse anchor as a positive-realization
+  target without identifying a defect in the newer analytic exclusion.
+- Confusing a code-class exclusion, a local spell clock, or a proof-method
+  obstruction with universal positive-orbit coverage.
 
 See [FAILURE_LEDGER.md](proof-search/FAILURE_LEDGER.md) for the exact
 counterexamples and reopening conditions.
 
 ## Formalization boundary
 
-Use [LEAN_TARGETS.md](LEAN_TARGETS.md) and
-[`lean/VERIFICATION_POLICY.md`](lean/VERIFICATION_POLICY.md). The existing
-narrow modules are useful regressions; they do not formalize Round 6A, full L5,
-the L13 hard/rank statements, the hard return equivalence, the YAH
-cancellations or scalar-arctic certificates, L14, L15, the endpoint-residue
-gate, the renewal/prime filters, or Collatz.
+Use [LEAN_TARGETS.md](LEAN_TARGETS.md), the integrated
+[Lean umbrella](lean/CollatzWork.lean), and
+[verification policy](lean/VERIFICATION_POLICY.md) for exact declarations
+and assumptions. The universal first-contraction quarter gap, complete
+uniform residue20 ancestor selector, guarded TwoBurst descent, fixed-algebra
+additive YAH cancellations, prefix-collision/affine-repetition components,
+and natural-valued finite-palette obstruction are already formalized.
+
+Do not transfer that status to the scalar-arctic YAH full/top theorem,
+the complete Thue–Morse semantic chain, postspell/CRT specializations,
+the complementary ancestor prefix, or global guard coverage. Round 6A,
+full L5, the L13 hard/rank prose chain, the hard-return equivalence, L14,
+the older L15 mixed-inverse result, the endpoint-carry gate, and the
+renewal/prime filters also retain their separate nonformal scope. The
+newer L15 universal quarter gap is formalized; its arbitrary real-phase
+and 1024-block frontier refinements are separate. No Collatz proof is
+present. See the [modern contribution audit](https://github.com/Sodelin/Collatz-Conjecture-Work/blob/ec9c61afee164eb8da84b25a14afa122c87ea732/research-review/consolidation-2026-09-05/MODERN_CONTRIBUTIONS.md)
+for the distinctions reconciled during integration.
 
 ## Required handoff packet for any new claim
 
@@ -149,10 +185,19 @@ Provide:
 Do not spend a full search cycle unless the proposal names the old blocker and
 the genuinely new mechanism that bypasses it.
 
+## Historical sequence, not the current task queue
+
+The following sections retain earlier findings and reopening conditions.
+Read every earlier next-step instruction through the current queue above
+and the latest original-root packet. Historical CI receipts certify their
+own pinned sources, not later expansions. The later completion notices
+below supersede earlier pending-formalization requests.
+
 ## 2026-09-05 continuation delta
 
 Read the [reviewed research pass](ASTRA_RESEARCH_PASS_2026-09-05.md) before
-reopening these routes. L15 improves `d<s/3` to `d<s/4` and the existing
+reopening these routes. The newer L15 quarter-gap result improves
+`d<s/3` to `d<s/4` and the existing
 conditional frontier to `17,340,869,984` with L11. This does not reduce L12's
 valuation ceiling or repair recursive renewal.
 
@@ -188,7 +233,7 @@ Route AB requires a mechanism that passes the strengthened frozen-state test.
 ## Third-pass handoff
 
 Start with [ASTRA_CONTINUATION_2026-09-05.md](ASTRA_CONTINUATION_2026-09-05.md).
-L15's universal quarter inequality and its integer mechanical dependency chain
+The newer L15 quarter inequality and its integer mechanical dependency chain
 are now Lean-verified. Do not repeat that formalization; arbitrary block lengths
 and the 1024-block frontier refinement remain separate pending work.
 
@@ -207,13 +252,13 @@ coalescence identities. The original-F arbitrary-modulus obstruction has
 
 ## Fourth-pass handoff: root-relative progress
 
-Start with [the committed research packet](ROOT_RELATIVE_PROGRESS_2026-09-05.md). Actual OOE burst descent under its exact divisibility guard and generic ancestor orbit semantics are now Lean-checked. The refined inverse-tail selector proves in prose that every positive residue20 root with v3(4r+1)≥13 has a smaller ancestor in the same class.
+The [initial root-relative packet](ROOT_RELATIVE_PROGRESS_2026-09-05.md) first established actual OOE burst descent under its exact divisibility guard and generic ancestor orbit semantics in Lean, with the refined uniform inverse-tail selector then proved in prose. The later fifth-pass result below completes that selector in Lean: every root satisfying `3^13 ∣ (4r+1)` has a positive smaller residue20 ancestor. The initial packet's prose-only status is historical.
 
 A hypothetical least nonconvergent residue20 root must therefore satisfy v3(r+7)∈{3,4} and v3(4r+1)≤12, and avoid all individually covered rows and guarded burst families. This remains an infinite residual set. The displayed selector does not certify425; its v12 sharpness witness is a failure of that selector only.
 
 The highest-value next mathematical target is an exact recharge-or-escape lemma on this residual class: first isolate a growing return cylinder, then prove either a smaller coalescing target or a decrease in a justified unbounded measure across the complete excursion. Track the unchanged induction root. The q10→7→4→10 growing path is a required falsification test for q-only polynomial ranks. A bounded-depth first-return calculation or a larger replay limit cannot replace this theorem.
 
-The more bounded verification target is to formalize the finite refined tail table and its slope/coverage argument using the checked generic ancestor prefix. This would raise verification confidence without resolving the residual mathematical bridge.
+The earlier bounded target, formalizing the finite refined tail table and its slope/coverage argument, is complete for the uniform valuation13 theorem. Do not repeat it. Individually sharper lower-row thresholds remain separate targets; the residual mathematical bridge is still open.
 
 
 ## Fifth-pass handoff: actual recharge escape
@@ -235,7 +280,7 @@ The [anchor and simultaneous CRT theorem](proof-search/lemmas/Bounded_Ancestor_D
 
 The highest-value next bridge must handle unbounded mixed coalescence or whole-excursion progress relative to the unchanged root, including the accumulated OOEO growth, all four exit classes and possible re-entry. The local clock is not a global rank. The proved families and guarded escape results remain valid, while universal termination and total residual coverage remain unproved.
 
-A separate Work-thread result was checked read-only: [PR19 at49721623303d76956c88db5c9906f8c7b4a586e1](https://github.com/Sodelin/Collatz-Conjecture-Work/blob/49721623303d76956c88db5c9906f8c7b4a586e1/proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md) excludes bounded-shortcut-horizon progress for arbitrary selection among a finite palette of eventually nondecreasing rank pieces. Its natural-valued theorem is Lean-checked; ordered-value and polynomial extensions are prose. Lean CI33976680139 used the unchanged pinned release on synthetic merge f37c3791eab42583541344d34c89421679b9e9dd, whose source tree has no changes relative to that PR head. This additive obstruction is not imported as a new local formal theorem and does not exclude our unbounded excursions. No external specialist or novelty review is implied.
+[PR19 at49721623303d76956c88db5c9906f8c7b4a586e1](https://github.com/Sodelin/Collatz-Conjecture-Work/blob/49721623303d76956c88db5c9906f8c7b4a586e1/proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md), originally reviewed read-only, is now integrated through PR21. Its natural-valued Lean theorem excludes bounded-shortcut-horizon progress for arbitrary selection among a finite palette of eventually nondecreasing rank pieces. Ordered-value and polynomial extensions remain prose. The original CI33976680139 receipt retains its own source identity; consult current-source CI for the integrated tree. This theorem does not exclude unbounded excursions, and integration does not create a second mathematical contribution or establish novelty.
 
 
 ### Positive continuation through independently long postspell growth
@@ -243,3 +288,12 @@ A separate Work-thread result was checked read-only: [PR19 at49721623303d76956c8
 [ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md) is the latest packet. The [new guarded theorem](proof-search/lemmas/Postspell_Guarded_Root_Descent.md) proves actual original-root descent along (OOEO)^J O^H E^e for J≥2, H≥3 and e≥J+H. For every independently selected J,H, explicit parity recursion and CRT produce infinitely many q5 target-cylinder sources and a residue20 endpoint, choosing e=2 mod18 with at most17 padding steps. The example is `103791333467 ->(31 shortcut steps)951311`. The complete new proof remains prose with exact Python evidence; it is separate from the accepted Lean two-burst theorem.
 
 The [complementary obstruction](proof-search/lemmas/Postspell_Odd_Run_Obstruction.md) proves that even fixed J and q2 permit an independently unbounded odd run. The positive result handles that growth only under its final-halving guard. The strongest remaining target is an escape/coalescence mechanism for failed-halving branches, tracking J,H, all intervening growth and the unchanged root through later recharge. Do not claim that the guarded CRT slice exhausts the cylinder or that universal termination follows.
+
+
+## Connections
+
+- Extends the restart guidance in [the consolidation checkpoint](CONSOLIDATION_2026-09-05.md).
+- Uses [the claim registry](proof-search/CLAIM_REGISTRY.md) and [approach registry](proof-search/APPROACH_REGISTRY.md), without replacing their status authority.
+- Routes current mathematical work to [original-root bridge progress](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md).
+- Separates completed formalizations from [remaining Lean targets](LEAN_TARGETS.md).
+- Uses [the failure ledger](proof-search/FAILURE_LEDGER.md) as mandatory counterexample context.
