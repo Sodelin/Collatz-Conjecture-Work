@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "Sodelin/Collatz-Conjecture-Work",
-  "source_commit": "33922a42e86646258d227d1e19c6cf7546a2f548",
+  "source_commit": "3d9a74e79a2162472430537f4fe7aa299450271c",
   "headline_declaration": "CollatzWork.firstContractionQuarterGap",
   "title": "Collatz research consolidation: restricted YAH obstruction, Lean auxiliary results, and open bridges",
   "date": "2026-09-05",
