@@ -65,7 +65,7 @@ format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.
 |---|---|---|
 | [`CollatzWork/InverseWordBoundary.lean`](../lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the exact `8x+5 / 8x+4` regression witness. | `equalSlopeSmaller` is axiom-free; the witness reports standard `propext`, `Quot.sound`. |
 | [`CollatzWork/RefinedMersenneChild.lean`](../lean/CollatzWork/RefinedMersenneChild.lean) | Refined easy-child arithmetic, iterate identity, and coalescence. | Arithmetic theorem reports standard `propext`, `Classical.choice`, `Quot.sound`; remaining exported theorems report `propext`, `Quot.sound`. |
-| [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; not imported by `CollatzWork.lean`. |
+| [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; now imported by `CollatzWork.lean`. |
 
 No module formalizes Round 6A, full L5, the L13 hard-child classification,
 the cross-label recharge/rank theorem, the hard return map, YAH relative
@@ -117,3 +117,15 @@ GitHub Linux runner using the unchanged pinned Lean 4.33.1 release.
 The [workflow](../.github/workflows/verify.yml) repeats these checks for pushes
 and pull requests. A configured workflow is not a pass: inspect the actual
 run and source commit when reviewing later changes.
+
+
+## Second full-closure attempt, 2026-09-05
+
+| Claim / experiment | Reproduction | Scope |
+|---|---|---|
+| `AB-3ADIC-RESET-001` | `python -B verification/three_adic_hard_return_check.py`; [output](three_adic_hard_return_output_2026-09-05.txt) | Uniform affine guards/cofactor factorizations; 515 witness replays and raw hard inputs below 20,000. Universal reset and polynomial consequence are proved in prose. |
+| Primary-source counterexamples | `python -B verification/primary_bridge_counterexamples.py`; [output](primary_bridge_counterexamples_output_2026-09-05.txt) | Exact finite witnesses supporting the [source audit](../proof-search/sources/Primary_Bridge_Audit_2026-09-05.md); infinite measure and logical arguments are separate proofs. |
+| `A-YAH-NAT2-B2-EXP` | [Search and exact SMT instances](yah_natural_matrix_2d/README.md) | Dimension 2 natural affine template: bound 2 UNSAT reported by Z3; bound 8 timeout. No independently checked UNSAT certificate or general no-go. |
+
+The two standard-library counterexample checkers are CI gates. The optional
+Z3 search is a retained bounded experiment, not a required CI gate.

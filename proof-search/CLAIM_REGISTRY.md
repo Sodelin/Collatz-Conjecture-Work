@@ -219,8 +219,8 @@ may be folklore or an immediate corollary.
 
 See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
-computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the three existing
-narrow Lean modules and the unformalized theorem chain.
+computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the four existing
+narrow Lean proof modules and the unformalized theorem chain.
 
 ## Reviewed additions from the 2026-09-05 pass
 
@@ -235,3 +235,18 @@ These rows extend the older baseline without promoting Collatz or certifying nov
 
 See [the research pass](../ASTRA_RESEARCH_PASS_2026-09-05.md) for process and
 inference audits. No entry is externally peer-reviewed or resolution-level.
+
+
+### Second closure-attempt delta
+
+| ID | Exact scope | Grades | Evidence | Limitation |
+|---|---|---|---|---|
+| `AB-3ADIC-RESET-001` | Raw hard return resets `v3(Y+1)` to 1; a two-edge family freezes `(L,e,b,D,R)` while cofactor grows, excluding the stated lower-bounded polynomial/cofactor finite-lex ranks. | `C2 V2 I2 N1 R1` | [Proof](routes/AB_three_adic_rank_no_go.md), [checker](../verification/three_adic_hard_return_check.py). | Additional-state/nonpolynomial/coalescence mechanisms remain available; not Lean-formalized. |
+| `SOURCE-WMH-COLLAPSE-001` | Chang v6's summable projected-TV condition forces every fixed-depth discrepancy to zero and is equivalent to its displayed existential-depth OEC. | `C2 V2 I2 N0 R1` | [Definitions and proof](sources/Primary_Bridge_Audit_2026-09-05.md); separate cold reconstruction. | Audits exact source quantifiers; no positive-integer convergence theorem. |
+| `SOURCE-NONHAAR-001` | Explicit Bernoulli valuation coding gives a non-atomic non-Haar Syracuse-invariant probability measure. | `C2 V2 I2 N0 R1` | [Construction](sources/Primary_Bridge_Audit_2026-09-05.md), finite inverse-branch checks, separate cold reconstruction. | 2-adic support; no divergent positive integer. Refutes asserted uniqueness conclusion, not every conditional spectral statement. |
+
+`A-YAH-NAT2-B2-EXP` is a bounded solver experiment, not a promoted universal
+theorem: [exact encoding and outcomes](../verification/yah_natural_matrix_2d/README.md).
+The Dhiman–Pandey encoding limitation does not prohibit Route B's finite
+ranked graph; the [source audit](sources/Primary_Bridge_Audit_2026-09-05.md)
+supplies an explicit separating example.

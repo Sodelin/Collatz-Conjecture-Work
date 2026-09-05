@@ -1,0 +1,5 @@
+PASS: U does not induce a deterministic map on odd residues modulo16
+PASS: elementary two-rule ranked-system separation regression
+PASS: convergent odd orbit has delta_K=1-2^(1-K), not summable
+PASS: 256 exact inverse-branch words have only valuations1 or2
+Scope: finite witnesses; infinite proofs and limitations are in the audit note

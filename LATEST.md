@@ -70,3 +70,10 @@ the [frozen-debt polynomial-rank obstruction](proof-search/routes/AB_frozen_debt
 and Lean-checked convergence/coalescence semantics. These extend the baseline;
 the conjecture and Route-AB universal return obligation remain unresolved.
 The new mathematical notes are internally reconstructed, not externally peer reviewed.
+
+
+The second full-closure pass adds the [3-adic rank obstruction](proof-search/routes/AB_three_adic_rank_no_go.md),
+a [primary-source bridge audit](proof-search/sources/Primary_Bridge_Audit_2026-09-05.md),
+and a [bounded dimension 2 matrix search](verification/yah_natural_matrix_2d/README.md).
+None closes the conjecture. Their exact evidence and reopening conditions
+are integrated into the canonical registries.

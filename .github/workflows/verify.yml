@@ -40,3 +40,5 @@ jobs:
         run: |
           python3 -B verification/near_return_quarter_bound.py
           python3 -B verification/hard_return_frozen_debt_check.py
+          python3 -B verification/three_adic_hard_return_check.py
+          python3 -B verification/primary_bridge_counterexamples.py

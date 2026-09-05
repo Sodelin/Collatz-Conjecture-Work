@@ -354,6 +354,35 @@ This strengthens F023 without excluding all nonlinear ranks or proving divergenc
 
 ---
 
+
+## F026 — Adding 3-adic depth does not repair polynomial cofactor ranks
+
+**Status:** exact obstruction within the specified augmented-state class.
+[AB-3ADIC-RESET-001](routes/AB_three_adic_rank_no_go.md) proves the reset
+`v3(Y+1)=1` on every raw hard return and the family
+`589824t+244379 -> 995328t+412391 -> 2519424t+1043867`, `t>=0`.
+Both endpoints have `(L,e,b,D,R)=(2,1,1,2,0)`, while their coprime cofactors
+increase by more than fourfold. This excludes lower-bounded polynomials in
+cofactor and bitlength with arbitrary dependence on those frozen measurements,
+and finite lex tuples with individually lower-bounded coordinates.
+
+**Reopen only if:** the candidate handles this exact family with further
+arithmetic structure, nonpolynomial behavior, or a proved smaller target.
+An exact coordinate system alone is not a well-founded order.
+
+## F027 — Summable projected discrepancy is not a weaker mixing bridge
+
+**Status:** exact source-quantifier obstruction. Consistent projected total
+variation errors satisfy `delta_(K+1)>=delta_K>=0`; summability therefore
+forces every error to vanish. Chang v6's displayed WMH supplies no weakening
+of fixed-depth equidistribution. Its asserted non-atomic Haar uniqueness
+also has an explicit countermeasure. See the [primary-source audit](sources/Primary_Bridge_Audit_2026-09-05.md).
+
+**Reopen only if:** a corrected quantitative hypothesis is actually proved
+for each required positive orbit, with its tail and cycle obligations intact.
+Neither finite-modulus mixing nor a 2-adic almost-everywhere assertion is
+that pointwise bridge. These failures are not a no-go for every ergodic method.
+
 # Reopening template
 
 When reopening a ledger item, add:

@@ -25,6 +25,9 @@ superseded by the current Round-8 records. Work is reviewable in
 | Near-return gap | `d<s/3` becomes **`d<s/4`** for every non-descending first coefficient contraction. | Universal prose derivation, independent reconstruction, exact finite certificate; not Lean-formalized. |
 | Conditional first-frontier bound | Existing `24,019,143,996` becomes **`17,340,869,984`** with the sharper 1024-term certificate and inherited `4|d`. | Exact rational arithmetic, under the existing L8/L11 frontier hypotheses. |
 | Ranking obstruction | An expanding two-return family defeats every lower-bounded label-dependent polynomial in parameter, bitlength, and the existing debt variables. | Symbolic affine certificate and independent proof reconstruction; no all-ranks claim. |
+| 3-adic extension | Hard returns reset 3-adic depth to one; a second family defeats augmented polynomial/cofactor ranks. | Universal algebra, guarded family, finite regression; not Lean-formalized. |
+| External closure claims | Summable projected discrepancies force exact equidistribution; an explicit measure refutes asserted non-atomic Haar uniqueness. | Primary-text audit and independently reconstructed counterarguments; no positive-integer disproof. |
+| Direct closure search | Dimension 2 natural-matrix search included all eleven rewrite rules. | Bound 2: Z3-reported UNSAT; bound 8: timeout. No general exclusion or closure. |
 | Formal semantics | Exact convergence/coalescence and strong-induction criteria, including the existing compatible child. | Official pinned Lean 4.33.1 build; nine audited axiom reports. |
 | Reproduction | GitHub CI runs the unchanged Lean release and exact Python checks. | Actual successful execution, not merely a configured workflow. |
 
@@ -66,6 +69,16 @@ Finite computation was used only after specifying its coverage argument.
 The quarter proof reduces infinitely many `s` to arbitrary-phase blocks plus
 107 small exact inequalities. The rank proof uses a universally guarded affine
 family; 1,003 numerical replays are additional regression checks.
+
+A second closure attempt used alphaXiv discovery and raw primary PDF text,
+with parallel 3-adic-coordinate, source-bridge, and matrix-interpretation
+attacks. The invariant-measure and quantifier arguments received a separate
+cold review against the exact source definitions. Wolfram's connection failed
+with a 404 during probing, so no computation is attributed to Wolfram.
+The selected Data Analytics plugin exposed the working repository connector.
+Optional Product Design, Hugging Face, and special-function capabilities did
+not supply a necessary mathematical step. No callable `app_block` endpoint
+was exposed. Capability availability is not counted as research evidence.
 
 ## 4. Findings
 
@@ -122,6 +135,67 @@ The new declarations do not disguise that premise as an axiom.
 checked commit `192e62b707205ae6181212eeb25ee304f6b12c71`; selected version,
 build, and axiom lines are [retained here](verification/lean_convergence_ci_2026-09-05.txt).
 
+### 4.4 Adding 3-adic information still leaves an expanding frozen state
+
+Write `n+1=2^a*3^b*lambda` with `gcd(lambda,6)=1`. The
+[new exact calculation](proof-search/routes/AB_three_adic_rank_no_go.md)
+shows `v3(Y+1)=1` after every raw hard macro. For every `t>=0`,
+
+\[
+589824t+244379\xrightarrow{F}995328t+412391
+\xrightarrow{F}2519424t+1043867.
+\]
+
+The endpoints share `(L,e,b,D,R)=(2,1,1,2,0)`, while the coprime cofactor
+grows from `49152t+20365` to `209952t+86989`, more than fourfold. Thus
+polynomial/cofactor ranks with arbitrary dependence on these frozen
+measurements, and finite lexicographic versions with lower-bounded coordinates,
+cannot decrease universally. Williams's coordinate paper supplies exact
+identities but leaves its boundary sequence and cofactor recurrence open.
+
+### 4.5 Primary-source checks prevent two false closure shortcuts
+
+The [source audit](proof-search/sources/Primary_Bridge_Audit_2026-09-05.md)
+finds that Dhiman–Pandey's full-reachability nondefinability theorem applies
+to classical Collatz. It does not prohibit finite guarded graphs with
+unbounded ranks: a terminating halving/odd-to-one system separates these
+notions. Route B remains available.
+
+For Chang v6's definitions, projected total-variation discrepancies obey
+`delta_(K+1)>=delta_K>=0`; a finite sum forces every `delta_K=0`. Its WMH
+therefore supplies no weakening of fixed-depth equidistribution, and its
+existential growing-depth OEC is equivalent by diagonalization. Separately,
+independent fair valuation digits in `{1,2}` give the continuous coding
+
+\[
+x(v)=-\sum_{j\ge0}2^{v_0+\cdots+v_{j-1}}/3^{j+1},
+\qquad U(x(v))=x(\operatorname{shift}v).
+\]
+
+Its pushforward is a non-atomic, non-Haar invariant probability measure.
+This refutes the asserted uniqueness conclusion, while leaving the status of
+separately stated conditional spectral antecedents explicit. It concerns a
+2-adic measure, not a divergent positive integer. These counterarguments do
+not establish mathematical priority.
+
+### 4.6 A direct matrix-certificate attempt reaches a bounded negative result
+
+The [retained search](verification/yah_natural_matrix_2d/README.md) assigns
+dimension 2 natural affine interpretations to all seven rewrite symbols.
+All eleven rules must decrease weakly and at least one must decrease strictly,
+with context monotonicity enforced. A valid first removal would combine with
+the published terminating proper subsystems to close the rewrite route.
+Published Example 4.3 passed both the independent integer checker and the
+SMT encoding as a positive control.
+
+| Coefficient range | Outcome | Interpretation |
+|---|---|---|
+| 0–2 | UNSAT in 0.488 seconds | Solver-reported finite-template exclusion; no checked UNSAT proof certificate. |
+| 0–8 | Timeout at 60.021 seconds | No exclusion and no witness. |
+
+This attempt produced no universal certificate. It neither rules out all
+dimension 2 interpretations nor exhausts richer termination methods.
+
 ## 5. Conclusion
 
 The pass strengthens a necessary condition, rules out a broader attempted
@@ -129,6 +203,8 @@ mechanism, and closes a formal semantics gap. The full conjecture still does
 not follow. The new upper bound does not prove coefficient-stopping finiteness,
 exclude zero-gap cycles, or justify repeatedly restarting the least-counterexample
 argument at a larger endpoint.
+The second pass strengthens the rank obstruction and rejects specific invalid
+external bridges; its direct solver search leaves the global goal open.
 
 ## 6. Deconstructive analysis
 
@@ -153,6 +229,23 @@ smaller-target relation. Searching higher polynomial degrees in the same
 variables is now ruled out. For the quarter result, the highest-value
 verification follow-up is formalizing the phase-maximization theorem and its
 L9 dependency. Neither action should be presented as guaranteed closure.
+
+The full-closure hierarchy tested two concrete proof obligations:
+
+```mermaid
+flowchart TD
+  G["Collatz for every positive start: open"] --> C["Universal smaller coalescence: open"]
+  G --> T["Rewrite termination: open"]
+  C --> I["Induction implication: Lean checked"]
+  C --> M["Uniform smaller targets: missing"]
+  M --> F["Frozen-state rank obstruction: proved in prose"]
+  T --> A["Matrix certificate: none found in bounded search"]
+```
+
+The arrows organize obligations and outcomes. Future Route AB candidates
+must handle the stronger 3-adic frozen family. Route A remains open to an
+explicit different interpretation or transformation. Full-reachability
+nondefinability does not eliminate finite ranked graph certificates.
 
 ## 9. Glossary
 
@@ -187,6 +280,14 @@ polynomial/bitlength Collatz ranks, and the displayed integer witness did
 not locate an exact match. This was a bounded search, not a systematic
 priority investigation. No novelty or publication-readiness claim follows.
 
+The second pass also read primary texts by
+[Yolcu–Aaronson–Heule](https://arxiv.org/abs/2105.14697v3),
+[Williams](https://arxiv.org/abs/2607.01718v1),
+[Dhiman–Pandey](https://arxiv.org/abs/2602.06066v2), and
+[Chang](https://arxiv.org/abs/2603.11066v6). Their source roles and exact
+audited pages are in the linked notes. Generated paper summaries were not
+accepted as proof evidence.
+
 ## 11. Metacognitive review: process integrity
 
 **Process-integrity band: strong for the stated internal verification task;
@@ -201,6 +302,13 @@ clinical GRADE scoring do not apply as validated scoring instruments here.
 The useful process checks are coverage, dependency fidelity, reproducibility,
 and independent reconstruction. Remaining fixes: external specialist review,
 broader prior-art search, and formalization of the two new mathematical notes.
+
+The second pass preserved separate raw-source reading, proof reconstruction,
+and solver validation roles. The invariant-measure proof received an explicit
+domain correction for the singular point `-1/3`; the source audit distinguishes
+an asserted conclusion from the antecedent of a conditional proposition.
+The bounded UNSAT report is deliberately weaker evidence than the repository's
+independently reconstructed scalar-arctic proof certificates.
 
 ## 12. Metacognitive reflection: robustness of inference
 
@@ -217,6 +325,14 @@ rank inside its exact class or a failure of the universal affine family.
 A rank using extra state would change the route prospect without falsifying
 the scoped no-go. A future counterexample or proof of Collatz would be assessed
 separately; this pass supplies neither.
+
+For the source audit, changing the discrepancy quantifiers or imposing a
+specified growth rate for the modulus could change the equivalence claim;
+that would be a different hypothesis. The invariant-measure construction
+does not establish anything about a positive orbit. A different matrix
+coefficient bound, dimension, carrier or orientation is outside the bounded
+negative experiment. The larger search timeout supports no mathematical
+exclusion.
 
 ## 13. Zotero and Obsidian integration
 
@@ -238,6 +354,8 @@ From the repository root, run:
 ```sh
 python -B verification/near_return_quarter_bound.py
 python -B verification/hard_return_frozen_debt_check.py
+python -B verification/three_adic_hard_return_check.py
+python -B verification/primary_bridge_counterexamples.py
 python -B verification/check_note_graph.py
 lake build
 lake env lean lean/CollatzWork/Convergence.lean
@@ -256,9 +374,15 @@ leave the PR unmerged. To resume, read the [continuation](CONTINUATION.md),
 new notes, and retained outputs at the actual PR head. Do not infer that
 any unreviewed future change inherits this pass's verification.
 
+The optional [Z3 experiment](verification/yah_natural_matrix_2d/README.md)
+has separate pinned dependency and timeout instructions; it is not a CI gate.
+Its result, exact SMT instances, all new proof notes, checker outputs and
+source references are preserved in the draft branch.
+
 ## Connections
 
 - **Depends on:** [current claim registry](proof-search/CLAIM_REGISTRY.md).
 - **Strengthens:** [L15 quarter bound](proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md).
 - **Records:** [frozen-debt obstruction](proof-search/routes/AB_frozen_debt_size_rank_no_go.md).
+- **Records:** [3-adic obstruction](proof-search/routes/AB_three_adic_rank_no_go.md), [source audit](proof-search/sources/Primary_Bridge_Audit_2026-09-05.md), and [bounded matrix attempt](verification/yah_natural_matrix_2d/README.md).
 - **Verified by:** [reproduction manifest](verification/README.md) and [Lean scope](LEAN_TARGETS.md).

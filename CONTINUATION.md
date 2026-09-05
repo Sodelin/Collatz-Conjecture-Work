@@ -127,3 +127,20 @@ state or stronger smaller-target relation distinguishes the frozen-debt
 endpoints? Without such a mechanism, keep Route AB blocked. Formalizing the
 new phase-block theorem is a bounded verification target, not a promised
 route to closure. The new convergence criteria already passed pinned Lean CI.
+
+
+### Second closure-attempt handoff
+
+The [3-adic extension](proof-search/routes/AB_three_adic_rank_no_go.md)
+shows that adding `v3(n+1)` and the coprime cofactor still leaves an expanding
+family with frozen measurements. Test `244379 -> 412391 -> 1043867` and its
+full affine family before reopening that rank class.
+
+The [primary-source audit](proof-search/sources/Primary_Bridge_Audit_2026-09-05.md)
+keeps finite ranked graphs available despite full-reachability nondefinability,
+but rejects Chang v6's claimed WMH weakening and non-atomic uniqueness conclusion.
+The [natural-matrix experiment](verification/yah_natural_matrix_2d/README.md)
+has only a solver-reported bounded exclusion and a larger-bound timeout.
+Do not repeat the same template or import the audited source claims as closure.
+Route A can be reopened by a concrete different interpretation or transformation;
+Route AB requires a mechanism that passes the strengthened frozen-state test.

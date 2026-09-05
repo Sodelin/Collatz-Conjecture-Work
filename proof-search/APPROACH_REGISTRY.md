@@ -204,3 +204,11 @@ and a wider sufficient L11 inheritance band. The root, stopping-finiteness,
 zero-gap, and renewal obligations remain, so its route status is unchanged.
 The [formal convergence criteria](../lean/CollatzWork/Convergence.lean) verify
 certificate semantics without constructing a universal certificate.
+
+
+### Second full-closure pass
+
+- **A remains active:** [dimension 2 natural-matrix search](../verification/yah_natural_matrix_2d/README.md) found bound 2 UNSAT and bound 8 timeout. This is not a coefficient-independent exclusion or a closure certificate.
+- **B remains active:** nondefinability of full reachability does not prohibit finite guarded graphs with unbounded ranks; [exact separating example](sources/Primary_Bridge_Audit_2026-09-05.md).
+- **AB/C:** [3-adic augmentation](routes/AB_three_adic_rank_no_go.md) fails to rescue the audited polynomial ranks. F026 is the new falsification test.
+- **F and analytic routes:** the [source audit](sources/Primary_Bridge_Audit_2026-09-05.md) blocks importing the asserted mixing weakening or invariant-measure uniqueness. No positive counterexample or universal orbitwise bridge was obtained.
