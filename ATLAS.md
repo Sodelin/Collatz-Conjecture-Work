@@ -223,3 +223,15 @@ it, it belongs in the failure ledger rather than a new route.
 ## Recharge escape continuation
 
 [The next packet](RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) links the now-complete uniform ancestor formalization, [two growing bursts with larger recharge](proof-search/lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](proof-search/lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestor cylinders and exact first-return transitions](proof-search/lemmas/Complementary_Ancestor_Cylinders.md). Guarded family coverage expands; universal termination remains open.
+
+
+## Exact growing-spell and bounded-cover continuation
+
+- [Finite OOEO first-return spells](proof-search/lemmas/Finite_Growing_First_Return_Spells.md) give a precise valuation clock and all four exit states for arbitrarily long growing excursions.
+- [Bounded ancestor and simultaneous-cover obstruction](proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md) combines that clock with anchor transfer on the same q5 target.
+- [Current continuation](CONTINUATION.md) records the unbounded mixed-coalescence or whole-excursion bridge that remains open; [the claim registry](proof-search/CLAIM_REGISTRY.md) owns the prose/Python confidence boundary.
+
+
+## Original-root bridge through postspell growth
+
+[The latest packet](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md) connects [guarded root descent after independently long spells and odd runs](proof-search/lemmas/Postspell_Guarded_Root_Descent.md) with [the corresponding unbounded-growth obstruction](proof-search/lemmas/Postspell_Odd_Run_Obstruction.md). The two results isolate the substantive final-halving guard and leave universal coverage open.

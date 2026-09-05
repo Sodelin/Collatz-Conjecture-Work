@@ -36,7 +36,7 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all twelve proof modules listed in [the imports](../lean/CollatzWork.lean), including the guarded `RootDescent` and complete uniform `ResidueAncestor` modules. The August baseline had imported only the first two. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella directly imports twelve proof modules and builds thirteen including the transitive `ResidueAncestorTails` dependency. [The imports](../lean/CollatzWork.lean) include guarded `RootDescent`, complete uniform `ResidueAncestor`, and guarded `TwoBurst`. The August baseline had imported only the first two. |
 
 All eight commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
@@ -164,7 +164,29 @@ All four Python checkers use explicit failures and are run both normally and und
 |---|---|---|
 | Complete uniform valuation13 ancestor theorem | `lake build`; [accepted CI/axioms](residue_ancestor_ci_2026-09-05.txt), [public statement](../lean/CollatzWork/ResidueAncestorStatement.lean) | End-to-end kernel proof from sole 3^13 divisibility hypothesis, including factorization, selector, target membership and strict root-relative order. |
 | Q2 exit descent | `python -B verification/q2_exit_descent_check.py`; [output](q2_exit_descent_output_2026-09-05.json) |514 CRT and279 general guarded replays, through k1023; universal claims follow from prose algebra. Missing-exit control retained. |
-| Two-burst recharge escape | `python -B verification/two_burst_recharge_escape_check.py`; [output](two_burst_recharge_escape_output_2026-09-05.txt) |43 growing CRT,75 general,24 padded cases; negative same-q recharge and missing-exit controls. The full theorem remains prose. |
+| Two-burst recharge escape | `python -B verification/two_burst_recharge_escape_check.py`; [output](two_burst_recharge_escape_output_2026-09-05.txt) |43 growing CRT,75 general,24 padded cases; negative same-q recharge and missing-exit controls. The general guarded orbit/descent theorem is now Lean-checked; CRT and extra-padding specializations retain prose/Python scope. |
 | Complementary ancestors and first-return structure | `python -B verification/complementary_ancestor_check.py`; [output](complementary_ancestor_output_2026-09-05.json) |2004 fixed-cylinder,581 new-coordinate,3800 first-return and70 exact residual-recharge replays; universal prefix/selector and transition proofs remain prose. |
 
 The three new dependency-free checkers join the existing four in the normal/optimized Python CI step. [The continuation report](../RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) gives the exact coverage delta and remaining q5 target. Initial formal acceptance does not substitute for checking the final integrated revision's own CI run.
+
+
+## Sixth continuation: finite first-return spells and simultaneous cover limits
+
+The general guarded two-burst theorem also advanced to a complete Lean proof in this pass. [CI33978140043](https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33978140043) checked source `8ba40e7b80afd56e3c86edbb864e969bd5121226` with the unchanged official pinned Lean4.33.1 release:24 Lake tasks passed. The power margin uses `propext` and `Quot.sound`; the guarded descent and convergence-transfer theorems additionally use `Classical.choice`, with no `sorryAx`. [The retained log](two_burst_ci_2026-09-05.txt) and [trusted statement](../lean/CollatzWork/TwoBurstStatement.lean) fix the exact scope. Complete CRT, extra even padding and all-unit coverage are not formal consequences of the general theorem alone.
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| `AC-GROWING-FIRST-RETURN-SPELL-001` | `python -B verification/finite_first_return_spell_check.py`; [output](finite_first_return_spell_output_2026-09-05.json) |232 general roots,396 CRT replays, all four terminal depths, spell lengths through511 and four rejected invalid guards. The uniform clock and unbounded-family statements have a separate prose proof. |
+| `B-S20-ANCESTOR-DEPTH-OBSTRUCTION-001` | `python -B verification/bounded_ancestor_depth_check.py`; [output](bounded_ancestor_depth_output_2026-09-05.json) |601206 inverse-tree nodes across547 roots, including160 roots simultaneously meeting the exact q5 binary/ternary constraints; inverse depths through24 and joint spells through128. The all-bounds obstruction is proved by anchor transfer and CRT, not inferred from this finite search. |
+
+Both dependency-free checkers also run under `python -O -B` with identical output; explicit failures remain active. The [spell proof](../proof-search/lemmas/Finite_Growing_First_Return_Spells.md) and [bounded-cover proof](../proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md) were reconstructed internally. Their aggregate statements are not Lean-formalized, and no finite checker output proves universal Collatz termination. The negative-periodic-shadow ancestor example in the latter note is an auxiliary algebraic observation, outside the promoted bounded-tree checker's reported count.
+
+
+### Postspell guarded bridge and missing-exit controls
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| `AC-POSTSPELL-GUARDED-ROOT-DESCENT-001` | `python -B verification/postspell_guarded_descent_check.py`; [output](postspell_guarded_descent_output_2026-09-05.json) |108 CRT/actual-word replays with independently selected J through127 and H through511; the exact original-root margin, residue20 target, missing-even-guard witness, growing residue20 target after insufficient halving, and three invalid-parameter controls. The infinite family and all-parameter inequality have a prose proof. |
+| `AC-POSTSPELL-ODD-RUN-OBSTRUCTION-001` | `python -B verification/postspell_odd_run_check.py`; [output](postspell_odd_run_output_2026-09-05.json) |108 ordinary replays plus15 simultaneous bounded-inverse controls, J through127 and exact postspell odd run through511; three invalid-parameter controls. The all-parameter obstruction is a separate proof. |
+
+Both new checkers use only the standard library, retain every check under `python -O -B`, and produce identical output in both modes. Neither complete postspell theorem is yet Lean-formalized. The [positive proof](../proof-search/lemmas/Postspell_Guarded_Root_Descent.md) and [negative proof](../proof-search/lemmas/Postspell_Odd_Run_Obstruction.md) distinguish selected final-halving guards from arbitrary-root coverage.

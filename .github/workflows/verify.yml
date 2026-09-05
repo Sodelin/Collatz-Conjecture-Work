@@ -48,7 +48,7 @@ jobs:
           python3 -B verification/mod27_rank_check.py
       - name: Verify root-relative progress and recharge boundaries
         run: |
-          for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge q2_exit_descent_check two_burst_recharge_escape_check complementary_ancestor_check; do
+          for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge q2_exit_descent_check two_burst_recharge_escape_check complementary_ancestor_check finite_first_return_spell_check bounded_ancestor_depth_check postspell_odd_run_check postspell_guarded_descent_check; do
             python3 -B "verification/${checker}.py"
             python3 -O -B "verification/${checker}.py"
           done

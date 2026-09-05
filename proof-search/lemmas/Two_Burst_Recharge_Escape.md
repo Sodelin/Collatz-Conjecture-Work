@@ -273,8 +273,14 @@ the all-parameter claims follow from the integer proof above.
 **11. Process check:** the two vulnerable bridges are divisibility-to-parity
 and descent relative to the original source. Both are explicit, and the
 negative controls distinguish genuine guard coverage from a merely correct
-affine expression. This note is a prose proof with an executable checker,
-not a Lean formalization.
+affine expression. The general guarded orbit and strict original-root descent
+theorem now have a complete [Lean proof](../../lean/CollatzWork/TwoBurst.lean)
+of the [trusted statement](../../lean/CollatzWork/TwoBurstStatement.lean).
+[Acceptance evidence](../../verification/two_burst_ci_2026-09-05.txt) records
+exact source8ba40e7b on unchanged Lean4.33.1, all24 Lake build tasks passing,
+and no sorryAx. The exit guard already forces v odd, so omitting a separate
+oddness hypothesis does not enlarge coverage. The CRT construction, exact
+valuation interpretation and padding remain prose/Python results.
 
 **12. Robustness check:** the result tolerates unbounded burst lengths and
 unbounded increases in shadow depth under its stated guards. The original
@@ -290,3 +296,4 @@ finite sampling cannot provide that coverage.
 - **Parallel to:** [q2 exit descent](Q2_Exit_Descent.md).
 - **Parallel to:** [the q10 recharge obstruction](../routes/AC_shadow_debt_recharge.md), retained outside this theorem's guards.
 - **Verified by:** [manifest](../../verification/README.md) and [independent checker](../../verification/two_burst_recharge_escape_check.py).
+- **Formalized by:** [TwoBurst](../../lean/CollatzWork/TwoBurst.lean), under its explicit recharge and exit equalities.

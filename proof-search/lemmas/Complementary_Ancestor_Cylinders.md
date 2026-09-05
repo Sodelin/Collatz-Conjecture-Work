@@ -98,6 +98,12 @@ The new Q2 exit theorem makes this target more precise. At its k1 boundary, its 
 
 The final valuation is unbounded because19683 is odd. Every root in this cylinder has v3(4r+1)=4 and theta4, so the old refined ancestor table misses it; the Q2 k1 guard misses it because u3 mod8 rather than7. This is a concrete next-target cylinder, not a proof that its roots lack other certificates or a claim that its first-return growth persists forever.
 
+## Continuation: exact clock and bounded-cover limits
+
+The [finite growing-spell theorem](Finite_Growing_First_Return_Spells.md) now gives the exact number of consecutive OOEO first returns, `floor(v2(11r+23)/4)`, and the terminal depth in {0,1,2,3}. Every state through that spell exceeds the original root. On the named q5 cylinder, all four exit depths occur at arbitrarily large spell lengths.
+
+The [simultaneous bounded-cover obstruction](Bounded_Ancestor_Depth_Obstruction.md) constructs infinitely many roots in this same cylinder that defeat independently prescribed bounds on both direct forward descent and smaller residue20 ancestor time. These facts leave variable-duration whole excursions and general coalescence available; they do not assert irreducibility under those stronger relations.
+
 ## Verification scope
 
 The companion checker reconstructs every inverse guard, independently replays the actual forward map, and tests the fixed cylinders, the uniform new-coordinate family, the unguarded v16 counterexample, and the first-return transition. Finite tests support the algebraic proof; they do not establish its universal quantifiers. None of these new selectors is yet Lean formalized.
@@ -107,6 +113,7 @@ The companion checker reconstructs every inverse guard, independently replays th
 
 - **Depends on:** [inverse-word semantics](L4_General_Inverse_Word_Coalescence.md) and [the refined finite tail table](Residue20_Refined_Ancestor.md).
 - **Strengthens / specializes:** [the root-relative residual analysis](../../ROOT_RELATIVE_PROGRESS_2026-09-05.md), inside the v3(r+7)=4 branch.
+- **Strengthened by:** [the exact finite OOEO clock](Finite_Growing_First_Return_Spells.md) and [the target-specific bounded-cover obstruction](Bounded_Ancestor_Depth_Obstruction.md).
 - **Parallel to:** [q2 exit descent](Q2_Exit_Descent.md) and [growing two-burst escape](Two_Burst_Recharge_Escape.md).
 - **Verified by:** [manifest](../../verification/README.md) and [independent checker](../../verification/complementary_ancestor_check.py).
 - **Formalized by / pending:** [formal scope](../../LEAN_TARGETS.md); the new prefix and this selector remain prose.

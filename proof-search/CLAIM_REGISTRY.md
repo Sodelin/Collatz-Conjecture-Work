@@ -284,8 +284,29 @@ These are repository-level elementary specializations, not priority claims. Univ
 
 | ID | Exact scope | Grades | Evidence / limitation |
 |---|---|---|---|
-| `AC-TWO-BURST-RECHARGE-ESCAPE-001` | Under exact recharge and exit-divisibility guards, two growing OOE bursts return below the original root; an explicit CRT slice permits an unbounded larger recharge and remains in residue20. Bounded extra even padding covers guarded examples at each q=3k+1, k≥1. | `C2 V2 I2 N1 R1` | [Full proof and controls](lemmas/Two_Burst_Recharge_Escape.md), independent hostile reconstruction and actual-map checker. Arbitrary recharge/exit coverage is unproved; no Lean certificate. |
+| `AC-TWO-BURST-RECHARGE-ESCAPE-001` | For positive k,l,u,v,m satisfying 9^k*u+1=2^(3l+1)*v and 2^(k+l)*m+5=3*9^l*v, T^(4(k+l)+2)(2*8^k*u−5)=m<2*8^k*u−5. The general guarded two-burst excursion and convergence transfer compare to the unchanged root. | `C3 V3 I2 N1 R1` | [Trusted statement](../lean/CollatzWork/TwoBurstStatement.lean), [kernel proof](../lean/CollatzWork/TwoBurst.lean), [accepted CI/axioms](../verification/two_burst_ci_2026-09-05.txt). The guards are explicit assumptions, not universal coverage. CRT, exact-valuation interpretation and extra even padding remain separate prose results. |
+| `AC-TWO-BURST-CRT-001` | An explicit residue20 CRT slice realizes two growing bursts with unbounded larger recharge; bounded extra even padding supplies guarded examples at every q=3k+1, k≥1. | `C2 V2 I2 N1 R1` | [Algebraic specializations and controls](lemmas/Two_Burst_Recharge_Escape.md), independent actual-orbit replay. Complete CRT and padding formalizations remain pending; no all-unit or universal escape assertion. |
 | `AC-Q2-EXIT-DESCENT-2026-09-05` | For k≥0,e≥max(2,k+1),u≥1 with 2^(e+1) dividing 27*9^k*u−29, the exact word (OOE)^k OOO E^e descends below 4*8^k*u−5. CRT supplies infinite residue20 families at every q=3k+2, outside the previous selected ancestors. | `C2 V2 I2 N1 R1` | [Uniform proof](lemmas/Q2_Exit_Descent.md) and actual replay. First-return growth requires k≥1; k0 handled separately. Guard not universal; not Lean-formalized. |
 | `B-SECOND-TERNARY-ANCESTOR-001` | Every positive residue20 root with v3(128r−157)≥17 has an explicit smaller residue20 ancestor; two additional fixed cylinders and an exact first-return transition are included with separate scopes. | `C2 V2 I2 N1 R1` | [New-prefix proof and boundaries](lemmas/Complementary_Ancestor_Cylinders.md), actual inverse/forward replay. Uniform family lies wholly in v3(r+7)=4,v3(4r+1)=3. Old finite tails are reused; the new prefix/selector is not Lean-formalized. |
 
 The q5 cylinder `22619+186624s` is a precise remaining transition target, not a claimed escape theorem or an irreducibility result. These elementary specializations carry no external priority claim. Global verdict remains unresolved.
+
+
+## Sixth continuation: exact local clock and simultaneous cover obstruction
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `AC-GROWING-FIRST-RETURN-SPELL-001` | Every residue20 root with q=v2(r+5)≥4 has exactly floor(v2(11r+23)/4) consecutive OOEO first returns, terminating at q in {0,1,2,3}. Every positive-time state during the spell exceeds the original root. The q5 target realizes every exit and arbitrarily long spells. | `C2 V2 I2 N1 R1` | [Uniform proof and exact CRT](lemmas/Finite_Growing_First_Return_Spells.md), independent actual-orbit replay. This clock is local to the itinerary; neither subsequent descent nor a rank across re-entry is proved. Aggregate theorem is prose/Python, not Lean. |
+| `B-S20-ANCESTOR-DEPTH-OBSTRUCTION-001` | For every independent pair of finite bounds on direct forward descent and smaller residue20 ancestor time, infinitely many roots in the exact q5 cylinder 22619+186624s fail both certificates. Anchor20 and anchor47 lifts separately exclude bounded ancestor covers. | `C2 V2 I2 N1 R1` | [Anchor-transfer proof and simultaneous CRT](lemmas/Bounded_Ancestor_Depth_Obstruction.md), independent inverse-tree and forward replay. Covers either of those two exact bounded relations; unbounded valuation macros and general mixed coalescence remain available. Not Lean-formalized. |
+
+Both proofs were reconstructed internally and exercised with explicit-failure checkers in normal and optimized Python. These grades concern their scoped statements; external novelty and specialist review remain unaudited. No universal termination, total return rank, or infinite positive counterexample follows.
+
+
+### Postspell extension: independently unbounded growth with guarded compensation
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `AC-POSTSPELL-GUARDED-ROOT-DESCENT-001` | Every actual word (OOEO)^J O^H E^e with r>3, J≥2, H≥3 and e≥J+H ends at a positive m<r. For each independent J,H, explicit CRT supplies infinite roots in 22619+186624s with e=2 mod18 and J+H≤e<J+H+18, whose targets are20 mod27. | `C2 V2 I2 N1 R1` | [Uniform margin, parity recursion and CRT proof](lemmas/Postspell_Guarded_Root_Descent.md), independent reconstruction and actual-map replay. The final-halving guard is substantive; arbitrary-source coverage and complete Lean formalization remain open. |
+| `AC-POSTSPELL-ODD-RUN-OBSTRUCTION-001` | At every fixed OOEO spell length J≥2 and q2 exit, the following exact odd-run length H≥3 is independently unbounded on explicit infinite q5 subfamilies. All4J+H states exceed the original root; bounded smaller-ancestor exclusion can be imposed simultaneously. | `C2 V2 I2 N1 R1` | [Exact construction and overshoot proof](lemmas/Postspell_Odd_Run_Obstruction.md), forward replay and optional inverse-tree controls. Excludes a discharge bound depending only on J and q2, not one tracking H/full root or a guarded exit theorem. Not Lean-formalized. |
+
+The positive family repays both growing phases relative to the original root. The negative family shows why its exit guard cannot be omitted. Neither proves every root meets that guard, and universal termination remains unresolved.

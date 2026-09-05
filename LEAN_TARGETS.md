@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **twelve Lean proof modules**. It does not
+The repository contains **thirteen Lean proof modules**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,8 +13,9 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all twelve
-proof modules, including the two-pump module and
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) directly imports twelve
+proof modules and builds thirteen including the transitive `ResidueAncestorTails`
+dependency. These include the two-pump module and
 [`Convergence.lean`](lean/CollatzWork/Convergence.lean). The new
 [`RootDescent.lean`](lean/CollatzWork/RootDescent.lean) is scoped below.
 
@@ -146,4 +147,21 @@ The [trusted public statements](lean/CollatzWork/ResidueAncestorStatement.lean),
 
 `residueAncestor_of_divisibility` constructs the positive unit factorization; it does not assume its existence. The proof includes all selector branches, their actual forward orbit identities, target congruences, and a uniform strict size comparison. Initial acceptance is [commit eac4dad7](verification/residue_ancestor_ci_2026-09-05.txt), with22 Lake build tasks passing on unchanged Lean4.33.1. All six new aggregate/headline axiom outputs contain only `propext` and `Quot.sound`.
 
-The formalization covers the uniform ≥13 theorem. The exact sharper lower-row thresholds, selected-table sharpness, the new [q2 exit theorem](proof-search/lemmas/Q2_Exit_Descent.md), [two-burst recharge escape](proof-search/lemmas/Two_Burst_Recharge_Escape.md), and [second-coordinate ancestor construction](proof-search/lemmas/Complementary_Ancestor_Cylinders.md) retain separate prose/Python scope. No global coalescence or termination premise is discharged.
+The formalization covers the uniform ≥13 theorem. The exact sharper lower-row thresholds, selected-table sharpness, the new [q2 exit theorem](proof-search/lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestor construction](proof-search/lemmas/Complementary_Ancestor_Cylinders.md) retain separate prose/Python scope. The guarded general two-burst theorem is now checked as specified below. No global coalescence or termination premise is discharged.
+
+## Complete guarded two-burst descent
+
+[TwoBurstStatement](lean/CollatzWork/TwoBurstStatement.lean) and [TwoBurst](lean/CollatzWork/TwoBurst.lean) prove, for positive k,l,u,v,m with the two explicit equalities
+
+    9^k*u+1 = 2^(3*l+1)*v,
+    2^(k+l)*m+5 = 3*9^l*v,
+
+that the actual shortcut orbit satisfies
+
+    T^(4*(k+l)+2)(2*8^k*u-5) = m < 2*8^k*u-5.
+
+This verifies the complete two-growing-burst excursion and strict comparison with the unchanged original root. The convergence corollary still assumes convergence of all smaller positive inputs. Oddness of v follows from the exit guard and is not a separate coverage gain.
+
+[Acceptance evidence](verification/two_burst_ci_2026-09-05.txt) records unchanged Lean4.33.1, exact source `8ba40e7b80afd56e3c86edbb864e969bd5121226`, and all24 Lake build tasks passing in [CI33978140043](https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33978140043). `twoBurst_power_margin` uses `propext`, `Quot.sound`; `twoBurstDescent` and its convergence-transfer corollary use `propext`, `Classical.choice`, `Quot.sound`. There is no `sorryAx`.
+
+The [CRT specialization, exact valuations and padding corollary](proof-search/lemmas/Two_Burst_Recharge_Escape.md) remain prose/Python results. The theorem assumes its guards; no universal recharge-or-escape premise is proved.

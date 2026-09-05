@@ -1,0 +1,1 @@
+{"inverse_tree_nodes_examined": 601206, "maximum_actual_forward_steps": 512, "maximum_forward_horizon": 128, "maximum_inverse_depth": 24, "maximum_joint_spell_length": 128, "mixed_roots": 42, "plain_roots": 225, "prescribed_q_roots": 96, "q5_target_roots": 24, "simultaneous_target_roots": 160, "status": "PASS"}

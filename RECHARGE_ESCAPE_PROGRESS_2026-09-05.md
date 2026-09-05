@@ -7,6 +7,10 @@ tags: [collatz, recharge, guarded-escape, ancestor-formalization]
 
 # Mathematical continuation through recharge
 
+This is the historical packet through source3d706a9463b1b95ffb7bb3b9a3475771a63b3b7c.
+The [next original-root bridge pass](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md)
+updates two-burst formal verification and the residual-cylinder analysis.
+
 ## 0. Outcome
 
 The complete uniform residue20 ancestor theorem is now Lean-checked. Three additional prose results give new infinite guarded families: actual descent through an unbounded larger recharge, descent after the q2 exit, and smaller ancestors using a second ternary-depth coordinate. **Universal termination remains unproved.**

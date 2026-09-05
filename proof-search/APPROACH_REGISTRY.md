@@ -238,3 +238,19 @@ No global route status is promoted by partial family coverage.
 - **B:** [actual recharge escape](lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestors](lemmas/Complementary_Ancestor_Cylinders.md) supply distinct constructive guarded families. The complete uniform first-coordinate ancestor theorem is now Lean-checked.
 - **AB:** the q10 rank obstruction remains valid outside the new escape guards. There is no universal rank or total all-unit return control, so the global status remains blocked.
 - **Concrete next cylinder:** r=22619+186624s has an increasing first return and unbounded q recharge. It is a precise admission target for a new escape mechanism, not a theorem of nontermination or irreducibility.
+
+
+## Sixth-pass route decisions
+
+- **AB gains an exact local clock:** [consecutive OOEO first returns](lemmas/Finite_Growing_First_Return_Spells.md) always end after floor(v2(11r+23)/4) returns. The whole spell grows relative to its original root and can end in any of q0, q1, q2 or q3. Its finite length does not prove progress across the next excursion or a later re-entry.
+- **B/AB bounded covers are excluded on the exact target:** [anchor transfer and simultaneous CRT](lemmas/Bounded_Ancestor_Depth_Obstruction.md) defeat arbitrary independently fixed forward-descent and smaller-S-ancestor time bounds on infinitely many roots of 22619+186624s. Additional fixed tails cannot supply an exhaustive cover of that cylinder through those two relations.
+- **Highest-value reopening mechanism:** carry the immutable induction root through an unbounded growing spell and its exit; prove a smaller target using a whole-excursion estimate or general forward/backward coalescence with a justified well-founded measure. A local valuation clock alone supplies no such global measure.
+
+The guarded constructive families remain useful. Universal coverage and the recharge-or-escape bridge remain unproved; no global route status is promoted.
+
+
+### Guarded postspell bridge
+
+**B/AB gains a further positive family:** [the full postspell word](lemmas/Postspell_Guarded_Root_Descent.md) yields original-root descent on an infinite subfamily for every independent J≥2 and H≥3. The proof controls (OOEO)^J followed by H growing odd steps, then e≥J+H actual even steps; CRT chooses a residue20 target with at most17 extra padding steps. This is a constructive bridge through two independently unbounded phases, rather than a clock reset at the larger intermediate.
+
+**Remaining admission test:** the [postspell obstruction](lemmas/Postspell_Odd_Run_Obstruction.md) rules out bounding discharge from J and q2 alone, and supplies failed-halving controls. A universal mechanism must handle sources outside the final-even guard through further excursions or mixed coalescence. Unbounded family coverage has increased; total coverage and all global route statuses remain unresolved.

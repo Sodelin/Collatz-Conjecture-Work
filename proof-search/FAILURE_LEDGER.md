@@ -433,3 +433,24 @@ For the specified stronger-core return S, [the exact family](routes/AC_shadow_de
 ## Constructive qualification of F030
 
 [The two-burst theorem](lemmas/Two_Burst_Recharge_Escape.md) proves strict original-root descent through a different guarded recharge mechanism, including an unbounded increase in q. F030's q10→7→4→10 family remains an exact obstruction for its stated polynomial rank class. The new theorem assumes a recharged depth divisible by3 and sufficient final halving; neither follows for F030's family. This is partial positive target selection, not a retraction of the scoped negative result.
+
+
+## F031 — A fixed forward-time bound covers the q5 residual cylinder
+
+**Status:** false for strict actual forward descent on every root of `22619+186624s`, s≥0. The [exact OOEO clock](lemmas/Finite_Growing_First_Return_Spells.md) and CRT give arbitrarily long spells during which every positive-time state is larger than its original root. All four terminal depths q0..q3 occur at every prescribed spell length J≥2. Thus a finite collection of bounded-length forward descent words cannot cover this entire cylinder.
+
+**Reopen with:** a variable-duration whole-excursion theorem or a genuinely stronger smaller-target relation. The fact that the OOEO spell ends does not repay its accumulated growth or control later re-entry. This is not a nontermination result.
+
+### F031 postspell strengthening and constructive qualification
+
+Even after fixing the OOEO spell length J≥2 and terminal q2, the [next exact odd-run length H](lemmas/Postspell_Odd_Run_Obstruction.md) can be independently arbitrarily large on the same q5 cylinder. Therefore no discharge-time bound depending only on J and that exit depth forces original-root descent. Optional ternary CRT simultaneously excludes any prescribed bounded smaller-ancestor time.
+
+The [guarded postspell theorem](lemmas/Postspell_Guarded_Root_Descent.md) supplies a complementary positive mechanism at every J,H: e≥J+H final actual even steps repay both growing phases and yield m<r. Its infinite CRT families do not exhaust the cylinder. The explicit source304592987 has the correct J2/H10 growing phases but only one factor of2 at the endpoint, so it fails the requisite final-halving guard. For every J,H, one of the two source parameters t=0,1 in the negative family has endpoint v2(z)=1, so failed final halving is available at every pair. The independent J2/H3/e2 control gives a residue20 target10816031 above its root4501595, showing that e=2 mod18 alone does not imply descent. This qualification preserves the obstruction while identifying the extra hypothesis that bypasses it for selected roots.
+
+## F032 — Bounded forward descent or bounded smaller-ancestor search covers the target
+
+**Status:** false even when the cover can choose arbitrarily between the two certificate types. For independently prescribed forward and inverse bounds, [the simultaneous CRT construction](lemmas/Bounded_Ancestor_Depth_Obstruction.md) gives infinitely many roots in `22619+186624s` that grow throughout the entire forward horizon and have no smaller residue20 ancestor within the inverse horizon. The construction combines an anchor20 ternary lift with the exact binary OOEO clock; it is one family defeating both bounds, rather than unrelated counterexamples.
+
+The anchor47 version separately freezes the three displayed ternary depths at3 and allows any prescribed q. Handling the anchor as a finite base case leaves infinitely many large lifts outside a bounded ancestor cover.
+
+**Reopen with:** unbounded valuation macros, a variable-depth recursive graph with an actual well-founded argument, or a stronger relation such as general forward/backward coalescence across the whole growing excursion. Neither arbitrary membership predicates nor more fixed inverse tails bypass the proved time-bound obstruction. This does not exclude all finite descriptions or all bounded mixed-coalescence certificates, and proves no divergent positive orbit.
