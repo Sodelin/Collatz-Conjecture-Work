@@ -8,6 +8,12 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > positive orbit. None of the ratings below is a probability that Collatz is
 > true or false.
 
+For versioned sharing packages, Lean source downloads, and the prepared
+VibeMathed submission format, start with the [publication guide](publication/README.md)
+and [research releases](https://github.com/Sodelin/Collatz-Conjecture-Work/releases).
+Each release announcement identifies its exact mathematical revision and current
+claim boundaries. Historical archive notes below retain their original context.
+
 Accepted mathematical baseline: full Git object
 `b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 
