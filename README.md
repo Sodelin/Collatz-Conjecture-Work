@@ -14,6 +14,11 @@ and [research releases](https://github.com/Sodelin/Collatz-Conjecture-Work/relea
 Each release announcement identifies its exact mathematical revision and current
 claim boundaries. Historical archive notes below retain their original context.
 
+The [5 September novelty and submission review](research-review/novelty-2026-09-05/REPORT.md)
+compares the exact claims with classical papers, current preprints, and formal
+code. The release is public; VibeMathed submission remains on hold for the
+specific review gates recorded there.
+
 Accepted mathematical baseline: full Git object
 `b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
 

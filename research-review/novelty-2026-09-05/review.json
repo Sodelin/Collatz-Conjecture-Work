@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-05",
+  "repository": "Sodelin/Collatz-Conjecture-Work",
+  "source_commit": "33922a42e86646258d227d1e19c6cf7546a2f548",
+  "publisher_commit": "a3d99ab909992bf72e6e2e0907cb8d50248fa1b8",
+  "scope": "bounded multi-source novelty and implication audit",
+  "priority_status": "not_established",
+  "venue_submission_decision": "hold",
+  "venue_submitted": false,
+  "formal_verification_is_novelty_evidence": false,
+  "discovery_record": "discovery.json",
+  "bibliography": "references.bib",
+  "claim_assessments": [
+    {
+      "id": "first-contraction-quarter-gap",
+      "title": "Universal quarter gap at an existing first coefficient contraction",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "candidate_quantitative_corollary",
+      "rationale": "Conditional actual-orbit bound; priority unresolved; no direct matching theorem located.",
+      "source_paths": [
+        "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+        "lean/CollatzWork/QuarterGapUniversal.lean",
+        "lean/CollatzWork/QuarterGapStatement.lean",
+        "lean/CollatzWork/ConvergenceStatement.lean",
+        "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+        "verification/Quarter_Gap_Formal_Scope_2026-09-05.md",
+        "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.firstContractionQuarterGap"
+      ]
+    },
+    {
+      "id": "mechanical-envelope-sharp-threshold",
+      "title": "Universal mechanical certificate and sharp eventual threshold 16",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "candidate_quantitative_sharpening",
+      "rationale": "Threshold16 and exact certificate survive inspected HH transfer; eventual qualitative quarter is standard equidistribution.",
+      "source_paths": [
+        "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+        "lean/CollatzWork/QuarterGapUniversal.lean",
+        "lean/CollatzWork/FloorPower.lean",
+        "lean/CollatzWork/BlockArithmetic.lean",
+        "lean/CollatzWork/QuarterGapStatement.lean",
+        "verification/block_arithmetic_certificate.py"
+      ],
+      "lean_declarations": [
+        "CollatzWork.mechanical_large_bound",
+        "CollatzWork.mechanical_fifteen_failure",
+        "CollatzWork.universalMechanicalQuarterCertificate",
+        "CollatzWork.mechanical_twelve_identity",
+        "CollatzWork.mechanical_twelve_propagation",
+        "CollatzWork.floorPower_mul",
+        "CollatzWork.blockNumerator12_exact_bound"
+      ]
+    },
+    {
+      "id": "actual-orbit-affine-and-crossing",
+      "title": "Actual-orbit affine envelope and first crossing time",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "classical_with_short_specialization",
+      "rationale": "Classical affine/first-crossing framework plus elementary deadline extremization.",
+      "source_paths": [
+        "lean/CollatzWork/QuarterGapStatement.lean",
+        "lean/CollatzWork/QuarterGap.lean",
+        "lean/CollatzWork/FirstContractionStatement.lean",
+        "lean/CollatzWork/FirstContraction.lean",
+        "proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.orbitAffine",
+        "CollatzWork.mechanicalEnvelope",
+        "CollatzWork.affineQuarterCertificate",
+        "CollatzWork.firstContractionTime",
+        "CollatzWork.firstContractionThirdGap"
+      ]
+    },
+    {
+      "id": "formal-convergence-criteria",
+      "title": "Formal descent and smaller-coalescence equivalences",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "known_reconstruction",
+      "rationale": "Induction/convergence equivalences are known mathematics.",
+      "source_paths": [
+        "lean/CollatzWork/ConvergenceStatement.lean",
+        "lean/CollatzWork/Convergence.lean",
+        "proof-search/lemmas/L0_Global_Descent_Equivalence.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.smallerCoalescenceCriterion",
+        "CollatzWork.descentCriterion",
+        "CollatzWork.allPositiveConverge_of_smallerCoalescence",
+        "CollatzWork.converges_shortcutIter_iff",
+        "CollatzWork.converges_iff_of_coalesces"
+      ]
+    },
+    {
+      "id": "compatible-refined-mersenne-child",
+      "title": "One guarded family of smaller coalescing starts",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "known_reconstruction",
+      "rationale": "Source registry L13-EASY marks this published in substance; preserve as formal artifact.",
+      "source_paths": [
+        "lean/CollatzWork/RefinedMersenneChild.lean",
+        "lean/CollatzWork/Convergence.lean",
+        "proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.refinedMersenneChild_coalesces",
+        "CollatzWork.refinedChild_arithmetic",
+        "CollatzWork.refinedParent_has_smaller_coalescence",
+        "CollatzWork.refinedParent_converges_iff_child",
+        "CollatzWork.refinedParent_converges_of_smaller"
+      ]
+    },
+    {
+      "id": "equal-slope-boundary",
+      "title": "Equal-slope affine comparison and concrete coalescence witness",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "elementary_identity",
+      "rationale": "Affine cancellation and direct finite-iterate witness.",
+      "source_paths": [
+        "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+        "lean/CollatzWork/InverseWordBoundary.lean",
+        "proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.equalSlopeSmaller",
+        "CollatzWork.equalSlopeWitness"
+      ]
+    },
+    {
+      "id": "two-pump-dependency-obstruction",
+      "title": "Two-pump cyclic-elimination coefficient dependency",
+      "verification_status": "formal_auxiliary",
+      "novelty_classification": "route_specific_unassessed",
+      "rationale": "Standard algebraic dependency in a scoped route; no broad novelty conclusion.",
+      "source_paths": [
+        "lean/CollatzWork/Disproof/TwoPumpDependency.lean",
+        "proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md"
+      ],
+      "lean_declarations": [
+        "CollatzWork.Disproof.twoPumpCoefficientDependencies",
+        "CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
+        "CollatzWork.Disproof.twoPumpSyzygy"
+      ]
+    },
+    {
+      "id": "general-rotation-block-bound",
+      "title": "Arbitrary-phase rotation-block bound and conditional larger-block refinement",
+      "verification_status": "exact_checked_prose",
+      "novelty_classification": "method_known_exact_application_unassessed",
+      "rationale": "Finite-phase extrema are standard machinery; arbitrary-block prose and Lean12 specialization differ.",
+      "source_paths": [
+        "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md",
+        "verification/near_return_quarter_bound.py",
+        "verification/Quarter_Gap_Formal_Scope_2026-09-05.md"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "original-hard-return-fixed-residue-obstruction",
+      "title": "Fixed-residue polynomial rank obstruction on original hard returns",
+      "verification_status": "exact_checked_prose",
+      "novelty_classification": "unresolved_secondary_candidate",
+      "rationale": "Specific relation and quantifiers; not fully covered by the headline literature pass.",
+      "source_paths": [
+        "proof-search/routes/AB_finite_residue_original_return_no_go.md",
+        "proof-search/routes/AB_frozen_debt_size_rank_no_go.md",
+        "proof-search/routes/AB_three_adic_rank_no_go.md",
+        "verification/finite_residue_hard_return_check.py"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "normalized-core-and-composition-boundary",
+      "title": "Smaller ternary targets, a separate core obstruction, and failed composition",
+      "verification_status": "exact_checked_prose",
+      "novelty_classification": "scoped_exact_identities",
+      "rationale": "Different relations and an auxiliary backward-selection loop; not a Collatz cycle.",
+      "source_paths": [
+        "proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md",
+        "verification/core_residue_obstruction_check.py"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "mod27-stopping-rank",
+      "title": "Ranked reconstruction of a known residue-hitting consequence",
+      "verification_status": "known_reconstruction",
+      "novelty_classification": "known_reconstruction",
+      "rationale": "Source already attributes relevant theorem to Monks et al.",
+      "source_paths": [
+        "proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md",
+        "verification/mod27_rank_check.py",
+        "ASTRA_REFERENCES_2026-09-05.bib"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "bounded-natural-matrix-search",
+      "title": "Finite-template matrix-search UNSAT report and larger-bound timeout",
+      "verification_status": "bounded_solver_result",
+      "novelty_classification": "bounded_computation",
+      "rationale": "UNSAT without independently checked UNSAT certificate and timeout; no unbounded exclusion.",
+      "source_paths": [
+        "verification/yah_natural_matrix_2d/README.md",
+        "verification/yah_natural_matrix_2d/result.json",
+        "verification/yah_natural_matrix_2d/search_natural_matrices.py"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "global-collatz-bridges-open",
+      "title": "Global convergence and required universal bridges remain open",
+      "verification_status": "unproved",
+      "novelty_classification": "unproved",
+      "rationale": "Universal first-contraction/descent/renewal obligations remain open.",
+      "source_paths": [
+        "lean/CollatzWork/ConvergenceStatement.lean",
+        "lean/CollatzWork/Convergence.lean",
+        "ASTRA_CONTINUATION_2026-09-05.md",
+        "proof-search/MISSING_LEMMA_LADDER.md"
+      ],
+      "lean_declarations": []
+    },
+    {
+      "id": "A-YAH-AN1-001",
+      "verification_status": "exact_checked_prose",
+      "novelty_classification": "restricted_method_obstruction_candidate",
+      "canonical_source_rating": "C3 V2 I3 N2 R2",
+      "in_release_headline_claims_json": false,
+      "in_frozen_source_archive": true,
+      "lean_declarations": [],
+      "rationale": "Full scalar part elementary; full-plus-top scope and fixed-label extension need independent semantics and prior-art review.",
+      "details": "YAH_REVIEW.md"
+    },
+    {
+      "id": "A-YAH-2STATE-AN1-001",
+      "verification_status": "exact_checked_prose",
+      "novelty_classification": "restricted_method_obstruction_candidate",
+      "canonical_source_rating": "C3 V2 I3 N2 R2",
+      "in_release_headline_claims_json": false,
+      "in_frozen_source_archive": true,
+      "lean_declarations": [],
+      "rationale": "Full scalar part elementary; full-plus-top scope and fixed-label extension need independent semantics and prior-art review.",
+      "details": "YAH_REVIEW.md"
+    }
+  ],
+  "required_before_venue_submission": [
+    "Complete exact comparison of accessible original Terras/Garner bounds and document remaining access limits.",
+    "Independent mathematical statement and substantive-novelty review of a selected atomic claim.",
+    "Update the reviewed claim attribution and venue fields without promoting unsupported scope."
+  ],
+  "search_limitations": [
+    "No exhaustive MathSciNet or zbMATH query.",
+    "Search result caps and known indexing failures.",
+    "Selected theorem/source inspections, not independent builds of every external repository.",
+    "Two alphaXiv candidates still discovery-only after official metadata retrieval failures.",
+    "No exhaustive priority certification or independent human review."
+  ],
+  "formal_repository_comparisons": [
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "commit": "8323e878b83fcd7f4a448256069352a265460d75",
+      "scope": "Collatz statement file and related wrappers"
+    },
+    {
+      "repository": "QuixiAI/collatz",
+      "commit": "937e7f7ccf737151db79fa01724db3a0af040895",
+      "scope": "selected Basic.lean and related files"
+    },
+    {
+      "repository": "SergioTheory/Collatz-new-math",
+      "commit": "a1119b3af1079ce4c122656753682d58b0c654ed",
+      "scope": "selected Terras and ShadowEscape files"
+    },
+    {
+      "repository": "emreyolcu/rewriting-collatz",
+      "commit": "8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340",
+      "scope": "author arctic implementation and rule source"
+    },
+    {
+      "repository": "lechmazur/terras_density_one",
+      "commit": "83c436ccd727c35b7ef7b497558be9395e011b83",
+      "scope": "statement map, audit, contraction, finite stopping"
+    },
+    {
+      "repository": "rwst/lean-code",
+      "commit": "ce1619b6418dc263efb911b11ad09409c2083d80",
+      "scope": "14 direct RT files and theorem index"
+    },
+    {
+      "repository": "rwst/Collatz-Map-Basics",
+      "commit": "96e063fde9f5153a492a809e9ebce3c235a73d20",
+      "scope": "selected RozierTerracol files"
+    }
+  ]
+}

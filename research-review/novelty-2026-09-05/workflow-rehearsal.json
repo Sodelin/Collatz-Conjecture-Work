@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-05",
+  "mathematical_source_commit": "33922a42e86646258d227d1e19c6cf7546a2f548",
+  "publisher_commit": "a3d99ab909992bf72e6e2e0907cb8d50248fa1b8",
+  "publication_pr": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/18",
+  "publication_workflow": "https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33975183308",
+  "workflow_conclusion": "success",
+  "public_release": "https://github.com/Sodelin/Collatz-Conjecture-Work/releases/tag/research-33922a42e866-a3d99ab90999",
+  "release_asset_count": 16,
+  "verification_status": "passed",
+  "verification_commands": 34,
+  "audited_declarations": 41,
+  "checked_downloads": {
+    "vibemathed-draft.json": "d0d4708479d3c61e9c48e4845051886393d6b159852112f345ceaa4c57a88005",
+    "manifest.json": "96db4738ed31feb671c388fb58dc85840c3119fb218c1b52b80eafb0ac86fbb3",
+    "verification.json": "e756724f89c5037b38f05c1f2eb1d508653875182e4177a03374c6c510897598"
+  },
+  "venue_draft": {
+    "url": "https://vibemathed.com/submit",
+    "signed_in": true,
+    "ordinary_fields_compared": 32,
+    "field_mismatches": 0,
+    "supporting_links_compared": 7,
+    "links_match": true,
+    "reopened_and_restored": true,
+    "submit_action_performed": false,
+    "curator_acceptance": false,
+    "persistence_scope": "Draft restored in current conversation browser; not guaranteed to sync to other devices."
+  },
+  "operations": "GitHub source/publisher release is public. Venue is a saved draft only. GitHub automatic source archive is publisher commit; research-source.zip is the audited mathematics."
+}

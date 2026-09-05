@@ -1,0 +1,153 @@
+{
+  "date": "2026-09-05",
+  "provider": "alphaXiv",
+  "searches": [
+    {
+      "query_id": "AX1",
+      "ids": [
+        "2603.11066",
+        "2605.13886",
+        "2502.00948",
+        "2608.25791",
+        "2603.25753",
+        "2606.26811",
+        "2512.13760",
+        "2607.10041",
+        "2601.04289",
+        "2506.21728"
+      ],
+      "question": "Find prior mathematical results that equal or imply the conditional Collatz quarter-gap bound 4d<s at a first coefficient contraction, and earlier bounds on the associated mechanical envelope; include classical stopping-time literature and proof references.",
+      "keywords": [
+        "Collatz",
+        "first coefficient contraction",
+        "Paradoxical behavior in Collatz sequences",
+        "mechanical envelope"
+      ],
+      "difficulty": 9,
+      "ranking_preference": "historical"
+    },
+    {
+      "query_id": "AX2",
+      "ids": [
+        "2603.11066",
+        "2603.25753",
+        "2605.13886",
+        "2607.01718",
+        "2607.10041",
+        "2606.26811",
+        "2605.15094",
+        "2502.00948"
+      ],
+      "question": "Assess novelty of the Collatz first-contraction quarter gap and its Lean formalization: locate related or stronger bounds, source proof code, and recent papers that cite the relevant earlier stopping-time results.",
+      "keywords": [
+        "Collatz",
+        "first coefficient contraction",
+        "quarter gap",
+        "Lean"
+      ],
+      "difficulty": 8,
+      "ranking_preference": "default"
+    }
+  ],
+  "returned_records": 18,
+  "distinct_papers": 12,
+  "coverage_note": "Ranked lists; total corpus matches and pagination not exposed. A discovery hit or abstract-only screen is not a theorem comparison.",
+  "screened_records": [
+    {
+      "arxiv_id": "2603.11066",
+      "title": "Exploring Collatz Dynamics with Human-LLM Collaboration",
+      "url": "https://arxiv.org/abs/2603.11066",
+      "version": "v6",
+      "screening_depth": "selected_fulltext_and_fingerprints",
+      "result": "Related descent and Mersenne discussion; no exact quarter/16 located; prose-result count is not Lean evidence."
+    },
+    {
+      "arxiv_id": "2605.13886",
+      "title": "Parity vectors and paradoxical sequences in the accelerated Collatz map",
+      "url": "https://arxiv.org/abs/2605.13886",
+      "version": "v2",
+      "screening_depth": "official_record_and_historical_v1_fulltext",
+      "result": "Withdrawn 2026-05-20 for duplication; excluded as independent corroboration."
+    },
+    {
+      "arxiv_id": "2502.00948",
+      "title": "Paradoxical behavior in Collatz sequences",
+      "url": "https://arxiv.org/abs/2502.00948",
+      "version": "v5",
+      "screening_depth": "selected_theorems_and_implication_audit",
+      "result": "Direct comparator; mean and harmonic bounds do not directly supply target; monotonicity is a prerequisite."
+    },
+    {
+      "arxiv_id": "2608.25791",
+      "title": "A Boolean polynomial operator for the Collatz $3n+1$ problem",
+      "url": "https://arxiv.org/abs/2608.25791",
+      "version": null,
+      "screening_depth": "ranked_discovery_only",
+      "result": "Official abs retrieval DisabledError. Boolean operator lead remains unscreened; no mathematical evidence adopted."
+    },
+    {
+      "arxiv_id": "2603.25753",
+      "title": "A Structural Reduction of the Collatz Conjecture to One-Bit Orbit Mixing",
+      "url": "https://arxiv.org/abs/2603.25753",
+      "version": "v1",
+      "screening_depth": "official_abstract",
+      "result": "Different one-bit mixing reduction; no exact quarter statement in abstract. Full theorem audit not completed."
+    },
+    {
+      "arxiv_id": "2606.26811",
+      "title": "Emergence of Gamma-Type Upward-Phase Statistics in the Collatz Map: An Effective Poisson Process Mechanism",
+      "url": "https://arxiv.org/abs/2606.26811",
+      "version": null,
+      "screening_depth": "ranked_discovery_only",
+      "result": "Official abs retrieval DisabledError. Statistical-mechanism lead remains unscreened; no mathematical evidence adopted."
+    },
+    {
+      "arxiv_id": "2512.13760",
+      "title": "Counting the Collatz numbers",
+      "url": "https://arxiv.org/abs/2512.13760",
+      "version": "v2",
+      "screening_depth": "official_metadata",
+      "result": "Counting/termination lead; no full theorem audit completed. Not used to certify non-equivalence."
+    },
+    {
+      "arxiv_id": "2607.10041",
+      "title": "Adaptive Search in Collatz Exponent-Code Space via 2-adic and 3-adic Constraints",
+      "url": "https://arxiv.org/abs/2607.10041",
+      "version": "v1",
+      "screening_depth": "full_html_theorems_and_methods",
+      "result": "Related critical codes and residue-rate necessary conditions; inspected theorem does not supply quarter certificate."
+    },
+    {
+      "arxiv_id": "2601.04289",
+      "title": "An Explicit Near-Conjugacy Between the Collatz Map and a Circle Rotation",
+      "url": "https://arxiv.org/abs/2601.04289",
+      "version": "v1",
+      "screening_depth": "official_abstract",
+      "result": "Different log6 near-conjugacy and perturbation bound. Abstract-level related comparator only."
+    },
+    {
+      "arxiv_id": "2506.21728",
+      "title": "A Finite-State Symbolic Automaton Model for the Collatz Map and Its Convergence Properties",
+      "url": "https://arxiv.org/abs/2506.21728",
+      "version": "v2",
+      "screening_depth": "official_abstract",
+      "result": "Claims a decimal symbolic convergence argument; Lean marked in progress. No validity endorsement or full proof audit."
+    },
+    {
+      "arxiv_id": "2607.01718",
+      "title": "A Coordinate System for Collatz Dynamics",
+      "url": "https://arxiv.org/abs/2607.01718",
+      "version": "v1",
+      "screening_depth": "official_abstract",
+      "result": "Related 3-smooth coordinate and trailing-ones representation; full theorem audit not completed."
+    },
+    {
+      "arxiv_id": "2605.15094",
+      "title": "Loop Termination and Generalized Collatz Sequences",
+      "url": "https://arxiv.org/abs/2605.15094",
+      "version": null,
+      "screening_depth": "official_metadata",
+      "result": "Generalized-loop termination lead; full theorem audit not completed."
+    }
+  ]
+}
