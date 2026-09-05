@@ -104,34 +104,40 @@ theorem mechanical_twelve_propagation (s : Nat)
     _ ≤ 531441 * (s * 3 ^ s) + 12 * 531441 * 3 ^ s :=
       Nat.add_le_add (Nat.mul_le_mul_left 531441 hstart) hblock
     _ = (s + 12) * 3 ^ (s + 12) := by
-      simp [Nat.pow_add, Nat.add_mul, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+      simp [Nat.pow_add, Nat.add_mul, Nat.mul_add, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
 
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
-theorem mechanical_large_base : ∀ s : Fin 120, 108 ≤ s.val →
+theorem mechanical_large_base : ∀ s : Fin 28, 16 ≤ s.val →
     4 * mechanicalMax s.val ≤ s.val * 3 ^ s.val := by
   decide
 
 /-- All large odd counts, by a verified twelve-step induction. -/
-theorem mechanical_large_bound : ∀ s : Nat, 108 ≤ s →
-    4 * mechanicalMax s ≤ s * 3 ^ s := by
+theorem mechanical_large_bound : MechanicalSixteenEnvelopeStatement := by
   intro s
   induction s using Nat.strongRecOn with
   | ind s ih =>
       intro hs
-      by_cases hsmall : s < 120
+      by_cases hsmall : s < 28
       · exact mechanical_large_base ⟨s, hsmall⟩ hs
-      · have hprior : 108 ≤ s - 12 := by omega
+      · have hprior : 16 ≤ s - 12 := by omega
         have hlt : s - 12 < s := by omega
         have hrec := mechanical_twelve_propagation (s - 12) (ih (s - 12) hlt hprior)
         have heq : s - 12 + 12 = s := by omega
         simpa only [heq] using hrec
 
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
+/-- The cutoff is sharp for an envelope asserted at every subsequent odd
+count: s=15 fails, while all s≥16 satisfy it. -/
+theorem mechanical_fifteen_failure : MechanicalFifteenFailureStatement := by
+  decide
+
 theorem universalMechanicalQuarterCertificate :
     UniversalMechanicalQuarterCertificateStatement := by
   intro s hs
-  by_cases hsmall : s ≤ 107
-  · exact smallMechanicalCertificate s hs hsmall
+  by_cases hsmall : s ≤ 15
+  · exact smallMechanicalCertificate s hs (by omega)
   · have hlarge := mechanical_large_bound s (by omega)
     have hcross : 3 ^ s ≤ 2 ^ coefficientCrossingExponent s :=
       Nat.le_of_lt Nat.lt_log2_self
@@ -147,6 +153,8 @@ theorem firstContractionQuarterGap : FirstContractionQuarterGapStatement := by
     (universalMechanicalQuarterCertificate (orbitOddCount n k) hs)
   exact ⟨hquarter, by omega⟩
 
+example : MechanicalSixteenEnvelopeStatement := mechanical_large_bound
+example : MechanicalFifteenFailureStatement := mechanical_fifteen_failure
 example : UniversalMechanicalQuarterCertificateStatement :=
   universalMechanicalQuarterCertificate
 example : FirstContractionQuarterGapStatement := firstContractionQuarterGap
@@ -155,6 +163,7 @@ example : FirstContractionQuarterGapStatement := firstContractionQuarterGap
 #print axioms CollatzWork.mechanical_twelve_propagation
 #print axioms CollatzWork.mechanical_large_base
 #print axioms CollatzWork.mechanical_large_bound
+#print axioms CollatzWork.mechanical_fifteen_failure
 #print axioms CollatzWork.universalMechanicalQuarterCertificate
 #print axioms CollatzWork.firstContractionQuarterGap
 
