@@ -1,0 +1,3 @@
+# Optional symbolic exploration; promoted arithmetic checkers remain stdlib-only.
+sympy==1.14.0
+mpmath==1.3.0

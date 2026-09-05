@@ -9,12 +9,12 @@
 
 Use
 
-\[
+$$
 T(n)=\begin{cases}
 n/2,&n\text{ even},\\
 (3n+1)/2,&n\text{ odd}.
 \end{cases}
-\]
+$$
 
 Two exact one-step inverse operations are available.
 
@@ -22,30 +22,30 @@ Two exact one-step inverse operations are available.
 
 For every positive integer `y`,
 
-\[
+$$
 E(y)=2y,
 \qquad T(E(y))=y.
-\]
+$$
 
 ### Odd inverse
 
 If
 
-\[
+$$
 y\equiv2\pmod3,
-\]
+$$
 
 then
 
-\[
+$$
 O(y)=\frac{2y-1}{3}
-\]
+$$
 
 is a positive odd integer and
 
-\[
+$$
 T(O(y))=y.
-\]
+$$
 
 Thus a finite word over `{E,O}` can be read as a finite exact inverse trajectory whenever every `O` is admissible at the stage where it is used.
 
@@ -53,22 +53,22 @@ Thus a finite word over `{E,O}` can be read as a finite exact inverse trajectory
 
 Let a depth-`K` odd cylinder have the exact accelerated endpoint
 
-\[
+$$
 Y_0(x)=T^K(2^Kx+R)=3^s x+B,
 \qquad x\ge0.\tag{1}
-\]
+$$
 
 Let
 
-\[
+$$
 w=w_1w_2\cdots w_j\in\{E,O\}^j
-\]
+$$
 
 be applied successively starting from `Y_0`:
 
-\[
+$$
 Y_i=w_i(Y_{i-1}).
-\]
+$$
 
 Here `j` is a natural number and may be zero.  When `j=0`, `w` is the empty
 word `epsilon`, no inverse operation is applied, and its output is `Y_0`
@@ -82,43 +82,43 @@ Let `r_i` be the number of `O` symbols among the first `i` letters, and let `r=r
 
 Define an integer sequence `c_i` by
 
-\[
+$$
 c_0=0,
-\]
+$$
 
 and, after `i` letters,
 
-\[
+$$
 \begin{aligned}
 E:&\quad c_{i+1}=2c_i,\qquad r_{i+1}=r_i,\\
 O:&\quad c_{i+1}=2c_i+3^{r_i},\qquad r_{i+1}=r_i+1.
 \end{aligned}\tag{2}
-\]
+$$
 
 Then induction gives
 
-\[
+$$
 \boxed{
 Y_i(x)=
 \frac{2^i(3^s x+B)-c_i}{3^{r_i}}.
 }\tag{3}
-\]
+$$
 
 Whenever all `O` steps are admissible, this is an integer affine family and
 
-\[
+$$
 \boxed{T^i(Y_i(x))=Y_0(x)}\tag{4}
-\]
+$$
 
 for every `x>=0`.
 
 At the end,
 
-\[
+$$
 \boxed{
 Y_j(x)=2^j3^{s-r}x+\frac{2^jB-c_w}{3^r},
 }\tag{5}
-\]
+$$
 
 where `c_w=c_j`.
 
@@ -126,17 +126,17 @@ where `c_w=c_j`.
 
 At stage `i`, before an `O` step, the leading coefficient in (3) is
 
-\[
+$$
 2^i3^{s-r_i}.
-\]
+$$
 
 If `r_i<s`, this coefficient is divisible by `3`, so the residue modulo `3` of the entire affine family is determined by its intercept. Therefore the proposed `O` step is uniformly valid for every integer `x>=0` exactly when that intercept is congruent to `2 mod 3`.
 
 Equivalently, using (3), the condition is
 
-\[
+$$
 \frac{2^iB-c_i}{3^{r_i}}\equiv2\pmod3.\tag{6}
-\]
+$$
 
 This gives a finite exact checker for every candidate word as long as `r_i<s` before each `O`.
 
@@ -146,45 +146,45 @@ Once `r_i=s`, modulo-3 behavior can depend on `x`; a further whole-cylinder `O` 
 
 Suppose `w` passes the uniform admissibility test. Define
 
-\[
+$$
 m_w(x)=Y_j(x).
-\]
+$$
 
 Combining (1) and (4),
 
-\[
+$$
 \boxed{
 T^K(2^Kx+R)=T^j(m_w(x)).
 }\tag{7}
-\]
+$$
 
 Thus the original cylinder coalesces exactly with the orbit of `m_w(x)`.
 
 The leading coefficient of the inverse family is
 
-\[
+$$
 A_w=2^j3^{s-r}.\tag{8}
-\]
+$$
 
 If
 
-\[
+$$
 \boxed{A_w<2^K,}\tag{9}
-\]
+$$
 
 then `m_w(x)<2^Kx+R` for all sufficiently large `x`. The remaining finite threshold is computed exactly from the intercept in (5).
 
 There is one additional possibility omitted from the first version of this lemma.  If
 
-\[
+$$
 A_w=2^K
-\]
+$$
 
 and the intercept
 
-\[
+$$
 B_w=\frac{2^jB-c_w}{3^r}
-\]
+$$
 
 satisfies `B_w<R`, then `m_w(x)<2^Kx+R` for every `x` for which `m_w(x)>0`.  L5 classifies this equal-slope case exactly: for a generic forward state at time `t`, it requires `r=s`, `e=t-s`, and `|w|=t`.  In the present endpoint setup, `t=K` and `e=j-r`, so the conditions read `r=s`, `e=K-s`, and `j=K`.
 
@@ -213,15 +213,15 @@ So successful words need enough admissible `O` moves to compensate for their `E`
 
 L3 is the special case
 
-\[
+$$
 w=O^r.
-\]
+$$
 
 Then
 
-\[
+$$
 c_w=3^r-2^r
-\]
+$$
 
 in the equivalent expanded recurrence, and the admissibility condition reduces to a run of trailing ternary `2` digits in `B`.
 
@@ -231,41 +231,41 @@ L4 allows `E` moves between `O` moves and therefore captures mixed terminal bina
 
 For the depth-12 cylinder
 
-\[
+$$
 N(x)=4096x+1023,
-\]
+$$
 
 one computes
 
-\[
+$$
 T^{12}(N(x))=3^{10}x+14762=59049x+14762.
-\]
+$$
 
 The inverse word
 
-\[
+$$
 \boxed{w=OEOOOOOOOO}
-\]
+$$
 
 (length `10`, with `9` odd inverses and `1` even inverse) is uniformly admissible and gives
 
-\[
+$$
 \boxed{m_w(x)=3072x+767.}
-\]
+$$
 
 Therefore
 
-\[
+$$
 \boxed{
 T^{12}(4096x+1023)=T^{10}(3072x+767)
 }\tag{10}
-\]
+$$
 
 for every `x>=0`, and
 
-\[
+$$
 0<3072x+767<4096x+1023
-\]
+$$
 
 for every `x>=0`.
 
@@ -306,3 +306,8 @@ Formalize a generic datatype of inverse words and prove:
 6. the concrete `4096x+1023 -> 3072x+767` certificate as a regression test.
 
 Once this generic checker is trusted, future macro searches can be completely untrusted certificate generators.
+
+
+## New specialization connection
+
+- **Specialized by:** [unbounded valuation ancestor construction](Residue20_Refined_Ancestor.md), with exact guards, membership in residue20, and strict comparison to the original root.

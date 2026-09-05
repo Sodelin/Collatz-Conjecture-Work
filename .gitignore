@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 .obsidian/
+.trash/
+.venv/
+.venv-math/

@@ -1,0 +1,1 @@
+PASS: 43 growing CRT-family replays; 75 general guarded replays; 24 padded target-family replays; old q10 and missing-exit controls preserved/rejected; unbounded larger recharge followed by actual descent below the immutable root.

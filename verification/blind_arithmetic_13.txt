@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "finite_replays": 26085,
+  "universal_theorem": "every r=20mod27 with v3(4r+1)>=13 has a smaller explicit inS ancestor",
+  "covered_old_self_loop_example": {
+    "root": 41053817,
+    "target": 2531324,
+    "steps": 15,
+    "valuation": 13,
+    "unit_class": 2,
+    "h": 1,
+    "tail": "EE",
+    "z": 632831
+  },
+  "old_v20_failure_repaired": {
+    "root": 11332049303,
+    "target": 27262973,
+    "steps": 23,
+    "valuation": 20,
+    "unit_class": 4,
+    "h": 1,
+    "tail": "EEO",
+    "z": 10223615
+  },
+  "v12_counterexample_to_removing_selected_guard": {
+    "root": 1727183,
+    "candidate": 2555840,
+    "steps": 18
+  },
+  "uncovered_425": true,
+  "scope": "guarded infinite family; not universal termination"
+}

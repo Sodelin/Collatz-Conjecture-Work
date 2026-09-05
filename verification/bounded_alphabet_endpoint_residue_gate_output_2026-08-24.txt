@@ -1,0 +1,9 @@
+F-BOUNDED-ALPHABET-ENDPOINT-GATE-001
+finite words checked: 9840 (alphabet=(1, 2, 3), depth<=8)
+actual seeds reconstructed: 1@k=2, 3@k=3, 7@k=4, 27@k=5, 429111@k=19
+all-1 code: carries=[1], M_k=3^k-1
+all-2 code: first carry=1, later carries=[0], M_k=1
+periodic 1113 ghost: positive carry positions through k<24 = 0,1,2,3,4,5,7,8,10,11,14,15,17,19,20,21,23
+negative rational replay: -65/17 -> -89/17 -> -125/17 -> -179/17 -> -65/17
+PASS: exact finite identities and boundary regressions
+SCOPE: regression evidence only; the infinite theorem is proved in the linked note

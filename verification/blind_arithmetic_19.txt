@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "claim": "finite identity checks only; Collatz remains unproved in this work",
+  "exact_repetition_comparisons": 136000,
+  "expanding_family_cases": 120,
+  "thue_morse_coding_checks": 40,
+  "seeded_hard_prefix_checks": 24,
+  "noncycle_prefix_return_checks": 33,
+  "cycle_exception_controls": 20,
+  "false_controls_rejected": 4,
+  "inputs": {
+    "word_lengths": [
+      1,
+      4
+    ],
+    "word_entries": [
+      1,
+      4
+    ],
+    "odd_seeds": [
+      1,
+      199
+    ],
+    "repetitions": [
+      1,
+      4
+    ],
+    "family_block_counts": [
+      1,
+      40
+    ],
+    "family_multipliers": [
+      1,
+      3,
+      10
+    ]
+  }
+}

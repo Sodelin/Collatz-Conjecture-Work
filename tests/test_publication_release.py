@@ -142,6 +142,33 @@ class PublicationReleaseTests(unittest.TestCase):
             publisher.publish(self.root, self.env, gh)
         self.assertEqual([call[1] for call in gh.calls], ["download"])
 
+    def test_yah_manuscript_is_required_even_with_consistent_checksums(self):
+        (self.root / "yah-obstruction.md").unlink()
+        self.seal()
+        gh = FakeGitHub(self.root, self.env)
+        with self.assertRaisesRegex(publisher.PublicationError, "missing required publication assets"):
+            publisher.publish(self.root, self.env, gh)
+        self.assertEqual(gh.calls, [])
+
+    def test_yah_manuscript_is_immutable_on_release_retry(self):
+        gh = FakeGitHub(self.root, self.env, existing=True)
+        (self.root / "yah-obstruction.md").write_text("Different mathematical claim\n")
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "Downloaded release hashes"):
+            publisher.publish(self.root, self.env, gh)
+        self.assertEqual([call[1] for call in gh.calls], ["download"])
+
+    def test_verified_archive_can_carry_an_unreviewed_venue_claim(self):
+        self.write_json("vibemathed-draft.json", {"verification": "unreviewed", "resolution": "partial"})
+        self.seal()
+        publisher.validate_package(self.root, self.env)
+        for draft in ({"verification": "lean-verified", "resolution": "partial"},
+                      {"verification": "unreviewed", "resolution": "resolved"}):
+            self.write_json("vibemathed-draft.json", draft)
+            self.seal()
+            with self.assertRaisesRegex(publisher.PublicationError, "unaudited research scope"):
+                publisher.validate_package(self.root, self.env)
+
     def test_retry_still_requires_matching_verification_headline(self):
         gh = FakeGitHub(self.root, self.env, existing=True)
         report = json.loads((self.root / "verification.json").read_text())

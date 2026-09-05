@@ -1,0 +1,19 @@
+CASE TOP_BOUNDARY_ORIGINAL X_^0[0]: PASS; atoms=100 lemmas=50
+CASE TOP_BOUNDARY_ORIGINAL X_^0[1]: PASS; atoms=100 lemmas=60
+CASE TOP_BOUNDARY_ORIGINAL X_^1[0]: PASS; atoms=102 lemmas=36
+CASE TOP_BOUNDARY_ORIGINAL X_^1[1]: PASS; atoms=102 lemmas=47
+CASE TOP_BOUNDARY_ORIGINAL X_^2[0]: PASS; atoms=102 lemmas=54
+CASE TOP_BOUNDARY_ORIGINAL X_^2[1]: PASS; atoms=102 lemmas=77
+CASE TOP_DYNAMIC_REVERSED D_f[0]: PASS; atoms=100 lemmas=32
+CASE TOP_DYNAMIC_REVERSED D_f[1]: PASS; atoms=100 lemmas=37
+CASE TOP_DYNAMIC_REVERSED D_t[0]: PASS; atoms=102 lemmas=41
+CASE TOP_DYNAMIC_REVERSED D_t[1]: PASS; atoms=102 lemmas=57
+published full-system compatibility = PASS
+instance fingerprint = 7b0dad87f3d82606686251f72e4aaf5acd8f3f4fe97d615a8f40b5d320f57d9d
+certificate sha256 = dafb9bfcbe02a32905fc46d99ceb97b9b296059869d77ee42cff5c99d04592d6
+cases = 10
+Farkas lemmas = 491
+RUP clauses = 426
+total positive multiplier mass = 10183
+checker elapsed seconds = 1.285
+TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS

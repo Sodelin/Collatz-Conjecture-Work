@@ -1,0 +1,448 @@
+{
+  "status": "passed",
+  "initial_comparison_commit": "eac4dad7ef352b38d3db163637f6ac1f846c91b7",
+  "base_commit": "3d706a9463b1b95ffb7bb3b9a3475771a63b3b7c",
+  "claim_version": 1,
+  "artifact_digest": "4c9e796aacf017d6fe4861a5cdafe1a4501d96514832941286544780c073131a",
+  "dependency_snapshot_digest": "f6dee1220a22f27e241ef0b976ae1ed531eabb225723954b328d274c8d763a3b",
+  "lean_version": "4.33.1",
+  "source_sha256": {
+    ".github/workflows/verify.yml": "41e84c6de10234cfee1a48686a01463adc6066f060a635ea2f70b459616440ce",
+    "ATLAS.md": "3b1942ee36b45c5b0265620382b9880bb7ef2ead0edb0a305670952dcb115051",
+    "BLIND_RECONCILIATION_2026-09-05.md": "e303b5740e6d78ad7781b595cf0a55422a364ba652cc8f3693a1a0f3608e70cd",
+    "CONTINUATION.md": "b4a516ae96d4401bfddba07bce226c565171e0e731d6dc9adf36660ef36f6697",
+    "LEAN_TARGETS.md": "250176e8b4851c1714151b1d67a92b42381072d4c97a003a486494c961b7cdbb",
+    "README.md": "06441dad834faa30cd122496cdaa893d5e8fe6b18e17442190fe51e93f01f912",
+    "lake-manifest.json": "162d5b852cdd7bc1c06352e5981911f2a18cb06768bed22877e04300b8fc7e7b",
+    "lakefile.toml": "7d07bd0850d3d663fa5cffc5d8e75d3498598faf3b86b75ede5dac17ffd041f9",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/CollatzWork.lean": "337e99e9bb5097c40f09ce864f6c723a387e5ece3243e0ee7d04a43cef959e98",
+    "lean/CollatzWork/AffineRepetition.lean": "62cad80ec42483be80f9eccb37a0bb3a78bd686b52f30479ed4dfb3d111660cc",
+    "lean/CollatzWork/AffineRepetitionStatement.lean": "dd805f09caa4fdaa344e65682259c40b45a8dfcb97294c2edd271bb3d2b66f48",
+    "lean/CollatzWork/BlockArithmetic.lean": "839ce06cbed82a676d7dd916b0fcd6f6e3d85e08181eac65bcf1cb7f5498ebc3",
+    "lean/CollatzWork/Convergence.lean": "d7ba650385465dbdb375681f47c591ba3b1d45915ee96255939871acfb6f6757",
+    "lean/CollatzWork/ConvergenceStatement.lean": "f5c54df7d93587427fef891beedea6b9013d624a4f1b3baf3ee838dc6386c67e",
+    "lean/CollatzWork/Disproof/TwoPumpDependency.lean": "c3634f38d213d54ea2a532ecb60dec9b212ac58f6e4e32fb9bd62738df0262f7",
+    "lean/CollatzWork/FirstContraction.lean": "41eb1a73437f18eb3796e6dd054efa64d6648e60e13de829ade4d7eeeb244a2e",
+    "lean/CollatzWork/FirstContractionStatement.lean": "1e5cb863051bf052b562434552729c13aa1b15a4b89f88f499269ea383a6b7a6",
+    "lean/CollatzWork/FloorPower.lean": "97ed65c31e02422cb7e0e17da431e9ddc6e9c7adbe274174e403f37a49751cef",
+    "lean/CollatzWork/InverseWordBoundary.lean": "f31c18940fecd747c797d60c6346e36bbc4b00d50c583f00fcff49f27cae62d7",
+    "lean/CollatzWork/InverseWordBoundaryStatement.lean": "bf6585a2b0b98af539afe82f618912e8904c0c0f0fb1ecba05b53f2c30fd3fd2",
+    "lean/CollatzWork/PrefixCollision.lean": "6513a67191840ffcccec673edf1656a55b9fdbf4505c5be7796be6765155d2f1",
+    "lean/CollatzWork/PrefixCollisionStatement.lean": "7ffdd5f945da61bba8396b7b491a7ce8366d5d65823ea5fb0aa169e7e553ad96",
+    "lean/CollatzWork/QuarterGap.lean": "8b0f9cc29719cf665f2d5227dad8b482a5db3381556d61b39d78c595aeefb89e",
+    "lean/CollatzWork/QuarterGapStatement.lean": "e759f72d4f692efce5c78b7a5e762fd097dfe6900fddf72f66bcb6019735f539",
+    "lean/CollatzWork/QuarterGapUniversal.lean": "969e21be9e19326071fb8e110d5eddfd560f9926f083fd125f674f503a7be647",
+    "lean/CollatzWork/QuarterGapUniversalStatement.lean": "b084a1ae690fb95d135858c68f9177205ed550a882bd6deefccd82bb70eac556",
+    "lean/CollatzWork/RefinedMersenneChild.lean": "2ef6e464c93e01e3163ecc4efe7e16b965606f24b66ea0b519c3f53f72e6eb17",
+    "lean/CollatzWork/ResidueAncestor.lean": "71218cbe2b8c89d20ecd1ac471e112d7ba02ae8d40bac568cf30a0c049175a0d",
+    "lean/CollatzWork/ResidueAncestorStatement.lean": "e2f108f0caa0d44cbaa47b31ce0560ab6bbe2bc2d6f7e3e1c93825b4d45a32e7",
+    "lean/CollatzWork/ResidueAncestorTails.lean": "cba2ecf3404aace6649748f16f3ca0ba6bf180b33242709f3fe73601a46352f3",
+    "lean/CollatzWork/RootDescent.lean": "fa0b9bf92e65fc5e1c66089273b2d22b12819f6d41d411b5793f1f0dcf81c557",
+    "lean/CollatzWork/RootDescentStatement.lean": "499eb39ec87dfae53fe5bd4b554b88e3754b5f386e01ae823433cb0056949334",
+    "proof-search/APPROACH_REGISTRY.md": "f666bc3296df998b56d65d38aad63b17847536001447e292d63b8df43efe9205",
+    "proof-search/CLAIM_REGISTRY.md": "7cc54e89a0310220a18f2b44908d42c34338bcaeba23c6cbf71ee70b2c384fdb",
+    "proof-search/FAILURE_LEDGER.md": "90dd471b1b9338c01db78ddd3fe05a276112eb9e198a61bcfafa32cdc84cbc0d",
+    "proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md": "3c66c95587be423c5abbe751230f0e0473adb9b1a5ef66cf325e0c4ba862c894",
+    "research/blind-2026-09-05/AlternatingGrowth.lean": "8a53286a000f20c048da7c8c57add0eb74f5f403a822b858f74a7b761de55607",
+    "research/blind-2026-09-05/BlindAttempt.md": "4fe29962107d875baa7397d3b29335a09b9b10a7644c8ac7a4d42999a748f245",
+    "research/blind-2026-09-05/Descent.lean": "6734197b31382be15c59a642577a31dbe80b137786ba9109bb90fc9ef76546de",
+    "research/blind-2026-09-05/InverseNotes.md": "3e136197c3d0097954dad8d4edb78bd3ff84f2d7e4d47b7c5a5847d296d36447",
+    "research/blind-2026-09-05/README.md": "0a1cead90d06821a3a6f3f5a427f9f4c1b7cd67de52ab7f87ceda47edb5e758a",
+    "research/blind-2026-09-05/RepetitionBound.lean": "b6be440cbf1843ca4eb8fb8ee89e8f8479a84f6c79d8d9a653d447cb1836c91f",
+    "research/blind-2026-09-05/SymbolicNotes.md": "7d3457e5b81bc7f52e387f72c23b1ffbd27f2caa0456620cac03da6da35af790",
+    "verification/Blind_Recurrence_Verification_2026-09-05.md": "3b849891f61c69eb49f571e9e48b89a73c07334fcd58adcf5db710f28ab5f758",
+    "verification/README.md": "e53cc03ae1696b4852679d16a01a721d5d2ffc022043d4272d9f9170494fa556",
+    "verification/blind_word_recurrence_check.py": "130ef0d6f227cda7e1ec234cfc59ca45efa6fab4c8678538e85fbd43522cbfdf"
+  },
+  "log_sha256": {
+    "verification/blind_formal_00.txt": "19872e1b868bb06dedfe935cd95e1d6403cae783cc96bca8e3dce9d93a95dfed",
+    "verification/blind_formal_01.txt": "ee5560fdd1ebe7a50c3a0c6c6896f66770c3c0c4ef67fd8d7f812c3631f97c79",
+    "verification/blind_formal_02.txt": "755264738c5966c0c82503f51fa460275507e54e208bddbfa24895f541039d47",
+    "verification/blind_formal_03.txt": "0fc4ab48221b49061aa4dc58643a149d18cce76f10b3416daa5be9b033ec416f",
+    "verification/blind_formal_04.txt": "5f0861e94b8f3c36ffe42c7d2ff69364273a15115f95d692eb228c05cd5a5123",
+    "verification/blind_formal_05.txt": "99ea5825c2e40183d40280b04cf6ce8c8b65faa6bba2281a984158d55b31c38d",
+    "verification/blind_formal_06.txt": "4dba0d60d8d2653a584522a0bfb7217b823c0dbd2796335720baaf1f4a5ac3e0",
+    "verification/blind_formal_07.txt": "36cefa2a03b9ab6f274c26daa6a523d32ccc5adb539af34a87d598d3ba3db37e",
+    "verification/blind_formal_08.txt": "e9eba5e18a67e8128fa4f40e8822903480d80a94624ae14c1dd0ffb1c1498f97",
+    "verification/blind_arithmetic_00.txt": "1ff9c23dba8cb454653683d5835633fd844e4ef78148c97105c8a3afd3b25274",
+    "verification/blind_arithmetic_01.txt": "5834a3035e4d18aeae8e2b630c596afc5a5bc97f76426bf83b086d6050349772",
+    "verification/blind_arithmetic_02.txt": "af193bdbf51499f635d6e9fae7e6cf3b3fd0f89e72961fe49e045763da3b945a",
+    "verification/blind_arithmetic_03.txt": "0c1898445536dca0c5036670c79dcc0e4b5f0a7ed49ec0cf360ee9c455173a40",
+    "verification/blind_arithmetic_04.txt": "652dabf30df4f0a519dc4b210821dac0393cf3a3f6dd5d930ffee63e2fc7a497",
+    "verification/blind_arithmetic_05.txt": "01fa0ffd3b2a1b4e146b573fe44a5c328c027cebb6b5c8c7cac2604be5cbdbb6",
+    "verification/blind_arithmetic_06.txt": "49151de0fdfc4e6c3d014924b51e1b0c0fd353a251dc50c928230f462ba87eb9",
+    "verification/blind_arithmetic_07.txt": "e8f2638cb5d5fb9935c8d125101d723e60e271f6d0ba7bf90f2674f4581390d8",
+    "verification/blind_arithmetic_08.txt": "b144a282f701770b2d39bc859866d9213a22791517cc657cdc08e966d057cb64",
+    "verification/blind_arithmetic_09.txt": "3131e3057e12832d810bb505d54ce516e6078f4b353f53e6170d26091b01a851",
+    "verification/blind_arithmetic_10.txt": "5f3dd0a56868da94f88c9c1dedb1606819c8484189798f4df06b628b5734334b",
+    "verification/blind_arithmetic_11.txt": "ac19c70c061da4cf4768e33a65a99cde221f66a0d8b87ee6745110090700fdf7",
+    "verification/blind_arithmetic_12.txt": "ac19c70c061da4cf4768e33a65a99cde221f66a0d8b87ee6745110090700fdf7",
+    "verification/blind_arithmetic_13.txt": "7d8c5c9f0afc3038a7a24593e0eb1f8d02960ed415974f513f4e716df27b856f",
+    "verification/blind_arithmetic_14.txt": "7d8c5c9f0afc3038a7a24593e0eb1f8d02960ed415974f513f4e716df27b856f",
+    "verification/blind_arithmetic_15.txt": "17c4e52f644e4ffe213477708afe3357a1dfba2b5645f31ffa6daaf8cccf5882",
+    "verification/blind_arithmetic_16.txt": "17c4e52f644e4ffe213477708afe3357a1dfba2b5645f31ffa6daaf8cccf5882",
+    "verification/blind_arithmetic_17.txt": "37ef128f3025055a35e276e43a74d3000cb1c48caa42edd5d7bdddbaaca426b1",
+    "verification/blind_arithmetic_18.txt": "37ef128f3025055a35e276e43a74d3000cb1c48caa42edd5d7bdddbaaca426b1",
+    "verification/blind_arithmetic_19.txt": "d5c57c39379563f5fa0654fc5d2f34bf7a393a43ae43f2cf8317ad3bf021f223",
+    "verification/blind_arithmetic_20.txt": "d5c57c39379563f5fa0654fc5d2f34bf7a393a43ae43f2cf8317ad3bf021f223",
+    "verification/blind_parent_q2_exit_descent_check.txt": "31f36746ca75d7c029cd94f4e781490069adfa5dd4b9b390bd25c5f4ff6f4525",
+    "verification/blind_parent_q2_exit_descent_check_optimized.txt": "31f36746ca75d7c029cd94f4e781490069adfa5dd4b9b390bd25c5f4ff6f4525",
+    "verification/blind_parent_two_burst_recharge_escape_check.txt": "d9056aee247bda656faa8c78dc350d4628d7c8281f1d225aad0760b512bfd762",
+    "verification/blind_parent_two_burst_recharge_escape_check_optimized.txt": "d9056aee247bda656faa8c78dc350d4628d7c8281f1d225aad0760b512bfd762",
+    "verification/blind_parent_complementary_ancestor_check.txt": "48c73aa539452467162ff556dabaa3bee9c32c8d229685bce58decc174315f5b",
+    "verification/blind_parent_complementary_ancestor_check_optimized.txt": "48c73aa539452467162ff556dabaa3bee9c32c8d229685bce58decc174315f5b",
+    "verification/blind_final_note_graph.txt": "60a680c73e1a9ef86115ba53d843bfbb57bcf3eb4f6556865147ef6333b3157f"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_00.txt"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "lean/CollatzWork/PrefixCollision.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_01.txt"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "lean/CollatzWork/AffineRepetition.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_02.txt"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "lean/CollatzWork/ResidueAncestor.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_03.txt"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "CollatzWork.PrefixCollision",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_04.txt"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "CollatzWork.AffineRepetition",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_05.txt"
+    },
+    {
+      "command": [
+        "lean",
+        "research/blind-2026-09-05/Descent.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_06.txt"
+    },
+    {
+      "command": [
+        "lean",
+        "research/blind-2026-09-05/AlternatingGrowth.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_07.txt"
+    },
+    {
+      "command": [
+        "lean",
+        "research/blind-2026-09-05/RepetitionBound.lean"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_formal_08.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/trajectory_normal_form_regression.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_00.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/yah_scalar_arctic_top/verify_top_certificates.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_01.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/check_note_graph.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_02.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/near_return_quarter_bound.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_03.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/hard_return_frozen_debt_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_04.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/three_adic_hard_return_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_05.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/primary_bridge_counterexamples.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_06.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/block_arithmetic_certificate.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_07.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/finite_residue_hard_return_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_08.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/core_residue_obstruction_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_09.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/mod27_rank_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_10.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/residue20_valuation_inverse_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_11.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/residue20_valuation_inverse_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_12.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/residue20_refined_ancestor_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_13.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/residue20_refined_ancestor_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_14.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/root_burst_descent_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_15.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/root_burst_descent_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_16.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/check_shadow_debt_recharge.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_17.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/check_shadow_debt_recharge.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_18.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/blind_word_recurrence_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_19.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/blind_word_recurrence_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_arithmetic_20.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/q2_exit_descent_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_q2_exit_descent_check.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/q2_exit_descent_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_q2_exit_descent_check_optimized.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/two_burst_recharge_escape_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_two_burst_recharge_escape_check.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/two_burst_recharge_escape_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_two_burst_recharge_escape_check_optimized.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/complementary_ancestor_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_complementary_ancestor_check.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "-B",
+        "verification/complementary_ancestor_check.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_parent_complementary_ancestor_check_optimized.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "verification/check_note_graph.py"
+      ],
+      "exit_code": 0,
+      "log": "verification/blind_final_note_graph.txt"
+    }
+  ],
+  "claim_status": "partial; complete Thue-Morse exclusion analytic, components Lean checked; no universal Collatz proof",
+  "external_review": false,
+  "novelty_assessed": false,
+  "replay_scope": "leanchecker is same-kernel replay, not an independent verifier",
+  "integration_note": "Parent update changed documentation and added three Python checkers; no Lean source changed. Those additions and final note graph were replayed after integration."
+}

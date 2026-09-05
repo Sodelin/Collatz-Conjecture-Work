@@ -39,8 +39,8 @@ def main() -> None:
     assert data["origin_state"] == "e7a72cdc1fc6d5c45144c8bbb5925f6906541673"
 
     # Semantic identity with the published full/extended theorem is checked
-    # both by a canonical instance fingerprint and by replaying its 49-row
-    # all-positive cancellation on this independent reconstruction.
+    # both by a canonical instance fingerprint and by replaying its 22-row
+    # all-positive cancellation of multiplier mass 49 on this independent reconstruction.
     assert data["instance_fingerprint"] == instance_fingerprint()
     verify_full_compatibility()
 

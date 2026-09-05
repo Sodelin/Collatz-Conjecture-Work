@@ -1,0 +1,5 @@
+PASS: universal affine branch guards and factor identities
+PASS: independent F/debt replay for 1003 parameters
+Smallest displayed family member: 47771 -> 80615 -> 204059
+Parameter growth ratio limit: 2187/512
+Scope: exact family and regression; Collatz remains unresolved.

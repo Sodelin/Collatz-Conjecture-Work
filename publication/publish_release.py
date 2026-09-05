@@ -24,7 +24,7 @@ REQUIRED_ASSETS = {
     "research-source.zip", "lean-source.zip", "source-inventory.json",
     "claims.json", "vibemathed-draft.json", "vibemathed-form.md",
     "vibemathed-import.js", "vibemathed-schema.json", "CITATION.cff",
-    "citation.bib", "announcement.md",
+    "citation.bib", "announcement.md", "yah-obstruction.md",
 }
 
 
@@ -96,8 +96,8 @@ def validate_package(root: Path, environment: dict) -> tuple[dict, dict[str, str
             or any(command.get("exit_code") != 0 for command in report["commands"])):
         raise PublicationError("Successful exact-source verification is required")
     draft = load_json(root / "vibemathed-draft.json")
-    if draft.get("verification") != "lean-checked" or draft.get("resolution") != "partial":
-        raise PublicationError("Venue draft must describe verified partial research")
+    if draft.get("verification") not in {"lean-checked", "unreviewed"} or draft.get("resolution") != "partial":
+        raise PublicationError("Venue draft must preserve partial, independently unaudited research scope")
     return manifest, files
 
 

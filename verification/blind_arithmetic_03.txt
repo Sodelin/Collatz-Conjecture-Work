@@ -1,0 +1,22 @@
+M_0=0
+M_1=1
+M_2=7/4
+M_3=23/9
+M_4=119/36
+M_5=319/81
+M_6=1213/256
+M_7=5581/1024
+M_8=14501/2304
+M_9=64565/9216
+M_10=159181/20736
+M_11=695773/82944
+M_12=2349463/262144
+12-block slack=9833/262144; remainder excess=11/36
+PASS: S_s < 3*s/4 for every s >= 108, by the block theorem
+PASS: 4*C_s <= s*2^tau_s for 1 <= s <= 107; equality only s=1
+THEOREM CERTIFICATE: every first-contraction gap d>=0 obeys 4*d<s
+L8 frontier quarter bound: d <= 18,014,357,997
+L8 frontier quarter bound with L11: d <= 18,014,357,996
+L8 frontier exact 1024-block bound: d <= 17,340,869,985
+L8 frontier exact 1024-block bound with L11: d <= 17,340,869,984
+PASS: exact arithmetic certificate; no Collatz closure asserted

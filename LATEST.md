@@ -1,63 +1,31 @@
 # Latest accepted research state
 
-Accepted mathematical baseline:
-`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
+**Collatz remains unresolved.** No universal proof, positive nontrivial cycle, or rigorously divergent positive orbit is established here.
 
-## Verdict
+The [2026-09-05 consolidated checkpoint](CONSOLIDATION_2026-09-05.md) identifies all eight incorporated source heads and their exact contributions. It supersedes the older single-branch baseline summaries.
 
-**The Collatz conjecture remains unresolved.** There is no accepted universal
-proof, positive nontrivial cycle, or rigorously divergent positive orbit in
-this repository.
+## Integrated results
 
-## What the accepted chain currently contains
+- Lean-checked first-contraction quarter gap and sharp eventual envelope threshold16.
+- Latest PR17 guarded actual-orbit burst and two-burst descent below the original root, with complete residue20 ancestor theorem; additional postspell results retain prose/replay status.
+- Fixed-algebra additive YAH certificates in Lean, separately identified scalar-arctic full/top exact checkers, and their surviving method classes.
+- Finite-palette bounded-progress obstruction, prefix collision and fixed affine-repetition Lean developments.
+- A complete analytic Thue–Morse prefix-return theorem that excludes the old fixed positive divergent candidate; its full substitution/coding bridge is not Lean-checked.
+- Older endpoint/carry, inverse-word, prime-renewal, and stopped-route results, with their historical audits and scoped formal cores.
+- Provisional source cards, BibTeX, linked notebook, and conservative issue transcriptions.
 
-- [`L14-3M1-NF`](proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md):
-  an exact strictly decreasing normalizer for the fully accelerated odd map,
-  terminating at `1`, `7 mod 8`, or `27 mod 32`. The remaining convergence
-  assertion is Collatz-equivalent, and the note records explicit
-  counterexamples to the rejected claim that this terminal set exhausts other
-  finite/local affine rewrites.
-- [`A-YAH-2STATE-001`](proof-search/routes/A_yah_two_state_semantic_label_no_go.md):
-  exact 8-row and 50-row cancellations kill additive labeled-symbol and
-  labeled-edge orders, including finite lexicographic tuples, for one fixed
-  two-state semantic algebra; the edge certificate now proves that no such
-  fixed-terminal potential can make its first uniform rule-removal step.
-- [`A-YAH-AN1-001`](proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md):
-  exact 49-mass, Farkas, and RUP certificates prove that the original
-  eleven-rule YAH system has no first standard dimension-one arctic-natural
-  step: neither full/extended removal nor either Lemma-3.18 top entry point.
-  The fixed 22-rule labeling is certified as well. Higher-dimensional,
-  different-carrier/label, transformed, non-coefficientwise, and local methods
-  remain open.
-- [`AB-HARD-RETURN-001`](proof-search/routes/AB_hard_boundary_return_system.md):
-  an exact decreasing boundary normalizer and closed hard return map. Universal
-  termination of that return map is Collatz-equivalent; the smallest reported
-  growth-plus-recharge witness is `31 -> 182 -> 91`.
+## Reading order
 
-The YAH items are solved **route-class obstructions**. Both normalizers are
-**Collatz-equivalent reductions**. None is the still-open universal
-termination proof.
+1. [Consolidated checkpoint and source heads](CONSOLIDATION_2026-09-05.md)
+2. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md)
+3. [Lean scope and remaining targets](LEAN_TARGETS.md)
+4. [Verification manifest](verification/README.md)
+5. [Publication guide](publication/README.md)
+6. [Bounded novelty review](research-review/novelty-2026-09-05/REPORT.md)
+7. [Research atlas](ATLAS.md)
 
-## Current reading order
+## Remaining mathematical gaps
 
-1. [README](README.md) — two-minute enthusiast/researcher map.
-2. [Research atlas](ATLAS.md) — visual dependency map, typed route links, and the complete note index.
-3. [Public status](PUBLIC_STATUS_2026-08-24.md) — plain-language verdict and latest gap.
-4. [Atomic claim registry](proof-search/CLAIM_REGISTRY.md) — confidence, verification, importance, novelty, readiness, and evidence.
-5. [Approach registry](proof-search/APPROACH_REGISTRY.md) — live route statuses.
-6. [Failure ledger](proof-search/FAILURE_LEDGER.md) — superseded and killed mechanisms.
-7. [Verification manifest](verification/README.md) — portable commands and exact scopes.
+Guarded theorems do not yet cover every root or every failed exit guard. Later return and re-entry still need control against the unchanged original root. The recurrence theorem does not impose its prefix-return property on all possible divergent codes and does not exclude unknown cycles. The quarter-gap theorem requires a first coefficient contraction. Priority remains uncertified, and no accepted global closure argument is hidden in the integration.
 
-The older [Cycle-1 closure audit](proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md)
-and [Round 6A review note](papers/round-6a/Theorem_6A1_Public_Review_Note.md)
-remain preserved as historical branch checkpoints.
-
-## Formal status
-
-Three narrow Lean modules exist; see [LEAN_TARGETS.md](LEAN_TARGETS.md). A full
-proof-assistant formalization of the prose chain or Collatz does not exist.
-Novelty and priority for project-specific claims are not certified.
-
-The [note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) explains how to
-use the same files as a GitHub knowledge base or optional Obsidian vault without
-creating a second source of mathematical status.
+[Continuation instructions](CONTINUATION.md) preserve the exact reopening obligations. Dated progress packets remain historical source records.

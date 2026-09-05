@@ -12,50 +12,50 @@
 
 Barina (2025) reports verification of Collatz convergence for all starting values through `2^71` under the same accelerated map convention
 
-\[
+$$
 T(n)=\begin{cases}
 (3n+1)/2,&n\text{ odd},\\
 n/2,&n\text{ even}.
 \end{cases}
-\]
+$$
 
 Hence a least nonconvergent positive integer, if one exists, satisfies
 
-\[
+$$
 \boxed{n_*>2^{71}.}\tag{1}
-\]
+$$
 
 ### Input B — Rozier–Terracol remainder bound
 
 For a length-`j` accelerated prefix with `q=q_j(n)` odd terms, write
 
-\[
+$$
 T^j(n)=\frac{3^q}{2^j}n+E_j(n).
-\]
+$$
 
 Rozier–Terracol Theorem 2.4 gives
 
-\[
+$$
 \boxed{
 E_j(n)\le\frac{3^q-2^q}{2^q}.
 }\tag{2}
-\]
+$$
 
 ### Input C — published paradoxical-length exclusion
 
 Rozier–Terracol Theorem 5.3 proves there are no paradoxical sequences with
 
-\[
+$$
 \boxed{93\le j\le301\,993.}\tag{3}
-\]
+$$
 
 A prefix is paradoxical when
 
-\[
+$$
 \frac{3^q}{2^j}<1
 \quad\text{but}\quad
 T^j(n)\ge n.
-\]
+$$
 
 ## 2. Minimality converts contraction into paradoxicality
 
@@ -63,17 +63,17 @@ Assume Collatz is false and let `n_*` be the least positive integer whose orbit 
 
 Then
 
-\[
+$$
 \boxed{T^j(n_*)\ge n_*\quad\text{for every }j\ge0.}\tag{4}
-\]
+$$
 
 Otherwise some iterate would be a smaller positive integer. By minimality that smaller integer converges to `1`, forcing `n_*` to converge as well.
 
 Therefore every coefficient-contracting prefix of `n_*`, meaning
 
-\[
+$$
 3^{q_j(n_*)}<2^j,
-\]
+$$
 
 is automatically paradoxical.
 
@@ -81,14 +81,14 @@ is automatically paradoxical.
 
 Suppose a prefix of length `j` is coefficient-contracting and non-descending. Then
 
-\[
+$$
 \left(1-\frac{3^q}{2^j}\right)n_*
 \le E_j(n_*).
-\]
+$$
 
 Using (2),
 
-\[
+$$
 n_*
 \le
 \frac{(3^q-2^q)/2^q}{1-3^q/2^j}
@@ -97,7 +97,7 @@ n_*
 F(j,q)=
 \frac{2^{j-q}(3^q-2^q)}{2^j-3^q}.
 }\tag{5}
-\]
+$$
 
 The exact integer-arithmetic checker
 
@@ -105,53 +105,53 @@ The exact integer-arithmetic checker
 
 exhausts all integer pairs
 
-\[
+$$
 1\le j\le183,
 \qquad
 0\le q\le j,
 \qquad
 3^q<2^j,
-\]
+$$
 
 and verifies
 
-\[
+$$
 \boxed{F(j,q)<2^{71}}\tag{6}
-\]
+$$
 
 in every case.
 
 The largest value over this range occurs at
 
-\[
+$$
 (j,q)=(176,111)
-\]
+$$
 
 and still has
 
-\[
+$$
 \log_2 F(176,111)\approx69.3479<71.
-\]
+$$
 
 The first pair by increasing `j` at which the bound can reach `2^71` is
 
-\[
+$$
 (j,q)=(184,116).
-\]
+$$
 
 Combining (1), (5), and (6), `n_*` cannot have a coefficient-contracting prefix for any
 
-\[
+$$
 1\le j\le183.
-\]
+$$
 
 ## 4. Fill the remaining interval with Theorem 5.3
 
 For every
 
-\[
+$$
 184\le j\le301\,993,
-\]
+$$
 
 a coefficient-contracting prefix of `n_*` would be paradoxical by (4).
 
@@ -161,27 +161,27 @@ Therefore no such prefix exists.
 
 Combining the two ranges yields the main conclusion:
 
-\[
+$$
 \boxed{
 3^{q_j(n_*)}\ge2^j
 \quad\text{for every }1\le j\le301\,993.
 }\tag{7}
-\]
+$$
 
 ## 5. Coefficient stopping-time corollary
 
 Define, when finite,
 
-\[
+$$
 \tau(n)=
 \min\left\{j\ge1:3^{q_j(n)}<2^j\right\}.
-\]
+$$
 
 Then any least Collatz counterexample must satisfy
 
-\[
+$$
 \boxed{\tau(n_*)\ge301\,994.}\tag{8}
-\]
+$$
 
 If `tau(n_*)` were infinite, (7) is of course also satisfied.
 
@@ -189,17 +189,17 @@ If `tau(n_*)` were infinite, (7) is of course also satisfied.
 
 Equation (7) is equivalent to
 
-\[
+$$
 q_j(n_*)
 \ge
 \left\lceil j\log_3 2\right\rceil
-\]
+$$
 
 for each
 
-\[
+$$
 1\le j\le301\,993,
-\]
+$$
 
 with the ceiling convention adjusted only at the impossible equality case `3^q=2^j` for positive integers `j,q`.
 
@@ -211,24 +211,24 @@ This is a prefix-by-prefix constraint, stronger than merely requiring a high fin
 
 L6 independently proves that if
 
-\[
+$$
 n_*=2^qm-1,
 \qquad q=v_2(n_*+1),
-\]
+$$
 
 then a least counterexample must exit the initial `-1`/Mersenne branch through the hard mod-4 state
 
-\[
+$$
 3^qm\equiv3\pmod4.
-\]
+$$
 
 So a hypothetical least counterexample must simultaneously satisfy:
 
 1. the exact Mersenne-exit congruence from L6;
 2. the prefix inequalities
-   \[
+   $$
    q_j(n_*)\ge\lceil j\log_3 2\rceil
-   \]
+   $$
    for all `j<=301,993`;
 3. the published base-size lower bound `n_*>2^71`.
 

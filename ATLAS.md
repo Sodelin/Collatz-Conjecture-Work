@@ -16,6 +16,12 @@ For current truth, use the [claim registry](proof-search/CLAIM_REGISTRY.md),
 [verification manifest](verification/README.md). This atlas is navigation, not
 a second status ledger.
 
+## Current consolidated review
+
+- [All contributions and focused YAH publication review](research-review/consolidation-2026-09-05/REPORT.md)
+- [Exact integrated source heads and contribution map](CONSOLIDATION_2026-09-05.md)
+- [Current state](LATEST.md)
+
 ## How to read the graph
 
 - **depends on** means the target supplies a stated mathematical or semantic
@@ -64,6 +70,10 @@ flowchart LR
   subgraph E["Disproof lane"]
     DP["bounded cycle DP"] --> EW["no witness"]
     TP["two-pump dependency"] --> EW
+    BC["two-center collapse"] --> EW
+    FR["finite-residue invariant collapse"] --> EW
+    PR["normalized polynomial ratchet no-go"] --> EW
+    SR["ratio-convergent generator no-go"] --> EW
   end
 
   A2 --> G0
@@ -146,13 +156,37 @@ well-founded rank, not another unrooted near-return estimate.
 - The [two-pump dependency audit](proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md)
   and its [Lean target](LEAN_TARGETS.md) prove that cyclic rotation alone gives
   a dependent resultant.
+- The [two-center branching shot](proof-search/disproof/CODEX_BRANCHING_CENTER_SHOT_2026-08-24.md),
+  [independent hostile audit](proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean arithmetic core](lean/CollatzWork/Disproof/BranchingCenter.lean)
+  close exactly the two-rational-center/three-single-edge architecture.
+- The [finite-residue first-integral shot](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_SHOT_2026-08-24.md),
+  [independent hostile audit](proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean group-action core](lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean)
+  prove that a memoryless invariant coloring of one finite residue ring must
+  be constant.
+- The [normalized polynomial-ratchet theorem packet](proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md),
+  [hostile audit](proof-search/disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md),
+  and [Lean arithmetic core](lean/CollatzWork/Disproof/PolynomialRatchet.lean)
+  close only the stated primitive-polynomial eigen/divisibility subclass.
+- The [smooth-ratio semiconjugacy packet](proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md)
+  proves that a positive accelerated orbit with a convergent successive-state
+  ratio eventually reaches `1`.
 
-Neither artifact supplies a positive nontrivial cycle or a divergent positive
+Every item in this section is a bounded diagnostic or an exact route-class
+obstruction. None supplies a positive nontrivial cycle or a divergent positive
 orbit.
 
 ## Evidence and formalization
 
+- [Finite-palette bounded-progress obstruction](proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+  strengthens bounded direct integer descent to arbitrary switching among
+  finitely many eventually nondecreasing rank pieces. Its fixed shortcut
+  horizon remains a material restriction.
+- [Free symbolic and formal tool setup](docs/MATH_TOOL_SETUP.md)
+
 - [Verification and reproduction manifest](verification/README.md)
+- [Audited-route release receipt](verification/RELEASE_AUDIT_2026-08-24.md)
 - [Lean target boundary](LEAN_TARGETS.md)
 - [Lean verification policy](lean/VERIFICATION_POLICY.md)
 - [Provenance policy and immutable objects](PROVENANCE.md)
@@ -174,6 +208,22 @@ target and confirm that every note is reachable from this public entry graph.
 
 The reusable architecture lives in `Sodelin/Proof-attack-structure`; the
 Collatz repository remains authoritative for Collatz mathematics and status.
+
+## Provisional synthesis and publication gates
+
+- [Effective-flash review notes](proof-search/effective-flashes/README.md)
+  preserve exact issue-derived route facts without adding claim-registry rows.
+- [YAH scalar-arctic publication candidate](publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
+  records independent correctness, priority, dependency, reproducibility,
+  source, attribution, reporting, and review gates. Its decision is `HOLD`.
+- [Generated catalog and backlinks](knowledge/README.md) expose every Markdown
+  file while remaining subordinate to this hand-curated atlas.
+- [AI-assisted source-card map](knowledge/sources/INDEX.md) preserves the
+  Zotero import manifest, stable item links, citation identifiers, project use,
+  and human-review boundary for 36 references.
+
+These are audit and packaging views. They do not change the unresolved verdict
+or the canonical status hierarchy.
 
 ## Historical archive
 
@@ -198,3 +248,72 @@ must not override the current registries.
 
 If a proposal cannot name the old blocker and the new mechanism that bypasses
 it, it belongs in the failure ledger rather than a new route.
+
+## 2026-09-05 additions
+
+- [L15 rotation-block / quarter-gap certificate](proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md) strengthens L10 and feeds L11/L12.
+- [Frozen-debt rank obstruction](proof-search/routes/AB_frozen_debt_size_rank_no_go.md) strengthens F023 and blocks polynomial versions of Route AB.
+- [Research pass and independent audit](ASTRA_RESEARCH_PASS_2026-09-05.md) records exact verification and source roles.
+
+
+## Third-pass nodes
+
+- [Continuation and decisions](ASTRA_CONTINUATION_2026-09-05.md).
+- [Complete quarter-gap formal scope](verification/Quarter_Gap_Formal_Scope_2026-09-05.md).
+- [Original-F arbitrary-modulus obstruction](proof-search/routes/AB_finite_residue_original_return_no_go.md).
+- [Stronger core, smaller targets and composition loop](proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md).
+- [Published sufficiency and explicit modulo27 rank](proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md).
+
+
+## Root-relative progress packet
+
+[Continuation report](ROOT_RELATIVE_PROGRESS_2026-09-05.md) connects the [formal burst descent](proof-search/lemmas/Root_Relative_Burst_Descent.md), [simple ancestor selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md), [refined valuation13 selector](proof-search/lemmas/Residue20_Refined_Ancestor.md), and [shadow-depth recharge obstruction](proof-search/routes/AC_shadow_debt_recharge.md). The positive family certificates compare to the original root; the complement still lacks a universal mechanism.
+
+
+## Recharge escape continuation
+
+[The next packet](RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) links the now-complete uniform ancestor formalization, [two growing bursts with larger recharge](proof-search/lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](proof-search/lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestor cylinders and exact first-return transitions](proof-search/lemmas/Complementary_Ancestor_Cylinders.md). Guarded family coverage expands; universal termination remains open.
+
+
+## Exact growing-spell and bounded-cover continuation
+
+- [Finite OOEO first-return spells](proof-search/lemmas/Finite_Growing_First_Return_Spells.md) give a precise valuation clock and all four exit states for arbitrarily long growing excursions.
+- [Bounded ancestor and simultaneous-cover obstruction](proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md) combines that clock with anchor transfer on the same q5 target.
+- [Current continuation](CONTINUATION.md) records the unbounded mixed-coalescence or whole-excursion bridge that remains open; [the claim registry](proof-search/CLAIM_REGISTRY.md) owns the prose/Python confidence boundary.
+
+
+## Original-root bridge through postspell growth
+
+[The latest packet](ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md) connects [guarded root descent after independently long spells and odd runs](proof-search/lemmas/Postspell_Guarded_Root_Descent.md) with [the corresponding unbounded-growth obstruction](proof-search/lemmas/Postspell_Odd_Run_Obstruction.md). The two results isolate the substantive final-halving guard and leave universal coverage open.
+
+## Consolidated contribution and review index
+
+- [CODEX_TM_MAHLER_ANCHOR_2026-08-24](proof-search/disproof/CODEX_TM_MAHLER_ANCHOR_2026-08-24.md)
+- [TM_Prefix_Return_Exclusion_2026-09-05](proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+- [issue-10-phase-summability](proof-search/effective-flashes/issue-10-phase-summability.md)
+- [issue-11-finite-adelic-phase](proof-search/effective-flashes/issue-11-finite-adelic-phase.md)
+- [issue-7-reciprocal-summability](proof-search/effective-flashes/issue-7-reciprocal-summability.md)
+- [issue-9-global-carry-rigidity](proof-search/effective-flashes/issue-9-global-carry-rigidity.md)
+- [L15_Expanded_Rewrite_and_Mixed_Inverse_Words](proof-search/lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md)
+- [AB_direct_H_return_and_renewal_filters](proof-search/routes/AB_direct_H_return_and_renewal_filters.md)
+- [AB_prime_renewal_finite_window_no_go](proof-search/routes/AB_prime_renewal_finite_window_no_go.md)
+- [AB_three_adic_rank_no_go](proof-search/routes/AB_three_adic_rank_no_go.md)
+- [A_yah_finite_obstruction_formal_audit](proof-search/routes/A_yah_finite_obstruction_formal_audit.md)
+- [F_bounded_alphabet_endpoint_residue_gate](proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md)
+- [Primary_Bridge_Audit_2026-09-05](proof-search/sources/Primary_Bridge_Audit_2026-09-05.md)
+- [BlindAttempt](research/blind-2026-09-05/BlindAttempt.md)
+- [InverseNotes](research/blind-2026-09-05/InverseNotes.md)
+- [README](research/blind-2026-09-05/README.md)
+- [SymbolicNotes](research/blind-2026-09-05/SymbolicNotes.md)
+- [FINITE_PALETTE](research-review/consolidation-2026-09-05/FINITE_PALETTE.md)
+- [ISSUE7_PROVENANCE](research-review/consolidation-2026-09-05/ISSUE7_PROVENANCE.md)
+- [ISSUE_CONTRIBUTIONS](research-review/consolidation-2026-09-05/ISSUE_CONTRIBUTIONS.md)
+- [LEGACY_CONTRIBUTIONS](research-review/consolidation-2026-09-05/LEGACY_CONTRIBUTIONS.md)
+- [MODERN_CONTRIBUTIONS](research-review/consolidation-2026-09-05/MODERN_CONTRIBUTIONS.md)
+- [NEW_DISCOVERY_SCREEN](research-review/consolidation-2026-09-05/NEW_DISCOVERY_SCREEN.md)
+- [YAH_NOVELTY](research-review/consolidation-2026-09-05/YAH_NOVELTY.md)
+- [YAH_SEMANTICS](research-review/consolidation-2026-09-05/YAH_SEMANTICS.md)
+- [COMPARISONS](research-review/novelty-2026-09-05/COMPARISONS.md)
+- [REPORT](research-review/novelty-2026-09-05/REPORT.md)
+- [SEARCH_LOG](research-review/novelty-2026-09-05/SEARCH_LOG.md)
+- [YAH_REVIEW](research-review/novelty-2026-09-05/YAH_REVIEW.md)

@@ -1,0 +1,6 @@
+odd starts checked = 500000 (1 <= n <= 1000000)
+macro-edge counts = {'a>=2': 753030, 'c even >= 6': 31572, 'c odd': 266021}
+maximum normalizer edges = 19
+terminal counts = {'1': 5813, '27 mod 32': 96125, '7 mod 8': 398062}
+exhaustion counterfamily checked = 0 <= s <= 10000
+PASS

@@ -1,0 +1,1 @@
+{"crt_replays": 108, "example": {"H": 3, "J": 2, "e": 20, "root": 103791333467, "target": 951311}, "insufficient_halving_target": 10816031, "invalid_parameter_controls": 3, "max_independent_odd_run": 511, "max_spell_length": 127, "missing_exit_control_v2": 1, "scope": "regression checks; infinite statements use integer proofs"}

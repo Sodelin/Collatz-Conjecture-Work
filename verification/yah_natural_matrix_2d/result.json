@@ -1,0 +1,238 @@
+{
+  "source": "https://arxiv.org/abs/2105.14697v3",
+  "z3": "5.1.0",
+  "positive_control": [
+    {
+      "name": "D_f",
+      "lhs": "f$",
+      "rhs": "$",
+      "delta": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "D_t",
+      "lhs": "t$",
+      "rhs": "2$",
+      "delta": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_f0",
+      "lhs": "f0",
+      "rhs": "0f",
+      "delta": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_f2",
+      "lhs": "f2",
+      "rhs": "1f",
+      "delta": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_t0",
+      "lhs": "t0",
+      "rhs": "1t",
+      "delta": [
+        [
+          8,
+          7,
+          2
+        ],
+        [
+          25,
+          19,
+          9
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_t1",
+      "lhs": "t1",
+      "rhs": "2f",
+      "delta": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          4,
+          5,
+          2
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_t2",
+      "lhs": "t2",
+      "rhs": "2t",
+      "delta": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_^0",
+      "lhs": "^0",
+      "rhs": "^t",
+      "delta": [
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_^1",
+      "lhs": "^1",
+      "rhs": "^ff",
+      "delta": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    },
+    {
+      "name": "X_^2",
+      "lhs": "^2",
+      "rhs": "^ft",
+      "delta": [
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "weak": true,
+      "strict": true
+    }
+  ],
+  "missing_rule": {
+    "name": "X_f1",
+    "lhs": "f1",
+    "rhs": "0t",
+    "delta": [
+      [
+        -10,
+        -27,
+        -10
+      ],
+      [
+        -15,
+        -25,
+        -7
+      ]
+    ],
+    "weak": false,
+    "strict": false
+  },
+  "positive_control_solver_seconds": 0.002455384994391352,
+  "searches": [
+    {
+      "bound": 8,
+      "width": 12,
+      "largest_composition_entry_bound": 2184,
+      "variables": 42,
+      "rules": 11,
+      "outcome": "unknown",
+      "solver_seconds": 60.021462445001816,
+      "reason_unknown": "timeout"
+    },
+    {
+      "bound": 2,
+      "width": 6,
+      "largest_composition_entry_bound": 42,
+      "variables": 42,
+      "rules": 11,
+      "outcome": "unsat",
+      "solver_seconds": 0.48820412599889096
+    }
+  ],
+  "solver_wall_seconds_total": 60.5121219559951
+}

@@ -1,4 +1,4 @@
-import CollatzWork.InverseWordBoundaryStatement
+import CollatzWork.ConvergenceStatement
 import Std.Tactic
 
 namespace CollatzWork
@@ -10,12 +10,6 @@ This file formalizes one isolated arithmetic certificate for the one-division
 shortcut map `onceAccelerated`.  It does not assert termination or route
 closure.
 -/
-
-/-- Iteration of the one-division shortcut map, with the first step applied
-before the recursive tail. -/
-def shortcutIter : Nat → Nat → Nat
-  | 0, n => n
-  | k + 1, n => shortcutIter k (onceAccelerated n)
 
 @[simp] theorem shortcutIter_zero (n : Nat) : shortcutIter 0 n = n := rfl
 

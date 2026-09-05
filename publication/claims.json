@@ -5,8 +5,18 @@
     "status": "formal_auxiliary",
     "statement": "For n,k,d in Nat with n>0, FirstCoefficientContraction n k, and shortcutIter k n=n+d, put s=orbitOddCount n k. Then 4*d<s and d<=(s-1)/4 using natural-number division. FirstCoefficientContraction means k>0, 3^s<2^k, and 2^j<=3^(orbitOddCount n j) for every j<k. The map is T(n)=n/2 for even n and (3*n+1)/2 for odd n.",
     "limitations": "Auxiliary theorem conditional on an existing first contraction and a nonnegative defect. It proves neither universal first-contraction existence, universal descent, universal convergence, nor exclusion of the zero-defect case or other cycles. Novelty and external priority are uncertified.",
-    "source_paths": ["lean/CollatzWork/QuarterGapUniversalStatement.lean", "lean/CollatzWork/QuarterGapUniversal.lean", "lean/CollatzWork/QuarterGapStatement.lean", "lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/InverseWordBoundaryStatement.lean", "verification/Quarter_Gap_Formal_Scope_2026-09-05.md", "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md"],
-    "lean_declarations": ["CollatzWork.firstContractionQuarterGap"]
+    "source_paths": [
+      "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+      "lean/CollatzWork/QuarterGapUniversal.lean",
+      "lean/CollatzWork/QuarterGapStatement.lean",
+      "lean/CollatzWork/ConvergenceStatement.lean",
+      "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+      "verification/Quarter_Gap_Formal_Scope_2026-09-05.md",
+      "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.firstContractionQuarterGap"
+    ]
   },
   {
     "id": "mechanical-envelope-sharp-threshold",
@@ -14,8 +24,23 @@
     "status": "formal_auxiliary",
     "statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range.",
     "limitations": "The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
-    "source_paths": ["lean/CollatzWork/QuarterGapUniversalStatement.lean", "lean/CollatzWork/QuarterGapUniversal.lean", "lean/CollatzWork/FloorPower.lean", "lean/CollatzWork/BlockArithmetic.lean", "lean/CollatzWork/QuarterGapStatement.lean", "verification/block_arithmetic_certificate.py"],
-    "lean_declarations": ["CollatzWork.mechanical_large_bound", "CollatzWork.mechanical_fifteen_failure", "CollatzWork.universalMechanicalQuarterCertificate", "CollatzWork.mechanical_twelve_identity", "CollatzWork.mechanical_twelve_propagation", "CollatzWork.floorPower_mul", "CollatzWork.blockNumerator12_exact_bound"]
+    "source_paths": [
+      "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+      "lean/CollatzWork/QuarterGapUniversal.lean",
+      "lean/CollatzWork/FloorPower.lean",
+      "lean/CollatzWork/BlockArithmetic.lean",
+      "lean/CollatzWork/QuarterGapStatement.lean",
+      "verification/block_arithmetic_certificate.py"
+    ],
+    "lean_declarations": [
+      "CollatzWork.mechanical_large_bound",
+      "CollatzWork.mechanical_fifteen_failure",
+      "CollatzWork.universalMechanicalQuarterCertificate",
+      "CollatzWork.mechanical_twelve_identity",
+      "CollatzWork.mechanical_twelve_propagation",
+      "CollatzWork.floorPower_mul",
+      "CollatzWork.blockNumerator12_exact_bound"
+    ]
   },
   {
     "id": "actual-orbit-affine-and-crossing",
@@ -23,8 +48,20 @@
     "status": "formal_auxiliary",
     "statement": "For every finite actual shortcut prefix, 2^k*T^k(n)=3^(q_k)*n+C_k. Under every prior coefficient barrier 2^j<=3^(q_j) for j<k, C_k<=Cmax(q_k). At a first coefficient contraction, k=floor(log2(3^(q_k)))+1. For positive n and a nonnegative first-contraction defect d, the older inequality 3*d<q_k also follows.",
     "limitations": "First-contraction existence is assumed for the crossing and defect claims. Full extremizer uniqueness and displacement-penalty formulations in the prose L9 note are outside these formal statements.",
-    "source_paths": ["lean/CollatzWork/QuarterGapStatement.lean", "lean/CollatzWork/QuarterGap.lean", "lean/CollatzWork/FirstContractionStatement.lean", "lean/CollatzWork/FirstContraction.lean", "proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md"],
-    "lean_declarations": ["CollatzWork.orbitAffine", "CollatzWork.mechanicalEnvelope", "CollatzWork.affineQuarterCertificate", "CollatzWork.firstContractionTime", "CollatzWork.firstContractionThirdGap"]
+    "source_paths": [
+      "lean/CollatzWork/QuarterGapStatement.lean",
+      "lean/CollatzWork/QuarterGap.lean",
+      "lean/CollatzWork/FirstContractionStatement.lean",
+      "lean/CollatzWork/FirstContraction.lean",
+      "proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.orbitAffine",
+      "CollatzWork.mechanicalEnvelope",
+      "CollatzWork.affineQuarterCertificate",
+      "CollatzWork.firstContractionTime",
+      "CollatzWork.firstContractionThirdGap"
+    ]
   },
   {
     "id": "formal-convergence-criteria",
@@ -32,8 +69,18 @@
     "status": "formal_auxiliary",
     "statement": "AllPositiveConverge is equivalent both to UniversalDescent and to UniversalSmallerCoalescence. The latter requires, for every n>1, a positive m<n and r,s in Nat such that T^r(n)=T^s(m). Converges means an actual finite shortcut iterate reaches 1. Convergence is preserved by finite prefixes and by coalescence.",
     "limitations": "These are induction criteria and semantic equivalences. UniversalSmallerCoalescence and UniversalDescent are not proved; each is Collatz-equivalent. The map keeps the cycle 1->2->1 rather than making 1 absorbing. No novelty claim for the criteria.",
-    "source_paths": ["lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/Convergence.lean", "proof-search/lemmas/L0_Global_Descent_Equivalence.md"],
-    "lean_declarations": ["CollatzWork.smallerCoalescenceCriterion", "CollatzWork.descentCriterion", "CollatzWork.allPositiveConverge_of_smallerCoalescence", "CollatzWork.converges_shortcutIter_iff", "CollatzWork.converges_iff_of_coalesces"]
+    "source_paths": [
+      "lean/CollatzWork/ConvergenceStatement.lean",
+      "lean/CollatzWork/Convergence.lean",
+      "proof-search/lemmas/L0_Global_Descent_Equivalence.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.smallerCoalescenceCriterion",
+      "CollatzWork.descentCriterion",
+      "CollatzWork.allPositiveConverge_of_smallerCoalescence",
+      "CollatzWork.converges_shortcutIter_iff",
+      "CollatzWork.converges_iff_of_coalesces"
+    ]
   },
   {
     "id": "compatible-refined-mersenne-child",
@@ -41,8 +88,18 @@
     "status": "formal_auxiliary",
     "statement": "For natural L,epsilon,z with L>=2, epsilon<=1, and epsilon mod 2=L mod 2, put A=4*z+2*epsilon+1, parent=2^L*A-1, and child=3*2^(L-2)*A-1. The child is positive and strictly smaller, T^(L+2)(parent)=T^L(child), and the two starts converge equivalently. Parent convergence follows if all smaller positive starts converge.",
     "limitations": "The parity-compatibility guard is essential. This supplies one explicit family, not a universal smaller-target selector. The convergence application retains its strong-induction hypothesis.",
-    "source_paths": ["lean/CollatzWork/RefinedMersenneChild.lean", "lean/CollatzWork/Convergence.lean", "proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md"],
-    "lean_declarations": ["CollatzWork.refinedMersenneChild_coalesces", "CollatzWork.refinedChild_arithmetic", "CollatzWork.refinedParent_has_smaller_coalescence", "CollatzWork.refinedParent_converges_iff_child", "CollatzWork.refinedParent_converges_of_smaller"]
+    "source_paths": [
+      "lean/CollatzWork/RefinedMersenneChild.lean",
+      "lean/CollatzWork/Convergence.lean",
+      "proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.refinedMersenneChild_coalesces",
+      "CollatzWork.refinedChild_arithmetic",
+      "CollatzWork.refinedParent_has_smaller_coalescence",
+      "CollatzWork.refinedParent_converges_iff_child",
+      "CollatzWork.refinedParent_converges_of_smaller"
+    ]
   },
   {
     "id": "equal-slope-boundary",
@@ -50,8 +107,15 @@
     "status": "formal_auxiliary",
     "statement": "For natural A,B,R, the statement that A*x+B<A*x+R for every natural x is equivalent to B<R. For every natural x, the starts 8*x+5 and 8*x+4 reach 3*x+2 after three shortcut steps, with 0<8*x+4<8*x+5.",
     "limitations": "A correction to a local inverse-word classifier and one witnessed family. It is not a complete inverse-word search or universal convergence result.",
-    "source_paths": ["lean/CollatzWork/InverseWordBoundaryStatement.lean", "lean/CollatzWork/InverseWordBoundary.lean", "proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md"],
-    "lean_declarations": ["CollatzWork.equalSlopeSmaller", "CollatzWork.equalSlopeWitness"]
+    "source_paths": [
+      "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+      "lean/CollatzWork/InverseWordBoundary.lean",
+      "proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.equalSlopeSmaller",
+      "CollatzWork.equalSlopeWitness"
+    ]
   },
   {
     "id": "two-pump-dependency-obstruction",
@@ -59,8 +123,15 @@
     "status": "formal_auxiliary",
     "statement": "For the integer coefficient expressions A,B,C,E defined in TwoPumpDependency.lean, a*B=c*C and g*A=d*E; consequently c*g*A*C-a*d*B*E=0. The hoped-for constant resultant in this cyclic-elimination construction vanishes identically.",
     "limitations": "An algebraic obstruction for the specified route. It proves neither existence of a positive nontrivial cycle nor a disproof of Collatz. The module namespace Disproof describes the research route only.",
-    "source_paths": ["lean/CollatzWork/Disproof/TwoPumpDependency.lean", "proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md"],
-    "lean_declarations": ["CollatzWork.Disproof.twoPumpCoefficientDependencies", "CollatzWork.Disproof.twoPumpConstantObstructionVanishes", "CollatzWork.Disproof.twoPumpSyzygy"]
+    "source_paths": [
+      "lean/CollatzWork/Disproof/TwoPumpDependency.lean",
+      "proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.Disproof.twoPumpCoefficientDependencies",
+      "CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
+      "CollatzWork.Disproof.twoPumpSyzygy"
+    ]
   },
   {
     "id": "general-rotation-block-bound",
@@ -68,7 +139,11 @@
     "status": "exact_checked_prose",
     "statement": "With L=log2(3), w(k)=2^(-fractional_part(k*L)), and M_b=max over 0<=i<b of sum over 0<=k<b of w(k-i), every real phase theta satisfies sum over 0<=k<b of 2^(-fractional_part(theta+k*L))<=M_b. The finite maxima use exact rational values; the note also gives a 1024-block refinement at its explicitly conditional L8 frontier.",
     "limitations": "The arbitrary-block real-phase theorem and 1024-block refinement have prose and exact-Python status. The headline Lean development formalizes the required twelve-term integer specialization, not these entire general statements. The larger-block application retains the frontier assumptions stated in L15.",
-    "source_paths": ["proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md", "verification/near_return_quarter_bound.py", "verification/Quarter_Gap_Formal_Scope_2026-09-05.md"],
+    "source_paths": [
+      "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md",
+      "verification/near_return_quarter_bound.py",
+      "verification/Quarter_Gap_Formal_Scope_2026-09-05.md"
+    ],
     "lean_declarations": []
   },
   {
@@ -77,7 +152,12 @@
     "status": "exact_checked_prose",
     "statement": "For every fixed modulus M>=1, explicit positive arithmetic progressions follow finite paths of the original hard-return relation F whose endpoints have identical (L,e,b,D,R,n mod M)=(2,1,1,2,0,n mod M) and expand by more than 4^j over 2*j edges. This obstructs ranks polynomial in size and bitlength with arbitrary dependence on those states, bounded below on hard states, and finite lexicographic tuples whose coordinates individually satisfy that lower-bound requirement.",
     "limitations": "The original F and all state definitions are those in the cited route note. Unbounded valuations, history-dependent state, nonpolynomial ranks, and different transition or coalescence relations are outside the claim. The universal argument is in prose; exact replay of examples alone is not its proof. Novelty unassessed.",
-    "source_paths": ["proof-search/routes/AB_finite_residue_original_return_no_go.md", "proof-search/routes/AB_frozen_debt_size_rank_no_go.md", "proof-search/routes/AB_three_adic_rank_no_go.md", "verification/finite_residue_hard_return_check.py"],
+    "source_paths": [
+      "proof-search/routes/AB_finite_residue_original_return_no_go.md",
+      "proof-search/routes/AB_frozen_debt_size_rank_no_go.md",
+      "proof-search/routes/AB_three_adic_rank_no_go.md",
+      "verification/finite_residue_hard_return_check.py"
+    ],
     "lean_declarations": []
   },
   {
@@ -86,7 +166,10 @@
     "status": "exact_checked_prose",
     "statement": "For positive n congruent to 2 mod 3, gamma(n)=(2*n-1)/3 is positive, smaller, and T(gamma(n))=n. On the separately normalized core relation S defined in the route note, n=1536*M*v-5 maps to m=1728*M*v-5 for M,v>=1. The exact auxiliary composition 425->638->319->479 followed by the coalescing predecessor c(479)=(8*479-7)/9=425 returns to its input.",
     "limitations": "S is not the original hard-return relation F. Frozen labels and allowed rank classes must be read for each relation separately. The 425 loop contains a backward coalescing-target selection and is not a Collatz cycle. These identities and scoped obstructions do not rule out all target selectors or establish global termination.",
-    "source_paths": ["proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md", "verification/core_residue_obstruction_check.py"],
+    "source_paths": [
+      "proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md",
+      "verification/core_residue_obstruction_check.py"
+    ],
     "lean_declarations": []
   },
   {
@@ -95,7 +178,11 @@
     "status": "known_reconstruction",
     "statement": "Every positive shortcut orbit reaches 1, 2, or an integer congruent to 20 mod 27. The source audit attributes the relevant known theorem to Monks, Monks, Monks and Monks and reconstructs the stopping consequence using a finite lexicographic rank, core weights (16,28,49), and a v2(n+1) argument for the residue-26 loop.",
     "limitations": "Prose proof and exact finite certificate, not a Lean formalization in this snapshot. This is known mathematics with no novelty claim. The stopping rank is zero on the target and supplies no decrease on subsequent target-to-target returns; it does not prove Collatz convergence.",
-    "source_paths": ["proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md", "verification/mod27_rank_check.py", "ASTRA_REFERENCES_2026-09-05.bib"],
+    "source_paths": [
+      "proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md",
+      "verification/mod27_rank_check.py",
+      "ASTRA_REFERENCES_2026-09-05.bib"
+    ],
     "lean_declarations": []
   },
   {
@@ -104,7 +191,11 @@
     "status": "bounded_solver_result",
     "statement": "For the documented dimension-two natural affine interpretation template on all eleven YAH rewrite rules, Z3 reports UNSAT with coefficients in 0..2 and timeout/UNKNOWN with coefficients in 0..8. The source's Example 4.3 serves as a positive control for the encoding and independent integer checker.",
     "limitations": "The UNSAT report has no independently checked UNSAT proof certificate. Timeout establishes no exclusion at its bound. Neither outcome rules out arbitrary coefficients, other dimensions, carriers, orders, or termination methods, and no Collatz closure was obtained.",
-    "source_paths": ["verification/yah_natural_matrix_2d/README.md", "verification/yah_natural_matrix_2d/result.json", "verification/yah_natural_matrix_2d/search_natural_matrices.py"],
+    "source_paths": [
+      "verification/yah_natural_matrix_2d/README.md",
+      "verification/yah_natural_matrix_2d/result.json",
+      "verification/yah_natural_matrix_2d/search_natural_matrices.py"
+    ],
     "lean_declarations": []
   },
   {
@@ -113,7 +204,358 @@
     "status": "unproved",
     "statement": "The project has not proved AllPositiveConverge, UniversalDescent, or UniversalSmallerCoalescence. The quarter-gap route still requires universal first-contraction existence and a valid global descent or renewal mechanism that handles the zero-gap case. The residue-20 route requires progress across target returns or another complete smaller-target selection mechanism.",
     "limitations": "An explicit statement of missing obligations. Definitions and proved implication/equivalence wrappers are not proofs of their universal premises. This snapshot contains no claimed proof or disproof of the positive-integer Collatz conjecture.",
-    "source_paths": ["lean/CollatzWork/ConvergenceStatement.lean", "lean/CollatzWork/Convergence.lean", "ASTRA_CONTINUATION_2026-09-05.md", "proof-search/MISSING_LEMMA_LADDER.md"],
+    "source_paths": [
+      "lean/CollatzWork/ConvergenceStatement.lean",
+      "lean/CollatzWork/Convergence.lean",
+      "ASTRA_CONTINUATION_2026-09-05.md",
+      "proof-search/MISSING_LEMMA_LADDER.md"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "guarded-root-burst-descent",
+    "title": "Guarded unbounded OOE burst descent",
+    "status": "formal_auxiliary",
+    "statement": "For positive naturals k,u,m with 2^k*m+5=9^k*u, shortcutIter (4*k) (8^k*u-5)=m and m<8^k*u-5. The general burst identity shortcutIter (3*k) (8^k*u-5)=9^k*u-5 holds for k>=0,u>0.",
+    "limitations": "The final-halving equation is a substantive guard. The separate residue20 CRT specialization is prose; convergence transfer assumes convergence of all smaller positive starts. No external priority claim.",
+    "source_paths": [
+      "lean/CollatzWork/RootDescentStatement.lean",
+      "lean/CollatzWork/RootDescent.lean",
+      "proof-search/lemmas/Root_Relative_Burst_Descent.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.rootDescentBurst",
+      "CollatzWork.rootDescent",
+      "CollatzWork.rootDescent_converges_of_smaller"
+    ]
+  },
+  {
+    "id": "guarded-root-ancestor-identity",
+    "title": "Guarded actual-orbit ancestor identity",
+    "status": "formal_auxiliary",
+    "statement": "For e,L,q,r in Nat with q>0 and 3^(L+1)*q=4*r+1, shortcutIter (e+L+2) (2^e*(2^L*q-1))=r.",
+    "limitations": "This declaration alone makes no smaller-target, residue, or all-root coverage assertion. Classical inverse-word arithmetic.",
+    "source_paths": [
+      "lean/CollatzWork/RootDescentStatement.lean",
+      "lean/CollatzWork/RootDescent.lean"
+    ],
+    "lean_declarations": [
+      "CollatzWork.rootDescentAncestor"
+    ]
+  },
+  {
+    "id": "uniform-residue20-ancestor-thirteen",
+    "title": "Complete uniform divisibility ancestor theorem at threshold13",
+    "status": "formal_auxiliary",
+    "statement": "For every r in Nat with 3^13 dividing 4*r+1, there exist naturals m,b such that 0<m<r, m mod27=20, and shortcutIter b m=r. The factorization, selector, strict comparison, and actual parity semantics are included.",
+    "limitations": "Supersedes the older uniform threshold21 selector. Individually lower guarded rows and selected-table sharpness retain prose/Python scope. The divisor guard is not known for arbitrary residual roots. Novelty unconfirmed.",
+    "source_paths": [
+      "lean/CollatzWork/ResidueAncestorStatement.lean",
+      "lean/CollatzWork/ResidueAncestor.lean",
+      "lean/CollatzWork/ResidueAncestorTails.lean",
+      "proof-search/lemmas/Residue20_Refined_Ancestor.md",
+      "proof-search/lemmas/Residue20_Valuation_Ancestor.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.residueAncestor",
+      "CollatzWork.residueAncestor_of_divisibility",
+      "CollatzWork.residueAncestor_refinedTail"
+    ]
+  },
+  {
+    "id": "shadow-debt-recharge-obstruction",
+    "title": "Growing recharge invalidates the stated q-based ranks",
+    "status": "exact_checked_prose",
+    "statement": "An explicit family follows three edges of the separately defined stronger-core relation with q=v2(n+5) changing10,7,4,10, ending above the original root while the stated endpoint labels freeze. The specified lower-bounded polynomial and finite lexicographic ranks cannot decrease on every such edge.",
+    "limitations": "This is a restricted rank-class obstruction on the stronger-core relation, not a prohibition of arbitrary moduli, other state, all ranks, or all coalescence certificates.",
+    "source_paths": [
+      "proof-search/routes/AC_shadow_debt_recharge.md",
+      "verification/check_shadow_debt_recharge.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "two-burst-guarded-descent",
+    "title": "Two guarded growing bursts descend below the original root",
+    "status": "formal_auxiliary",
+    "statement": "For positive k,l,u,v,m satisfying 9^k*u+1=2^(3*l+1)*v and 2^(k+l)*m+5=3*9^l*v, shortcutIter (4*(k+l)+2) (2*8^k*u-5)=m and m<2*8^k*u-5.",
+    "limitations": "Both arithmetic guards remain assumptions. The CRT source families, exact valuation descriptions, and extra even padding are separate prose results. Convergence transfer assumes all smaller positive starts converge.",
+    "source_paths": [
+      "lean/CollatzWork/TwoBurstStatement.lean",
+      "lean/CollatzWork/TwoBurst.lean",
+      "proof-search/lemmas/Two_Burst_Recharge_Escape.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.twoBurstDescent",
+      "CollatzWork.twoBurst_converges_of_smaller"
+    ]
+  },
+  {
+    "id": "two-burst-crt-specializations",
+    "title": "Infinite two-burst residue20 families with unbounded larger recharge",
+    "status": "exact_checked_prose",
+    "statement": "An explicit CRT slice k=3+j,l=4+17*j gives two growing bursts and unbounded larger recharge before guarded descent below the unchanged original root, with source and target in residue20 mod27. Bounded even padding supplies guarded families at every depth q=3*k+1,k>=1.",
+    "limitations": "These source-existence, residue, valuation and padding claims are not included in the Lean TwoBurst statement. No all-unit or universal escape assertion.",
+    "source_paths": [
+      "proof-search/lemmas/Two_Burst_Recharge_Escape.md",
+      "verification/two_burst_recharge_escape_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "guarded-q2-exit-descent",
+    "title": "Guarded descent at every q2 depth",
+    "status": "exact_checked_prose",
+    "statement": "For k>=0,u>=1,e>=max(2,k+1) and 2^(e+1) dividing 27*9^k*u-29, the actual word (OOE)^k OOO E^e sends r=4*8^k*u-5 to (27*9^k*u-29)/2^(e+1)<r. CRT gives infinite residue20 families at each q=3*k+2 outside the specified earlier ancestor guards.",
+    "limitations": "First-return growth requires k>=1; k=0 has a separate positive descent argument. The exit guard is not universal. Full Lean formalization is pending.",
+    "source_paths": [
+      "proof-search/lemmas/Q2_Exit_Descent.md",
+      "verification/q2_exit_descent_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "complementary-ternary-ancestors",
+    "title": "Smaller ancestors from a second ternary coordinate",
+    "status": "exact_checked_prose",
+    "statement": "Every positive residue20 root with v3(128*r-157)>=17 has an explicit smaller residue20 ancestor using the OEOOEOE inverse prefix and prescribed tails. Separate fixed inverse cylinders r=4529 mod19683 and r=17813 mod59049 supply additional guarded families.",
+    "limitations": "The new prefix is not Lean-formalized, even though previously verified tails are reused. Uniform family lies in v3(r+7)=4,v3(4*r+1)=3; no exhaustive selector is provided.",
+    "source_paths": [
+      "proof-search/lemmas/Complementary_Ancestor_Cylinders.md",
+      "verification/complementary_ancestor_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "finite-growing-first-return-spell",
+    "title": "Exact finite clock for growing OOEO first returns",
+    "status": "exact_checked_prose",
+    "statement": "For positive r=20 mod27 with v2(r+5)>=4, exactly floor(v2(11*r+23)/4) consecutive OOEO first returns occur. Every positive-time state in the spell exceeds the original r; the final v2(state+5) equals v2(11*r+23) mod4. The cylinder22619+186624*s realizes every exit class and arbitrarily long spells.",
+    "limitations": "This is itinerary termination, not descent or a rank across later re-entry. Full Lean formalization is pending.",
+    "source_paths": [
+      "proof-search/lemmas/Finite_Growing_First_Return_Spells.md",
+      "verification/finite_first_return_spell_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "bounded-forward-ancestor-cover-obstruction",
+    "title": "Simultaneous obstruction to bounded forward and ancestor covers",
+    "status": "exact_checked_prose",
+    "statement": "For every independent pair of finite bounds on direct forward descent time and smaller positive residue20 ancestor time, infinitely many roots in22619+186624*s fail both certificates. The proof combines affine inverse-word anchor transfer with exact CRT growing spells.",
+    "limitations": "The claim covers those two exact relations. General mixed coalescence, variable-depth macros and unbounded certificate time remain possible. It proves neither an infinite orbit nor failure of every all-root mechanism.",
+    "source_paths": [
+      "proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md",
+      "verification/bounded_ancestor_depth_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "postspell-independent-odd-growth",
+    "title": "Independently unbounded growth after a fixed return spell",
+    "status": "exact_checked_prose",
+    "statement": "For every fixed OOEO spell length J>=2 and q2 exit, explicit infinite subfamilies in22619+186624*s realize any subsequent exact odd-run length H>=3, independently unbounded. All4*J+H states exceed the initial root; a bounded smaller-ancestor exclusion may be imposed simultaneously.",
+    "limitations": "This excludes recovery bounds depending only on J and the exit label. It does not exclude bounds tracking H, the full root, or a guarded compensating excursion. Not Lean-formalized.",
+    "source_paths": [
+      "proof-search/lemmas/Postspell_Odd_Run_Obstruction.md",
+      "verification/postspell_odd_run_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "guarded-postspell-root-descent",
+    "title": "Guarded compensation after two independently unbounded growth stages",
+    "status": "exact_checked_prose",
+    "statement": "For r>3,J>=2,H>=3,e>=J+H, every actual shortcut word (OOEO)^J O^H E^e ends at positive m<r. For every independent J,H, CRT gives infinite roots in22619+186624*s with e=2 mod18 and J+H<=e<J+H+18, whose targets are20 mod27.",
+    "limitations": "The actual parity word and final halving guard are essential. Infinite families fail sufficient final halving, and arbitrary-source coverage remains open. Complete Lean formalization is pending.",
+    "source_paths": [
+      "proof-search/lemmas/Postspell_Guarded_Root_Descent.md",
+      "verification/postspell_guarded_descent_check.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "finite-shortcut-parity-collision",
+    "title": "Actual shortcut parity prefixes determine residue classes",
+    "status": "formal_auxiliary",
+    "statement": "Two naturals whose first k actual shortcut parity bits agree are congruent modulo2^k. If they are distinct, their natural absolute difference is at least2^k.",
+    "limitations": "Finite actual-map statement, not a universal recurrence claim. Elementary classical parity arithmetic; no external priority claim.",
+    "source_paths": [
+      "lean/CollatzWork/PrefixCollisionStatement.lean",
+      "lean/CollatzWork/PrefixCollision.lean"
+    ],
+    "lean_declarations": [
+      "CollatzWork.prefixCollision",
+      "CollatzWork.prefixSeparation"
+    ]
+  },
+  {
+    "id": "fixed-affine-repetition-budget",
+    "title": "Fixed affine repetition and conditional prefix-return budget",
+    "status": "formal_auxiliary",
+    "statement": "For coprime a,b and a natural-valued sequence with b*y(i+1)=a*y(i) for i<k, b^k divides y(0); if y(0)>0 then b^k<=y(0). For coprime b,b+d and b*x(i+1)=(b+d)*x(i)+c, positive d*x(0)+c bounds b^k. Also2*32^d<27^d*(n+1) implies10*d+27<27*n and d<=(27*n-28)/10.",
+    "limitations": "The recurrence multiplier is fixed. Changing blocks do not inherit the same budget. The numerical return theorem requires its exponential premise; it does not formalize the complete Thue-Morse application.",
+    "source_paths": [
+      "lean/CollatzWork/AffineRepetitionStatement.lean",
+      "lean/CollatzWork/AffineRepetition.lean"
+    ],
+    "lean_declarations": [
+      "CollatzWork.fixedRatioDivisibility",
+      "CollatzWork.finiteRepetitionBound",
+      "CollatzWork.noInfinitePositiveRecurrence",
+      "CollatzWork.affineRepetitionBound",
+      "CollatzWork.noInfiniteExpandingAffineBlocks",
+      "CollatzWork.prefixReturnNumericalBound"
+    ]
+  },
+  {
+    "id": "thue-morse-positive-realization-exclusion",
+    "title": "Fixed Thue-Morse valuation codes require a positive cycle",
+    "status": "exact_checked_prose",
+    "statement": "Any positive odd integer realizing a nonerasing fixed binary Thue-Morse encoding by finite positive valuation words lies on a cycle of the fully accelerated odd Collatz map. The specific(1),(2) encoding and fixed(1^p,3)/(1^q,3) encodings with p,q>=3 admit no positive realization.",
+    "limitations": "Full odd-word coding, height estimate and substitution argument are analytic, not an end-to-end Lean theorem. Finite checks validate only examples/indexing. The general theorem retains a necessary cycle exception. Does not exclude arbitrary nonperiodic valuation words or unknown positive cycles. External novelty has not been established.",
+    "source_paths": [
+      "proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md",
+      "BLIND_RECONCILIATION_2026-09-05.md",
+      "verification/blind_word_recurrence_check.py",
+      "verification/Blind_Recurrence_Verification_2026-09-05.md"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "yah-scalar-arctic-full-top",
+    "title": "Dimension-one arctic full/top first-step obstruction",
+    "status": "exact_checked_prose",
+    "statement": "For the original eleven-rule Yolcu\u2013Aaronson\u2013Heule system and the specified fixed22-rule labeling, no standard first dimension-one arctic-natural rule-removal step exists in the full mode, the original boundary-top mode, or the reversed dynamic-top mode. Finite coefficients are nonnegative and unbounded; top maps are affine max-plus, use coefficientwise weak/strict tests including bottom/bottom, and have at least one finite component per token.",
+    "limitations": "The full and affine-top certificates are Python-checked with a prose interpretation-to-formula argument; they are not the additive YAH Lean theorem. No conclusion about higher dimensions, other carriers or labelings, transformed systems, non-coefficientwise orders, or Collatz termination. Full scalar cancellation uses standard machinery; exact priority of the combined top obstruction is unconfirmed.",
+    "source_paths": [
+      "verification/yah_two_state_scalar_arctic_full_no_start.py",
+      "verification/yah_scalar_arctic_top/verify_top_certificates.py",
+      "verification/yah_scalar_arctic_top/top_cert_common.py",
+      "research-review/consolidation-2026-09-05/YAH_SEMANTICS.md",
+      "research-review/consolidation-2026-09-05/YAH_NOVELTY.md"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "yah-finite-additive-certificates",
+    "title": "Fixed-algebra YAH additive cancellation cores",
+    "status": "formal_auxiliary",
+    "statement": "Lean verifies fixed two-state rule equations, an unlabelled13-row adjacent-edge cancellation with a cofinal pumping/lower-bound contradiction, an8-row labeled-symbol cancellation, and a50-row labeled-edge cancellation. Generic symbol/edge ordered-additive-group wrappers exclude orientations that make every dynamic rule strict and every auxiliary rule weak in that fixed algebra.",
+    "limitations": "The unlabelled lower-bound conclusion has a genuine cofinality hypothesis. This does not formalize scalar-arctic full/top certificates, all70algebras, arbitrary labelings or general termination. The broader first-rule-removal support statement retains Python/prose status; it is not the generic Lean wrapper.",
+    "source_paths": [
+      "lean/CollatzWork/YAHFiniteObstructionStatement.lean",
+      "lean/CollatzWork/YAHFiniteObstruction.lean",
+      "proof-search/routes/A_yah_finite_obstruction_formal_audit.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.YAH.twoState_rule_equations",
+      "CollatzWork.YAH.unlabelledCertificate_cancellation",
+      "CollatzWork.YAH.symbolCertificate_cancellation",
+      "CollatzWork.YAH.edgeCertificate_cancellation",
+      "CollatzWork.YAH.noTwoStateSymbolAdditiveOrder",
+      "CollatzWork.YAH.noTwoStateEdgeAdditiveOrder"
+    ]
+  },
+  {
+    "id": "finite-palette-bounded-progress",
+    "title": "Finite-palette bounded-progress obstruction",
+    "status": "formal_auxiliary",
+    "statement": "For any finite nonempty palette of Nat-valued functions each eventually nondecreasing, any selector assigning a palette member to each start, any positive uniform shortcut-time horizon H, and any start threshold, some positive start beyond that threshold has no strict selected-potential decrease within H actual shortcut steps. The selector is unrestricted.",
+    "limitations": "Complete Nat-valued statement is Lean-checked. Ordered-codomain and eventually nondecreasing polynomial consequences are prose. Does not exclude unbounded return times, infinitely many potentials, state-dependent proof methods outside the class, or YAH matrix interpretations. External novelty unconfirmed.",
+    "source_paths": [
+      "lean/CollatzWork/FinitePaletteObstruction.lean",
+      "lean/CollatzWork/FinitePaletteObstructionStatement.lean",
+      "verification/finite_palette_obstruction.py",
+      "research-review/consolidation-2026-09-05/FINITE_PALETTE.md"
+    ],
+    "lean_declarations": [
+      "CollatzWork.finitePaletteObstruction"
+    ]
+  },
+  {
+    "id": "expanded-inverse-word-arithmetic",
+    "title": "Expanded decreasing inverse rewrites and mixed-word fibers",
+    "status": "exact_checked_prose",
+    "statement": "Explicit decreasing predecessor rewrites, irreducible classes, mixed inverse-word congruences and a fixed pure-exponent-two depth obstruction are derived by exact affine and CRT arithmetic.",
+    "limitations": "Finite regression checks arithmetic examples. Universal coverage is still Collatz-equivalent; this is elementary classical machinery with project-specific packaging, without a priority claim.",
+    "source_paths": [
+      "proof-search/lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md",
+      "verification/expanded_rewrite_inverse_word_regression.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "partial-hard-return-renewal",
+    "title": "Partial hard-return and common-divisor renewal filters",
+    "status": "exact_checked_prose",
+    "statement": "Four guarded actual hard-state returns and exact completed-switch identities support two common-divisor renewal criteria conditional on persistent-divisor hypotheses.",
+    "limitations": "The relation is partial, its local map is fully accelerated, and persistent-divisor hypotheses remain unproved. No total return mechanism or universal descent follows.",
+    "source_paths": [
+      "proof-search/routes/AB_direct_H_return_and_renewal_filters.md",
+      "verification/direct_H_return_renewal_regression.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "finite-prime-script-obstruction",
+    "title": "Finite prime scripts do not determine an infinite positive orbit",
+    "status": "exact_checked_prose",
+    "statement": "Every finite admissible prime script has a positive realization. Arbitrarily large finite roughness and return windows therefore cannot alone establish the proposed persistent-renewal property.",
+    "limitations": "The seed may depend on the finite script. The theorem does not supply a single positive seed realizing one infinite script or a divergent orbit.",
+    "source_paths": [
+      "proof-search/routes/AB_prime_renewal_finite_window_no_go.md",
+      "verification/prime_renewal_regression.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "bounded-alphabet-endpoint-characterization",
+    "title": "Endpoint-carry characterization for bounded valuation codes",
+    "status": "exact_checked_prose",
+    "statement": "For bounded positive valuation codes, positive odd realization is characterized by eventual zero carry, vanishing normalized endpoint residues and strict subcubic root growth; failure has full cubic root limsup, with the definitions and equivalences in the source note.",
+    "limitations": "Infinite theorem is a prose derivation with finite arithmetic regressions, not Lean. Source presents an elementary strengthening/package relative to existing literature; priority uncertified. It does not prove the required property for all proposed codes.",
+    "source_paths": [
+      "proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md",
+      "verification/bounded_alphabet_endpoint_residue_gate.py"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "stopped-disproof-algebraic-cores",
+    "title": "Narrow branching, invariant and polynomial-ratchet cores",
+    "status": "formal_auxiliary",
+    "statement": "Lean checks center-consistency natural-number rigidity, abstract invariant/transitive-commutator constancy, and normalized arithmetic/degree cores for a restricted polynomial-ratchet obstruction.",
+    "limitations": "Applications deriving these equations from full rational-center, finite-residue Collatz or polynomial semantics remain prose. The nonresonant ratchet contradiction excludes base3. These are stopped proof-method routes, not Collatz disproofs.",
+    "source_paths": [
+      "lean/CollatzWork/Disproof/BranchingCenter.lean",
+      "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean",
+      "lean/CollatzWork/Disproof/PolynomialRatchet.lean",
+      "verification/RELEASE_AUDIT_2026-08-24.md"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "ratio-convergent-generator-obstruction",
+    "title": "Finite successive-ratio limit excludes a positive divergent generator",
+    "status": "exact_checked_prose",
+    "statement": "A positive fully accelerated Collatz orbit whose successive-state ratio has a finite limit eventually reaches1, under the exact hypotheses in the source note.",
+    "limitations": "Prose proof without a corresponding complete Lean theorem. It covers this convergence-of-ratios hypothesis only, not arbitrary divergent orbit behavior.",
+    "source_paths": [
+      "proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md"
+    ],
+    "lean_declarations": []
+  },
+  {
+    "id": "effective-flash-provenance-gates",
+    "title": "Attributed reciprocal-summability corollary and scoped issue contributions",
+    "status": "known_reconstruction",
+    "statement": "The checked Garcia\u2013Tal interval estimate implies reciprocal-power summability on infinite Collatz orbit sets. The explicit acceleration time change supports the recorded product/correction/discrepancy escape dichotomy. Remaining issue contributions and corrections are preserved with their separate hypotheses.",
+    "limitations": "The same core is publicly stated on MathOverflow513539; no independent novelty claim. This is an attributed prose corollary, not Lean, universal convergence, or a divergent witness. Abstract codes and finite phase freedom still do not establish one positive infinite orbit. Other source cards retain their own provisional status.",
+    "source_paths": [
+      "research-review/consolidation-2026-09-05/ISSUE_CONTRIBUTIONS.md",
+      "research-review/consolidation-2026-09-05/ISSUE7_PROVENANCE.md"
+    ],
     "lean_declarations": []
   }
 ]

@@ -1,15 +1,18 @@
 # Route A no-go — one exact two-state semantic labeling
 
 **Status:** exact finite obstruction for two named additive interpretation
-classes
+classes; Lean certificate replay available
 **Scope:** not a termination theorem and not a Collatz result
+
+Formal audit and reproducibility boundary:
+[`A_yah_finite_obstruction_formal_audit.md`](A_yah_finite_obstruction_formal_audit.md).
 
 Use the eleven-rule mixed binary/ternary string-rewriting system of Yolcu,
 Aaronson, and Heule (YAH), on canonical strings
 
-\[
+$$
 {}^\wedge w\$,\qquad w\in\{f,t,0,1,2\}^*.
-\]
+$$
 
 Its dynamic rules are
 
@@ -47,8 +50,9 @@ context; there are 441 fixed-terminal labeled rewrite instances and 66 legal
 adjacent labeled edges, 50 of them interior.  It also constructs an explicit
 canonical extension of every checked local row: a left marker can be added
 immediately, while a suffix of value `0` ends in `$_0` and a suffix of value
-`1` ends in `t_0 $_0`.  Thus the cancellation does not use unreachable local
-contexts.
+`1` ends in `t_0 $_0`.  Thus every selected row is syntactically embeddable
+in a fixed-terminal canonical labeled word.  This is not a claim that the row
+is reached by a positive-length derivation from a narrower input encoding.
 
 ## Symbol-additive cancellation
 
@@ -132,7 +136,8 @@ See
 From the repository root:
 
 ```powershell
-python verification/yah_two_state_semantic_label_no_go.py
+python -B verification/yah_two_state_semantic_label_no_go.py
+C:\Users\Owner\.elan\bin\lake.exe env lean lean/CollatzWork/YAHFiniteObstruction.lean
 ```
 
 Expected output ends with:
@@ -146,6 +151,15 @@ edge weighted delta = {}
 PASS
 ```
 
+The Lean module independently fixes the rule table and algebra, verifies all
+22 algebra equations, checks legality and canonical embeddability of every
+selected row, and checks both integer cancellations.  It then derives the
+generic no-orientation theorems in a compatible ordered additive group.  Its
+public axiom report contains only Lean's standard `propext` and `Quot.sound`,
+and no `sorryAx`.  The explicit instantiation to every finite lexicographic
+tuple is currently a paper corollary of the generic theorem rather than a
+separately named Lean construction.
+
 ## Strict scope guard
 
 This is a no-go theorem for this **specific two-state algebra and suffix
@@ -156,6 +170,7 @@ all 441 contextual deltas vanish.  It does not exclude:
 
 - a different finite algebra or label set;
 - labels carrying more boundary, phase, or history information;
+- an order restricted to a smaller derivation-reachable state language;
 - windows of length three or greater;
 - matrix, polynomial, automata-composed, or other nonadditive orders;
 - a different strategy or relative-termination argument;
@@ -166,8 +181,11 @@ The YAH system and its Collatz simulation theorem are from Yolcu, Aaronson,
 and Heule, *An Automated Approach to the Collatz Conjecture*, Journal of
 Automated Reasoning 67 (2023), Theorem 3.17:
 <https://doi.org/10.1007/s10817-022-09658-8>.  The exact rules are in the
-authors' source repository:
-<https://github.com/emreyolcu/rewriting-collatz/blob/main/rules/collatz-T.srs>.
+authors' source repository, pinned here at upstream commit
+`8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340`:
+<https://github.com/emreyolcu/rewriting-collatz/blob/8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340/rules/collatz-T.srs>.
+That file has SHA-256
+`e4777832e5cf8148a54299dffa48cf10254629680961006f2c15bcb6c55aa9d2`.
 
 The two cancellation certificates are project-specific finite artifacts.  No
 claim of literature novelty is made.

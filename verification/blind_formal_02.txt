@@ -1,0 +1,6 @@
+'CollatzWork.fixedRatioDivisibility' depends on axioms: [propext, Quot.sound]
+'CollatzWork.finiteRepetitionBound' depends on axioms: [propext, Quot.sound]
+'CollatzWork.noInfinitePositiveRecurrence' depends on axioms: [propext, Quot.sound]
+'CollatzWork.affineRepetitionBound' depends on axioms: [propext, Quot.sound]
+'CollatzWork.noInfiniteExpandingAffineBlocks' depends on axioms: [propext, Quot.sound]
+'CollatzWork.prefixReturnNumericalBound' depends on axioms: [propext, Classical.choice, Quot.sound]

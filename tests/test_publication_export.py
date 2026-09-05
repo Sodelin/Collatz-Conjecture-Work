@@ -46,7 +46,7 @@ class PublicationExportTests(unittest.TestCase):
         metadata["vibemathed"]["shortName"] = "  " + "e\u0301" * 60 + "  "
         draft, _ = EXPORT.make_draft(metadata, self.schema, "a" * 40, False)
         self.assertEqual(draft["shortName"], "é" * 60)
-        metadata["vibemathed"]["sourceUrl"] = "{source_url}/blob/{publisher_commit}/publication/announcement.md"
+        metadata["vibemathed"]["sourceUrl"] = "{source_url}/blob/{publisher_commit}/publication/template-fixture.md"
         draft, _ = EXPORT.make_draft(metadata, self.schema, "a" * 40, False)
         self.assertIn("/blob/" + "a" * 40 + "/", draft["sourceUrl"])
 
@@ -69,7 +69,7 @@ class PublicationExportTests(unittest.TestCase):
             # The observed upstream checks component ranges only.
             EXPORT.validate_draft(dict(self.draft, solveDate=date), self.schema)
         with self.assertRaises(ValueError):
-            EXPORT.validate_draft(dict(self.draft, verificationNote="", links="[]"), self.schema)
+            EXPORT.validate_draft(dict(self.draft, verification="lean-checked", verificationNote="", links="[]"), self.schema)
 
     def test_missing_and_unrecognized_fields_fail(self):
         for key in ("sourceUrl", "unrecognized"):
@@ -92,6 +92,26 @@ class PublicationExportTests(unittest.TestCase):
                 self.assertEqual(set(archive.namelist()), set(files))
             with self.assertRaises(ValueError):
                 EXPORT.zip_bytes({"../escape": b"x"}, second)
+
+    def test_lean_bundle_retains_archived_programs_and_lake_config(self):
+        files = {
+            "lean/A.lean": b"theorem ok : True := True.intro\n",
+            "lean/README.md": b"Library scope\n",
+            "research/blind-2026-09-05/Descent.lean": b"import Std\n",
+            "lakefile.lean": b"import Lake\n",
+            "lakefile.toml": b'name = "fixture"\n',
+            "lean-toolchain": b"leanprover/lean4:v4.33.1\n",
+            "lake-manifest.json": b'{}\n',
+            "README.md": b"General note\n",
+        }
+        bundle = EXPORT.lean_bundle_files(files)
+        self.assertEqual(set(bundle), set(files) - {"README.md"})
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "lean-source.zip"
+            EXPORT.zip_bytes(bundle, path)
+            with zipfile.ZipFile(path) as archive:
+                for name, contents in bundle.items():
+                    self.assertEqual(archive.read(name), contents)
 
     def test_source_must_match_commit_and_tracked_files(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -134,6 +154,20 @@ class PublicationExportTests(unittest.TestCase):
             with zipfile.ZipFile(target) as archive:
                 self.assertEqual(set(archive.namelist()), {log, audit})
                 self.assertEqual(archive.read(audit), (root / audit).read_bytes())
+
+    def test_standalone_audit_programs_are_required_evidence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            main = "verification-logs/PublicationAxiomAudit.lean"
+            standalone = "verification-logs/StandaloneDescentAxiomAudit.lean"
+            (root / main).parent.mkdir()
+            (root / main).write_text("import Fixture\n")
+            report = {"status": "passed", "commands": [],
+                      "audit_programs": [main, standalone]}
+            with self.assertRaisesRegex(ValueError, "Verification evidence missing"):
+                EXPORT.verification_files(report, root)
+            (root / standalone).write_text("import Std\n#print axioms Nat.add_comm\n")
+            self.assertEqual(set(EXPORT.verification_files(report, root)), {main, standalone})
 
 
 if __name__ == "__main__":

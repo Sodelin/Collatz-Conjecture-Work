@@ -1,8 +1,8 @@
 # Approach registry — Round 8
 
-Last structural update: 2026-08-24, scalar-arctic full/top certificate audit.
+Historical structural update: 2026-08-24, scalar-arctic full/top certificate audit.
 
-This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
+Current integrated source heads and scope are in the [consolidated checkpoint](../CONSOLIDATION_2026-09-05.md). This file is the canonical index of proof/disproof families. New work should update the relevant row instead of spawning unnamed duplicate routes.
 
 For atomic claim confidence, verification, importance, novelty, readiness, and
 evidence, use [`CLAIM_REGISTRY.md`](CLAIM_REGISTRY.md). A route may be active
@@ -190,3 +190,75 @@ Before starting a new route, answer:
 3. What exact old blocker does it bypass?
 
 If (2) or (3) has no answer, the route is probably a wording variant of an old branch and should not consume search budget.
+
+## 2026-09-05 scope update
+
+Route AB remains `BLOCKED_NO_MECHANISM`. The
+[frozen-debt obstruction](routes/AB_frozen_debt_size_rank_no_go.md) now excludes
+arbitrary-degree label-dependent polynomial size/debt ranks and finite lex
+tuples under the stated lower-bound hypotheses, strengthening the affine-only
+F023 boundary. Higher degree in the same features is not a reopening mechanism.
+
+Route D gains the [quarter-gap certificate](lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md)
+and a wider sufficient L11 inheritance band. The root, stopping-finiteness,
+zero-gap, and renewal obligations remain, so its route status is unchanged.
+The [formal convergence criteria](../lean/CollatzWork/Convergence.lean) verify
+certificate semantics without constructing a universal certificate.
+
+
+### Second full-closure pass
+
+- **A remains active:** [dimension 2 natural-matrix search](../verification/yah_natural_matrix_2d/README.md) found bound 2 UNSAT and bound 8 timeout. This is not a coefficient-independent exclusion or a closure certificate.
+- **B remains active:** nondefinability of full reachability does not prohibit finite guarded graphs with unbounded ranks; [exact separating example](sources/Primary_Bridge_Audit_2026-09-05.md).
+- **AB/C:** [3-adic augmentation](routes/AB_three_adic_rank_no_go.md) fails to rescue the audited polynomial ranks. F026 is the new falsification test.
+- **F and analytic routes:** the [source audit](sources/Primary_Bridge_Audit_2026-09-05.md) blocks importing the asserted mixing weakening or invariant-measure uniqueness. No positive counterexample or universal orbitwise bridge was obtained.
+
+
+## Third-pass route decisions
+
+- **B:** the [modulo27 finite lexicographic rank](sources/Sufficiency_Rank_Audit_2026-09-05.md) is a working all-input normalizer. Universal control of returns from20 mod27 remains open.
+- **AB:** [smaller ternary predecessors](routes/AB_ternary_normalized_core_residue_obstruction.md) remove the old F026 sources from a minimal-root argument. Stronger return families defeat fixed-modulus polynomial ranks, but still admit further smaller targets. Keep each no-go attached to its exact transition relation.
+- **Composition:** the425 auxiliary loop refutes automatic progress when combining a return map with inverse coalescence. Reopening needs a proved rank or an appropriate signed-time progress argument; positive time advance alone does not prove Collatz.
+- **D:** the quarter-gap arithmetic chain is now Lean-verified, with supporting normalized threshold16. Infinite coefficient stopping, the immutable root, renewal and the zero-gap branch remain open.
+
+No route is promoted to a universal solution by these updates.
+
+
+## Fourth-pass route decisions
+
+- **B gains constructive coverage:** [the refined ancestor theorem](lemmas/Residue20_Refined_Ancestor.md) removes every c-normal residue20 root with v3(4r+1)≥13 from a hypothetical least-bad-root argument. [Guarded burst descent](lemmas/Root_Relative_Burst_Descent.md) supplies a different unbounded family with a later return below the unchanged original start.
+- **AB remains without a universal mechanism:** these strict certificates bypass the old zero-progress composition for their covered families, but do not supply total coverage or a rank on the complement. The [q-recharge family](routes/AC_shadow_debt_recharge.md) also defeats the specified polynomial rank augmented only by OOE shadow depth.
+- **Next admission test:** classify growing returns from the residual c-normal residue20 class, and construct an exact escape for a new infinite cylinder while carrying the original root. The endpoint valuation alone must not be assumed to decrease.
+
+No global route status is promoted by partial family coverage.
+
+
+## Fifth-pass route decisions
+
+- **B:** [actual recharge escape](lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestors](lemmas/Complementary_Ancestor_Cylinders.md) supply distinct constructive guarded families. The complete uniform first-coordinate ancestor theorem is now Lean-checked.
+- **AB:** the q10 rank obstruction remains valid outside the new escape guards. There is no universal rank or total all-unit return control, so the global status remains blocked.
+- **Concrete next cylinder:** r=22619+186624s has an increasing first return and unbounded q recharge. It is a precise admission target for a new escape mechanism, not a theorem of nontermination or irreducibility.
+
+
+## Sixth-pass route decisions
+
+- **AB gains an exact local clock:** [consecutive OOEO first returns](lemmas/Finite_Growing_First_Return_Spells.md) always end after floor(v2(11r+23)/4) returns. The whole spell grows relative to its original root and can end in any of q0, q1, q2 or q3. Its finite length does not prove progress across the next excursion or a later re-entry.
+- **B/AB bounded covers are excluded on the exact target:** [anchor transfer and simultaneous CRT](lemmas/Bounded_Ancestor_Depth_Obstruction.md) defeat arbitrary independently fixed forward-descent and smaller-S-ancestor time bounds on infinitely many roots of 22619+186624s. Additional fixed tails cannot supply an exhaustive cover of that cylinder through those two relations.
+- **Highest-value reopening mechanism:** carry the immutable induction root through an unbounded growing spell and its exit; prove a smaller target using a whole-excursion estimate or general forward/backward coalescence with a justified well-founded measure. A local valuation clock alone supplies no such global measure.
+
+The guarded constructive families remain useful. Universal coverage and the recharge-or-escape bridge remain unproved; no global route status is promoted.
+
+
+### Guarded postspell bridge
+
+**B/AB gains a further positive family:** [the full postspell word](lemmas/Postspell_Guarded_Root_Descent.md) yields original-root descent on an infinite subfamily for every independent J≥2 and H≥3. The proof controls (OOEO)^J followed by H growing odd steps, then e≥J+H actual even steps; CRT chooses a residue20 target with at most17 extra padding steps. This is a constructive bridge through two independently unbounded phases, rather than a clock reset at the larger intermediate.
+
+**Remaining admission test:** the [postspell obstruction](lemmas/Postspell_Odd_Run_Obstruction.md) rules out bounding discharge from J and q2 alone, and supplies failed-halving controls. A universal mechanism must handle sources outside the final-even guard through further excursions or mixed coalescence. Unbounded family coverage has increased; total coverage and all global route statuses remain unresolved.
+
+## Integrated endpoint, renewal and recurrence boundaries
+
+The [bounded-alphabet endpoint gate](routes/F_bounded_alphabet_endpoint_residue_gate.md) characterizes positive realization, but does not decide arbitrary fixed infinite codes. [Expanded inverse words](lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md), [partial direct hard returns](routes/AB_direct_H_return_and_renewal_filters.md), and [prime renewal](routes/AB_prime_renewal_finite_window_no_go.md) preserve useful finite arithmetic without supplying universal coverage or one fixed infinite seed.
+
+The [Thue–Morse prefix-return exclusion](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md) closes the old exact `(1),(2)` candidate and the stated fixed expanding block encodings. Its theorem permits a cycle exception for general encodings and does not eliminate arbitrary aperiodic words or unknown cycles. The original candidate is historical and must not be reopened as though positive membership remained undecided.
+
+The narrow [branching-center](disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md), [finite-residue](disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md), [polynomial-ratchet](disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md), and [smooth-ratio](disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md) route closures retain their exact excluded classes. Richer state or a different proposed mechanism requires its own proof.

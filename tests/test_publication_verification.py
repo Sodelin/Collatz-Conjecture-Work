@@ -82,6 +82,85 @@ class PublicationVerificationTests(unittest.TestCase):
                     self.assertEqual(report["commands"][0]["exit_code"], code)
                     self.assertEqual((root / report["commands"][0]["log"]).read_text(), text)
 
+    def test_archived_program_is_compiled_and_audited_separately(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, output = root / "source", root / "output"
+            archive = "research/archive-name/Proof.lean"
+            original = "import Std\nnamespace Archive\ntheorem checked : True := True.intro\nend Archive\n"
+            for name, text in (("lean/Fixture.lean", "import Std\n"),
+                               (archive, original), ("lakefile.lean", "import Lake\n")):
+                path = source / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(text)
+            report = {"commands": [], "axiom_audit": []}
+            calls = []
+            def command(_source, _output, _report, label, args):
+                calls.append((label, args))
+                if label.startswith("standalone-axioms-"):
+                    return "'Archive.checked' does not depend on any axioms\n"
+                if label == "declaration-axioms":
+                    return "'Fixture.headline' depends on axioms: [propext]\n"
+                return ""
+            with patch.dict(verifier.STANDALONE_LEAN, {archive: ("Archive.checked",)}, clear=True), \
+                    patch.object(verifier, "run_command", side_effect=command):
+                verifier.verify_lean_sources(source, output, report,
+                    [archive, "lakefile.lean", "lean/Fixture.lean"], "Fixture.headline")
+            self.assertIn(["lake", "env", "lean", archive], [args for _, args in calls])
+            self.assertIn(["lake", "build", "Fixture"], [args for _, args in calls])
+            labels = [label for label, _ in calls]
+            self.assertLess(labels.index("build-module-Fixture"), labels.index("declaration-axioms"))
+            self.assertEqual((source / archive).read_text(), original)
+            audit = output / report["standalone_lean"][0]["audit_program"]
+            self.assertTrue(audit.read_text().startswith(original))
+            self.assertIn("#print axioms Archive.checked", audit.read_text())
+            main_audit = (output / "verification-logs/PublicationAxiomAudit.lean").read_text()
+            self.assertIn("import Fixture", main_audit)
+            self.assertNotIn("archive-name", main_audit)
+            self.assertNotIn("import lakefile", main_audit)
+            self.assertEqual(report["lean_config_files"], ["lakefile.lean"])
+            self.assertEqual({row["declaration"] for row in report["axiom_audit"]},
+                             {"Fixture.headline", "Archive.checked"})
+
+    def test_archived_audit_cannot_omit_or_hide_axioms(self):
+        archive = "research/archive-name/Proof.lean"
+        for result in ("Build completed successfully.",
+                       "'Archive.checked' depends on axioms: [sorryAx]",
+                       "'Archive.checked' depends on axioms: [Archive.unproved]"):
+            with self.subTest(result=result), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                path = root / "source" / archive
+                path.parent.mkdir(parents=True)
+                path.write_text("import Std\n")
+                with patch.dict(verifier.STANDALONE_LEAN, {archive: ("Archive.checked",)}, clear=True), \
+                        patch.object(verifier, "run_command", return_value=result), \
+                        self.assertRaises(verifier.VerificationError):
+                    verifier.verify_lean_sources(root / "source", root / "output",
+                        {"commands": []}, [archive], "Fixture.headline")
+
+    def test_unknown_archived_lean_is_not_silently_skipped(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "unreviewed.lean").write_text("import Std\n")
+            with self.assertRaisesRegex(verifier.VerificationError, "explicit standalone audit policy"):
+                verifier.verify_lean_sources(root, root / "out", {"commands": []},
+                    ["unreviewed.lean"], "Fixture.headline")
+
+    def test_checker_failure_survives_inherited_optimization(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "checker.py").write_text("assert False, 'deliberately invalid certificate'\n")
+            report = {"commands": []}
+            with patch.dict(os.environ, {"PYTHONOPTIMIZE": "2"}), \
+                    self.assertRaises(verifier.VerificationError):
+                verifier.run_checker(root, root, report, "checker.py", ("-B",))
+            self.assertEqual(report["commands"][0]["exit_code"], 1)
+            self.assertIn("AssertionError", (root / report["commands"][0]["log"]).read_text())
+            with patch.object(verifier, "run_command") as run, \
+                    self.assertRaisesRegex(verifier.VerificationError, "removable assertions"):
+                verifier.run_checker(root, root, report, "checker.py", ("-O", "-B"))
+            run.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

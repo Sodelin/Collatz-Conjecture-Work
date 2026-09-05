@@ -32,24 +32,24 @@ The merged route therefore asks whether the YAH finite alphabet/state structure 
 
 YAH use the once-accelerated Collatz map
 
-\[
+$$
 T(n)=\begin{cases}
 n/2,&n\equiv0\pmod2,\\
 (3n+1)/2,&n\equiv1\pmod2.
 \end{cases}
-\]
+$$
 
 They represent mixed binary/ternary digits by affine functions
 
-\[
+$$
 f(x)=2x,\qquad t(x)=2x+1,
-\]
+$$
 
 and
 
-\[
+$$
 0(x)=3x,\qquad1(x)=3x+1,\qquad2(x)=3x+2.
-\]
+$$
 
 Their 11-rule system consists of two dynamic rules
 
@@ -90,23 +90,23 @@ Primary sources:
 
 Take an odd residue cylinder
 
-\[
+$$
 N_K(x)=2^Kx+R.
-\]
+$$
 
 The ordinary-map script previously described the maximal uniform path as
 
-\[
+$$
 U^{K+s}(N_K(x))=3^s x+B,
-\]
+$$
 
 because every odd ordinary step is immediately followed by an even division step.
 
 Equivalently, under the YAH map `T`, this is simply
 
-\[
+$$
 \boxed{T^K(2^Kx+R)=3^s x+B.}\tag{1}
-\]
+$$
 
 Each of the `K` applications consumes exactly one factor of two from the affine leading coefficient; `s` counts how many of those `K` branches were odd.
 
@@ -116,23 +116,23 @@ Thus the endpoint-slope exponent of `L2_Cylinder_Refinement_and_Slope_Pruning.md
 
 Write `x=2y+epsilon`. At the endpoint of (1),
 
-\[
+$$
 3^s(2y+\epsilon)+B
 =2\cdot3^s y+C_\epsilon,
 \qquad C_\epsilon=B+\epsilon3^s.
-\]
+$$
 
 If `C_epsilon` is even, one `T` step gives
 
-\[
+$$
 3^s y+C_\epsilon/2.
-\]
+$$
 
 If `C_epsilon` is odd, one `T` step gives
 
-\[
+$$
 3^{s+1}y+(3C_\epsilon+1)/2.
-\]
+$$
 
 These are precisely the affine meanings of the two binary dynamic cases represented by the YAH `f`/`t` symbols. The published auxiliary rules are the local identities that swap adjacent binary and ternary affine digits while preserving the represented value.
 
@@ -146,23 +146,23 @@ Our affine coalescence certificate asks for something different.
 
 For a family `N(x)`, it is sufficient to prove an exact identity
 
-\[
+$$
 T^a(N(x))=T^b(m(x))
-\]
+$$
 
 with
 
-\[
+$$
 0<m(x)<N(x).
-\]
+$$
 
 Then strong induction transfers convergence of `m(x)` to convergence of `N(x)`, even if the common trajectory value is much larger than `N(x)`.
 
 Example already certified in ordinary-map notation:
 
-\[
+$$
 U^9(64x+15)=U(54x+13).
-\]
+$$
 
 This can be translated into the accelerated `T` convention and treated as a macro coalescence identity rather than a primitive rule orientation.
 
