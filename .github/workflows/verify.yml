@@ -1,0 +1,38 @@
+name: Verify exact mathematics
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Fetch the exact source commit
+        env:
+          SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          git init .
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "$SOURCE_SHA"
+          git checkout --detach FETCH_HEAD
+      - name: Install the unchanged pinned Lean release
+        run: |
+          test "$(cat lean-toolchain)" = 'leanprover/lean4:v4.33.1'
+          curl --fail --location --retry 3 -o "$RUNNER_TEMP/lean.tar.zst" \
+            https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst
+          echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check
+          tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.33.1-linux/bin" >> "$GITHUB_PATH"
+      - name: Build every formal module
+        run: |
+          lean --version
+          lake build
+          lake env lean lean/CollatzWork/Convergence.lean
+      - name: Replay existing mathematical regressions
+        run: |
+          python3 -B verification/trajectory_normal_form_regression.py
+          python3 -S -B verification/yah_scalar_arctic_top/verify_top_certificates.py
+          python3 -B verification/check_note_graph.py
