@@ -3,3 +3,5 @@ import CollatzWork.RefinedMersenneChild
 import CollatzWork.Convergence
 import CollatzWork.Disproof.TwoPumpDependency
 import CollatzWork.QuarterGap
+import CollatzWork.FirstContraction
+import CollatzWork.FloorPower
