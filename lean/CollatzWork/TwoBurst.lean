@@ -51,8 +51,9 @@ theorem twoBurst_power_margin (j l : Nat) :
       simp only [Nat.zero_add, Nat.pow_succ]
       have hterm : 10 * 8 ^ l * (2 ^ l * 2) = 20 * 16 ^ l := by
         calc
-          10 * 8 ^ l * (2 ^ l * 2) = 20 * (8 ^ l * 2 ^ l) := by
-            simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+          10 * 8 ^ l * (2 ^ l * 2) = (10 * 2) * (8 ^ l * 2 ^ l) := by
+            ac_rfl
+          _ = 20 * (8 ^ l * 2 ^ l) := rfl
           _ = 20 * 16 ^ l := by rw [hpowers]
       rw [hterm]
       omega
@@ -132,30 +133,39 @@ theorem twoBurstDescent : TwoBurstDescentStatement := by
       4 * 16 ^ (k + l) * u := by
     calc
       (2 * 8 ^ l * 2 ^ (k + l)) * (2 * 8 ^ k * u) =
-          4 * (2 ^ (k + l) * (8 ^ k * 8 ^ l)) * u := by
-        simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+          (2 * 2) * (2 ^ (k + l) * (8 ^ k * 8 ^ l)) * u := by ac_rfl
+      _ = 4 * (2 ^ (k + l) * (8 ^ k * 8 ^ l)) * u := rfl
       _ = 4 * (2 ^ (k + l) * 8 ^ (k + l)) * u := by rw [Nat.pow_add 8]
       _ = 4 * 16 ^ (k + l) * u := by rw [← Nat.mul_pow]
   have hrootScaled := congrArg (fun a => (2 * 8 ^ l * 2 ^ (k + l)) * a) hroot
   rw [Nat.mul_add, htotal] at hrootScaled
   have hrootLoss : (2 * 8 ^ l * 2 ^ (k + l)) * 5 =
       10 * 8 ^ l * 2 ^ (k + l) := by
-    simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+    calc
+      (2 * 8 ^ l * 2 ^ (k + l)) * 5 = (2 * 5) * 8 ^ l * 2 ^ (k + l) := by
+        ac_rfl
+      _ = 10 * 8 ^ l * 2 ^ (k + l) := rfl
   rw [hrootLoss] at hrootScaled
   have hlink : 3 * 9 ^ (k + l) * u + 3 * 9 ^ l =
       2 * 8 ^ l * (2 ^ (k + l) * m + 5) := by
     calc
       3 * 9 ^ (k + l) * u + 3 * 9 ^ l =
           3 * 9 ^ l * (9 ^ k * u + 1) := by
-        simp [Nat.pow_add, Nat.mul_add, Nat.mul_assoc, Nat.mul_comm,
-          Nat.mul_left_comm]
+        rw [Nat.mul_add, Nat.mul_one, Nat.pow_add]
+        ac_rfl
       _ = 3 * 9 ^ l * (2 * 8 ^ l * v) := by rw [hrecharge]
       _ = 2 * 8 ^ l * (3 * 9 ^ l * v) := by
         simp [Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
       _ = 2 * 8 ^ l * (2 ^ (k + l) * m + 5) := by rw [hexit]
   have hendpointScaled : (2 * 8 ^ l * 2 ^ (k + l)) * m + 10 * 8 ^ l =
       3 * 9 ^ (k + l) * u + 3 * 9 ^ l := by
-    simpa [Nat.mul_add, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm] using hlink.symm
+    rw [Nat.mul_add] at hlink
+    have hloss : 2 * 8 ^ l * 5 = 10 * 8 ^ l := by
+      calc
+        2 * 8 ^ l * 5 = (2 * 5) * 8 ^ l := by ac_rfl
+        _ = 10 * 8 ^ l := rfl
+    rw [hloss] at hlink
+    simpa only [Nat.mul_assoc] using hlink.symm
   have hmargin := twoBurst_scaled_margin k l u hk hu
   have hcompare : (2 * 8 ^ l * 2 ^ (k + l)) * m <
       (2 * 8 ^ l * 2 ^ (k + l)) * (2 * 8 ^ k * u - 5) := by omega
