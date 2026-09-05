@@ -48,7 +48,7 @@ Use the existing claim or route ID whenever one exists. A new durable note
 should have one primary stable note ID and one primary type. A note may also
 list several claim IDs when it carries several registry claims:
 
-`claim | lemma | route | failure | verification | formalization | source | prompt | map | standard | archive`
+`claim | lemma | route | failure | verification | formalization | source | prompt | map | standard | publication | archive`
 
 For new or materially revised promoted notes, optional YAML frontmatter may
 record static discovery metadata:
@@ -144,6 +144,11 @@ local and untracked.
 
 GitHub remains the public, reviewable source of truth. Obsidian is a viewer and
 editor for the same files, not a separate database.
+
+Mathematical notation follows the
+[portable Markdown math style](MARKDOWN_MATH_STYLE.md): `$...$` inline and
+standalone `$$` delimiters for display math. This shared form renders on both
+GitHub and Obsidian and is checked independently of theorem validity.
 
 ## 9. Platform references
 

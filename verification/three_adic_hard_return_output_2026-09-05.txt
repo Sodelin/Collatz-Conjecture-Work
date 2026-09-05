@@ -1,0 +1,6 @@
+PASS: universal affine parity guards and cofactor factorizations
+PASS: 515 independent witness-family replays
+PASS: raw hard-macro coordinate/reset replay on hard odd n<20000
+Witness t=0: 244379 -> 412391 -> 1043867
+Endpoint coordinates: (a,b,lambda)=(2,1,20365) -> (2,1,86989)
+Scope: coordinate-rank obstruction; Collatz remains unresolved

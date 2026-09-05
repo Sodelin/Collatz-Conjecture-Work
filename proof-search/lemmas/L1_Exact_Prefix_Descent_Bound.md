@@ -11,53 +11,53 @@
 
 Let a positive odd accelerated Collatz trajectory be
 
-\[
+$$
 n_{j+1}=\frac{3n_j+1}{2^{a_j}},
 \qquad
 a_j=\nu_2(3n_j+1)\ge1.
-\]
+$$
 
 For `t>=0`, put
 
-\[
+$$
 A_t=\sum_{j=0}^{t-1}a_j,
 \qquad A_0=0.
-\]
+$$
 
 Define
 
-\[
+$$
 C_t=\sum_{j=0}^{t-1}3^{t-1-j}2^{A_j}.
-\]
+$$
 
 Thus `C_0=0`, `C_1=1`, and
 
-\[
+$$
 C_{t+1}=3C_t+2^{A_t}.
-\]
+$$
 
 ## 2. Exact affine-prefix identity
 
 For every `t>=0`,
 
-\[
+$$
 \boxed{
 n_t=\frac{3^t n_0+C_t}{2^{A_t}}.
 }
-\]
+$$
 
 ### Proof
 
 The case `t=0` is immediate. If the identity holds at `t`, then
 
-\[
+$$
 \begin{aligned}
 n_{t+1}
 &=\frac{3n_t+1}{2^{a_t}}\\
 &=\frac{3(3^t n_0+C_t)+2^{A_t}}{2^{A_t+a_t}}\\
 &=\frac{3^{t+1}n_0+(3C_t+2^{A_t})}{2^{A_{t+1}}},
 \end{aligned}
-\]
+$$
 
 which is the claimed formula with `C_{t+1}`.
 
@@ -65,37 +65,37 @@ which is the claimed formula with `C_{t+1}`.
 
 Suppose `n_t >= n_0`. Then
 
-\[
+$$
 3^t n_0+C_t\ge2^{A_t}n_0.
-\]
+$$
 
 Therefore, whenever
 
-\[
+$$
 2^{A_t}>3^t,
-\]
+$$
 
 one has
 
-\[
+$$
 \boxed{
 n_0\le
 \frac{C_t}{2^{A_t}-3^t}.
 }
-\]
+$$
 
 Equivalently, if
 
-\[
+$$
 n_0>
 \frac{C_t}{2^{A_t}-3^t},
-\]
+$$
 
 then the trajectory **must** have descended by that particular endpoint:
 
-\[
+$$
 n_t<n_0.
-\]
+$$
 
 This is finite and exact; no asymptotic approximation is used.
 
@@ -103,22 +103,22 @@ This is finite and exact; no asymptotic approximation is used.
 
 If `n_*` is the least positive odd counterexample from L0, then `n_t>=n_*` for every `t`. Consequently every prefix of its valuation sequence satisfying `2^{A_t}>3^t` must also satisfy
 
-\[
+$$
 \boxed{
 n_*\le
 B(a_0,\ldots,a_{t-1})
 :=
 \frac{C_t}{2^{A_t}-3^t}.
 }
-\]
+$$
 
 Thus each sufficiently contracting valuation prefix gives an **explicit numerical ceiling** on any minimal counterexample realizing it.
 
 Combined with an external verified lower bound `n_*>M`, such a prefix is impossible whenever
 
-\[
+$$
 B(a_0,\ldots,a_{t-1})\le M.
-\]
+$$
 
 The published computational verification through at least `2^71` therefore can be used as a legitimate base-case eliminator in a proof architecture, provided the external computation is imported as an explicitly labeled theorem/certificate rather than silently assumed.
 

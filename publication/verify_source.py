@@ -9,6 +9,7 @@ The official Lean archive is installed and checksum-checked by the workflow.
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import os
 from pathlib import Path
@@ -25,9 +26,12 @@ SOURCE_SHA = re.compile(r"[0-9a-f]{40}")
 REPOSITORY = re.compile(r"[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_.-]+")
 
 # Kept explicit so changes to the mathematical verification gate are reviewed.
-# This is the complete regression/certificate set in source .github/workflows/verify.yml.
+# This consolidates the mathematical gates from the reviewed research branches.
 ARITHMETIC_CHECKERS = (
     ("verification/trajectory_normal_form_regression.py", ("-B",)),
+    ("verification/yah_2local_edge_no_go.py", ("-B",)),
+    ("verification/yah_two_state_semantic_label_no_go.py", ("-B",)),
+    ("verification/yah_two_state_scalar_arctic_full_no_start.py", ("-S", "-B")),
     ("verification/yah_scalar_arctic_top/verify_top_certificates.py", ("-S", "-B")),
     ("verification/check_note_graph.py", ("-B",)),
     ("verification/near_return_quarter_bound.py", ("-B",)),
@@ -38,7 +42,49 @@ ARITHMETIC_CHECKERS = (
     ("verification/finite_residue_hard_return_check.py", ("-B",)),
     ("verification/core_residue_obstruction_check.py", ("-B",)),
     ("verification/mod27_rank_check.py", ("-B",)),
+    ("verification/disproof_cycle_search.py", ("-B",)),
+    ("verification/bounded_alphabet_endpoint_residue_gate.py", ("-B",)),
+    ("verification/direct_H_return_renewal_regression.py", ("-B",)),
+    ("verification/expanded_rewrite_inverse_word_regression.py", ("-B",)),
+    ("verification/prime_renewal_regression.py", ("-B",)),
+    *((f"verification/{name}.py", flags)
+      for name in (
+          "residue20_valuation_inverse_check", "residue20_refined_ancestor_check",
+          "root_burst_descent_check", "check_shadow_debt_recharge",
+          "q2_exit_descent_check", "two_burst_recharge_escape_check",
+          "complementary_ancestor_check", "finite_first_return_spell_check",
+          "bounded_ancestor_depth_check", "postspell_odd_run_check",
+          "postspell_guarded_descent_check", "blind_word_recurrence_check",
+          "finite_palette_obstruction",
+      ) for flags in (("-S", "-B"), ("-S", "-O", "-B"))),
+    ("verification/check_markdown_math.py", ("-B",)),
+    ("knowledge/tools/build_index.py", ("-B",)),
+    ("knowledge/tools/build_index.py", ("-O", "-B")),
 )
+CHECKER_ARGUMENTS = {
+    "verification/check_markdown_math.py": ("--self-test",),
+    "knowledge/tools/build_index.py": ("--self-test", "--check"),
+}
+YAH_DIFFERENTIAL = "research-review/consolidation-2026-09-05/yah-semantic-differential.py"
+
+# These archived programs have their own namespaces and map conventions. They
+# are compiled separately, never renamed into the main library or omitted.
+STANDALONE_LEAN = {
+    "research/blind-2026-09-05/Descent.lean": tuple(
+        f"BlindCollatz.{name}" for name in (
+            "step_pos", "iterate_pos", "iterate_add", "descent_implies_convergence",
+            "convergence_implies_descent", "descent_iff_convergence")),
+    "research/blind-2026-09-05/AlternatingGrowth.lean": tuple(
+        f"BlindCollatz.AlternatingGrowth.{name}" for name in (
+            "block_grows", "odd_exponents_one_two", "iterated_seed", "seed_good_blocks",
+            "arbitrarily_long_expansion", "goodBlocks_each_block_grows",
+            "ordinary_five", "shortcut_three_eq_ordinary_five")),
+    "research/blind-2026-09-05/RepetitionBound.lean": tuple(
+        f"BlindCollatz.RepetitionBound.{name}" for name in (
+            "finite_repetition_bound", "no_infinite_positive_recurrence",
+            "affine_repetition_bound", "no_infinite_expanding_affine_blocks",
+            "alternating_repetition_bound", "no_infinite_alternating_blocks")),
+}
 
 
 class VerificationError(RuntimeError):
@@ -122,6 +168,84 @@ def run_command(source: Path, output: Path, report: dict, label: str,
     return text
 
 
+def verify_lean_sources(source: Path, output: Path, report: dict,
+                        tracked: list[str], headline: str) -> None:
+    """Check library modules and explicitly scoped archived programs separately."""
+    lean_files = sorted(path for path in tracked if path.endswith(".lean"))
+    if not lean_files:
+        raise VerificationError("No tracked Lean source files were found")
+    declarations = {headline}
+    imports = set()
+    standalone_audits = []
+    report["audit_programs"] = []
+    report["standalone_lean"] = []
+    report["lean_config_files"] = []
+    for relative in lean_files:
+        path = source / relative
+        if path.is_symlink() or not path.resolve().is_relative_to(source.resolve()):
+            raise VerificationError(f"Unsupported Lean source path: {relative}")
+        if relative == "lakefile.lean":
+            # A Lake configuration is executable Lean, not a theorem module.
+            run_command(source, output, report, "lean-configuration", ["lake", "env", "lean", relative])
+            report["lean_config_files"].append(relative)
+            continue
+        text = path.read_text(encoding="utf-8")
+        if relative in STANDALONE_LEAN:
+            expected = set(STANDALONE_LEAN[relative])
+            if not expected or any(not DECLARATION.fullmatch(name) for name in expected):
+                raise VerificationError(f"Invalid standalone declaration policy: {relative}")
+            run_command(source, output, report, f"standalone-{relative}", ["lake", "env", "lean", relative])
+            audit = f"verification-logs/Standalone{path.stem}AxiomAudit.lean"
+            audit_path = output / audit
+            audit_path.parent.mkdir(parents=True, exist_ok=True)
+            # Recheck the exact source text, then ask Lean for fully qualified
+            # dependency reports outside its namespaces. No source edits occur.
+            audit_path.write_text(text + "\n\n" + "\n".join(
+                f"#print axioms {name}" for name in sorted(expected)) + "\n", encoding="utf-8")
+            report["audit_programs"].append(audit)
+            result = run_command(source, output, report, f"standalone-axioms-{path.stem}",
+                                 ["lake", "env", "lean", str(audit_path)])
+            standalone_audits.extend(audit_axioms(result, expected))
+            report["standalone_lean"].append({"source": relative, "audit_program": audit,
+                                               "declarations": sorted(expected)})
+            continue
+        if not relative.startswith("lean/"):
+            raise VerificationError(f"Unsupported Lean source path: {relative}; add an explicit standalone audit policy")
+        module = relative.removeprefix("lean/").removesuffix(".lean").replace("/", ".")
+        if not DECLARATION.fullmatch(module):
+            raise VerificationError(f"Invalid Lean module name: {relative}")
+        imports.add(module)
+        declarations.update(re.findall(r"(?m)^\s*#print\s+axioms\s+([A-Za-z_][A-Za-z_0-9'.]*)", text))
+        # Direct Lean checking does not emit the .olean needed by the aggregate
+        # audit. Build even modules omitted from the umbrella's import graph.
+        run_command(source, output, report, f"build-module-{module}", ["lake", "build", module])
+        run_command(source, output, report, f"module-{module}", ["lake", "env", "lean", relative])
+    audit_source = "\n".join(f"import {module}" for module in sorted(imports)) + "\n\n"
+    audit_source += f"#check @{headline}\n"
+    audit_source += "\n".join(f"#print axioms {name}" for name in sorted(declarations)) + "\n"
+    audit = "verification-logs/PublicationAxiomAudit.lean"
+    audit_path = output / audit
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    audit_path.write_text(audit_source, encoding="utf-8")
+    report["audit_programs"].append(audit)
+    result = run_command(source, output, report, "declaration-axioms", ["lake", "env", "lean", str(audit_path)])
+    report["axiom_audit"] = sorted(audit_axioms(result, declarations) + standalone_audits,
+                                   key=lambda item: item["declaration"])
+
+
+def run_checker(source: Path, output: Path, report: dict, checker: str,
+                flags: tuple[str, ...], arguments: tuple[str, ...] = ()) -> None:
+    # Optimized runs are supplementary checks of explicitly reviewed require/
+    # raise-based checkers. Prevent a later assertion from silently disappearing.
+    if "-O" in flags or "-OO" in flags:
+        tree = ast.parse((source / checker).read_text(encoding="utf-8"), filename=checker)
+        if any(isinstance(node, ast.Assert) for node in ast.walk(tree)):
+            raise VerificationError(f"Optimized checker contains removable assertions: {checker}")
+    suffix = "-optimized" if "-O" in flags or "-OO" in flags else ""
+    run_command(source, output, report, Path(checker).stem + suffix,
+                [sys.executable, *flags, checker, *arguments])
+
+
 def verify(source: Path, output: Path, metadata: dict) -> dict:
     source, output = source.resolve(), output.resolve()
     if output == source or source in output.parents:
@@ -156,37 +280,17 @@ def verify(source: Path, output: Path, metadata: dict) -> dict:
         run_command(source, output, report, "clean-formal-build", ["lake", "clean"])
         run_command(source, output, report, "build-formal-library", ["lake", "build"])
         tracked = run_command(source, output, report, "tracked-files", ["git", "ls-files", "-z"]).split("\0")
-        lean_files = sorted(path for path in tracked if path.endswith(".lean"))
-        if not lean_files:
-            raise VerificationError("No tracked Lean source files were found")
-        declarations = {metadata["headline_declaration"]}
-        imports = set()
-        for relative in lean_files:
-            path = source / relative
-            if not relative.startswith("lean/") or path.is_symlink():
-                raise VerificationError(f"Unsupported Lean source path: {relative}")
-            module = relative.removeprefix("lean/").removesuffix(".lean").replace("/", ".")
-            if not DECLARATION.fullmatch(module):
-                raise VerificationError(f"Invalid Lean module name: {relative}")
-            imports.add(module)
-            text = path.read_text(encoding="utf-8")
-            declarations.update(re.findall(r"(?m)^\s*#print\s+axioms\s+([A-Za-z_][A-Za-z_0-9'.]*)", text))
-            run_command(source, output, report, f"module-{module}", ["lake", "env", "lean", relative])
-        audit_source = "\n".join(f"import {module}" for module in sorted(imports)) + "\n\n"
-        audit_source += f"#check @{metadata['headline_declaration']}\n"
-        audit_source += "\n".join(f"#print axioms {name}" for name in sorted(declarations)) + "\n"
-        # Keep the exact audit program for independent reproduction, outside git source.
-        audit_path = output / "verification-logs" / "PublicationAxiomAudit.lean"
-        audit_path.write_text(audit_source, encoding="utf-8")
-        audit_output = run_command(source, output, report, "declaration-axioms",
-                                   ["lake", "env", "lean", str(audit_path)])
-        report["axiom_audit"] = audit_axioms(audit_output, declarations)
+        verify_lean_sources(source, output, report, tracked, metadata["headline_declaration"])
         for checker, flags in ARITHMETIC_CHECKERS:
-            run_command(source, output, report, Path(checker).stem, [sys.executable, *flags, checker])
+            if checker not in tracked:
+                raise VerificationError(f"Required checker absent from pinned source: {checker}")
+            run_checker(source, output, report, checker, flags, CHECKER_ARGUMENTS.get(checker, ()))
+        if YAH_DIFFERENTIAL in tracked:
+            run_checker(source, output, report, YAH_DIFFERENTIAL, ("-S", "-B"), (str(source),))
         run_command(source, output, report, "source-tracked-clean-after-verification",
                     ["git", "diff", "--exit-code", "HEAD", "--"])
         report["status"] = "passed"
-    except (VerificationError, OSError, ValueError) as error:
+    except (VerificationError, OSError, ValueError, SyntaxError) as error:
         report["error"] = str(error)
     finally:
         with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=output,

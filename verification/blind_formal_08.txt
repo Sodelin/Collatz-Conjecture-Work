@@ -1,0 +1,6 @@
+'BlindCollatz.RepetitionBound.finite_repetition_bound' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.RepetitionBound.no_infinite_positive_recurrence' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.RepetitionBound.affine_repetition_bound' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.RepetitionBound.alternating_repetition_bound' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.RepetitionBound.no_infinite_alternating_blocks' depends on axioms: [propext, Quot.sound]

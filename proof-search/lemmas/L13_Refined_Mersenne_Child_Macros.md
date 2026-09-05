@@ -3,12 +3,12 @@
 **Status:** audited arithmetic certificate; not route closure
 **Map convention:** the one-division shortcut map
 
-\[
+$$
 T(n)=\begin{cases}
 n/2,&n\equiv0\pmod2,\\
 (3n+1)/2,&n\equiv1\pmod2.
 \end{cases}
-\]
+$$
 
 This note records a parameter refinement that survives hostile symbolic audit.
 It supplies a uniform strong-induction edge on one of two children and an exact
@@ -19,60 +19,60 @@ for the recurrent hard child and therefore does not prove Collatz.
 
 Let `L>=2`, `epsilon in {0,1}`, and `z>=0`, and put
 
-\[
+$$
 a=4z+2\varepsilon+1,
 \qquad
 N_{L,\varepsilon}(z)=2^L a-1. \tag{1}
-\]
+$$
 
 Every odd parameter in `2^Lq-1` is uniquely `q=4z+1` or `q=4z+3`, so
 the two values of `epsilon` exhaust the parent family disjointly.
 
 For `0<=j<=L`, direct guarded iteration gives
 
-\[
+$$
 T^j(N_{L,\varepsilon}(z))
 =2^{L-j}3^j a-1. \tag{2}
-\]
+$$
 
 ## 2. The compatible child is a valid induction edge
 
 Assume
 
-\[
+$$
 \varepsilon\equiv L\pmod2. \tag{3}
-\]
+$$
 
 Define
 
-\[
+$$
 m_{L,\varepsilon}(z)
 =3\,2^{L-2}a-1
 =\frac{3N_{L,\varepsilon}(z)-1}{4}. \tag{4}
-\]
+$$
 
 Writing `b=2^(L-2)a`, equations (1) and (4) become `N=4b-1` and
 `m=3b-1`.  Hence
 
-\[
+$$
 0<m_{L,\varepsilon}(z)<N_{L,\varepsilon}(z),
 \qquad N-m=b>0. \tag{5}
-\]
+$$
 
 The parity condition (3) gives `3^L a = 1 (mod 4)`.  Therefore
 
-\[
+$$
 T^{L+2}(N_{L,\varepsilon}(z))
 =T^L(m_{L,\varepsilon}(z))
 =\frac{3^L a-1}{4}. \tag{6}
-\]
+$$
 
 The forward word from `m` is `O^(L-2) E O`; equivalently, the inverse
 word from the common endpoint, applied left-to-right, is
 
-\[
+$$
 O\,E\,O^{L-2}. \tag{7}
-\]
+$$
 
 This includes the edge `L=2,z=0`.  Equation (6), together with (5), is a
 valid strong-induction step **assuming convergence is already known for all
@@ -83,15 +83,15 @@ subclass.
 
 Now assume
 
-\[
+$$
 \varepsilon\not\equiv L\pmod2. \tag{8}
-\]
+$$
 
 The uniform forward path is `O^L E O`.  Its state at time `L+2` is
 
-\[
+$$
 Y(z)=3^{L+1}z+\frac{3^{L+1+\varepsilon}-1}{4}. \tag{9}
-\]
+$$
 
 On this hard child, no uniform forward time `0<=t<=L+2` followed by any
 uniformly admissible unrefined L4 inverse word produces a positive affine
@@ -100,27 +100,27 @@ family eventually strictly below `N`.
 For `0<=t<=L`, an inverse word with `e` even inverses and `r` odd inverses
 has leading-coefficient ratio
 
-\[
+$$
 2^e\left(\frac32\right)^{t-r}\ge1, \tag{10}
-\]
+$$
 
 because uniform admissibility forces `r<=t`.  Equality forces the exact
 replay `O^t`, which reconstructs `N`, including the empty word when `t=0`.
 
 At `t=L+1`, the ratio is
 
-\[
+$$
 2^{e-1}\left(\frac32\right)^{L-r}. \tag{11}
-\]
+$$
 
 The possible equal-slope word is the replay `E O^L`.  Strict-slope odd
 inverses fail their mod-3 guard.  The remaining empty suffix must also be
 rejected explicitly: its `z`-coefficient is `2*3^L`, whereas the original
 coefficient is `2^(L+2)`, and
 
-\[
+$$
 2\,3^L>2^{L+2}\qquad(L\ge2). \tag{12}
-\]
+$$
 
 At `t=L+2`, the equal-slope word is the replay `O E O^L`.  Among the
 `e=0` strict-slope candidates, the empty word and `O` are the only
@@ -136,17 +136,17 @@ families, and ranked recursion untouched.
 
 Subtracting (1) from (9) gives, with
 
-\[
+$$
 A=3^{L+1}-2^{L+2}>0,
-\]
+$$
 
-\[
+$$
 Y-N=
 \begin{cases}
 Az+(A+3)/4,&\varepsilon=0,\\
 Az+3(A+1)/4,&\varepsilon=1.
 \end{cases} \tag{13}
-\]
+$$
 
 Under (8), `epsilon=0` means odd `L>=3`, while `epsilon=1` means even
 `L>=2`.  Thus (13) is positive in every stated case.  The known hard macro
@@ -156,66 +156,66 @@ is expanding, not a decreasing back-edge.
 
 Put
 
-\[
+$$
 p=3^{L+1},
 \qquad
 b=\frac{3^{L+1+\varepsilon}+3}{4}.
-\]
+$$
 
 Hard parity makes `b` an odd positive integer, and (9) gives
 
-\[
+$$
 Y(z)+1=pz+b. \tag{14}
-\]
+$$
 
 For every `r>=0` and `eta in {0,1}`, `p` is invertible modulo
 `2^(r+2)`, so there is a unique residue
 
-\[
+$$
 z_{r,\eta}\pmod{2^{r+2}}
-\]
+$$
 
 satisfying
 
-\[
+$$
 pz_{r,\eta}+b\equiv2^r(2\eta+1)\pmod{2^{r+2}}. \tag{15}
-\]
+$$
 
 These cells are disjoint and exhaust all `z>=0`: equation (15) says exactly
 
-\[
+$$
 v_2(Y(z)+1)=r,
 \qquad
 \frac{Y(z)+1}{2^r}\equiv2\eta+1\pmod4. \tag{16}
-\]
+$$
 
 Choose the least representative `0<=z0<2^(r+2)` and write
 `z=z0+2^(r+2)u`, where `u>=0`.  Set
 
-\[
+$$
 q_0=\frac{pz_0+b}{2^r}=4c+(2\eta+1). \tag{17}
-\]
+$$
 
 Then `c>=0` is integral and
 
-\[
+$$
 Y(z)+1
 =2^r\bigl(4(pu+c)+(2\eta+1)\bigr),
-\]
+$$
 
 so the successor is exactly
 
-\[
+$$
 Y(z)=N_{r,\eta}(pu+c). \tag{18}
-\]
+$$
 
 Equivalently, the new parameter `w=pu+c` satisfies both
 
-\[
+$$
 w\equiv c\pmod p,
 \qquad
 w\ge c, \tag{19}
-\]
+$$
 
 and these two conditions are necessary and sufficient for the chosen least
 representative.  The case `r=0` is included.
@@ -263,53 +263,53 @@ search, and no novelty claim is made.
 There is an exact local rank for consecutive repetitions of one hard label,
 but it does not compose across labels.  Fix a hard label
 
-\[
+$$
 L\ge2,\qquad \varepsilon\in\{0,1\},\qquad
 \varepsilon\not\equiv L\pmod2,
-\]
+$$
 
 and define
 
-\[
+$$
 p_L=3^{L+1},\qquad M_L=2^{L+2},\qquad
 d_{L,\varepsilon}
 =\frac{3^{L+1+\varepsilon}+3}{4}-2^L(2\varepsilon+1)>0. \tag{20}
-\]
+$$
 
 If the normalized successor has the same label `(L,epsilon)`, its parameter
 is
 
-\[
+$$
 G_{L,\varepsilon}(z)
 =\frac{p_Lz+d_{L,\varepsilon}}{M_L}. \tag{21}
-\]
+$$
 
 For nonzero integers, let `v2` denote the exact exponent of two, and put
 
-\[
+$$
 D_{L,\varepsilon}(z)
 =v_2\bigl((M_L-p_L)z-d_{L,\varepsilon}\bigr),
 \qquad
 R_{L,\varepsilon}(z)
 =\left\lfloor\frac{D_{L,\varepsilon}(z)}{L+2}\right\rfloor. \tag{22}
-\]
+$$
 
 The argument of `v2` is never zero for `z>=0`, because `M_L-p_L<0` and
 `d_(L,epsilon)` is positive.  The same-label guard is equivalent to
 
-\[
+$$
 D_{L,\varepsilon}(z)\ge L+2. \tag{23}
-\]
+$$
 
 Whenever (23) holds, exact substitution into (21) gives
 
-\[
+$$
 D_{L,\varepsilon}(G_{L,\varepsilon}(z))
 =D_{L,\varepsilon}(z)-(L+2),
 \qquad
 R_{L,\varepsilon}(G_{L,\varepsilon}(z))
 =R_{L,\varepsilon}(z)-1. \tag{24}
-\]
+$$
 
 Thus `R` is a genuine natural-valued rank and exactly counts the maximum
 number of further consecutive same-label replays.
@@ -319,18 +319,18 @@ It is not a global rank.  More strongly, for every hard source label
 `Q>=0`, the exact successor cell of label `(h,eta)` contains a parameter
 `z>=0` for which
 
-\[
+$$
 R_{L,\varepsilon}(z)=0,
 \qquad
 R_{h,\eta}(w)\ge Q,
-\]
+$$
 
 where `w` is the exact target parameter.  Indeed, (18) writes
 `w=p_L u+c`.  The coefficient of `u` in
 
-\[
+$$
 (M_h-p_h)(p_Lu+c)-d_{h,\eta}
-\]
+$$
 
 is odd, so one can choose `u` modulo any prescribed power of two to make the
 target `D` arbitrarily large.  Since the target label differs from the
@@ -340,30 +340,30 @@ can therefore recharge an arbitrarily large amount of the local replay debt.
 There is also a concrete obstruction to the natural affine composite ranks.
 The fully guarded exact transition
 
-\[
+$$
 (L,\varepsilon,z)=(5,0,134257)
 \longrightarrow (7,0,191159) \tag{25}
-\]
+$$
 
 is
 
-\[
+$$
 N_{5,0}(134257)=17184927
 \xrightarrow{\ O^5EO\ }
 97873535=N_{7,0}(191159). \tag{26}
-\]
+$$
 
 With `ell(0)=0` and `ell(z)` the binary bitlength for `z>0`, its data are
 
-\[
+$$
 (L,\ell,D,R):(5,18,5,0)\longrightarrow(7,18,10,1). \tag{27}
-\]
+$$
 
 Consequently no real constants `A,B,C,E_0,E_1` make either
 
-\[
+$$
 \Phi=A L+B\ell(z)+C D_{L,\varepsilon}(z)+E_\varepsilon
-\]
+$$
 
 or the analogous expression with `R` in place of `D` both bounded below on
 all hard states and strictly decreasing on every exact hard-to-hard

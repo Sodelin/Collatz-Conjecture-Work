@@ -14,13 +14,9 @@ and [research releases](https://github.com/Sodelin/Collatz-Conjecture-Work/relea
 Each release announcement identifies its exact mathematical revision and current
 claim boundaries. Historical archive notes below retain their original context.
 
-The [5 September novelty and submission review](research-review/novelty-2026-09-05/REPORT.md)
-compares the exact claims with classical papers, current preprints, and formal
-code. The release is public; VibeMathed submission remains on hold for the
-specific review gates recorded there.
+Start with the [current consolidation and focused YAH review](research-review/consolidation-2026-09-05/REPORT.md). It combines all contribution heads, issue records, verification boundaries and the publication decision. The [earlier novelty review](research-review/novelty-2026-09-05/REPORT.md) remains a dated source-comparison record.
 
-Accepted mathematical baseline: full Git object
-`b75ffec58ae20ac26271ff7d59a71d3591467994` (2026-08-24).
+The [consolidated checkpoint](CONSOLIDATION_2026-09-05.md) incorporates all eight open research contribution heads, including the latest guarded recovery proofs. Use it for the current scope and complete source list. The [2026-08-25 mathematician handoff](MATHEMATICIAN_HANDOFF_2026-08-25.md) is preserved as a historical snapshot.
 
 For a visual, cross-linked map of claims, routes, evidence, historical notes,
 and reopening conditions, use the [research atlas](ATLAS.md). It is portable
@@ -58,27 +54,18 @@ In plain language: the project has found several rigorous reasons why tempting
 proof strategies fail, plus narrow identities that work on selected families.
 It has not found the missing argument that controls every Collatz orbit.
 
-## Most important review targets
+## Current contribution families
 
-These are ordered by a combination of route importance and external-review
-value, not by a claim that they solve more of Collatz.
+The [consolidated checkpoint](CONSOLIDATION_2026-09-05.md#what-can-now-be-shared) separates the Lean quarter-gap chain, guarded original-root and ancestor theorems, finite additive YAH certificates, scalar-arctic certificates, finite-palette obstruction, recurrence and Thue–Morse exclusion, endpoint toolkit, and stopped divergence architectures. Each keeps its exact hypothesis and formal boundary.
 
-| Claim | Scoped status | Why it matters | Novelty / publication status |
-|---|---|---|---|
-| YAH scalar-arctic dimension-one no-start | Exact dependency-free full and top certificates; high confidence **within the standard first-step dimension-one arctic-natural class** | Closes full rule removal and both Lemma-3.18 top entry points on the original eleven-rule system; also certifies the fixed 22-rule labeling | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
-| Fixed two-state YAH symbol/edge cancellations | Exact standard-library checker; high confidence **within the stated algebra and locality class** | Strong finite certificate killing scalar and every finite lexicographic additive order in that model | Exact match not found in a bounded primary-source audit; priority uncertified; specialist-review packet |
-| Unlabeled YAH adjacent-edge cancellation | Exact checker; high confidence within canonical adjacent-pair additive potentials | Rules out another natural termination-potential class by a 13-row certificate | Exact match not found; priority uncertified; specialist-review packet |
-| Round 6A quantitative beta-debt theorem | Self-contained unreviewed derivation plus diagnostic checker | Strongest conceptual theorem candidate about corrected-log rankings and rational periodic shadows | Exact formulation not found; key lift/scaling chain lacks Lean and independent specialist reconstruction |
-| L13 hard-successor normalization and rank recharge | Hostile-audited exact arithmetic; hard portion not Lean-formalized | Explains precisely why the refined Mersenne route does not close under simple replay debt or affine ranks | Classical parity arithmetic plus project-specific packaging; no priority claim |
-| Refined Mersenne easy child | Narrow Lean-checked coalescence theorem | Supplies a valid strong-induction edge for one child | Published in substance in earlier Collatz work; the Lean file is a verification artifact, not a novel theorem |
-
-The complete ordinal ratings for correctness confidence, verification,
-importance, novelty, and release readiness are in the
-[claim registry](proof-search/CLAIM_REGISTRY.md). “Not located” never means
-“proved novel.” No repository-specific claim has external specialist or peer
-review, and no claim is submission-ready as a Collatz proof or disproof.
+The [claim registry](proof-search/CLAIM_REGISTRY.md) is the complete scoped inventory. Novelty and priority remain claim-specific review questions. The obsolete Thue–Morse candidate's positive realization is now excluded; the conjecture is still unresolved.
 
 ## Choose your path
+
+The [research atlas](ATLAS.md) is the hand-curated knowledge map. Generated
+[catalog and backlink supplements](knowledge/README.md) make every Markdown
+file searchable without creating a second claim or route ledger. Both views
+work in GitHub and Obsidian without a plugin.
 
 ### If you are a math enthusiast
 
@@ -101,29 +88,23 @@ review, and no claim is submission-ready as a Collatz proof or disproof.
 
 ### If you are continuing the project
 
-Read [CONTINUATION.md](CONTINUATION.md). The live mathematical frontier is
-Round 8; older Round 6/7 files are retained as historical branches and may
-contain superseded route language.
+Read [CONTINUATION.md](CONTINUATION.md). The current frontier is the [consolidated checkpoint](CONSOLIDATION_2026-09-05.md); dated Round 6/7/8 files retain historical context and may contain superseded route language.
 
 Use the V4 prompt/profile for new controlled cycles. The V4 methodology changes
 research control only; it does not alter any mathematical or release status.
 
 ## What is formally checked
 
-The repository contains three narrow Lean developments:
+The [Lean scope inventory](LEAN_TARGETS.md) identifies every current proof module and the three separately preserved blind derivations. The umbrella build includes YAH's fixed-algebra additive certificates, the quarter-gap chain, guarded root-relative results, prefix collisions, affine repetition, finite-palette obstruction, and the three narrow stopped-route cores.
 
-- [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
-- [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
-- [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean).
-
-The first two are included in the umbrella build. The two-pump module is
-compiled directly. A clean `lake build` does **not** formalize the full prose
-chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
-See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
+A clean build checks those exact declarations. It does not certify all surrounding prose, unproved global coverage, novelty, or Collatz.
 
 ## Reproduce the promoted checks
 
 From the repository root:
+
+For optional symbolic computation and the pinned proof checker, see the
+[free math tool setup](docs/MATH_TOOL_SETUP.md).
 
 ```powershell
 python -B verification\trajectory_normal_form_regression.py
@@ -132,6 +113,7 @@ python -B verification\yah_two_state_semantic_label_no_go.py
 python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
+python -S -B verification\finite_palette_obstruction.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
 ```
@@ -143,12 +125,20 @@ Repository navigation has a separate dependency-free check:
 
 ```powershell
 python -B verification\check_note_graph.py
+python -B knowledge\tools\build_index.py --self-test --check
+```
+
+Mathematical notation has a separate presentation check:
+
+```powershell
+python -B verification\check_markdown_math.py --self-test
 ```
 
 No Obsidian community plugin is required. Open the repository root as a vault;
 ordinary relative Markdown links drive GitHub navigation and Obsidian's built-in
 Graph and Backlinks views. See the
-[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md).
+[portable note-graph standard](methodology/NOTE_GRAPH_STANDARD.md) and
+[portable Markdown math style](methodology/MARKDOWN_MATH_STYLE.md).
 
 ## Prior art and novelty discipline
 

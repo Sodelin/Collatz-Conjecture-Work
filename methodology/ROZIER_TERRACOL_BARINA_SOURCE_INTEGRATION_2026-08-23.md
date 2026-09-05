@@ -11,28 +11,28 @@ Olivier Rozier and Claude Terracol, **“Paradoxical behavior in Collatz sequenc
 
 They use the accelerated map
 
-\[
+$$
 T(n)=\begin{cases}
 (3n+1)/2,&n\text{ odd},\\
 n/2,&n\text{ even}.
 \end{cases}
-\]
+$$
 
 For a length-`j` prefix with `q` odd terms they write
 
-\[
+$$
 T^j(n)=C_j(n)n+E_j(n),
 \qquad
 C_j(n)=\frac{3^q}{2^j}.
-\]
+$$
 
 Their Theorem 2.4 proves the exact remainder bounds
 
-\[
+$$
 \frac{3^q-2^q}{2^j}
 \le E_j(n)\le
 \frac{3^q-2^q}{2^q}.
-\]
+$$
 
 The upper bound occurs for a specific extremal parity vector with the odd terms shifted to the end.
 
@@ -40,9 +40,9 @@ They call a finite prefix **paradoxical** when `C_j(n)<1` but the endpoint has n
 
 Theorem 5.3 reports that there are no paradoxical sequences with
 
-\[
+$$
 93\le j\le301\,993.
-\]
+$$
 
 The paper separately enumerates 593 known paradoxical sequences in its small-start regime and proves additional start-range exclusions. The route below uses only the exact theorem statements needed for the prefix-length exclusion.
 
@@ -57,9 +57,9 @@ David Barina, **“Improved verification limit for the convergence of the Collat
 
 The paper reports computational verification of convergence for all starting values through the bound
 
-\[
+$$
 2^{71}.
-\]
+$$
 
 The associated public project currently reports verification slightly beyond this (`2075*2^60`, approximately `2^71.02`), but Round 7 deliberately uses the conservative published `2^71` threshold.
 
@@ -75,23 +75,23 @@ Assume Collatz is false and let `n_*` be the least positive integer whose orbit 
 
 Barina's verified range gives
 
-\[
+$$
 n_*>2^{71}.
-\]
+$$
 
 Minimality gives
 
-\[
+$$
 T^j(n_*)\ge n_*
-\]
+$$
 
 for every `j>=0`, because an iterate below `n_*` would itself converge and therefore pull `n_*` into the convergent orbit.
 
 Hence whenever
 
-\[
+$$
 C_j(n_*)=\frac{3^{q_j}}{2^j}<1,
-\]
+$$
 
 the length-`j` prefix is paradoxical in the Rozier–Terracol sense.
 
@@ -101,14 +101,14 @@ This converts their paradoxical-sequence exclusions into exact constraints on th
 
 If a prefix is paradoxical, then
 
-\[
+$$
 (1-C_j)n_*
 \le E_j(n_*).
-\]
+$$
 
 Using Theorem 2.4,
 
-\[
+$$
 n_*
 \le
 \frac{(3^q-2^q)/2^q}{1-3^q/2^j}
@@ -117,7 +117,7 @@ n_*
 \frac{2^{j-q}(3^q-2^q)}{2^j-3^q}
 }
 =:F(j,q).
-\]
+$$
 
 An exact integer-arithmetic sweep committed in
 
@@ -125,9 +125,9 @@ An exact integer-arithmetic sweep committed in
 
 checks every pair with `1<=j<=183` and `3^q<2^j`. It finds
 
-\[
+$$
 F(j,q)<2^{71}
-\]
+$$
 
 for all of them.
 
@@ -135,9 +135,9 @@ Thus a least counterexample above the verified range cannot have a coefficient-c
 
 The first pair for which this crude extremal bound reaches `2^71` is
 
-\[
+$$
 (j,q)=(184,116).
-\]
+$$
 
 This `184` threshold is a derived finite corollary, not claimed as new literature.
 
@@ -145,42 +145,42 @@ This `184` threshold is a derived finite corollary, not claimed as new literatur
 
 The Rozier–Terracol Theorem 5.3 exclusion covers every paradoxical length
 
-\[
+$$
 93\le j\le301\,993.
-\]
+$$
 
 Our exact short-prefix calculation covers all coefficient-contracting non-descending prefixes
 
-\[
+$$
 1\le j\le183.
-\]
+$$
 
 Together they cover every
 
-\[
+$$
 1\le j\le301\,993.
-\]
+$$
 
 Therefore a hypothetical least counterexample has no coefficient contraction during its first `301,993` accelerated steps:
 
-\[
+$$
 \boxed{
 3^{q_j(n_*)}\ge2^j
 \quad\text{for every }1\le j\le301\,993.
 }
-\]
+$$
 
 Equivalently, if its coefficient stopping time
 
-\[
+$$
 \tau(n_*)=\min\{j\ge1:3^{q_j(n_*)}<2^j\}
-\]
+$$
 
 is finite, then
 
-\[
+$$
 \boxed{\tau(n_*)\ge301\,994.}
-\]
+$$
 
 This is recorded as `L7_Least_Counterexample_Coefficient_Barrier.md`.
 

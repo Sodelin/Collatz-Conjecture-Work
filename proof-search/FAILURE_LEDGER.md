@@ -87,15 +87,15 @@ A finite tree with a bounded maximum macro-depth would imply a global bounded st
 It is useful to separate two quantified versions of the bounded-time
 obstruction.  Let
 
-\[
+$$
 U(n)=\frac{3n+1}{2^{v_2(3n+1)}}
-\]
+$$
 
 on positive odd integers.  For `m>=2` and `0<=j<m`, direct induction gives
 
-\[
+$$
 U^j(2^m-1)=2^{m-j}3^j-1.
-\]
+$$
 
 Hence `U^j(2^m-1)>2^m-1` for every `1<=j<m`.
 
@@ -335,7 +335,335 @@ the current replay debt, so closure alone does not supply descent.
 hard return, or a new guarded macro coalesces with a uniformly smaller positive
 target. Renaming the return obligation is not progress.
 
+
+## F025 — higher-degree polynomial size/debt ranks rescue the hard return map
+
+**Class:** `FALSE` for the exact stated class.
+
+[AB-FROZEN-DEBT-001](routes/AB_frozen_debt_size_rank_no_go.md) gives the exact
+family `65536u+47771 -> 110592u+80615 -> 279936u+204059` for every `u>=0`.
+The endpoints have the same `(L,epsilon,D,R)=(2,1,2,0)`, and parameter/size
+grows by more than fourfold. This excludes all lower-bounded label-dependent
+polynomials in parameter, bitlength, D and R, of arbitrary finite degree,
+and finite lex tuples when every coordinate is lower bounded.
+
+**Reopen only if:** the proposed rank uses additional arithmetic information,
+nonpolynomial behavior outside the proved obstruction, or a stronger smaller-target
+coalescence relation. It must distinguish or validly bypass this exact family.
+This strengthens F023 without excluding all nonlinear ranks or proving divergence.
+
 ---
+
+
+## F026 — Adding 3-adic depth does not repair polynomial cofactor ranks
+
+**Status:** exact obstruction within the specified augmented-state class.
+[AB-3ADIC-RESET-001](routes/AB_three_adic_rank_no_go.md) proves the reset
+`v3(Y+1)=1` on every raw hard return and the family
+`589824t+244379 -> 995328t+412391 -> 2519424t+1043867`, `t>=0`.
+Both endpoints have `(L,e,b,D,R)=(2,1,1,2,0)`, while their coprime cofactors
+increase by more than fourfold. This excludes lower-bounded polynomials in
+cofactor and bitlength with arbitrary dependence on those frozen measurements,
+and finite lex tuples with individually lower-bounded coordinates.
+
+**Reopen only if:** the candidate handles this exact family with further
+arithmetic structure, nonpolynomial behavior, or a proved smaller target.
+An exact coordinate system alone is not a well-founded order.
+
+## F027 — Summable projected discrepancy is not a weaker mixing bridge
+
+**Status:** exact source-quantifier obstruction. Consistent projected total
+variation errors satisfy `delta_(K+1)>=delta_K>=0`; summability therefore
+forces every error to vanish. Chang v6's displayed WMH supplies no weakening
+of fixed-depth equidistribution. Its asserted non-atomic Haar uniqueness
+also has an explicit countermeasure. See the [primary-source audit](sources/Primary_Bridge_Audit_2026-09-05.md).
+
+**Reopen only if:** a corrected quantitative hypothesis is actually proved
+for each required positive orbit, with its tail and cycle obligations intact.
+Neither finite-modulus mixing nor a 2-adic almost-everywhere assertion is
+that pointwise bridge. These failures are not a no-go for every ergodic method.
+
+
+## F028 — Fixed residue refinement does not repair the stated polynomial ranks
+
+The [original-F CRT construction](routes/AB_finite_residue_original_return_no_go.md)
+freezes any fixed modulus across expanding true F paths. The [stronger-core
+construction](routes/AB_ternary_normalized_core_residue_obstruction.md) does
+the same for its specified normalized return and for first returns to20 mod27.
+These are distinct transition relations. Their polynomial/finite-lex no-go
+proofs do not prohibit variable moduli, unbounded valuations or different
+smaller-target selection. Indeed, exact inverse macros remove the displayed
+families from still-stronger minimal-root arguments.
+
+**Reopen with:** an explicit mechanism beyond fixed-modulus polynomial size
+ranks, with exact handling of the relevant family and its unbounded shadow debt.
+
+## F029 — Decreasing coalescence normalization need not advance a return map
+
+The exact auxiliary loop is `425 ->638 ->319 ->479 ->c425`, where the first
+three arrows are actual T steps and `c(y)=(8y-7)/9` is a smaller coalescing
+predecessor. The signed time advance is `+3-3=0`. Thus a decreasing normalizer
+cannot inherit the original F termination-equivalence proof automatically.
+See [the proof, prefix guards and clock conditions](routes/AB_ternary_normalized_core_residue_obstruction.md).
+
+**Reopen with:** a proved global rank or sufficient accumulated progress
+condition on the exact composition. Conditional stopping-time equivalence
+does not itself establish unconditional termination.
+
+## F030 — Naming the OOE shadow depth does not prevent recharge
+
+For the specified stronger-core return S, [the exact family](routes/AC_shadow_debt_recharge.md) with u=6807+12288t has n=1024u−5 and S^3(n)=(2187u−7)/2>n. The shadow depths are10→7→4→10; both endpoints freeze (L,epsilon,b,D,R,n mod3,q)=(2,1,0,1,0,1,10). This excludes only the stated lower-bounded per-label polynomial size/bitlength ranks and coordinatewise lower-bounded finite lex tuples.
+
+**Reopen with:** an unfrozen arithmetic feature, a nonpolynomial mechanism, or a different smaller-target certificate. The [positive burst theorem](lemmas/Root_Relative_Burst_Descent.md) handles a separate guarded exit and supplies no general recharge bound.
+
+
+## Constructive qualification of F030
+
+[The two-burst theorem](lemmas/Two_Burst_Recharge_Escape.md) proves strict original-root descent through a different guarded recharge mechanism, including an unbounded increase in q. F030's q10→7→4→10 family remains an exact obstruction for its stated polynomial rank class. The new theorem assumes a recharged depth divisible by3 and sufficient final halving; neither follows for F030's family. This is partial positive target selection, not a retraction of the scoped negative result.
+
+
+## F031 — A fixed forward-time bound covers the q5 residual cylinder
+
+**Status:** false for strict actual forward descent on every root of `22619+186624s`, s≥0. The [exact OOEO clock](lemmas/Finite_Growing_First_Return_Spells.md) and CRT give arbitrarily long spells during which every positive-time state is larger than its original root. All four terminal depths q0..q3 occur at every prescribed spell length J≥2. Thus a finite collection of bounded-length forward descent words cannot cover this entire cylinder.
+
+**Reopen with:** a variable-duration whole-excursion theorem or a genuinely stronger smaller-target relation. The fact that the OOEO spell ends does not repay its accumulated growth or control later re-entry. This is not a nontermination result.
+
+### F031 postspell strengthening and constructive qualification
+
+Even after fixing the OOEO spell length J≥2 and terminal q2, the [next exact odd-run length H](lemmas/Postspell_Odd_Run_Obstruction.md) can be independently arbitrarily large on the same q5 cylinder. Therefore no discharge-time bound depending only on J and that exit depth forces original-root descent. Optional ternary CRT simultaneously excludes any prescribed bounded smaller-ancestor time.
+
+The [guarded postspell theorem](lemmas/Postspell_Guarded_Root_Descent.md) supplies a complementary positive mechanism at every J,H: e≥J+H final actual even steps repay both growing phases and yield m<r. Its infinite CRT families do not exhaust the cylinder. The explicit source304592987 has the correct J2/H10 growing phases but only one factor of2 at the endpoint, so it fails the requisite final-halving guard. For every J,H, one of the two source parameters t=0,1 in the negative family has endpoint v2(z)=1, so failed final halving is available at every pair. The independent J2/H3/e2 control gives a residue20 target10816031 above its root4501595, showing that e=2 mod18 alone does not imply descent. This qualification preserves the obstruction while identifying the extra hypothesis that bypasses it for selected roots.
+
+## F032 — Bounded forward descent or bounded smaller-ancestor search covers the target
+
+**Status:** false even when the cover can choose arbitrarily between the two certificate types. For independently prescribed forward and inverse bounds, [the simultaneous CRT construction](lemmas/Bounded_Ancestor_Depth_Obstruction.md) gives infinitely many roots in `22619+186624s` that grow throughout the entire forward horizon and have no smaller residue20 ancestor within the inverse horizon. The construction combines an anchor20 ternary lift with the exact binary OOEO clock; it is one family defeating both bounds, rather than unrelated counterexamples.
+
+The anchor47 version separately freezes the three displayed ternary depths at3 and allows any prescribed q. Handling the anchor as a finite base case leaves infinitely many large lifts outside a bounded ancestor cover.
+
+**Reopen with:** unbounded valuation macros, a variable-depth recursive graph with an actual well-founded argument, or a stronger relation such as general forward/backward coalescence across the whole growing excursion. Neither arbitrary membership predicates nor more fixed inverse tails bypass the proved time-bound obstruction. This does not exclude all finite descriptions or all bounded mixed-coalescence certificates, and proves no divergent positive orbit.
+
+## Consolidated historical and parallel boundaries
+
+The entries below are mathematically distinct from F025–F032 above. Their original branch IDs collided numerically; the stable identifiers preserve both meanings. These are scoped method boundaries, not a list of reasons that proves Collatz.
+
+## LEGACY-PR6-F025 — extending the finite rewrite/inverse-word catalogue will close the residual set
+
+**Consolidation provenance:** historical `F025` at `215f8e6ca0afae71f9e743ea683cc7263079f24c`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `EQUIV / ARCH_GAP`.
+
+[The expanded rewrite note](lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md) adds valid decreasing predecessor rewrites, complete accelerated inverse
+fibers, and exact mixed-word residue classes. The enlarged relation is
+nonconfluent (`11` reduces to both `1` and irreducible `7`), its displayed
+irreducibles admit further mixed coalescences, and the pure exponent-`2`
+policy has no uniform successful depth. Most importantly, universal
+forward-inverse certificate coverage is logically equivalent to Collatz.
+
+**Do not repeat:** increasing finite inverse depth or adding isolated rewrite
+rules as though a larger catalogue by itself establishes universal coverage.
+
+**Reopen only if:** a new mechanism proves coverage by a weaker independently
+checkable invariant, or supplies a well-founded adaptive rank across every
+residual transition. The mechanism must survive nonconfluence and the exact
+pure-`a=2` obstruction.
+
+## LEGACY-PR6-F026 — finite prime-return or roughness windows exclude the divergent architecture
+
+**Consolidation provenance:** historical `F026` at `215f8e6ca0afae71f9e743ea683cc7263079f24c`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `TOO_WEAK / finite-window closure`.
+
+The correction-divisor identity gives exact first-return primes for finite
+valuation words. Prime-return gaps over pure valuation-`1` blocks are
+unbounded as the prime varies; every finite concatenation of individually
+admissible blocks for distinct designated primes is jointly realizable by a
+positive seed; and arbitrarily long growing prefixes can avoid every prime
+through any fixed threshold. The seed depends on the finite script.
+
+**Do not repeat:** larger finite prime lists, delayed-return windows, sieve
+thresholds, or rough-growth bounds as if they controlled one infinite orbit.
+
+**Reopen only if:** one fixed positive seed is retained and a genuinely global
+invariant couples all of its renewal blocks. The theorem must explain why the
+finite CRT constructions cannot persist for that same ordinary integer.
+
+## LEGACY-PR6-F027 — compatible finite valuation prefixes automatically give one positive infinite seed
+
+**Consolidation provenance:** historical `F027` at `215f8e6ca0afae71f9e743ea683cc7263079f24c`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE inference / 2-adic ghost`.
+
+Every finite valuation word has infinitely many positive realizations, but
+the compatible infinite residue system generally defines a `2`-adic point,
+not a positive ordinary integer. For bounded valuation alphabets,
+`F-BOUNDED-ALPHABET-ENDPOINT-GATE-001` makes the missing condition exact:
+positive realization is equivalent to eventual zero carry, normalized
+endpoint-residue vanishing, and strict subcubic root growth. None follows from
+finite-prefix realizability alone.
+
+The historical Thue--Morse anchor was an explicit instance of this boundary.
+The [subsequent prefix-return exclusion](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md) now proves that the specific unshifted `1+t_i` anchor has no positive ordinary-integer realization. Its valid `2`-adic product does not rescue that candidate. The general bounded-alphabet membership problem for other codes remains open.
+
+**Do not repeat:** compactness, nested congruences, a profinite limit, or a
+`2`-adic analytic identity as a positive-orbit construction without the
+ordinary-positive membership proof.
+
+**Reopen only if:** a different fixed code has proved eventual zero carry/endpoint vanishing, or another exact theorem constructs and verifies one positive seed through its entire infinite itinerary. The now-excluded Thue--Morse code is not an unresolved membership target.
+
+## LEGACY-AUDITED-F025 — two rational centers and three single-step edges support a genuine branch
+
+**Consolidation provenance:** historical `F025` at `a2761eda28f2ad7701e57e64e8acb80a89898618`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for the stated architecture.
+
+For positive labels and exact center edges `A-a->A`, `A-b->B`, `B-c->A`,
+elimination gives
+
+$$
+2^b(2^c+3)=2^a(2^b+3).
+$$
+
+Uniqueness of the power-of-two times odd normal form forces `a=b=c`, after
+which the two centers coincide. Exact synchronization to finitely many
+rational centers with one fixed denominator also forces the integer
+displacement to be zero by unbounded power-of-two divisibility.
+
+**Reopen only if:** a structurally different construction proves why the
+collapse or fixed-denominator synchronization equation no longer applies.
+Larger graphs, longer tokens, or moving/nonrational centers are not by
+themselves such a proof. See the [hostile audit](disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md).
+
+## LEGACY-AUDITED-F026 — one finite residue supplies a nonconstant Collatz first integral
+
+**Consolidation provenance:** historical `F026` at `a2761eda28f2ad7701e57e64e8acb80a89898618`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for the stated memoryless class.
+
+Every coloring of one finite residue ring preserved by every positive step of
+the full Collatz map is constant. Exact positive lifts remove the factors of
+`2` and `3` from the modulus; on the remaining quotient, invariance under the
+affine permutations `x->2x` and `x->3x+1` gives invariance under a transitive
+unit translation.
+
+**Reopen only if:** the proposed certificate contains genuinely path-dependent
+state, a changing modulus, a one-sided trap, or a ranked recursion not reducible
+to a memoryless invariant on one quotient. See the [hostile audit](disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md).
+
+## LEGACY-AUDITED-F027 — normalized polynomial divisibility yields a non-3 valuation ratchet
+
+**Consolidation provenance:** historical `F027` at `a2761eda28f2ad7701e57e64e8acb80a89898618`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for the canonically normalized subclass.
+
+On a fixed finite cycle of genuine affine macros, primitive positive-degree
+integer state polynomials with minimally cleared powers-of-two denominators
+and integral polynomial quotients first telescope in degree to constant
+quotients. Leading coefficients then force the normalized odd content product
+to be a power of `3`; positive gain at a base coprime to `3` is impossible.
+The resonant `p=3` case reduces to periodic-point displacement in this class.
+
+**Reopen only if:** the architecture changes the mathematical premises—such as
+using a proved nonlinear/component-coupled mechanism—rather than rescaling
+polynomials statewise or changing normalization. See the [hostile audit](disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md).
+
+## LEGACY-AUDITED-F028 — a ratio-convergent positive generator can be Collatz-divergent
+
+**Consolidation provenance:** historical `F028` at `a2761eda28f2ad7701e57e64e8acb80a89898618`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for pointwise ratio convergence.
+
+If a positive accelerated Collatz orbit has a finite real limit for
+`n_(k+1)/n_k`, discreteness forces the valuations eventually constant in the
+unbounded case. Valuation at least two gives eventual decrease; valuation one
+forces impossible divisibility of one fixed positive integer by every power
+of two. The bounded case eventually reaches the fixed orbit `1`.
+
+**Reopen only if:** the proposed generator's full one-step successive-state
+ratio has no finite real limit, together with exact ordinary-integer membership
+and forward invariance. See the [route packet](disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md).
+
+## YAH-SCALAR-NO-START — a first scalar-arctic dimension-one step starts YAH rule removal
+
+**Consolidation provenance:** historical `F025` at `479ed90d32e3bd7aeffe19f6422c9f7723e4e3e0`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for the stated standard first-step classes.
+
+The exact certificates in
+[`routes/A_yah_two_state_scalar_arctic_full_no_start.md`](routes/A_yah_two_state_scalar_arctic_full_no_start.md)
+exclude every first standard dimension-one arctic-natural rule-removal step:
+
+- `A-YAH-AN1-001`: for the original eleven-rule YAH system, neither a
+  full/extended step nor either relative-top opportunity from YAH Lemma 3.18
+  can start;
+- `A-YAH-2STATE-AN1-001`: for the fixed global 22-rule two-state labeling,
+  neither a full/extended step nor any of the ten corresponding labeled top
+  targets can start.
+
+The full checker verifies the two coefficient-independent positive
+cancellations, each of total mass 49. The top checker verifies 491 integer
+Farkas lemmas and 426 RUP clauses across the ten target cases:
+
+```powershell
+python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
+python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
+```
+
+**Do not promote beyond scope:** this does not exclude dimension at least two,
+other carriers or label algebras, dependency-pair or other transformations,
+non-coefficientwise orders, a separately proved closed reachable relation, a
+later scalar step after some other removal, YAH termination, or Collatz.
+
+**Reopen only if:** the proposal enters one of those genuinely different
+classes and supplies an exact orientation or termination certificate. A
+larger coefficient search in the same scalar class cannot bypass the
+coefficient-independent full obstruction or the exact top certificates.
+
+## TM-PREFIX-RETURN-EXCLUSION — A fixed Thue–Morse valuation code can be lifted to a positive divergent seed
+
+**Consolidation provenance:** historical `F031` at `991e41b12bfe38ad1f33589a4beec0678c4f9756`; this distinct ID prevents collisions with the later mathematics.
+
+**Old blocker:** the PR6 exact `1+t_i` anchor was a valid 2-adic construction,
+with positive-integer membership explicitly unresolved.
+
+**New mechanism:** [early returns of arbitrarily long initial words](disproof/TM_Prefix_Return_Exclusion_2026-09-05.md)
+force the same positive seed to violate an effective finite separation bound,
+unless the orbit returns exactly to that seed. Every nonerasing encoding by
+two fixed finite valuation words therefore has only periodic positive
+realizations. Growth excludes even those for the old anchor and the displayed
+fixed hard blocks p,q≥3.
+
+**First falsification controls:** code both symbols by `(2)` and start at1;
+this cycle must remain allowed by the general statement. The block `(1,1,3)`
+at55 reaches47, so the growing hard-block specialization requires p,q≥3.
+
+**Exact outcome:** the named code-family divergence mechanism is excluded;
+Collatz itself is not. Full proof is analytic, with narrow formal arithmetic.
+**Reopen only with:** a code outside the specified fixed morphic family or
+a different mathematical target. No universal recurrence theorem is assumed.
+
+## BLIND-PALETTE-001 — arbitrary finite monotone palette restores bounded progress
+
+**Consolidation provenance:** historical `BLIND-PALETTE-001` at `49721623303d76956c88db5c9906f8c7b4a586e1`; this distinct ID prevents collisions with the later mathematics.
+
+**Class:** `FALSE` for finitely many eventually nondecreasing functions and a
+uniform finite shortcut horizon. This includes nonnegative ranks selecting
+among finitely many real polynomial formulas (prose corollary).
+
+Arbitrary palette switching permits some rank decreases along increasing
+integer inputs. It cannot permit `r` successive strict decreases on an
+increasing path when there are only `r` monotone pieces: a repeated piece
+contradicts monotonicity. The forced Mersenne prefix of length `rH` then blocks
+universal strict rank progress within `H` shortcut steps. See the
+[proof and exact scope](lemmas/Finite_Palette_Bounded_Progress_Obstruction.md).
+
+The natural-valued statement is Lean checked. This extends the bounded
+integer-descent mechanism in F008 to arbitrary finite palette selection. It
+does not exclude unbounded progress horizons, infinitely many pieces,
+nonmonotone arithmetic dependence, or every finite-state proof system.
+
+**Reopen only if:** the proposal explicitly changes one of those assumptions
+and supplies a new deterministic progress argument. Finite residue decoration
+alone does not bypass this result.
 
 # Reopening template
 

@@ -1,18 +1,22 @@
 # Route A no-go — canonical adjacent-edge additive potentials
 
-**Status:** exact finite obstruction for one named interpretation class
+**Status:** exact finite obstruction for one named interpretation class;
+Lean certificate replay available
 **Scope:** not a termination or Collatz result
+
+Formal audit and reproducibility boundary:
+[`A_yah_finite_obstruction_formal_audit.md`](A_yah_finite_obstruction_formal_audit.md).
 
 Use the exact 11-rule mixed binary/ternary system of
 Yolcu--Aaronson--Heule (YAH), with canonical syntactic words `^w$`,
 `w in {f,t,0,1,2}*`.  Its dynamic rules implement the one-division shortcut
 map
 
-\[
+$$
 T(n)=n/2\quad(n\text{ even}),
 \qquad
 T(n)=(3n+1)/2\quad(n\text{ odd}),
-\]
+$$
 
 and its nine auxiliary rules preserve the represented value.
 
@@ -21,9 +25,9 @@ and its nine auxiliary rules preserve the represented value.
 Assign a real weight `W_ab` to every adjacent pair permitted in a canonical
 word and define
 
-\[
+$$
 \mu(s)=\sum_{ab\text{ adjacent in }s}W_{ab}. \tag{1}
-\]
+$$
 
 There are 36 variables if the empty word `^$` is allowed: 25 internal digit
 pairs, five left-boundary pairs, five right-boundary pairs, and `W_^$`.
@@ -33,7 +37,9 @@ unchanged.
 Suppose `mu` is bounded below on the canonical language, every legal
 canonical-context auxiliary instance weakly decreases it, and every legal
 canonical-context dynamic instance strictly decreases it.  No such `mu`
-exists.
+exists.  The finite contradiction actually uses only the twelve displayed
+auxiliary instances and the displayed `t$ -> 2$` instance; it never invokes
+the other dynamic rule.
 
 ## Integer cancellation certificate
 
@@ -58,24 +64,24 @@ Use multiplicity two only on row 9.
 
 The signed adjacent-edge counts cancel exactly to
 
-\[
+$$
 -W_{ff}. \tag{2}
-\]
+$$
 
 If the strict gap in row 1 is `delta>0`, summing the thirteen required
 inequalities gives
 
-\[
+$$
 -W_{ff}\ge\delta>0,
 \qquad W_{ff}<0. \tag{3}
-\]
+$$
 
 But for every integer `m >= 1`, the word `^f^m$` is syntactically canonical and
 
-\[
+$$
 \mu({}^\wedge f^m\$)
 =W_{{}^\wedge f}+(m-1)W_{ff}+W_{f\$}, \tag{4}
-\]
+$$
 
 which tends to minus infinity.  This contradicts boundedness below.
 
@@ -88,10 +94,15 @@ integer edge-count sum is exactly (2).
 ## Reproduction
 
 ```powershell
-python verification/yah_2local_edge_no_go.py
+python -B verification/yah_2local_edge_no_go.py
+C:\Users\Owner\.elan\bin\lake.exe env lean lean/CollatzWork/YAHFiniteObstruction.lean
 ```
 
-The expected final line is `PASS`.
+The Python replay must end in `PASS`.  The Lean module checks the exact rule
+table, legality and arithmetic of all thirteen rows, the cancellation to
+`-W_ff`, the forced sign `W_ff<0`, and the bounded-below contradiction under
+an explicit Archimedean/cofinal hypothesis.  Its public axiom report contains
+only Lean's standard `propext` and `Quot.sound`, and no `sorryAx`.
 
 ## Scope guard
 
@@ -107,10 +118,13 @@ termination by another mechanism, or termination of the YAH system itself.
 
 The system and its simulation theorem are from Yolcu, Aaronson, and Heule,
 *An Automated Approach to the Collatz Conjecture*, Journal of Automated
-Reasoning 67 (2023), Theorem 3:
+Reasoning 67 (2023), Theorem 3.17:
 <https://doi.org/10.1007/s10817-022-09658-8>.  The exact rules are in the
-official source file:
-<https://github.com/emreyolcu/rewriting-collatz/blob/main/rules/collatz-T.srs>.
+official source file, pinned here at upstream commit
+`8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340`:
+<https://github.com/emreyolcu/rewriting-collatz/blob/8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340/rules/collatz-T.srs>.
+That file has SHA-256
+`e4777832e5cf8148a54299dffa48cf10254629680961006f2c15bcb6c55aa9d2`.
 
 The 13-row cancellation is a project-specific finite certificate.  No exact
 published match was located in the bounded audit, but this is not a

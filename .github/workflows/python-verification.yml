@@ -26,3 +26,9 @@ jobs:
           python -S -B verification/yah_scalar_arctic_top/verify_top_certificates.py
           python -B verification/disproof_cycle_search.py
           python -B verification/check_note_graph.py
+          python -B verification/bounded_alphabet_endpoint_residue_gate.py
+          python -B verification/direct_H_return_renewal_regression.py
+          python -B verification/expanded_rewrite_inverse_word_regression.py
+          python -B verification/prime_renewal_regression.py
+          python -S -B verification/finite_palette_obstruction.py
+          python -S -O -B verification/finite_palette_obstruction.py

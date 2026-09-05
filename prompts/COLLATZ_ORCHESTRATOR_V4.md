@@ -28,13 +28,13 @@ The Collatz conjecture remains unresolved in this repository. Freeze the map
 used by each claim before deriving, computing, or formalizing.
 
 - Ordinary map on positive integers:
-  \[
+  $$
   U(n)=\begin{cases}n/2,&2\mid n,\\3n+1,&2\nmid n.\end{cases}
-  \]
+  $$
 - Accelerated odd map on positive odd integers:
-  \[
+  $$
   S(n)=\frac{3n+1}{2^{\nu_2(3n+1)}}.
-  \]
+  $$
 - If a stopped map is used, define its value at `1` explicitly. Never import
   an unstopped trace through the `1 -> 4` boundary without a boundary audit.
 
@@ -102,8 +102,7 @@ an explicit metamathematical theorem.
 
 Record termination separately:
 
-`ACCEPTANCE_MET | FALSIFIED | BLOCKED_EQUIVALENT | BLOCKED_NO_MECHANISM |
-BUDGET_EXHAUSTED | LOW_MARGINAL_VALUE | CONTEXT_RESTART | HUMAN_STOP`.
+`ACCEPTANCE_MET | FALSIFIED | BLOCKED_EQUIVALENT | BLOCKED_NO_MECHANISM | BUDGET_EXHAUSTED | LOW_MARGINAL_VALUE | CONTEXT_RESTART | HUMAN_STOP`.
 
 Examples, reformulations, large computations, rational or 2-adic ghosts, and
 an unproved missing lemma of Collatz-equivalent strength are not resolutions.

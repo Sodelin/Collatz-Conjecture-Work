@@ -1,0 +1,260 @@
+{
+  "date": "2026-09-05",
+  "main": "541006949cd72ae77b4d4540baa1a5584bd5ef73",
+  "prs": [
+    {
+      "number": 17,
+      "state": "open",
+      "draft": true,
+      "title": "Prove guarded root-relative progress for unbounded Collatz families",
+      "head": "1f627c6e87f18c491cfd23dcd2c6847b13fd8364",
+      "branch": "astra/root-relative-progress-2026-09-05",
+      "base": "astra/convergence-and-rank-audit-2026-09-05",
+      "updated": "2026-09-05T16:46:57Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/17"
+    },
+    {
+      "number": 20,
+      "state": "open",
+      "draft": true,
+      "title": "Exclude fixed Thue\u2013Morse divergence codes and formalize prefix collisions",
+      "head": "991e41b12bfe38ad1f33589a4beec0678c4f9756",
+      "branch": "astra/blind-word-complexity-2026-09-05",
+      "base": "astra/root-relative-progress-2026-09-05",
+      "updated": "2026-09-05T16:30:13Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/20"
+    },
+    {
+      "number": 19,
+      "state": "open",
+      "draft": false,
+      "title": "Prove finite-palette bounded-progress obstruction and configure free math tools",
+      "head": "49721623303d76956c88db5c9906f8c7b4a586e1",
+      "branch": "codex/blind-return-obstruction-2026-09-05",
+      "base": "main",
+      "updated": "2026-09-05T16:05:23Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/19"
+    },
+    {
+      "number": 18,
+      "state": "closed",
+      "draft": false,
+      "title": "Automate verified research releases and VibeMathed submission preparation",
+      "head": "fc7ad014752f9fc19d64431cc7eb6d560d498eab",
+      "branch": "publication/vibemathed-workflow-2026-09-05",
+      "base": "main",
+      "updated": "2026-09-05T15:26:54Z",
+      "merged": "2026-09-05T15:26:53Z",
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/18"
+    },
+    {
+      "number": 16,
+      "state": "open",
+      "draft": true,
+      "title": "Verify the universal Collatz quarter gap and audit full-closure routes",
+      "head": "33922a42e86646258d227d1e19c6cf7546a2f548",
+      "branch": "astra/convergence-and-rank-audit-2026-09-05",
+      "base": "main",
+      "updated": "2026-09-05T14:24:07Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/16"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "draft": false,
+      "title": "Add Collatz EGDC orchestration and bank exports",
+      "head": "021c0c2c40ff3f6032771c0890ac4bbaa77621f0",
+      "branch": "codex/egdc-v0.1.0-20260830",
+      "base": "main",
+      "updated": "2026-08-30T08:40:09Z",
+      "merged": "2026-08-30T08:40:08Z",
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/15"
+    },
+    {
+      "number": 13,
+      "state": "open",
+      "draft": true,
+      "title": "Add linked notebook, portable math, and audited source cards",
+      "head": "479ed90d32e3bd7aeffe19f6422c9f7723e4e3e0",
+      "branch": "codex/linked-research-notebook-20260824",
+      "base": "main",
+      "updated": "2026-08-24T21:05:49Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/13"
+    },
+    {
+      "number": 6,
+      "state": "open",
+      "draft": true,
+      "title": "Draft: mathematician handoff and audited endpoint-carry gate",
+      "head": "215f8e6ca0afae71f9e743ea683cc7263079f24c",
+      "branch": "codex/mathematician-handoff-2026-08-24-v2",
+      "base": "main",
+      "updated": "2026-08-24T21:05:23Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/6"
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "draft": true,
+      "title": "Render repository mathematics on GitHub and Obsidian",
+      "head": "c74ee9d6416f7922e2e08e7aae2552ce76a4c6b8",
+      "branch": "codex/markdown-math-rendering-20260824",
+      "base": "main",
+      "updated": "2026-08-24T20:13:38Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/14"
+    },
+    {
+      "number": 8,
+      "state": "open",
+      "draft": true,
+      "title": "Formalize fixed-algebra YAH finite obstruction certificates",
+      "head": "f35cebae5065bb14b5cd4cd58868c6efb568b08a",
+      "branch": "codex/yah-fixed-two-state-formal-2026-08-24",
+      "base": "main",
+      "updated": "2026-08-24T19:28:13Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/8"
+    },
+    {
+      "number": 12,
+      "state": "open",
+      "draft": true,
+      "title": "Integrate audited route closures and release graph",
+      "head": "a2761eda28f2ad7701e57e64e8acb80a89898618",
+      "branch": "codex/audited-route-release-2026-08-24",
+      "base": "main",
+      "updated": "2026-08-24T19:06:23Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/12"
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "draft": true,
+      "title": "docs: mathematician handoff snapshot (2026-08-25)",
+      "head": "098f9c4ced7e4c713dce8073930d8925014478d6",
+      "branch": "codex/mathematician-handoff-2026-08-25",
+      "base": "main",
+      "updated": "2026-08-24T15:00:46Z",
+      "merged": null,
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/pull/1"
+    }
+  ],
+  "branches": [
+    {
+      "commit": {
+        "sha": "991e41b12bfe38ad1f33589a4beec0678c4f9756",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/991e41b12bfe38ad1f33589a4beec0678c4f9756"
+      },
+      "name": "astra/blind-word-complexity-2026-09-05",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "33922a42e86646258d227d1e19c6cf7546a2f548",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/33922a42e86646258d227d1e19c6cf7546a2f548"
+      },
+      "name": "astra/convergence-and-rank-audit-2026-09-05",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "1f627c6e87f18c491cfd23dcd2c6847b13fd8364",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/1f627c6e87f18c491cfd23dcd2c6847b13fd8364"
+      },
+      "name": "astra/root-relative-progress-2026-09-05",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "a2761eda28f2ad7701e57e64e8acb80a89898618",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/a2761eda28f2ad7701e57e64e8acb80a89898618"
+      },
+      "name": "codex/audited-route-release-2026-08-24",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "49721623303d76956c88db5c9906f8c7b4a586e1",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/49721623303d76956c88db5c9906f8c7b4a586e1"
+      },
+      "name": "codex/blind-return-obstruction-2026-09-05",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "021c0c2c40ff3f6032771c0890ac4bbaa77621f0",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/021c0c2c40ff3f6032771c0890ac4bbaa77621f0"
+      },
+      "name": "codex/egdc-v0.1.0-20260830",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "479ed90d32e3bd7aeffe19f6422c9f7723e4e3e0",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/479ed90d32e3bd7aeffe19f6422c9f7723e4e3e0"
+      },
+      "name": "codex/linked-research-notebook-20260824",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "c74ee9d6416f7922e2e08e7aae2552ce76a4c6b8",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/c74ee9d6416f7922e2e08e7aae2552ce76a4c6b8"
+      },
+      "name": "codex/markdown-math-rendering-20260824",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "215f8e6ca0afae71f9e743ea683cc7263079f24c",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/215f8e6ca0afae71f9e743ea683cc7263079f24c"
+      },
+      "name": "codex/mathematician-handoff-2026-08-24-v2",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "098f9c4ced7e4c713dce8073930d8925014478d6",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/098f9c4ced7e4c713dce8073930d8925014478d6"
+      },
+      "name": "codex/mathematician-handoff-2026-08-25",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "f35cebae5065bb14b5cd4cd58868c6efb568b08a",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/f35cebae5065bb14b5cd4cd58868c6efb568b08a"
+      },
+      "name": "codex/yah-fixed-two-state-formal-2026-08-24",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "541006949cd72ae77b4d4540baa1a5584bd5ef73",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/541006949cd72ae77b4d4540baa1a5584bd5ef73"
+      },
+      "name": "main",
+      "protected": false
+    },
+    {
+      "commit": {
+        "sha": "fc7ad014752f9fc19d64431cc7eb6d560d498eab",
+        "url": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits/fc7ad014752f9fc19d64431cc7eb6d560d498eab"
+      },
+      "name": "publication/vibemathed-workflow-2026-09-05",
+      "protected": false
+    }
+  ],
+  "final_head_recheck_utc": "2026-09-05T17:45:43.641066+00:00",
+  "head_recheck_result": "All8 open contribution heads and main unchanged at final pre-publication read",
+  "issue_count": 8,
+  "issue_comment_count": 11
+}

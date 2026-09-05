@@ -1,0 +1,52 @@
+[
+  {
+    "source_commit": "215f8e6",
+    "old_id": "F025",
+    "new_id": "LEGACY-PR6-F025"
+  },
+  {
+    "source_commit": "215f8e6",
+    "old_id": "F026",
+    "new_id": "LEGACY-PR6-F026"
+  },
+  {
+    "source_commit": "215f8e6",
+    "old_id": "F027",
+    "new_id": "LEGACY-PR6-F027"
+  },
+  {
+    "source_commit": "a2761ed",
+    "old_id": "F025",
+    "new_id": "LEGACY-AUDITED-F025"
+  },
+  {
+    "source_commit": "a2761ed",
+    "old_id": "F026",
+    "new_id": "LEGACY-AUDITED-F026"
+  },
+  {
+    "source_commit": "a2761ed",
+    "old_id": "F027",
+    "new_id": "LEGACY-AUDITED-F027"
+  },
+  {
+    "source_commit": "a2761ed",
+    "old_id": "F028",
+    "new_id": "LEGACY-AUDITED-F028"
+  },
+  {
+    "source_commit": "479ed90",
+    "old_id": "F025",
+    "new_id": "YAH-SCALAR-NO-START"
+  },
+  {
+    "source_commit": "991e41b",
+    "old_id": "F031",
+    "new_id": "TM-PREFIX-RETURN-EXCLUSION"
+  },
+  {
+    "source_commit": "4972162",
+    "old_id": "BLIND-PALETTE-001",
+    "new_id": "BLIND-PALETTE-001"
+  }
+]

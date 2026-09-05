@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "crt_family_replays": 514,
+  "general_guard_replays": 279,
+  "first_growing_return_example": {
+    "k": 1,
+    "e": 2,
+    "u": 3623,
+    "root": 115931,
+    "target": 110045,
+    "steps": 8,
+    "first_return": 195635
+  },
+  "k0_example": {
+    "k": 0,
+    "e": 2,
+    "u": 4927,
+    "root": 19703,
+    "target": 16625,
+    "steps": 5
+  },
+  "all_root_ancestor_state": {
+    "v3_4r_plus_1": 4,
+    "theta": 4
+  },
+  "covered_initial_depths": "every q=3k+2 for k>=0, subject to displayed CRT/EXIT guards",
+  "scope": "new guarded residual infinite families; no universal exit or termination claim"
+}

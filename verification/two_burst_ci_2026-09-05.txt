@@ -1,0 +1,576 @@
+﻿2026-09-05T16:31:37.2090068Z Current runner version: '2.337.0'
+2026-09-05T16:31:37.2116740Z ##[group]Runner Image Provisioner
+2026-09-05T16:31:37.2117691Z Hosted Compute Agent
+2026-09-05T16:31:37.2118290Z Version: 20260828.587
+2026-09-05T16:31:37.2119005Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-05T16:31:37.2119771Z Build Date: 2026-08-28T16:44:25Z
+2026-09-05T16:31:37.2120455Z Worker ID: {8b19ffc1-213a-44e1-b0b9-2adf899394e0}
+2026-09-05T16:31:37.2121289Z Azure Region: eastus
+2026-09-05T16:31:37.2121858Z ##[endgroup]
+2026-09-05T16:31:37.2124035Z ##[group]Operating System
+2026-09-05T16:31:37.2125037Z Ubuntu
+2026-09-05T16:31:37.2125604Z 24.04.4
+2026-09-05T16:31:37.2126178Z LTS
+2026-09-05T16:31:37.2126695Z ##[endgroup]
+2026-09-05T16:31:37.2127269Z ##[group]Runner Image
+2026-09-05T16:31:37.2127951Z Image: ubuntu-24.04
+2026-09-05T16:31:37.2128536Z Version: 20260831.293.1
+2026-09-05T16:31:37.2129833Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260831.293/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-05T16:31:37.2131395Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260831.293
+2026-09-05T16:31:37.2132444Z ##[endgroup]
+2026-09-05T16:31:37.2133950Z ##[group]GITHUB_TOKEN Permissions
+2026-09-05T16:31:37.2136276Z Contents: read
+2026-09-05T16:31:37.2136887Z Metadata: read
+2026-09-05T16:31:37.2137550Z ##[endgroup]
+2026-09-05T16:31:37.2139673Z Secret source: Actions
+2026-09-05T16:31:37.2141160Z Prepare workflow directory
+2026-09-05T16:31:37.2475330Z Prepare all required actions
+2026-09-05T16:31:37.2588110Z Complete job name: verify
+2026-09-05T16:31:37.3506929Z ##[group]Run git init .
+2026-09-05T16:31:37.3507542Z [36;1mgit init .[0m
+2026-09-05T16:31:37.3508251Z [36;1mgit remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"[0m
+2026-09-05T16:31:37.3509082Z [36;1mgit fetch --depth=1 origin "$SOURCE_SHA"[0m
+2026-09-05T16:31:37.3509727Z [36;1mgit checkout --detach FETCH_HEAD[0m
+2026-09-05T16:31:37.4304848Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:31:37.4306322Z env:
+2026-09-05T16:31:37.4307293Z   SOURCE_SHA: 8ba40e7b80afd56e3c86edbb864e969bd5121226
+2026-09-05T16:31:37.4308428Z ##[endgroup]
+2026-09-05T16:31:37.4814185Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-05T16:31:37.4815676Z Initialized empty Git repository in /home/runner/work/Collatz-Conjecture-Work/Collatz-Conjecture-Work/.git/
+2026-09-05T16:31:37.4816865Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-05T16:31:37.4817864Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-05T16:31:37.4818616Z hint: call:
+2026-09-05T16:31:37.4819039Z hint:
+2026-09-05T16:31:37.4819577Z hint: 	git config --global init.defaultBranch <name>
+2026-09-05T16:31:37.4820229Z hint:
+2026-09-05T16:31:37.4820835Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-05T16:31:37.4821786Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-05T16:31:37.4822809Z hint:
+2026-09-05T16:31:37.4823309Z hint: 	git branch -m <name>
+2026-09-05T16:31:37.4823807Z hint:
+2026-09-05T16:31:37.4824449Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-05T16:31:37.8259635Z From https://github.com/Sodelin/Collatz-Conjecture-Work
+2026-09-05T16:31:37.8260808Z  * branch            8ba40e7b80afd56e3c86edbb864e969bd5121226 -> FETCH_HEAD
+2026-09-05T16:31:37.8478304Z HEAD is now at 8ba40e7 Normalize coefficient products in the two-burst Lean proof
+2026-09-05T16:31:37.8670940Z ##[group]Run test "$(cat lean-toolchain)" = 'leanprover/lean4:v4.33.1'
+2026-09-05T16:31:37.8672156Z [36;1mtest "$(cat lean-toolchain)" = 'leanprover/lean4:v4.33.1'[0m
+2026-09-05T16:31:37.8673477Z [36;1mcurl --fail --location --retry 3 -o "$RUNNER_TEMP/lean.tar.zst" \[0m
+2026-09-05T16:31:37.8674970Z [36;1m  https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst[0m
+2026-09-05T16:31:37.8676751Z [36;1mecho "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check[0m
+2026-09-05T16:31:37.8678584Z [36;1mtar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"[0m
+2026-09-05T16:31:37.8679723Z [36;1mecho "$RUNNER_TEMP/lean-4.33.1-linux/bin" >> "$GITHUB_PATH"[0m
+2026-09-05T16:31:37.8717227Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:31:37.8718012Z ##[endgroup]
+2026-09-05T16:31:37.8875685Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-09-05T16:31:37.8877401Z                                  Dload  Upload   Total   Spent    Left  Speed
+2026-09-05T16:31:37.9953235Z
+2026-09-05T16:31:37.9955267Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-09-05T16:31:37.9957172Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-09-05T16:31:38.1157515Z
+2026-09-05T16:31:39.1151429Z   3  543M    3 19.5M    0     0  85.4M      0  0:00:06 --:--:--  0:00:06 85.4M
+2026-09-05T16:31:40.1172393Z  46  543M   46  250M    0     0   203M      0  0:00:02  0:00:01  0:00:01  230M
+2026-09-05T16:31:40.3815453Z  88  543M   88  480M    0     0   215M      0  0:00:02  0:00:02 --:--:--  230M
+2026-09-05T16:31:40.3816989Z 100  543M  100  543M    0     0   218M      0  0:00:02  0:00:02 --:--:--  231M
+2026-09-05T16:31:40.7948496Z /home/runner/work/_temp/lean.tar.zst: OK
+2026-09-05T16:31:45.7788771Z ##[group]Run lean --version
+2026-09-05T16:31:45.7789174Z [36;1mlean --version[0m
+2026-09-05T16:31:45.7789456Z [36;1mlake build[0m
+2026-09-05T16:31:45.7789784Z [36;1mlake env lean lean/CollatzWork/Convergence.lean[0m
+2026-09-05T16:31:45.7829671Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:31:45.7830000Z ##[endgroup]
+2026-09-05T16:31:45.8483261Z Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-09-05T16:31:46.7945679Z ✔ [2/24] Built CollatzWork.InverseWordBoundaryStatement (762ms)
+2026-09-05T16:31:48.0024491Z ✔ [3/24] Built CollatzWork.ConvergenceStatement (1.3s)
+2026-09-05T16:31:48.1064846Z ℹ [4/24] Built CollatzWork.Disproof.TwoPumpDependency (2.2s)
+2026-09-05T16:31:48.1124249Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:174:0: 'CollatzWork.Disproof.twoPumpCoefficientDependencies' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.1154229Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:175:0: 'CollatzWork.Disproof.firstRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.1159339Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:176:0: 'CollatzWork.Disproof.secondRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.1202446Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:177:0: 'CollatzWork.Disproof.twoPumpConstantObstructionVanishes' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.1233984Z info: lean/CollatzWork/Disproof/TwoPumpDependency.lean:178:0: 'CollatzWork.Disproof.twoPumpSyzygy' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.5084295Z ℹ [5/24] Built CollatzWork.InverseWordBoundary (1.8s)
+2026-09-05T16:31:48.5164222Z info: lean/CollatzWork/InverseWordBoundary.lean:49:0: 'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+2026-09-05T16:31:48.5165896Z info: lean/CollatzWork/InverseWordBoundary.lean:50:0: 'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:48.8074044Z ✔ [6/24] Built CollatzWork.TwoBurstStatement (821ms)
+2026-09-05T16:31:48.9084140Z ✔ [7/24] Built CollatzWork.ResidueAncestorStatement (817ms)
+2026-09-05T16:31:49.3069639Z ✔ [8/24] Built CollatzWork.RootDescentStatement (863ms)
+2026-09-05T16:31:49.6083320Z ✔ [9/24] Built CollatzWork.QuarterGapStatement (872ms)
+2026-09-05T16:31:49.6113745Z ⚠ [10/24] Built CollatzWork.BlockArithmetic (3.6s)
+2026-09-05T16:31:49.6143904Z warning: lean/CollatzWork/BlockArithmetic.lean:23:50: Variable name `hB` is not explicitly referenced.
+2026-09-05T16:31:49.6233173Z
+2026-09-05T16:31:49.6284770Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-09-05T16:31:49.6314201Z   [apply] _hB
+2026-09-05T16:31:49.6413051Z
+2026-09-05T16:31:49.6453988Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-09-05T16:31:49.6574172Z info: lean/CollatzWork/BlockArithmetic.lean:141:0: 'CollatzWork.blockNumerator12_exact_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:49.6634020Z info: lean/CollatzWork/BlockArithmetic.lean:142:0: 'CollatzWork.blockNumerator12_strict_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:49.6723839Z info: lean/CollatzWork/BlockArithmetic.lean:143:0: 'CollatzWork.blockNumerator12_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:50.5076559Z ✔ [11/24] Built CollatzWork.QuarterGapUniversalStatement (887ms)
+2026-09-05T16:31:50.6097161Z ✔ [12/24] Built CollatzWork.FirstContractionStatement (951ms)
+2026-09-05T16:31:51.0082164Z ℹ [13/24] Built CollatzWork.RefinedMersenneChild (2.1s)
+2026-09-05T16:31:51.0083900Z info: lean/CollatzWork/RefinedMersenneChild.lean:238:0: 'CollatzWork.refinedChild_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:51.0086403Z info: lean/CollatzWork/RefinedMersenneChild.lean:239:0: 'CollatzWork.refinedParent_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.0088119Z info: lean/CollatzWork/RefinedMersenneChild.lean:240:0: 'CollatzWork.refinedChild_iter' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.0089860Z info: lean/CollatzWork/RefinedMersenneChild.lean:241:0: 'CollatzWork.refinedMersenneChild_coalesces' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.3086118Z ⚠ [14/24] Built CollatzWork.QuarterGap (1.7s)
+2026-09-05T16:31:51.3109050Z warning: lean/CollatzWork/QuarterGap.lean:49:49: This simp argument is unused:
+2026-09-05T16:31:51.3110142Z   Nat.mul_assoc
+2026-09-05T16:31:51.3110799Z
+2026-09-05T16:31:51.3111257Z Hint: Omit it from the simp argument list.
+2026-09-05T16:31:51.3112282Z   [apply] simp [Nat.pow_succ, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm, Nat.add_assoc]
+2026-09-05T16:31:51.3113292Z
+2026-09-05T16:31:51.3113881Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T16:31:51.3115249Z info: lean/CollatzWork/QuarterGap.lean:140:0: 'CollatzWork.orbitAffine' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.3129448Z info: lean/CollatzWork/QuarterGap.lean:141:0: 'CollatzWork.mechanicalEnvelope' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.3131383Z info: lean/CollatzWork/QuarterGap.lean:142:0: 'CollatzWork.affineQuarterCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:51.3133558Z info: lean/CollatzWork/QuarterGap.lean:143:0: 'CollatzWork.smallMechanicalCertificate' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.3135681Z info: lean/CollatzWork/QuarterGap.lean:144:0: 'CollatzWork.firstContraction_quarter_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:51.3137884Z info: lean/CollatzWork/QuarterGap.lean:145:0: 'CollatzWork.smallFirstContractionQuarterGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:51.5089845Z ℹ [15/24] Built CollatzWork.Convergence (490ms)
+2026-09-05T16:31:51.5114063Z info: lean/CollatzWork/Convergence.lean:142:0: 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T16:31:51.5150219Z info: lean/CollatzWork/Convergence.lean:143:0: 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T16:31:51.5154248Z info: lean/CollatzWork/Convergence.lean:144:0: 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T16:31:51.5188391Z info: lean/CollatzWork/Convergence.lean:145:0: 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.5215526Z info: lean/CollatzWork/Convergence.lean:146:0: 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.5217714Z info: lean/CollatzWork/Convergence.lean:147:0: 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.5219504Z info: lean/CollatzWork/Convergence.lean:148:0: 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:51.5221596Z info: lean/CollatzWork/Convergence.lean:149:0: 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:51.5224115Z info: lean/CollatzWork/Convergence.lean:150:0: 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:52.0104605Z ⚠ [16/24] Built CollatzWork.FirstContraction (697ms)
+2026-09-05T16:31:52.0113541Z warning: lean/CollatzWork/FirstContraction.lean:38:43: This simp argument is unused:
+2026-09-05T16:31:52.0143947Z   Nat.mul_add
+2026-09-05T16:31:52.0207847Z
+2026-09-05T16:31:52.0286419Z Hint: Omit it from the simp argument list.
+2026-09-05T16:31:52.0334218Z   [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+2026-09-05T16:31:52.0392900Z
+2026-09-05T16:31:52.0493498Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T16:31:52.0517649Z warning: lean/CollatzWork/FirstContraction.lean:38:56: This simp argument is unused:
+2026-09-05T16:31:52.0533552Z   Nat.mul_assoc
+2026-09-05T16:31:52.0534037Z
+2026-09-05T16:31:52.0534453Z Hint: Omit it from the simp argument list.
+2026-09-05T16:31:52.0535616Z   [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm]
+2026-09-05T16:31:52.0536567Z
+2026-09-05T16:31:52.0537110Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T16:31:52.0538811Z info: lean/CollatzWork/FirstContraction.lean:64:0: 'CollatzWork.firstContractionTime' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.0540805Z info: lean/CollatzWork/FirstContraction.lean:65:0: 'CollatzWork.mechanicalCoarseBound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.0543157Z info: lean/CollatzWork/FirstContraction.lean:66:0: 'CollatzWork.firstContractionThirdGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:52.0570967Z ⚠ [17/24] Built CollatzWork.FloorPower (675ms)
+2026-09-05T16:31:52.0571976Z warning: lean/CollatzWork/FloorPower.lean:41:20: This simp argument is unused:
+2026-09-05T16:31:52.0573156Z   Nat.mul_left_comm
+2026-09-05T16:31:52.0573698Z
+2026-09-05T16:31:52.0574064Z Hint: Omit it from the simp argument list.
+2026-09-05T16:31:52.0574947Z   [apply] simp only [Nat.pow_add, Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm]
+2026-09-05T16:31:52.0575642Z
+2026-09-05T16:31:52.0576193Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T16:31:52.0577556Z info: lean/CollatzWork/FloorPower.lean:51:0: 'CollatzWork.floorPower_mul' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.0579234Z info: lean/CollatzWork/FloorPower.lean:52:0: 'CollatzWork.floorPower_mul_canonical' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.8154235Z ℹ [18/24] Built CollatzWork.RootDescent (1.3s)
+2026-09-05T16:31:52.8183815Z info: lean/CollatzWork/RootDescent.lean:160:0: 'CollatzWork.rootDescentBurst' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.8213647Z info: lean/CollatzWork/RootDescent.lean:161:0: 'CollatzWork.rootDescent_power_margin' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:52.8215484Z info: lean/CollatzWork/RootDescent.lean:162:0: 'CollatzWork.rootDescent' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:52.8244401Z info: lean/CollatzWork/RootDescent.lean:163:0: 'CollatzWork.rootDescent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:52.8273690Z info: lean/CollatzWork/RootDescent.lean:164:0: 'CollatzWork.rootDescentAncestor' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:53.6224109Z ℹ [19/24] Built CollatzWork.QuarterGapUniversal (1.6s)
+2026-09-05T16:31:53.6233893Z info: lean/CollatzWork/QuarterGapUniversal.lean:163:0: 'CollatzWork.mechanical_twelve_identity' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:53.6274029Z info: lean/CollatzWork/QuarterGapUniversal.lean:164:0: 'CollatzWork.mechanical_twelve_propagation' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:53.6323861Z info: lean/CollatzWork/QuarterGapUniversal.lean:165:0: 'CollatzWork.mechanical_large_base' does not depend on any axioms
+2026-09-05T16:31:53.6363824Z info: lean/CollatzWork/QuarterGapUniversal.lean:166:0: 'CollatzWork.mechanical_large_bound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:53.6393772Z info: lean/CollatzWork/QuarterGapUniversal.lean:167:0: 'CollatzWork.mechanical_fifteen_failure' does not depend on any axioms
+2026-09-05T16:31:53.6444049Z info: lean/CollatzWork/QuarterGapUniversal.lean:168:0: 'CollatzWork.universalMechanicalQuarterCertificate' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:53.6454221Z info: lean/CollatzWork/QuarterGapUniversal.lean:169:0: 'CollatzWork.firstContractionQuarterGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:54.7207970Z ⚠ [20/24] Built CollatzWork.TwoBurst (1.9s)
+2026-09-05T16:31:54.7209116Z warning: lean/CollatzWork/TwoBurst.lean:67:43: This simp argument is unused:
+2026-09-05T16:31:54.7209853Z   Nat.mul_left_comm
+2026-09-05T16:31:54.7210086Z
+2026-09-05T16:31:54.7210283Z Hint: Omit it from the simp argument list.
+2026-09-05T16:31:54.7210964Z   [apply] simp [Nat.mul_assoc, Nat.mul_comm]
+2026-09-05T16:31:54.7214685Z
+2026-09-05T16:31:54.7215116Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-09-05T16:31:54.7216613Z info: lean/CollatzWork/TwoBurst.lean:187:0: 'CollatzWork.twoBurst_power_margin' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:31:54.7218282Z info: lean/CollatzWork/TwoBurst.lean:188:0: 'CollatzWork.twoBurstDescent' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:54.7220098Z info: lean/CollatzWork/TwoBurst.lean:189:0: 'CollatzWork.twoBurst_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:31:54.9210383Z ℹ [21/24] Built CollatzWork.ResidueAncestorTails (2.1s)
+2026-09-05T16:31:54.9214471Z info: lean/CollatzWork/ResidueAncestorTails.lean:176:0: 'CollatzWork.residueAncestor_refinedTail' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:09.8364111Z ℹ [22/24] Built CollatzWork.ResidueAncestor (14s)
+2026-09-05T16:32:09.8365521Z info: lean/CollatzWork/ResidueAncestor.lean:166:0: 'CollatzWork.residueAncestor_powerBound' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:09.8366766Z info: lean/CollatzWork/ResidueAncestor.lean:167:0: 'CollatzWork.residueAncestor_normalized' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:09.8367748Z info: lean/CollatzWork/ResidueAncestor.lean:168:0: 'CollatzWork.residueAncestor' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:09.8368724Z info: lean/CollatzWork/ResidueAncestor.lean:169:0: 'CollatzWork.residueAncestor_factor_unit' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:09.8369734Z info: lean/CollatzWork/ResidueAncestor.lean:170:0: 'CollatzWork.residueAncestor_of_divisibility' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:10.1366555Z ✔ [23/24] Built CollatzWork (336ms)
+2026-09-05T16:32:10.1371030Z Build completed successfully (24 jobs).
+2026-09-05T16:32:10.5512466Z 'CollatzWork.converges_onceAccelerated_iff' does not depend on any axioms
+2026-09-05T16:32:10.5513743Z 'CollatzWork.converges_shortcutIter_iff' depends on axioms: [propext]
+2026-09-05T16:32:10.5514609Z 'CollatzWork.converges_iff_of_coalesces' depends on axioms: [propext]
+2026-09-05T16:32:10.5515672Z 'CollatzWork.allPositiveConverge_of_smallerCoalescence' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:10.5516782Z 'CollatzWork.smallerCoalescenceCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:10.5517738Z 'CollatzWork.descentCriterion' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:10.5518300Z 'CollatzWork.refinedParent_converges_iff_child' depends on axioms: [propext, Quot.sound]
+2026-09-05T16:32:10.5519019Z 'CollatzWork.refinedParent_has_smaller_coalescence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:32:10.5519789Z 'CollatzWork.refinedParent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T16:32:10.5888664Z ##[group]Run python3 -B verification/trajectory_normal_form_regression.py
+2026-09-05T16:32:10.5889501Z [36;1mpython3 -B verification/trajectory_normal_form_regression.py[0m
+2026-09-05T16:32:10.5890351Z [36;1mpython3 -S -B verification/yah_scalar_arctic_top/verify_top_certificates.py[0m
+2026-09-05T16:32:10.5891131Z [36;1mpython3 -B verification/check_note_graph.py[0m
+2026-09-05T16:32:10.5929822Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:32:10.5930081Z ##[endgroup]
+2026-09-05T16:32:13.4409181Z odd starts checked = 500000 (1 <= n <= 1000000)
+2026-09-05T16:32:13.4410078Z macro-edge counts = {'a>=2': 753030, 'c even >= 6': 31572, 'c odd': 266021}
+2026-09-05T16:32:13.4410865Z maximum normalizer edges = 19
+2026-09-05T16:32:13.4411512Z terminal counts = {'1': 5813, '27 mod 32': 96125, '7 mod 8': 398062}
+2026-09-05T16:32:13.4412278Z exhaustion counterfamily checked = 0 <= s <= 10000
+2026-09-05T16:32:13.4413105Z PASS
+2026-09-05T16:32:14.4209076Z CASE TOP_BOUNDARY_ORIGINAL X_^0[0]: PASS; atoms=100 lemmas=50
+2026-09-05T16:32:14.4209781Z CASE TOP_BOUNDARY_ORIGINAL X_^0[1]: PASS; atoms=100 lemmas=60
+2026-09-05T16:32:14.4210472Z CASE TOP_BOUNDARY_ORIGINAL X_^1[0]: PASS; atoms=102 lemmas=36
+2026-09-05T16:32:14.4211081Z CASE TOP_BOUNDARY_ORIGINAL X_^1[1]: PASS; atoms=102 lemmas=47
+2026-09-05T16:32:14.4211688Z CASE TOP_BOUNDARY_ORIGINAL X_^2[0]: PASS; atoms=102 lemmas=54
+2026-09-05T16:32:14.4212310Z CASE TOP_BOUNDARY_ORIGINAL X_^2[1]: PASS; atoms=102 lemmas=77
+2026-09-05T16:32:14.4213183Z CASE TOP_DYNAMIC_REVERSED D_f[0]: PASS; atoms=100 lemmas=32
+2026-09-05T16:32:14.4213843Z CASE TOP_DYNAMIC_REVERSED D_f[1]: PASS; atoms=100 lemmas=37
+2026-09-05T16:32:14.4214424Z CASE TOP_DYNAMIC_REVERSED D_t[0]: PASS; atoms=102 lemmas=41
+2026-09-05T16:32:14.4214990Z CASE TOP_DYNAMIC_REVERSED D_t[1]: PASS; atoms=102 lemmas=57
+2026-09-05T16:32:14.4215534Z published full-system compatibility = PASS
+2026-09-05T16:32:14.4216258Z instance fingerprint = 7b0dad87f3d82606686251f72e4aaf5acd8f3f4fe97d615a8f40b5d320f57d9d
+2026-09-05T16:32:14.4217225Z certificate sha256 = dafb9bfcbe02a32905fc46d99ceb97b9b296059869d77ee42cff5c99d04592d6
+2026-09-05T16:32:14.4217913Z cases = 10
+2026-09-05T16:32:14.4218199Z Farkas lemmas = 491
+2026-09-05T16:32:14.4218509Z RUP clauses = 426
+2026-09-05T16:32:14.4218854Z total positive multiplier mass = 10183
+2026-09-05T16:32:14.4219290Z checker elapsed seconds = 0.933
+2026-09-05T16:32:14.4219697Z TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS
+2026-09-05T16:32:14.5053657Z markdown notes = 73
+2026-09-05T16:32:14.5054125Z local Markdown links checked = 485
+2026-09-05T16:32:14.5054606Z broken local Markdown links = 0
+2026-09-05T16:32:14.5055017Z notes reachable from README.md = 73
+2026-09-05T16:32:14.5055429Z unreachable notes = 0
+2026-09-05T16:32:14.5055766Z NOTE_GRAPH = PASS
+2026-09-05T16:32:14.5190626Z ##[group]Run python3 -B verification/near_return_quarter_bound.py
+2026-09-05T16:32:14.5191171Z [36;1mpython3 -B verification/near_return_quarter_bound.py[0m
+2026-09-05T16:32:14.5191618Z [36;1mpython3 -B verification/hard_return_frozen_debt_check.py[0m
+2026-09-05T16:32:14.5192048Z [36;1mpython3 -B verification/three_adic_hard_return_check.py[0m
+2026-09-05T16:32:14.5192512Z [36;1mpython3 -B verification/primary_bridge_counterexamples.py[0m
+2026-09-05T16:32:14.5193334Z [36;1mpython3 -B verification/block_arithmetic_certificate.py[0m
+2026-09-05T16:32:14.5193784Z [36;1mpython3 -B verification/finite_residue_hard_return_check.py[0m
+2026-09-05T16:32:14.5194227Z [36;1mpython3 -B verification/core_residue_obstruction_check.py[0m
+2026-09-05T16:32:14.5194835Z [36;1mpython3 -B verification/mod27_rank_check.py[0m
+2026-09-05T16:32:14.5231849Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:32:14.5232103Z ##[endgroup]
+2026-09-05T16:32:14.6507809Z M_0=0
+2026-09-05T16:32:14.6508464Z M_1=1
+2026-09-05T16:32:14.6508872Z M_2=7/4
+2026-09-05T16:32:14.6509283Z M_3=23/9
+2026-09-05T16:32:14.6509696Z M_4=119/36
+2026-09-05T16:32:14.6510107Z M_5=319/81
+2026-09-05T16:32:14.6510511Z M_6=1213/256
+2026-09-05T16:32:14.6510934Z M_7=5581/1024
+2026-09-05T16:32:14.6511364Z M_8=14501/2304
+2026-09-05T16:32:14.6511789Z M_9=64565/9216
+2026-09-05T16:32:14.6512217Z M_10=159181/20736
+2026-09-05T16:32:14.6512961Z M_11=695773/82944
+2026-09-05T16:32:14.6513261Z M_12=2349463/262144
+2026-09-05T16:32:14.6513618Z 12-block slack=9833/262144; remainder excess=11/36
+2026-09-05T16:32:14.6514183Z PASS: S_s < 3*s/4 for every s >= 108, by the block theorem
+2026-09-05T16:32:14.6514756Z PASS: 4*C_s <= s*2^tau_s for 1 <= s <= 107; equality only s=1
+2026-09-05T16:32:14.6515364Z THEOREM CERTIFICATE: every first-contraction gap d>=0 obeys 4*d<s
+2026-09-05T16:32:14.6515832Z L8 frontier quarter bound: d <= 18,014,357,997
+2026-09-05T16:32:14.6516201Z L8 frontier quarter bound with L11: d <= 18,014,357,996
+2026-09-05T16:32:14.6516596Z L8 frontier exact 1024-block bound: d <= 17,340,869,985
+2026-09-05T16:32:14.6517019Z L8 frontier exact 1024-block bound with L11: d <= 17,340,869,984
+2026-09-05T16:32:14.6517484Z PASS: exact arithmetic certificate; no Collatz closure asserted
+2026-09-05T16:32:14.6863778Z PASS: universal affine branch guards and factor identities
+2026-09-05T16:32:14.6864511Z PASS: independent F/debt replay for 1003 parameters
+2026-09-05T16:32:14.6865177Z Smallest displayed family member: 47771 -> 80615 -> 204059
+2026-09-05T16:32:14.6865782Z Parameter growth ratio limit: 2187/512
+2026-09-05T16:32:14.6866387Z Scope: exact family and regression; Collatz remains unresolved.
+2026-09-05T16:32:14.7227694Z PASS: universal affine parity guards and cofactor factorizations
+2026-09-05T16:32:14.7228705Z PASS: 515 independent witness-family replays
+2026-09-05T16:32:14.7229475Z PASS: raw hard-macro coordinate/reset replay on hard odd n<20000
+2026-09-05T16:32:14.7230168Z Witness t=0: 244379 -> 412391 -> 1043867
+2026-09-05T16:32:14.7230838Z Endpoint coordinates: (a,b,lambda)=(2,1,20365) -> (2,1,86989)
+2026-09-05T16:32:14.7231623Z Scope: coordinate-rank obstruction; Collatz remains unresolved
+2026-09-05T16:32:14.7533052Z PASS: U does not induce a deterministic map on odd residues modulo16
+2026-09-05T16:32:14.7533903Z PASS: elementary two-rule ranked-system separation regression
+2026-09-05T16:32:14.7534661Z PASS: convergent odd orbit has delta_K=1-2^(1-K), not summable
+2026-09-05T16:32:14.7535393Z PASS: 256 exact inverse-branch words have only valuations1 or2
+2026-09-05T16:32:14.7536242Z Scope: finite witnesses; infinite proofs and limitations are in the audit note
+2026-09-05T16:32:14.8551810Z region | left | right | D/B | 12*3^12*left - 4D/B | exact-M12 slack
+2026-09-05T16:32:14.8554306Z 0 | 1 | 256/243 | 1568693 | 102520 | 4976864269
+2026-09-05T16:32:14.8555035Z 1 | 256/243 | 65536/59049 | 1662005 | 70444 | 2781544192
+2026-09-05T16:32:14.8555680Z 2 | 65536/59049 | 32/27 | 1760309 | 36652 | 468779008
+2026-09-05T16:32:14.8556918Z 3 | 32/27 | 8192/6561 | 1865285 | 97132 | 4301184736
+2026-09-05T16:32:14.8557520Z 4 | 8192/6561 | 4/3 | 1975877 | 59116 | 1699323904
+2026-09-05T16:32:14.8557934Z 5 | 4/3 | 1024/729 | 2093975 | 127156 | 6010780348
+2026-09-05T16:32:14.8558354Z 6 | 1024/729 | 262144/177147 | 2218391 | 84388 | 3083686912
+2026-09-05T16:32:14.8558780Z 7 | 262144/177147 | 128/81 | 2349463 | 39332 | 0
+2026-09-05T16:32:14.8559190Z 8 | 128/81 | 32768/19683 | 2489431 | 119972 | 5109874304
+2026-09-05T16:32:14.8559528Z 9 | 32768/19683 | 16/9 | 2636887 | 69284 | 1640726528
+2026-09-05T16:32:14.8559854Z 10 | 16/9 | 4096/2187 | 2794351 | 160004 | 7389335120
+2026-09-05T16:32:14.8560176Z 11 | 4096/2187 | 2 | 2960239 | 102980 | 3486543872
+2026-09-05T16:32:14.8560576Z PASS: 12 exhaustive threshold regions; exact M12=2349463/262144
+2026-09-05T16:32:14.8561288Z PASS: 32896 integer regressions; 2047 dyadic-floor reconstructions
+2026-09-05T16:32:14.8561744Z PASS: all 12 normalized-envelope induction bases 16..27
+2026-09-05T16:32:14.8562221Z PASS: s=15 fails by 2,419,735; cutoff 16 is sharp with the proved propagation
+2026-09-05T16:32:15.0447259Z M=1: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0448249Z M=2: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0449115Z M=3: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0449974Z M=4: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0450828Z M=5: period=5, positive seed bits=57, uniform progression PASS
+2026-09-05T16:32:15.0451697Z M=7: period=1, positive seed bits=21, uniform progression PASS
+2026-09-05T16:32:15.0452271Z M=9: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0453013Z M=16: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0453511Z M=25: period=25, positive seed bits=239, uniform progression PASS
+2026-09-05T16:32:15.0453969Z M=27: period=1, positive seed bits=21, uniform progression PASS
+2026-09-05T16:32:15.0454417Z M=32: period=1, positive seed bits=18, uniform progression PASS
+2026-09-05T16:32:15.0454875Z M=67: period=67, positive seed bits=617, uniform progression PASS
+2026-09-05T16:32:15.0455359Z M=125: period=125, positive seed bits=1141, uniform progression PASS
+2026-09-05T16:32:15.0455844Z M=335: period=335, positive seed bits=3025, uniform progression PASS
+2026-09-05T16:32:15.0456320Z M=512: period=1, positive seed bits=21, uniform progression PASS
+2026-09-05T16:32:15.0456772Z M=729: period=1, positive seed bits=23, uniform progression PASS
+2026-09-05T16:32:15.0457235Z M=1001: period=60, positive seed bits=561, uniform progression PASS
+2026-09-05T16:32:15.0457888Z M=73240200550326335474382902222999263676077178880: period=5, positive seed bits=200, uniform progression PASS
+2026-09-05T16:32:15.0458605Z PASS: 18 uniform affine certificates; 90 integer path replays; 6330 F edges
+2026-09-05T16:32:15.0459249Z Scope: finite positive shadows with residue return; not a positive cycle or a divergence proof.
+2026-09-05T16:32:15.0820887Z {
+2026-09-05T16:32:15.0821330Z   "status": "PASS",
+2026-09-05T16:32:15.0821738Z   "exact_certificate": {
+2026-09-05T16:32:15.0822036Z     "universal_word": "OOEO",
+2026-09-05T16:32:15.0822321Z     "n": "1536*M*v-5",
+2026-09-05T16:32:15.0822796Z     "m": "1728*M*v-5",
+2026-09-05T16:32:15.0823058Z     "domain": "M>=1, v>=1",
+2026-09-05T16:32:15.0823334Z     "same_labels": [
+2026-09-05T16:32:15.0823573Z       2,
+2026-09-05T16:32:15.0823779Z       1,
+2026-09-05T16:32:15.0823984Z       0,
+2026-09-05T16:32:15.0824188Z       1,
+2026-09-05T16:32:15.0824388Z       0,
+2026-09-05T16:32:15.0824603Z       1
+2026-09-05T16:32:15.0824807Z     ],
+2026-09-05T16:32:15.0825033Z     "growth_ratio_limit": "9/8",
+2026-09-05T16:32:15.0825495Z     "residue20_corollary": "M divisible by 27: first-return word OEO, growth 9/8",
+2026-09-05T16:32:15.0826054Z     "stronger_targets": "odd 4 mod 9; within 20 mod 27",
+2026-09-05T16:32:15.0826439Z     "auxiliary_composition_self_loop": [
+2026-09-05T16:32:15.0826754Z       425,
+2026-09-05T16:32:15.0827297Z       638,
+2026-09-05T16:32:15.0827508Z       319,
+2026-09-05T16:32:15.0827732Z       479,
+2026-09-05T16:32:15.0827937Z       425
+2026-09-05T16:32:15.0828142Z     ]
+2026-09-05T16:32:15.0828342Z   },
+2026-09-05T16:32:15.0828548Z   "replay": {
+2026-09-05T16:32:15.0828791Z     "core_witness_replays": 726,
+2026-09-05T16:32:15.0829091Z     "F026_replays": 101
+2026-09-05T16:32:15.0829336Z   },
+2026-09-05T16:32:15.0829742Z   "scope": "auxiliary finite-residue polynomial-rank obstruction; no Collatz closure"
+2026-09-05T16:32:15.0830254Z }
+2026-09-05T16:32:15.2849480Z PASS: 15 core residues, 25 internal colored edges, all-input contraction <=20/21
+2026-09-05T16:32:15.2850618Z h = {1: 2, 2: 1, 4: 0, 5: 1, 7: 2, 8: 0, 10: 2, 11: 1, 14: 1, 16: 2, 17: 0, 19: 2, 22: 0, 23: 1, 25: 2}
+2026-09-05T16:32:15.2851683Z rank phases: 3(divisible by3), 2(core linear), 1(26/13 exit debt), 0(target)
+2026-09-05T16:32:15.2852449Z PASS: 200000 starting-state rank regressions; phase counts {0: 7409, 1: 14814, 2: 111111, 3: 66666}
+2026-09-05T16:32:15.2853442Z PASS: prescribed 26-loop lengths through 1024 odd steps
+2026-09-05T16:32:15.2854016Z Ansari n=1 claimed equality fails: [3, 7, 11, 15, 19, 23, 27, 31] != [3, 7, 15, 19]
+2026-09-05T16:32:15.2854703Z Witness11 belongs to F'_1\A' but notF2; this refutes the proof step, not Collatz.
+2026-09-05T16:32:15.2855382Z Ansari Lemma3.2 also omits3: all ternary digits zero put3 in every F_n.
+2026-09-05T16:32:15.2916517Z ##[group]Run for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge q2_exit_descent_check two_burst_recharge_escape_check complementary_ancestor_check; do
+2026-09-05T16:32:15.2918178Z [36;1mfor checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge q2_exit_descent_check two_burst_recharge_escape_check complementary_ancestor_check; do[0m
+2026-09-05T16:32:15.2919161Z [36;1m  python3 -B "verification/${checker}.py"[0m
+2026-09-05T16:32:15.2919517Z [36;1m  python3 -O -B "verification/${checker}.py"[0m
+2026-09-05T16:32:15.2919823Z [36;1mdone[0m
+2026-09-05T16:32:15.2955456Z shell: /usr/bin/bash -e {0}
+2026-09-05T16:32:15.2955727Z ##[endgroup]
+2026-09-05T16:32:15.6113272Z {
+2026-09-05T16:32:15.6113937Z   "status": "passed",
+2026-09-05T16:32:15.6114324Z   "finite_replays": 24930,
+2026-09-05T16:32:15.6115090Z   "universal_theorem": "all r=20 mod27 with v3(4r+1)>=21 have explicit smaller S ancestor",
+2026-09-05T16:32:15.6115804Z   "covered_old_self_loop_example": {
+2026-09-05T16:32:15.6116207Z     "root": 18305618105,
+2026-09-05T16:32:15.6116536Z     "target": 264241136,
+2026-09-05T16:32:15.6116864Z     "steps": 24,
+2026-09-05T16:32:15.6117161Z     "valuation": 21,
+2026-09-05T16:32:15.6117472Z     "unit_class": 5,
+2026-09-05T16:32:15.6117787Z     "h": 2,
+2026-09-05T16:32:15.6118053Z     "e": 4
+2026-09-05T16:32:15.6118318Z   },
+2026-09-05T16:32:15.6118590Z   "uncovered_425": true,
+2026-09-05T16:32:15.6119026Z   "valuation20_t4_counterexample_to_unguarded_descent": {
+2026-09-05T16:32:15.6119530Z     "root": 11332049303,
+2026-09-05T16:32:15.6119872Z     "candidate": 15703473152
+2026-09-05T16:32:15.6120207Z   },
+2026-09-05T16:32:15.6120719Z   "scope": "guarded infinite family; no universal termination proof"
+2026-09-05T16:32:15.6121327Z }
+2026-09-05T16:32:16.0177674Z {
+2026-09-05T16:32:16.0178045Z   "status": "passed",
+2026-09-05T16:32:16.0178453Z   "finite_replays": 24930,
+2026-09-05T16:32:16.0179074Z   "universal_theorem": "all r=20 mod27 with v3(4r+1)>=21 have explicit smaller S ancestor",
+2026-09-05T16:32:16.0179767Z   "covered_old_self_loop_example": {
+2026-09-05T16:32:16.0180185Z     "root": 18305618105,
+2026-09-05T16:32:16.0180532Z     "target": 264241136,
+2026-09-05T16:32:16.0180866Z     "steps": 24,
+2026-09-05T16:32:16.0181189Z     "valuation": 21,
+2026-09-05T16:32:16.0181506Z     "unit_class": 5,
+2026-09-05T16:32:16.0181817Z     "h": 2,
+2026-09-05T16:32:16.0182083Z     "e": 4
+2026-09-05T16:32:16.0182351Z   },
+2026-09-05T16:32:16.0182976Z   "uncovered_425": true,
+2026-09-05T16:32:16.0183426Z   "valuation20_t4_counterexample_to_unguarded_descent": {
+2026-09-05T16:32:16.0183913Z     "root": 11332049303,
+2026-09-05T16:32:16.0184241Z     "candidate": 15703473152
+2026-09-05T16:32:16.0184576Z   },
+2026-09-05T16:32:16.0185002Z   "scope": "guarded infinite family; no universal termination proof"
+2026-09-05T16:32:16.0185543Z }
+2026-09-05T16:32:16.3585765Z {
+2026-09-05T16:32:16.3586326Z   "status": "passed",
+2026-09-05T16:32:16.3587179Z   "finite_replays": 26085,
+2026-09-05T16:32:16.3588359Z   "universal_theorem": "every r=20mod27 with v3(4r+1)>=13 has a smaller explicit inS ancestor",
+2026-09-05T16:32:16.3589652Z   "covered_old_self_loop_example": {
+2026-09-05T16:32:16.3590409Z     "root": 41053817,
+2026-09-05T16:32:16.3591443Z     "target": 2531324,
+2026-09-05T16:32:16.3592095Z     "steps": 15,
+2026-09-05T16:32:16.3593043Z     "valuation": 13,
+2026-09-05T16:32:16.3593701Z     "unit_class": 2,
+2026-09-05T16:32:16.3594334Z     "h": 1,
+2026-09-05T16:32:16.3594989Z     "tail": "EE",
+2026-09-05T16:32:16.3595650Z     "z": 632831
+2026-09-05T16:32:16.3596253Z   },
+2026-09-05T16:32:16.3596865Z   "old_v20_failure_repaired": {
+2026-09-05T16:32:16.3597625Z     "root": 11332049303,
+2026-09-05T16:32:16.3598166Z     "target": 27262973,
+2026-09-05T16:32:16.3598675Z     "steps": 23,
+2026-09-05T16:32:16.3599147Z     "valuation": 20,
+2026-09-05T16:32:16.3599991Z     "unit_class": 4,
+2026-09-05T16:32:16.3600539Z     "h": 1,
+2026-09-05T16:32:16.3600861Z     "tail": "EEO",
+2026-09-05T16:32:16.3601185Z     "z": 10223615
+2026-09-05T16:32:16.3601530Z   },
+2026-09-05T16:32:16.3601782Z   "v12_counterexample_to_removing_selected_guard": {
+2026-09-05T16:32:16.3602084Z     "root": 1727183,
+2026-09-05T16:32:16.3602293Z     "candidate": 2555840,
+2026-09-05T16:32:16.3602528Z     "steps": 18
+2026-09-05T16:32:16.3603088Z   },
+2026-09-05T16:32:16.3603275Z   "uncovered_425": true,
+2026-09-05T16:32:16.3603583Z   "scope": "guarded infinite family; not universal termination"
+2026-09-05T16:32:16.3603915Z }
+2026-09-05T16:32:16.7606169Z {
+2026-09-05T16:32:16.7606558Z   "status": "passed",
+2026-09-05T16:32:16.7606886Z   "finite_replays": 26085,
+2026-09-05T16:32:16.7607436Z   "universal_theorem": "every r=20mod27 with v3(4r+1)>=13 has a smaller explicit inS ancestor",
+2026-09-05T16:32:16.7608042Z   "covered_old_self_loop_example": {
+2026-09-05T16:32:16.7608380Z     "root": 41053817,
+2026-09-05T16:32:16.7608670Z     "target": 2531324,
+2026-09-05T16:32:16.7608941Z     "steps": 15,
+2026-09-05T16:32:16.7609196Z     "valuation": 13,
+2026-09-05T16:32:16.7609460Z     "unit_class": 2,
+2026-09-05T16:32:16.7609712Z     "h": 1,
+2026-09-05T16:32:16.7609944Z     "tail": "EE",
+2026-09-05T16:32:16.7610188Z     "z": 632831
+2026-09-05T16:32:16.7610421Z   },
+2026-09-05T16:32:16.7610665Z   "old_v20_failure_repaired": {
+2026-09-05T16:32:16.7610996Z     "root": 11332049303,
+2026-09-05T16:32:16.7611275Z     "target": 27262973,
+2026-09-05T16:32:16.7611545Z     "steps": 23,
+2026-09-05T16:32:16.7611801Z     "valuation": 20,
+2026-09-05T16:32:16.7612063Z     "unit_class": 4,
+2026-09-05T16:32:16.7612317Z     "h": 1,
+2026-09-05T16:32:16.7612836Z     "tail": "EEO",
+2026-09-05T16:32:16.7613094Z     "z": 10223615
+2026-09-05T16:32:16.7613333Z   },
+2026-09-05T16:32:16.7613619Z   "v12_counterexample_to_removing_selected_guard": {
+2026-09-05T16:32:16.7614027Z     "root": 1727183,
+2026-09-05T16:32:16.7614288Z     "candidate": 2555840,
+2026-09-05T16:32:16.7614574Z     "steps": 18
+2026-09-05T16:32:16.7614829Z   },
+2026-09-05T16:32:16.7615073Z   "uncovered_425": true,
+2026-09-05T16:32:16.7615439Z   "scope": "guarded infinite family; not universal termination"
+2026-09-05T16:32:16.7615797Z }
+2026-09-05T16:32:16.8943650Z PASS: 75 CRT-family replays; 72 general guarded replays; first return grows, later return descends; absent guard rejected.
+2026-09-05T16:32:17.0594788Z PASS: 75 CRT-family replays; 72 general guarded replays; first return grows, later return descends; absent guard rejected.
+2026-09-05T16:32:17.1066972Z PASS: 1004 parameter replays; exact q labels 10->7->4->10; S^3(n)=T^11(n)=m>n.
+2026-09-05T16:32:17.1877505Z PASS: 1004 parameter replays; exact q labels 10->7->4->10; S^3(n)=T^11(n)=m>n.
+2026-09-05T16:32:17.4177765Z {
+2026-09-05T16:32:17.4178170Z   "status": "passed",
+2026-09-05T16:32:17.4178513Z   "crt_family_replays": 514,
+2026-09-05T16:32:17.4178865Z   "general_guard_replays": 279,
+2026-09-05T16:32:17.4179241Z   "first_growing_return_example": {
+2026-09-05T16:32:17.4179589Z     "k": 1,
+2026-09-05T16:32:17.4179829Z     "e": 2,
+2026-09-05T16:32:17.4180068Z     "u": 3623,
+2026-09-05T16:32:17.4180323Z     "root": 115931,
+2026-09-05T16:32:17.4180594Z     "target": 110045,
+2026-09-05T16:32:17.4180875Z     "steps": 8,
+2026-09-05T16:32:17.4181146Z     "first_return": 195635
+2026-09-05T16:32:17.4181444Z   },
+2026-09-05T16:32:17.4182013Z   "k0_example": {
+2026-09-05T16:32:17.4182275Z     "k": 0,
+2026-09-05T16:32:17.4182513Z     "e": 2,
+2026-09-05T16:32:17.4183018Z     "u": 4927,
+2026-09-05T16:32:17.4183274Z     "root": 19703,
+2026-09-05T16:32:17.4183540Z     "target": 16625,
+2026-09-05T16:32:17.4183853Z     "steps": 5
+2026-09-05T16:32:17.4184102Z   },
+2026-09-05T16:32:17.4184357Z   "all_root_ancestor_state": {
+2026-09-05T16:32:17.4184678Z     "v3_4r_plus_1": 4,
+2026-09-05T16:32:17.4184957Z     "theta": 4
+2026-09-05T16:32:17.4185210Z   },
+2026-09-05T16:32:17.4186089Z   "covered_initial_depths": "every q=3k+2 for k>=0, subject to displayed CRT/EXIT guards",
+2026-09-05T16:32:17.4187355Z   "scope": "new guarded residual infinite families; no universal exit or termination claim"
+2026-09-05T16:32:17.4188299Z }
+2026-09-05T16:32:17.7118665Z {
+2026-09-05T16:32:17.7119122Z   "status": "passed",
+2026-09-05T16:32:17.7119631Z   "crt_family_replays": 514,
+2026-09-05T16:32:17.7120137Z   "general_guard_replays": 279,
+2026-09-05T16:32:17.7120504Z   "first_growing_return_example": {
+2026-09-05T16:32:17.7120833Z     "k": 1,
+2026-09-05T16:32:17.7121067Z     "e": 2,
+2026-09-05T16:32:17.7121303Z     "u": 3623,
+2026-09-05T16:32:17.7121540Z     "root": 115931,
+2026-09-05T16:32:17.7121796Z     "target": 110045,
+2026-09-05T16:32:17.7122054Z     "steps": 8,
+2026-09-05T16:32:17.7122305Z     "first_return": 195635
+2026-09-05T16:32:17.7122872Z   },
+2026-09-05T16:32:17.7123129Z   "k0_example": {
+2026-09-05T16:32:17.7123377Z     "k": 0,
+2026-09-05T16:32:17.7123575Z     "e": 2,
+2026-09-05T16:32:17.7123765Z     "u": 4927,
+2026-09-05T16:32:17.7123973Z     "root": 19703,
+2026-09-05T16:32:17.7124205Z     "target": 16625,
+2026-09-05T16:32:17.7124437Z     "steps": 5
+2026-09-05T16:32:17.7124638Z   },
+2026-09-05T16:32:17.7124843Z   "all_root_ancestor_state": {
+2026-09-05T16:32:17.7125109Z     "v3_4r_plus_1": 4,
+2026-09-05T16:32:17.7125338Z     "theta": 4
+2026-09-05T16:32:17.7125541Z   },
+2026-09-05T16:32:17.7125923Z   "covered_initial_depths": "every q=3k+2 for k>=0, subject to displayed CRT/EXIT guards",
+2026-09-05T16:32:17.7126594Z   "scope": "new guarded residual infinite families; no universal exit or termination claim"
+2026-09-05T16:32:17.7127072Z }
+2026-09-05T16:32:17.8406102Z PASS: 43 growing CRT-family replays; 75 general guarded replays; 24 padded target-family replays; old q10 and missing-exit controls preserved/rejected; unbounded larger recharge followed by actual descent below the immutable root.
+2026-09-05T16:32:18.0006722Z PASS: 43 growing CRT-family replays; 75 general guarded replays; 24 padded target-family replays; old q10 and missing-exit controls preserved/rejected; unbounded larger recharge followed by actual descent below the immutable root.
+2026-09-05T16:32:18.1115591Z {
+2026-09-05T16:32:18.1116265Z   "status": "passed",
+2026-09-05T16:32:18.1116962Z   "fixed_cylinder_replays": 2004,
+2026-09-05T16:32:18.1117702Z   "new_coordinate_replays": 581,
+2026-09-05T16:32:18.1118408Z   "first_return_replays": 3800,
+2026-09-05T16:32:18.1119116Z   "residual_recharge_replays": 70,
+2026-09-05T16:32:18.1119831Z   "new_example": {
+2026-09-05T16:32:18.1120330Z     "r": 872705009,
+2026-09-05T16:32:18.1120751Z     "m": 680263616,
+2026-09-05T16:32:18.1121179Z     "steps": 25,
+2026-09-05T16:32:18.1121568Z     "v": 17,
+2026-09-05T16:32:18.1121968Z     "theta": 1
+2026-09-05T16:32:18.1122307Z   },
+2026-09-05T16:32:18.1122915Z   "scope": "guarded infinite families, no universal closure"
+2026-09-05T16:32:18.1123280Z }
+2026-09-05T16:32:18.2829787Z {
+2026-09-05T16:32:18.2830175Z   "status": "passed",
+2026-09-05T16:32:18.2830579Z   "fixed_cylinder_replays": 2004,
+2026-09-05T16:32:18.2831044Z   "new_coordinate_replays": 581,
+2026-09-05T16:32:18.2831460Z   "first_return_replays": 3800,
+2026-09-05T16:32:18.2831874Z   "residual_recharge_replays": 70,
+2026-09-05T16:32:18.2832270Z   "new_example": {
+2026-09-05T16:32:18.2832827Z     "r": 872705009,
+2026-09-05T16:32:18.2833141Z     "m": 680263616,
+2026-09-05T16:32:18.2833442Z     "steps": 25,
+2026-09-05T16:32:18.2833742Z     "v": 17,
+2026-09-05T16:32:18.2834791Z     "theta": 1
+2026-09-05T16:32:18.2835106Z   },
+2026-09-05T16:32:18.2835538Z   "scope": "guarded infinite families, no universal closure"
+2026-09-05T16:32:18.2836108Z }
+2026-09-05T16:32:18.2957350Z Cleaning up orphan processes

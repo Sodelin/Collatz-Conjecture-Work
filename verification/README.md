@@ -4,7 +4,25 @@ This manifest maps promoted claims to their executable evidence. A successful
 command verifies only the scope in the final column; it does not promote a
 bounded computation or narrow formal theorem into a Collatz proof.
 
-## Tested environment
+## Current consolidated verification
+
+The [current consolidation review](../research-review/consolidation-2026-09-05/REPORT.md) and [source checkpoint](../CONSOLIDATION_2026-09-05.md) identify incorporated heads. Frozen receipts below certify their own historical commits only. The current [publication verifier](../publication/verify_source.py) checks an exact clean source SHA, builds all modules and archived derivations, audits declarations, runs the expanded finite suite and records source-bound logs. The [publication guide](../publication/README.md) gives the release procedure.
+
+Run `lake build` before direct commands needing imports. A successful umbrella build does not formalize the remaining prose/semantic bridges. Added independent legacy checks are:
+
+```text
+python -B verification/bounded_alphabet_endpoint_residue_gate.py
+python -B verification/direct_H_return_renewal_regression.py
+python -B verification/expanded_rewrite_inverse_word_regression.py
+python -B verification/prime_renewal_regression.py
+python -B knowledge/tools/build_index.py --self-test --check
+python -O -B knowledge/tools/build_index.py --self-test --check
+python -B verification/check_markdown_math.py --self-test
+```
+
+The first four are finite regressions. Notebook and Markdown checks validate presentation/navigation only. PR8's finite YAH additive module and PR12's three stopped-route cores now belong to the umbrella build. PR20's `Descent.lean`, `AlternatingGrowth.lean` and `RepetitionBound.lean` under `research/blind-2026-09-05/` compile separately as preserved independent derivations.
+
+## Historical tested environment
 
 Complete closure replay on 2026-08-24 against source state
 `4a8845ef46c78e50b3c4303e3a3a110e3b66f045` and accepted mathematical
@@ -23,7 +41,7 @@ The Python checkers use the standard library. The Lean toolchain is pinned by
 Earlier artifact-level audits remain identifiable by their individual commit
 hashes; the table below was replayed together at the closure head above.
 
-## Freshly replayed promoted checks
+## Historical replay commands and their scopes
 
 Run from the repository root.
 
@@ -36,9 +54,9 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Builds `InverseWordBoundary`, `RefinedMersenneChild`, and the umbrella module. It does not import the two-pump module. |
+| Lean umbrella | `lake build` | `Build completed successfully` | The current umbrella imports the full integrated formal suite and its trusted statement dependencies. See [complete formal scope](../LEAN_TARGETS.md). [The imports](../lean/CollatzWork.lean) include guarded `RootDescent`, complete uniform `ResidueAncestor`, and guarded `TwoBurst`. The August baseline had imported only the first two. |
 
-All eight commands passed in the fresh audit. The YAH checkers currently
+These commands passed their historical scoped audits. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
 transcript. The cycle-DP output is retained in
 [`disproof_cycle_search_output_2026-08-24.txt`](disproof_cycle_search_output_2026-08-24.txt).
@@ -65,11 +83,45 @@ format is [the portable note-graph standard](../methodology/NOTE_GRAPH_STANDARD.
 |---|---|---|
 | [`CollatzWork/InverseWordBoundary.lean`](../lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the exact `8x+5 / 8x+4` regression witness. | `equalSlopeSmaller` is axiom-free; the witness reports standard `propext`, `Quot.sound`. |
 | [`CollatzWork/RefinedMersenneChild.lean`](../lean/CollatzWork/RefinedMersenneChild.lean) | Refined easy-child arithmetic, iterate identity, and coalescence. | Arithmetic theorem reports standard `propext`, `Classical.choice`, `Quot.sound`; remaining exported theorems report `propext`, `Quot.sound`. |
-| [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; not imported by `CollatzWork.lean`. |
+| [`CollatzWork/Disproof/TwoPumpDependency.lean`](../lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Two determinant dependencies, vanishing obstruction, and syzygy. | Direct module check reports only `propext`, `Quot.sound`; now imported by `CollatzWork.lean`. |
 
 No module formalizes Round 6A, full L5, the L13 hard-child classification,
 the cross-label recharge/rank theorem, the hard return map, YAH relative
 termination, or Collatz.
+
+## Finite-palette exploration — 2026-09-05
+
+The [proof note](../proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+distinguishes universal deductive statements from finite diagnostics and records
+the blind-derivation and repository-overlap boundaries. The natural-valued
+headline is formalized with an arbitrary selector and independent thresholds.
+
+```bash
+python -S -B verification/finite_palette_obstruction.py
+python -S -O -B verification/finite_palette_obstruction.py
+lake build
+lake env lean lean/CollatzWork/FinitePaletteObstruction.lean
+```
+
+Expected diagnostics: 384 forced-growth traces, 2,438 exhaustive finite
+selector assignments, 48 delayed-switch fixtures, four rejected malformed
+certificates, and one replayed example. Both normal and optimized Python
+execution report `FINITE_PALETTE_DIAGNOSTICS = PASS`.
+
+The solution contains an exact type comparison against
+`FinitePaletteObstructionStatement`. The generic path theorem and the main
+theorem report only `propext`, `Classical.choice`, `Quot.sound`; the prefix
+lemma reports `propext`, `Quot.sound`. No project mathematical axiom or
+`sorryAx` occurs. This does not formalize the prose real-polynomial corollary.
+
+The retained [source-build and checker transcript](finite_palette_verification_2026-09-05.txt)
+and [SHA-256 manifest](finite_palette_SHA256SUMS_2026-09-05.txt) identify the
+audited files. CI also checks a clean source checkout with the pinned Lean
+release; there is no independent-kernel implementation replay in this pass.
+
+SymPy is optional. Its [setup](../docs/MATH_TOOL_SETUP.md) and
+`verification/math_tool_smoke.py` provide reproducible exact symbolic checks.
+It is not part of the Lean trusted proof path or the dependency-free diagnostic.
 
 ## Retained historical diagnostics
 
@@ -101,3 +153,92 @@ These commands have committed outputs, but they were not all rerun in the
   implementation and its bounded result may be cited.
 - The project verification policy is
   [`lean/VERIFICATION_POLICY.md`](../lean/VERIFICATION_POLICY.md).
+
+## 2026-09-05 contribution checks
+
+| Claim | Command / evidence | Scope |
+|---|---|---|
+| `L15-QUARTER-GAP` | `python -B verification/near_return_quarter_bound.py`; [retained output](near_return_quarter_bound_output_2026-09-05.txt) | Exact phase-maxima certificate and 107 base inequalities supporting the universal prose argument; not a finite orbit extrapolation or Lean proof. |
+| `AB-FROZEN-DEBT-001` | `python -B verification/hard_return_frozen_debt_check.py`; [retained output](hard_return_frozen_debt_output_2026-09-05.txt) | Symbolic affine guards/factors for the universal family, plus 1,003 direct replay regressions. The general polynomial consequence is proved in prose. |
+| `L0-COALESCENCE-LEAN` | `lake build` and `lake env lean lean/CollatzWork/Convergence.lean`; [retained CI axiom log](lean_convergence_ci_2026-09-05.txt) | Exact shortcut-map convergence/coalescence criteria and compatible-child induction rule; no universal certificate or Collatz proof. |
+
+The [research pass](../ASTRA_RESEARCH_PASS_2026-09-05.md) records independent
+review scopes, runtime limitations, source comparison, and recovery. Python
+checks passed with Python 3.12.13; formal checking passed on the standard
+GitHub Linux runner using the unchanged pinned Lean 4.33.1 release.
+The [workflow](../.github/workflows/verify.yml) repeats these checks for pushes
+and pull requests. A configured workflow is not a pass: inspect the actual
+run and source commit when reviewing later changes.
+
+
+## Second full-closure attempt, 2026-09-05
+
+| Claim / experiment | Reproduction | Scope |
+|---|---|---|
+| `AB-3ADIC-RESET-001` | `python -B verification/three_adic_hard_return_check.py`; [output](three_adic_hard_return_output_2026-09-05.txt) | Uniform affine guards/cofactor factorizations; 515 witness replays and raw hard inputs below 20,000. Universal reset and polynomial consequence are proved in prose. |
+| Primary-source counterexamples | `python -B verification/primary_bridge_counterexamples.py`; [output](primary_bridge_counterexamples_output_2026-09-05.txt) | Exact finite witnesses supporting the [source audit](../proof-search/sources/Primary_Bridge_Audit_2026-09-05.md); infinite measure and logical arguments are separate proofs. |
+| `A-YAH-NAT2-B2-EXP` | [Search and exact SMT instances](yah_natural_matrix_2d/README.md) | Dimension 2 natural affine template: bound 2 UNSAT reported by Z3; bound 8 timeout. No independently checked UNSAT certificate or general no-go. |
+
+The two standard-library counterexample checkers are CI gates. The optional
+Z3 search is a retained bounded experiment, not a required CI gate.
+
+
+## Third continuation checks
+
+| Claim | Command / evidence | Scope |
+|---|---|---|
+| Universal `L15-QUARTER-GAP` and the threshold 16 | `lake build`; [formal scope](Quarter_Gap_Formal_Scope_2026-09-05.md), [axiom log](lean_quarter_gap_ci_2026-09-05.txt) | Complete actual-orbit auxiliary theorem, with all its arithmetic dependencies. No existence of coefficient stopping or global convergence. |
+| Independent integer block audit | `python -B verification/block_arithmetic_certificate.py`; [output](block_arithmetic_certificate_output_2026-09-05.txt) | All 12 exact threshold regions, normalized bases 16..27 and failing 15, plus dyadic regressions. Lean does not import these answers. |
+| `AB-FINITE-RESIDUE-001` | `python -B verification/finite_residue_hard_return_check.py`; [output](finite_residue_hard_return_output_2026-09-05.txt) | Uniform CRT families for 18 moduli and 90 positive replays totaling 6330 F edges; universal quantifiers have a prose proof. |
+| Core obstruction, positive targets, composition loop | `python -B verification/core_residue_obstruction_check.py`; [output](core_residue_obstruction_output_2026-09-05.json) | Exact guarded affine identities and finite replay; the final inverse edge in the 425 loop is not a T step. |
+| `B-MOD27-RANK-001` | `python -B verification/mod27_rank_check.py`; [output](mod27_rank_output_2026-09-05.txt) | All 25 core edges with symbolic all-input inequalities; 200000 state regressions and a 1024-step self-loop. Global stopping proof is in the source note, not Lean. |
+
+The configured workflow repeats all four new Python checks. Claims about a
+later revision require its own successful run; use the actual PR-head status.
+
+
+## Fourth continuation: root-relative progress
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| Guarded burst descent and generic ancestor identity | `lake build`; [initial exact-head CI/axioms](root_descent_ci_initial_2026-09-05.txt), [formal statement boundaries](../LEAN_TARGETS.md) | The exact Lean statements are checked on arbitrary natural parameters under explicit guards. The residue selectors are separate. |
+| Six-row ancestor selector, uniform valuation21 | `python -B verification/residue20_valuation_inverse_check.py`; [output](residue20_valuation_inverse_output_2026-09-05.json) | All-parameter prose proof with24,930 finite actual-forward replays; exact v20 failure when removing the selected guard. |
+| Refined ancestor selector, uniform valuation13 | `python -B verification/residue20_refined_ancestor_check.py`; [output](residue20_refined_ancestor_output_2026-09-05.json) | Complete uniform theorem now Lean-checked; these26,085 finite forward replays remain independent regression evidence. Individually sharper lower rows and the v12 selector failure retain separate prose/Python scope. |
+| Infinite residue20 burst subfamily | `python -B verification/root_burst_descent_check.py`; [output](root_burst_descent_output_2026-09-05.txt) | CRT reconstruction and independent forward/parity replay; actual later return below the original start, despite an increasing first return. Infinite specialization proved in prose. |
+| OOE-depth recharge obstruction | `python -B verification/check_shadow_debt_recharge.py`; [output](shadow_debt_recharge_output_2026-09-05.txt) |1,004 independent core-map and actual-orbit replays; the universal family and scoped polynomial consequence are proved in prose. |
+
+All four Python checkers use explicit failures and are run both normally and under `python -O` in the existing exact-mathematics workflow. They import no external package or baseline return implementation. Finite replays do not establish universal convergence. [The continuation report](../ROOT_RELATIVE_PROGRESS_2026-09-05.md) records complementary coverage, semantic review and remaining obligations.
+
+
+## Fifth continuation: recharge escape and complete ancestor formalization
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| Complete uniform valuation13 ancestor theorem | `lake build`; [accepted CI/axioms](residue_ancestor_ci_2026-09-05.txt), [public statement](../lean/CollatzWork/ResidueAncestorStatement.lean) | End-to-end kernel proof from sole 3^13 divisibility hypothesis, including factorization, selector, target membership and strict root-relative order. |
+| Q2 exit descent | `python -B verification/q2_exit_descent_check.py`; [output](q2_exit_descent_output_2026-09-05.json) |514 CRT and279 general guarded replays, through k1023; universal claims follow from prose algebra. Missing-exit control retained. |
+| Two-burst recharge escape | `python -B verification/two_burst_recharge_escape_check.py`; [output](two_burst_recharge_escape_output_2026-09-05.txt) |43 growing CRT,75 general,24 padded cases; negative same-q recharge and missing-exit controls. The general guarded orbit/descent theorem is now Lean-checked; CRT and extra-padding specializations retain prose/Python scope. |
+| Complementary ancestors and first-return structure | `python -B verification/complementary_ancestor_check.py`; [output](complementary_ancestor_output_2026-09-05.json) |2004 fixed-cylinder,581 new-coordinate,3800 first-return and70 exact residual-recharge replays; universal prefix/selector and transition proofs remain prose. |
+
+The three new dependency-free checkers join the existing four in the normal/optimized Python CI step. [The continuation report](../RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) gives the exact coverage delta and remaining q5 target. Initial formal acceptance does not substitute for checking the final integrated revision's own CI run.
+
+
+## Sixth continuation: finite first-return spells and simultaneous cover limits
+
+The general guarded two-burst theorem also advanced to a complete Lean proof in this pass. [CI33978140043](https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33978140043) checked source `8ba40e7b80afd56e3c86edbb864e969bd5121226` with the unchanged official pinned Lean4.33.1 release:24 Lake tasks passed. The power margin uses `propext` and `Quot.sound`; the guarded descent and convergence-transfer theorems additionally use `Classical.choice`, with no `sorryAx`. [The retained log](two_burst_ci_2026-09-05.txt) and [trusted statement](../lean/CollatzWork/TwoBurstStatement.lean) fix the exact scope. Complete CRT, extra even padding and all-unit coverage are not formal consequences of the general theorem alone.
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| `AC-GROWING-FIRST-RETURN-SPELL-001` | `python -B verification/finite_first_return_spell_check.py`; [output](finite_first_return_spell_output_2026-09-05.json) |232 general roots,396 CRT replays, all four terminal depths, spell lengths through511 and four rejected invalid guards. The uniform clock and unbounded-family statements have a separate prose proof. |
+| `B-S20-ANCESTOR-DEPTH-OBSTRUCTION-001` | `python -B verification/bounded_ancestor_depth_check.py`; [output](bounded_ancestor_depth_output_2026-09-05.json) |601206 inverse-tree nodes across547 roots, including160 roots simultaneously meeting the exact q5 binary/ternary constraints; inverse depths through24 and joint spells through128. The all-bounds obstruction is proved by anchor transfer and CRT, not inferred from this finite search. |
+
+Both dependency-free checkers also run under `python -O -B` with identical output; explicit failures remain active. The [spell proof](../proof-search/lemmas/Finite_Growing_First_Return_Spells.md) and [bounded-cover proof](../proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md) were reconstructed internally. Their aggregate statements are not Lean-formalized, and no finite checker output proves universal Collatz termination. The negative-periodic-shadow ancestor example in the latter note is an auxiliary algebraic observation, outside the promoted bounded-tree checker's reported count.
+
+
+### Postspell guarded bridge and missing-exit controls
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| `AC-POSTSPELL-GUARDED-ROOT-DESCENT-001` | `python -B verification/postspell_guarded_descent_check.py`; [output](postspell_guarded_descent_output_2026-09-05.json) |108 CRT/actual-word replays with independently selected J through127 and H through511; the exact original-root margin, residue20 target, missing-even-guard witness, growing residue20 target after insufficient halving, and three invalid-parameter controls. The infinite family and all-parameter inequality have a prose proof. |
+| `AC-POSTSPELL-ODD-RUN-OBSTRUCTION-001` | `python -B verification/postspell_odd_run_check.py`; [output](postspell_odd_run_output_2026-09-05.json) |108 ordinary replays plus15 simultaneous bounded-inverse controls, J through127 and exact postspell odd run through511; three invalid-parameter controls. The all-parameter obstruction is a separate proof. |
+
+Both new checkers use only the standard library, retain every check under `python -O -B`, and produce identical output in both modes. Neither complete postspell theorem is yet Lean-formalized. The [positive proof](../proof-search/lemmas/Postspell_Guarded_Root_Descent.md) and [negative proof](../proof-search/lemmas/Postspell_Odd_Run_Obstruction.md) distinguish selected final-halving guards from arbitrary-root coverage.

@@ -3,41 +3,102 @@
   "repository": "Sodelin/Collatz-Conjecture-Work",
   "source_commit": "33922a42e86646258d227d1e19c6cf7546a2f548",
   "headline_declaration": "CollatzWork.firstContractionQuarterGap",
-  "title": "Collatz first-contraction quarter gap: formal auxiliary results and open bridges",
+  "title": "Collatz research consolidation: restricted YAH obstruction, Lean auxiliary results, and open bridges",
   "date": "2026-09-05",
   "maintainer": "Nolan Downard",
   "conjecture_status": "unresolved",
-  "novelty_status": "not independently established",
+  "novelty_status": "No exact prior match located for combined YAH top/labeled exclusion in bounded review; priority not independently established",
   "vibemathed": {
-    "name": "Collatz: a first-contraction quarter-gap bound",
-    "shortName": "Collatz quarter gap (partial)",
+    "name": "YAH mixed-base Collatz system: scalar arctic first-step obstruction",
+    "shortName": "YAH scalar arctic obstruction (partial)",
     "solveType": "proved",
-    "statement": "For a positive start n, assume its actual shortcut Collatz orbit has a first coefficient contraction at time k, with T^k(n)=n+d and d>=0. Writing s for the number of odd steps before k, must 4d<s hold? This auxiliary question concerns a conditional bound within the open Collatz problem; it does not assert that every positive orbit reaches 1.",
-    "solveDate": "2026-09-05",
-    "sourceName": "Collatz Conjecture Work: scoped quarter-gap research announcement",
-    "sourceUrl": "{source_url}/blob/{publisher_commit}/publication/announcement.md",
+    "statement": "Yolcu, Aaronson and Heule (2023, section 6) raise whether suitable matrix interpretations might fail to establish termination of their mixed-base Collatz rewrite system. This broad direction remains open. The restricted subquestion here is whether any standard coefficientwise dimension-one arctic-natural interpretation, with unbounded nonnegative finite coefficients, can weakly orient all eleven rules and strictly orient a nonempty first full rule-removal subset, a boundary-rule subset in the original relative-top orientation, or a dynamic-rule subset in the reversed relative-top orientation. The fixed two-state twenty-two-rule labeling is also considered. The exact scalar subquestion was not separately posed in the cited paper.",
+    "posedBy": "",
+    "yearPosed": "",
+    "solveDate": "2026-08-24",
+    "ageNote": "2026-08-24 is the recorded date of the existing full/top certificate commits. Focused semantic and prior-art reviews were completed on 2026-09-05. This is artifact chronology, not a certified priority date; the exact scalar subquestion was not separately dated in the original paper.",
+    "sourceName": "Exact certificates excluding scalar arctic-natural first steps: scoped YAH research note",
+    "sourceUrl": "{source_url}/blob/{publisher_commit}/publication/yah-obstruction.md",
     "aiContribution": "ai-assisted",
-    "model": "Astra (repository label; exact model version undisclosed)",
+    "model": "Multiple OpenAI models; exact historical versions unverified",
     "modelMaker": "OpenAI",
-    "aiRole": "AI-assisted development of auxiliary mathematical arguments, counterexample searches, exact arithmetic certificates, Lean proof code, and adversarial internal reviews. The repository calls this the Astra pass. Exact model versions and a per-step human/model attribution log are not published; the lower contribution tier is used. Internal AI review is not independent expert review.",
-    "verification": "lean-checked",
+    "aiRole": "AI assisted the research arguments, solver-guided certificate discovery, exact checker code, consolidation of parallel research branches, and internal adversarial review. The September 5 review compared primary papers and author code, checked the interpretation-to-constraint implication, ran differential diagnostics, and separately replayed Farkas/RUP certificates. Historical artifacts do not establish a complete per-step human/model attribution or exact model versions. The lower AI-assisted tier is used. Shared-model internal reviews are not independent expert endorsement.",
+    "verification": "unreviewed",
     "publication": "announcement",
-    "verificationNote": "The release rebuilds the pinned Lean 4.33.1 source and records a headline axiom audit in verification.json. The quarter-gap theorem is checked for its stated hypotheses; its expected axioms are propext, Classical.choice and Quot.sound. The informal-to-formal correspondence and novelty lack independent external review. Other archive claims retain their separate prose, finite-checker, or open status. This submission is not a Lean-verified proof of Collatz.",
-    "fieldGroup": "Number theory",
-    "field": "Collatz dynamics; first coefficient contraction",
+    "verificationNote": "The complete YAH full-plus-top obstruction is supported by prose soundness arguments and replayable exact Python certificates, not a complete Lean proof. Internal semantic review found no defect: 288,560 differential assignments, 491 Farkas identities, 426 RUP clauses and ten terminal contradictions passed. Finite diagnostics are not the unrestricted proof; the interpretation-to-formula argument plus exact refutations cover unbounded coefficients. There is no external referee endorsement or independent priority certification. The consolidated archive separately contains Lean-checked Collatz auxiliary results; their build and axiom audits do not transfer Lean status to this YAH claim.",
+    "fieldGroup": "Theoretical computer science",
+    "field": "Term rewriting; proof-method limitations; Collatz dynamics",
     "resolution": "partial",
     "humanCollaborators": "Nolan Downard",
-    "resolutionMethod": "argument",
-    "resultNote": "For n>0, assume an actual shortcut Collatz orbit has a first coefficient contraction at time k and its endpoint is n+d with d a natural number. If s is the number of odd steps before k, then 4d<s, hence d <= floor((s-1)/4). Lean checks the actual-orbit affine identity, envelope and exact block certificate used in this proof. A supporting envelope holds for all s>=16 and fails at 15. Existence of a contraction for every positive start, universal descent, and a well-founded return mechanism remain unproved. Novelty is not independently certified.",
-    "submitterNote": "Please assess eligibility as a partial auxiliary result, not as a Collatz solution. The archive also contains known reconstructions and negative results scoped to restricted proof methods; those are not separate claimed solves. Independent novelty and statement review are still needed. If the first-contraction bound is already known or insufficient for the site's inclusion rule, please decline or request the appropriate narrower framing. No priority, award or payout claim is made."
+    "resolutionMethod": "computation",
+    "resultNote": "No first standard coefficientwise dimension-one arctic-natural step exists for the eleven-rule YAH system in full/extended mode or either specified relative-top opportunity. A fixed two-state twenty-two-rule labeling satisfies the corresponding syntactic exclusions; equal-label lifting gives the original-system result. The coefficient domain is unbounded. Full mode uses positive cancellation; ten top cases use exact Farkas/RUP refutations. The original full scalar argument is elementary and uses established weight techniques. The combined top/labeled exclusion is the candidate contribution: no exact prior match was located in a bounded review. Higher dimensions, other carriers or labelings, other orders and transformations, later scalar steps, and Collatz convergence remain outside the result.",
+    "submitterNote": "Please assess this single entry as a restricted partial result in the matrix-proof nonexistence direction raised by YAH section 6. We do not claim a separately named conjecture was solved, general YAH impossibility, Collatz resolution, external review, or established priority. The full scalar lemma alone is routine; the proposed contribution is the combined affine-top and fixed-label certificate package. Exact scope, historical dates, primary-source comparisons, internal semantic review and reproduction commands are linked. The larger consolidated archive includes known reconstructions, auxiliary Lean proofs, bounded searches and open bridges with separate statuses. Please decline or request reframing if the restricted result does not meet the venue novelty or significance threshold."
   },
   "links": [
-    {"label": "Mathematical formal-scope audit", "url": "{source_url}/blob/{source_commit}/verification/Quarter_Gap_Formal_Scope_2026-09-05.md", "kind": "paper"},
-    {"label": "Frozen Lean source and pinned build configuration", "url": "{source_url}/tree/{source_commit}/lean", "kind": "code"},
-    {"label": "Trusted universal quarter-gap statement", "url": "{source_url}/blob/{source_commit}/lean/CollatzWork/QuarterGapUniversalStatement.lean", "kind": "lean-statement"},
-    {"label": "Universal quarter-gap proof", "url": "{source_url}/blob/{source_commit}/lean/CollatzWork/QuarterGapUniversal.lean", "kind": "lean-proof"},
-    {"label": "Research continuation and limitations", "url": "{source_url}/blob/{source_commit}/ASTRA_CONTINUATION_2026-09-05.md", "kind": "other"},
-    {"label": "Claim registry", "url": "{source_url}/blob/{source_commit}/proof-search/CLAIM_REGISTRY.md", "kind": "other"},
-    {"label": "Versioned research package and fresh verification logs", "url": "{release_url}", "kind": "other"}
+    {
+      "label": "Yolcu-Aaronson-Heule: original paper and section 6 direction",
+      "url": "https://arxiv.org/abs/2105.14697v3",
+      "kind": "paper"
+    },
+    {
+      "label": "Original author arctic interpretation implementation",
+      "url": "https://github.com/emreyolcu/rewriting-collatz/blob/8a4dfda60f97a6d33ff0a24fdfa7a172d4bec340/prover/arctic.py",
+      "kind": "code"
+    },
+    {
+      "label": "Focused internal semantic audit, not external expert review",
+      "url": "{source_url}/blob/{publisher_commit}/research-review/consolidation-2026-09-05/YAH_SEMANTICS.md",
+      "kind": "other"
+    },
+    {
+      "label": "Focused prior-art audit and exact query ledger",
+      "url": "{source_url}/blob/{publisher_commit}/research-review/consolidation-2026-09-05/YAH_NOVELTY.md",
+      "kind": "other"
+    },
+    {
+      "label": "Original theorem note and fixed-label scope",
+      "url": "{source_url}/blob/{source_commit}/proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md",
+      "kind": "paper"
+    },
+    {
+      "label": "Full original and labeled cancellation checker",
+      "url": "{source_url}/blob/{source_commit}/verification/yah_two_state_scalar_arctic_full_no_start.py",
+      "kind": "code"
+    },
+    {
+      "label": "Top constraint semantics and certificate arithmetic",
+      "url": "{source_url}/blob/{source_commit}/verification/yah_scalar_arctic_top/top_cert_common.py",
+      "kind": "code"
+    },
+    {
+      "label": "Exact ten-case Farkas/RUP certificate payload",
+      "url": "{source_url}/blob/{source_commit}/verification/yah_scalar_arctic_top/top_certificates.json",
+      "kind": "code"
+    },
+    {
+      "label": "Dependency-free top certificate replayer",
+      "url": "{source_url}/blob/{source_commit}/verification/yah_scalar_arctic_top/verify_top_certificates.py",
+      "kind": "code"
+    },
+    {
+      "label": "Consolidated research announcement and claim boundaries",
+      "url": "{source_url}/blob/{publisher_commit}/publication/announcement.md",
+      "kind": "announcement"
+    },
+    {
+      "label": "Lean auxiliary modules: not a complete YAH full-plus-top proof",
+      "url": "{source_url}/tree/{source_commit}/lean",
+      "kind": "code"
+    },
+    {
+      "label": "Atomic claim registry, including unresolved bridges",
+      "url": "{source_url}/blob/{source_commit}/proof-search/CLAIM_REGISTRY.md",
+      "kind": "other"
+    },
+    {
+      "label": "Versioned consolidated research package and verification logs",
+      "url": "{release_url}",
+      "kind": "other"
+    }
   ]
 }

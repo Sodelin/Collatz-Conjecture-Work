@@ -1,0 +1,5 @@
+'CollatzWork.residueAncestor_powerBound' depends on axioms: [propext, Quot.sound]
+'CollatzWork.residueAncestor_normalized' depends on axioms: [propext, Quot.sound]
+'CollatzWork.residueAncestor' depends on axioms: [propext, Quot.sound]
+'CollatzWork.residueAncestor_factor_unit' depends on axioms: [propext, Quot.sound]
+'CollatzWork.residueAncestor_of_divisibility' depends on axioms: [propext, Quot.sound]

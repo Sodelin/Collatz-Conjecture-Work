@@ -17,12 +17,12 @@ Earlier conference/preprint versions appeared in 2021; the 2023 journal article 
 
 The paper defines
 
-\[
+$$
 T(n)=\begin{cases}
 n/2,&n\equiv0\pmod2,\\
 (3n+1)/2,&n\equiv1\pmod2,
 \end{cases}
-\]
+$$
 
 and an 11-rule mixed binary/ternary string rewriting system `T`.
 

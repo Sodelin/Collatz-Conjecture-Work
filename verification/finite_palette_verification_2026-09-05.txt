@@ -1,0 +1,68 @@
+Finite-palette verification — 2026-09-05
+Source baseline: a3d99ab909992bf72e6e2e0907cb8d50248fa1b8
+Scope: scoped obstruction; no Collatz proof or disproof; no global novelty audit.
+All sources are identified by finite_palette_SHA256SUMS_2026-09-05.txt.
+Local build used the unchanged cached Lean 4.33.1 release with a hosted-runtime
+executable-path compatibility shim. No project mathematical axiom or proof
+checker bypass is involved. CI replays the release on ordinary Ubuntu.
+
+$ lake clean && lake build (isolated repository clone)
+✔ [2/8] Built CollatzWork.InverseWordBoundaryStatement (1.7s)
+ℹ [3/8] Built CollatzWork.InverseWordBoundary (2.6s)
+info: lean/CollatzWork/InverseWordBoundary.lean:49:0: 'CollatzWork.equalSlopeSmaller' does not depend on any axioms
+info: lean/CollatzWork/InverseWordBoundary.lean:50:0: 'CollatzWork.equalSlopeWitness' depends on axioms: [propext, Quot.sound]
+ℹ [4/8] Built CollatzWork.RefinedMersenneChild (4.2s)
+info: lean/CollatzWork/RefinedMersenneChild.lean:244:0: 'CollatzWork.refinedChild_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/CollatzWork/RefinedMersenneChild.lean:245:0: 'CollatzWork.refinedParent_iter' depends on axioms: [propext, Quot.sound]
+info: lean/CollatzWork/RefinedMersenneChild.lean:246:0: 'CollatzWork.refinedChild_iter' depends on axioms: [propext, Quot.sound]
+info: lean/CollatzWork/RefinedMersenneChild.lean:247:0: 'CollatzWork.refinedMersenneChild_coalesces' depends on axioms: [propext, Quot.sound]
+✔ [5/8] Built CollatzWork.FinitePaletteObstructionStatement (1.4s)
+ℹ [6/8] Built CollatzWork.FinitePaletteObstruction (2.3s)
+info: lean/CollatzWork/FinitePaletteObstruction.lean:166:0: 'CollatzWork.finitePalette_path_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/CollatzWork/FinitePaletteObstruction.lean:167:0: 'CollatzWork.mersenne_prefix_nondecreasing' depends on axioms: [propext, Quot.sound]
+info: lean/CollatzWork/FinitePaletteObstruction.lean:168:0: 'CollatzWork.finitePaletteObstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [7/8] Built CollatzWork (1.7s)
+Build completed successfully (8 jobs).
+
+$ lean --version; lake env lean [finite-palette solution]; lake env lean [two-pump module]
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+'CollatzWork.finitePalette_path_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWork.mersenne_prefix_nondecreasing' depends on axioms: [propext, Quot.sound]
+'CollatzWork.finitePaletteObstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzWork.Disproof.twoPumpCoefficientDependencies' depends on axioms: [propext, Quot.sound]
+'CollatzWork.Disproof.firstRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+'CollatzWork.Disproof.secondRotatedDeterminantCoefficients' depends on axioms: [propext, Quot.sound]
+'CollatzWork.Disproof.twoPumpConstantObstructionVanishes' depends on axioms: [propext, Quot.sound]
+'CollatzWork.Disproof.twoPumpSyzygy' depends on axioms: [propext, Quot.sound]
+
+$ python -S -B [palette checker]; python -S -O -B [palette checker];
+$ isolated-python -B [symbolic smoke]; python -B [note graph]
+forced-growth direct/closed-form traces = 384
+exhaustive finite selector assignments = 2438
+delayed palette-switch fixtures = 48
+invalid certificates rejected = 4
+published 3-piece / 4-step example = PASS
+FINITE_PALETTE_DIAGNOSTICS = PASS
+Scope: finite regression checks; universal theorem has a separate proof.
+forced-growth direct/closed-form traces = 384
+exhaustive finite selector assignments = 2438
+delayed palette-switch fixtures = 48
+invalid certificates rejected = 4
+published 3-piece / 4-step example = PASS
+FINITE_PALETTE_DIAGNOSTICS = PASS
+Scope: finite regression checks; universal theorem has a separate proof.
+SymPy 1.14.0: factorization, exact integral, 20 affine identities PASS
+Affine identities alone do not certify parity guards or Collatz termination.
+markdown notes = 58
+local Markdown links checked = 265
+broken local Markdown links = 0
+notes reachable from README.md = 58
+unreachable notes = 0
+NOTE_GRAPH = PASS
+
+$ python -B -m unittest discover -s tests -v
+Ran 33 tests in 3.827s
+OK
+
+No independent kernel implementation replay or external specialist review was performed.
+

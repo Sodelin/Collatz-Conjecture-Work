@@ -142,6 +142,13 @@ def zip_bytes(files: dict[str, bytes], target: Path) -> None:
             archive.writestr(info, data)
 
 
+def lean_bundle_files(files: dict[str, bytes]) -> dict[str, bytes]:
+    """Keep the library, archived Lean programs, and either Lake config format."""
+    configuration = {"lean-toolchain", "lakefile.toml", "lakefile.lean", "lake-manifest.json"}
+    return {name: data for name, data in files.items()
+            if name.startswith("lean/") or name.endswith(".lean") or name in configuration}
+
+
 def make_draft(metadata: dict, schema: dict, publisher: str, preview: bool) -> tuple[dict, str]:
     source = metadata["source_commit"]
     tag = f"research-{source[:12]}-{publisher[:12]}"
@@ -167,6 +174,7 @@ def make_draft(metadata: dict, schema: dict, publisher: str, preview: bool) -> t
 def verification_files(report: dict, directory: Path) -> dict[str, bytes]:
     """Retain command output and the exact generated Lean audit program."""
     names = {command["log"] for command in report.get("commands", [])}
+    names.update(report.get("audit_programs", []))
     audit = "verification-logs/PublicationAxiomAudit.lean"
     if report.get("status") == "passed" or (directory / audit).exists():
         names.add(audit)
@@ -244,6 +252,7 @@ def build(source: Path, output: Path, metadata_path: Path, verification_path: Pa
         raise ValueError("Use a fresh output directory (verification files may already exist)")
     write = lambda name, data: (output / name).write_bytes(data if isinstance(data, bytes) else data.encode())
     write("announcement.md", (HERE / "announcement.md").read_bytes())
+    write("yah-obstruction.md", (HERE / "yah-obstruction.md").read_bytes())
     write("claims.json", encoded(claims))
     write("vibemathed-draft.json", encoded(draft))
     write("vibemathed-import.js", importer(draft, schema["transport"]["draft_storage_key"]))
@@ -266,7 +275,7 @@ def build(source: Path, output: Path, metadata_path: Path, verification_path: Pa
     write("source-inventory.json", encoded(source_inventory))
     # Preserve every committed research file, including historical negative results.
     zip_bytes(files, output / "research-source.zip")
-    lean = {name: data for name, data in files.items() if name.startswith("lean/") or name in {"lean-toolchain", "lakefile.toml", "lake-manifest.json"}}
+    lean = lean_bundle_files(files)
     zip_bytes(lean, output / "lean-source.zip")
     manifest = {"schema_version": 1, "source_commit": metadata["source_commit"],
                 "publisher_commit": publisher, "repository": metadata["repository"],
