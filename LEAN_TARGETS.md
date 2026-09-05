@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **ten Lean proof modules**. It does not
+The repository contains **twelve Lean proof modules**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,7 +13,7 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all ten
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all twelve
 proof modules, including the two-pump module and
 [`Convergence.lean`](lean/CollatzWork/Convergence.lean). The new
 [`RootDescent.lean`](lean/CollatzWork/RootDescent.lean) is scoped below.
@@ -134,4 +134,16 @@ existence theorem or global termination premise was discharged.
 | `rootDescent_converges_of_smaller` | Under the same guard, a stated convergence induction hypothesis for all smaller positive starts implies convergence of this start. | `propext`, `Classical.choice`, `Quot.sound` |
 | `rootDescentAncestor` | q>0 and 3^(L+1)q=4r+1 imply T^(e+L+2)(2^e(2^Lq−1))=r. No size/coverage conclusion. | `propext`, `Quot.sound` |
 
-The [infinite CRT burst specialization](proof-search/lemmas/Root_Relative_Burst_Descent.md), [six-row ancestor selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md), and [refined valuation13 selector](proof-search/lemmas/Residue20_Refined_Ancestor.md) retain prose proofs plus independent exact Python checks. The generic prefix identity is formalized; the refined odd-containing inverse tails, selector coverage, target congruences and slope bounds are not yet formalized. No universal guard, stopping existence or Collatz theorem is proved.
+The [infinite CRT burst specialization](proof-search/lemmas/Root_Relative_Burst_Descent.md) and [prescribed six-row valuation21 selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md) retain prose proofs plus independent exact Python checks. The stronger uniform valuation13 theorem is now fully formalized as specified below. Its individually sharper lower rows are not included in that formal statement. No universal guard, stopping existence or Collatz theorem is proved.
+
+
+## Complete residue20 ancestor theorem
+
+The [trusted public statements](lean/CollatzWork/ResidueAncestorStatement.lean), [five finite tails](lean/CollatzWork/ResidueAncestorTails.lean), and [complete proof](lean/CollatzWork/ResidueAncestor.lean) establish:
+
+    ∀ r : Nat, 3^13 ∣ (4*r+1) →
+      ∃ m b : Nat, 0<m ∧ m<r ∧ m%27=20 ∧ shortcutIter b m=r.
+
+`residueAncestor_of_divisibility` constructs the positive unit factorization; it does not assume its existence. The proof includes all selector branches, their actual forward orbit identities, target congruences, and a uniform strict size comparison. Initial acceptance is [commit eac4dad7](verification/residue_ancestor_ci_2026-09-05.txt), with22 Lake build tasks passing on unchanged Lean4.33.1. All six new aggregate/headline axiom outputs contain only `propext` and `Quot.sound`.
+
+The formalization covers the uniform ≥13 theorem. The exact sharper lower-row thresholds, selected-table sharpness, the new [q2 exit theorem](proof-search/lemmas/Q2_Exit_Descent.md), [two-burst recharge escape](proof-search/lemmas/Two_Burst_Recharge_Escape.md), and [second-coordinate ancestor construction](proof-search/lemmas/Complementary_Ancestor_Cylinders.md) retain separate prose/Python scope. No global coalescence or termination premise is discharged.

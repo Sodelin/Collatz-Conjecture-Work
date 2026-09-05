@@ -175,3 +175,12 @@ A hypothetical least nonconvergent residue20 root must therefore satisfy v3(r+7)
 The highest-value next mathematical target is an exact recharge-or-escape lemma on this residual class: first isolate a growing return cylinder, then prove either a smaller coalescing target or a decrease in a justified unbounded measure across the complete excursion. Track the unchanged induction root. The q10→7→4→10 growing path is a required falsification test for q-only polynomial ranks. A bounded-depth first-return calculation or a larger replay limit cannot replace this theorem.
 
 The more bounded verification target is to formalize the finite refined tail table and its slope/coverage argument using the checked generic ancestor prefix. This would raise verification confidence without resolving the residual mathematical bridge.
+
+
+## Fifth-pass handoff: actual recharge escape
+
+Read [RECHARGE_ESCAPE_PROGRESS_2026-09-05.md](RECHARGE_ESCAPE_PROGRESS_2026-09-05.md). The complete uniform ancestor theorem now has a Lean proof from `3^13 ∣ (4r+1)` alone; do not repeat its factorization/tail/coverage formalization. Lower individual row thresholds remain separate.
+
+New guarded q1 and q2 exit families give actual later returns below the original root. The q1 family tolerates an unbounded larger recharge and two growing bursts. They do not supply all-unit coverage. The second ancestor coordinate removes every root with v3(128r−157)≥17 in the v3(r+7)=4 branch, plus two fixed cylinders. No rank or exhaustion theorem follows.
+
+The next concrete mathematical target is the cylinder `r=22619+186624s`, s≥0. It has q(r)=5 and an increasing first return `y=38171+314928s`, with q(y)=4+v2(2386+19683s) unbounded. Its source has old ancestor state(v,theta)=(4,4), and its q2 unit is3mod8, so both older selected guards miss it. Prove a new smaller-target or whole-excursion descent certificate relative to r on a specified subcylinder; do not assume q decreases, or claim every member lacks all possible certificates. The all-residual-class bridge remains open.

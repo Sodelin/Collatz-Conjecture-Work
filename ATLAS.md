@@ -218,3 +218,8 @@ it, it belongs in the failure ledger rather than a new route.
 ## Root-relative progress packet
 
 [Continuation report](ROOT_RELATIVE_PROGRESS_2026-09-05.md) connects the [formal burst descent](proof-search/lemmas/Root_Relative_Burst_Descent.md), [simple ancestor selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md), [refined valuation13 selector](proof-search/lemmas/Residue20_Refined_Ancestor.md), and [shadow-depth recharge obstruction](proof-search/routes/AC_shadow_debt_recharge.md). The positive family certificates compare to the original root; the complement still lacks a universal mechanism.
+
+
+## Recharge escape continuation
+
+[The next packet](RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) links the now-complete uniform ancestor formalization, [two growing bursts with larger recharge](proof-search/lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](proof-search/lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestor cylinders and exact first-return transitions](proof-search/lemmas/Complementary_Ancestor_Cylinders.md). Guarded family coverage expands; universal termination remains open.

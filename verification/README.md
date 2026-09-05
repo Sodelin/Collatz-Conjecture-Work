@@ -36,7 +36,7 @@ Run from the repository root.
 | `A-YAH-AN1-001`; `A-YAH-2STATE-AN1-001` top | `python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py` | 10 cases, 491 integer Farkas lemmas, 426 RUP clauses, then `TOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS` | Encodes natural strictness as a gap of at least one, then Farkas-refutes the resulting nonnegative-real branch relaxations for all six original boundary and four reversed-dynamic labeled targets. Equal-state lifting gives the original-system Lemma-3.18 corollary. |
 | `E-DP-MAXC` | `python -B verification\disproof_cycle_search.py` | 91 pairs, peak 47,517 states, 9 trivial encodings, 0 nontrivial candidates | Exact only for defaults `k<=40` and `0<D<=250000`; includes brute-force self-test through `k<=10`. |
 | `E-TWOPUMP-DEP` | `lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean` | Five theorem dependency reports containing only `propext` and `Quot.sound` | Checks the polynomial coefficient dependencies and vanishing resultant, not a cycle exclusion theorem. |
-| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all ten proof modules listed in [the imports](../lean/CollatzWork.lean), including the new guarded `RootDescent` module. The August baseline had imported only the first two. |
+| Lean umbrella | `lake build` | `Build completed successfully` | Current umbrella builds all twelve proof modules listed in [the imports](../lean/CollatzWork.lean), including the guarded `RootDescent` and complete uniform `ResidueAncestor` modules. The August baseline had imported only the first two. |
 
 All eight commands passed in the fresh audit. The YAH checkers currently
 regenerate their evidence rather than comparing against a committed stdout
@@ -151,8 +151,20 @@ later revision require its own successful run; use the actual PR-head status.
 |---|---|---|
 | Guarded burst descent and generic ancestor identity | `lake build`; [initial exact-head CI/axioms](root_descent_ci_initial_2026-09-05.txt), [formal statement boundaries](../LEAN_TARGETS.md) | The exact Lean statements are checked on arbitrary natural parameters under explicit guards. The residue selectors are separate. |
 | Six-row ancestor selector, uniform valuation21 | `python -B verification/residue20_valuation_inverse_check.py`; [output](residue20_valuation_inverse_output_2026-09-05.json) | All-parameter prose proof with24,930 finite actual-forward replays; exact v20 failure when removing the selected guard. |
-| Refined ancestor selector, uniform valuation13 | `python -B verification/residue20_refined_ancestor_check.py`; [output](residue20_refined_ancestor_output_2026-09-05.json) | Exact tail partition/guards and26,085 finite actual-forward replays; uniform proof is in the companion note. v12 selector failure retained. |
+| Refined ancestor selector, uniform valuation13 | `python -B verification/residue20_refined_ancestor_check.py`; [output](residue20_refined_ancestor_output_2026-09-05.json) | Complete uniform theorem now Lean-checked; these26,085 finite forward replays remain independent regression evidence. Individually sharper lower rows and the v12 selector failure retain separate prose/Python scope. |
 | Infinite residue20 burst subfamily | `python -B verification/root_burst_descent_check.py`; [output](root_burst_descent_output_2026-09-05.txt) | CRT reconstruction and independent forward/parity replay; actual later return below the original start, despite an increasing first return. Infinite specialization proved in prose. |
 | OOE-depth recharge obstruction | `python -B verification/check_shadow_debt_recharge.py`; [output](shadow_debt_recharge_output_2026-09-05.txt) |1,004 independent core-map and actual-orbit replays; the universal family and scoped polynomial consequence are proved in prose. |
 
 All four Python checkers use explicit failures and are run both normally and under `python -O` in the existing exact-mathematics workflow. They import no external package or baseline return implementation. Finite replays do not establish universal convergence. [The continuation report](../ROOT_RELATIVE_PROGRESS_2026-09-05.md) records complementary coverage, semantic review and remaining obligations.
+
+
+## Fifth continuation: recharge escape and complete ancestor formalization
+
+| Claim | Reproduction / retained evidence | Scope |
+|---|---|---|
+| Complete uniform valuation13 ancestor theorem | `lake build`; [accepted CI/axioms](residue_ancestor_ci_2026-09-05.txt), [public statement](../lean/CollatzWork/ResidueAncestorStatement.lean) | End-to-end kernel proof from sole 3^13 divisibility hypothesis, including factorization, selector, target membership and strict root-relative order. |
+| Q2 exit descent | `python -B verification/q2_exit_descent_check.py`; [output](q2_exit_descent_output_2026-09-05.json) |514 CRT and279 general guarded replays, through k1023; universal claims follow from prose algebra. Missing-exit control retained. |
+| Two-burst recharge escape | `python -B verification/two_burst_recharge_escape_check.py`; [output](two_burst_recharge_escape_output_2026-09-05.txt) |43 growing CRT,75 general,24 padded cases; negative same-q recharge and missing-exit controls. The full theorem remains prose. |
+| Complementary ancestors and first-return structure | `python -B verification/complementary_ancestor_check.py`; [output](complementary_ancestor_output_2026-09-05.json) |2004 fixed-cylinder,581 new-coordinate,3800 first-return and70 exact residual-recharge replays; universal prefix/selector and transition proofs remain prose. |
+
+The three new dependency-free checkers join the existing four in the normal/optimized Python CI step. [The continuation report](../RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) gives the exact coverage delta and remaining q5 target. Initial formal acceptance does not substitute for checking the final integrated revision's own CI run.

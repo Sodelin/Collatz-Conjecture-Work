@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "fixed_cylinder_replays": 2004,
+  "new_coordinate_replays": 581,
+  "first_return_replays": 3800,
+  "residual_recharge_replays": 70,
+  "new_example": {
+    "r": 872705009,
+    "m": 680263616,
+    "steps": 25,
+    "v": 17,
+    "theta": 1
+  },
+  "scope": "guarded infinite families, no universal closure"
+}

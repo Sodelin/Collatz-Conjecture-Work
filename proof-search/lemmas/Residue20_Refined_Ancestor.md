@@ -243,9 +243,7 @@ failure checks are not removed by optimized Python mode.
 
 The universal proof is the finite exact tail table combined with the
 parameterized prefix identity and inequalities (4)–(5). The replay is a
-regression check. The refined selector is not yet Lean formalized. Its
-arithmetic is suitable for the existing generic orbit/inverse semantics,
-and the simpler valuation21 result can remain a separately checked corollary.
+regression check. The complete uniform valuation-at-least-13 theorem is now Lean kernel-checked, including factor extraction, the variable prefix, refined odd-containing tails, exhaustive selector, target congruences and strict size comparison. The public theorem requires only `3^13 ∣ (4*r+1)`. The individually sharper lower-valuation thresholds and the selected-table sharpness witness retain prose/Python status; they are not silently included in that formal claim. See [accepted exact-head evidence](../../verification/residue_ancestor_ci_2026-09-05.txt).
 
 **11. Process assessment.** The variable prefix, finite residue coverage,
 inverse-word orientation, integrality guards, and root-relative strict order
@@ -263,5 +261,7 @@ argument remain visible; no closure inference is justified.
 - **Depends on:** [generic ancestor prefix](../../lean/CollatzWork/RootDescent.lean) and [inverse-word semantics](L4_General_Inverse_Word_Coalescence.md).
 - **Strengthens / specializes:** [six-row valuation21 construction](Residue20_Valuation_Ancestor.md).
 - **Verified by:** [replay manifest](../../verification/README.md) and [independent refined checker](../../verification/residue20_refined_ancestor_check.py).
-- **Formalized by / pending:** [exact scope and remaining finite tails](../../LEAN_TARGETS.md).
+- **Formalized by / pending:** [complete uniform theorem and remaining lower-row scope](../../LEAN_TARGETS.md).
 - **Parallel to:** [forward burst descent](Root_Relative_Burst_Descent.md).
+
+- **Specialized in a different prefix:** [second ternary-coordinate ancestors](Complementary_Ancestor_Cylinders.md), reusing only the finite tail table.

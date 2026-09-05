@@ -428,3 +428,8 @@ Without these five fields, do not spend a full search cycle on the old route.
 For the specified stronger-core return S, [the exact family](routes/AC_shadow_debt_recharge.md) with u=6807+12288t has n=1024u−5 and S^3(n)=(2187u−7)/2>n. The shadow depths are10→7→4→10; both endpoints freeze (L,epsilon,b,D,R,n mod3,q)=(2,1,0,1,0,1,10). This excludes only the stated lower-bounded per-label polynomial size/bitlength ranks and coordinatewise lower-bounded finite lex tuples.
 
 **Reopen with:** an unfrozen arithmetic feature, a nonpolynomial mechanism, or a different smaller-target certificate. The [positive burst theorem](lemmas/Root_Relative_Burst_Descent.md) handles a separate guarded exit and supplies no general recharge bound.
+
+
+## Constructive qualification of F030
+
+[The two-burst theorem](lemmas/Two_Burst_Recharge_Escape.md) proves strict original-root descent through a different guarded recharge mechanism, including an unbounded increase in q. F030's q10→7→4→10 family remains an exact obstruction for its stated polynomial rank class. The new theorem assumes a recharged depth divisible by3 and sufficient final halving; neither follows for F030's family. This is partial positive target selection, not a retraction of the scoped negative result.

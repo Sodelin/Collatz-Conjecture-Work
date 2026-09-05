@@ -231,3 +231,10 @@ No route is promoted to a universal solution by these updates.
 - **Next admission test:** classify growing returns from the residual c-normal residue20 class, and construct an exact escape for a new infinite cylinder while carrying the original root. The endpoint valuation alone must not be assumed to decrease.
 
 No global route status is promoted by partial family coverage.
+
+
+## Fifth-pass route decisions
+
+- **B:** [actual recharge escape](lemmas/Two_Burst_Recharge_Escape.md), [q2 exit descent](lemmas/Q2_Exit_Descent.md), and [second-coordinate ancestors](lemmas/Complementary_Ancestor_Cylinders.md) supply distinct constructive guarded families. The complete uniform first-coordinate ancestor theorem is now Lean-checked.
+- **AB:** the q10 rank obstruction remains valid outside the new escape guards. There is no universal rank or total all-unit return control, so the global status remains blocked.
+- **Concrete next cylinder:** r=22619+186624s has an increasing first return and unbounded q recharge. It is a precise admission target for a new escape mechanism, not a theorem of nontermination or irreducibility.

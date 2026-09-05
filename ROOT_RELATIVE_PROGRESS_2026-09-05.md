@@ -7,6 +7,8 @@ tags: [collatz, constructive-families, exact-descent, formalization]
 
 # Root-relative mathematical continuation
 
+This report records the first PR17 packet at `f2b7fb85298a29869eaaac6b97250d47cb92df1e`. For the later complete ancestor formalization and new recharge escape theorems, read [the next continuation](RECHARGE_ESCAPE_PROGRESS_2026-09-05.md). The formal scope table below is the historical scope of that first packet.
+
 ## 0. Outcome
 
 Two complementary infinite families now have explicit strict certificates against the original root. A third result proves that simply adding OOE shadow depth does not rescue the audited polynomial rank. **Universal termination remains unproved.**

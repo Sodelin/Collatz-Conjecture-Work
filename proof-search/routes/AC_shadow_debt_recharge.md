@@ -156,3 +156,5 @@ function class; adding an unfrozen feature would require a new proof.
 - **Strengthens / specializes:** [frozen polynomial-rank obstruction](AB_frozen_debt_size_rank_no_go.md).
 - **Verified by:** [replay manifest](../../verification/README.md) and [independent checker](../../verification/check_shadow_debt_recharge.py).
 - **Parallel to:** [guarded positive burst descent](../lemmas/Root_Relative_Burst_Descent.md).
+
+- **Parallel to:** [guarded two-burst escape](../lemmas/Two_Burst_Recharge_Escape.md), whose source guards exclude this same-q counterfamily.

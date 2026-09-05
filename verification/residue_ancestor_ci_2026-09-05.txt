@@ -1,0 +1,57 @@
+Complete residue-20 ancestor theorem: accepted exact-head CI provenance
+
+Repository: Sodelin/Collatz-Conjecture-Work
+Pull request: https://github.com/Sodelin/Collatz-Conjecture-Work/pull/17
+Source SHA: eac4dad7ef352b38d3db163637f6ac1f846c91b7
+Source tree: 39217a43d9efbf12a29ff9b794b5af7cada7426a
+Workflow: Verify exact mathematics
+Workflow run: 33975504271
+Run URL: https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33975504271
+Job: 101331369379 (verify)
+Job URL: https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33975504271/job/101331369379
+Workflow conclusion: success
+Job conclusion: success
+
+Headline Lean declaration: CollatzWork.residueAncestor_of_divisibility
+Trusted type: ResidueAncestorDivisibilityStatement
+Meaning: for every natural r, if 3^13 divides 4*r+1, there exist m,b with 0<m, m<r, m%27=20, and shortcutIter b m=r.
+The complete chain includes positive 3-unit factor extraction, variable-length orbit prefixes, all five exact inverse tails, exhaustive selector coverage, uniform power bounds, strict root-relative order, and actual orbit composition.
+All six new aggregate/headline axiom outputs below contain only propext and Quot.sound. No sorryAx, project-specific axiom, or native_decide is used. The job log contains no error markers.
+
+Acceptance used the unchanged official Lean 4.33.1 release. Its SHA-256 archive check and successful result appear below. The build reports 22 Lake jobs, not 22 separate GitHub Actions jobs. Existing and new Python mathematical regressions passed; each of the four root-relative checkers ran normally and with -O.
+
+Verbatim relevant job-log lines, with ANSI coloring removed:
+
+2026-09-05T15:40:16.1515355Z   SOURCE_SHA: eac4dad7ef352b38d3db163637f6ac1f846c91b7
+2026-09-05T15:40:16.6635883Z HEAD is now at eac4dad Complete the direct divisibility ancestor theorem and repair prefix normalization
+2026-09-05T15:40:16.6776325Z   https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst
+2026-09-05T15:40:16.6777932Z echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check
+2026-09-05T15:40:18.7660434Z /home/runner/work/_temp/lean.tar.zst: OK
+2026-09-05T15:40:23.7873269Z Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-09-05T15:40:26.1710298Z ✔ [5/22] Built CollatzWork.ResidueAncestorStatement (671ms)
+2026-09-05T15:40:32.0640972Z ℹ [19/22] Built CollatzWork.ResidueAncestorTails (1.5s)
+2026-09-05T15:40:32.0642410Z info: lean/CollatzWork/ResidueAncestorTails.lean:176:0: 'CollatzWork.residueAncestor_refinedTail' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:46.8813800Z ℹ [20/22] Built CollatzWork.ResidueAncestor (14s)
+2026-09-05T15:40:46.8814700Z info: lean/CollatzWork/ResidueAncestor.lean:166:0: 'CollatzWork.residueAncestor_powerBound' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:46.8815918Z info: lean/CollatzWork/ResidueAncestor.lean:167:0: 'CollatzWork.residueAncestor_normalized' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:46.8817019Z info: lean/CollatzWork/ResidueAncestor.lean:168:0: 'CollatzWork.residueAncestor' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:46.8818110Z info: lean/CollatzWork/ResidueAncestor.lean:169:0: 'CollatzWork.residueAncestor_factor_unit' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:46.8819074Z info: lean/CollatzWork/ResidueAncestor.lean:170:0: 'CollatzWork.residueAncestor_of_divisibility' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:40:47.1826657Z Build completed successfully (22 jobs).
+2026-09-05T15:40:52.3044573Z ##[group]Run for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge; do
+2026-09-05T15:40:52.3045644Z for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge; do
+2026-09-05T15:40:52.3046660Z   python3 -O -B "verification/${checker}.py"
+2026-09-05T15:40:52.6247283Z   "finite_replays": 24930,
+2026-09-05T15:40:52.6253201Z   "scope": "guarded infinite family; no universal termination proof"
+2026-09-05T15:40:53.0201178Z   "finite_replays": 24930,
+2026-09-05T15:40:53.0206047Z   "scope": "guarded infinite family; no universal termination proof"
+2026-09-05T15:40:53.3578575Z   "finite_replays": 26085,
+2026-09-05T15:40:53.3586419Z   "scope": "guarded infinite family; not universal termination"
+2026-09-05T15:40:53.7683484Z   "finite_replays": 26085,
+2026-09-05T15:40:53.7691678Z   "scope": "guarded infinite family; not universal termination"
+2026-09-05T15:40:53.9020255Z PASS: 75 CRT-family replays; 72 general guarded replays; first return grows, later return descends; absent guard rejected.
+2026-09-05T15:40:54.0689599Z PASS: 75 CRT-family replays; 72 general guarded replays; first return grows, later return descends; absent guard rejected.
+2026-09-05T15:40:54.1168848Z PASS: 1004 parameter replays; exact q labels 10->7->4->10; S^3(n)=T^11(n)=m>n.
+2026-09-05T15:40:54.2004358Z PASS: 1004 parameter replays; exact q labels 10->7->4->10; S^3(n)=T^11(n)=m>n.
+
+Scope: acceptance covers this exact source commit. Later integrated commits require their own CI evidence. The theorem excludes a guarded infinite family from any hypothetical least bad residue-20 root; universal termination and coverage of the complementary roots remain unproved.

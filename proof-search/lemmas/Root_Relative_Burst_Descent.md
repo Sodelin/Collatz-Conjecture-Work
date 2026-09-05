@@ -230,3 +230,5 @@ would not supply that argument.
 - **Formalized by / pending:** [checked general descent theorem; CRT specialization pending](../../LEAN_TARGETS.md).
 - **Verified by:** [manifest](../../verification/README.md) and [independent checker](../../verification/root_burst_descent_check.py).
 - **Parallel to:** [refined ancestor selector](Residue20_Refined_Ancestor.md) and [depth-recharge obstruction](../routes/AC_shadow_debt_recharge.md).
+
+- **Extended by:** [two-burst recharge escape](Two_Burst_Recharge_Escape.md) and [q2 exit descent](Q2_Exit_Descent.md), with new guards and original-root comparisons.

@@ -219,7 +219,7 @@ may be folklore or an immediate corollary.
 
 See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
-computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the ten existing
+computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the twelve existing
 Lean proof modules and the unformalized theorem chain.
 
 ## Reviewed additions from the 2026-09-05 pass
@@ -274,7 +274,18 @@ scope, source roles, successful CI and explicit reopening conditions.
 | `AB-ROOT-BURST-DESCENT-001` | Arbitrarily long actual OOE bursts followed by k even steps descend below the original start under 2^k m+5=9^k u, with k,u,m>0. | `C3 V3 I2 N1 R1` | [Trusted Lean statements and proof](../LEAN_TARGETS.md). The guard is not universal; the additional residue20 CRT specialization remains prose/V2. |
 | `AB-ROOT-ANCESTOR-SEMANTICS-001` | q>0 and 3^(L+1)q=4r+1 give the exact ancestor orbit identity T^(e+L+2)(2^e(2^Lq−1))=r. | `C3 V3 I1 N0 R1` | [Formal boundary](../LEAN_TARGETS.md). No smaller-target, residue or all-root coverage conclusion in this declaration. |
 | `B-RESIDUE20-VALUATION-ANCESTOR-2026-09-05` | Every positive r=20 mod27 with v3(4r+1)≥21 has an explicit smaller ancestor in that residue class, via the prescribed six-row selector. | `C2 V2 I2 N1 R1` | [Uniform proof](lemmas/Residue20_Valuation_Ancestor.md), independent forward replay; improved by the next row. Selector and inequalities not Lean-formalized. |
-| `B-RESIDUE20-VALUATION13-ANCESTOR-2026-09-05` | Replacing the t4 tail yields the same smaller-ancestor conclusion for every v3(4r+1)≥13, plus individually guarded lower rows. | `C2 V2 I2 N1 R1` | [Uniform proof and exact boundary](lemmas/Residue20_Refined_Ancestor.md), independent hostile reconstruction and26,085 finite forward replays. The infinite theorem is the proof, not sample extrapolation. No global return control. |
+| `B-RESIDUE20-VALUATION13-ANCESTOR-2026-09-05` | Every natural r with 3^13 dividing 4r+1 has a positive smaller ancestor m=20 mod27 whose actual forward orbit reaches r. | `C3 V3 I2 N1 R1` | [Complete kernel-checked public theorem](../LEAN_TARGETS.md), [exact CI evidence](../verification/residue_ancestor_ci_2026-09-05.txt). All factorization/selector/size/orbit bridges are proved. Individually sharper lower rows in the prose note retain C2/V2 scope; no global return control. |
 | `AC-SHADOW-DEBT-RECHARGE-001` | A growing three-edge stronger-core path resets q=v2(n+5) from10 through7,4 back to10 while freezing the stated endpoint labels; the specified lower-bounded polynomial/finite-lex ranks fail. | `C2 V2 I2 N1 R1` | [Exact family and scoped no-go](routes/AC_shadow_debt_recharge.md). No arbitrary additional-modulus or all-certificate exclusion. |
 
 These are repository-level elementary specializations, not priority claims. Universal termination remains unproved; none has external specialist or peer-reviewed verification.
+
+
+## Fifth continuation: escape through actual recharge
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `AC-TWO-BURST-RECHARGE-ESCAPE-001` | Under exact recharge and exit-divisibility guards, two growing OOE bursts return below the original root; an explicit CRT slice permits an unbounded larger recharge and remains in residue20. Bounded extra even padding covers guarded examples at each q=3k+1, k≥1. | `C2 V2 I2 N1 R1` | [Full proof and controls](lemmas/Two_Burst_Recharge_Escape.md), independent hostile reconstruction and actual-map checker. Arbitrary recharge/exit coverage is unproved; no Lean certificate. |
+| `AC-Q2-EXIT-DESCENT-2026-09-05` | For k≥0,e≥max(2,k+1),u≥1 with 2^(e+1) dividing 27*9^k*u−29, the exact word (OOE)^k OOO E^e descends below 4*8^k*u−5. CRT supplies infinite residue20 families at every q=3k+2, outside the previous selected ancestors. | `C2 V2 I2 N1 R1` | [Uniform proof](lemmas/Q2_Exit_Descent.md) and actual replay. First-return growth requires k≥1; k0 handled separately. Guard not universal; not Lean-formalized. |
+| `B-SECOND-TERNARY-ANCESTOR-001` | Every positive residue20 root with v3(128r−157)≥17 has an explicit smaller residue20 ancestor; two additional fixed cylinders and an exact first-return transition are included with separate scopes. | `C2 V2 I2 N1 R1` | [New-prefix proof and boundaries](lemmas/Complementary_Ancestor_Cylinders.md), actual inverse/forward replay. Uniform family lies wholly in v3(r+7)=4,v3(4r+1)=3. Old finite tails are reused; the new prefix/selector is not Lean-formalized. |
+
+The q5 cylinder `22619+186624s` is a precise remaining transition target, not a claimed escape theorem or an irreducibility result. These elementary specializations carry no external priority claim. Global verdict remains unresolved.
