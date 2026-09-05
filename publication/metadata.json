@@ -12,7 +12,7 @@
     "name": "Collatz: a first-contraction quarter-gap bound",
     "shortName": "Collatz quarter gap (partial)",
     "solveType": "proved",
-    "statement": "Does every positive integer reach 1 under the Collatz map? This proposal concerns only a conditional first-contraction bound within that open problem. It is not a claimed resolution of Collatz.",
+    "statement": "For a positive start n, assume its actual shortcut Collatz orbit has a first coefficient contraction at time k, with T^k(n)=n+d and d>=0. Writing s for the number of odd steps before k, must 4d<s hold? This auxiliary question concerns a conditional bound within the open Collatz problem; it does not assert that every positive orbit reaches 1.",
     "solveDate": "2026-09-05",
     "sourceName": "Collatz Conjecture Work: scoped quarter-gap research announcement",
     "sourceUrl": "{source_url}/blob/{publisher_commit}/publication/announcement.md",

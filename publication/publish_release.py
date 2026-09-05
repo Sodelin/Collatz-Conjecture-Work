@@ -121,7 +121,17 @@ class GitHub:
         return json.loads(result.stdout)
 
     def release(self, tag: str):
-        return self.api(f"releases/tags/{tag}", allow_missing=True)
+        published = self.api(f"releases/tags/{tag}", allow_missing=True)
+        if published is not None:
+            return published
+        # The by-tag endpoint returns published releases only. A draft must be
+        # found through the authenticated release collection, across all pages.
+        pages = json.loads(self.run("api", "--paginate", "--slurp",
+                                    f"repos/{self.repository}/releases"))
+        matches = [release for page in pages for release in page if release.get("tag_name") == tag]
+        if len(matches) > 1:
+            raise PublicationError("Multiple releases use the expected tag")
+        return matches[0] if matches else None
 
     def tag_commit(self, tag: str):
         ref = self.api(f"git/ref/tags/{tag}", allow_missing=True)
@@ -147,14 +157,15 @@ class GitHub:
 def verify_remote(gh: GitHub, release: dict, root: Path, manifest: dict,
                   hashes: dict[str, str], allow_fresh_verification=False) -> None:
     """Check both remote metadata and actual downloaded bytes before acceptance."""
-    tag, source = manifest["release_tag"], manifest["source_commit"]
-    if (release.get("tag_name") != tag or release.get("target_commitish") != source
+    tag, target = manifest["release_tag"], manifest["publisher_commit"]
+    source = manifest["source_commit"]
+    if (release.get("tag_name") != tag or release.get("target_commitish") != target
             or release.get("prerelease") is not True):
         raise PublicationError("Existing release identity/target/prerelease scope differs; not overwritten")
     actual_commit = gh.tag_commit(tag)
     # GitHub may defer creation of a draft's tag until publication.
-    if actual_commit != source and not (actual_commit is None and release.get("draft") is True):
-        raise PublicationError("Release tag points to a different or missing source commit")
+    if actual_commit != target and not (actual_commit is None and release.get("draft") is True):
+        raise PublicationError("Release tag points to a different or missing publisher commit")
     assets = gh.assets(release["id"])
     names = [asset["name"] for asset in assets]
     if (len(names) != len(set(names)) or set(names) != set(hashes)
@@ -190,14 +201,15 @@ def publish(root: Path, environment: dict, gh: GitHub) -> str:
     root = root.resolve()
     manifest, hashes = validate_package(root, environment)
     tag, source = manifest["release_tag"], manifest["source_commit"]
+    target = manifest["publisher_commit"]
     existing_tag = gh.tag_commit(tag)
-    if existing_tag not in {None, source}:
-        raise PublicationError("Existing tag points to another source commit; not overwritten")
+    if existing_tag not in {None, target}:
+        raise PublicationError("Existing tag points to another publisher commit; not overwritten")
     release = gh.release(tag)
     allow_fresh_verification = release is not None
     if release is None:
         gh.run("release", "create", tag, *(str(root / name) for name in sorted(hashes)),
-               "--repo", gh.repository, "--target", source, "--draft", "--prerelease",
+               "--repo", gh.repository, "--target", target, "--draft", "--prerelease",
                "--latest=false", "--title", f"Collatz auxiliary research {source[:12]}",
                "--notes-file", str(root / "release-notes.md"))
         release = gh.release(tag)

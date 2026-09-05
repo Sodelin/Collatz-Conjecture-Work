@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from publication import publish_release as publisher
 
@@ -15,11 +16,11 @@ class FakeGitHub:
         self.calls = []
         self.remote = {p.name: p.read_bytes() for p in root.iterdir() if p.is_file()}
         self.current = self._release(draft) if existing else None
-        self.commit = environment["SOURCE_COMMIT"] if existing and not draft else None
+        self.commit = environment["PUBLISHER_COMMIT"] if existing and not draft else None
 
     def _release(self, draft):
         return {"id": 42, "tag_name": self.environment["RELEASE_TAG"],
-                "target_commitish": self.environment["SOURCE_COMMIT"],
+                "target_commitish": self.environment["PUBLISHER_COMMIT"],
                 "prerelease": True, "draft": draft}
 
     def tag_commit(self, tag):
@@ -41,7 +42,7 @@ class FakeGitHub:
                 (destination / name).write_bytes(data)
         elif args[:2] == ("release", "edit"):
             self.current = self._release(False)
-            self.commit = self.environment["SOURCE_COMMIT"]
+            self.commit = self.environment["PUBLISHER_COMMIT"]
         else:
             raise AssertionError(args)
 
@@ -78,6 +79,13 @@ class PublicationReleaseTests(unittest.TestCase):
             f"{publisher.digest(p)}  {p.name}\n" for p in sorted(self.root.iterdir())
             if p.name != "SHA256SUMS"))
 
+    def test_real_client_finds_unpublished_draft_via_release_collection(self):
+        gh = publisher.GitHub(self.env["GH_REPO"])
+        draft = {"id": 7, "tag_name": self.env["RELEASE_TAG"], "draft": True}
+        with patch.object(gh, "api", return_value=None), patch.object(gh, "run", return_value=json.dumps([[], [draft]])) as run:
+            self.assertEqual(gh.release(self.env["RELEASE_TAG"]), draft)
+            self.assertIn("--paginate", run.call_args.args)
+
     def test_new_release_stays_draft_until_downloaded_hashes_pass(self):
         gh = FakeGitHub(self.root, self.env)
         url = publisher.publish(self.root, self.env, gh)
@@ -85,6 +93,7 @@ class PublicationReleaseTests(unittest.TestCase):
         self.assertEqual(operations, ["create", "download", "edit", "download"])
         self.assertIn("--draft", gh.calls[0])
         self.assertIn("--latest=false", gh.calls[0])
+        self.assertEqual(gh.calls[0][gh.calls[0].index("--target") + 1], self.env["PUBLISHER_COMMIT"])
         self.assertIn("--draft=false", gh.calls[2])
         self.assertFalse(gh.current["draft"])
         self.assertTrue(url.endswith(self.env["RELEASE_TAG"]))

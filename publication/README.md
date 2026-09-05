@@ -5,6 +5,13 @@ Collatz archive and Lean sources, then prepares a VibeMathed submission draft.
 Collatz remains unresolved. A GitHub release is not journal acceptance or a
 VibeMathed catalog listing.
 
+Current decision (2026-09-05): share the reproducible research preview and rehearse
+the signed-in form, but hold the external submission for a focused prior-art and
+venue-eligibility check. The source claim registry currently rates the quarter-gap
+and threshold results N1/R1 (supporting results, not submission-ready standalone
+discoveries). A larger discovery is not required to test this workflow. Independent
+novelty and statement review, rather than a successful build alone, inform submission.
+
 ## One source of publication data
 
 - `metadata.json`: the exact mathematics commit, headline theorem and form text.
@@ -41,6 +48,9 @@ run on `main` creates a GitHub prerelease with these assets:
 
 Release tags include both source and publisher commits, so correcting an export
 produces a new version. Rerunning the same version does not overwrite its assets.
+The Git tag points to the publisher commit on `main`. Download `research-source.zip`
+for the selected mathematics; GitHub's automatic "Source code" archives instead
+represent the publisher checkout. Both full commits are recorded in the manifest.
 The workflow uses the repository's own `GITHUB_TOKEN`; no venue password or API
 secret is stored in GitHub.
 
