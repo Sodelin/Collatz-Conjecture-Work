@@ -1,5 +1,12 @@
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from fractions import Fraction
 from math import ceil, floor, log, log2
 from random import Random

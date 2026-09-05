@@ -27,6 +27,13 @@ It checks only the finite arithmetic corollary between those external inputs.
 
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from fractions import Fraction
 
 BASE = 1 << 71

@@ -5,6 +5,13 @@ This checks one finite cancellation certificate.  It is not a Collatz proof
 and not a global SRS termination result.
 """
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from collections import Counter
 import re
 

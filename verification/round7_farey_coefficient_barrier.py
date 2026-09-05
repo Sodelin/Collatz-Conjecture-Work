@@ -30,6 +30,13 @@ below are Fraction comparisons.  Decimal output is diagnostic only.
 
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from fractions import Fraction
 from decimal import Decimal, getcontext
 

@@ -7,6 +7,13 @@ semantic labeling.  It does not import any P2--P5 scratch solver module.
 
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from collections import Counter
 from dataclasses import dataclass
 from hashlib import sha256

@@ -13,6 +13,13 @@ finite recursive graph search.
 
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 from collections import Counter, defaultdict
 from math import comb
 

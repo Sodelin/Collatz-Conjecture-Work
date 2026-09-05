@@ -6,6 +6,13 @@ It does not prove Collatz and does not replace the universal prose proof.
 
 from __future__ import annotations
 
+
+if not __debug__:
+    raise RuntimeError(
+        "Verification requires assertions; rerun without -O, -OO, "
+        "or PYTHONOPTIMIZE."
+    )
+
 import argparse
 from collections import Counter
 from dataclasses import dataclass
