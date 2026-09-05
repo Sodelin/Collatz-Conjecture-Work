@@ -131,6 +131,7 @@ set_option maxHeartbeats 0 in
 /-- The cutoff is sharp for an envelope asserted at every subsequent odd
 count: s=15 fails, while all s≥16 satisfy it. -/
 theorem mechanical_fifteen_failure : MechanicalFifteenFailureStatement := by
+  unfold MechanicalFifteenFailureStatement
   decide
 
 theorem universalMechanicalQuarterCertificate :
