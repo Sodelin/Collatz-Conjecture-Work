@@ -222,3 +222,12 @@ certificate semantics without constructing a universal certificate.
 - **D:** the quarter-gap arithmetic chain is now Lean-verified, with supporting normalized threshold16. Infinite coefficient stopping, the immutable root, renewal and the zero-gap branch remain open.
 
 No route is promoted to a universal solution by these updates.
+
+
+## Fourth-pass route decisions
+
+- **B gains constructive coverage:** [the refined ancestor theorem](lemmas/Residue20_Refined_Ancestor.md) removes every c-normal residue20 root with v3(4r+1)≥13 from a hypothetical least-bad-root argument. [Guarded burst descent](lemmas/Root_Relative_Burst_Descent.md) supplies a different unbounded family with a later return below the unchanged original start.
+- **AB remains without a universal mechanism:** these strict certificates bypass the old zero-progress composition for their covered families, but do not supply total coverage or a rank on the complement. The [q-recharge family](routes/AC_shadow_debt_recharge.md) also defeats the specified polynomial rank augmented only by OOE shadow depth.
+- **Next admission test:** classify growing returns from the residual c-normal residue20 class, and construct an exact escape for a new infinite cylinder while carrying the original root. The endpoint valuation alone must not be assumed to decrease.
+
+No global route status is promoted by partial family coverage.

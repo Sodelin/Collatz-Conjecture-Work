@@ -219,7 +219,7 @@ may be folklore or an immediate corollary.
 
 See [verification/README.md](../verification/README.md) for portable commands,
 tested versions, expected outputs, and which claims are only bounded
-computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the nine existing
+computations. See [LEAN_TARGETS.md](../LEAN_TARGETS.md) for the ten existing
 Lean proof modules and the unformalized theorem chain.
 
 ## Reviewed additions from the 2026-09-05 pass
@@ -265,3 +265,16 @@ supplies an explicit separating example.
 
 The [third-pass report](../ASTRA_CONTINUATION_2026-09-05.md) records proof
 scope, source roles, successful CI and explicit reopening conditions.
+
+
+## Fourth continuation: constructive root-relative families
+
+| ID | Exact scope | Grades | Evidence / limitation |
+|---|---|---|---|
+| `AB-ROOT-BURST-DESCENT-001` | Arbitrarily long actual OOE bursts followed by k even steps descend below the original start under 2^k m+5=9^k u, with k,u,m>0. | `C3 V3 I2 N1 R1` | [Trusted Lean statements and proof](../LEAN_TARGETS.md). The guard is not universal; the additional residue20 CRT specialization remains prose/V2. |
+| `AB-ROOT-ANCESTOR-SEMANTICS-001` | q>0 and 3^(L+1)q=4r+1 give the exact ancestor orbit identity T^(e+L+2)(2^e(2^Lq−1))=r. | `C3 V3 I1 N0 R1` | [Formal boundary](../LEAN_TARGETS.md). No smaller-target, residue or all-root coverage conclusion in this declaration. |
+| `B-RESIDUE20-VALUATION-ANCESTOR-2026-09-05` | Every positive r=20 mod27 with v3(4r+1)≥21 has an explicit smaller ancestor in that residue class, via the prescribed six-row selector. | `C2 V2 I2 N1 R1` | [Uniform proof](lemmas/Residue20_Valuation_Ancestor.md), independent forward replay; improved by the next row. Selector and inequalities not Lean-formalized. |
+| `B-RESIDUE20-VALUATION13-ANCESTOR-2026-09-05` | Replacing the t4 tail yields the same smaller-ancestor conclusion for every v3(4r+1)≥13, plus individually guarded lower rows. | `C2 V2 I2 N1 R1` | [Uniform proof and exact boundary](lemmas/Residue20_Refined_Ancestor.md), independent hostile reconstruction and26,085 finite forward replays. The infinite theorem is the proof, not sample extrapolation. No global return control. |
+| `AC-SHADOW-DEBT-RECHARGE-001` | A growing three-edge stronger-core path resets q=v2(n+5) from10 through7,4 back to10 while freezing the stated endpoint labels; the specified lower-bounded polynomial/finite-lex ranks fail. | `C2 V2 I2 N1 R1` | [Exact family and scoped no-go](routes/AC_shadow_debt_recharge.md). No arbitrary additional-modulus or all-certificate exclusion. |
+
+These are repository-level elementary specializations, not priority claims. Universal termination remains unproved; none has external specialist or peer-reviewed verification.

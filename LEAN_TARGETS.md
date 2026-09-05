@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **nine Lean proof modules**. It does not
+The repository contains **ten Lean proof modules**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -13,9 +13,10 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
-The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all nine
+The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) now imports all ten
 proof modules, including the two-pump module and
-[`Convergence.lean`](lean/CollatzWork/Convergence.lean).
+[`Convergence.lean`](lean/CollatzWork/Convergence.lean). The new
+[`RootDescent.lean`](lean/CollatzWork/RootDescent.lean) is scoped below.
 
 The new convergence module proves finite-prefix and coalescence invariance,
 the all-positive smaller-coalescence and direct-descent equivalences, and
@@ -120,3 +121,17 @@ novelty, public priority, omitted prose, or the Collatz conjecture.
 [Scope and provenance](verification/Quarter_Gap_Formal_Scope_2026-09-05.md)
 record the successful 17-job build and axiom audit. No first-contraction
 existence theorem or global termination premise was discharged.
+
+
+## Guarded root-relative progress, PR17 continuation
+
+[RootDescentStatement](lean/CollatzWork/RootDescentStatement.lean) fixes the quantified propositions; [RootDescent](lean/CollatzWork/RootDescent.lean) proves them. The [initial exact-head CI evidence](verification/root_descent_ci_initial_2026-09-05.txt) records all19 Lake tasks passing on the unchanged pinned Lean4.33.1 release.
+
+| Declaration | Kernel-checked scope | Axioms |
+|---|---|---|
+| `rootDescentBurst` | Every k≥0,u>0: T^(3k)(8^k u−5)=9^k u−5 (natural subtraction in the zero-length case). | `propext`, `Quot.sound` |
+| `rootDescent` | k,u,m>0 and 2^k m+5=9^k u imply T^(4k)(8^k u−5)=m<8^k u−5. | `propext`, `Classical.choice`, `Quot.sound` |
+| `rootDescent_converges_of_smaller` | Under the same guard, a stated convergence induction hypothesis for all smaller positive starts implies convergence of this start. | `propext`, `Classical.choice`, `Quot.sound` |
+| `rootDescentAncestor` | q>0 and 3^(L+1)q=4r+1 imply T^(e+L+2)(2^e(2^Lq−1))=r. No size/coverage conclusion. | `propext`, `Quot.sound` |
+
+The [infinite CRT burst specialization](proof-search/lemmas/Root_Relative_Burst_Descent.md), [six-row ancestor selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md), and [refined valuation13 selector](proof-search/lemmas/Residue20_Refined_Ancestor.md) retain prose proofs plus independent exact Python checks. The generic prefix identity is formalized; the refined odd-containing inverse tails, selector coverage, target congruences and slope bounds are not yet formalized. No universal guard, stopping existence or Collatz theorem is proved.

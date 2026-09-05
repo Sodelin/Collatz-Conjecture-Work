@@ -1,0 +1,32 @@
+Initial exact-head CI evidence for the root-descent formalization
+
+Repository: Sodelin/Collatz-Conjecture-Work
+Pull request: https://github.com/Sodelin/Collatz-Conjecture-Work/pull/17
+Source SHA: 54cb390bf7a0887a3613a1cc6d2a0ed9663f2fd4
+Workflow: Verify exact mathematics
+Workflow run: 33973663173
+Run URL: https://github.com/Sodelin/Collatz-Conjecture-Work/actions/runs/33973663173
+Job: 101326486437 (verify)
+Workflow conclusion: success
+Job conclusion: success
+
+Acceptance uses the unchanged official Lean 4.33.1 release downloaded on GitHub Actions, not the scratch diagnostic compatibility environment. The release archive was checked against SHA-256 890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235. Build output reports 19 Lake jobs; this is not a count of 19 independent CI jobs.
+
+Verbatim relevant job-log lines, with ANSI coloring removed:
+
+2026-09-05T15:04:07.1904263Z   SOURCE_SHA: 54cb390bf7a0887a3613a1cc6d2a0ed9663f2fd4
+2026-09-05T15:04:07.9510222Z HEAD is now at 54cb390 Prove guarded unbounded burst descent and ancestor orbit identities
+2026-09-05T15:04:07.9724437Z   https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst
+2026-09-05T15:04:07.9727526Z echo "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235  $RUNNER_TEMP/lean.tar.zst" | sha256sum --check
+2026-09-05T15:04:10.1367235Z /home/runner/work/_temp/lean.tar.zst: OK
+2026-09-05T15:04:15.1970617Z Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-09-05T15:04:17.9728033Z ✔ [6/19] Built CollatzWork.RootDescentStatement (859ms)
+2026-09-05T15:04:21.8932227Z ℹ [16/19] Built CollatzWork.RootDescent (1.3s)
+2026-09-05T15:04:21.8933305Z info: lean/CollatzWork/RootDescent.lean:160:0: 'CollatzWork.rootDescentBurst' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:04:21.8934854Z info: lean/CollatzWork/RootDescent.lean:161:0: 'CollatzWork.rootDescent_power_margin' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:04:21.8936788Z info: lean/CollatzWork/RootDescent.lean:162:0: 'CollatzWork.rootDescent' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T15:04:21.8938948Z info: lean/CollatzWork/RootDescent.lean:163:0: 'CollatzWork.rootDescent_converges_of_smaller' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-05T15:04:21.8940641Z info: lean/CollatzWork/RootDescent.lean:164:0: 'CollatzWork.rootDescentAncestor' depends on axioms: [propext, Quot.sound]
+2026-09-05T15:04:22.5943629Z Build completed successfully (19 jobs).
+
+Scope: these lines establish acceptance of the exact initial commit only. Later integrated commits require their own CI evidence. The guarded descent theorem and actual-ancestor identity do not establish universal termination.

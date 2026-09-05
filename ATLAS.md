@@ -213,3 +213,8 @@ it, it belongs in the failure ledger rather than a new route.
 - [Original-F arbitrary-modulus obstruction](proof-search/routes/AB_finite_residue_original_return_no_go.md).
 - [Stronger core, smaller targets and composition loop](proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md).
 - [Published sufficiency and explicit modulo27 rank](proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md).
+
+
+## Root-relative progress packet
+
+[Continuation report](ROOT_RELATIVE_PROGRESS_2026-09-05.md) connects the [formal burst descent](proof-search/lemmas/Root_Relative_Burst_Descent.md), [simple ancestor selector](proof-search/lemmas/Residue20_Valuation_Ancestor.md), [refined valuation13 selector](proof-search/lemmas/Residue20_Refined_Ancestor.md), and [shadow-depth recharge obstruction](proof-search/routes/AC_shadow_debt_recharge.md). The positive family certificates compare to the original root; the complement still lacks a universal mechanism.

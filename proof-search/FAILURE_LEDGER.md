@@ -421,3 +421,10 @@ When reopening a ledger item, add:
 - **Exact theorem target:**
 
 Without these five fields, do not spend a full search cycle on the old route.
+
+
+## F030 — Naming the OOE shadow depth does not prevent recharge
+
+For the specified stronger-core return S, [the exact family](routes/AC_shadow_debt_recharge.md) with u=6807+12288t has n=1024u−5 and S^3(n)=(2187u−7)/2>n. The shadow depths are10→7→4→10; both endpoints freeze (L,epsilon,b,D,R,n mod3,q)=(2,1,0,1,0,1,10). This excludes only the stated lower-bounded per-label polynomial size/bitlength ranks and coordinatewise lower-bounded finite lex tuples.
+
+**Reopen with:** an unfrozen arithmetic feature, a nonpolynomial mechanism, or a different smaller-target certificate. The [positive burst theorem](lemmas/Root_Relative_Burst_Descent.md) handles a separate guarded exit and supplies no general recharge bound.

@@ -46,3 +46,9 @@ jobs:
           python3 -B verification/finite_residue_hard_return_check.py
           python3 -B verification/core_residue_obstruction_check.py
           python3 -B verification/mod27_rank_check.py
+      - name: Verify root-relative progress and recharge boundaries
+        run: |
+          for checker in residue20_valuation_inverse_check residue20_refined_ancestor_check root_burst_descent_check check_shadow_debt_recharge; do
+            python3 -B "verification/${checker}.py"
+            python3 -O -B "verification/${checker}.py"
+          done

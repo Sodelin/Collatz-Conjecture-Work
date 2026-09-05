@@ -164,3 +164,14 @@ combines return and inverse coalescence. Track the immutable induction root
 and actual progress; never infer termination merely from separately valid
 coalescence identities. The original-F arbitrary-modulus obstruction has
 [its own distinct proof](proof-search/routes/AB_finite_residue_original_return_no_go.md).
+
+
+## Fourth-pass handoff: root-relative progress
+
+Start with [the committed research packet](ROOT_RELATIVE_PROGRESS_2026-09-05.md). Actual OOE burst descent under its exact divisibility guard and generic ancestor orbit semantics are now Lean-checked. The refined inverse-tail selector proves in prose that every positive residue20 root with v3(4r+1)≥13 has a smaller ancestor in the same class.
+
+A hypothetical least nonconvergent residue20 root must therefore satisfy v3(r+7)∈{3,4} and v3(4r+1)≤12, and avoid all individually covered rows and guarded burst families. This remains an infinite residual set. The displayed selector does not certify425; its v12 sharpness witness is a failure of that selector only.
+
+The highest-value next mathematical target is an exact recharge-or-escape lemma on this residual class: first isolate a growing return cylinder, then prove either a smaller coalescing target or a decrease in a justified unbounded measure across the complete excursion. Track the unchanged induction root. The q10→7→4→10 growing path is a required falsification test for q-only polynomial ranks. A bounded-depth first-return calculation or a larger replay limit cannot replace this theorem.
+
+The more bounded verification target is to formalize the finite refined tail table and its slope/coverage argument using the checked generic ancestor prefix. This would raise verification confidence without resolving the residual mathematical bridge.

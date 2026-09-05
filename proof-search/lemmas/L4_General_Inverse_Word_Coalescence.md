@@ -306,3 +306,8 @@ Formalize a generic datatype of inverse words and prove:
 6. the concrete `4096x+1023 -> 3072x+767` certificate as a regression test.
 
 Once this generic checker is trusted, future macro searches can be completely untrusted certificate generators.
+
+
+## New specialization connection
+
+- **Specialized by:** [unbounded valuation ancestor construction](Residue20_Refined_Ancestor.md), with exact guards, membership in residue20, and strict comparison to the original root.

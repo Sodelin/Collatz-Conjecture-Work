@@ -418,3 +418,10 @@ core itself, which follows directly from the decreasing eta normalization.
 - **Constrains:** [residue-20 ranked normalizer](../sources/Sufficiency_Rank_Audit_2026-09-05.md).
 - **Verified by:** [exact checker](../../verification/core_residue_obstruction_check.py).
 - **Recorded in:** [continuation report](../../ASTRA_CONTINUATION_2026-09-05.md).
+
+
+## Root-relative continuation connections
+
+- **Strengthened by:** [explicit smaller residue20 ancestors](../lemmas/Residue20_Refined_Ancestor.md), which remove an infinite subfamily of c-normal roots, including old auxiliary-loop roots.
+- **Parallel to:** [guarded forward burst descent](../lemmas/Root_Relative_Burst_Descent.md), whose later return can decrease after its first return grows.
+- **Rank class further blocked by:** [exact shadow-depth recharge](AC_shadow_debt_recharge.md), for the specified stronger-core return S only.
