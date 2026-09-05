@@ -62,7 +62,8 @@ theorem residueAncestor_prefix_one (k u r : Nat) (hu : 0 < u)
       _ = 4 * r + 1 := hguard
   have h := rootDescentAncestor 0 (k + 1) (3 * u) r (by omega) hc
   have hz : 2 ^ (k + 1) * (3 * u) = 6 * (2 ^ k * u) := by
-    simp [Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+    rw [Nat.pow_succ, Nat.mul_assoc, ← Nat.mul_assoc 2 3 u]
+    exact Nat.mul_left_comm (2 ^ k) 6 u
   simpa only [Nat.zero_add, Nat.pow_zero, Nat.one_mul, hz,
     show k + 1 + 2 = k + 3 by omega] using h
 
@@ -128,10 +129,44 @@ theorem residueAncestor : ResidueAncestorStatement := by
   rw [hvform] at hguard
   exact residueAncestor_normalized (v - 3) u r (by omega) hu hunit hguard
 
+/-- Every positive integer has a finite power-of-three factor and a positive
+unit. The recursion divides only when divisible, and strictly decreases. -/
+theorem residueAncestor_factor_unit (n : Nat) :
+    0 < n → ∃ e u : Nat, 0 < u ∧ u % 3 ≠ 0 ∧ 3 ^ e * u = n := by
+  induction n using Nat.strongRecOn with
+  | ind n ih =>
+      intro hn
+      by_cases hd : n % 3 = 0
+      · have hqpos : 0 < n / 3 := by omega
+        have hqlt : n / 3 < n := by omega
+        obtain ⟨e, u, hu, hunit, he⟩ := ih (n / 3) hqlt hqpos
+        refine ⟨e + 1, u, hu, hunit, ?_⟩
+        rw [Nat.pow_succ, Nat.mul_comm (3 ^ e) 3, Nat.mul_assoc, he]
+        omega
+      · exact ⟨0, n, hn, hd, by simp⟩
+
+/-- The full public criterion needs only divisibility by 3^13. Its
+factorization is constructed above, not assumed as an unproved bridge. -/
+theorem residueAncestor_of_divisibility : ResidueAncestorDivisibilityStatement := by
+  intro r hdiv
+  obtain ⟨a, ha⟩ := hdiv
+  have ha0 : a ≠ 0 := by
+    intro hzero
+    rw [hzero, Nat.mul_zero] at ha
+    omega
+  obtain ⟨e, u, hu, hunit, he⟩ :=
+    residueAncestor_factor_unit a (Nat.pos_of_ne_zero ha0)
+  apply residueAncestor (13 + e) u r (by omega) hu hunit
+  rw [Nat.pow_add, Nat.mul_assoc, he]
+  exact ha.symm
+
 example : ResidueAncestorStatement := residueAncestor
+example : ResidueAncestorDivisibilityStatement := residueAncestor_of_divisibility
 
 #print axioms CollatzWork.residueAncestor_powerBound
 #print axioms CollatzWork.residueAncestor_normalized
 #print axioms CollatzWork.residueAncestor
+#print axioms CollatzWork.residueAncestor_factor_unit
+#print axioms CollatzWork.residueAncestor_of_divisibility
 
 end CollatzWork

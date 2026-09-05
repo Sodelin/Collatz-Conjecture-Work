@@ -12,4 +12,11 @@ def ResidueAncestorStatement : Prop :=
     3 ^ v * u = 4 * r + 1 →
     ∃ m b : Nat, 0 < m ∧ m < r ∧ m % 27 = 20 ∧ shortcutIter b m = r
 
+/-- Direct integer-divisibility form of the complete valuation-at-least-13
+theorem. No separate existence or maximality assumption for a 3-adic
+factorization is required at this public boundary. -/
+def ResidueAncestorDivisibilityStatement : Prop :=
+  ∀ r : Nat, 3 ^ 13 ∣ 4 * r + 1 →
+    ∃ m b : Nat, 0 < m ∧ m < r ∧ m % 27 = 20 ∧ shortcutIter b m = r
+
 end CollatzWork
