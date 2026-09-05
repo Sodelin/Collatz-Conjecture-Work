@@ -15,7 +15,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 ENTRY = ROOT / "README.md"
-SKIP_PARTS = {".git", ".obsidian", "__pycache__"}
+SKIP_PARTS = {".git", ".obsidian", ".lake", ".venv", ".venv-math", "__pycache__"}
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)\n]+)\)")
 
 

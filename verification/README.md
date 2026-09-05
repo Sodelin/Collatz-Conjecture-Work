@@ -71,6 +71,40 @@ No module formalizes Round 6A, full L5, the L13 hard-child classification,
 the cross-label recharge/rank theorem, the hard return map, YAH relative
 termination, or Collatz.
 
+## Finite-palette exploration — 2026-09-05
+
+The [proof note](../proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+distinguishes universal deductive statements from finite diagnostics and records
+the blind-derivation and repository-overlap boundaries. The natural-valued
+headline is formalized with an arbitrary selector and independent thresholds.
+
+```bash
+python -S -B verification/finite_palette_obstruction.py
+python -S -O -B verification/finite_palette_obstruction.py
+lake build
+lake env lean lean/CollatzWork/FinitePaletteObstruction.lean
+```
+
+Expected diagnostics: 384 forced-growth traces, 2,438 exhaustive finite
+selector assignments, 48 delayed-switch fixtures, four rejected malformed
+certificates, and one replayed example. Both normal and optimized Python
+execution report `FINITE_PALETTE_DIAGNOSTICS = PASS`.
+
+The solution contains an exact type comparison against
+`FinitePaletteObstructionStatement`. The generic path theorem and the main
+theorem report only `propext`, `Classical.choice`, `Quot.sound`; the prefix
+lemma reports `propext`, `Quot.sound`. No project mathematical axiom or
+`sorryAx` occurs. This does not formalize the prose real-polynomial corollary.
+
+The retained [source-build and checker transcript](finite_palette_verification_2026-09-05.txt)
+and [SHA-256 manifest](finite_palette_SHA256SUMS_2026-09-05.txt) identify the
+audited files. CI also checks a clean source checkout with the pinned Lean
+release; there is no independent-kernel implementation replay in this pass.
+
+SymPy is optional. Its [setup](../docs/MATH_TOOL_SETUP.md) and
+`verification/math_tool_smoke.py` provide reproducible exact symbolic checks.
+It is not part of the Lean trusted proof path or the dependency-free diagnostic.
+
 ## Retained historical diagnostics
 
 These commands have committed outputs, but they were not all rerun in the

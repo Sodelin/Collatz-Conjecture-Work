@@ -152,6 +152,12 @@ orbit.
 
 ## Evidence and formalization
 
+- [Finite-palette bounded-progress obstruction](proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+  strengthens bounded direct integer descent to arbitrary switching among
+  finitely many eventually nondecreasing rank pieces. Its fixed shortcut
+  horizon remains a material restriction.
+- [Free symbolic and formal tool setup](docs/MATH_TOOL_SETUP.md)
+
 - [Verification and reproduction manifest](verification/README.md)
 - [Lean target boundary](LEAN_TARGETS.md)
 - [Lean verification policy](lean/VERIFICATION_POLICY.md)

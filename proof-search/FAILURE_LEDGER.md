@@ -337,6 +337,28 @@ target. Renaming the return obligation is not progress.
 
 ---
 
+## BLIND-PALETTE-001 — arbitrary finite monotone palette restores bounded progress
+
+**Class:** `FALSE` for finitely many eventually nondecreasing functions and a
+uniform finite shortcut horizon. This includes nonnegative ranks selecting
+among finitely many real polynomial formulas (prose corollary).
+
+Arbitrary palette switching permits some rank decreases along increasing
+integer inputs. It cannot permit `r` successive strict decreases on an
+increasing path when there are only `r` monotone pieces: a repeated piece
+contradicts monotonicity. The forced Mersenne prefix of length `rH` then blocks
+universal strict rank progress within `H` shortcut steps. See the
+[proof and exact scope](lemmas/Finite_Palette_Bounded_Progress_Obstruction.md).
+
+The natural-valued statement is Lean checked. This extends the bounded
+integer-descent mechanism in F008 to arbitrary finite palette selection. It
+does not exclude unbounded progress horizons, infinitely many pieces,
+nonmonotone arithmetic dependence, or every finite-state proof system.
+
+**Reopen only if:** the proposal explicitly changes one of those assumptions
+and supplies a new deterministic progress argument. Finite residue decoration
+alone does not bypass this result.
+
 # Reopening template
 
 When reopening a ledger item, add:

@@ -105,20 +105,30 @@ research control only; it does not alter any mathematical or release status.
 
 ## What is formally checked
 
-The repository contains three narrow Lean developments:
+The repository contains four narrow Lean developments:
 
 - [equal-slope inverse-word boundary](lean/CollatzWork/InverseWordBoundary.lean);
 - [refined Mersenne easy-child coalescence](lean/CollatzWork/RefinedMersenneChild.lean);
+- [finite-palette bounded-progress obstruction](lean/CollatzWork/FinitePaletteObstruction.lean);
 - [two-pump algebraic dependency](lean/CollatzWork/Disproof/TwoPumpDependency.lean).
 
-The first two are included in the umbrella build. The two-pump module is
+The first three are included in the umbrella build. The two-pump module is
 compiled directly. A clean `lake build` does **not** formalize the full prose
 chain, the hard-family rank claims, Round 6A, or the Collatz conjecture.
 See [LEAN_TARGETS.md](LEAN_TARGETS.md) for the exact boundary.
 
+The [2026-09-05 blind-attempt note](proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+adds an obstruction to arbitrary selection among finitely many eventually
+nondecreasing rank functions with uniformly bounded time to progress. It does
+not supply a universal Collatz proof. The independent derivation, overlap with
+existing PRs, polynomial corollary, and remaining scope are recorded there.
+
 ## Reproduce the promoted checks
 
 From the repository root:
+
+For optional symbolic computation and the pinned proof checker, see the
+[free math tool setup](docs/MATH_TOOL_SETUP.md).
 
 ```powershell
 python -B verification\trajectory_normal_form_regression.py
@@ -127,6 +137,7 @@ python -B verification\yah_two_state_semantic_label_no_go.py
 python -S -B verification\yah_two_state_scalar_arctic_full_no_start.py
 python -S -B verification\yah_scalar_arctic_top\verify_top_certificates.py
 python -B verification\disproof_cycle_search.py
+python -S -B verification\finite_palette_obstruction.py
 lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 lake build
 ```

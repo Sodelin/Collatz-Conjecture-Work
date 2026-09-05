@@ -1,6 +1,6 @@
 # Lean verification status and targets
 
-The repository contains **three narrow Lean formalizations**. It does not
+The repository contains **four narrow Lean formalizations**. It does not
 contain a Lean proof of the Collatz conjecture or of the complete prose chain.
 
 Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
@@ -11,10 +11,11 @@ Toolchain: Lean 4.33.1, pinned by [`lean-toolchain`](lean-toolchain).
 |---|---|---|
 | [`lean/CollatzWork/InverseWordBoundary.lean`](lean/CollatzWork/InverseWordBoundary.lean) | Equal-slope affine comparison and the `8x+5 / 8x+4` coalescence regression. | Full L4/L5 guards, completeness, or Collatz. |
 | [`lean/CollatzWork/RefinedMersenneChild.lean`](lean/CollatzWork/RefinedMersenneChild.lean) | Easy-child arithmetic, iteration identity, and coalescence for the refined Mersenne family. | Hard-child classification, successor normalization, recharge/rank obstruction, or Collatz. |
+| [`lean/CollatzWork/FinitePaletteObstruction.lean`](lean/CollatzWork/FinitePaletteObstruction.lean) | Arbitrary selection among finitely many eventually nondecreasing natural-valued functions cannot guarantee a strict rank decrease within a uniform finite shortcut horizon at all sufficiently large inputs. | Real-valued or polynomial corollaries, other map conventions, unrestricted ranks, or Collatz. |
 | [`lean/CollatzWork/Disproof/TwoPumpDependency.lean`](lean/CollatzWork/Disproof/TwoPumpDependency.lean) | Exact determinant-coefficient dependencies, vanishing resultant, and syzygy. | Existence or exclusion of a positive cycle. |
 
 The umbrella [`lean/CollatzWork.lean`](lean/CollatzWork.lean) imports the first
-two modules. The two-pump module must also be compiled directly.
+three modules. The two-pump module must also be compiled directly.
 
 ```powershell
 lake build
@@ -23,8 +24,13 @@ lake env lean lean\CollatzWork\Disproof\TwoPumpDependency.lean
 
 The 2026-08-24 replay passed. The recorded theorem dependencies are summarized
 in [verification/README.md](verification/README.md). Standard Lean axioms such
-as `propext`, `Quot.sound`, and, for one arithmetic theorem,
+as `propext`, `Quot.sound`, and, for some arithmetic and finite-palette theorems,
 `Classical.choice` are not `sorryAx`; they still belong in the axiom footprint.
+
+The 2026-09-05 [finite-palette note](proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md)
+records the blind derivation and scope. Its trusted statement is a separate
+source file; the solution ends with a type comparison and three axiom reports.
+The new CI workflow replays the pinned release from a SHA-256-checked archive.
 
 ## Highest-value pending targets
 

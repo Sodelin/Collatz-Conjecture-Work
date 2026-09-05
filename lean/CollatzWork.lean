@@ -1,2 +1,3 @@
 import CollatzWork.InverseWordBoundary
 import CollatzWork.RefinedMersenneChild
+import CollatzWork.FinitePaletteObstruction
