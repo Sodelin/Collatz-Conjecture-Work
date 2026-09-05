@@ -9,3 +9,4 @@ import CollatzWork.BlockArithmetic
 import CollatzWork.QuarterGapUniversal
 import CollatzWork.RootDescent
 import CollatzWork.ResidueAncestor
+import CollatzWork.TwoBurst
