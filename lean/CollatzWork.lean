@@ -17,3 +17,5 @@ import CollatzWork.FinitePaletteObstruction
 import CollatzWork.Disproof.BranchingCenter
 import CollatzWork.Disproof.FiniteResidueFirstIntegral
 import CollatzWork.Disproof.PolynomialRatchet
+
+import CollatzWork.ExcursionBudget
