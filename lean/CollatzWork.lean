@@ -5,3 +5,4 @@ import CollatzWork.Disproof.TwoPumpDependency
 import CollatzWork.QuarterGap
 import CollatzWork.FirstContraction
 import CollatzWork.FloorPower
+import CollatzWork.BlockArithmetic
