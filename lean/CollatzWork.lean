@@ -8,3 +8,4 @@ import CollatzWork.FloorPower
 import CollatzWork.BlockArithmetic
 import CollatzWork.QuarterGapUniversal
 import CollatzWork.RootDescent
+import CollatzWork.ResidueAncestor
