@@ -1,0 +1,43 @@
+{
+  "axioms": {
+    "CollatzWork.excursionBudgetDescent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzWork.excursionChainEnvelope": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzWork.excursionChain_converges_of_smaller": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzWork.excursionChain_terminal_descent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CollatzWork.shiftedEnvelope_compose": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CollatzWork.terminalEnvelope_compose": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "build_tasks": 37,
+  "checked_merge": "17040f805f49a13e647115a6e9a04fa31c8e8304",
+  "comparison_changed_files": 0,
+  "conclusion": "success",
+  "evidence_kind": "transcribed metadata and declaration inventory from retrieved GitHub job log, not a local build or full raw-log archive",
+  "job_id": 101363007819,
+  "release_sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+  "scope": "generic actual-orbit envelope composition and conditional original-root descent only",
+  "source_head": "306da627526eaa068285e566309660e39ef19548",
+  "source_tree": "042062547b2910ae155610e1b6168bab84987cc2",
+  "toolchain": "Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "workflow_run": 33987249998
+}

@@ -1,0 +1,39 @@
+{
+  "closed_form_checks": 800,
+  "example": {
+    "H": 9,
+    "J": 6,
+    "K": 2,
+    "Q": 1,
+    "endpoint": 1021784986051067,
+    "halvings": 20,
+    "returns": [
+      {
+        "tail": "EE",
+        "time": 13,
+        "value": 15465910281271828571
+      },
+      {
+        "tail": "EO",
+        "time": 26,
+        "value": 111480290063332544603
+      }
+    ],
+    "root": 6436861099638206555,
+    "steps": 57
+  },
+  "family_replays": 396,
+  "max_failed_returns": 64,
+  "max_word_length": 1810,
+  "negative_controls": 12,
+  "parity_replays": 1022,
+  "root_reset_control": {
+    "endpoint": 11261965486678280790637993610266334956652883644218106293352579662841678492879,
+    "local_descent": true,
+    "original_root_descent": false,
+    "root": 995935432657418571335850556058951673037896264368857137325524338637662531675,
+    "terminal_start": 1228719541075139452047330323912789678621290272722909770385640193292173844247875675
+  },
+  "scope": "guarded infinite families proved in prose; no all-root coverage or novelty claim",
+  "status": "PASS"
+}
