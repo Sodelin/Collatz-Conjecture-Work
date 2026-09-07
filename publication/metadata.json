@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "repository": "Sodelin/Collatz-Conjecture-Work",
-  "source_commit": "3d9a74e79a2162472430537f4fe7aa299450271c",
+  "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9",
   "headline_declaration": "CollatzWork.firstContractionQuarterGap",
   "title": "Collatz research consolidation: restricted YAH obstruction, Lean auxiliary results, and open bridges",
-  "date": "2026-09-05",
+  "date": "2026-09-07",
   "maintainer": "Nolan Downard",
   "conjecture_status": "unresolved",
   "novelty_status": "No exact prior match located for combined YAH top/labeled exclusion in bounded review; priority not independently established",
