@@ -1,0 +1,21 @@
+Existing rights retained; public archival access
+
+The project maintainer has authorized public archival access to this report
+and the accompanying research artifacts. This notice does not grant a new
+broad reuse license or relicense pre-existing source material.
+
+Applicable pre-existing permissions, notices, and third-party rights remain
+in effect and with their respective rights holders. No blanket open-source
+license was identified at the pinned project revisions. Public availability
+alone should not be read as permission to redistribute, modify, or reuse
+copyrightable material beyond applicable existing permissions or law.
+
+No claim of copyright is made over material that is not copyrightable,
+including any material for which no copyright protection arises. This
+notice does not restrict rights that already exist under applicable law.
+
+No human mathematical authorship or editor role is claimed for the proposed
+deposit. Creator/contributor metadata and platform eligibility remain under
+review. AI assistance and limitations of historical attribution are
+disclosed in the report. Referenced third-party papers and author code are
+linked, not bundled as copies in the focused reproducibility archive.

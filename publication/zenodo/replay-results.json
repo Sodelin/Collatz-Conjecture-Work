@@ -1,0 +1,29 @@
+{
+  "replayed_from_extracted_zip": true,
+  "archive_sha256": "023351a27c599b813fde09a9f4f4d98f11f5d90817ab86e4ef3fbc63c3a24f37",
+  "python_version": "Python 3.12.13",
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-S",
+        "-B",
+        "verification/yah_two_state_scalar_arctic_full_no_start.py"
+      ],
+      "exit_code": 0,
+      "stdout": "unlabeled certificate rows = 11\nunlabeled total multiplier = 49\nweighted unlabeled symbol-count delta = {}\nORIGINAL_FULL_EXTENDED_SCALAR_ARCTIC_NO_START = PASS\nsemantic equations = 22\nlabeled tokens = 14\ncertificate rows = 22\nall multipliers positive = PASS\ntotal multiplier = 49\nweighted token-count delta = {}\nFULL_EXTENDED_SCALAR_ARCTIC_NO_START = PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-S",
+        "-B",
+        "verification/yah_scalar_arctic_top/verify_top_certificates.py"
+      ],
+      "exit_code": 0,
+      "stdout": "CASE TOP_BOUNDARY_ORIGINAL X_^0[0]: PASS; atoms=100 lemmas=50\nCASE TOP_BOUNDARY_ORIGINAL X_^0[1]: PASS; atoms=100 lemmas=60\nCASE TOP_BOUNDARY_ORIGINAL X_^1[0]: PASS; atoms=102 lemmas=36\nCASE TOP_BOUNDARY_ORIGINAL X_^1[1]: PASS; atoms=102 lemmas=47\nCASE TOP_BOUNDARY_ORIGINAL X_^2[0]: PASS; atoms=102 lemmas=54\nCASE TOP_BOUNDARY_ORIGINAL X_^2[1]: PASS; atoms=102 lemmas=77\nCASE TOP_DYNAMIC_REVERSED D_f[0]: PASS; atoms=100 lemmas=32\nCASE TOP_DYNAMIC_REVERSED D_f[1]: PASS; atoms=100 lemmas=37\nCASE TOP_DYNAMIC_REVERSED D_t[0]: PASS; atoms=102 lemmas=41\nCASE TOP_DYNAMIC_REVERSED D_t[1]: PASS; atoms=102 lemmas=57\npublished full-system compatibility = PASS\ninstance fingerprint = 7b0dad87f3d82606686251f72e4aaf5acd8f3f4fe97d615a8f40b5d320f57d9d\ncertificate sha256 = dafb9bfcbe02a32905fc46d99ceb97b9b296059869d77ee42cff5c99d04592d6\ncases = 10\nFarkas lemmas = 491\nRUP clauses = 426\ntotal positive multiplier mass = 10183\nchecker elapsed seconds = 2.116\nTOP_SCALAR_ARCTIC_NO_FIRST_STEP = PASS\n",
+      "stderr": ""
+    }
+  ]
+}

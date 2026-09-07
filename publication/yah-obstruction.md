@@ -2,7 +2,7 @@
 
 **A restricted proof-method result for community review. Collatz remains unresolved.**
 
-Maintainer: Nolan Downard. Research and preparation were AI-assisted. Original full/top certificate artifacts are recorded on August 24, 2026; focused semantic and prior-art reviews were completed on September 5, 2026. These dates describe the project record and do not certify priority. This note is not peer reviewed.
+Research and preparation involved AI-generated arguments, code and prose. No human mathematical author or editor role is claimed for the repository account holder. Original full/top certificate artifacts are recorded on August 24, 2026; focused semantic and prior-art reviews were completed on September 5, 2026. These dates describe the project record and do not certify priority. This note is not peer reviewed.
 
 ## Abstract
 
@@ -153,7 +153,7 @@ The semantic audit also discusses a separately derived homogeneous-scaling feasi
 
 The repository records the [full certificate commit](https://github.com/Sodelin/Collatz-Conjecture-Work/commit/f8558a566b682e8dbc4465206f9c26ac9b17760c) and [top certificate commit](https://github.com/Sodelin/Collatz-Conjecture-Work/commit/b75ffec58ae20ac26271ff7d59a71d3591467994) on August 24, 2026. September 5 added the focused review and consolidation described here. Historical commit dates are evidence of the repository record, not a certified public priority timestamp.
 
-AI assisted argument development, certificate discovery, checker code, internal review and manuscript preparation. Historical records do not establish exact model versions or a complete per-step attribution. Nolan Downard maintains the project; repository ownership is not asserted to establish sole mathematical authorship. Internal reviews share model provenance and are disclosed as internal rather than independent expert verification.
+AI contributed argument development, certificate discovery, checker code, internal review and manuscript preparation. Historical records do not establish exact model versions or a complete per-step attribution. Repository ownership and permission to publish do not establish mathematical authorship or an editor role; neither is claimed for the account holder. Internal reviews share model provenance and are disclosed as internal rather than independent expert verification.
 
 This is the narrowly selected candidate for one VibeMathed partial-result entry. The [consolidated announcement](announcement.md) presents the broader work, including Lean-checked auxiliary results, known reconstructions, bounded searches and open bridges. Their inclusion in one archive does not merge their mathematical claims or verification levels. See the [atomic claim registry](../proof-search/CLAIM_REGISTRY.md) and [original obstruction note](../proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md).
 

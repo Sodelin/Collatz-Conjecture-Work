@@ -3,7 +3,7 @@
 
 > Supplement to `ATLAS.md`. Collatz remains unresolved; this is structural navigation, not mathematical evidence.
 
-Indexed 165 human-edited Markdown files.
+Indexed 171 human-edited Markdown files.
 
 ## `docs`
 
@@ -165,11 +165,17 @@ Indexed 165 human-edited Markdown files.
 
 | File | Title | Node | Out | In |
 |---|---|---|---:|---:|
-| [`publication/README.md`](../../publication/README.md) | Repeatable research publication | — | 4 | 4 |
-| [`publication/VENUES.md`](../../publication/VENUES.md) | Publication routes and claim boundaries | — | 0 | 1 |
-| [`publication/YAH_SCALAR_ARCTIC_CANDIDATE.md`](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md) | YAH scalar-arctic method-obstruction candidate | `Collatz-Conjecture-Work:PUBLICATION-YAH-SCALAR-ARCTIC` / `publication` | 7 | 2 |
-| [`publication/announcement.md`](../../publication/announcement.md) | Collatz research consolidation: formal auxiliary results and proof-method obstructions | — | 0 | 3 |
+| [`publication/CURATOR_CORRECTION_DRAFT.md`](../../publication/CURATOR_CORRECTION_DRAFT.md) | Prepared curator correction — not sent | — | 2 | 1 |
+| [`publication/NEXT_RESEARCH_TARGET.md`](../../publication/NEXT_RESEARCH_TARGET.md) | Prior-question target record: YAH Conjecture 4.14 | — | 1 | 1 |
+| [`publication/README.md`](../../publication/README.md) | Repeatable research publication | — | 6 | 4 |
+| [`publication/VENUES.md`](../../publication/VENUES.md) | Publication routes and claim boundaries | — | 4 | 1 |
+| [`publication/VENUE_REVIEW_2026-09-07.md`](../../publication/VENUE_REVIEW_2026-09-07.md) | Venue review and corrected submission decision | — | 1 | 8 |
+| [`publication/YAH_SCALAR_ARCTIC_CANDIDATE.md`](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md) | YAH scalar-arctic method-obstruction candidate | `Collatz-Conjecture-Work:PUBLICATION-YAH-SCALAR-ARCTIC` / `publication` | 8 | 2 |
+| [`publication/announcement.md`](../../publication/announcement.md) | Collatz research consolidation: formal auxiliary results and proof-method obstructions | — | 1 | 3 |
 | [`publication/yah-obstruction.md`](../../publication/yah-obstruction.md) | Exact certificates excluding scalar arctic-natural first steps for the mixed-base Collatz rewrite system | — | 6 | 3 |
+| [`publication/zenodo/README.md`](../../publication/zenodo/README.md) | YAH restricted obstruction: report and certificate replay | — | 0 | 4 |
+| [`publication/zenodo/REVIEW.md`](../../publication/zenodo/REVIEW.md) | Local packaging review | — | 0 | 0 |
+| [`publication/zenodo/yah-research-note.md`](../../publication/zenodo/yah-research-note.md) | Exact certificates excluding scalar arctic-natural first steps for the mixed-base Collatz rewrite system | — | 0 | 0 |
 
 ## `repository root`
 
@@ -188,7 +194,7 @@ Indexed 165 human-edited Markdown files.
 | [`ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md`](../../ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md) | Continuing the original-root proof attempt | `ORIGINAL-ROOT-BRIDGE-PROGRESS-2026-09-05` / `archive` | 10 | 3 |
 | [`PROVENANCE.md`](../../PROVENANCE.md) | Provenance and timestamp notes | — | 0 | 2 |
 | [`PUBLIC_STATUS_2026-08-24.md`](../../PUBLIC_STATUS_2026-08-24.md) | Public status — 2026-08-24 | — | 17 | 3 |
-| [`README.md`](../../README.md) | Collatz Conjecture Work | — | 26 | 1 |
+| [`README.md`](../../README.md) | Collatz Conjecture Work | — | 27 | 1 |
 | [`RECHARGE_ESCAPE_PROGRESS_2026-09-05.md`](../../RECHARGE_ESCAPE_PROGRESS_2026-09-05.md) | Mathematical continuation through recharge | `RECHARGE-ESCAPE-PROGRESS-2026-09-05` / `archive` | 12 | 8 |
 | [`RESEARCH_PROTOCOL_V2.md`](../../RESEARCH_PROTOCOL_V2.md) | Research Protocol V2: adversarial, artifact-first Collatz search | — | 1 | 4 |
 | [`ROOT_RELATIVE_PROGRESS_2026-09-05.md`](../../ROOT_RELATIVE_PROGRESS_2026-09-05.md) | Root-relative mathematical continuation | `ROOT-RELATIVE-PROGRESS-2026-09-05` / `archive` | 13 | 7 |
@@ -213,7 +219,7 @@ Indexed 165 human-edited Markdown files.
 | [`research-review/consolidation-2026-09-05/MODERN_CONTRIBUTIONS.md`](../../research-review/consolidation-2026-09-05/MODERN_CONTRIBUTIONS.md) | PR17 and PR20 consolidation audit — 2026-09-05 | — | 0 | 2 |
 | [`research-review/consolidation-2026-09-05/NEW_DISCOVERY_SCREEN.md`](../../research-review/consolidation-2026-09-05/NEW_DISCOVERY_SCREEN.md) | Primary-source screen of three new discovery candidates | — | 0 | 2 |
 | [`research-review/consolidation-2026-09-05/REPORT.md`](../../research-review/consolidation-2026-09-05/REPORT.md) | Complete contribution consolidation and focused YAH review | — | 10 | 5 |
-| [`research-review/consolidation-2026-09-05/YAH_NOVELTY.md`](../../research-review/consolidation-2026-09-05/YAH_NOVELTY.md) | Focused prior-art audit: restricted YAH scalar-arctic obstruction | — | 0 | 4 |
+| [`research-review/consolidation-2026-09-05/YAH_NOVELTY.md`](../../research-review/consolidation-2026-09-05/YAH_NOVELTY.md) | Focused prior-art audit: restricted YAH scalar-arctic obstruction | — | 1 | 4 |
 | [`research-review/consolidation-2026-09-05/YAH_SEMANTICS.md`](../../research-review/consolidation-2026-09-05/YAH_SEMANTICS.md) | Focused YAH semantic audit | — | 0 | 4 |
 | [`research-review/novelty-2026-09-05/COMPARISONS.md`](../../research-review/novelty-2026-09-05/COMPARISONS.md) | Mathematical implication checks | — | 1 | 2 |
 | [`research-review/novelty-2026-09-05/REPORT.md`](../../research-review/novelty-2026-09-05/REPORT.md) | Collatz novelty and submission review — 5 September 2026 | — | 3 | 8 |

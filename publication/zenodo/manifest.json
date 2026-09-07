@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "focused-research-report-reproducibility-package",
+  "mathematical_source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9",
+  "publication_source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+  "repository": "https://github.com/Sodelin/Collatz-Conjecture-Work",
+  "source_manuscript": "publication/yah-obstruction.md",
+  "source_manuscript_sha256": "52050a754472973f8b5facc4c32a2b91eecf133efd6945eb4a207495661ae1fe",
+  "minimum_python": "3.10",
+  "commands": [
+    [
+      "python3",
+      "-S",
+      "-B",
+      "verification/yah_two_state_scalar_arctic_full_no_start.py"
+    ],
+    [
+      "python3",
+      "-S",
+      "-B",
+      "verification/yah_scalar_arctic_top/verify_top_certificates.py"
+    ]
+  ],
+  "expected_top_counts": {
+    "cases": 10,
+    "Farkas_lemmas": 491,
+    "RUP_clauses": 426,
+    "terminal_contradictions": 10,
+    "positive_multiplier_mass": 10183
+  },
+  "files": [
+    {
+      "path": "verification/yah_two_state_scalar_arctic_full_no_start.py",
+      "size_bytes": 6352,
+      "sha256": "645e0bd406611cebe99a86070594b484b454f8fe209f8a92bb19077d40f502a5",
+      "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9"
+    },
+    {
+      "path": "verification/yah_scalar_arctic_top/top_cert_common.py",
+      "size_bytes": 13669,
+      "sha256": "1439073666c8118971a840ce113e1364fd668a7608a87e846efc01c7fa024873",
+      "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9"
+    },
+    {
+      "path": "verification/yah_scalar_arctic_top/top_certificates.json",
+      "size_bytes": 419526,
+      "sha256": "dafb9bfcbe02a32905fc46d99ceb97b9b296059869d77ee42cff5c99d04592d6",
+      "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9"
+    },
+    {
+      "path": "verification/yah_scalar_arctic_top/verify_top_certificates.py",
+      "size_bytes": 3511,
+      "sha256": "9f38ceb70e79ad56de28d98dc196169200c3eeec1fda6be0a7d49b3ea634b7cb",
+      "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9"
+    }
+  ],
+  "claim_ceiling": "Exact certificate replay plus prose encoding soundness; unreviewed, not a complete Lean proof; no Collatz or general YAH resolution."
+}

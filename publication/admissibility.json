@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "venue": "vibemathed",
+  "source_commit": "d45362b75a8b48c7067e6db864e948be713f32e9",
+  "scientific_sha256": "7979ed428c1ff716975e0ad6ef5d253ea34ed670858a271631c5c205c389db93",
+  "decision": "blocked",
+  "decision_reason": "The exact scalar/top/fixed-label restriction was selected by this project, not separately posed in YAH. A bounded absence of prior matches does not establish a previously stated target or qualifying measurable progress. The routine full scalar lemma and combined certificate package remain valid archive subjects without present catalog eligibility.",
+  "assessed_by": "Internal AI-assisted review responding to user-supplied curator feedback",
+  "assessed_date": "2026-09-07",
+  "target": {
+    "origin": "self-chosen-restriction",
+    "name": "YAH scalar arctic first-step obstruction",
+    "statement": "Yolcu, Aaronson and Heule (2023, section 6) raise whether suitable matrix interpretations might fail to establish termination of their mixed-base Collatz rewrite system. This broad direction remains open. The restricted subquestion here is whether any standard coefficientwise dimension-one arctic-natural interpretation, with unbounded nonnegative finite coefficients, can weakly orient all eleven rules and strictly orient a nonempty first full rule-removal subset, a boundary-rule subset in the original relative-top orientation, or a dynamic-rule subset in the reversed relative-top orientation. The fixed two-state twenty-two-rule labeling is also considered. The exact scalar subquestion was not separately posed in the cited paper.",
+    "posed_by": null,
+    "source": {
+      "title": "An Automated Approach to the Collatz Conjecture",
+      "url": "https://arxiv.org/abs/2105.14697v3",
+      "locator": "Section 6",
+      "published_date": null,
+      "statement_excerpt": null,
+      "limitation": "Section 6 motivates the broad mixed-base matrix-interpretation direction; it does not separately pose the exact scalar/top/fixed-label restriction."
+    }
+  },
+  "novelty": {
+    "nearest_prior_result": "The full scalar cancellation argument uses established additive-weight techniques.",
+    "added_contribution": "Combined scalar affine-top and fixed-label certificate package is only a candidate narrow contribution.",
+    "search_scope": "Bounded primary-paper and author-code review recorded on 2026-09-05.",
+    "limitations": "No exact prior match located is not established priority, nor provenance for a previously posed question.",
+    "review_url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research-review/consolidation-2026-09-05/YAH_NOVELTY.md"
+  },
+  "feedback": {
+    "source": "user-provided quotation",
+    "reviewer": "Rasmus Lindahl",
+    "stated_timestamp": "2026-09-05T19:21:00Z",
+    "reason": "No stated open question",
+    "submission_linkage": "unconfirmed",
+    "chronology_note": "The stated September 5 review timestamp precedes the September 7 publication receipt. This record does not assign the quoted disposition to a particular submission."
+  },
+  "reassessment_requirement": "A genuinely prior stated target and a documented settlement or measurable advance are required. Retitling this unchanged result does not lift the block. This disposition concerns VibeMathed only, not archival publication or other venues."
+}

@@ -1,0 +1,75 @@
+{
+  "schema_note": "Review history for an archival research packet; this is not an API request payload. HOLD: no truthful, policy-compliant Zenodo path has been established for the work as represented. Do not submit this incomplete metadata. No deposit has been created by this build script.",
+  "resource_type": "Report",
+  "title": "Exact certificates excluding scalar arctic-natural first steps for the mixed-base Collatz rewrite system",
+  "publication_date": "2026-09-07",
+  "version": "research-report-1",
+  "creators": [],
+  "attribution_status": "Unresolved: no human mathematical author/editor role has been established from the user's actual contribution. No human author/editor or organization author has been assigned.",
+  "venue_status": "Zenodo submission held: no eligible path established for the AI-conducted work as represented. Existing GitHub research archive is the current delivery context, with transparent AI attribution and no acceptance claim.",
+  "venue_policy": {
+    "url": "https://support.zenodo.org/help/en-gb/13-policies/227-what-is-your-usage-policy-for-generative-ai-for-depositors",
+    "finding": "The official policy requires genuine human-conducted research and does not allow AI systems as authors, creators or contributors. No human mathematical authorship or editing role has been established for this proposed deposit."
+  },
+  "description": "Unreviewed research report with exact, replayable certificates for a restricted proof-method obstruction in the mixed-base Collatz rewrite system of Yolcu, Aaronson and Heule. Under the stated coefficientwise dimension-one arctic-natural constraints, it excludes a first full rule-removal step and the two specified relative-top opportunities, including one fixed two-state labeling. The full scalar cancellation is elementary and uses established machinery; the combined top/labeled certificate package is offered as a reproducible research artifact. No exact prior match was located in a bounded search, which does not establish novelty or priority. The work does not settle Collatz or the general arbitrary-dimension YAH matrix-interpretation question, and the exact restricted question was selected within this project. Replay uses standard-library Python with assertions enabled: ten top cases, 491 Farkas lemmas and 426 RUP clauses. The complete interpretation-to-encoding bridge and full-plus-top theorem are not formalized in Lean; internal AI review is not independent expert endorsement. AI assisted argument development, certificate discovery, checker code, review and manuscript preparation; exact historical model versions and complete per-step attribution are unavailable. No human mathematical authorship or editor role is claimed for the proposed deposit. Creator/contributor metadata and platform eligibility remain unresolved.",
+  "keywords": [
+    "Collatz conjecture",
+    "string rewriting",
+    "termination",
+    "arctic interpretations",
+    "proof-method obstruction",
+    "Farkas certificates",
+    "reverse unit propagation",
+    "reproducible research",
+    "AI-assisted research"
+  ],
+  "language": "eng",
+  "access": "open",
+  "rights": {
+    "type": "custom",
+    "title": "Existing rights retained; public archival access",
+    "description": "Public archival access is authorized. No new broad reuse license is granted over pre-existing source material. Applicable existing permissions and third-party rights remain in effect. No claim of copyright is made where none exists."
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/s10817-022-09658-8",
+      "scheme": "doi",
+      "relation": "References",
+      "title": "Yolcu, Aaronson and Heule: An Automated Approach to the Collatz Conjecture"
+    },
+    {
+      "identifier": "https://arxiv.org/abs/2105.14697v3",
+      "scheme": "url",
+      "relation": "References"
+    },
+    {
+      "identifier": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/d45362b75a8b48c7067e6db864e948be713f32e9",
+      "scheme": "url",
+      "relation": "IsDerivedFrom",
+      "title": "Pinned mathematical source"
+    },
+    {
+      "identifier": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/publication/yah-obstruction.md",
+      "scheme": "url",
+      "relation": "IsVersionOf",
+      "title": "Source manuscript"
+    },
+    {
+      "identifier": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research-review/consolidation-2026-09-05/YAH_NOVELTY.md",
+      "scheme": "url",
+      "relation": "IsSupplementedBy",
+      "title": "Bounded prior-art audit"
+    },
+    {
+      "identifier": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research-review/consolidation-2026-09-05/YAH_SEMANTICS.md",
+      "scheme": "url",
+      "relation": "IsSupplementedBy",
+      "title": "Internal semantic audit"
+    }
+  ],
+  "references": [
+    "Yolcu, E., Aaronson, S., and Heule, M. J. H. (2023). An Automated Approach to the Collatz Conjecture. Journal of Automated Reasoning 67, article 15. https://doi.org/10.1007/s10817-022-09658-8",
+    "Gebhardt and Waldmann (2009). Weighted Automata Define a Hierarchy of Terminating String Rewriting Systems. Acta Cybernetica 19(2), 295-312. https://cyber.bibl.u-szeged.hu/index.php/actcybern/article/view/3770/3754",
+    "Koprowski and Waldmann (2009). Max/Plus Tree Automata for Termination of Term Rewriting. Acta Cybernetica 19(2), 357-392. https://cyber.bibl.u-szeged.hu/index.php/actcybern/article/view/3772/3756"
+  ]
+}

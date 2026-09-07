@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Export a frozen research snapshot and a VibeMathed form draft (stdlib only).
+"""Export a frozen research snapshot and an archival venue candidate (stdlib only).
 
 This never submits to a venue. A release needs fresh verification from
 verify_source.py. --preview creates explicitly unverified local previews.
+--prepare-venue additionally requires a documented passing admissibility record.
 """
 from __future__ import annotations
 
@@ -18,6 +19,13 @@ import zipfile
 
 HERE = Path(__file__).resolve().parent
 SHA = re.compile(r"[0-9a-f]{40}")
+
+try:
+    from .admissibility import evaluate, require_eligible
+except ImportError:  # Direct script execution and importlib-based test loading.
+    import sys
+    sys.path.insert(0, str(HERE))
+    from admissibility import evaluate, require_eligible
 
 
 def git(root: Path, *args: str) -> bytes:
@@ -189,7 +197,10 @@ def verification_files(report: dict, directory: Path) -> dict[str, bytes]:
     return files
 
 
-def importer(draft: dict, storage_key: str) -> str:
+def importer(draft: dict, storage_key: str, report=None, prepared=False) -> str:
+    if not prepared or not report or report.get("status") != "eligible":
+        status = report.get("status", "insufficient-evidence") if report else "insufficient-evidence"
+        return "// ARCHIVE ONLY: this file does not restore a venue draft.\n(() => { throw new Error(" + json.dumps("VibeMathed preparation disabled: " + status + ". See admissibility-report.json. An explicit eligible preparation is required.") + "); })();\n"
     # Normal draft restoration only: no requests, cookies, tokens or submission.
     payload = json.dumps(draft, ensure_ascii=True)
     return f"""// Run only on https://vibemathed.com/submit. Saves a draft; does not submit.
@@ -207,7 +218,35 @@ def importer(draft: dict, storage_key: str) -> str:
 """
 
 
-def build(source: Path, output: Path, metadata_path: Path, verification_path: Path | None, preview=False):
+def citation_files(metadata: dict, tag: str) -> dict[str, str]:
+    """Title-led citations without assigning an author, editor, or institution.
+
+    CFF 1.2 requires at least one author, so do not emit an invalid empty list
+    or invent attribution to satisfy its schema:
+    https://raw.githubusercontent.com/citation-file-format/citation-file-format/main/schema.json
+    """
+    source = metadata["source_commit"]
+    repository_url = "https://github.com/" + metadata["repository"]
+    year = metadata["date"][:4]
+    return {
+        "CITATION.md": "# Citation\n\n" + metadata["title"] + ". (" + year + "). Version `" + tag + "`. "
+            + "[Research archive](" + repository_url + "/releases/tag/" + tag + ").\n\n"
+            + "Mathematical source: `" + source + "`.\n\n"
+            + "This is a title-led citation. No human author or editor is credited by this export. "
+            + "AI involvement is disclosed in the research materials; Collatz remains unresolved. "
+            + "Historical source files are preserved as records and are not new attribution statements.\n\n"
+            + "CITATION.cff is omitted because [CFF 1.2 requires at least one author]"
+            + "(https://raw.githubusercontent.com/citation-file-format/citation-file-format/main/schema.json). "
+            + "Use the accompanying author-free citation.bib for reference managers.\n",
+        "citation.bib": "@misc{collatz_archive_" + source[:12] + ",\n  title = {" + metadata["title"]
+            + "},\n  year = {" + year + "},\n  url = {" + repository_url + "/releases/tag/" + tag
+            + "},\n  note = {AI research archive; no human author or editor credited; auxiliary results only; Collatz unresolved; mathematical source "
+            + source + "}\n}\n",
+    }
+
+
+def build(source: Path, output: Path, metadata_path: Path, verification_path: Path | None, preview=False,
+          prepare_venue=False, admissibility_path: Path | None = None):
     metadata = read_json(metadata_path)
     if metadata["conjecture_status"] != "unresolved":
         raise ValueError("The publication scope must keep Collatz unresolved")
@@ -245,6 +284,17 @@ def build(source: Path, output: Path, metadata_path: Path, verification_path: Pa
         if any(axioms - {"propext", "Classical.choice", "Quot.sound"} for axioms in audited.values()):
             raise ValueError("Publication axiom audit contains an unexpected dependency")
     draft, tag = make_draft(metadata, schema, publisher, preview)
+    assessment_path = admissibility_path or HERE / "admissibility.json"
+    try:
+        assessment = read_json(assessment_path) if assessment_path.exists() else None
+    except json.JSONDecodeError:
+        assessment = {"load_error": "Assessment JSON is malformed; venue preparation requires a corrected evidence record."}
+    report = evaluate({"source_commit": metadata["source_commit"], "vibemathed": draft}, assessment)
+    if prepare_venue:
+        require_eligible(report)
+        if preview:
+            raise ValueError("Venue preparation requires fresh verification, not an unverified preview")
+    preparation_state = "prepared" if prepare_venue else "archive-only"
     output.mkdir(parents=True, exist_ok=True)
     # Avoid carrying old generated files into a new manifest.
     allowed_existing = {"verification.json", "verification-logs"}
@@ -254,18 +304,21 @@ def build(source: Path, output: Path, metadata_path: Path, verification_path: Pa
     write("announcement.md", (HERE / "announcement.md").read_bytes())
     write("yah-obstruction.md", (HERE / "yah-obstruction.md").read_bytes())
     write("claims.json", encoded(claims))
+    write("admissibility-report.json", encoded(report))
     write("vibemathed-draft.json", encoded(draft))
-    write("vibemathed-import.js", importer(draft, schema["transport"]["draft_storage_key"]))
+    write("vibemathed-import.js", importer(draft, schema["transport"]["draft_storage_key"], report, prepare_venue))
     write("vibemathed-schema.json", encoded(schema))
-    lines = ["# VibeMathed submission draft", "", "Status: " + ("UNVERIFIED PREVIEW" if preview else "Prepared; not submitted"), "",
-             "Sign in at https://vibemathed.com/submit. Copy these values or restore the generated draft using the optional import helper. Review the form before Submit for review. Acceptance is a curator decision.", ""]
+    lines = ["# VibeMathed candidate record", "", "Status: " + ("Prepared; not submitted" if prepare_venue else "ARCHIVE ONLY; not prepared for submission"), "",
+             "Local admissibility: " + report["status"] + ". See admissibility-report.json.", "",
+             ("Review the eligible fields at https://vibemathed.com/submit. The optional helper restores a draft only; acceptance is a curator decision."
+              if prepare_venue else "These historical candidate fields are retained for transparency. Form validity and archive verification do not establish venue eligibility. The import helper is disabled."), ""]
     for key, value in draft.items():
         if value:
             lines += ["## " + schema["fields"][key]["label"], "", value, ""]
     write("vibemathed-form.md", "\n".join(lines))
-    write("CITATION.cff", 'cff-version: 1.2.0\nmessage: "Please cite this versioned research archive; Collatz remains unresolved."\ntype: software\ntitle: ' + json.dumps(metadata["title"]) + '\nauthors:\n  - family-names: "Downard"\n    given-names: "Nolan"\nversion: ' + json.dumps(tag) + '\ndate-released: ' + json.dumps(metadata["date"]) + '\nrepository-code: ' + json.dumps("https://github.com/" + metadata["repository"]) + '\ncommit: ' + json.dumps(metadata["source_commit"]) + '\n')
-    write("citation.bib", "@misc{downard_collatz_" + metadata["source_commit"][:12] + ",\n  author = {Downard, Nolan},\n  title = {" + metadata["title"] + "},\n  year = {2026},\n  url = {https://github.com/" + metadata["repository"] + "/tree/" + metadata["source_commit"] + "},\n  note = {AI-assisted research archive; auxiliary results only; Collatz unresolved}\n}\n")
-    write("release-notes.md", "# " + metadata["title"] + "\n\nResearch preview; Collatz remains unresolved. Not peer reviewed; novelty and statement correspondence require independent review.\n\n" + f"Mathematics commit: `{metadata['source_commit']}`\n\nPublisher commit: `{publisher}`\n\n" + "Includes the full source archive, a standalone Lean source bundle, exact claim scope, verification logs, citation metadata, and a VibeMathed draft. Download `vibemathed-form.md` for the submission fields. The Git tag and GitHub automatic Source code downloads identify the publisher commit; research-source.zip contains the selected mathematics. Nothing has been sent to VibeMathed automatically.\n")
+    for name, contents in citation_files(metadata, tag).items():
+        write(name, contents)
+    write("release-notes.md", "# " + metadata["title"] + "\n\nResearch preview; Collatz remains unresolved. Not peer reviewed; novelty and statement correspondence require independent review.\n\n" + f"Mathematics commit: `{metadata['source_commit']}`\n\nPublisher commit: `{publisher}`\n\n" + "Includes the full source archive, a standalone Lean source bundle, exact claim scope, verification logs, citation metadata, and an archival VibeMathed candidate record. Local venue admissibility: " + report["status"] + "; preparation: " + preparation_state + ". See admissibility-report.json. The Git tag and GitHub automatic Source code downloads identify the publisher commit; research-source.zip contains the selected mathematics. Nothing has been sent to VibeMathed automatically.\n")
     logs = {}
     if verification:
         write("verification.json", encoded(verification))
@@ -277,11 +330,12 @@ def build(source: Path, output: Path, metadata_path: Path, verification_path: Pa
     zip_bytes(files, output / "research-source.zip")
     lean = lean_bundle_files(files)
     zip_bytes(lean, output / "lean-source.zip")
-    manifest = {"schema_version": 1, "source_commit": metadata["source_commit"],
+    manifest = {"schema_version": 2, "source_commit": metadata["source_commit"],
                 "publisher_commit": publisher, "repository": metadata["repository"],
                 "release_tag": tag, "conjecture_status": "unresolved",
                 "publication_state": "unverified-preview" if preview else "research-prerelease",
                 "venue_submission_state": "not-submitted", "novelty_status": metadata["novelty_status"],
+                "venue_admissibility_state": report["status"], "venue_preparation_state": preparation_state,
                 "source_file_count": len(files), "lean_source_file_count": len(lean),
                 "schema_upstream_commit": schema["upstream_commit"],
                 "artifacts": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.iterdir()) if p.is_file()}}
@@ -297,10 +351,13 @@ def main():
     parser.add_argument("--metadata", type=Path, default=HERE / "metadata.json")
     parser.add_argument("--verification", type=Path)
     parser.add_argument("--preview", action="store_true")
+    parser.add_argument("--prepare-venue", action="store_true", help="Enable venue draft restoration only after documented admissibility and fresh verification pass")
+    parser.add_argument("--admissibility", type=Path, help="Local evidence assessment; missing evidence keeps archives possible and disables venue preparation")
     args = parser.parse_args()
     try:
         manifest = build(args.source.resolve(), args.output.resolve(), args.metadata.resolve(),
-                         args.verification.resolve() if args.verification else None, args.preview)
+                         args.verification.resolve() if args.verification else None, args.preview,
+                         args.prepare_venue, args.admissibility.resolve() if args.admissibility else None)
     except (ValueError, KeyError, OSError, subprocess.CalledProcessError) as exc:
         parser.exit(1, f"Publication blocked: {exc}\n")
     print(json.dumps(manifest, indent=2))

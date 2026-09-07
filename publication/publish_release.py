@@ -16,6 +16,13 @@ import re
 import subprocess
 import tempfile
 
+try:
+    from .admissibility import evaluate
+    from .build import importer
+except ImportError:  # Direct script execution.
+    from admissibility import evaluate
+    from build import importer
+
 SHA = re.compile(r"[0-9a-f]{40}")
 DIGEST = re.compile(r"[0-9a-f]{64}")
 ASSET_NAME = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
@@ -23,8 +30,9 @@ REQUIRED_ASSETS = {
     "release-notes.md", "verification.json", "verification-logs.zip",
     "research-source.zip", "lean-source.zip", "source-inventory.json",
     "claims.json", "vibemathed-draft.json", "vibemathed-form.md",
-    "vibemathed-import.js", "vibemathed-schema.json", "CITATION.cff",
+    "vibemathed-import.js", "vibemathed-schema.json", "CITATION.md",
     "citation.bib", "announcement.md", "yah-obstruction.md",
+    "admissibility-report.json",
 }
 
 
@@ -54,6 +62,7 @@ def validate_package(root: Path, environment: dict) -> tuple[dict, dict[str, str
         raise PublicationError("Release tag does not encode the job's source and publisher")
     manifest = load_json(root / "manifest.json")
     for key, expected in {
+        "schema_version": 2,
         "repository": repository, "source_commit": source,
         "publisher_commit": publisher, "release_tag": tag,
         "publication_state": "research-prerelease",
@@ -98,6 +107,19 @@ def validate_package(root: Path, environment: dict) -> tuple[dict, dict[str, str
     draft = load_json(root / "vibemathed-draft.json")
     if draft.get("verification") not in {"lean-checked", "unreviewed"} or draft.get("resolution") != "partial":
         raise PublicationError("Venue draft must preserve partial, independently unaudited research scope")
+    admissibility = load_json(root / "admissibility-report.json")
+    if not isinstance(admissibility, dict):
+        raise PublicationError("Invalid venue admissibility report")
+    evaluated = evaluate({"source_commit": source, "vibemathed": draft}, admissibility.get("assessment"))
+    if admissibility != evaluated or manifest.get("venue_admissibility_state") != evaluated["status"]:
+        raise PublicationError("Venue admissibility report does not match the exact candidate")
+    preparation = manifest.get("venue_preparation_state")
+    if preparation not in {"archive-only", "prepared"} or (preparation == "prepared" and evaluated["status"] != "eligible"):
+        raise PublicationError("Venue preparation requires an eligible assessment")
+    schema = load_json(root / "vibemathed-schema.json")
+    expected_helper = importer(draft, schema["transport"]["draft_storage_key"], evaluated, preparation == "prepared")
+    if (root / "vibemathed-import.js").read_text(encoding="utf-8") != expected_helper:
+        raise PublicationError("Venue import helper does not match the assessed preparation state")
     return manifest, files
 
 

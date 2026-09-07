@@ -8,11 +8,17 @@ arithmetic, proof-method obstructions, and reproducible verification artifacts.
 > positive orbit. None of the ratings below is a probability that Collatz is
 > true or false.
 
-For versioned sharing packages, Lean source downloads, and the prepared
-VibeMathed submission format, start with the [publication guide](publication/README.md)
+For versioned sharing packages, Lean source downloads, and the current
+venue decision, start with the [publication guide](publication/README.md)
 and [research releases](https://github.com/Sodelin/Collatz-Conjecture-Work/releases).
 Each release announcement identifies its exact mathematical revision and current
 claim boundaries. Historical archive notes below retain their original context.
+
+The [7 September venue review](publication/VENUE_REVIEW_2026-09-07.md)
+supersedes earlier catalog-readiness recommendations. The existing restricted
+YAH result is not ready for a repeat VibeMathed submission. Public archival
+access, proof verification and eligibility for a mathematical catalog are
+separate matters. No human author or editor role is claimed for the account holder.
 
 Start with the [current consolidation and focused YAH review](research-review/consolidation-2026-09-05/REPORT.md). It combines all contribution heads, issue records, verification boundaries and the publication decision. The [earlier novelty review](research-review/novelty-2026-09-05/REPORT.md) remains a dated source-comparison record.
 

@@ -26,6 +26,24 @@ class PublicationExportTests(unittest.TestCase):
         self.assertEqual(draft["verification"], "unreviewed")
         self.assertIn("UNVERIFIED", draft["verificationNote"])
 
+    def test_future_exports_do_not_assign_human_authorship_or_editorship(self):
+        self.assertNotIn("maintainer", self.metadata)
+        self.assertEqual(self.metadata["vibemathed"]["humanCollaborators"], "")
+        self.assertEqual(self.draft["humanCollaborators"], "")
+        metadata = copy.deepcopy(self.metadata)
+        metadata["maintainer"] = "Example Maintainer"
+        metadata["authors"] = ["Example Proposed Author"]
+        citations = EXPORT.citation_files(metadata, "fixture-version")
+        self.assertEqual(set(citations), {"CITATION.md", "citation.bib"})
+        for contents in citations.values():
+            self.assertNotIn("Example Maintainer", contents)
+            self.assertNotIn("Example Proposed Author", contents)
+            self.assertIn(metadata["title"], contents)
+            self.assertIn(metadata["source_commit"], contents)
+        self.assertNotRegex(citations["citation.bib"], r"(?im)^\s*(author|editor)\s*=")
+        self.assertTrue(citations["citation.bib"].startswith("@misc{collatz_archive_"))
+        self.assertIn("CFF 1.2 requires at least one author", citations["CITATION.md"])
+
     def test_scope_cannot_silently_be_promoted(self):
         for field, value in (("resolution", "resolved"), ("verification", "lean-verified")):
             draft = dict(self.draft, **{field: value})
@@ -131,7 +149,7 @@ class PublicationExportTests(unittest.TestCase):
                 EXPORT.snapshot(root, sha)
 
     def test_helper_stays_on_venue_origin_and_never_submits(self):
-        code = EXPORT.importer(self.draft, self.schema["transport"]["draft_storage_key"])
+        code = EXPORT.importer(self.draft, self.schema["transport"]["draft_storage_key"], {"status": "eligible"}, True)
         self.assertIn("location.origin !== 'https://vibemathed.com'", code)
         self.assertIn(":backup:", code)
         self.assertNotIn("fetch(", code)

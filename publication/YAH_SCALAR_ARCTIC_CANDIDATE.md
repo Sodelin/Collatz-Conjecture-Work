@@ -6,6 +6,8 @@
 
 > **5September decision:** publish the exact-certificate research note and propose one **Unreviewed partial-result** catalog entry. The completed [focused review](../research-review/consolidation-2026-09-05/REPORT.md) supersedes this packet's earlier blanket HOLD. This does not promote the claim to Lean-verified, externally expert-verified, or priority-certified status.
 
+> **7 September correction:** the catalog-readiness recommendation above is superseded by the [venue review](VENUE_REVIEW_2026-09-07.md). The supplied scope decline identifies an unsupported prior-question requirement. Keep the existing theorem as a restricted research report; do not resubmit it merely with a new title. The decline is not a proof refutation or independent proof endorsement.
+
 ## Exact contribution
 
 The original eleven-rule and fixed22-rule systems admit no first standard coefficientwise dimension-one arctic-natural step through the stated full/extended, original boundary-top, or reversed dynamic-top opportunities. Coefficients are unbounded. See the complete [manuscript](yah-obstruction.md) for hypotheses and proof.

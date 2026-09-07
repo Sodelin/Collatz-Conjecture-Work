@@ -5,7 +5,7 @@
   "headline_declaration": "CollatzWork.firstContractionQuarterGap",
   "title": "Collatz research consolidation: restricted YAH obstruction, Lean auxiliary results, and open bridges",
   "date": "2026-09-07",
-  "maintainer": "Nolan Downard",
+  "attribution_policy": "Publication exports do not assign human authorship or editorship. AI involvement is disclosed, and historical source artifacts remain unchanged.",
   "conjecture_status": "unresolved",
   "novelty_status": "No exact prior match located for combined YAH top/labeled exclusion in bounded review; priority not independently established",
   "vibemathed": {
@@ -29,7 +29,7 @@
     "fieldGroup": "Theoretical computer science",
     "field": "Term rewriting; proof-method limitations; Collatz dynamics",
     "resolution": "partial",
-    "humanCollaborators": "Nolan Downard",
+    "humanCollaborators": "",
     "resolutionMethod": "computation",
     "resultNote": "No first standard coefficientwise dimension-one arctic-natural step exists for the eleven-rule YAH system in full/extended mode or either specified relative-top opportunity. A fixed two-state twenty-two-rule labeling satisfies the corresponding syntactic exclusions; equal-label lifting gives the original-system result. The coefficient domain is unbounded. Full mode uses positive cancellation; ten top cases use exact Farkas/RUP refutations. The original full scalar argument is elementary and uses established weight techniques. The combined top/labeled exclusion is the candidate contribution: no exact prior match was located in a bounded review. Higher dimensions, other carriers or labelings, other orders and transformations, later scalar steps, and Collatz convergence remain outside the result.",
     "submitterNote": "Please assess this single entry as a restricted partial result in the matrix-proof nonexistence direction raised by YAH section 6. We do not claim a separately named conjecture was solved, general YAH impossibility, Collatz resolution, external review, or established priority. The full scalar lemma alone is routine; the proposed contribution is the combined affine-top and fixed-label certificate package. Exact scope, historical dates, primary-source comparisons, internal semantic review and reproduction commands are linked. The larger consolidated archive includes known reconstructions, auxiliary Lean proofs, bounded searches and open bridges with separate statuses. Please decline or request reframing if the restricted result does not meet the venue novelty or significance threshold."

@@ -67,6 +67,8 @@ Yolcu's current public publication list links the original 2021/2023 work and th
 
 ## Publication recommendation
 
+**Superseded on 2026-09-07:** the VibeMathed recommendation in this historical section was too permissive. Failure to locate a matching prior theorem does not establish a previously stated target or a qualifying advance. The [corrected venue review](../../publication/VENUE_REVIEW_2026-09-07.md) retains the narrow prior-art findings while withdrawing the catalog-readiness inference.
+
 Proposed title: **Exact certificates excluding scalar arctic-natural first steps for the mixed-base Collatz rewrite system**.
 
 Proposed question: **Can an unbounded-coefficient dimension-one arctic-natural interpretation, under the standard coefficientwise constraints, remove any rule at the start of the specified full or relative-top proof searches for the eleven-rule mixed-base system?**

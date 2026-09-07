@@ -1104,6 +1104,14 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [proof-search/lemmas/Residue20_Valuation_Ancestor.md](../../proof-search/lemmas/Residue20_Valuation_Ancestor.md)
 - [proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md](../../proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md)
 
+## [Prepared curator correction — not sent](../../publication/CURATOR_CORRECTION_DRAFT.md)
+
+- [publication/VENUES.md](../../publication/VENUES.md)
+
+## [Prior-question target record: YAH Conjecture 4.14](../../publication/NEXT_RESEARCH_TARGET.md)
+
+- [publication/VENUES.md](../../publication/VENUES.md)
+
 ## [Repeatable research publication](../../publication/README.md)
 
 - [CONSOLIDATION_2026-09-05.md](../../CONSOLIDATION_2026-09-05.md)
@@ -1114,6 +1122,17 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 ## [Publication routes and claim boundaries](../../publication/VENUES.md)
 
 - [publication/README.md](../../publication/README.md)
+
+## [Venue review and corrected submission decision](../../publication/VENUE_REVIEW_2026-09-07.md)
+
+- [README.md](../../README.md)
+- [publication/CURATOR_CORRECTION_DRAFT.md](../../publication/CURATOR_CORRECTION_DRAFT.md)
+- [publication/NEXT_RESEARCH_TARGET.md](../../publication/NEXT_RESEARCH_TARGET.md)
+- [publication/README.md](../../publication/README.md)
+- [publication/VENUES.md](../../publication/VENUES.md)
+- [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
+- [publication/announcement.md](../../publication/announcement.md)
+- [research-review/consolidation-2026-09-05/YAH_NOVELTY.md](../../research-review/consolidation-2026-09-05/YAH_NOVELTY.md)
 
 ## [YAH scalar-arctic method-obstruction candidate](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
 
@@ -1131,6 +1150,21 @@ Incoming links are derived from ordinary local Markdown links outside fenced cod
 - [publication/README.md](../../publication/README.md)
 - [publication/YAH_SCALAR_ARCTIC_CANDIDATE.md](../../publication/YAH_SCALAR_ARCTIC_CANDIDATE.md)
 - [research-review/consolidation-2026-09-05/REPORT.md](../../research-review/consolidation-2026-09-05/REPORT.md)
+
+## [YAH restricted obstruction: report and certificate replay](../../publication/zenodo/README.md)
+
+- [publication/CURATOR_CORRECTION_DRAFT.md](../../publication/CURATOR_CORRECTION_DRAFT.md)
+- [publication/README.md](../../publication/README.md)
+- [publication/VENUES.md](../../publication/VENUES.md)
+- [publication/VENUE_REVIEW_2026-09-07.md](../../publication/VENUE_REVIEW_2026-09-07.md)
+
+## [Local packaging review](../../publication/zenodo/REVIEW.md)
+
+_No incoming local Markdown links._
+
+## [Exact certificates excluding scalar arctic-natural first steps for the mixed-base Collatz rewrite system](../../publication/zenodo/yah-research-note.md)
+
+_No incoming local Markdown links._
 
 ## [Focused review of PR #19: finite-palette bounded-progress obstruction](../../research-review/consolidation-2026-09-05/FINITE_PALETTE.md)
 

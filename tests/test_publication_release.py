@@ -62,10 +62,16 @@ class PublicationReleaseTests(unittest.TestCase):
                         "repository": self.env["GH_REPO"], "headline_declaration": "CollatzWork.headline",
                         "commands": [{"exit_code": 0}]})
         self.write_json("vibemathed-draft.json", {"verification": "lean-checked", "resolution": "partial"})
-        self.manifest = {"repository": self.env["GH_REPO"], "source_commit": source,
+        self.manifest = {"schema_version": 2, "repository": self.env["GH_REPO"], "source_commit": source,
                          "publisher_commit": commit, "release_tag": self.env["RELEASE_TAG"],
                          "publication_state": "research-prerelease",
-                         "venue_submission_state": "not-submitted", "conjecture_status": "unresolved"}
+                         "venue_submission_state": "not-submitted", "conjecture_status": "unresolved",
+                         "venue_admissibility_state": "insufficient-evidence", "venue_preparation_state": "archive-only"}
+        draft = json.loads((self.root / "vibemathed-draft.json").read_text())
+        report = publisher.evaluate({"source_commit": source, "vibemathed": draft}, None)
+        self.write_json("admissibility-report.json", report)
+        self.write_json("vibemathed-schema.json", {"transport": {"draft_storage_key": "fixture-draft"}})
+        (self.root / "vibemathed-import.js").write_text(publisher.importer(draft, "fixture-draft", report, False))
         self.seal()
 
     def write_json(self, name, value):
@@ -150,6 +156,14 @@ class PublicationReleaseTests(unittest.TestCase):
             publisher.publish(self.root, self.env, gh)
         self.assertEqual(gh.calls, [])
 
+    def test_title_led_citation_is_required_without_requiring_cff_authors(self):
+        self.assertNotIn("CITATION.cff", publisher.REQUIRED_ASSETS)
+        publisher.validate_package(self.root, self.env)
+        (self.root / "CITATION.md").unlink()
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "missing required publication assets"):
+            publisher.validate_package(self.root, self.env)
+
     def test_yah_manuscript_is_immutable_on_release_retry(self):
         gh = FakeGitHub(self.root, self.env, existing=True)
         (self.root / "yah-obstruction.md").write_text("Different mathematical claim\n")
@@ -228,6 +242,34 @@ class PublicationReleaseTests(unittest.TestCase):
         self.write_json("verification.json", {"status": "failed", "source_commit": self.env["SOURCE_COMMIT"]})
         self.seal()
         with self.assertRaisesRegex(publisher.PublicationError, "exact-source verification"):
+            publisher.validate_package(self.root, self.env)
+
+    def test_missing_admissibility_blocks_release_but_missing_evidence_does_not(self):
+        publisher.validate_package(self.root, self.env)
+        (self.root / "admissibility-report.json").unlink()
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "missing required publication assets"):
+            publisher.validate_package(self.root, self.env)
+
+    def test_archive_cannot_silently_enable_venue_preparation(self):
+        self.manifest["venue_preparation_state"] = "prepared"
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "eligible assessment"):
+            publisher.validate_package(self.root, self.env)
+
+    def test_live_importer_is_rejected_in_archive_only_package(self):
+        (self.root / "vibemathed-import.js").write_text("localStorage.setItem('fixture-draft', '{}');\n")
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "import helper"):
+            publisher.validate_package(self.root, self.env)
+
+    def test_tampered_admissibility_is_rejected_even_with_updated_checksums(self):
+        report = json.loads((self.root / "admissibility-report.json").read_text())
+        report["status"] = "eligible"
+        self.write_json("admissibility-report.json", report)
+        self.manifest["venue_admissibility_state"] = "eligible"
+        self.seal()
+        with self.assertRaisesRegex(publisher.PublicationError, "admissibility report"):
             publisher.validate_package(self.root, self.env)
 
 

@@ -4,6 +4,8 @@ Requirements checked on **2026-09-05**. A public research archive and an accepte
 
 ## VibeMathed
 
+**Scope correction, rechecked 2026-09-07:** a research direction plus our own restriction is insufficient without a supported relationship to a previously stated question. The current YAH candidate fails that requirement. This supersedes its earlier submission recommendation; the historical route and form observations below retain their original check date. See the [decision and target-selection protocol](VENUE_REVIEW_2026-09-07.md).
+
 [VibeMathed](https://vibemathed.com) records previously open mathematical questions answered with substantive AI participation. Its catalog lives in a database: **a GitHub pull request cannot add or edit an entry**. Submit through the [entry form](https://vibemathed.com/submit), using Google or GitHub sign-in; a curator decides whether to publish. The limit is ten submissions per rolling 24 hours. See the [contribution instructions](https://vibemathed.com/contributing).
 
 The form records structured text and links. It does not ingest a repository, PDF, Lean project or ZIP as a file upload. A publicly accessible repository, announcement or paper supplies the primary source; additional links can identify exact Lean statements, proofs, computation scripts and AI disclosures. A repository-hosted PDF is classified as an **announcement**; **preprint** means a manuscript on arXiv or a similar server. See the [reviewing checklist](https://github.com/mrconter1/vibemathed/blob/f2b04892c53c414b85d9446c2bddb262378966c8/docs/reviewing.md).
@@ -67,3 +69,17 @@ Palomar has an official [agent protocol](https://submit.palomar-registry.org/llm
 - BlinkDL/VibeMath route evidence: [`f5fdf8eb0651088c9d00d605944c8cafb236f847`](https://github.com/BlinkDL/VibeMath/tree/f5fdf8eb0651088c9d00d605944c8cafb236f847).
 
 Recheck venue rules before an actual external submission. Export validation establishes format compliance; it cannot decide novelty, prove an unformalized theorem, or secure a curator's acceptance.
+
+## Zenodo: submission held after specific AI-policy check
+
+The broad [general policies](https://about.zenodo.org/policies/) initially suggested a research-report deposit. The specific [AI policy for depositors](https://support.zenodo.org/help/en-gb/13-policies/227-what-is-your-usage-policy-for-generative-ai-for-depositors) changes that recommendation: research must have a human-conducted basis, and AI tools cannot be listed as authors, creators or contributors. [Creators are required](https://help.zenodo.org/docs/deposit/describe-records/creators/). The account holder declines author and editor roles, and no truthful qualifying creator has been established. Do not invent organizational authorship, relabel AI as an organization, or treat a different resource type as an exception. No Zenodo record was published.
+
+The [prepared packet](zenodo/README.md) is retained for inspection through the existing repository. A renewed Zenodo attempt requires a compliant research and attribution basis or a specific policy ruling on fully disclosed facts. The site's AI Usage Notice describes its own systems; it does not replace the depositor policy. Uploader responsibility under the [terms](https://about.zenodo.org/terms/) remains separate from citation authorship. No new broad reuse license is granted over this corpus.
+
+## Community routes checked on 7 September 2026
+
+MathOverflow's [current AI policy](https://mathoverflow.net/help/gen-ai-policy) permits linguistic assistance but requires human-sourced core mathematics. Its [scope policy](https://mathoverflow.net/help/on-topic) also excludes result announcements and requests to check work. An AI-written announcement of this result is not a suitable post there.
+
+The r/math moderators' [AI posting policy](https://www.reddit.com/r/math/comments/1vobeb6/new_policy_on_ai_posts_on_rmath/) limits top-level AI-discovery posts to direct arXiv abstracts or non-predatory peer-reviewed journals. It also disallows AI-written posts and comments. Moving an AI-written GitHub announcement into a megathread does not establish permission. The retrieved post has a relative timestamp; no exact publication date is inferred.
+
+The existing public GitHub archive is the immediate dissemination route. No posts were sent to MathOverflow or r/math. A new VibeMathed attempt still requires a proved advance on a qualifying previously stated question. See the [target record](NEXT_RESEARCH_TARGET.md) and [prepared curator correction](CURATOR_CORRECTION_DRAFT.md), which is explicitly unsent.

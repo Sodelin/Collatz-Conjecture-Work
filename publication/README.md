@@ -1,8 +1,10 @@
 # Repeatable research publication
 
-The workflow publishes the complete, versioned Collatz research archive and all tracked Lean source, then prepares a schema-validated VibeMathed entry. Collatz remains unresolved. A research release, a submission awaiting review, and a published catalog entry are separate states.
+The workflow publishes the complete, versioned Collatz research archive and all tracked Lean source. Venue preparation is a separate, explicit step that requires an eligible assessment. Collatz remains unresolved. A research release, a submission awaiting review, and a published catalog entry are separate states.
 
 ## Current publication decision
+
+**7 September follow-up:** the supplied scope decline supersedes the earlier catalog-readiness recommendation. The existing scalar/top/labeled result lacks a supported previously stated target for VibeMathed. See the [venue review](VENUE_REVIEW_2026-09-07.md) and [local admissibility record](admissibility.json). Preserve archive generation; do not use a schema-valid draft as evidence that the same claim is eligible for resubmission. A [portable research-report packet](zenodo/README.md) is available for inspection. Zenodo submission is held: its specific depositor policy requires human-conducted research, forbids AI creators, and a truthful qualifying creator has not been established. The account holder expressly declines author and editor roles.
 
 The 7 September release extends the 5 September consolidation of eight research PRs, all eight then-open issues and eleven comments with the arbitrary finite failed-return continuation. Its six-export Lean envelope core and concrete prose/CRT family have separate claim entries and verification boundaries. The [consolidation review](../research-review/consolidation-2026-09-05/REPORT.md) supersedes the earlier quarter-gap rehearsal hold. The selected entry is the restricted YAH scalar-arctic full/top obstruction, presented as an Unreviewed partial result with exact certificates and a complete internal semantic/prior-art packet. Its own theorem is not Lean-formalized. The many separate Lean developments are included and audited in the same release.
 
@@ -17,6 +19,7 @@ Read the [YAH manuscript](yah-obstruction.md), [full research announcement](anno
 | announcement.md | Human-readable synthesis of all contributions |
 | yah-obstruction.md | Primary manuscript for the focused venue entry |
 | vibemathed-schema.json | Dated real field contract, choices, limits and link rules |
+| admissibility.json and admissibility.py | Source-bound prior-question and progress assessment, separate from archive verification |
 | verify_source.py | Explicit Lean, axiom, arithmetic, certificate and documentation gates |
 | build.py | Deterministic source/Lean archives, citations, checksums and form export |
 | publish_release.py | Draft staging, all-asset verification and public prerelease promotion |
@@ -27,7 +30,7 @@ The metadata field headline_declaration remains the established quarter-gap decl
 
 The Verify and publish research Actions workflow runs for publication changes and by manual dispatch. It checks out the selected full mathematical SHA separately, installs the checksum-pinned Lean4.33.1 release, rebuilds the library, compiles every tracked Lean module and explicitly approved standalone archive, audits declarations, and runs the expanded exact-checker suite. Pull requests retain review artifacts. Passing runs on main publish an immutable GitHub research prerelease.
 
-The release includes research-source.zip, lean-source.zip, announcement.md, yah-obstruction.md, claims.json, verification.json, verification-logs.zip, vibemathed-draft.json, vibemathed-form.md, vibemathed-import.js, vibemathed-schema.json, CITATION.cff, citation.bib, manifest.json, source-inventory.json and SHA256SUMS. The release notes explain the source and publisher identities.
+The release includes research-source.zip, lean-source.zip, announcement.md, yah-obstruction.md, claims.json, verification.json, verification-logs.zip, vibemathed-draft.json, vibemathed-form.md, vibemathed-import.js, vibemathed-schema.json, admissibility-report.json, CITATION.md, citation.bib, manifest.json, source-inventory.json and SHA256SUMS. Historical releases predate the admissibility report and remain unchanged. The release notes explain the source and publisher identities.
 
 Every file in the selected Git tree is retained in the source archive, including historical negative results and provisional notes. Every tracked .lean file is retained in the Lean archive, including the three separately compiled archival derivations. Inclusion does not upgrade a historical claim's verification status.
 
@@ -39,7 +42,7 @@ Tags include source and publisher SHAs. Repeating the same version checks existi
 2. Commit that source, pin its full SHA in metadata.json, and update announcement source links to the same SHA. Update claims and the explicit verification list for new proof artifacts.
 3. Open the publication change for review. The workflow rejects missing files, failed checks, mismatched SHAs, unknown axioms, incomplete proofs and malformed venue fields.
 4. Merge a passing revision to main. The workflow creates the verified public package automatically.
-5. Use the generated VibeMathed fields in the signed-in form and inspect them before submission. Record the observed receipt. Curator approval cannot be automated by the repository.
+5. Before a venue attempt, document a qualifying prior target and the proved progress in admissibility.json. Only an eligible, current assessment plus fresh verification permits `--prepare-venue`. Inspect the prepared fields before an authorized submission and record the observed receipt. Curator approval cannot be automated by the repository.
 
 To reproduce locally:
 
@@ -48,7 +51,7 @@ python3 -B publication/verify_source.py --source /path/to/frozen-source --output
 python3 -B publication/build.py --source /path/to/frozen-source --output /path/to/fresh-package --verification /path/to/fresh-package/verification.json
 ```
 
-The publisher and mathematical checkout must be committed and clean. A preview flag can validate exports without asserting a passed release; it cannot publish an unverified package.
+The publisher and mathematical checkout must be committed and clean. A preview flag can validate exports without asserting a passed release; it cannot publish an unverified package. Default builds are archives. Their venue files retain historical names but are marked archival, and their import helper refuses to restore a form. Explicit `--prepare-venue` enables preparation only after an eligible assessment; `--admissibility /path/to/assessment.json` selects an alternative evidence record. The current candidate is blocked even if its title changes. This gate checks evidence completeness and consistency, not the truth or novelty of a theorem.
 
 ## Venue handling
 
