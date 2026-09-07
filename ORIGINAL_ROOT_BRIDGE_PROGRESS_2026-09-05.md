@@ -289,7 +289,8 @@ Both return maps have positive intercept and slope at least
 19683/8192>2. Hence both endpoints exceed n. All intermediate states do
 also: during OOEO they are (3n+1)/2, (9n+5)/4, (9n+5)/8 and
 (27n+23)/16, each exceeding positive n; every following odd step grows;
-and the last halving intermediate is larger than the already growing return.
+and the tail intermediates also exceed the block start: for EE,
+z/2>z/4=F_0(n)>n; for EO, z/2=2F_0(n)>n.
 Induction across blocks keeps every such state above the original root.
 
 Each block takes S20 to S20. One OOEO has residues 20,17,26,13,20.
