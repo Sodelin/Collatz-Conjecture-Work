@@ -4,7 +4,7 @@ The workflow publishes the complete, versioned Collatz research archive and all 
 
 ## Current publication decision
 
-The5September consolidation covers eight research PRs, all eight open issues and eleven comments. The [consolidation review](../research-review/consolidation-2026-09-05/REPORT.md) supersedes the earlier quarter-gap rehearsal hold. The selected entry is the restricted YAH scalar-arctic full/top obstruction, presented as an Unreviewed partial result with exact certificates and a complete internal semantic/prior-art packet. Its own theorem is not Lean-formalized. The many separate Lean developments are included and audited in the same release.
+The 7 September release extends the 5 September consolidation of eight research PRs, all eight then-open issues and eleven comments with the arbitrary finite failed-return continuation. Its six-export Lean envelope core and concrete prose/CRT family have separate claim entries and verification boundaries. The [consolidation review](../research-review/consolidation-2026-09-05/REPORT.md) supersedes the earlier quarter-gap rehearsal hold. The selected entry is the restricted YAH scalar-arctic full/top obstruction, presented as an Unreviewed partial result with exact certificates and a complete internal semantic/prior-art packet. Its own theorem is not Lean-formalized. The many separate Lean developments are included and audited in the same release.
 
 Read the [YAH manuscript](yah-obstruction.md), [full research announcement](announcement.md), and [claim manifest](claims.json). The final receipt records whether the form was submitted and the response actually observed. Nothing in the package asserts curator acceptance.
 

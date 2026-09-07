@@ -375,6 +375,41 @@
     "lean_declarations": []
   },
   {
+    "id": "arbitrary-excursion-envelope-core",
+    "title": "Arbitrary finite actual-orbit envelope composition and conditional original-root descent",
+    "status": "formal_auxiliary",
+    "statement": "For every finite list of actual shortcut-orbit segments, ExcursionChain requires a positive denominator for each segment and its shifted bound D_i*(endpoint+3)<=A_i*(start+3). Lean proves that their product envelope holds relative to the unchanged original root. For root>=3, an appended terminal strict bound E*endpoint<B*(prefix_endpoint+3) and the cumulative budget 2*(product(A_i)*B)<=product(D_i)*E imply endpoint<root. The convergence corollary additionally assumes convergence of every smaller positive input. The empty list is allowed, and no uniform bound on list length or segment lengths is assumed.",
+    "limitations": "All local envelopes and the terminal repayment budget remain explicit premises. The six declarations establish the generic composition/descent core only: concrete OOEO inequalities, actual parity/CRT realization, exact valuation labels, selector identities, arbitrary infinite schedules, all-root coverage and universal convergence are not formalized by this core. Priority and external mathematical review are unestablished.",
+    "source_paths": [
+      "lean/CollatzWork/ExcursionBudgetStatement.lean",
+      "lean/CollatzWork/ExcursionBudget.lean",
+      "ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md",
+      "verification/multi_excursion_formal_receipt_2026-09-05.json"
+    ],
+    "lean_declarations": [
+      "CollatzWork.shiftedEnvelope_compose",
+      "CollatzWork.excursionChainEnvelope",
+      "CollatzWork.terminalEnvelope_compose",
+      "CollatzWork.excursionBudgetDescent",
+      "CollatzWork.excursionChain_terminal_descent",
+      "CollatzWork.excursionChain_converges_of_smaller"
+    ]
+  },
+  {
+    "id": "arbitrary-failed-return-crt-families",
+    "title": "Guarded arbitrary finite EE/EO failed-return families and selector-cancellation boundaries",
+    "status": "exact_checked_prose",
+    "statement": "For any finite schedule of failed blocks (OOEO)^J_i O^h_i EE or (OOEO)^J_i O^h_i EO, with J_i>=2 and h_i>=3, followed by a terminal (OOEO)^J_f O^h_f E^e with J_f>=2 and h_f>=3, a common shift-3 strict envelope composes all expansion relative to the original root. Put J=sum(J_i)+J_f, H=sum(h_i)+h_f, K=number of failed blocks, Q=number of EO tails, N=4*J+H+2*K+e and S=3*J+H+Q. An actual itinerary from root>=3 satisfying 2*3^S<=2^N has endpoint strictly between 0 and root. Taking sufficiently large e congruent to 2 modulo 18, parity lifting and CRT give infinitely many roots in r=22619+186624*s for every chosen finite schedule, with exact block lengths and terminal endpoint 20 modulo 27. Two selector identities diagnose why the specified EO/EE ancestor shortcut does not establish descent below the original root.",
+    "limitations": "The concrete common-shift bound, parity/CRT construction, exact-length valuations and selector identities are prose proofs with exact finite Python diagnostics, not end-to-end Lean theorems. Every failed return grows; only the licensed terminal budget guarantees original-root descent. Infinite families for each finite schedule do not give one positive root for an infinite schedule or show that an arbitrary fixed root eventually repays. The EE selector smaller-than-return guarantee requires h>=10; neither selector identity excludes all coalescence methods. No independent novelty or external review is claimed.",
+    "source_paths": [
+      "ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md",
+      "verification/multi_excursion_budget_check.py",
+      "verification/multi_excursion_budget_2026-09-05.json",
+      "tests/test_multi_excursion_budget.py"
+    ],
+    "lean_declarations": []
+  },
+  {
     "id": "finite-shortcut-parity-collision",
     "title": "Actual shortcut parity prefixes determine residue classes",
     "status": "formal_auxiliary",

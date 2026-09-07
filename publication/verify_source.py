@@ -57,6 +57,8 @@ ARITHMETIC_CHECKERS = (
           "postspell_guarded_descent_check", "blind_word_recurrence_check",
           "finite_palette_obstruction",
       ) for flags in (("-S", "-B"), ("-S", "-O", "-B"))),
+    *(("verification/multi_excursion_budget_check.py", flags)
+      for flags in (("-S", "-B"), ("-S", "-O", "-B"), ("-S", "-OO", "-B"))),
     ("verification/check_markdown_math.py", ("-B",)),
     ("knowledge/tools/build_index.py", ("-B",)),
     ("knowledge/tools/build_index.py", ("-O", "-B")),
