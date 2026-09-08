@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.twoBurstDescent",
+  "theorem_title": "Two guarded growing bursts descend below the original root",
+  "natural_language_statement": "For positive k,l,u,v,m satisfying 9^k*u+1=2^(3*l+1)*v and 2^(k+l)*m+5=3*9^l*v, shortcutIter (4*(k+l)+2) (2*8^k*u-5)=m and m<2*8^k*u-5. Limitations: Both arithmetic guards remain assumptions. The CRT source families, exact valuation descriptions, and extra even padding are separate prose results. Convergence transfer assumes all smaller positive starts converge.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_TwoBurstStatement\nimport Theorems.Thm_CollatzWork_rootDescentBurst\nimport Theorems.Thm_CollatzWork_twoBurst_power_margin\n\n\n",
+  "formal_statement": "theorem CollatzWork.twoBurstDescent : TwoBurstDescentStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurst.lean#L99-L172"
+}

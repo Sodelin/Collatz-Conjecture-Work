@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.compatibleProduct_mod_four",
+  "theorem_title": "CollatzWork.compatibleProduct_mod_four",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.compatibleProduct_mod_four\n    (L epsilon z : Nat) (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    (3 ^ L * refinedA epsilon z) % 4 = 1 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L85-L104"
+}

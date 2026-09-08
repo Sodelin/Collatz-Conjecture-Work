@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness",
+  "natural_language_statement": "Exact difference-witness characterization: pairwise target blindness is\nequivalent to a direction in every selected observation kernel but outside the\ntarget kernel.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness {Index State Value : Type}\n    (system : System Index State Value) (selected : Index \u2192 Prop) :\n    PairBlind system selected \u2194 KernelWitness system selected := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L56-L75"
+}

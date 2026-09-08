@@ -1,0 +1,6 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages": [],
+ "name": "collatz_prove2me_staging",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

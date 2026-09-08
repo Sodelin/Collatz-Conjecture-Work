@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_tail92",
+  "theorem_title": "CollatzWork.residueAncestor_tail92",
+  "natural_language_statement": "The exact tail over `z = 92 mod 243`, including its affine certificate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_tail92 (a : Nat) :\n    0 < 6912 * a + 2612 \u2227\n    (6912 * a + 2612) % 27 = 20 \u2227\n    shortcutIter 8 (6912 * a + 2612) = 243 * a + 92 \u2227\n    9 * (6912 * a + 2612) + 44 = 256 * (243 * a + 92) \u2227\n    6912 * a + 2612 \u2264 64 * (243 * a + 92) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L88-L122"
+}

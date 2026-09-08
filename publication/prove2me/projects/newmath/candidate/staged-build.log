@@ -1,0 +1,111 @@
+info: sodelin_newmath_staging: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✖ [0/33] Running job computation
+error: Definitions: some modules have bad imports
+error: Theorems: some modules have bad imports
+error: Solutions: some modules have bad imports
+✔ [2/33] Built Definitions.Def_NewMathDiscovery_LinearBlindness (5.3s)
+✔ [3/33] Built Definitions.Def_NewMathDiscovery_RankedCoalescenceSound (5.5s)
+✔ [4/33] Built Definitions.Def_NewMathDiscovery_BlindnessRealization (5.7s)
+✔ [6/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor (7.1s)
+✔ [7/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large (7.6s)
+⚠ [8/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large (9.1s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large.lean:95:8: declaration uses `sorry`
+⚠ [9/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor (9.9s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor.lean:7:8: declaration uses `sorry`
+✔ [10/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion (10s)
+✔ [11/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness (10s)
+✔ [12/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness (10s)
+✔ [13/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_pairBlind_downward (10s)
+⚠ [14/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel (10s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel.lean:95:8: declaration uses `sorry`
+✔ [15/33] Built Solutions.Sol_NewMathDiscovery_RankedCoalescence_iterate_succ (5.9s)
+⚠ [16/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor (9.7s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor.lean:7:8: declaration uses `sorry`
+✖ [17/33] Building Theorems.Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound (6.1s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean -o /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.olean -i /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.ilean -c /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.c --setup /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.setup.json --json
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:16:37: Unknown identifier `iterate_zero`
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:16:9: unsolved goals
+case zero
+α : Type
+f : α → α
+b : Nat
+x : α
+⊢ iterate f b x = iterate f 0 (iterate f b x)
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:18:31: Unknown identifier `iterate_succ`
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:17:14: unsolved goals
+case succ
+α : Type
+f : α → α
+b : Nat
+x : α
+a : Nat
+ih : iterate f (a + b) x = iterate f a (iterate f b x)
+⊢ iterate f (a + b).succ x = iterate f (a + 1) (iterate f b x)
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:18:45: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_add, iterate_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:27:17: Unknown identifier `iterate_succ`
+error: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:27:6: `simp` made no progress
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:99:8: declaration uses `sorry`
+error: Lean exited with code 1
+✔ [18/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel (11s)
+✖ [19/33] Building Solutions.Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound (10s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean -o /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.olean -i /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.ilean -c /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.c --setup /workspace/scratch/ce6b142fd07d/new-math-discovery/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.setup.json --json
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:16:37: Unknown identifier `iterate_zero`
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:16:9: unsolved goals
+case zero
+α : Type
+f : α → α
+b : Nat
+x : α
+⊢ iterate f b x = iterate f 0 (iterate f b x)
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:18:31: Unknown identifier `iterate_succ`
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:17:14: unsolved goals
+case succ
+α : Type
+f : α → α
+b : Nat
+x : α
+a : Nat
+ih : iterate f (a + b) x = iterate f a (iterate f b x)
+⊢ iterate f (a + b).succ x = iterate f (a + 1) (iterate f b x)
+warning: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:18:45: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.succ_add, iterate_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:27:17: Unknown identifier `iterate_succ`
+error: Solutions/Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:27:6: `simp` made no progress
+error: Lean exited with code 1
+✔ [20/33] Built Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor (11s)
+✔ [21/33] Built Solutions.Sol_NewMathDiscovery_RankedCoalescence_iterate_zero (11s)
+⚠ [22/33] Built Theorems.Thm_NewMathDiscovery_RankedCoalescence_iterate_zero (11s)
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_iterate_zero.lean:8:8: declaration uses `sorry`
+⚠ [23/33] Built Theorems.Thm_NewMathDiscovery_RankedCoalescence_iterate_succ (11s)
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_iterate_succ.lean:8:8: declaration uses `sorry`
+⚠ [24/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion (11s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion.lean:7:8: declaration uses `sorry`
+⚠ [25/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness (11s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness.lean:7:8: declaration uses `sorry`
+⚠ [26/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness (11s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness.lean:7:8: declaration uses `sorry`
+⚠ [27/33] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward (14s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward.lean:7:8: declaration uses `sorry`
+⚠ [28/33] Built Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator (13s)
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator.lean:7:8: declaration uses `sorry`
+✔ [29/33] Built Solutions.Sol_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator (14s)
+✔ [30/33] Built Solutions.Sol_NewMathDiscovery_BlindnessRealization_blind_downward (8.1s)
+⚠ [32/33] Built Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_downward (10s)
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_downward.lean:8:8: declaration uses `sorry`
+Some required targets logged failures:
+- job computation
+- Theorems.Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound
+- Solutions.Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound
+error: build failed

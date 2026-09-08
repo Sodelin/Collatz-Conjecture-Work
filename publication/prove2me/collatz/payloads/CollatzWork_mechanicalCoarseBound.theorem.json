@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.mechanicalCoarseBound",
+  "theorem_title": "CollatzWork.mechanicalCoarseBound",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_FirstContractionStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n",
+  "formal_statement": "theorem CollatzWork.mechanicalCoarseBound : MechanicalCoarseBoundStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContraction.lean#L24-L39"
+}

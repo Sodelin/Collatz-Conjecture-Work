@@ -1,0 +1,2613 @@
+[
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "affineRecurrenceTelescope",
+    "start_line": 5,
+    "end_line": 20,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "fixedRatioDivisibility",
+    "start_line": 22,
+    "end_line": 26,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "finiteRepetitionBound",
+    "start_line": 28,
+    "end_line": 30,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "noInfinitePositiveRecurrence",
+    "start_line": 32,
+    "end_line": 36,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "affineRepetitionShift",
+    "start_line": 38,
+    "end_line": 50,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "affineRepetitionBound",
+    "start_line": 52,
+    "end_line": 56,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "noInfiniteExpandingAffineBlocks",
+    "start_line": 58,
+    "end_line": 62,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "prefixReturnBernoulli",
+    "start_line": 64,
+    "end_line": 81,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": "prefixReturnNumericalBound",
+    "start_line": 83,
+    "end_line": 95,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 97,
+    "end_line": 97,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 98,
+    "end_line": 98,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 99,
+    "end_line": 99,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 100,
+    "end_line": 100,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 101,
+    "end_line": 101,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetition",
+    "name": null,
+    "start_line": 102,
+    "end_line": 102,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "FixedRatioDivisibilityStatement",
+    "start_line": 5,
+    "end_line": 9,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "FiniteRepetitionBoundStatement",
+    "start_line": 11,
+    "end_line": 14,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "NoInfinitePositiveRecurrenceStatement",
+    "start_line": 16,
+    "end_line": 20,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "AffineRepetitionBoundStatement",
+    "start_line": 22,
+    "end_line": 28,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "NoInfiniteExpandingAffineBlocksStatement",
+    "start_line": 30,
+    "end_line": 35,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "name": "PrefixReturnNumericalBoundStatement",
+    "start_line": 37,
+    "end_line": 41,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.BlockArithmetic",
+    "name": "blockNumerator12",
+    "start_line": 5,
+    "end_line": 19,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.BlockArithmetic",
+    "name": "blockNumerator12_exact_bound",
+    "start_line": 21,
+    "end_line": 126,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.BlockArithmetic",
+    "name": "blockNumerator12_strict_bound",
+    "start_line": 128,
+    "end_line": 133,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.BlockArithmetic",
+    "name": "blockNumerator12_bound",
+    "start_line": 135,
+    "end_line": 139,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "converges_one",
+    "start_line": 14,
+    "end_line": 14,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "converges_two",
+    "start_line": 16,
+    "end_line": 16,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "converges_onceAccelerated_iff",
+    "start_line": 18,
+    "end_line": 31,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "converges_shortcutIter_iff",
+    "start_line": 33,
+    "end_line": 39,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "converges_iff_of_coalesces",
+    "start_line": 41,
+    "end_line": 50,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "allPositiveConverge_of_smallerCoalescence",
+    "start_line": 52,
+    "end_line": 65,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "smallerCoalescence_of_allPositiveConverge",
+    "start_line": 67,
+    "end_line": 73,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "smallerCoalescenceCriterion",
+    "start_line": 75,
+    "end_line": 77,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "smallerCoalescence_of_descent",
+    "start_line": 79,
+    "end_line": 83,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "descent_of_allPositiveConverge",
+    "start_line": 85,
+    "end_line": 95,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "descentCriterion",
+    "start_line": 97,
+    "end_line": 102,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "refinedParent_converges_iff_child",
+    "start_line": 104,
+    "end_line": 112,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "refinedParent_has_smaller_coalescence",
+    "start_line": 114,
+    "end_line": 124,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": "refinedParent_converges_of_smaller",
+    "start_line": 126,
+    "end_line": 135,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": null,
+    "start_line": 139,
+    "end_line": 139,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.Convergence",
+    "name": null,
+    "start_line": 140,
+    "end_line": 140,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "shortcutIter",
+    "start_line": 14,
+    "end_line": 18,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "Converges",
+    "start_line": 20,
+    "end_line": 21,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "AllPositiveConverge",
+    "start_line": 23,
+    "end_line": 24,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "UniversalSmallerCoalescence",
+    "start_line": 26,
+    "end_line": 31,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "UniversalDescent",
+    "start_line": 33,
+    "end_line": 37,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "SmallerCoalescenceCriterionStatement",
+    "start_line": 39,
+    "end_line": 41,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ConvergenceStatement",
+    "name": "DescentCriterionStatement",
+    "start_line": 43,
+    "end_line": 45,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "CenterOdd",
+    "start_line": 24,
+    "end_line": 26,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "centerOdd_one",
+    "start_line": 28,
+    "end_line": 29,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "centerOdd_not_two_mul",
+    "start_line": 31,
+    "end_line": 33,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "centerTwoPowerOddNormalFormUnique",
+    "start_line": 35,
+    "end_line": 76,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "centerOdd_twoPow_add_three",
+    "start_line": 78,
+    "end_line": 86,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "name": "branchingCenterEquationRigid",
+    "start_line": 88,
+    "end_line": 113,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "IsInvariant",
+    "start_line": 22,
+    "end_line": 24,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "invariant_inverse",
+    "start_line": 26,
+    "end_line": 36,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "commutator",
+    "start_line": 38,
+    "end_line": 42,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "invariant_commutator",
+    "start_line": 44,
+    "end_line": 60,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "iterate",
+    "start_line": 62,
+    "end_line": 66,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "invariant_iterate",
+    "start_line": 68,
+    "end_line": 81,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "transitive_invariant_constant",
+    "start_line": 83,
+    "end_line": 94,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "name": "commutator_transitive_forces_constant",
+    "start_line": 96,
+    "end_line": 109,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "ArithOdd",
+    "start_line": 24,
+    "end_line": 26,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "arithOdd_one",
+    "start_line": 28,
+    "end_line": 29,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "arithOdd_three_pow",
+    "start_line": 31,
+    "end_line": 38,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "arithOdd_not_two_mul",
+    "start_line": 40,
+    "end_line": 42,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "twoPowerOddNormalFormUnique",
+    "start_line": 44,
+    "end_line": 84,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "normalizedLeadingTelescope",
+    "start_line": 86,
+    "end_line": 96,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "noNonresonantContentGain",
+    "start_line": 98,
+    "end_line": 117,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "name": "quotientDegreesVanish",
+    "start_line": 119,
+    "end_line": 136,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "name": "twoPumpCoefficientDependencies",
+    "start_line": 16,
+    "end_line": 29,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "name": "firstRotatedDeterminantCoefficients",
+    "start_line": 31,
+    "end_line": 54,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "name": "secondRotatedDeterminantCoefficients",
+    "start_line": 56,
+    "end_line": 78,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "name": "twoPumpConstantObstructionVanishes",
+    "start_line": 80,
+    "end_line": 136,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "name": "twoPumpSyzygy",
+    "start_line": 138,
+    "end_line": 172,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "shiftedEnvelope_compose",
+    "start_line": 13,
+    "end_line": 26,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursionChainEnvelope",
+    "start_line": 28,
+    "end_line": 43,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "terminalEnvelope_compose",
+    "start_line": 45,
+    "end_line": 59,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursionBudgetDescent",
+    "start_line": 61,
+    "end_line": 71,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursionChain_terminal_descent",
+    "start_line": 73,
+    "end_line": 86,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursion_positive_step",
+    "start_line": 88,
+    "end_line": 91,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursion_positive_iter",
+    "start_line": 93,
+    "end_line": 97,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": "excursionChain_converges_of_smaller",
+    "start_line": 99,
+    "end_line": 111,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": null,
+    "start_line": 113,
+    "end_line": 113,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudget",
+    "name": null,
+    "start_line": 114,
+    "end_line": 114,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "ExcursionSegment",
+    "start_line": 11,
+    "end_line": 14,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "excursionSteps",
+    "start_line": 16,
+    "end_line": 18,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "excursionNumerator",
+    "start_line": 20,
+    "end_line": 22,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "excursionDenominator",
+    "start_line": 24,
+    "end_line": 26,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "ExcursionChain",
+    "start_line": 28,
+    "end_line": 34,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "ExcursionChainEnvelopeStatement",
+    "start_line": 36,
+    "end_line": 41,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "name": "ExcursionBudgetDescentStatement",
+    "start_line": 43,
+    "end_line": 46,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "boundedMono",
+    "start_line": 6,
+    "end_line": 22,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "boundedStrictAnti",
+    "start_line": 24,
+    "end_line": 36,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "finitePalette_path_obstruction",
+    "start_line": 38,
+    "end_line": 74,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "mersenne_prefix",
+    "start_line": 76,
+    "end_line": 82,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "mersenne_prefix_nondecreasing",
+    "start_line": 84,
+    "end_line": 107,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": "finitePaletteObstruction",
+    "start_line": 109,
+    "end_line": 164,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "name": null,
+    "start_line": 172,
+    "end_line": 174,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.FinitePaletteObstructionStatement",
+    "name": "FinitePaletteObstructionStatement",
+    "start_line": 5,
+    "end_line": 18,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": "firstContractionTime",
+    "start_line": 6,
+    "end_line": 22,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": "mechanicalCoarseBound",
+    "start_line": 24,
+    "end_line": 39,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": "firstContractionThirdGap",
+    "start_line": 41,
+    "end_line": 58,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": null,
+    "start_line": 60,
+    "end_line": 60,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": null,
+    "start_line": 61,
+    "end_line": 61,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.FirstContraction",
+    "name": null,
+    "start_line": 62,
+    "end_line": 62,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.FirstContractionStatement",
+    "name": "FirstContractionTimeStatement",
+    "start_line": 5,
+    "end_line": 7,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FirstContractionStatement",
+    "name": "MechanicalCoarseBoundStatement",
+    "start_line": 9,
+    "end_line": 10,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FirstContractionStatement",
+    "name": "FirstContractionThirdGapStatement",
+    "start_line": 12,
+    "end_line": 16,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FloorPower",
+    "name": "floorPower",
+    "start_line": 5,
+    "end_line": 5,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.FloorPower",
+    "name": "floorPower_mul",
+    "start_line": 7,
+    "end_line": 41,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.FloorPower",
+    "name": "floorPower_mul_canonical",
+    "start_line": 43,
+    "end_line": 49,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.InverseWordBoundary",
+    "name": "equalSlopeSmaller",
+    "start_line": 6,
+    "end_line": 13,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.InverseWordBoundary",
+    "name": "equalSlopeWitness",
+    "start_line": 15,
+    "end_line": 47,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.InverseWordBoundaryStatement",
+    "name": "EqualSlopeSmallerStatement",
+    "start_line": 5,
+    "end_line": 11,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.InverseWordBoundaryStatement",
+    "name": "onceAccelerated",
+    "start_line": 13,
+    "end_line": 15,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.InverseWordBoundaryStatement",
+    "name": "EqualSlopeWitnessStatement",
+    "start_line": 17,
+    "end_line": 28,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "sameParityPrefix_head",
+    "start_line": 12,
+    "end_line": 14,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "sameParityPrefix_tail",
+    "start_line": 16,
+    "end_line": 20,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "onceAccelerated_le_of_same_parity",
+    "start_line": 22,
+    "end_line": 32,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "parityPrefix_dvd_sub_of_le",
+    "start_line": 34,
+    "end_line": 61,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "sameParityPrefix_symm",
+    "start_line": 63,
+    "end_line": 65,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "parityPrefix_mod_eq",
+    "start_line": 67,
+    "end_line": 80,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "parityPrefix_separation",
+    "start_line": 82,
+    "end_line": 93,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "prefixCollision",
+    "start_line": 95,
+    "end_line": 95,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": "prefixSeparation",
+    "start_line": 96,
+    "end_line": 96,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": null,
+    "start_line": 98,
+    "end_line": 98,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.PrefixCollision",
+    "name": null,
+    "start_line": 99,
+    "end_line": 99,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.PrefixCollisionStatement",
+    "name": "SameParityPrefix",
+    "start_line": 12,
+    "end_line": 14,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.PrefixCollisionStatement",
+    "name": "prefixGap",
+    "start_line": 16,
+    "end_line": 17,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.PrefixCollisionStatement",
+    "name": "PrefixCollisionStatement",
+    "start_line": 19,
+    "end_line": 21,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.PrefixCollisionStatement",
+    "name": "PrefixSeparationStatement",
+    "start_line": 23,
+    "end_line": 25,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "shortcutIter_succ_last",
+    "start_line": 6,
+    "end_line": 10,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "twice_onceAccelerated_even",
+    "start_line": 12,
+    "end_line": 15,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "twice_onceAccelerated_odd",
+    "start_line": 17,
+    "end_line": 20,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "orbitAffine",
+    "start_line": 22,
+    "end_line": 50,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "mechanicalEnvelope",
+    "start_line": 52,
+    "end_line": 67,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "affine_gap_strict",
+    "start_line": 69,
+    "end_line": 73,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "affineQuarterCertificate",
+    "start_line": 75,
+    "end_line": 83,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "smallMechanicalCertificate",
+    "start_line": 85,
+    "end_line": 92,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "firstContraction_quarter_of_certificate",
+    "start_line": 94,
+    "end_line": 116,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": "smallFirstContractionQuarterGap",
+    "start_line": 118,
+    "end_line": 132,
+    "classification": "unreferenced_source_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": null,
+    "start_line": 134,
+    "end_line": 134,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": null,
+    "start_line": 135,
+    "end_line": 135,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": null,
+    "start_line": 136,
+    "end_line": 136,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": null,
+    "start_line": 137,
+    "end_line": 137,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGap",
+    "name": null,
+    "start_line": 138,
+    "end_line": 138,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "orbitOddCount",
+    "start_line": 11,
+    "end_line": 15,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "orbitRemainder",
+    "start_line": 17,
+    "end_line": 21,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "FirstCoefficientContraction",
+    "start_line": 23,
+    "end_line": 26,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "mechanicalMax",
+    "start_line": 28,
+    "end_line": 31,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "coefficientCrossingExponent",
+    "start_line": 33,
+    "end_line": 34,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "OrbitAffineStatement",
+    "start_line": 36,
+    "end_line": 38,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "MechanicalEnvelopeStatement",
+    "start_line": 40,
+    "end_line": 43,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "AffineQuarterCertificateStatement",
+    "start_line": 45,
+    "end_line": 48,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "SmallMechanicalCertificateStatement",
+    "start_line": 50,
+    "end_line": 52,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapStatement",
+    "name": "SmallFirstContractionQuarterGapStatement",
+    "start_line": 54,
+    "end_line": 58,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "mechanical_twelve_identity",
+    "start_line": 8,
+    "end_line": 85,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "mechanical_twelve_propagation",
+    "start_line": 87,
+    "end_line": 107,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "mechanical_large_base",
+    "start_line": 109,
+    "end_line": 113,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "mechanical_large_bound",
+    "start_line": 115,
+    "end_line": 127,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "mechanical_fifteen_failure",
+    "start_line": 129,
+    "end_line": 135,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "universalMechanicalQuarterCertificate",
+    "start_line": 137,
+    "end_line": 145,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": "firstContractionQuarterGap",
+    "start_line": 147,
+    "end_line": 155,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": null,
+    "start_line": 157,
+    "end_line": 157,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": null,
+    "start_line": 158,
+    "end_line": 158,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": null,
+    "start_line": 159,
+    "end_line": 160,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversal",
+    "name": null,
+    "start_line": 161,
+    "end_line": 161,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversalStatement",
+    "name": "MechanicalSixteenEnvelopeStatement",
+    "start_line": 5,
+    "end_line": 8,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversalStatement",
+    "name": "MechanicalFifteenFailureStatement",
+    "start_line": 10,
+    "end_line": 12,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversalStatement",
+    "name": "UniversalMechanicalQuarterCertificateStatement",
+    "start_line": 14,
+    "end_line": 17,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.QuarterGapUniversalStatement",
+    "name": "FirstContractionQuarterGapStatement",
+    "start_line": 19,
+    "end_line": 24,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "shortcutIter_zero",
+    "start_line": 14,
+    "end_line": 14,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "shortcutIter_succ",
+    "start_line": 16,
+    "end_line": 17,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "shortcutIter_add",
+    "start_line": 19,
+    "end_line": 24,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "onceAccelerated_two_mul_sub_one",
+    "start_line": 26,
+    "end_line": 31,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "onceAccelerated_two_mul",
+    "start_line": 33,
+    "end_line": 36,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "onceAccelerated_two_mul_add_one",
+    "start_line": 38,
+    "end_line": 42,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "oddRun",
+    "start_line": 44,
+    "end_line": 58,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedA",
+    "start_line": 60,
+    "end_line": 61,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedParent",
+    "start_line": 63,
+    "end_line": 66,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedChild",
+    "start_line": 68,
+    "end_line": 70,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "threePow_mod_four",
+    "start_line": 72,
+    "end_line": 83,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "compatibleProduct_mod_four",
+    "start_line": 85,
+    "end_line": 104,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "pow_two_split",
+    "start_line": 106,
+    "end_line": 113,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "pow_three_split",
+    "start_line": 115,
+    "end_line": 122,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedA_pos",
+    "start_line": 124,
+    "end_line": 126,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedChild_arithmetic",
+    "start_line": 128,
+    "end_line": 147,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedParent_iter",
+    "start_line": 149,
+    "end_line": 171,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedChild_iter",
+    "start_line": 173,
+    "end_line": 227,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RefinedMersenneChild",
+    "name": "refinedMersenneChild_coalesces",
+    "start_line": 229,
+    "end_line": 236,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_powerBound_shifted",
+    "start_line": 15,
+    "end_line": 23,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_powerBound",
+    "start_line": 25,
+    "end_line": 29,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_twoPow_unit",
+    "start_line": 31,
+    "end_line": 37,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_product_unit",
+    "start_line": 39,
+    "end_line": 50,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_prefix_one",
+    "start_line": 52,
+    "end_line": 68,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_prefix_two",
+    "start_line": 70,
+    "end_line": 84,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_even_tail",
+    "start_line": 86,
+    "end_line": 88,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_normalized",
+    "start_line": 90,
+    "end_line": 124,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor",
+    "start_line": 126,
+    "end_line": 130,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_factor_unit",
+    "start_line": 132,
+    "end_line": 146,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": "residueAncestor_of_divisibility",
+    "start_line": 148,
+    "end_line": 161,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": null,
+    "start_line": 163,
+    "end_line": 163,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestor",
+    "name": null,
+    "start_line": 164,
+    "end_line": 164,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorStatement",
+    "name": "ResidueAncestorStatement",
+    "start_line": 5,
+    "end_line": 13,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorStatement",
+    "name": "ResidueAncestorDivisibilityStatement",
+    "start_line": 15,
+    "end_line": 20,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_tail38",
+    "start_line": 15,
+    "end_line": 33,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_tail65",
+    "start_line": 35,
+    "end_line": 56,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_tail11",
+    "start_line": 58,
+    "end_line": 86,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_tail92",
+    "start_line": 88,
+    "end_line": 122,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_tail173",
+    "start_line": 124,
+    "end_line": 149,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.ResidueAncestorTails",
+    "name": "residueAncestor_refinedTail",
+    "start_line": 151,
+    "end_line": 174,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "shortcutIter_OOE",
+    "start_line": 14,
+    "end_line": 30,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "shortcutIter_OOE_shifted",
+    "start_line": 32,
+    "end_line": 36,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescentBurst",
+    "start_line": 38,
+    "end_line": 52,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "shortcutIter_evenRun",
+    "start_line": 54,
+    "end_line": 62,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescent_power_margin",
+    "start_line": 64,
+    "end_line": 74,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescent_scaled_margin",
+    "start_line": 76,
+    "end_line": 92,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescent",
+    "start_line": 94,
+    "end_line": 119,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescent_converges_of_smaller",
+    "start_line": 121,
+    "end_line": 129,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "shortcutIter_EO_of_affine_guard",
+    "start_line": 131,
+    "end_line": 141,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": "rootDescentAncestor",
+    "start_line": 143,
+    "end_line": 154,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": null,
+    "start_line": 156,
+    "end_line": 156,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": null,
+    "start_line": 157,
+    "end_line": 157,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.RootDescent",
+    "name": null,
+    "start_line": 158,
+    "end_line": 158,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.RootDescentStatement",
+    "name": "RootDescentBurstStatement",
+    "start_line": 12,
+    "end_line": 17,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RootDescentStatement",
+    "name": "RootDescentStatement",
+    "start_line": 19,
+    "end_line": 26,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.RootDescentStatement",
+    "name": "RootDescentAncestorStatement",
+    "start_line": 28,
+    "end_line": 32,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "shortcutIter_OE",
+    "start_line": 14,
+    "end_line": 25,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "twoBurst_connector",
+    "start_line": 27,
+    "end_line": 31,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "nine_power_le_sixteen",
+    "start_line": 33,
+    "end_line": 38,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "twoBurst_power_margin",
+    "start_line": 40,
+    "end_line": 69,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "twoBurst_scaled_margin",
+    "start_line": 71,
+    "end_line": 88,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "eight_power_positive_exponent",
+    "start_line": 90,
+    "end_line": 97,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "twoBurstDescent",
+    "start_line": 99,
+    "end_line": 172,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": "twoBurst_converges_of_smaller",
+    "start_line": 174,
+    "end_line": 183,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.TwoBurst",
+    "name": null,
+    "start_line": 185,
+    "end_line": 185,
+    "classification": "source_checked_no_exported_declaration"
+  },
+  {
+    "module": "CollatzWork.TwoBurstStatement",
+    "name": "TwoBurstDescentStatement",
+    "start_line": 13,
+    "end_line": 20,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "weightedGapSum_nonneg",
+    "start_line": 26,
+    "end_line": 44,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "weightedGapSum_pos",
+    "start_line": 46,
+    "end_line": 88,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "positiveCertificate_ne_zero",
+    "start_line": 90,
+    "end_line": 99,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_zero",
+    "start_line": 107,
+    "end_line": 114,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_add",
+    "start_line": 116,
+    "end_line": 144,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_scale",
+    "start_line": 146,
+    "end_line": 169,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_weightedCoefficient",
+    "start_line": 171,
+    "end_line": 190,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_eq_zero_of_map_eq",
+    "start_line": 192,
+    "end_line": 204,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "evalCoefficients_eq_of_map_eq",
+    "start_line": 206,
+    "end_line": 220,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledRows",
+    "start_line": 228,
+    "end_line": 242,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledCertificate",
+    "start_line": 244,
+    "end_line": 246,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "allSymbolEdges",
+    "start_line": 248,
+    "end_line": 249,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledRows_legal",
+    "start_line": 251,
+    "end_line": 252,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledRows_semantic",
+    "start_line": 254,
+    "end_line": 255,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledCertificate_shape",
+    "start_line": 257,
+    "end_line": 259,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "negativeFFCoefficient",
+    "start_line": 261,
+    "end_line": 263,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledCertificate_cancellation",
+    "start_line": 265,
+    "end_line": 268,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledGap",
+    "start_line": 275,
+    "end_line": 277,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "eval_negativeFFCoefficient",
+    "start_line": 279,
+    "end_line": 287,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "unlabelledCertificate_weightedGap_eq_neg_ff",
+    "start_line": 289,
+    "end_line": 304,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "yah13_forces_ff_negative",
+    "start_line": 306,
+    "end_line": 335,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "NegativeMultiplesCofinal",
+    "start_line": 337,
+    "end_line": 342,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "ffPumpPotential",
+    "start_line": 344,
+    "end_line": 346,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "ffPumpWord",
+    "start_line": 348,
+    "end_line": 351,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgePotential",
+    "start_line": 353,
+    "end_line": 355,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "ffPumpWord_canonical",
+    "start_line": 357,
+    "end_line": 359,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "ffTail_edgePotential",
+    "start_line": 361,
+    "end_line": 381,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "ffPumpPotential_eq_edgePotential",
+    "start_line": 383,
+    "end_line": 393,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "negative_ff_pump_not_bounded_below",
+    "start_line": 395,
+    "end_line": 427,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noBoundedBelowCanonicalFFPump",
+    "start_line": 429,
+    "end_line": 439,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noBoundedBelowCanonicalFFPumpWords",
+    "start_line": 441,
+    "end_line": 458,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "twoState_rule_equations",
+    "start_line": 464,
+    "end_line": 468,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "canonicalLabeledInstance",
+    "start_line": 470,
+    "end_line": 479,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate",
+    "start_line": 481,
+    "end_line": 490,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate_legal",
+    "start_line": 492,
+    "end_line": 494,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate_canonically_embeddable",
+    "start_line": 496,
+    "end_line": 499,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate_shape",
+    "start_line": 501,
+    "end_line": 504,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate_cancellation",
+    "start_line": 506,
+    "end_line": 509,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate",
+    "start_line": 513,
+    "end_line": 564,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate_legal",
+    "start_line": 566,
+    "end_line": 568,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate_canonically_embeddable",
+    "start_line": 570,
+    "end_line": 574,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate_shape",
+    "start_line": 576,
+    "end_line": 579,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate_cancellation",
+    "start_line": 581,
+    "end_line": 585,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolGap",
+    "start_line": 594,
+    "end_line": 595,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeGap",
+    "start_line": 597,
+    "end_line": 598,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "symbolCertificate_weightedGap_zero",
+    "start_line": 600,
+    "end_line": 611,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "edgeCertificate_weightedGap_zero",
+    "start_line": 613,
+    "end_line": 624,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noTwoStateSymbolCertificateOrientation",
+    "start_line": 626,
+    "end_line": 654,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noTwoStateEdgeCertificateOrientation",
+    "start_line": 656,
+    "end_line": 683,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noTwoStateSymbolAdditiveOrder",
+    "start_line": 685,
+    "end_line": 696,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "name": "noTwoStateEdgeAdditiveOrder",
+    "start_line": 698,
+    "end_line": 709,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "Symbol",
+    "start_line": 27,
+    "end_line": 30,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "RuleName",
+    "start_line": 32,
+    "end_line": 37,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "Rule",
+    "start_line": 39,
+    "end_line": 45,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "rule",
+    "start_line": 47,
+    "end_line": 59,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "allRuleNames",
+    "start_line": 61,
+    "end_line": 63,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "isDigit",
+    "start_line": 65,
+    "end_line": 67,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "canonical",
+    "start_line": 69,
+    "end_line": 75,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "UnlabelledInstance",
+    "start_line": 77,
+    "end_line": 82,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "UnlabelledInstance.lhs",
+    "start_line": 84,
+    "end_line": 85,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "UnlabelledInstance.rhs",
+    "start_line": 87,
+    "end_line": 88,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "validUnlabelledInstance",
+    "start_line": 90,
+    "end_line": 92,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "symbolValueStep",
+    "start_line": 94,
+    "end_line": 101,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "wordValue",
+    "start_line": 103,
+    "end_line": 104,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "shortcut",
+    "start_line": 106,
+    "end_line": 108,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "validUnlabelledSemantics",
+    "start_line": 110,
+    "end_line": 115,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "algebra",
+    "start_line": 117,
+    "end_line": 121,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "evalWord",
+    "start_line": 123,
+    "end_line": 126,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "Token",
+    "start_line": 128,
+    "end_line": 129,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "labelWord",
+    "start_line": 131,
+    "end_line": 135,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "LabeledInstance",
+    "start_line": 137,
+    "end_line": 143,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "LabeledInstance.coreLhs",
+    "start_line": 145,
+    "end_line": 146,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "LabeledInstance.coreRhs",
+    "start_line": 148,
+    "end_line": 149,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "addContext",
+    "start_line": 151,
+    "end_line": 153,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "LabeledInstance.lhs",
+    "start_line": 155,
+    "end_line": 156,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "LabeledInstance.rhs",
+    "start_line": 158,
+    "end_line": 159,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "validLeftContext",
+    "start_line": 161,
+    "end_line": 166,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "validRightContext",
+    "start_line": 168,
+    "end_line": 173,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "validLabeledInstance",
+    "start_line": 175,
+    "end_line": 180,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "labelsConsistent",
+    "start_line": 182,
+    "end_line": 186,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "canonicalLabeled",
+    "start_line": 188,
+    "end_line": 192,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "canonicalExtension",
+    "start_line": 194,
+    "end_line": 206,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "allSymbols",
+    "start_line": 208,
+    "end_line": 209,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "allTokens",
+    "start_line": 211,
+    "end_line": 212,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "adjacentPairs",
+    "start_line": 214,
+    "end_line": 218,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "allTokenEdges",
+    "start_line": 220,
+    "end_line": 221,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "countDelta",
+    "start_line": 223,
+    "end_line": 224,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "unlabelledEdgeDelta",
+    "start_line": 226,
+    "end_line": 228,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "labeledSymbolDelta",
+    "start_line": 230,
+    "end_line": 231,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "labeledEdgeDelta",
+    "start_line": 233,
+    "end_line": 234,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "weightedCoefficient",
+    "start_line": 236,
+    "end_line": 240,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "weightedGapSum",
+    "start_line": 242,
+    "end_line": 245,
+    "classification": "definition_material"
+  },
+  {
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "name": "evalCoefficients",
+    "start_line": 247,
+    "end_line": 250,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "step",
+    "start_line": 5,
+    "end_line": 7,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "block",
+    "start_line": 9,
+    "end_line": 9,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "first_step",
+    "start_line": 11,
+    "end_line": 13,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "second_step",
+    "start_line": 15,
+    "end_line": 17,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "third_step",
+    "start_line": 19,
+    "end_line": 21,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "block_formula",
+    "start_line": 23,
+    "end_line": 24,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "block_grows",
+    "start_line": 26,
+    "end_line": 28,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "odd_exponents_one_two",
+    "start_line": 30,
+    "end_line": 33,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "block_scaled",
+    "start_line": 39,
+    "end_line": 43,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "seed",
+    "start_line": 45,
+    "end_line": 46,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "blocks",
+    "start_line": 48,
+    "end_line": 50,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "block_seed_succ",
+    "start_line": 52,
+    "end_line": 61,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "iterated_seed",
+    "start_line": 63,
+    "end_line": 72,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "goodBlocks",
+    "start_line": 78,
+    "end_line": 81,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "seed_good_blocks",
+    "start_line": 83,
+    "end_line": 94,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "iterated_seed_grows",
+    "start_line": 96,
+    "end_line": 103,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "arbitrarily_long_expansion",
+    "start_line": 105,
+    "end_line": 109,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "goodBlocks_each_block_grows",
+    "start_line": 115,
+    "end_line": 126,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "ordinaryStep",
+    "start_line": 128,
+    "end_line": 130,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "ordinarySteps",
+    "start_line": 132,
+    "end_line": 134,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "ordinary_five",
+    "start_line": 136,
+    "end_line": 155,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveAlternatingGrowth",
+    "name": "shortcut_three_eq_ordinary_five",
+    "start_line": 157,
+    "end_line": 159,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "step",
+    "start_line": 13,
+    "end_line": 15,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "iterate",
+    "start_line": 17,
+    "end_line": 20,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "CollatzConjecture",
+    "start_line": 22,
+    "end_line": 24,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "UniversalDescent",
+    "start_line": 26,
+    "end_line": 28,
+    "classification": "definition_material"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "step_pos",
+    "start_line": 30,
+    "end_line": 34,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "iterate_pos",
+    "start_line": 36,
+    "end_line": 40,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "iterate_add",
+    "start_line": 42,
+    "end_line": 46,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "convergence_implies_descent",
+    "start_line": 48,
+    "end_line": 56,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "descent_implies_convergence",
+    "start_line": 58,
+    "end_line": 68,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveDescent",
+    "name": "descent_iff_convergence",
+    "start_line": 70,
+    "end_line": 72,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "telescope",
+    "start_line": 10,
+    "end_line": 25,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "power_dvd_initial",
+    "start_line": 27,
+    "end_line": 34,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "finite_repetition_bound",
+    "start_line": 36,
+    "end_line": 41,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "no_infinite_positive_recurrence",
+    "start_line": 43,
+    "end_line": 51,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "affine_shift",
+    "start_line": 53,
+    "end_line": 65,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "affine_repetition_bound",
+    "start_line": 67,
+    "end_line": 76,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "no_infinite_expanding_affine_blocks",
+    "start_line": 78,
+    "end_line": 87,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "alternating_shift",
+    "start_line": 89,
+    "end_line": 91,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "alternating_repetition_bound",
+    "start_line": 93,
+    "end_line": 98,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "ArchiveRepetitionBound",
+    "name": "no_infinite_alternating_blocks",
+    "start_line": 100,
+    "end_line": 106,
+    "classification": "theorem_node"
+  }
+]

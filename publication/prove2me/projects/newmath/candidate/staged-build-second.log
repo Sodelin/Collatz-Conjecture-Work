@@ -1,0 +1,27 @@
+⚠ [4/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness.lean:7:8: declaration uses `sorry`
+⚠ [5/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion.lean:7:8: declaration uses `sorry`
+⚠ [6/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness.lean:7:8: declaration uses `sorry`
+⚠ [7/19] Replayed Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator.lean:7:8: declaration uses `sorry`
+⚠ [8/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward.lean:7:8: declaration uses `sorry`
+⚠ [9/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor.lean:7:8: declaration uses `sorry`
+⚠ [10/19] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor.lean:7:8: declaration uses `sorry`
+⚠ [11/22] Replayed Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_downward
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_downward.lean:8:8: declaration uses `sorry`
+✔ [23/32] Built Solutions (11s)
+✔ [24/32] Built Theorems (12s)
+✔ [25/32] Built Definitions (13s)
+⚠ [27/32] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel (17s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel.lean:7:8: declaration uses `sorry`
+⚠ [28/32] Built Theorems.Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound (19s)
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:7:8: declaration uses `sorry`
+⚠ [29/32] Built Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large (19s)
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large.lean:7:8: declaration uses `sorry`
+✔ [31/32] Built Solutions.Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound (20s)
+Build completed successfully (32 jobs).

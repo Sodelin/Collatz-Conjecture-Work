@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.refinedParent_converges_iff_child",
+  "theorem_title": "One guarded family of smaller coalescing starts",
+  "natural_language_statement": "For natural L,epsilon,z with L>=2, epsilon<=1, and epsilon mod 2=L mod 2, put A=4*z+2*epsilon+1, parent=2^L*A-1, and child=3*2^(L-2)*A-1. The child is positive and strictly smaller, T^(L+2)(parent)=T^L(child), and the two starts converge equivalently. Parent convergence follows if all smaller positive starts converge. Limitations: The parity-compatibility guard is essential. This supplies one explicit family, not a universal smaller-target selector. The convergence application retains its strong-induction hypothesis.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_converges_iff_of_coalesces\nimport Theorems.Thm_CollatzWork_refinedMersenneChild_coalesces\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedParent_converges_iff_child (L epsilon z : Nat) (hL : 2 \u2264 L)\n    (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    Converges (refinedParent L epsilon z) \u2194\n      Converges (refinedChild L epsilon z) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L104-L112"
+}

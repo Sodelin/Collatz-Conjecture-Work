@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+  "theorem_title": "CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "formal_statement": "theorem CollatzWork.YAH.symbolCertificate_canonically_embeddable :\n    symbolCertificate.all (fun entry =>\n      canonicalLabeled (canonicalExtension entry.2.lhs) &&\n      canonicalLabeled (canonicalExtension entry.2.rhs)) = true := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L496-L499"
+}

@@ -1,0 +1,27 @@
+info: sodelin_egyptian295_staging: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✖ [0/10] Running job computation
+error: Definitions: some modules have bad imports
+error: Theorems: some modules have bad imports
+error: Solutions: some modules have bad imports
+✔ [2/10] Built Definitions.Def_EgyptianFractions_Certificate (5.2s)
+✔ [3/10] Built Definitions.Def_EgyptianFractions_Baseline18 (5.4s)
+✔ [5/10] Built Solutions.Sol_EgyptianFractions_exists_minimum_of_representation (10s)
+⚠ [6/10] Built Theorems.Thm_EgyptianFractions_exists_minimum_of_representation (10s)
+warning: Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean:7:8: declaration uses `sorry`
+✖ [7/10] Building Solutions.Sol_EgyptianFractions_exists_minimum18_le_35 (7.5s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.lean -o /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.olean -i /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.ilean -c /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.c --setup /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.setup.json --json
+error: Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.lean:34:2: Unknown identifier `hasRepresentation_of_certificate`
+error: Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.lean:39:2: Unknown identifier `minimum_le_of_certificate`
+error: Lean exited with code 1
+✖ [9/10] Building Theorems.Thm_EgyptianFractions_exists_minimum18_le_35 (16s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean -o /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.olean -i /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.ilean -c /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.c --setup /workspace/scratch/ce6b142fd07d/Egyptian-Fractions-Erdos-295/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.setup.json --json
+error: Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean:34:2: Unknown identifier `hasRepresentation_of_certificate`
+error: Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean:39:2: Unknown identifier `minimum_le_of_certificate`
+warning: Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean:92:8: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- job computation
+- Solutions.Sol_EgyptianFractions_exists_minimum18_le_35
+- Theorems.Thm_EgyptianFractions_exists_minimum18_le_35
+error: build failed

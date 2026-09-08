@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor",
+  "theorem_title": "Complete uniform divisibility ancestor theorem at threshold13",
+  "natural_language_statement": "For every r in Nat with 3^13 dividing 4*r+1, there exist naturals m,b such that 0<m<r, m mod27=20, and shortcutIter b m=r. The factorization, selector, strict comparison, and actual parity semantics are included. Limitations: Supersedes the older uniform threshold21 selector. Individually lower guarded rows and selected-table sharpness retain prose/Python scope. The divisor guard is not known for arbitrary residual roots. Novelty unconfirmed.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ResidueAncestorStatement\nimport Theorems.Thm_CollatzWork_residueAncestor_normalized\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor : ResidueAncestorStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L126-L130"
+}

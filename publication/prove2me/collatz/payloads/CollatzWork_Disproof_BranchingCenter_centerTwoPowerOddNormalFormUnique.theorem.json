@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
+  "theorem_title": "CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
+  "natural_language_statement": "Exact uniqueness of a power-of-two times an odd natural.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique :\n    \u2200 R S A B : Nat,\n      CenterOdd A \u2192 CenterOdd B \u2192\n      2 ^ R * A = 2 ^ S * B \u2192\n      R = S \u2227 A = B := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean#L35-L76"
+}

@@ -1,0 +1,8 @@
+✔ [2/5] Built EgyptianFractions.Certificate (2.6s)
+ℹ [3/5] Built EgyptianFractions.Baseline18 (2.8s)
+info: EgyptianFractions/Baseline18.lean:49:0: 'EgyptianFractions.baseline18_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EgyptianFractions/Baseline18.lean:50:0: 'EgyptianFractions.exists_35_term_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EgyptianFractions/Baseline18.lean:51:0: 'EgyptianFractions.minimum18_le_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EgyptianFractions/Baseline18.lean:52:0: 'EgyptianFractions.exists_minimum18_le_35' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [4/5] Built EgyptianFractions (1.6s)
+Build completed successfully (5 jobs).

@@ -1,0 +1,1 @@
+"∀ (S : Nat → Bool), Erdos302Extension734.fullCardinal S = (List.filter S Erdos302Extension734.fullDomain).length"

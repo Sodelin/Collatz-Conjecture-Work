@@ -1,0 +1,90 @@
+[
+  {
+    "name": "EgyptianFractions.baseline18_length",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 19,
+    "endLine": 19,
+    "proof_lines": 0
+  },
+  {
+    "name": "EgyptianFractions.baseline18_distinct",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 21,
+    "endLine": 21,
+    "proof_lines": 0
+  },
+  {
+    "name": "EgyptianFractions.baseline18_denominators",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 23,
+    "endLine": 23,
+    "proof_lines": 0
+  },
+  {
+    "name": "EgyptianFractions.baseline18_sum",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 27,
+    "endLine": 27,
+    "proof_lines": 0
+  },
+  {
+    "name": "EgyptianFractions.baseline18_certificate",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 29,
+    "endLine": 30,
+    "proof_lines": 1
+  },
+  {
+    "name": "EgyptianFractions.exists_35_term_representation",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 32,
+    "endLine": 35,
+    "proof_lines": 1
+  },
+  {
+    "name": "EgyptianFractions.minimum18_le_35",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 37,
+    "endLine": 40,
+    "proof_lines": 1
+  },
+  {
+    "name": "EgyptianFractions.exists_minimum18_le_35",
+    "module": "EgyptianFractions.Baseline18",
+    "path": "EgyptianFractions/Baseline18.lean",
+    "startLine": 42,
+    "endLine": 47,
+    "proof_lines": 3
+  },
+  {
+    "name": "EgyptianFractions.hasRepresentation_of_certificate",
+    "module": "EgyptianFractions.Certificate",
+    "path": "EgyptianFractions/Certificate.lean",
+    "startLine": 41,
+    "endLine": 46,
+    "proof_lines": 1
+  },
+  {
+    "name": "EgyptianFractions.minimum_le_of_certificate",
+    "module": "EgyptianFractions.Certificate",
+    "path": "EgyptianFractions/Certificate.lean",
+    "startLine": 48,
+    "endLine": 55,
+    "proof_lines": 1
+  },
+  {
+    "name": "EgyptianFractions.exists_minimum_of_representation",
+    "module": "EgyptianFractions.Certificate",
+    "path": "EgyptianFractions/Certificate.lean",
+    "startLine": 57,
+    "endLine": 75,
+    "proof_lines": 14
+  }
+]

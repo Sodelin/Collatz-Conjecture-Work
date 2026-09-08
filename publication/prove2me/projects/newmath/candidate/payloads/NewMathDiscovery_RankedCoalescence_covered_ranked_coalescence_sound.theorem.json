@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
+  "theorem_title": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
+  "natural_language_statement": "Entry coverage lifts configuration soundness to every value in a domain.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_RankedCoalescenceSound\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound\n    {\u03b1 C W : Type}\n    (f : \u03b1 \u2192 \u03b1)\n    (one : \u03b1)\n    (decode : C \u2192 \u03b1)\n    (rank : C \u2192 W)\n    (lt : W \u2192 W \u2192 Prop)\n    (edge : C \u2192 Nat \u2192 Nat \u2192 C \u2192 Prop)\n    (Entry : C \u2192 Prop)\n    (Domain : \u03b1 \u2192 Prop)\n    (hfix : f one = one)\n    (hwf : WellFounded (fun c' c => lt (rank c') (rank c)))\n    (hprogress : \u2200 c, decode c \u2260 one \u2192 \u2203 a b c', edge c a b c')\n    (hexact : \u2200 {c a b c'}, edge c a b c' \u2192\n      iterate f a (decode c) = iterate f b (decode c'))\n    (hdecrease : \u2200 {c a b c'}, edge c a b c' \u2192\n      lt (rank c') (rank c))\n    (hcoverage : \u2200 x, Domain x \u2192 \u2203 c, Entry c \u2227 decode c = x) :\n    \u2200 x, Domain x \u2192 Reaches f one x := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L95-L120"
+}

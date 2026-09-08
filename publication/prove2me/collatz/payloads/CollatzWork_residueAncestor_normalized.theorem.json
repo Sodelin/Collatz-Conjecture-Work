@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_normalized",
+  "theorem_title": "CollatzWork.residueAncestor_normalized",
+  "natural_language_statement": "Uniform construction after factoring the valuation as k+3.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_one\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_two\nimport Theorems.Thm_CollatzWork_residueAncestor_refinedTail\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_normalized (k u r : Nat) (hk : 10 \u2264 k)\n    (hu : 0 < u) (hunit : u % 3 \u2260 0)\n    (hguard : 3 ^ (k + 3) * u = 4 * r + 1) :\n    \u2203 m b : Nat, 0 < m \u2227 m < r \u2227 m % 27 = 20 \u2227 shortcutIter b m = r := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L90-L124"
+}

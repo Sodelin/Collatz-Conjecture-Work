@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.finitePalette_path_obstruction",
+  "theorem_title": "CollatzWork.finitePalette_path_obstruction",
+  "natural_language_statement": "A nondecreasing path cannot carry `r` consecutive strict rank decreases\nwhen every rank is selected from `r` nondecreasing functions.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.finitePalette_path_obstruction\n    (r B : Nat) (V : Nat \u2192 Nat) (f : Fin r \u2192 Nat \u2192 Nat)\n    (selector : Nat \u2192 Fin r) (x : Nat \u2192 Nat)\n    (hf : \u2200 i a b, B \u2264 a \u2192 a \u2264 b \u2192 f i a \u2264 f i b)\n    (hV : \u2200 n, B \u2264 n \u2192 V n = f (selector n) n)\n    (hB : B \u2264 x 0)\n    (hx : \u2200 k, k < r \u2192 x k \u2264 x (k + 1))\n    (hdec : \u2200 k, k < r \u2192 V (x (k + 1)) < V (x k)) : False := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstruction.lean#L38-L74"
+}

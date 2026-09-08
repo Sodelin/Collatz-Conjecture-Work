@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.yah13_forces_ff_negative",
+  "theorem_title": "CollatzWork.YAH.yah13_forces_ff_negative",
+  "natural_language_statement": "The 13 displayed rows force the repeated `ff` edge weight to be negative.\nThe further bounded-below contradiction uses the Archimedean/cofinal property\nof the intended scalar target and is intentionally kept separate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\nimport Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos\nimport Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient\nimport Theorems.Thm_CollatzWork_YAH_unlabelledCertificate_cancellation\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]\n",
+  "formal_statement": "theorem CollatzWork.YAH.yah13_forces_ff_negative (weight : Symbol \u00d7 Symbol \u2192 M)\n    (horients : \u2200 entry \u2208 unlabelledCertificate,\n      if (rule entry.2.ruleName).dynamic = true\n      then 0 < unlabelledGap weight entry.2\n      else 0 \u2264 unlabelledGap weight entry.2) :\n    weight (.f, .f) < 0 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L306-L335"
+}

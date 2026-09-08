@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel (bound : Nat) :\n    \u2203 n direction,\n      observe n direction = 0 \u2227\n      direction.2 = -1 \u2227\n      target direction > Int.ofNat bound := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L175-L182"
+}

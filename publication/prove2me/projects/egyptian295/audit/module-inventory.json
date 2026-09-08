@@ -1,0 +1,20 @@
+[
+  {
+    "path": "EgyptianFractions.lean",
+    "extraction_path": "EgyptianFractions.lean",
+    "module": "EgyptianFractions",
+    "sha256": "a576bf70a0b0cb0610c3c60b9622e9720cdc2a270ab01aa7fb2cb28c4a08a88c"
+  },
+  {
+    "path": "EgyptianFractions/Baseline18.lean",
+    "extraction_path": "EgyptianFractions/Baseline18.lean",
+    "module": "EgyptianFractions.Baseline18",
+    "sha256": "95f6a2758b799d7f8327237034e9a532739caee6eee3e1162c5ed5dac86e7bd8"
+  },
+  {
+    "path": "EgyptianFractions/Certificate.lean",
+    "extraction_path": "EgyptianFractions/Certificate.lean",
+    "module": "EgyptianFractions.Certificate",
+    "sha256": "ef25ce4bde407a0f3cbcaf68e3bd0dda228352b05ea9ff833098779b2fc9139d"
+  }
+]

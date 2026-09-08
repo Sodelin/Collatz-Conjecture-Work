@@ -1,0 +1,1 @@
+"∀ {I J : Type} (F : J → I → Bool) (S : I → Prop),\n  NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n      NewMathDiscovery.BlindnessRealization.State.target ↔\n    ∃ j, ∀ (i : I), S i → F j i = true"

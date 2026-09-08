@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_prefix_one",
+  "theorem_title": "CollatzWork.residueAncestor_prefix_one",
+  "natural_language_statement": "The h=1 variable prefix, expressed using x=2^k u.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_rootDescentAncestor\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_prefix_one (k u r : Nat) (hu : 0 < u)\n    (hguard : 3 ^ (k + 3) * u = 4 * r + 1) :\n    shortcutIter (k + 3) (6 * (2 ^ k * u) - 1) = r := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L52-L68"
+}

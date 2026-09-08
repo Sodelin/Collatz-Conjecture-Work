@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.refinedParent_iter",
+  "theorem_title": "CollatzWork.refinedParent_iter",
+  "natural_language_statement": "The parent reaches the common endpoint after `L+2` one-division shortcut\nsteps on the parity-compatible residue child.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\nimport Theorems.Thm_CollatzWork_compatibleProduct_mod_four\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedParent_iter (L epsilon z : Nat)\n    (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    shortcutIter (L + 2) (refinedParent L epsilon z) =\n      (3 ^ L * refinedA epsilon z - 1) / 4 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L149-L171"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness (n : Nat) :\n    target (witness n) \u2260 0 := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L170-L173"
+}

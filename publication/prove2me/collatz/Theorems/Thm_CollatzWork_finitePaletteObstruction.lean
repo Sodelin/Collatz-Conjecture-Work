@@ -1,0 +1,13 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_FinitePaletteObstructionStatement
+import Definitions.Def_CollatzWork_InverseWordBoundaryStatement
+import Definitions.Def_CollatzWork_RefinedMersenneChild
+import Theorems.Thm_CollatzWork_finitePalette_path_obstruction
+import Theorems.Thm_CollatzWork_mersenne_prefix_nondecreasing
+
+
+
+theorem CollatzWork.finitePaletteObstruction : FinitePaletteObstructionStatement := by sorry
+

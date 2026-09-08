@@ -1,0 +1,15 @@
+name = "sodelin_newmath_staging"
+version = "0.1.0"
+defaultTargets = ["Definitions", "Theorems", "Solutions"]
+
+[[lean_lib]]
+name = "Definitions"
+globs = ["Definitions.**"]
+
+[[lean_lib]]
+name = "Theorems"
+globs = ["Theorems.**"]
+
+[[lean_lib]]
+name = "Solutions"
+globs = ["Solutions.**"]

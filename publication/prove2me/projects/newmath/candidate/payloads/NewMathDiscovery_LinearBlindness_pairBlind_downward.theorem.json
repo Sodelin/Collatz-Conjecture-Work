@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
+  "natural_language_statement": "Removing observations cannot destroy an existing blindness witness.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.pairBlind_downward {Index State Value : Type}\n    (system : System Index State Value) {smaller larger : Index \u2192 Prop}\n    (hsubset : \u2200 i, smaller i \u2192 larger i)\n    (hblind : PairBlind system larger) :\n    PairBlind system smaller := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L112-L119"
+}

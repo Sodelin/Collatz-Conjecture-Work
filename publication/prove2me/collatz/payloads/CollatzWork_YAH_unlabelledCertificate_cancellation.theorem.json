@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.unlabelledCertificate_cancellation",
+  "theorem_title": "Fixed-algebra YAH additive cancellation cores",
+  "natural_language_statement": "Lean verifies fixed two-state rule equations, an unlabelled13-row adjacent-edge cancellation with a cofinal pumping/lower-bound contradiction, an8-row labeled-symbol cancellation, and a50-row labeled-edge cancellation. Generic symbol/edge ordered-additive-group wrappers exclude orientations that make every dynamic rule strict and every auxiliary rule weak in that fixed algebra. Limitations: The unlabelled lower-bound conclusion has a genuine cofinality hypothesis. This does not formalize scalar-arctic full/top certificates, all70algebras, arbitrary labelings or general termination. The broader first-rule-removal support statement retains Python/prose status; it is not the generic Lean wrapper.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "formal_statement": "theorem CollatzWork.YAH.unlabelledCertificate_cancellation :\n    allSymbolEdges.map\n        (weightedCoefficient unlabelledCertificate unlabelledEdgeDelta) =\n      allSymbolEdges.map negativeFFCoefficient := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L265-L268"
+}

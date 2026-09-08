@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.noInfinitePositiveRecurrence",
+  "theorem_title": "Fixed affine repetition and conditional prefix-return budget",
+  "natural_language_statement": "For coprime a,b and a natural-valued sequence with b*y(i+1)=a*y(i) for i<k, b^k divides y(0); if y(0)>0 then b^k<=y(0). For coprime b,b+d and b*x(i+1)=(b+d)*x(i)+c, positive d*x(0)+c bounds b^k. Also2*32^d<27^d*(n+1) implies10*d+27<27*n and d<=(27*n-28)/10. Limitations: The recurrence multiplier is fixed. Changing blocks do not inherit the same budget. The numerical return theorem requires its exponential premise; it does not formalize the complete Thue-Morse application.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_AffineRepetitionStatement\nimport Theorems.Thm_CollatzWork_finiteRepetitionBound\n\n\n",
+  "formal_statement": "theorem CollatzWork.noInfinitePositiveRecurrence : NoInfinitePositiveRecurrenceStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L32-L36"
+}

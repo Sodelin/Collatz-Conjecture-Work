@@ -1,0 +1,1 @@
+"∀ (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.targetRow\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) =\n    Int.ofNat n + 1"

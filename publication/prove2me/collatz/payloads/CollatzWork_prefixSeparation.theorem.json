@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.prefixSeparation",
+  "theorem_title": "Actual shortcut parity prefixes determine residue classes",
+  "natural_language_statement": "Two naturals whose first k actual shortcut parity bits agree are congruent modulo2^k. If they are distinct, their natural absolute difference is at least2^k. Limitations: Finite actual-map statement, not a universal recurrence claim. Elementary classical parity arithmetic; no external priority claim.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\nimport Theorems.Thm_CollatzWork_parityPrefix_dvd_sub_of_le\n\n\n",
+  "formal_statement": "theorem CollatzWork.prefixSeparation : PrefixSeparationStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollision.lean#L96-L96"
+}

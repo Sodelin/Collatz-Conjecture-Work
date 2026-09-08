@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+  "natural_language_statement": "Exact positive form of the criterion: the selected observations determine\nthe target precisely when their common kernel is contained in the target\nkernel.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion {Index State Value : Type}\n    (system : System Index State Value) (selected : Index \u2192 Prop) :\n    DeterminesTarget system selected \u2194\n      \u2200 direction,\n        InObservationKernel system selected direction \u2192\n          system.target direction = system.zeroValue := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L84-L110"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "EgyptianFractions.exists_minimum_of_representation",
+  "theorem_title": "EgyptianFractions.exists_minimum_of_representation",
+  "natural_language_statement": "Once a representation is supplied, well-ordering gives an actual minimum.\nThis does not assume existence of representations at unsupplied lower bounds.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Certificate\n\n\n",
+  "formal_statement": "theorem EgyptianFractions.exists_minimum_of_representation {lower terms : Nat}\n    (hRepresentation : HasRepresentation lower terms) :\n    \u2203 minimum, IsMinimumLength lower minimum := by sorry\n\n",
+  "tags": [
+    "sodelin-egyptian295"
+  ],
+  "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Certificate.lean#L57-L75"
+}

@@ -1,0 +1,11 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_ResidueAncestorStatement
+import Theorems.Thm_CollatzWork_residueAncestor
+import Theorems.Thm_CollatzWork_residueAncestor_factor_unit
+
+
+
+theorem CollatzWork.residueAncestor_of_divisibility : ResidueAncestorDivisibilityStatement := by sorry
+

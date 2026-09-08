@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords",
+  "theorem_title": "CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords",
+  "natural_language_statement": "Whole-word form of the same obstruction: the actual adjacent-edge\npotentials of the canonical words `^ f^(m+1) $` have no common lower bound.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\nimport Theorems.Thm_CollatzWork_YAH_yah13_forces_ff_negative\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]\n",
+  "formal_statement": "theorem CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords\n    (weight : Symbol \u00d7 Symbol \u2192 M)\n    (hcofinal : NegativeMultiplesCofinal (M := M))\n    (horients : \u2200 entry \u2208 unlabelledCertificate,\n      if (rule entry.2.ruleName).dynamic = true\n      then 0 < unlabelledGap weight entry.2\n      else 0 \u2264 unlabelledGap weight entry.2) :\n    \u00ac \u2203 bound : M, \u2200 multiplicity : Nat,\n      bound \u2264 edgePotential weight (ffPumpWord multiplicity) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L441-L458"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
+  "theorem_title": "BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
+  "natural_language_statement": "Each successive certified block endpoint is strictly larger.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows (m n : Nat) (hgood : goodBlocks m n) :\n    \u2200 j : Nat, j < m \u2192 blocks j n < blocks (j + 1) n := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L115-L126"
+}

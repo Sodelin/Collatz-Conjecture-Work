@@ -1,0 +1,10 @@
+{
+  "definition_name": "ArchiveAlternatingGrowth",
+  "definition_title": "ArchiveAlternatingGrowth definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from ArchiveAlternatingGrowth.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace BlindCollatz.AlternatingGrowth\n\n/-- Shortcut Collatz map: one division by two on either branch. -/\ndef step (n : Nat) : Nat :=\n  if n % 2 = 0 then n / 2 else (3 * n + 1) / 2\n\ndef block (n : Nat) : Nat := step (step (step n))\n\n \n\n \n\n \n\n \n\n \n\n \n\nend BlindCollatz.AlternatingGrowth\n\nnamespace BlindCollatz.AlternatingGrowth\n\n \n\n/-- A family that admits arbitrarily many expanding (1,2) valuation blocks. -/\ndef seed (m t : Nat) : Nat := 16 * (8 ^ m * t) - 5\n\ndef blocks : Nat \u2192 Nat \u2192 Nat\n  | 0, n => n\n  | k + 1, n => blocks k (block n)\n\n \n\n \n\nend BlindCollatz.AlternatingGrowth\n\nnamespace BlindCollatz.AlternatingGrowth\n\n/-- Every certified block starts in the residue class with odd exponents (1,2). -/\ndef goodBlocks : Nat \u2192 Nat \u2192 Prop\n  | 0, _ => True\n  | k + 1, n => (\u2203 q : Nat, n = 16 * q + 11) \u2227 goodBlocks k (block n)\n\n \n\n \n\n\n\nend BlindCollatz.AlternatingGrowth\n\nnamespace BlindCollatz.AlternatingGrowth\n\n\n\n/-- Ordinary Collatz map: the odd branch does not include a division. -/\ndef ordinaryStep (n : Nat) : Nat :=\n  if n % 2 = 0 then n / 2 else 3 * n + 1\n\ndef ordinarySteps : Nat \u2192 Nat \u2192 Nat\n  | 0, n => n\n  | k + 1, n => ordinarySteps k (ordinaryStep n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend BlindCollatz.AlternatingGrowth\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean"
+}

@@ -1,0 +1,1 @@
+"∀ (k : Nat),\n  (∃ S, Erdos302Finite.RatAdmissible 732 S ∧ k ≤ Erdos302Finite.cardinal S) ↔\n    ∃ S, Erdos302Finite.RatAdmissible 731 S ∧ k ≤ Erdos302Finite.cardinal S"

@@ -1,0 +1,16 @@
+ℹ [2/3] Built NewMathDiscovery.BlindnessRealization (2.4s)
+info: lean/NewMathDiscovery/BlindnessRealization.lean:78:0: 'NewMathDiscovery.BlindnessRealization.blind_iff_below_generator' depends on axioms: [propext]
+info: lean/NewMathDiscovery/BlindnessRealization.lean:79:0: 'NewMathDiscovery.BlindnessRealization.blind_downward' depends on axioms: [propext]
+ℹ [3/3] Built NewMathDiscovery.LinearBlindness (2.4s)
+info: lean/NewMathDiscovery/LinearBlindness.lean:196:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor' depends on axioms: [propext]
+info: lean/NewMathDiscovery/LinearBlindness.lean:197:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor' depends on axioms: [propext, Quot.sound]
+info: lean/NewMathDiscovery/LinearBlindness.lean:198:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.witness_in_sensor_kernel' depends on axioms: [propext, Quot.sound]
+info: lean/NewMathDiscovery/LinearBlindness.lean:199:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness' depends on axioms: [propext, Quot.sound]
+info: lean/NewMathDiscovery/LinearBlindness.lean:200:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel' depends on axioms: [propext,
+ Quot.sound]
+info: lean/NewMathDiscovery/LinearBlindness.lean:201:0: 'NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large' depends on axioms: [propext,
+ Quot.sound]
+info: lean/NewMathDiscovery/LinearBlindness.lean:205:0: 'NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness' does not depend on any axioms
+info: lean/NewMathDiscovery/LinearBlindness.lean:206:0: 'NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion' does not depend on any axioms
+info: lean/NewMathDiscovery/LinearBlindness.lean:207:0: 'NewMathDiscovery.LinearBlindness.pairBlind_downward' does not depend on any axioms
+Build completed successfully (3 jobs).

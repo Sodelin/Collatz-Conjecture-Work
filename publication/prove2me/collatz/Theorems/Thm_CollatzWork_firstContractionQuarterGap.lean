@@ -1,0 +1,13 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_QuarterGapStatement
+import Definitions.Def_CollatzWork_QuarterGapUniversalStatement
+import Theorems.Thm_CollatzWork_firstContractionThirdGap
+import Theorems.Thm_CollatzWork_firstContraction_quarter_of_certificate
+import Theorems.Thm_CollatzWork_universalMechanicalQuarterCertificate
+
+
+
+theorem CollatzWork.firstContractionQuarterGap : FirstContractionQuarterGapStatement := by sorry
+

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_tail173",
+  "theorem_title": "CollatzWork.residueAncestor_tail173",
+  "natural_language_statement": "The exact tail over `z = 173 mod 243`, including its affine certificate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_tail173 (a : Nat) :\n    0 < 864 * a + 614 \u2227\n    (864 * a + 614) % 27 = 20 \u2227\n    shortcutIter 5 (864 * a + 614) = 243 * a + 173 \u2227\n    9 * (864 * a + 614) + 10 = 32 * (243 * a + 173) \u2227\n    864 * a + 614 \u2264 64 * (243 * a + 173) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L124-L149"
+}

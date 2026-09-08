@@ -1,0 +1,10 @@
+{
+  "definition_name": "ArchiveDescent",
+  "definition_title": "ArchiveDescent definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from ArchiveDescent.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\n/-!\n# A conditional reduction of the Collatz conjecture\n\nThis file proves an equivalence. It does NOT prove `UniversalDescent`\nor `CollatzConjecture`; both remain propositions with no asserted inhabitant.\nOnly Lean's standard library is used.\n-/\n\nnamespace BlindCollatz\n\n/-- The ordinary Collatz map on natural numbers. -/\ndef step (n : Nat) : Nat :=\n  if n % 2 = 0 then n / 2 else 3 * n + 1\n\n/-- Apply `step` exactly `k` times, starting at `n`. -/\ndef iterate : Nat \u2192 Nat \u2192 Nat\n  | 0, n => n\n  | k + 1, n => iterate k (step n)\n\n/-- Every positive starting value eventually reaches 1. Unproved here. -/\ndef CollatzConjecture : Prop :=\n  \u2200 n : Nat, 0 < n \u2192 \u2203 k : Nat, iterate k n = 1\n\n/-- Every starting value above 1 eventually becomes smaller. Unproved here. -/\ndef UniversalDescent : Prop :=\n  \u2200 n : Nat, 1 < n \u2192 \u2203 k : Nat, 0 < k \u2227 iterate k n < n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend BlindCollatz\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/Descent.lean"
+}

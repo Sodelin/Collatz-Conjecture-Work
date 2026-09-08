@@ -1,0 +1,370 @@
+[
+  {
+    "name": "Erdos302Extension734.no_new_triples",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 9,
+    "endLine": 12,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.full_domain_membership",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 19,
+    "endLine": 23,
+    "proof_lines": 3
+  },
+  {
+    "name": "Erdos302Extension734.full_domain_nodup",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 25,
+    "endLine": 31,
+    "proof_lines": 6
+  },
+  {
+    "name": "Erdos302Extension734.full_cardinal_domain",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 33,
+    "endLine": 35,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.base_cardinal_congr",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 37,
+    "endLine": 44,
+    "proof_lines": 6
+  },
+  {
+    "name": "Erdos302Extension734.trim_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 50,
+    "endLine": 53,
+    "proof_lines": 3
+  },
+  {
+    "name": "Erdos302Extension734.lift_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 55,
+    "endLine": 59,
+    "proof_lines": 3
+  },
+  {
+    "name": "Erdos302Extension734.trim_admissible",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 61,
+    "endLine": 69,
+    "proof_lines": 7
+  },
+  {
+    "name": "Erdos302Extension734.lift_admissible",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 71,
+    "endLine": 92,
+    "proof_lines": 19
+  },
+  {
+    "name": "Erdos302Extension734.full_lift_733",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 94,
+    "endLine": 96,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.full_lift_734",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 98,
+    "endLine": 100,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.upper_full_733",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 102,
+    "endLine": 109,
+    "proof_lines": 6
+  },
+  {
+    "name": "Erdos302Extension734.upper_full_734",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 111,
+    "endLine": 112,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.exact_maximum_733_transfer",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 118,
+    "endLine": 128,
+    "proof_lines": 9
+  },
+  {
+    "name": "Erdos302Extension734.exact_maximum_734_transfer",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 130,
+    "endLine": 140,
+    "proof_lines": 9
+  },
+  {
+    "name": "Erdos302Extension734.numerical_733_from_731",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 143,
+    "endLine": 145,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.numerical_734_from_731",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 147,
+    "endLine": 149,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.add734_base_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 162,
+    "endLine": 166,
+    "proof_lines": 4
+  },
+  {
+    "name": "Erdos302Extension734.erase734_base_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 168,
+    "endLine": 172,
+    "proof_lines": 4
+  },
+  {
+    "name": "Erdos302Extension734.erase734_admissible",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 174,
+    "endLine": 187,
+    "proof_lines": 12
+  },
+  {
+    "name": "Erdos302Extension734.add734_admissible",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 189,
+    "endLine": 207,
+    "proof_lines": 17
+  },
+  {
+    "name": "Erdos302Extension734.add734_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 209,
+    "endLine": 216,
+    "proof_lines": 6
+  },
+  {
+    "name": "Erdos302Extension734.erase734_cardinal",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 218,
+    "endLine": 220,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Extension734.exact_maximum_734_from_733",
+    "module": "Extension734",
+    "path": "Extension734.lean",
+    "startLine": 222,
+    "endLine": 230,
+    "proof_lines": 7
+  },
+  {
+    "name": "Erdos302KernelEndpoints734.endpoint733_check",
+    "module": "KernelEndpoints734",
+    "path": "KernelEndpoints734.lean",
+    "startLine": 11,
+    "endLine": 11,
+    "proof_lines": 0
+  },
+  {
+    "name": "Erdos302KernelEndpoints734.endpoint734_check",
+    "module": "KernelEndpoints734",
+    "path": "KernelEndpoints734.lean",
+    "startLine": 12,
+    "endLine": 12,
+    "proof_lines": 0
+  },
+  {
+    "name": "Erdos302KernelEndpoints734.endpoint_impossible",
+    "module": "KernelEndpoints734",
+    "path": "KernelEndpoints734.lean",
+    "startLine": 14,
+    "endLine": 26,
+    "proof_lines": 10
+  },
+  {
+    "name": "Erdos302KernelEndpoints734.no_new_triples",
+    "module": "KernelEndpoints734",
+    "path": "KernelEndpoints734.lean",
+    "startLine": 28,
+    "endLine": 34,
+    "proof_lines": 4
+  },
+  {
+    "name": "Erdos302Kernel.third_eq_quotient",
+    "module": "KernelIsolation",
+    "path": "KernelIsolation.lean",
+    "startLine": 18,
+    "endLine": 25,
+    "proof_lines": 6
+  },
+  {
+    "name": "Erdos302Kernel.first_certificate",
+    "module": "KernelIsolation",
+    "path": "KernelIsolation.lean",
+    "startLine": 29,
+    "endLine": 33,
+    "proof_lines": 0
+  },
+  {
+    "name": "Erdos302Kernel.second_certificate",
+    "module": "KernelIsolation",
+    "path": "KernelIsolation.lean",
+    "startLine": 37,
+    "endLine": 41,
+    "proof_lines": 0
+  },
+  {
+    "name": "Erdos302Kernel.third_certificate",
+    "module": "KernelIsolation",
+    "path": "KernelIsolation.lean",
+    "startLine": 45,
+    "endLine": 49,
+    "proof_lines": 0
+  },
+  {
+    "name": "Erdos302Kernel.isolated_nat",
+    "module": "KernelIsolation",
+    "path": "KernelIsolation.lean",
+    "startLine": 51,
+    "endLine": 78,
+    "proof_lines": 21
+  },
+  {
+    "name": "Erdos302Finite.unit_fraction_equivalence",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 24,
+    "endLine": 36,
+    "proof_lines": 10
+  },
+  {
+    "name": "Erdos302Finite.isolated_nat",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 41,
+    "endLine": 48,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Finite.replacement_bound",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 63,
+    "endLine": 73,
+    "proof_lines": 9
+  },
+  {
+    "name": "Erdos302Finite.replacement_admissible",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 75,
+    "endLine": 91,
+    "proof_lines": 15
+  },
+  {
+    "name": "Erdos302Finite.local_cardinal_bound",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 93,
+    "endLine": 105,
+    "proof_lines": 11
+  },
+  {
+    "name": "Erdos302Finite.replacement_cardinal",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 107,
+    "endLine": 121,
+    "proof_lines": 13
+  },
+  {
+    "name": "Erdos302Finite.plateau_732",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 123,
+    "endLine": 134,
+    "proof_lines": 9
+  },
+  {
+    "name": "Erdos302Finite.domain_membership",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 141,
+    "endLine": 144,
+    "proof_lines": 2
+  },
+  {
+    "name": "Erdos302Finite.domain_nodup",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 146,
+    "endLine": 154,
+    "proof_lines": 8
+  },
+  {
+    "name": "Erdos302Finite.cardinal_eq_domain_count",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 156,
+    "endLine": 158,
+    "proof_lines": 1
+  },
+  {
+    "name": "Erdos302Finite.exact_maximum_transfer",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 165,
+    "endLine": 175,
+    "proof_lines": 9
+  },
+  {
+    "name": "Erdos302Finite.admissible_iff_rat",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 189,
+    "endLine": 201,
+    "proof_lines": 11
+  },
+  {
+    "name": "Erdos302Finite.rat_plateau_732",
+    "module": "Plateau302",
+    "path": "Plateau302.lean",
+    "startLine": 203,
+    "endLine": 207,
+    "proof_lines": 2
+  }
+]

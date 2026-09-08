@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.noTwoStateSymbolCertificateOrientation",
+  "theorem_title": "CollatzWork.YAH.noTwoStateSymbolCertificateOrientation",
+  "natural_language_statement": "The 8-row identity forbids weak orientation of its auxiliary rows and\nstrict orientation of its displayed dynamic rows in any compatible ordered\nadditive group.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\nimport Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos\nimport Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient\nimport Theorems.Thm_CollatzWork_YAH_symbolCertificate_cancellation\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]\n",
+  "formal_statement": "theorem CollatzWork.YAH.noTwoStateSymbolCertificateOrientation (weight : Token \u2192 M) :\n    \u00ac (\u2200 entry \u2208 symbolCertificate,\n      if (rule entry.2.ruleName).dynamic = true\n      then 0 < symbolGap weight entry.2\n      else 0 \u2264 symbolGap weight entry.2) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L626-L654"
+}

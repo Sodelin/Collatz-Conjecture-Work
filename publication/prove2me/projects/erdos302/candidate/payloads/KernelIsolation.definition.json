@@ -1,0 +1,10 @@
+{
+  "definition_name": "KernelIsolation",
+  "definition_title": "KernelIsolation definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from KernelIsolation.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace Erdos302Kernel\n\ndef inGNat (x : Nat) : Bool :=\n x == 122 || x == 183 || x == 244 || x == 366 || x == 732\n\ndef Expected (a b c : Nat) : Prop :=\n (a = 122 \u2227 b = 183 \u2227 c = 366) \u2228\n (a = 183 \u2227 b = 244 \u2227 c = 732) \u2228\n (a = 244 \u2227 b = 366 \u2227 c = 732)\ninstance (a b c : Nat) : Decidable (Expected a b c) := by\n unfold Expected\n infer_instance\n\ndef quotient (a b : Nat) : Nat := a * b / (b - a)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend Erdos302Kernel\n",
+  "tags": [
+    "sodelin-erdos302"
+  ],
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelIsolation.lean"
+}

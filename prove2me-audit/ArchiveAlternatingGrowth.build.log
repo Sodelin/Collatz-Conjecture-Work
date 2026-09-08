@@ -1,0 +1,8 @@
+'BlindCollatz.AlternatingGrowth.block_grows' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.odd_exponents_one_two' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.iterated_seed' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.seed_good_blocks' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.ordinary_five' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five' depends on axioms: [propext, Quot.sound]

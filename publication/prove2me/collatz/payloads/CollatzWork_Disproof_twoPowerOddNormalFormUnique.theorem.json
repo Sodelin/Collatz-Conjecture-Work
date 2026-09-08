@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+  "theorem_title": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+  "natural_language_statement": "Uniqueness of the decomposition of a positive natural as a power of two\ntimes an odd natural.  Positivity is automatic from `ArithOdd`.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_PolynomialRatchet\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.twoPowerOddNormalFormUnique :\n    \u2200 R S A B : Nat,\n      ArithOdd A \u2192 ArithOdd B \u2192\n      2 ^ R * A = 2 ^ S * B \u2192\n      R = S \u2227 A = B := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L44-L84"
+}

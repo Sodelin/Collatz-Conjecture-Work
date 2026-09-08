@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.refinedChild_iter",
+  "theorem_title": "CollatzWork.refinedChild_iter",
+  "natural_language_statement": "The strictly smaller child reaches the same endpoint after `L`\none-division shortcut steps.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\nimport Theorems.Thm_CollatzWork_compatibleProduct_mod_four\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedChild_iter (L epsilon z : Nat) (hL : 2 \u2264 L)\n    (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    shortcutIter L (refinedChild L epsilon z) =\n      (3 ^ L * refinedA epsilon z - 1) / 4 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L173-L227"
+}

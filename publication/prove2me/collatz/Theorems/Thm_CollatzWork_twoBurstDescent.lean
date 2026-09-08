@@ -1,0 +1,13 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_InverseWordBoundaryStatement
+import Definitions.Def_CollatzWork_RefinedMersenneChild
+import Definitions.Def_CollatzWork_TwoBurstStatement
+import Theorems.Thm_CollatzWork_rootDescentBurst
+import Theorems.Thm_CollatzWork_twoBurst_power_margin
+
+
+
+theorem CollatzWork.twoBurstDescent : TwoBurstDescentStatement := by sorry
+

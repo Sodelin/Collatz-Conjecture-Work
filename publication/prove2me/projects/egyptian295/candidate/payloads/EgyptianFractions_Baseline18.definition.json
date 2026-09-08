@@ -1,0 +1,10 @@
+{
+  "definition_name": "EgyptianFractions_Baseline18",
+  "definition_title": "EgyptianFractions.Baseline18 definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from EgyptianFractions.Baseline18.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\n/-!\n# A reproduction certificate for the known 35-term bound at N = 18\n\nThis file certifies the supplied existing 35-denominator representation. It does\nnot claim novelty, minimality, a 34-term representation, or a solution of the\nasymptotic conjecture in Erd\u0151s problem 295. See the research notes for provenance.\n-/\n\nnamespace EgyptianFractions\n\n/-- The existing 35-term representation, preserved as a reproducible baseline. -/\ndef baseline18 : List Nat :=\n  [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,\n   36, 38, 39, 40, 42, 43, 44, 45, 48, 50, 52, 54, 63, 640, 337280, 1735650,\n   68479214496]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend EgyptianFractions\n",
+  "tags": [
+    "sodelin-egyptian295"
+  ],
+  "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Baseline18.lean"
+}

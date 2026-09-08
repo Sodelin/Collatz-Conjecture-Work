@@ -1,0 +1,6 @@
+'BlindCollatz.step_pos' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.iterate_pos' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.iterate_add' depends on axioms: [propext]
+'BlindCollatz.descent_implies_convergence' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.convergence_implies_descent' depends on axioms: [propext, Quot.sound]
+'BlindCollatz.descent_iff_convergence' depends on axioms: [propext, Quot.sound]

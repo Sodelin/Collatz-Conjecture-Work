@@ -1,0 +1,230 @@
+[
+  {
+    "path": "lean/CollatzWork/AffineRepetition.lean",
+    "extraction_path": "lean/CollatzWork/AffineRepetition.lean",
+    "module": "CollatzWork.AffineRepetition",
+    "sha256": "62cad80ec42483be80f9eccb37a0bb3a78bd686b52f30479ed4dfb3d111660cc"
+  },
+  {
+    "path": "lean/CollatzWork/AffineRepetitionStatement.lean",
+    "extraction_path": "lean/CollatzWork/AffineRepetitionStatement.lean",
+    "module": "CollatzWork.AffineRepetitionStatement",
+    "sha256": "dd805f09caa4fdaa344e65682259c40b45a8dfcb97294c2edd271bb3d2b66f48"
+  },
+  {
+    "path": "lean/CollatzWork/BlockArithmetic.lean",
+    "extraction_path": "lean/CollatzWork/BlockArithmetic.lean",
+    "module": "CollatzWork.BlockArithmetic",
+    "sha256": "839ce06cbed82a676d7dd916b0fcd6f6e3d85e08181eac65bcf1cb7f5498ebc3"
+  },
+  {
+    "path": "lean/CollatzWork/Convergence.lean",
+    "extraction_path": "lean/CollatzWork/Convergence.lean",
+    "module": "CollatzWork.Convergence",
+    "sha256": "d7ba650385465dbdb375681f47c591ba3b1d45915ee96255939871acfb6f6757"
+  },
+  {
+    "path": "lean/CollatzWork/ConvergenceStatement.lean",
+    "extraction_path": "lean/CollatzWork/ConvergenceStatement.lean",
+    "module": "CollatzWork.ConvergenceStatement",
+    "sha256": "f5c54df7d93587427fef891beedea6b9013d624a4f1b3baf3ee838dc6386c67e"
+  },
+  {
+    "path": "lean/CollatzWork/Disproof/BranchingCenter.lean",
+    "extraction_path": "lean/CollatzWork/Disproof/BranchingCenter.lean",
+    "module": "CollatzWork.Disproof.BranchingCenter",
+    "sha256": "ceacbace8c08f0302bde35fdac19e3660be95dc50c65352dd4d8aea722d40c26"
+  },
+  {
+    "path": "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean",
+    "extraction_path": "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean",
+    "module": "CollatzWork.Disproof.FiniteResidueFirstIntegral",
+    "sha256": "ef19d5151cbe2c8c22824bad1ce380063027136aa5924dc21fe2ac5e287a21ff"
+  },
+  {
+    "path": "lean/CollatzWork/Disproof/PolynomialRatchet.lean",
+    "extraction_path": "lean/CollatzWork/Disproof/PolynomialRatchet.lean",
+    "module": "CollatzWork.Disproof.PolynomialRatchet",
+    "sha256": "e3f38db03605171cb094728ebb8089037d9a0f77a773047852666f26ba188c6a"
+  },
+  {
+    "path": "lean/CollatzWork/Disproof/TwoPumpDependency.lean",
+    "extraction_path": "lean/CollatzWork/Disproof/TwoPumpDependency.lean",
+    "module": "CollatzWork.Disproof.TwoPumpDependency",
+    "sha256": "c3634f38d213d54ea2a532ecb60dec9b212ac58f6e4e32fb9bd62738df0262f7"
+  },
+  {
+    "path": "lean/CollatzWork/ExcursionBudget.lean",
+    "extraction_path": "lean/CollatzWork/ExcursionBudget.lean",
+    "module": "CollatzWork.ExcursionBudget",
+    "sha256": "033b51515c7fc25a4f83682fb7af86e6eeb68f38c5162dedb9a8978f9ce5dd36"
+  },
+  {
+    "path": "lean/CollatzWork/ExcursionBudgetStatement.lean",
+    "extraction_path": "lean/CollatzWork/ExcursionBudgetStatement.lean",
+    "module": "CollatzWork.ExcursionBudgetStatement",
+    "sha256": "43621f3018c3ce65c981a00af24fdf10380bd4f8e0ae7eb877ed892a28d16012"
+  },
+  {
+    "path": "lean/CollatzWork/FinitePaletteObstruction.lean",
+    "extraction_path": "lean/CollatzWork/FinitePaletteObstruction.lean",
+    "module": "CollatzWork.FinitePaletteObstruction",
+    "sha256": "6fe63716b3b5a7871c737ee6cfce43e4cf507058dfcc9d4a8ce55a3d1ecc2f94"
+  },
+  {
+    "path": "lean/CollatzWork/FinitePaletteObstructionStatement.lean",
+    "extraction_path": "lean/CollatzWork/FinitePaletteObstructionStatement.lean",
+    "module": "CollatzWork.FinitePaletteObstructionStatement",
+    "sha256": "bf54aa54cb2655d6a01c2c1613d90d4814f6befd730561fe59b75886c0c13588"
+  },
+  {
+    "path": "lean/CollatzWork/FirstContraction.lean",
+    "extraction_path": "lean/CollatzWork/FirstContraction.lean",
+    "module": "CollatzWork.FirstContraction",
+    "sha256": "41eb1a73437f18eb3796e6dd054efa64d6648e60e13de829ade4d7eeeb244a2e"
+  },
+  {
+    "path": "lean/CollatzWork/FirstContractionStatement.lean",
+    "extraction_path": "lean/CollatzWork/FirstContractionStatement.lean",
+    "module": "CollatzWork.FirstContractionStatement",
+    "sha256": "1e5cb863051bf052b562434552729c13aa1b15a4b89f88f499269ea383a6b7a6"
+  },
+  {
+    "path": "lean/CollatzWork/FloorPower.lean",
+    "extraction_path": "lean/CollatzWork/FloorPower.lean",
+    "module": "CollatzWork.FloorPower",
+    "sha256": "97ed65c31e02422cb7e0e17da431e9ddc6e9c7adbe274174e403f37a49751cef"
+  },
+  {
+    "path": "lean/CollatzWork/InverseWordBoundary.lean",
+    "extraction_path": "lean/CollatzWork/InverseWordBoundary.lean",
+    "module": "CollatzWork.InverseWordBoundary",
+    "sha256": "f31c18940fecd747c797d60c6346e36bbc4b00d50c583f00fcff49f27cae62d7"
+  },
+  {
+    "path": "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+    "extraction_path": "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+    "module": "CollatzWork.InverseWordBoundaryStatement",
+    "sha256": "bf6585a2b0b98af539afe82f618912e8904c0c0f0fb1ecba05b53f2c30fd3fd2"
+  },
+  {
+    "path": "lean/CollatzWork/PrefixCollision.lean",
+    "extraction_path": "lean/CollatzWork/PrefixCollision.lean",
+    "module": "CollatzWork.PrefixCollision",
+    "sha256": "6513a67191840ffcccec673edf1656a55b9fdbf4505c5be7796be6765155d2f1"
+  },
+  {
+    "path": "lean/CollatzWork/PrefixCollisionStatement.lean",
+    "extraction_path": "lean/CollatzWork/PrefixCollisionStatement.lean",
+    "module": "CollatzWork.PrefixCollisionStatement",
+    "sha256": "7ffdd5f945da61bba8396b7b491a7ce8366d5d65823ea5fb0aa169e7e553ad96"
+  },
+  {
+    "path": "lean/CollatzWork/QuarterGap.lean",
+    "extraction_path": "lean/CollatzWork/QuarterGap.lean",
+    "module": "CollatzWork.QuarterGap",
+    "sha256": "8b0f9cc29719cf665f2d5227dad8b482a5db3381556d61b39d78c595aeefb89e"
+  },
+  {
+    "path": "lean/CollatzWork/QuarterGapStatement.lean",
+    "extraction_path": "lean/CollatzWork/QuarterGapStatement.lean",
+    "module": "CollatzWork.QuarterGapStatement",
+    "sha256": "e759f72d4f692efce5c78b7a5e762fd097dfe6900fddf72f66bcb6019735f539"
+  },
+  {
+    "path": "lean/CollatzWork/QuarterGapUniversal.lean",
+    "extraction_path": "lean/CollatzWork/QuarterGapUniversal.lean",
+    "module": "CollatzWork.QuarterGapUniversal",
+    "sha256": "969e21be9e19326071fb8e110d5eddfd560f9926f083fd125f674f503a7be647"
+  },
+  {
+    "path": "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+    "extraction_path": "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+    "module": "CollatzWork.QuarterGapUniversalStatement",
+    "sha256": "b084a1ae690fb95d135858c68f9177205ed550a882bd6deefccd82bb70eac556"
+  },
+  {
+    "path": "lean/CollatzWork/RefinedMersenneChild.lean",
+    "extraction_path": "lean/CollatzWork/RefinedMersenneChild.lean",
+    "module": "CollatzWork.RefinedMersenneChild",
+    "sha256": "2ef6e464c93e01e3163ecc4efe7e16b965606f24b66ea0b519c3f53f72e6eb17"
+  },
+  {
+    "path": "lean/CollatzWork/ResidueAncestor.lean",
+    "extraction_path": "lean/CollatzWork/ResidueAncestor.lean",
+    "module": "CollatzWork.ResidueAncestor",
+    "sha256": "71218cbe2b8c89d20ecd1ac471e112d7ba02ae8d40bac568cf30a0c049175a0d"
+  },
+  {
+    "path": "lean/CollatzWork/ResidueAncestorStatement.lean",
+    "extraction_path": "lean/CollatzWork/ResidueAncestorStatement.lean",
+    "module": "CollatzWork.ResidueAncestorStatement",
+    "sha256": "e2f108f0caa0d44cbaa47b31ce0560ab6bbe2bc2d6f7e3e1c93825b4d45a32e7"
+  },
+  {
+    "path": "lean/CollatzWork/ResidueAncestorTails.lean",
+    "extraction_path": "lean/CollatzWork/ResidueAncestorTails.lean",
+    "module": "CollatzWork.ResidueAncestorTails",
+    "sha256": "cba2ecf3404aace6649748f16f3ca0ba6bf180b33242709f3fe73601a46352f3"
+  },
+  {
+    "path": "lean/CollatzWork/RootDescent.lean",
+    "extraction_path": "lean/CollatzWork/RootDescent.lean",
+    "module": "CollatzWork.RootDescent",
+    "sha256": "fa0b9bf92e65fc5e1c66089273b2d22b12819f6d41d411b5793f1f0dcf81c557"
+  },
+  {
+    "path": "lean/CollatzWork/RootDescentStatement.lean",
+    "extraction_path": "lean/CollatzWork/RootDescentStatement.lean",
+    "module": "CollatzWork.RootDescentStatement",
+    "sha256": "499eb39ec87dfae53fe5bd4b554b88e3754b5f386e01ae823433cb0056949334"
+  },
+  {
+    "path": "lean/CollatzWork/TwoBurst.lean",
+    "extraction_path": "lean/CollatzWork/TwoBurst.lean",
+    "module": "CollatzWork.TwoBurst",
+    "sha256": "edf5027ec484ba5a94b2837fbb4fa31055ea52804644c4256f6749421f207242"
+  },
+  {
+    "path": "lean/CollatzWork/TwoBurstStatement.lean",
+    "extraction_path": "lean/CollatzWork/TwoBurstStatement.lean",
+    "module": "CollatzWork.TwoBurstStatement",
+    "sha256": "b66e37f58872451aae5d3a697dd1880685347dd403458d498513093164f15a90"
+  },
+  {
+    "path": "lean/CollatzWork/YAHFiniteObstruction.lean",
+    "extraction_path": "lean/CollatzWork/YAHFiniteObstruction.lean",
+    "module": "CollatzWork.YAHFiniteObstruction",
+    "sha256": "c5b3e30059e8358aa59f0b4e155a09b11e5b7eb5c7caf419df9d3587b6408af4"
+  },
+  {
+    "path": "lean/CollatzWork/YAHFiniteObstructionStatement.lean",
+    "extraction_path": "lean/CollatzWork/YAHFiniteObstructionStatement.lean",
+    "module": "CollatzWork.YAHFiniteObstructionStatement",
+    "sha256": "b703978accc652bbdb243ac38f8aac512bbe4664791dc39dfe33476858186c3f"
+  },
+  {
+    "path": "lean/CollatzWork.lean",
+    "extraction_path": "lean/CollatzWork.lean",
+    "module": "CollatzWork",
+    "sha256": "01f3002cec763089d65918fd127c35109d40c7a6b24cc3fa4b449cca8682e1fb"
+  },
+  {
+    "path": "research/blind-2026-09-05/AlternatingGrowth.lean",
+    "extraction_path": "prove2me-audit/archive/ArchiveAlternatingGrowth.lean",
+    "module": "ArchiveAlternatingGrowth",
+    "sha256": "8a53286a000f20c048da7c8c57add0eb74f5f403a822b858f74a7b761de55607"
+  },
+  {
+    "path": "research/blind-2026-09-05/Descent.lean",
+    "extraction_path": "prove2me-audit/archive/ArchiveDescent.lean",
+    "module": "ArchiveDescent",
+    "sha256": "6734197b31382be15c59a642577a31dbe80b137786ba9109bb90fc9ef76546de"
+  },
+  {
+    "path": "research/blind-2026-09-05/RepetitionBound.lean",
+    "extraction_path": "prove2me-audit/archive/ArchiveRepetitionBound.lean",
+    "module": "ArchiveRepetitionBound",
+    "sha256": "b6be440cbf1843ca4eb8fb8ee89e8f8479a84f6c79d8d9a653d447cb1836c91f"
+  }
+]

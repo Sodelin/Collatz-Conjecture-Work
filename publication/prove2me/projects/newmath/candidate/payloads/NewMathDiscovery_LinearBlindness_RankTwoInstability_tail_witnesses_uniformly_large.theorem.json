@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+  "natural_language_statement": "Every sensor in a tail beginning at `offset` has a gauge-fixed kernel\nwitness whose target coordinate is larger than `offset`.  Taking any fixed\nfinite number of indices from later and later tails makes the degeneration\nsimultaneous across the whole finite representation.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large (offset index : Nat) :\n    observe (offset + index) (witness (offset + index)) = 0 \u2227\n    (witness (offset + index)).2 = -1 \u2227\n    target (witness (offset + index)) > Int.ofNat offset := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L184-L194"
+}

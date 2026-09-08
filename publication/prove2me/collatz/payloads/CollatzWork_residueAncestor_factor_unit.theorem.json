@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_factor_unit",
+  "theorem_title": "CollatzWork.residueAncestor_factor_unit",
+  "natural_language_statement": "Every positive integer has a finite power-of-three factor and a positive\nunit. The recursion divides only when divisible, and strictly decreases.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_factor_unit (n : Nat) :\n    0 < n \u2192 \u2203 e u : Nat, 0 < u \u2227 u % 3 \u2260 0 \u2227 3 ^ e * u = n := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L132-L146"
+}

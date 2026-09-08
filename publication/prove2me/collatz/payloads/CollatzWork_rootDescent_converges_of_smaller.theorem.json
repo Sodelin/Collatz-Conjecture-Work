@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.rootDescent_converges_of_smaller",
+  "theorem_title": "Guarded unbounded OOE burst descent",
+  "natural_language_statement": "For positive naturals k,u,m with 2^k*m+5=9^k*u, shortcutIter (4*k) (8^k*u-5)=m and m<8^k*u-5. The general burst identity shortcutIter (3*k) (8^k*u-5)=9^k*u-5 holds for k>=0,u>0. Limitations: The final-halving equation is a substantive guard. The separate residue20 CRT specialization is prose; convergence transfer assumes convergence of all smaller positive starts. No external priority claim.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_converges_shortcutIter_iff\nimport Theorems.Thm_CollatzWork_rootDescent\n\n\n",
+  "formal_statement": "theorem CollatzWork.rootDescent_converges_of_smaller (k u m : Nat)\n    (hk : 0 < k) (hu : 0 < u) (hm : 0 < m)\n    (hguard : 2 ^ k * m + 5 = 9 ^ k * u)\n    (ih : \u2200 a : Nat, 0 < a \u2192 a < 8 ^ k * u - 5 \u2192 Converges a) :\n    Converges (8 ^ k * u - 5) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L121-L129"
+}

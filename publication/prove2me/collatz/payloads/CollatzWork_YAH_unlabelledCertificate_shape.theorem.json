@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.unlabelledCertificate_shape",
+  "theorem_title": "CollatzWork.YAH.unlabelledCertificate_shape",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "formal_statement": "theorem CollatzWork.YAH.unlabelledCertificate_shape :\n    unlabelledRows.length = 13 \u2227\n    unlabelledCertificate.length = 13 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L257-L259"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "Erdos302Finite.replacement_admissible",
+  "theorem_title": "Erdos302Finite.replacement_admissible",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Kernel_isolated_nat\n\n\n",
+  "formal_statement": "theorem Erdos302Finite.replacement_admissible (S : Nat \u2192 Bool) (hS : Admissible 732 S) :\n Admissible 731 (replacement S) := by sorry\n\n",
+  "tags": [
+    "sodelin-erdos302"
+  ],
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L75-L91"
+}

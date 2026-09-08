@@ -1,0 +1,1 @@
+"∀ (bound : Nat),\n  ∃ n direction,\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.observe n direction = 0 ∧\n      direction.snd = -1 ∧ NewMathDiscovery.LinearBlindness.RankTwoInstability.target direction > Int.ofNat bound"

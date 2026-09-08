@@ -1,0 +1,10 @@
+{
+  "definition_name": "CollatzWork_FirstContractionStatement",
+  "definition_title": "CollatzWork.FirstContractionStatement definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.FirstContractionStatement.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\nnamespace CollatzWork\n\ndef FirstContractionTimeStatement : Prop :=\n  \u2200 n k : Nat, FirstCoefficientContraction n k \u2192\n    k = coefficientCrossingExponent (orbitOddCount n k)\n\ndef MechanicalCoarseBoundStatement : Prop :=\n  \u2200 s : Nat, 3 * mechanicalMax s \u2264 s * 3 ^ s\n\n/-- The universal old L10 bound, on actual first contractions. -/\ndef FirstContractionThirdGapStatement : Prop :=\n  \u2200 n k d : Nat, 0 < n \u2192 FirstCoefficientContraction n k \u2192\n    shortcutIter k n = n + d \u2192\n    3 * d < orbitOddCount n k \u2227 d \u2264 (orbitOddCount n k - 1) / 3\n\nend CollatzWork\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContractionStatement.lean"
+}

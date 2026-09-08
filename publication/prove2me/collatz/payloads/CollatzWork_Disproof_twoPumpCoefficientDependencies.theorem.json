@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.twoPumpCoefficientDependencies",
+  "theorem_title": "Two-pump cyclic-elimination coefficient dependency",
+  "natural_language_statement": "For the integer coefficient expressions A,B,C,E defined in TwoPumpDependency.lean, a*B=c*C and g*A=d*E; consequently c*g*A*C-a*d*B*E=0. The hoped-for constant resultant in this cyclic-elimination construction vanishes identically. Limitations: An algebraic obstruction for the specified route. It proves neither existence of a positive nontrivial cycle nor a disproof of Collatz. The module namespace Disproof describes the research route only.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.twoPumpCoefficientDependencies\n    (a b c p e q d f g h ell t : Int) :\n    let dv := q - p\n    let dz := t - h\n    let A := dz * (d * b * dv - c * d * e) + dv * a * d * ell\n    let B := dz * (c * d * e + c * f * dv) - dv * c * g * ell\n    let C := dv * (a * f * dz - a * g * ell) + dz * a * d * e\n    let E := dv * (a * g * ell + b * g * dz) - dz * c * g * e\n    a * B = c * C \u2227 g * A = d * E := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L16-L29"
+}

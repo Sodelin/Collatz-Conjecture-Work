@@ -1,0 +1,10 @@
+{
+  "definition_name": "NewMathDiscovery_RankedCoalescenceSound",
+  "definition_title": "NewMathDiscovery.RankedCoalescenceSound definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from NewMathDiscovery.RankedCoalescenceSound.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace NewMathDiscovery.RankedCoalescence\n\n/-- Exact finite iteration, with the zeroth iterate equal to the input. -/\ndef iterate {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) : Nat \u2192 \u03b1 \u2192 \u03b1\n  | 0 => fun x => x\n  | k + 1 => fun x => f (iterate f k x)\n\n\n\n\n\n\n\n\n\n/-- `x` reaches the distinguished terminal element under finite iteration. -/\ndef Reaches {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) (one x : \u03b1) : Prop :=\n  \u2203 k : Nat, iterate f k x = one\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend NewMathDiscovery.RankedCoalescence\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean"
+}

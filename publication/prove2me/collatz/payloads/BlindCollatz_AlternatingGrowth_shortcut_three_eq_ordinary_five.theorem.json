@@ -1,0 +1,11 @@
+{
+  "theorem_name": "BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
+  "theorem_title": "BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\nimport Theorems.Thm_BlindCollatz_AlternatingGrowth_ordinary_five\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five (q : Nat) :\n    block (16 * q + 11) = ordinarySteps 5 (16 * q + 11) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L157-L159"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "Erdos302Kernel.isolated_nat",
+  "theorem_title": "Erdos302Kernel.isolated_nat",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_KernelIsolation\n\n\n",
+  "formal_statement": "theorem Erdos302Kernel.isolated_nat (a b c : Nat)\n (ha : 0 < a) (hab : a < b) (hbc : b < c) (hc : c \u2264 732)\n (hrel : a * (b + c) = b * c)\n (hG : inGNat a || inGNat b || inGNat c) :\n (a = 122 \u2227 b = 183 \u2227 c = 366) \u2228\n (a = 183 \u2227 b = 244 \u2227 c = 732) \u2228\n (a = 244 \u2227 b = 366 \u2227 c = 732) := by sorry\n\n",
+  "tags": [
+    "sodelin-erdos302"
+  ],
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelIsolation.lean#L51-L78"
+}

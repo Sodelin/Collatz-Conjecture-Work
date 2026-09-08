@@ -1,0 +1,6 @@
+name = "egyptian-fractions-erdos-295"
+version = "0.1.0"
+defaultTargets = ["EgyptianFractions"]
+
+[[lean_lib]]
+name = "EgyptianFractions"

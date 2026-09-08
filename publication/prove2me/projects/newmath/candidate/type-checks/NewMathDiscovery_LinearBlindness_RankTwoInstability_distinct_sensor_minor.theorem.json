@@ -1,0 +1,1 @@
+"∀ {m n : Nat},\n  m ≠ n →\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow m)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) ≠\n      0"

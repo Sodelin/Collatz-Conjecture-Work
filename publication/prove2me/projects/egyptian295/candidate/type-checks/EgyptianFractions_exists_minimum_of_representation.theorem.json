@@ -1,0 +1,1 @@
+"∀ {lower terms : Nat},\n  EgyptianFractions.HasRepresentation lower terms → ∃ minimum, EgyptianFractions.IsMinimumLength lower minimum"

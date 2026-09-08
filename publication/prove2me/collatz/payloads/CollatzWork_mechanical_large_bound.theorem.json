@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.mechanical_large_bound",
+  "theorem_title": "Universal mechanical certificate and sharp eventual threshold 16",
+  "natural_language_statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range. Limitations: The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_QuarterGapStatement\nimport Definitions.Def_CollatzWork_QuarterGapUniversalStatement\nimport Theorems.Thm_CollatzWork_mechanical_twelve_propagation\n\n\n",
+  "formal_statement": "theorem CollatzWork.mechanical_large_bound : MechanicalSixteenEnvelopeStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L115-L127"
+}

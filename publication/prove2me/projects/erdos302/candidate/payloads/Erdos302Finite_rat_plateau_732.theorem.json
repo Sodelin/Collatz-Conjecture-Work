@@ -1,0 +1,11 @@
+{
+  "theorem_name": "Erdos302Finite.rat_plateau_732",
+  "theorem_title": "Erdos302Finite.rat_plateau_732",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Finite_replacement_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_cardinal\n\n\n",
+  "formal_statement": "theorem Erdos302Finite.rat_plateau_732 (k : Nat) :\n (\u2203 S : Nat \u2192 Bool, RatAdmissible 732 S \u2227 k \u2264 cardinal S) \u2194\n (\u2203 S : Nat \u2192 Bool, RatAdmissible 731 S \u2227 k \u2264 cardinal S) := by sorry\n\n",
+  "tags": [
+    "sodelin-erdos302"
+  ],
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L203-L207"
+}

@@ -1,0 +1,1 @@
+"∀ (a b c : Nat),\n  0 < a →\n    a < b →\n      b < c →\n        c ≤ 732 →\n          a * (b + c) = b * c →\n            (Erdos302Kernel.inGNat a || Erdos302Kernel.inGNat b || Erdos302Kernel.inGNat c) = true →\n              a = 122 ∧ b = 183 ∧ c = 366 ∨ a = 183 ∧ b = 244 ∧ c = 732 ∨ a = 244 ∧ b = 366 ∧ c = 732"

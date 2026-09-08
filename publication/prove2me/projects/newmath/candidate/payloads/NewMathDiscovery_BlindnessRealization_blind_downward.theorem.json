@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.BlindnessRealization.blind_downward",
+  "theorem_title": "NewMathDiscovery.BlindnessRealization.blind_downward",
+  "natural_language_statement": "Downward closure is automatic, as a corollary of the exact realization.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_BlindnessRealization\nimport Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.BlindnessRealization.blind_downward {I J : Type} (F : J \u2192 I \u2192 Bool)\n    {S T : I \u2192 Prop}\n    (hsub : \u2200 i, S i \u2192 T i)\n    (hblind : Blind T (State.observe F) State.target) :\n    Blind S (State.observe F) State.target := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L68-L76"
+}

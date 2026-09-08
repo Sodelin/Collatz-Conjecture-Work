@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.prefixReturnBernoulli",
+  "theorem_title": "CollatzWork.prefixReturnBernoulli",
+  "natural_language_statement": "An integral form of Bernoulli's inequality for the ratio 32/27.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.prefixReturnBernoulli (d : Nat) :\n    (27 + 5 * d) * 27 ^ d \u2264 27 * 32 ^ d := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L64-L81"
+}

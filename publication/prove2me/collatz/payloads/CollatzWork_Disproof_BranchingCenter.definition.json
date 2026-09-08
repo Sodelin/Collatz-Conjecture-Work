@@ -1,0 +1,10 @@
+{
+  "definition_name": "CollatzWork_Disproof_BranchingCenter",
+  "definition_title": "CollatzWork.Disproof.BranchingCenter definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.Disproof.BranchingCenter.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace CollatzWork.Disproof.BranchingCenter\n\n/-!\n# Rigidity of the two-center, three-edge branching ansatz\n\nThis module checks the arithmetic core of one narrowly scoped attempted\ndivergence construction.  For accelerated odd Collatz macros\n\n`U_j(x) = (3*x + 1) / 2^j`,\n\nthe proposed center graph has edges `A -a-> A`, `A -b-> B`, and\n`B -c-> A`.  Eliminating the two rational centers gives\n\n`2^(b+c) + 3*2^b = 2^(a+b) + 3*2^a`.\n\nFor positive labels, the theorem below proves that this equation forces\n`a = b = c`.  Thus the proposed graph collapses before positive-natural\nmembership, guard invariance, or escape can be established.  This is only a\nroute obstruction; it is not a proof or disproof of the Collatz conjecture.\n-/\n\n/-- Elementary oddness, stated explicitly so the normal-form argument does\nnot depend on a library parity API. -/\ndef CenterOdd (n : Nat) : Prop := \u2203 t : Nat, n = 2 * t + 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend CollatzWork.Disproof.BranchingCenter\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.converges_shortcutIter_iff",
+  "theorem_title": "Formal descent and smaller-coalescence equivalences",
+  "natural_language_statement": "AllPositiveConverge is equivalent both to UniversalDescent and to UniversalSmallerCoalescence. The latter requires, for every n>1, a positive m<n and r,s in Nat such that T^r(n)=T^s(m). Converges means an actual finite shortcut iterate reaches 1. Convergence is preserved by finite prefixes and by coalescence. Limitations: These are induction criteria and semantic equivalences. UniversalSmallerCoalescence and UniversalDescent are not proved; each is Collatz-equivalent. The map keeps the cycle 1->2->1 rather than making 1 absorbing. No novelty claim for the criteria.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.converges_shortcutIter_iff (r n : Nat) :\n    Converges (shortcutIter r n) \u2194 Converges n := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L33-L39"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.secondRotatedDeterminantCoefficients",
+  "theorem_title": "CollatzWork.Disproof.secondRotatedDeterminantCoefficients",
+  "natural_language_statement": "Exact expansion after cyclic rotation. If `(t-h)*gs=ts-hs`, then the\ndeterminant for context `W Z^s U` and pump `V` has coefficients `C` and `E`.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.secondRotatedDeterminantCoefficients\n    (a b c p e q d f g h ell t hs ts gs : Int)\n    (hgs : (t - h) * gs = ts - hs) :\n    let dv := q - p\n    let dz := t - h\n    let alpha := a * d * hs\n    let beta := a * f * hs + a * g * ell * gs + b * g * ts\n    let gamma := c * g * ts\n    let C := dv * (a * f * dz - a * g * ell) + dz * a * d * e\n    let E := dv * (a * g * ell + b * g * dz) - dz * c * g * e\n    dz * (dv * beta - (gamma - alpha) * e) = C * hs + E * ts := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L56-L78"
+}

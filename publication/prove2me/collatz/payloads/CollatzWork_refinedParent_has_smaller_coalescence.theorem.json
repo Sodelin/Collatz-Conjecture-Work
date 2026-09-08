@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.refinedParent_has_smaller_coalescence",
+  "theorem_title": "One guarded family of smaller coalescing starts",
+  "natural_language_statement": "For natural L,epsilon,z with L>=2, epsilon<=1, and epsilon mod 2=L mod 2, put A=4*z+2*epsilon+1, parent=2^L*A-1, and child=3*2^(L-2)*A-1. The child is positive and strictly smaller, T^(L+2)(parent)=T^L(child), and the two starts converge equivalently. Parent convergence follows if all smaller positive starts converge. Limitations: The parity-compatibility guard is essential. This supplies one explicit family, not a universal smaller-target selector. The convergence application retains its strong-induction hypothesis.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_refinedChild_arithmetic\nimport Theorems.Thm_CollatzWork_refinedMersenneChild_coalesces\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedParent_has_smaller_coalescence (L epsilon z : Nat)\n    (hL : 2 \u2264 L) (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    \u2203 m : Nat, 0 < m \u2227 m < refinedParent L epsilon z \u2227\n      \u2203 r s : Nat,\n        shortcutIter r (refinedParent L epsilon z) = shortcutIter s m := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L114-L124"
+}

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+  "theorem_title": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [IntModule M]\n",
+  "formal_statement": "theorem CollatzWork.YAH.evalCoefficients_weightedCoefficient\n    (features : List \u03c6) (weight : \u03c6 \u2192 M)\n    (certificate : List (Nat \u00d7 \u03c1)) (delta : \u03c1 \u2192 \u03c6 \u2192 Int) :\n    evalCoefficients features weight\n        (weightedCoefficient certificate delta) =\n      weightedGapSum certificate\n        (fun row => evalCoefficients features weight (delta row)) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L171-L190"
+}

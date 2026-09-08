@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant",
+  "theorem_title": "CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant",
+  "natural_language_statement": "Decisive finite-group core: if the commutator of two permutations is\ntransitive, a coloring invariant under both permutations is constant.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_FiniteResidueFirstIntegral\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant\n    {X Color : Type} (I : X \u2192 Color)\n    (A Ainv B Binv : X \u2192 X)\n    (hARightInverse : \u2200 x, A (Ainv x) = x)\n    (hBRightInverse : \u2200 x, B (Binv x) = x)\n    (hA : IsInvariant I A) (hB : IsInvariant I B)\n    (htransitive : \u2200 x y, \u2203 n,\n      iterate (commutator A Ainv B Binv) n x = y) :\n    \u2200 x y, I x = I y := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean#L96-L109"
+}

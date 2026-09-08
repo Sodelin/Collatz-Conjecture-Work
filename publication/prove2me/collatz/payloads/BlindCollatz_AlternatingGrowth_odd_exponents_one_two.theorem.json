@@ -1,0 +1,11 @@
+{
+  "theorem_name": "BlindCollatz.AlternatingGrowth.odd_exponents_one_two",
+  "theorem_title": "BlindCollatz.AlternatingGrowth.odd_exponents_one_two",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.odd_exponents_one_two (q : Nat) :\n    (3 * (16 * q + 11) + 1) % 4 = 2 \u2227\n    (3 * (24 * q + 17) + 1) % 8 = 4 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L30-L33"
+}

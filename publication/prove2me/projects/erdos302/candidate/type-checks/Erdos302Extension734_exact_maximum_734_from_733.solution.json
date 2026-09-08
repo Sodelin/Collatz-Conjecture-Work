@@ -1,0 +1,1 @@
+"∀ (k : Nat), Erdos302Extension734.FullExactMaximum 733 k → Erdos302Extension734.FullExactMaximum 734 (k + 1)"

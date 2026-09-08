@@ -1,0 +1,10 @@
+{
+  "definition_name": "CollatzWork_RootDescentStatement",
+  "definition_title": "CollatzWork.RootDescentStatement definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.RootDescentStatement.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nnamespace CollatzWork\n\n/-!\nTrusted statements for a guarded, unbounded family of actual forward\ndescents. Neither a normalized inverse move nor a change of original root\nappears in these statements. The guard on the post-burst value is substantive;\nit is not claimed for every positive integer.\n-/\n\n/-- Every `k` repeated OOE blocks follow the exact shortcut orbit. The\nparameter need not be odd: oddness is relevant only to an exact valuation\ninterpretation, which is not required by this identity. -/\ndef RootDescentBurstStatement : Prop :=\n  \u2200 k u : Nat, 0 < u \u2192\n    shortcutIter (3 * k) (8 ^ k * u - 5) = 9 ^ k * u - 5\n\n/-- If the burst endpoint admits at least `k` consecutive even steps, the\nresult is positive and strictly below the unchanged original root. Both\nthe burst length and the positive parameter are unbounded. -/\ndef RootDescentStatement : Prop :=\n  \u2200 k u m : Nat, 0 < k \u2192 0 < u \u2192 0 < m \u2192\n    2 ^ k * m + 5 = 9 ^ k * u \u2192\n    shortcutIter (4 * k) (8 ^ k * u - 5) = m \u2227\n      m < 8 ^ k * u - 5\n\n/-- An exact actual-orbit ancestor identity. The equation is an arithmetic\nguard on the endpoint; this statement alone makes no size or coverage claim. -/\ndef RootDescentAncestorStatement : Prop :=\n  \u2200 e L q r : Nat, 0 < q \u2192 3 ^ (L + 1) * q = 4 * r + 1 \u2192\n    shortcutIter (e + L + 2) (2 ^ e * (2 ^ L * q - 1)) = r\n\nend CollatzWork\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescentStatement.lean"
+}

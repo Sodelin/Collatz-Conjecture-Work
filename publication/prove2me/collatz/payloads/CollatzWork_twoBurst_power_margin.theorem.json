@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.twoBurst_power_margin",
+  "theorem_title": "CollatzWork.twoBurst_power_margin",
+  "natural_language_statement": "A deliberately loose coefficient margin that absorbs the entire\nsubtraction loss, uniformly in both burst lengths.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.twoBurst_power_margin (j l : Nat) :\n    3 * 9 ^ (j + l + 1) + 3 * 9 ^ l +\n        10 * 8 ^ l * 2 ^ (j + l + 1) < 4 * 16 ^ (j + l + 1) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurst.lean#L40-L69"
+}

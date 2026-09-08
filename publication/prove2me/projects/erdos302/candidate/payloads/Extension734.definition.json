@@ -1,0 +1,10 @@
+{
+  "definition_name": "Extension734",
+  "definition_title": "Extension734 definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from Extension734.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\n/-! Exact maximum transfers through 734. The numerical corollaries retain an explicit external baseline. -/\n\nnamespace Erdos302Extension734\nopen Erdos302Finite\n\n\n\ndef fullCardinal (S : Nat \u2192 Bool) : Nat :=\n cardinal S + (S 733).toNat + (S 734).toNat\n\ndef fullDomain : List Nat := (outside ++ gadget) ++ [733,734]\n\n\n\n\n\n\n\n\n\ndef trim (S : Nat \u2192 Bool) (x : Nat) : Bool := S x && decide (x \u2264 732)\ndef liftTo (S : Nat \u2192 Bool) (n x : Nat) : Bool :=\n if x \u2264 732 then S x else (x == 733 || x == 734) && decide (x \u2264 n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndef FullExactMaximum (n k : Nat) : Prop :=\n (\u2203 S : Nat \u2192 Bool, Admissible n S \u2227 fullCardinal S = k) \u2227\n (\u2200 S : Nat \u2192 Bool, Admissible n S \u2192 fullCardinal S \u2264 k)\n\n\n\n\n\n-- These numerical conclusions have an explicit external 731 baseline premise.\n\n\n\n\n\n\n\n\n\n\n\n\ndef add734 (S : Nat \u2192 Bool) (x : Nat) : Bool := if x = 734 then true else S x\ndef erase734 (S : Nat \u2192 Bool) (x : Nat) : Bool := if x = 734 then false else S x\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend Erdos302Extension734\n",
+  "tags": [
+    "sodelin-erdos302"
+  ],
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean"
+}

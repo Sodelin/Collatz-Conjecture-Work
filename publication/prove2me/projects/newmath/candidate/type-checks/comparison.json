@@ -1,0 +1,82 @@
+{
+  "all_match": true,
+  "comparisons": [
+    {
+      "name": "NewMathDiscovery.BlindnessRealization.blind_downward",
+      "original": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) {S T : I \u2192 Prop},\n  (\u2200 (i : I), S i \u2192 T i) \u2192\n    NewMathDiscovery.BlindnessRealization.Blind T (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target \u2192\n      NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target",
+      "theorem": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) {S T : I \u2192 Prop},\n  (\u2200 (i : I), S i \u2192 T i) \u2192\n    NewMathDiscovery.BlindnessRealization.Blind T (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target \u2192\n      NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target",
+      "solution": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) {S T : I \u2192 Prop},\n  (\u2200 (i : I), S i \u2192 T i) \u2192\n    NewMathDiscovery.BlindnessRealization.Blind T (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target \u2192\n      NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n        NewMathDiscovery.BlindnessRealization.State.target",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "original": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) (S : I \u2192 Prop),\n  NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n      NewMathDiscovery.BlindnessRealization.State.target \u2194\n    \u2203 j, \u2200 (i : I), S i \u2192 F j i = true",
+      "theorem": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) (S : I \u2192 Prop),\n  NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n      NewMathDiscovery.BlindnessRealization.State.target \u2194\n    \u2203 j, \u2200 (i : I), S i \u2192 F j i = true",
+      "solution": "\u2200 {I J : Type} (F : J \u2192 I \u2192 Bool) (S : I \u2192 Prop),\n  NewMathDiscovery.BlindnessRealization.Blind S (NewMathDiscovery.BlindnessRealization.State.observe F)\n      NewMathDiscovery.BlindnessRealization.State.target \u2194\n    \u2203 j, \u2200 (i : I), S i \u2192 F j i = true",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "original": "\u2200 {m n : Nat},\n  m \u2260 n \u2192\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow m)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) \u2260\n      0",
+      "theorem": "\u2200 {m n : Nat},\n  m \u2260 n \u2192\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow m)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) \u2260\n      0",
+      "solution": "\u2200 {m n : Nat},\n  m \u2260 n \u2192\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow m)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) \u2260\n      0",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "original": "\u2200 (offset index : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.observe (offset + index)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) =\n      0 \u2227\n    (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)).snd = -1 \u2227\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n          (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) >\n        Int.ofNat offset",
+      "theorem": "\u2200 (offset index : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.observe (offset + index)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) =\n      0 \u2227\n    (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)).snd = -1 \u2227\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n          (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) >\n        Int.ofNat offset",
+      "solution": "\u2200 (offset index : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.observe (offset + index)\n        (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) =\n      0 \u2227\n    (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)).snd = -1 \u2227\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n          (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness (offset + index)) >\n        Int.ofNat offset",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "original": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness n) \u2260\n    0",
+      "theorem": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness n) \u2260\n    0",
+      "solution": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.target\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.witness n) \u2260\n    0",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "original": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.targetRow\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) =\n    Int.ofNat n + 1",
+      "theorem": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.targetRow\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) =\n    Int.ofNat n + 1",
+      "solution": "\u2200 (n : Nat),\n  NewMathDiscovery.LinearBlindness.RankTwoInstability.determinant\n      NewMathDiscovery.LinearBlindness.RankTwoInstability.targetRow\n      (NewMathDiscovery.LinearBlindness.RankTwoInstability.sensorRow n) =\n    Int.ofNat n + 1",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+      "original": "\u2200 (bound : Nat),\n  \u2203 n direction,\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.observe n direction = 0 \u2227\n      direction.snd = -1 \u2227 NewMathDiscovery.LinearBlindness.RankTwoInstability.target direction > Int.ofNat bound",
+      "theorem": "\u2200 (bound : Nat),\n  \u2203 n direction,\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.observe n direction = 0 \u2227\n      direction.snd = -1 \u2227 NewMathDiscovery.LinearBlindness.RankTwoInstability.target direction > Int.ofNat bound",
+      "solution": "\u2200 (bound : Nat),\n  \u2203 n direction,\n    NewMathDiscovery.LinearBlindness.RankTwoInstability.observe n direction = 0 \u2227\n      direction.snd = -1 \u2227 NewMathDiscovery.LinearBlindness.RankTwoInstability.target direction > Int.ofNat bound",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+      "original": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.DeterminesTarget system selected \u2194\n    \u2200 (direction : State),\n      NewMathDiscovery.LinearBlindness.InObservationKernel system selected direction \u2192\n        system.target direction = system.zeroValue",
+      "theorem": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.DeterminesTarget system selected \u2194\n    \u2200 (direction : State),\n      NewMathDiscovery.LinearBlindness.InObservationKernel system selected direction \u2192\n        system.target direction = system.zeroValue",
+      "solution": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.DeterminesTarget system selected \u2194\n    \u2200 (direction : State),\n      NewMathDiscovery.LinearBlindness.InObservationKernel system selected direction \u2192\n        system.target direction = system.zeroValue",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
+      "original": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  {smaller larger : Index \u2192 Prop},\n  (\u2200 (i : Index), smaller i \u2192 larger i) \u2192\n    NewMathDiscovery.LinearBlindness.PairBlind system larger \u2192 NewMathDiscovery.LinearBlindness.PairBlind system smaller",
+      "theorem": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  {smaller larger : Index \u2192 Prop},\n  (\u2200 (i : Index), smaller i \u2192 larger i) \u2192\n    NewMathDiscovery.LinearBlindness.PairBlind system larger \u2192 NewMathDiscovery.LinearBlindness.PairBlind system smaller",
+      "solution": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  {smaller larger : Index \u2192 Prop},\n  (\u2200 (i : Index), smaller i \u2192 larger i) \u2192\n    NewMathDiscovery.LinearBlindness.PairBlind system larger \u2192 NewMathDiscovery.LinearBlindness.PairBlind system smaller",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness",
+      "original": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.PairBlind system selected \u2194\n    NewMathDiscovery.LinearBlindness.KernelWitness system selected",
+      "theorem": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.PairBlind system selected \u2194\n    NewMathDiscovery.LinearBlindness.KernelWitness system selected",
+      "solution": "\u2200 {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index \u2192 Prop),\n  NewMathDiscovery.LinearBlindness.PairBlind system selected \u2194\n    NewMathDiscovery.LinearBlindness.KernelWitness system selected",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
+      "original": "\u2200 {\u03b1 C W : Type} (f : \u03b1 \u2192 \u03b1) (one : \u03b1) (decode : C \u2192 \u03b1) (rank : C \u2192 W) (lt : W \u2192 W \u2192 Prop)\n  (edge : C \u2192 Nat \u2192 Nat \u2192 C \u2192 Prop) (Entry : C \u2192 Prop) (Domain : \u03b1 \u2192 Prop),\n  f one = one \u2192\n    (WellFounded fun c' c => lt (rank c') (rank c)) \u2192\n      (\u2200 (c : C), decode c \u2260 one \u2192 \u2203 a b c', edge c a b c') \u2192\n        (\u2200 {c : C} {a b : Nat} {c' : C},\n            edge c a b c' \u2192\n              NewMathDiscovery.RankedCoalescence.iterate f a (decode c) =\n                NewMathDiscovery.RankedCoalescence.iterate f b (decode c')) \u2192\n          (\u2200 {c : C} {a b : Nat} {c' : C}, edge c a b c' \u2192 lt (rank c') (rank c)) \u2192\n            (\u2200 (x : \u03b1), Domain x \u2192 \u2203 c, Entry c \u2227 decode c = x) \u2192\n              \u2200 (x : \u03b1), Domain x \u2192 NewMathDiscovery.RankedCoalescence.Reaches f one x",
+      "theorem": "\u2200 {\u03b1 C W : Type} (f : \u03b1 \u2192 \u03b1) (one : \u03b1) (decode : C \u2192 \u03b1) (rank : C \u2192 W) (lt : W \u2192 W \u2192 Prop)\n  (edge : C \u2192 Nat \u2192 Nat \u2192 C \u2192 Prop) (Entry : C \u2192 Prop) (Domain : \u03b1 \u2192 Prop),\n  f one = one \u2192\n    (WellFounded fun c' c => lt (rank c') (rank c)) \u2192\n      (\u2200 (c : C), decode c \u2260 one \u2192 \u2203 a b c', edge c a b c') \u2192\n        (\u2200 {c : C} {a b : Nat} {c' : C},\n            edge c a b c' \u2192\n              NewMathDiscovery.RankedCoalescence.iterate f a (decode c) =\n                NewMathDiscovery.RankedCoalescence.iterate f b (decode c')) \u2192\n          (\u2200 {c : C} {a b : Nat} {c' : C}, edge c a b c' \u2192 lt (rank c') (rank c)) \u2192\n            (\u2200 (x : \u03b1), Domain x \u2192 \u2203 c, Entry c \u2227 decode c = x) \u2192\n              \u2200 (x : \u03b1), Domain x \u2192 NewMathDiscovery.RankedCoalescence.Reaches f one x",
+      "solution": "\u2200 {\u03b1 C W : Type} (f : \u03b1 \u2192 \u03b1) (one : \u03b1) (decode : C \u2192 \u03b1) (rank : C \u2192 W) (lt : W \u2192 W \u2192 Prop)\n  (edge : C \u2192 Nat \u2192 Nat \u2192 C \u2192 Prop) (Entry : C \u2192 Prop) (Domain : \u03b1 \u2192 Prop),\n  f one = one \u2192\n    (WellFounded fun c' c => lt (rank c') (rank c)) \u2192\n      (\u2200 (c : C), decode c \u2260 one \u2192 \u2203 a b c', edge c a b c') \u2192\n        (\u2200 {c : C} {a b : Nat} {c' : C},\n            edge c a b c' \u2192\n              NewMathDiscovery.RankedCoalescence.iterate f a (decode c) =\n                NewMathDiscovery.RankedCoalescence.iterate f b (decode c')) \u2192\n          (\u2200 {c : C} {a b : Nat} {c' : C}, edge c a b c' \u2192 lt (rank c') (rank c)) \u2192\n            (\u2200 (x : \u03b1), Domain x \u2192 \u2203 c, Entry c \u2227 decode c = x) \u2192\n              \u2200 (x : \u03b1), Domain x \u2192 NewMathDiscovery.RankedCoalescence.Reaches f one x",
+      "exact_pretty_type_match": true
+    }
+  ]
+}

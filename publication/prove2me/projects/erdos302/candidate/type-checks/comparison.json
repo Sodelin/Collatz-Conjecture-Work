@@ -1,0 +1,82 @@
+{
+  "all_match": true,
+  "comparisons": [
+    {
+      "name": "Erdos302Extension734.exact_maximum_734_from_733",
+      "original": "\u2200 (k : Nat), Erdos302Extension734.FullExactMaximum 733 k \u2192 Erdos302Extension734.FullExactMaximum 734 (k + 1)",
+      "theorem": "\u2200 (k : Nat), Erdos302Extension734.FullExactMaximum 733 k \u2192 Erdos302Extension734.FullExactMaximum 734 (k + 1)",
+      "solution": "\u2200 (k : Nat), Erdos302Extension734.FullExactMaximum 733 k \u2192 Erdos302Extension734.FullExactMaximum 734 (k + 1)",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.full_cardinal_domain",
+      "original": "\u2200 (S : Nat \u2192 Bool), Erdos302Extension734.fullCardinal S = (List.filter S Erdos302Extension734.fullDomain).length",
+      "theorem": "\u2200 (S : Nat \u2192 Bool), Erdos302Extension734.fullCardinal S = (List.filter S Erdos302Extension734.fullDomain).length",
+      "solution": "\u2200 (S : Nat \u2192 Bool), Erdos302Extension734.fullCardinal S = (List.filter S Erdos302Extension734.fullDomain).length",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.full_domain_membership",
+      "original": "\u2200 (x : Nat), x \u2208 Erdos302Extension734.fullDomain \u2194 0 < x \u2227 x \u2264 734",
+      "theorem": "\u2200 (x : Nat), x \u2208 Erdos302Extension734.fullDomain \u2194 0 < x \u2227 x \u2264 734",
+      "solution": "\u2200 (x : Nat), x \u2208 Erdos302Extension734.fullDomain \u2194 0 < x \u2227 x \u2264 734",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.full_domain_nodup",
+      "original": "Erdos302Extension734.fullDomain.Nodup",
+      "theorem": "Erdos302Extension734.fullDomain.Nodup",
+      "solution": "Erdos302Extension734.fullDomain.Nodup",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.lift_admissible",
+      "original": "\u2200 (S : Nat \u2192 Bool) (n : Nat),\n  732 \u2264 n \u2192 n \u2264 734 \u2192 Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible n (Erdos302Extension734.liftTo S n)",
+      "theorem": "\u2200 (S : Nat \u2192 Bool) (n : Nat),\n  732 \u2264 n \u2192 n \u2264 734 \u2192 Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible n (Erdos302Extension734.liftTo S n)",
+      "solution": "\u2200 (S : Nat \u2192 Bool) (n : Nat),\n  732 \u2264 n \u2192 n \u2264 734 \u2192 Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible n (Erdos302Extension734.liftTo S n)",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.numerical_733_from_731",
+      "original": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 733 607",
+      "theorem": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 733 607",
+      "solution": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 733 607",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Extension734.numerical_734_from_731",
+      "original": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 734 608",
+      "theorem": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 734 608",
+      "solution": "Erdos302Finite.ExactMaximum 731 606 \u2192 Erdos302Extension734.FullExactMaximum 734 608",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Finite.rat_plateau_732",
+      "original": "\u2200 (k : Nat),\n  (\u2203 S, Erdos302Finite.RatAdmissible 732 S \u2227 k \u2264 Erdos302Finite.cardinal S) \u2194\n    \u2203 S, Erdos302Finite.RatAdmissible 731 S \u2227 k \u2264 Erdos302Finite.cardinal S",
+      "theorem": "\u2200 (k : Nat),\n  (\u2203 S, Erdos302Finite.RatAdmissible 732 S \u2227 k \u2264 Erdos302Finite.cardinal S) \u2194\n    \u2203 S, Erdos302Finite.RatAdmissible 731 S \u2227 k \u2264 Erdos302Finite.cardinal S",
+      "solution": "\u2200 (k : Nat),\n  (\u2203 S, Erdos302Finite.RatAdmissible 732 S \u2227 k \u2264 Erdos302Finite.cardinal S) \u2194\n    \u2203 S, Erdos302Finite.RatAdmissible 731 S \u2227 k \u2264 Erdos302Finite.cardinal S",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Finite.replacement_admissible",
+      "original": "\u2200 (S : Nat \u2192 Bool), Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible 731 (Erdos302Finite.replacement S)",
+      "theorem": "\u2200 (S : Nat \u2192 Bool), Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible 731 (Erdos302Finite.replacement S)",
+      "solution": "\u2200 (S : Nat \u2192 Bool), Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.Admissible 731 (Erdos302Finite.replacement S)",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Finite.replacement_cardinal",
+      "original": "\u2200 (S : Nat \u2192 Bool),\n  Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.cardinal S \u2264 Erdos302Finite.cardinal (Erdos302Finite.replacement S)",
+      "theorem": "\u2200 (S : Nat \u2192 Bool),\n  Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.cardinal S \u2264 Erdos302Finite.cardinal (Erdos302Finite.replacement S)",
+      "solution": "\u2200 (S : Nat \u2192 Bool),\n  Erdos302Finite.Admissible 732 S \u2192 Erdos302Finite.cardinal S \u2264 Erdos302Finite.cardinal (Erdos302Finite.replacement S)",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "Erdos302Kernel.isolated_nat",
+      "original": "\u2200 (a b c : Nat),\n  0 < a \u2192\n    a < b \u2192\n      b < c \u2192\n        c \u2264 732 \u2192\n          a * (b + c) = b * c \u2192\n            (Erdos302Kernel.inGNat a || Erdos302Kernel.inGNat b || Erdos302Kernel.inGNat c) = true \u2192\n              a = 122 \u2227 b = 183 \u2227 c = 366 \u2228 a = 183 \u2227 b = 244 \u2227 c = 732 \u2228 a = 244 \u2227 b = 366 \u2227 c = 732",
+      "theorem": "\u2200 (a b c : Nat),\n  0 < a \u2192\n    a < b \u2192\n      b < c \u2192\n        c \u2264 732 \u2192\n          a * (b + c) = b * c \u2192\n            (Erdos302Kernel.inGNat a || Erdos302Kernel.inGNat b || Erdos302Kernel.inGNat c) = true \u2192\n              a = 122 \u2227 b = 183 \u2227 c = 366 \u2228 a = 183 \u2227 b = 244 \u2227 c = 732 \u2228 a = 244 \u2227 b = 366 \u2227 c = 732",
+      "solution": "\u2200 (a b c : Nat),\n  0 < a \u2192\n    a < b \u2192\n      b < c \u2192\n        c \u2264 732 \u2192\n          a * (b + c) = b * c \u2192\n            (Erdos302Kernel.inGNat a || Erdos302Kernel.inGNat b || Erdos302Kernel.inGNat c) = true \u2192\n              a = 122 \u2227 b = 183 \u2227 c = 366 \u2228 a = 183 \u2227 b = 244 \u2227 c = 732 \u2228 a = 244 \u2227 b = 366 \u2227 c = 732",
+      "exact_pretty_type_match": true
+    }
+  ]
+}

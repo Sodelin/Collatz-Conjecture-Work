@@ -1,0 +1,15 @@
+name = "oldest-conjecture-probes"
+version = "0.1.0"
+defaultTargets = ["Plateau302", "Extension734"]
+
+[[lean_lib]]
+name = "Plateau302"
+
+[[lean_lib]]
+name = "Extension734"
+
+[[lean_lib]]
+name = "KernelIsolation"
+
+[[lean_lib]]
+name = "KernelEndpoints734"

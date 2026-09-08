@@ -1,0 +1,1 @@
+"∀ (S : Nat → Bool) (n : Nat),\n  732 ≤ n → n ≤ 734 → Erdos302Finite.Admissible 732 S → Erdos302Finite.Admissible n (Erdos302Extension734.liftTo S n)"

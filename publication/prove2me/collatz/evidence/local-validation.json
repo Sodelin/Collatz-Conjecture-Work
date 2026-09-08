@@ -1,0 +1,11 @@
+{
+  "source_files_compiled": 38,
+  "source_theorem_constants_audited": 774,
+  "source_ranged_theorem_constants": 214,
+  "nonstandard_axiom_dependencies": [],
+  "source_audit_sha256": "e7576818b45a024ed9e4af6cfcf7043dadfaa893d31c4b683e156fa067c76784",
+  "staging_build_jobs": 255,
+  "staging_build_exit_code": 0,
+  "exact_type_matches": 113,
+  "type_comparison_count": 113
+}

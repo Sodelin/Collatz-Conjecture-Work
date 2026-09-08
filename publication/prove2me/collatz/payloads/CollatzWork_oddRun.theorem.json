@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.oddRun",
+  "theorem_title": "CollatzWork.oddRun",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.oddRun (h q : Nat) (hq : 0 < q) :\n    shortcutIter h (2 ^ h * q - 1) = 3 ^ h * q - 1 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L44-L58"
+}

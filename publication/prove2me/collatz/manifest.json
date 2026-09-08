@@ -1,0 +1,2057 @@
+{
+  "schema_version": 1,
+  "project_tag": "collatz-work-import",
+  "source": {
+    "repository": "https://github.com/Sodelin/Collatz-Conjecture-Work",
+    "commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+    "digests": {
+      "lean/CollatzWork/AffineRepetition.lean": "62cad80ec42483be80f9eccb37a0bb3a78bd686b52f30479ed4dfb3d111660cc",
+      "lean/CollatzWork/AffineRepetitionStatement.lean": "dd805f09caa4fdaa344e65682259c40b45a8dfcb97294c2edd271bb3d2b66f48",
+      "lean/CollatzWork/BlockArithmetic.lean": "839ce06cbed82a676d7dd916b0fcd6f6e3d85e08181eac65bcf1cb7f5498ebc3",
+      "lean/CollatzWork/Convergence.lean": "d7ba650385465dbdb375681f47c591ba3b1d45915ee96255939871acfb6f6757",
+      "lean/CollatzWork/ConvergenceStatement.lean": "f5c54df7d93587427fef891beedea6b9013d624a4f1b3baf3ee838dc6386c67e",
+      "lean/CollatzWork/Disproof/BranchingCenter.lean": "ceacbace8c08f0302bde35fdac19e3660be95dc50c65352dd4d8aea722d40c26",
+      "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean": "ef19d5151cbe2c8c22824bad1ce380063027136aa5924dc21fe2ac5e287a21ff",
+      "lean/CollatzWork/Disproof/PolynomialRatchet.lean": "e3f38db03605171cb094728ebb8089037d9a0f77a773047852666f26ba188c6a",
+      "lean/CollatzWork/Disproof/TwoPumpDependency.lean": "c3634f38d213d54ea2a532ecb60dec9b212ac58f6e4e32fb9bd62738df0262f7",
+      "lean/CollatzWork/ExcursionBudget.lean": "033b51515c7fc25a4f83682fb7af86e6eeb68f38c5162dedb9a8978f9ce5dd36",
+      "lean/CollatzWork/ExcursionBudgetStatement.lean": "43621f3018c3ce65c981a00af24fdf10380bd4f8e0ae7eb877ed892a28d16012",
+      "lean/CollatzWork/FinitePaletteObstruction.lean": "6fe63716b3b5a7871c737ee6cfce43e4cf507058dfcc9d4a8ce55a3d1ecc2f94",
+      "lean/CollatzWork/FinitePaletteObstructionStatement.lean": "bf54aa54cb2655d6a01c2c1613d90d4814f6befd730561fe59b75886c0c13588",
+      "lean/CollatzWork/FirstContraction.lean": "41eb1a73437f18eb3796e6dd054efa64d6648e60e13de829ade4d7eeeb244a2e",
+      "lean/CollatzWork/FirstContractionStatement.lean": "1e5cb863051bf052b562434552729c13aa1b15a4b89f88f499269ea383a6b7a6",
+      "lean/CollatzWork/FloorPower.lean": "97ed65c31e02422cb7e0e17da431e9ddc6e9c7adbe274174e403f37a49751cef",
+      "lean/CollatzWork/InverseWordBoundary.lean": "f31c18940fecd747c797d60c6346e36bbc4b00d50c583f00fcff49f27cae62d7",
+      "lean/CollatzWork/InverseWordBoundaryStatement.lean": "bf6585a2b0b98af539afe82f618912e8904c0c0f0fb1ecba05b53f2c30fd3fd2",
+      "lean/CollatzWork/PrefixCollision.lean": "6513a67191840ffcccec673edf1656a55b9fdbf4505c5be7796be6765155d2f1",
+      "lean/CollatzWork/PrefixCollisionStatement.lean": "7ffdd5f945da61bba8396b7b491a7ce8366d5d65823ea5fb0aa169e7e553ad96",
+      "lean/CollatzWork/QuarterGap.lean": "8b0f9cc29719cf665f2d5227dad8b482a5db3381556d61b39d78c595aeefb89e",
+      "lean/CollatzWork/QuarterGapStatement.lean": "e759f72d4f692efce5c78b7a5e762fd097dfe6900fddf72f66bcb6019735f539",
+      "lean/CollatzWork/QuarterGapUniversal.lean": "969e21be9e19326071fb8e110d5eddfd560f9926f083fd125f674f503a7be647",
+      "lean/CollatzWork/QuarterGapUniversalStatement.lean": "b084a1ae690fb95d135858c68f9177205ed550a882bd6deefccd82bb70eac556",
+      "lean/CollatzWork/RefinedMersenneChild.lean": "2ef6e464c93e01e3163ecc4efe7e16b965606f24b66ea0b519c3f53f72e6eb17",
+      "lean/CollatzWork/ResidueAncestor.lean": "71218cbe2b8c89d20ecd1ac471e112d7ba02ae8d40bac568cf30a0c049175a0d",
+      "lean/CollatzWork/ResidueAncestorStatement.lean": "e2f108f0caa0d44cbaa47b31ce0560ab6bbe2bc2d6f7e3e1c93825b4d45a32e7",
+      "lean/CollatzWork/ResidueAncestorTails.lean": "cba2ecf3404aace6649748f16f3ca0ba6bf180b33242709f3fe73601a46352f3",
+      "lean/CollatzWork/RootDescent.lean": "fa0b9bf92e65fc5e1c66089273b2d22b12819f6d41d411b5793f1f0dcf81c557",
+      "lean/CollatzWork/RootDescentStatement.lean": "499eb39ec87dfae53fe5bd4b554b88e3754b5f386e01ae823433cb0056949334",
+      "lean/CollatzWork/TwoBurst.lean": "edf5027ec484ba5a94b2837fbb4fa31055ea52804644c4256f6749421f207242",
+      "lean/CollatzWork/TwoBurstStatement.lean": "b66e37f58872451aae5d3a697dd1880685347dd403458d498513093164f15a90",
+      "lean/CollatzWork/YAHFiniteObstruction.lean": "c5b3e30059e8358aa59f0b4e155a09b11e5b7eb5c7caf419df9d3587b6408af4",
+      "lean/CollatzWork/YAHFiniteObstructionStatement.lean": "b703978accc652bbdb243ac38f8aac512bbe4664791dc39dfe33476858186c3f",
+      "lean/CollatzWork.lean": "01f3002cec763089d65918fd127c35109d40c7a6b24cc3fa4b449cca8682e1fb",
+      "research/blind-2026-09-05/AlternatingGrowth.lean": "8a53286a000f20c048da7c8c57add0eb74f5f403a822b858f74a7b761de55607",
+      "research/blind-2026-09-05/Descent.lean": "6734197b31382be15c59a642577a31dbe80b137786ba9109bb90fc9ef76546de",
+      "research/blind-2026-09-05/RepetitionBound.lean": "b6be440cbf1843ca4eb8fb8ee89e8f8479a84f6c79d8d9a653d447cb1836c91f"
+    }
+  },
+  "environment": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_rev": null
+  },
+  "validation": {
+    "status": "pending",
+    "remote_status": "not_submitted",
+    "required": [
+      "academic per-theorem metadata review",
+      "exact platform environment pin check",
+      "authenticated API access",
+      "server queued publication and proof verification",
+      "all final theorem statuses Proved"
+    ],
+    "local_compilation": "passed",
+    "source_axiom_audit": "passed",
+    "theorem_type_preservation": "passed",
+    "evidence_files": [
+      "evidence/local-validation.json",
+      "type-comparison.json",
+      "staging-build.log",
+      "type-audit.log"
+    ]
+  },
+  "items": [
+    {
+      "key": "def:ArchiveAlternatingGrowth",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/ArchiveAlternatingGrowth.definition.json",
+      "definition_file": "Definitions/Def_ArchiveAlternatingGrowth.lean"
+    },
+    {
+      "key": "def:ArchiveDescent",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/ArchiveDescent.definition.json",
+      "definition_file": "Definitions/Def_ArchiveDescent.lean"
+    },
+    {
+      "key": "def:CollatzWork.AffineRepetitionStatement",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_AffineRepetitionStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_AffineRepetitionStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.BlockArithmetic",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_BlockArithmetic.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_BlockArithmetic.lean"
+    },
+    {
+      "key": "def:CollatzWork.ConvergenceStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_ConvergenceStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_ConvergenceStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.Disproof.BranchingCenter",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_BranchingCenter.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_Disproof_BranchingCenter.lean"
+    },
+    {
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_FiniteResidueFirstIntegral.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_Disproof_FiniteResidueFirstIntegral.lean"
+    },
+    {
+      "key": "def:CollatzWork.Disproof.PolynomialRatchet",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_PolynomialRatchet.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_Disproof_PolynomialRatchet.lean"
+    },
+    {
+      "key": "def:CollatzWork.ExcursionBudgetStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_ExcursionBudgetStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_ExcursionBudgetStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.FinitePaletteObstructionStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_FinitePaletteObstructionStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_FinitePaletteObstructionStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.FirstContractionStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_FirstContractionStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_FirstContractionStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.FloorPower",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_FloorPower.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_FloorPower.lean"
+    },
+    {
+      "key": "def:CollatzWork.InverseWordBoundaryStatement",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_InverseWordBoundaryStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_InverseWordBoundaryStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.PrefixCollisionStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_PrefixCollisionStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_PrefixCollisionStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.QuarterGapStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_QuarterGapStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_QuarterGapStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.QuarterGapUniversalStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_QuarterGapUniversalStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_QuarterGapUniversalStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.RefinedMersenneChild",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_RefinedMersenneChild.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_RefinedMersenneChild.lean"
+    },
+    {
+      "key": "def:CollatzWork.ResidueAncestorStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_ResidueAncestorStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_ResidueAncestorStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.RootDescentStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_RootDescentStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_RootDescentStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.TwoBurstStatement",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_TwoBurstStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_TwoBurstStatement.lean"
+    },
+    {
+      "key": "def:CollatzWork.YAHFiniteObstruction",
+      "kind": "definition",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAHFiniteObstruction.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_YAHFiniteObstruction.lean"
+    },
+    {
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement",
+      "kind": "definition",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_YAHFiniteObstructionStatement.definition.json",
+      "definition_file": "Definitions/Def_CollatzWork_YAHFiniteObstructionStatement.lean"
+    },
+    {
+      "key": "thm:BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+      "kind": "theorem",
+      "depends_on": [
+        "def:ArchiveAlternatingGrowth"
+      ],
+      "payload_file": "payloads/BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
+      "kind": "theorem",
+      "depends_on": [
+        "def:ArchiveAlternatingGrowth"
+      ],
+      "payload_file": "payloads/BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.AlternatingGrowth.odd_exponents_one_two",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/BlindCollatz_AlternatingGrowth_odd_exponents_one_two.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_AlternatingGrowth_odd_exponents_one_two.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_AlternatingGrowth_odd_exponents_one_two.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.AlternatingGrowth.ordinary_five",
+      "kind": "theorem",
+      "depends_on": [
+        "def:ArchiveAlternatingGrowth"
+      ],
+      "payload_file": "payloads/BlindCollatz_AlternatingGrowth_ordinary_five.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_AlternatingGrowth_ordinary_five.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_AlternatingGrowth_ordinary_five.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
+      "kind": "theorem",
+      "depends_on": [
+        "def:ArchiveAlternatingGrowth",
+        "thm:BlindCollatz.AlternatingGrowth.ordinary_five"
+      ],
+      "payload_file": "payloads/BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.RepetitionBound.affine_repetition_bound",
+      "kind": "theorem",
+      "depends_on": [
+        "thm:BlindCollatz.RepetitionBound.telescope"
+      ],
+      "payload_file": "payloads/BlindCollatz_RepetitionBound_affine_repetition_bound.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_RepetitionBound_affine_repetition_bound.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_RepetitionBound_affine_repetition_bound.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.RepetitionBound.alternating_repetition_bound",
+      "kind": "theorem",
+      "depends_on": [
+        "thm:BlindCollatz.RepetitionBound.telescope"
+      ],
+      "payload_file": "payloads/BlindCollatz_RepetitionBound_alternating_repetition_bound.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_RepetitionBound_alternating_repetition_bound.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_RepetitionBound_alternating_repetition_bound.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
+      "kind": "theorem",
+      "depends_on": [
+        "thm:BlindCollatz.RepetitionBound.telescope"
+      ],
+      "payload_file": "payloads/BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
+      "kind": "theorem",
+      "depends_on": [
+        "thm:BlindCollatz.RepetitionBound.telescope"
+      ],
+      "payload_file": "payloads/BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.RepetitionBound.telescope",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/BlindCollatz_RepetitionBound_telescope.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_RepetitionBound_telescope.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_RepetitionBound_telescope.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:BlindCollatz.descent_iff_convergence",
+      "kind": "theorem",
+      "depends_on": [
+        "def:ArchiveDescent"
+      ],
+      "payload_file": "payloads/BlindCollatz_descent_iff_convergence.theorem.json",
+      "solution_file": "Solutions/Sol_BlindCollatz_descent_iff_convergence.lean",
+      "theorem_file": "Theorems/Thm_BlindCollatz_descent_iff_convergence.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.Disproof.BranchingCenter",
+        "thm:CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.Disproof.BranchingCenter"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.Disproof.FiniteResidueFirstIntegral"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.firstRotatedDeterminantCoefficients",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_firstRotatedDeterminantCoefficients.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_firstRotatedDeterminantCoefficients.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_firstRotatedDeterminantCoefficients.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.noNonresonantContentGain",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.Disproof.PolynomialRatchet",
+        "thm:CollatzWork.Disproof.twoPowerOddNormalFormUnique"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_noNonresonantContentGain.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_noNonresonantContentGain.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_noNonresonantContentGain.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.quotientDegreesVanish",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_quotientDegreesVanish.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_quotientDegreesVanish.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_quotientDegreesVanish.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.secondRotatedDeterminantCoefficients",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_secondRotatedDeterminantCoefficients.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_secondRotatedDeterminantCoefficients.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_secondRotatedDeterminantCoefficients.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.Disproof.PolynomialRatchet"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_twoPowerOddNormalFormUnique.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.twoPumpCoefficientDependencies",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_twoPumpCoefficientDependencies.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_twoPumpCoefficientDependencies.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
+      "kind": "theorem",
+      "depends_on": [
+        "thm:CollatzWork.Disproof.twoPumpCoefficientDependencies"
+      ],
+      "payload_file": "payloads/CollatzWork_Disproof_twoPumpConstantObstructionVanishes.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_twoPumpConstantObstructionVanishes.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_twoPumpConstantObstructionVanishes.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.Disproof.twoPumpSyzygy",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_Disproof_twoPumpSyzygy.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_Disproof_twoPumpSyzygy.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_Disproof_twoPumpSyzygy.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.edgeCertificate_cancellation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_edgeCertificate_cancellation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_edgeCertificate_cancellation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_edgeCertificate_cancellation.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.edgeCertificate_canonically_embeddable",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_edgeCertificate_canonically_embeddable.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_edgeCertificate_canonically_embeddable.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_edgeCertificate_canonically_embeddable.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.edgeCertificate_shape",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_edgeCertificate_shape.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_edgeCertificate_shape.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_edgeCertificate_shape.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_evalCoefficients_weightedCoefficient.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.ffPumpWord_canonical",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_ffPumpWord_canonical.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_ffPumpWord_canonical.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_ffPumpWord_canonical.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.yah13_forces_ff_negative"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.noTwoStateEdgeAdditiveOrder",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.weightedGapSum_pos",
+        "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+        "thm:CollatzWork.YAH.edgeCertificate_cancellation"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.noTwoStateSymbolAdditiveOrder",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.weightedGapSum_pos",
+        "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+        "thm:CollatzWork.YAH.symbolCertificate_cancellation"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.symbolCertificate_cancellation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_symbolCertificate_cancellation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_symbolCertificate_cancellation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_symbolCertificate_cancellation.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_symbolCertificate_canonically_embeddable.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.symbolCertificate_shape",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_symbolCertificate_shape.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_symbolCertificate_shape.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_symbolCertificate_shape.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.twoState_rule_equations",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_twoState_rule_equations.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_twoState_rule_equations.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_twoState_rule_equations.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.unlabelledCertificate_cancellation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_unlabelledCertificate_cancellation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_unlabelledCertificate_cancellation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_cancellation.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.unlabelledCertificate_shape",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_unlabelledCertificate_shape.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_unlabelledCertificate_shape.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_shape.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.unlabelledRows_legal",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_unlabelledRows_legal.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_unlabelledRows_legal.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_unlabelledRows_legal.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.unlabelledRows_semantic",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_unlabelledRows_semantic.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_unlabelledRows_semantic.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_unlabelledRows_semantic.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.weightedGapSum_pos",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstructionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_weightedGapSum_pos.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_weightedGapSum_pos.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_weightedGapSum_pos.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.YAH.yah13_forces_ff_negative",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.YAHFiniteObstruction",
+        "def:CollatzWork.YAHFiniteObstructionStatement",
+        "thm:CollatzWork.YAH.weightedGapSum_pos",
+        "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+        "thm:CollatzWork.YAH.unlabelledCertificate_cancellation"
+      ],
+      "payload_file": "payloads/CollatzWork_YAH_yah13_forces_ff_negative.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_YAH_yah13_forces_ff_negative.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_YAH_yah13_forces_ff_negative.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.affineQuarterCertificate",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_affineQuarterCertificate.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_affineQuarterCertificate.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_affineQuarterCertificate.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.affineRecurrenceTelescope",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_affineRecurrenceTelescope.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_affineRecurrenceTelescope.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_affineRecurrenceTelescope.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.affineRepetitionBound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.finiteRepetitionBound"
+      ],
+      "payload_file": "payloads/CollatzWork_affineRepetitionBound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_affineRepetitionBound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_affineRepetitionBound.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.converges_iff_of_coalesces"
+      ],
+      "payload_file": "payloads/CollatzWork_allPositiveConverge_of_smallerCoalescence.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_allPositiveConverge_of_smallerCoalescence.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.blockNumerator12_exact_bound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.BlockArithmetic"
+      ],
+      "payload_file": "payloads/CollatzWork_blockNumerator12_exact_bound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_blockNumerator12_exact_bound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_blockNumerator12_exact_bound.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.compatibleProduct_mod_four",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_compatibleProduct_mod_four.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_compatibleProduct_mod_four.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_compatibleProduct_mod_four.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.converges_iff_of_coalesces",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.converges_shortcutIter_iff"
+      ],
+      "payload_file": "payloads/CollatzWork_converges_iff_of_coalesces.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_converges_iff_of_coalesces.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_converges_iff_of_coalesces.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.converges_shortcutIter_iff",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_converges_shortcutIter_iff.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_converges_shortcutIter_iff.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_converges_shortcutIter_iff.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.descentCriterion",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence"
+      ],
+      "payload_file": "payloads/CollatzWork_descentCriterion.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_descentCriterion.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_descentCriterion.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.equalSlopeSmaller",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_equalSlopeSmaller.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_equalSlopeSmaller.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_equalSlopeSmaller.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.equalSlopeWitness",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.InverseWordBoundaryStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_equalSlopeWitness.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_equalSlopeWitness.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_equalSlopeWitness.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.excursionBudgetDescent",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.ExcursionBudgetStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_excursionBudgetDescent.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_excursionBudgetDescent.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_excursionBudgetDescent.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.excursionChainEnvelope",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.ExcursionBudgetStatement",
+        "thm:CollatzWork.shiftedEnvelope_compose"
+      ],
+      "payload_file": "payloads/CollatzWork_excursionChainEnvelope.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_excursionChainEnvelope.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_excursionChainEnvelope.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.excursionChain_converges_of_smaller",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.ExcursionBudgetStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "thm:CollatzWork.converges_shortcutIter_iff",
+        "thm:CollatzWork.excursionChain_terminal_descent"
+      ],
+      "payload_file": "payloads/CollatzWork_excursionChain_converges_of_smaller.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_excursionChain_converges_of_smaller.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_excursionChain_converges_of_smaller.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.excursionChain_terminal_descent",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.ExcursionBudgetStatement",
+        "thm:CollatzWork.excursionChainEnvelope",
+        "thm:CollatzWork.terminalEnvelope_compose",
+        "thm:CollatzWork.excursionBudgetDescent"
+      ],
+      "payload_file": "payloads/CollatzWork_excursionChain_terminal_descent.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_excursionChain_terminal_descent.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_excursionChain_terminal_descent.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.finitePaletteObstruction",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.FinitePaletteObstructionStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.finitePalette_path_obstruction",
+        "thm:CollatzWork.mersenne_prefix_nondecreasing"
+      ],
+      "payload_file": "payloads/CollatzWork_finitePaletteObstruction.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_finitePaletteObstruction.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_finitePaletteObstruction.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.finitePalette_path_obstruction",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_finitePalette_path_obstruction.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_finitePalette_path_obstruction.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_finitePalette_path_obstruction.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.finiteRepetitionBound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.fixedRatioDivisibility"
+      ],
+      "payload_file": "payloads/CollatzWork_finiteRepetitionBound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_finiteRepetitionBound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_finiteRepetitionBound.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.QuarterGapStatement",
+        "def:CollatzWork.QuarterGapUniversalStatement",
+        "thm:CollatzWork.firstContractionThirdGap",
+        "thm:CollatzWork.firstContraction_quarter_of_certificate",
+        "thm:CollatzWork.universalMechanicalQuarterCertificate"
+      ],
+      "payload_file": "payloads/CollatzWork_firstContractionQuarterGap.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_firstContractionQuarterGap.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_firstContractionQuarterGap.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.firstContractionThirdGap",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.FirstContractionStatement",
+        "def:CollatzWork.QuarterGapStatement",
+        "thm:CollatzWork.mechanicalCoarseBound",
+        "thm:CollatzWork.orbitAffine",
+        "thm:CollatzWork.mechanicalEnvelope"
+      ],
+      "payload_file": "payloads/CollatzWork_firstContractionThirdGap.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_firstContractionThirdGap.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_firstContractionThirdGap.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.firstContractionTime",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.FirstContractionStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_firstContractionTime.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_firstContractionTime.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_firstContractionTime.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.firstContraction_quarter_of_certificate",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.QuarterGapStatement",
+        "thm:CollatzWork.orbitAffine",
+        "thm:CollatzWork.mechanicalEnvelope",
+        "thm:CollatzWork.affineQuarterCertificate"
+      ],
+      "payload_file": "payloads/CollatzWork_firstContraction_quarter_of_certificate.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_firstContraction_quarter_of_certificate.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_firstContraction_quarter_of_certificate.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.fixedRatioDivisibility",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.affineRecurrenceTelescope"
+      ],
+      "payload_file": "payloads/CollatzWork_fixedRatioDivisibility.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_fixedRatioDivisibility.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_fixedRatioDivisibility.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.floorPower_mul",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.FloorPower"
+      ],
+      "payload_file": "payloads/CollatzWork_floorPower_mul.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_floorPower_mul.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_floorPower_mul.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mechanicalCoarseBound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.FirstContractionStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanicalCoarseBound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanicalCoarseBound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanicalCoarseBound.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.mechanicalEnvelope",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanicalEnvelope.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanicalEnvelope.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanicalEnvelope.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mechanical_fifteen_failure",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.QuarterGapStatement",
+        "def:CollatzWork.QuarterGapUniversalStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanical_fifteen_failure.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanical_fifteen_failure.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanical_fifteen_failure.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.QuarterGapStatement",
+        "def:CollatzWork.QuarterGapUniversalStatement",
+        "thm:CollatzWork.mechanical_twelve_propagation"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanical_large_bound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanical_large_bound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanical_large_bound.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mechanical_twelve_identity",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.BlockArithmetic",
+        "def:CollatzWork.FloorPower",
+        "def:CollatzWork.QuarterGapStatement",
+        "thm:CollatzWork.floorPower_mul"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanical_twelve_identity.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanical_twelve_identity.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanical_twelve_identity.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mechanical_twelve_propagation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.BlockArithmetic",
+        "def:CollatzWork.FloorPower",
+        "def:CollatzWork.QuarterGapStatement",
+        "thm:CollatzWork.blockNumerator12_exact_bound",
+        "thm:CollatzWork.mechanical_twelve_identity"
+      ],
+      "payload_file": "payloads/CollatzWork_mechanical_twelve_propagation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mechanical_twelve_propagation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mechanical_twelve_propagation.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.mersenne_prefix_nondecreasing",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.oddRun"
+      ],
+      "payload_file": "payloads/CollatzWork_mersenne_prefix_nondecreasing.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_mersenne_prefix_nondecreasing.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_mersenne_prefix_nondecreasing.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.noInfiniteExpandingAffineBlocks",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.noInfinitePositiveRecurrence"
+      ],
+      "payload_file": "payloads/CollatzWork_noInfiniteExpandingAffineBlocks.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_noInfiniteExpandingAffineBlocks.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_noInfiniteExpandingAffineBlocks.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.noInfinitePositiveRecurrence",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.finiteRepetitionBound"
+      ],
+      "payload_file": "payloads/CollatzWork_noInfinitePositiveRecurrence.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_noInfinitePositiveRecurrence.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_noInfinitePositiveRecurrence.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.oddRun",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_oddRun.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_oddRun.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_oddRun.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.orbitAffine",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.QuarterGapStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_orbitAffine.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_orbitAffine.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_orbitAffine.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.parityPrefix_dvd_sub_of_le",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.PrefixCollisionStatement"
+      ],
+      "payload_file": "payloads/CollatzWork_parityPrefix_dvd_sub_of_le.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_parityPrefix_dvd_sub_of_le.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_parityPrefix_dvd_sub_of_le.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.prefixCollision",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.PrefixCollisionStatement",
+        "thm:CollatzWork.parityPrefix_dvd_sub_of_le"
+      ],
+      "payload_file": "payloads/CollatzWork_prefixCollision.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_prefixCollision.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_prefixCollision.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.prefixReturnBernoulli",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_prefixReturnBernoulli.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_prefixReturnBernoulli.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_prefixReturnBernoulli.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.prefixReturnNumericalBound",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.AffineRepetitionStatement",
+        "thm:CollatzWork.prefixReturnBernoulli"
+      ],
+      "payload_file": "payloads/CollatzWork_prefixReturnNumericalBound.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_prefixReturnNumericalBound.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_prefixReturnNumericalBound.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.prefixSeparation",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.PrefixCollisionStatement",
+        "thm:CollatzWork.parityPrefix_dvd_sub_of_le"
+      ],
+      "payload_file": "payloads/CollatzWork_prefixSeparation.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_prefixSeparation.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_prefixSeparation.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedChild_arithmetic",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedChild_arithmetic.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedChild_arithmetic.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedChild_arithmetic.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedChild_iter",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.oddRun",
+        "thm:CollatzWork.compatibleProduct_mod_four"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedChild_iter.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedChild_iter.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedChild_iter.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.refinedParent_iter",
+        "thm:CollatzWork.refinedChild_iter"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedMersenneChild_coalesces.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedMersenneChild_coalesces.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedMersenneChild_coalesces.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.converges_iff_of_coalesces",
+        "thm:CollatzWork.refinedMersenneChild_coalesces"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedParent_converges_iff_child.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedParent_converges_iff_child.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedParent_converges_iff_child.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.refinedParent_converges_iff_child",
+        "thm:CollatzWork.refinedChild_arithmetic"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedParent_converges_of_smaller.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedParent_converges_of_smaller.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedParent_converges_of_smaller.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.refinedChild_arithmetic",
+        "thm:CollatzWork.refinedMersenneChild_coalesces"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedParent_has_smaller_coalescence.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedParent_has_smaller_coalescence.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedParent_has_smaller_coalescence.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.refinedParent_iter",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.oddRun",
+        "thm:CollatzWork.compatibleProduct_mod_four"
+      ],
+      "payload_file": "payloads/CollatzWork_refinedParent_iter.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_refinedParent_iter.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_refinedParent_iter.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ResidueAncestorStatement",
+        "thm:CollatzWork.residueAncestor_normalized"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_factor_unit",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_residueAncestor_factor_unit.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_factor_unit.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_factor_unit.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "thm:CollatzWork.residueAncestor_prefix_one",
+        "thm:CollatzWork.residueAncestor_prefix_two",
+        "thm:CollatzWork.residueAncestor_refinedTail"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_normalized.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_normalized.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_normalized.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.ResidueAncestorStatement",
+        "thm:CollatzWork.residueAncestor",
+        "thm:CollatzWork.residueAncestor_factor_unit"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_of_divisibility.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_of_divisibility.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_of_divisibility.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_prefix_one",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.rootDescentAncestor"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_prefix_one.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_prefix_one.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_prefix_one.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_prefix_two",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.rootDescentAncestor"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_prefix_two.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_prefix_two.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_prefix_two.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.residueAncestor_tail38",
+        "thm:CollatzWork.residueAncestor_tail65",
+        "thm:CollatzWork.residueAncestor_tail11",
+        "thm:CollatzWork.residueAncestor_tail92",
+        "thm:CollatzWork.residueAncestor_tail173"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_refinedTail.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_refinedTail.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_refinedTail.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_tail11",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_tail11.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_tail11.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_tail11.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_tail173",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_tail173.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_tail173.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_tail173.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_tail38",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_tail38.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_tail38.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_tail38.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_tail65",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_tail65.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_tail65.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_tail65.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.residueAncestor_tail92",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_residueAncestor_tail92.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_residueAncestor_tail92.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_residueAncestor_tail92.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.rootDescent",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "def:CollatzWork.RootDescentStatement",
+        "thm:CollatzWork.rootDescentBurst"
+      ],
+      "payload_file": "payloads/CollatzWork_rootDescent.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_rootDescent.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_rootDescent.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.rootDescentAncestor",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "def:CollatzWork.RootDescentStatement",
+        "thm:CollatzWork.oddRun"
+      ],
+      "payload_file": "payloads/CollatzWork_rootDescentAncestor.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_rootDescentAncestor.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_rootDescentAncestor.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "def:CollatzWork.RootDescentStatement",
+        "thm:CollatzWork.shortcutIter_OOE"
+      ],
+      "payload_file": "payloads/CollatzWork_rootDescentBurst.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_rootDescentBurst.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_rootDescentBurst.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.converges_shortcutIter_iff",
+        "thm:CollatzWork.rootDescent"
+      ],
+      "payload_file": "payloads/CollatzWork_rootDescent_converges_of_smaller.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_rootDescent_converges_of_smaller.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_rootDescent_converges_of_smaller.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.shiftedEnvelope_compose",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_shiftedEnvelope_compose.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_shiftedEnvelope_compose.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_shiftedEnvelope_compose.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.shortcutIter_OOE",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_shortcutIter_OOE.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_shortcutIter_OOE.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_shortcutIter_OOE.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.smallerCoalescenceCriterion",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence"
+      ],
+      "payload_file": "payloads/CollatzWork_smallerCoalescenceCriterion.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_smallerCoalescenceCriterion.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_smallerCoalescenceCriterion.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.terminalEnvelope_compose",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild"
+      ],
+      "payload_file": "payloads/CollatzWork_terminalEnvelope_compose.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_terminalEnvelope_compose.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_terminalEnvelope_compose.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "def:CollatzWork.InverseWordBoundaryStatement",
+        "def:CollatzWork.RefinedMersenneChild",
+        "def:CollatzWork.TwoBurstStatement",
+        "thm:CollatzWork.rootDescentBurst",
+        "thm:CollatzWork.twoBurst_power_margin"
+      ],
+      "payload_file": "payloads/CollatzWork_twoBurstDescent.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_twoBurstDescent.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_twoBurstDescent.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.ConvergenceStatement",
+        "thm:CollatzWork.converges_shortcutIter_iff",
+        "thm:CollatzWork.twoBurstDescent"
+      ],
+      "payload_file": "payloads/CollatzWork_twoBurst_converges_of_smaller.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_twoBurst_converges_of_smaller.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_twoBurst_converges_of_smaller.lean",
+      "metadata_status": "existing_claim"
+    },
+    {
+      "key": "thm:CollatzWork.twoBurst_power_margin",
+      "kind": "theorem",
+      "depends_on": [],
+      "payload_file": "payloads/CollatzWork_twoBurst_power_margin.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_twoBurst_power_margin.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_twoBurst_power_margin.lean",
+      "metadata_status": "needs_academic_metadata_review"
+    },
+    {
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "kind": "theorem",
+      "depends_on": [
+        "def:CollatzWork.QuarterGapStatement",
+        "def:CollatzWork.QuarterGapUniversalStatement",
+        "thm:CollatzWork.mechanical_large_bound"
+      ],
+      "payload_file": "payloads/CollatzWork_universalMechanicalQuarterCertificate.theorem.json",
+      "solution_file": "Solutions/Sol_CollatzWork_universalMechanicalQuarterCertificate.lean",
+      "theorem_file": "Theorems/Thm_CollatzWork_universalMechanicalQuarterCertificate.lean",
+      "metadata_status": "existing_claim"
+    }
+  ],
+  "files": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "type-audit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "6b44108e0dba5aae154dc2894cb58a375d75a1ad1bb6bc40f525badb26db4648",
+    "staged-types.jsonl": "8a36982fd8cc94a878ef40baca1d7551b8e9ad396e38f32d144500eaf959a1c5",
+    "staging-build.log": "a9c24f30c27ed324ad45135b3e1d01eb78e4b2a6807176fb1ba5684a31ed56f4",
+    "lake-manifest.json": "72255e6196b2ae1ca57b7c6722f88de648a43f7861f08a468a21ea016927ae98",
+    "Theorems.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
+    "Solutions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
+    "Definitions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
+    "coverage.json": "d0dfdffb2127d2e4c712f15bd2ad18f1958527387ba0308ac488f5ada2924495",
+    "type-comparison.json": "4669e8a0e8544f8181e85e2a4503c868a91e2303df565a32f6ec25c54ea1a7b3",
+    "lakefile.toml": "305a1d5a283fe270a693617b1c2b5f866fbc28ffd97bfd7b98177443822d1d25",
+    "audit-staged-types.lean": "f74e6bdacc34ee83cbcb618cb5b04510ea7c7b1f8263df892f8e494e818df233",
+    "Definitions/Def_CollatzWork_PrefixCollisionStatement.lean": "fad25ea61b90866e93a74f902295d7dc55edeab7138d731c09c620a9f4499c05",
+    "Definitions/Def_CollatzWork_QuarterGapUniversalStatement.lean": "8bfd83725bd5753992b00ec7d75577bee2e0907a96ab6df0a21b34ec792d21a3",
+    "Definitions/Def_CollatzWork_Disproof_BranchingCenter.lean": "a9efd38abb68bce4b422ef47e27b37edf3d28cb6580ecaf1c7086ce2fa0b387d",
+    "Definitions/Def_CollatzWork_InverseWordBoundaryStatement.lean": "a9757032334bae9f1cdfbeb18c80e970f07d154134bb66efa226db073dc41325",
+    "Definitions/Def_ArchiveDescent.lean": "759bb3b840db52650eb8f7b0a356c2aab1a892c450303e625f7e571b5109d400",
+    "Definitions/Def_CollatzWork_FloorPower.lean": "95aa57d238741c9fd4a3c905d8edc5df14366ea37766f70629c6a0f562284a04",
+    "Definitions/Def_CollatzWork_ExcursionBudgetStatement.lean": "f6dac67577ce3aa261aa5c59332a9edce9e4f7768649e32c64bd7f98506a4484",
+    "Definitions/Def_CollatzWork_ConvergenceStatement.lean": "a0b2019c01ec070b8bbd724a31918f5b514f7321efd5a809d037a0a59a162591",
+    "Definitions/Def_CollatzWork_FinitePaletteObstructionStatement.lean": "8a02711ab7da56811e98e79e129ffd436d509c4444a9064e7c6efeebe304642d",
+    "Definitions/Def_CollatzWork_ResidueAncestorStatement.lean": "6d42dfd40f8b9037c9091fda83b43df8a9cdf71f7ce238c1e29a4c6f3c040bdb",
+    "Definitions/Def_CollatzWork_Disproof_PolynomialRatchet.lean": "f55918558384ad1abbd94981b2f929d29d34d726db5897996b46a4baa5c387ae",
+    "Definitions/Def_CollatzWork_YAHFiniteObstruction.lean": "381b76c3238efd519f1c830bb9222d5889570ddac4afb6bbd24f3eca10c71305",
+    "Definitions/Def_CollatzWork_BlockArithmetic.lean": "69905877e822d55b8a6317808c6bda2ae9d4adc41f137ae95bd0e887e3e17ad2",
+    "Definitions/Def_CollatzWork_Disproof_FiniteResidueFirstIntegral.lean": "82db73abca3f3e0f8cef69eb0a961446f05694d916d0e7f9aad63e4a98b35691",
+    "Definitions/Def_CollatzWork_YAHFiniteObstructionStatement.lean": "51e03ff6e62117425ad65e9bf902e76cea5e64902ccd11239055046b8741d546",
+    "Definitions/Def_CollatzWork_AffineRepetitionStatement.lean": "b9345255a43b8f262758a3d55249bc8017d5576ae676aaf1ac58106a0868db35",
+    "Definitions/Def_CollatzWork_RootDescentStatement.lean": "1174cd54f0741d3df4726bae14ee78a844cddf6c7cdac928dfaf3149a3218b9d",
+    "Definitions/Def_ArchiveAlternatingGrowth.lean": "3f8f8d53503638e96b24acc14f6bf7640e0ed8029e0529b71957494dee2ee88c",
+    "Definitions/Def_CollatzWork_RefinedMersenneChild.lean": "1fca7c3c1e5392a99de6bc497d5c1530f61ad5cbe511992396a68eae59e7b58b",
+    "Definitions/Def_CollatzWork_FirstContractionStatement.lean": "885921b08b304267128435dd1e4458fe71c8abddf7068abee7df97a191a7d7fc",
+    "Definitions/Def_CollatzWork_QuarterGapStatement.lean": "4b7c78ef1cfbbaa41cc466824cf846361e74010f4ebf37c86d06dab76bbd6801",
+    "Definitions/Def_CollatzWork_TwoBurstStatement.lean": "fd8d35cbc18843b718ed61ed50e9db8607758c38904cd3b9b3f2ac99fadb9b51",
+    "Theorems/Thm_CollatzWork_YAH_symbolCertificate_cancellation.lean": "34a78e2258af3d85d3e6162d53c47f70d77f1115bc5ce75345d7305aad48f08e",
+    "Theorems/Thm_CollatzWork_converges_iff_of_coalesces.lean": "b7cd3ad4c756ef7cc55a347a9107130351ca6cf7856b978f409652066940b9fe",
+    "Theorems/Thm_CollatzWork_residueAncestor_prefix_two.lean": "63a43def96e380da8bdb96b10e151a8d174dd918f059481e3fbad4eff86ad9bd",
+    "Theorems/Thm_CollatzWork_refinedMersenneChild_coalesces.lean": "a97fb745505d6fb8e951ef122945f19933cd9468b6aa880e2bcbcc8bb31c5160",
+    "Theorems/Thm_CollatzWork_Disproof_twoPumpConstantObstructionVanishes.lean": "46151dd6161ef9958690e1c0c79c390b2a0ca8f0b80c856c6fa2fa09a2a45a2e",
+    "Theorems/Thm_CollatzWork_compatibleProduct_mod_four.lean": "82d9d7c0bd128e6bc508a495ea28981f863e9cfc4809c6c986b89fa4f264a85a",
+    "Theorems/Thm_CollatzWork_prefixReturnBernoulli.lean": "76e097a8cc0632b775572061a5498f9f99eaf6d8c8fbc287a77f4c08a369348f",
+    "Theorems/Thm_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.lean": "4ecc28f0b5f310f5b757f08822c434406a83df6fbb01c60a91f01c98d3559a05",
+    "Theorems/Thm_CollatzWork_mechanicalEnvelope.lean": "81e7e682df97be6d7934f047d020a3571aaa6b875e78a4bfff8f482336186765",
+    "Theorems/Thm_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.lean": "73298224304bdb425c2d519209c2922c8b1c16b8eb03d4d25a59f70120291023",
+    "Theorems/Thm_CollatzWork_YAH_yah13_forces_ff_negative.lean": "39208b974dbf57cce4ca2bb785a43392304cdd42718c7872928c9920991da871",
+    "Theorems/Thm_CollatzWork_prefixCollision.lean": "2fdf1a7a9824d24dd5c31fdee553623ab76a3c448d32096cac92efd46505471b",
+    "Theorems/Thm_CollatzWork_equalSlopeWitness.lean": "aa2c396b1f926337c9d42849d00f20196dfd8eea9ad28fef886e67a521551d91",
+    "Theorems/Thm_CollatzWork_residueAncestor_tail173.lean": "10024a4aa05f7ecaeb36d5f286f3f5ccec82c48e3a5f04f239d5fe3880b23042",
+    "Theorems/Thm_CollatzWork_refinedChild_arithmetic.lean": "9a0c837315d28d303eda03497d09b0dc5b148f92b4aa8518eb64facd3c7c2113",
+    "Theorems/Thm_CollatzWork_residueAncestor_factor_unit.lean": "be3f3cdc4d01fe644ac064979a369e396b20980459ba57034a127a3fea580111",
+    "Theorems/Thm_CollatzWork_fixedRatioDivisibility.lean": "d2e5054595f9bfaef76a9838c6f1cb0e2e8e54755dc4ad82dffb105c2898ffd0",
+    "Theorems/Thm_CollatzWork_YAH_unlabelledRows_legal.lean": "4bac074b3ee70f293c208f309b48d990848404e51e945f4d235f9b9ee9a4061c",
+    "Theorems/Thm_CollatzWork_prefixSeparation.lean": "cd3b6712f12a8ac16f5340fa97a28e42af117ca9f37018e7a944545ca1ab8580",
+    "Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean": "86236aaab104d9db931544e47ccb81a5d7456e7ad24aa732d66e561f3919d0b7",
+    "Theorems/Thm_CollatzWork_residueAncestor_of_divisibility.lean": "37c45a46a9f434f03e52ca4c5236c9edb534693f01c6b9ff58fd91d170dcf2b0",
+    "Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.lean": "6886232ea408d082dd5a76e53be31f432a143f6458343ce44cdad8092d2a30b2",
+    "Theorems/Thm_CollatzWork_excursionChainEnvelope.lean": "4b5a8368488fd1d1bfef425853469e6c305ee294679c42cf95b9619fdd502491",
+    "Theorems/Thm_CollatzWork_Disproof_quotientDegreesVanish.lean": "740cbf81eb69b0135d628d89c1a49015334a4946b33f6da49ac208f9465772a6",
+    "Theorems/Thm_CollatzWork_YAH_symbolCertificate_shape.lean": "fd36040d3cdb2bf7f8d420a20751101b1f091a4b352d9a57d8ff3a248a11e97f",
+    "Theorems/Thm_CollatzWork_firstContractionQuarterGap.lean": "d39dedf60cbe382083c8c9e22b140bcbedb6fa53f43a44010381cb3748dec9f2",
+    "Theorems/Thm_CollatzWork_terminalEnvelope_compose.lean": "04106f1d94c7f11d005181c6852e6f1a3fc8be4a125deb56dafb71726a75c687",
+    "Theorems/Thm_CollatzWork_rootDescentAncestor.lean": "af105394fd695bf7156020cb0002dd4a8c0672f2f0cbdfcf10966cf84605ec12",
+    "Theorems/Thm_BlindCollatz_RepetitionBound_affine_repetition_bound.lean": "95dcb86601da9921f5436549884212eb4520bf96671834dd591451bde6d249f8",
+    "Theorems/Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean": "ee60fa5f88d254c5a71562400826b807083e5e4c36869d59a9efa222e0682830",
+    "Theorems/Thm_CollatzWork_firstContraction_quarter_of_certificate.lean": "27aa0473ac0326d48664e171ee0ffb49878d4aadd496fc2a22117dc57dffc5d3",
+    "Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_cancellation.lean": "10f9b37dbc6477fe6e4c1e8c89fd520dab858e54ecbccb1abeee88cf1ece622e",
+    "Theorems/Thm_CollatzWork_residueAncestor_prefix_one.lean": "9fef2fc5bc795e1cae9ea937548e6104622e616141f585c387ebffd0cf0a7d13",
+    "Theorems/Thm_CollatzWork_oddRun.lean": "db7192ce27f4997e9e1b572a052403fed4aa8866825cd847d8cc29a83a4dfe26",
+    "Theorems/Thm_CollatzWork_excursionChain_converges_of_smaller.lean": "70e39469bccab75602c0b46eabc536ec4bf5d116bd21c157ef4925a8b84f8ab5",
+    "Theorems/Thm_CollatzWork_residueAncestor_tail38.lean": "583ff7f8903b8f5181a6b88db9530f2cd6ff5655b5336fe3bd7d3d2ed9afd9bd",
+    "Theorems/Thm_CollatzWork_Disproof_firstRotatedDeterminantCoefficients.lean": "25a70140149516db76c7eee86a56e16e98c5f8dc6b4e90f2033d4c5336172041",
+    "Theorems/Thm_CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean": "b7efb09222196efd50849959efa4c8ff0f3e07e7ae2fc35e411142b710f680c7",
+    "Theorems/Thm_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean": "18d14ed943e06179a4e0ddec2fd2e914df870ca56ca949705f6fd346347aa0eb",
+    "Theorems/Thm_CollatzWork_rootDescent.lean": "289a04665dd537280744a7aa5d221e0bee1bcc431a64df131c93341d0d0e873a",
+    "Theorems/Thm_CollatzWork_refinedParent_converges_iff_child.lean": "2687c434354f3a8dc417d97a9596ea56f75047e115011d403a0f0d0d74c40110",
+    "Theorems/Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies.lean": "7d6285106832d4b750ef715194ab577e95cb108b84dcd17333bf0796fb88f20e",
+    "Theorems/Thm_CollatzWork_smallerCoalescenceCriterion.lean": "536c8c19a44d1b68034cb4b4cbf210c45da7a7861cd32a0cef008115158427ca",
+    "Theorems/Thm_CollatzWork_YAH_twoState_rule_equations.lean": "3c96b375417012f7083d99884a337cd3b36f7b021954c81150946124269521f5",
+    "Theorems/Thm_CollatzWork_mechanicalCoarseBound.lean": "678bbb90dca2b1894ff84afcc286499e3f997a38fee9842ee97c609fbce5bd55",
+    "Theorems/Thm_CollatzWork_finitePalette_path_obstruction.lean": "664215f0655765458730bbb230000365d7461211e1417c4fab35536ddcc519b8",
+    "Theorems/Thm_CollatzWork_mechanical_fifteen_failure.lean": "235e02eb0154a3c210adb780ab0bd207874fcd2acf37c1d82bbf6445a8e70f56",
+    "Theorems/Thm_CollatzWork_excursionBudgetDescent.lean": "e586e982d62ffb12c4f1c8c2899d8e9b333146ed34cd577cfd403001ebd0687b",
+    "Theorems/Thm_CollatzWork_mechanical_twelve_identity.lean": "3938ccecee928fd120f08dbe59147cc2d6c582b00751f0940cfcc0fdb1f62740",
+    "Theorems/Thm_CollatzWork_rootDescent_converges_of_smaller.lean": "b3b4ee54c5f6c7215b6bf65cc929652c3ddb07bf8d4ebd04c1edb1cfbf0f7877",
+    "Theorems/Thm_CollatzWork_residueAncestor_tail65.lean": "fbee126c926be468b6aba243bc1f63b5c73993e6940933965cdb791d65422a17",
+    "Theorems/Thm_CollatzWork_affineQuarterCertificate.lean": "84ce8a1b07c4d377252c498a2a86fad34603f842d8712060373e5a1bdb819e51",
+    "Theorems/Thm_CollatzWork_residueAncestor_tail11.lean": "34b6be4725094c0b9be4cf1200e475edee84f699f1043e9db4106de7ae77c898",
+    "Theorems/Thm_BlindCollatz_descent_iff_convergence.lean": "85f209c560fcc1d3e54b55d9e1b0c01df954adab636f38c47f65ed80ceda43a8",
+    "Theorems/Thm_CollatzWork_finitePaletteObstruction.lean": "5f69d9fe01464de948fe31c26edc139a6ae9952c05d0d27e63fe7b02cdb5b6c0",
+    "Theorems/Thm_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.lean": "40282625fa48d733a0a7a3f33448bf91273462accfecdcde395f96e881ac4773",
+    "Theorems/Thm_BlindCollatz_RepetitionBound_telescope.lean": "8e0a368ef6ce4124f15080f145944d201056eeec04a75a44954fb8e6151ea991",
+    "Theorems/Thm_BlindCollatz_RepetitionBound_alternating_repetition_bound.lean": "048bde72114dee30fbca948c4b793b04a869a4cc165bda0b1ad67413f8fdf910",
+    "Theorems/Thm_CollatzWork_YAH_edgeCertificate_cancellation.lean": "c318f1b05deffcbb6c31f8eb891b2f19dde1776f1fa8d3411073173afe21ab33",
+    "Theorems/Thm_CollatzWork_floorPower_mul.lean": "22e078820898fb96540f5de712293b22cb568d18b5b9705709f570e8f30a30ec",
+    "Theorems/Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence.lean": "3710ef4e99737b5de78e03fea18b088adf717f32cb6f916b96309dd29e0563eb",
+    "Theorems/Thm_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.lean": "00e60e961dd69790b37fb2ea46488aa563a4e84bc3182429cb65e79644f1d9e2",
+    "Theorems/Thm_CollatzWork_YAH_weightedGapSum_pos.lean": "c3633a77912acbdc642f5ac9e6ceb25236bc0db40529eb0d1960e791b35b1022",
+    "Theorems/Thm_CollatzWork_YAH_edgeCertificate_canonically_embeddable.lean": "5216d033fd3c24d19fa38cedbda52e2f2def72b047966cc6299d37b47d5f8d6a",
+    "Theorems/Thm_CollatzWork_residueAncestor_normalized.lean": "1a1c01c330e684374e3d95f21e9b25331003e868505bcb42f6868c885abfea85",
+    "Theorems/Thm_CollatzWork_affineRecurrenceTelescope.lean": "2780dc1840e1db15e68c73873c04dc27af67178c2190765251acbc9a64d3e604",
+    "Theorems/Thm_CollatzWork_mechanical_large_bound.lean": "62e06a32dbe8899c0df2920d96d038c428785238f56e62d8570ac4985180dae9",
+    "Theorems/Thm_CollatzWork_mechanical_twelve_propagation.lean": "022191772bc9327b4fa86927167c260ccd6a66f077c8f28e45d616fe6f3dcd03",
+    "Theorems/Thm_CollatzWork_YAH_edgeCertificate_shape.lean": "d8eeb52601f67a1d17e24bc5e27182e63f5ce8ac754734430ccf576bf749f69c",
+    "Theorems/Thm_CollatzWork_firstContractionTime.lean": "715e83b744ee2041b6b4f8f8a59910393b611429db6d62853023cabc834cf7be",
+    "Theorems/Thm_CollatzWork_descentCriterion.lean": "e417ac13ac6f666c86e0f2cb59d61042ee9fe79de4a5284b2ef341a86b17b2e3",
+    "Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean": "4d00094e1220f67f44f9ce432c112ddd37cc0d4ec1b7ca3977aa9893402e6c1b",
+    "Theorems/Thm_CollatzWork_refinedParent_has_smaller_coalescence.lean": "59ad73eafd6d7d91209193ad3bf26e3a53e534a37bae6d354837c2eea0cde850",
+    "Theorems/Thm_CollatzWork_twoBurst_converges_of_smaller.lean": "29bcb1f9634548bb9480d55955e0a5377988b44a93faa862ee3a268291e55bb6",
+    "Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.lean": "4e6464dbf4f71eac5a3f0f07947b310b2a4d4916247048279e79d5b9ddac95e8",
+    "Theorems/Thm_CollatzWork_noInfiniteExpandingAffineBlocks.lean": "ace9f3abfe6d6458ca2510580e66234f7fb5c14059ecd5b457d05f56b753960d",
+    "Theorems/Thm_CollatzWork_residueAncestor.lean": "fd5012480aa6c7657a22aa9bf2d8703ce4f65262344ceb3dfb363d91d2a98f75",
+    "Theorems/Thm_BlindCollatz_AlternatingGrowth_ordinary_five.lean": "41e8eead6c81fda88f9ab8e5f9a6e984a9bd3d4a998e25acdccc7babf61ccbb4",
+    "Theorems/Thm_CollatzWork_YAH_ffPumpWord_canonical.lean": "3071a18daa4cbe05bdaff03f8031e1901c2972f31d4de43eb73e68c58fe80cbf",
+    "Theorems/Thm_CollatzWork_equalSlopeSmaller.lean": "2c4b02b4584fd87fd4d9eddf706510c7684907d18326ff0ee1d579d8ebd7364f",
+    "Theorems/Thm_BlindCollatz_AlternatingGrowth_odd_exponents_one_two.lean": "9edc0406741074e08b54688a95d283646f16974875632cd73e421cfacc571bc6",
+    "Theorems/Thm_CollatzWork_YAH_unlabelledRows_semantic.lean": "0f65c1ec648be290f6756340cf220dcad0af966a384ecfca2b72f6387f056cad",
+    "Theorems/Thm_CollatzWork_prefixReturnNumericalBound.lean": "27993f28a60f43c1ecd8929f4bf3c8b5ee1557381d14fe84567627845fc67b46",
+    "Theorems/Thm_CollatzWork_Disproof_twoPumpSyzygy.lean": "2f2c019b3c84f21731f10f17d281b4459299d31852ef0243e0967affbdb087a9",
+    "Theorems/Thm_CollatzWork_Disproof_noNonresonantContentGain.lean": "9f2eb94c3d86f15d763616803ed17d598e5606ecfd7a42275dcae9794e1066e3",
+    "Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.lean": "0f626407e25aed725ea4dd2ecfb57f6a6cfa8d3184007db804bae895d815507f",
+    "Theorems/Thm_CollatzWork_orbitAffine.lean": "eba71f894202d3d48523a28f734e8bbb9a49a6bb4218a40d9c782d2762cda36c",
+    "Theorems/Thm_CollatzWork_mersenne_prefix_nondecreasing.lean": "9bf91210f00b767140ec0697e58380eb04384f1006ca68a2e2c8da87ba6d0fd0",
+    "Theorems/Thm_CollatzWork_Disproof_secondRotatedDeterminantCoefficients.lean": "d429925f009dac4a47924a9e77a0f3b26c5ac410377a396904bb540ff1c263be",
+    "Theorems/Thm_CollatzWork_refinedParent_iter.lean": "3823ed47eb46883090d3d5d77c06fac5af7f45fc48b00a73d0b3bca4fad37c02",
+    "Theorems/Thm_CollatzWork_excursionChain_terminal_descent.lean": "1916599c1062bf47594ea23cc12fe15702c0c0124ebe800caf0c56911d68c63c",
+    "Theorems/Thm_CollatzWork_firstContractionThirdGap.lean": "dc3dd2e7dde7e8aa229646b2a7b0e7be86384ae2579a585c2702f188992e0b54",
+    "Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_shape.lean": "602ee9938f778f0e3655abd435cc167473a2f45ad7b5c6feb3cf28f7a7838a36",
+    "Theorems/Thm_CollatzWork_blockNumerator12_exact_bound.lean": "9d2b84b696c3eedbf9ac24aa7e1f6d39019e5babed22f3617f50842a8151b4d4",
+    "Theorems/Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean": "748258bb5a7029c28a6641f152fe5f67b20a5f28102ced3bc5495294cc85dde3",
+    "Theorems/Thm_CollatzWork_noInfinitePositiveRecurrence.lean": "2ead158937d31d9d5192647f4d6c3f1958dcc63377bbd7ae90fa27d505253426",
+    "Theorems/Thm_CollatzWork_universalMechanicalQuarterCertificate.lean": "46a7d48bcd50aca1863322815ae0bddb1bbc0dadc4383475177d1edae1068003",
+    "Theorems/Thm_CollatzWork_rootDescentBurst.lean": "e5cb2085d8b963e882ffe959b4f4410307a2b72bcd544a7d5dcb02c330f27128",
+    "Theorems/Thm_CollatzWork_twoBurst_power_margin.lean": "d2016b21ec7c2603141850217c865cfa1c5c8906c60a87ae0f6264d4c72b625c",
+    "Theorems/Thm_CollatzWork_twoBurstDescent.lean": "20e82bf1480dc063c6290cdbf4d83a1727bb90283c4d71be843e3b8363baaecd",
+    "Theorems/Thm_CollatzWork_converges_shortcutIter_iff.lean": "3b545a03cf0f2095e4c22a8a75eeae160c1147872254f5a1801640eafec71438",
+    "Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean": "fb02b239510af3fa384938425ecb1fddbde6b8218d0080abf8725ffbb76a69fb",
+    "Theorems/Thm_CollatzWork_refinedParent_converges_of_smaller.lean": "a3a0b7f1751fbd60ec98b3ee800d9754220221107486687c56ebed865d339e30",
+    "Theorems/Thm_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.lean": "01bec8d3867e8ca38d50ada96f0643e479d87f45624edad366b962d28c8d6509",
+    "Theorems/Thm_CollatzWork_shortcutIter_OOE.lean": "224a0160756c6177e1215a1abb27dc8bb8a43e9ee04d97a084a5776d4ce51a2d",
+    "Theorems/Thm_CollatzWork_shiftedEnvelope_compose.lean": "b472af4bd56430070ee64bd4af22f9de4183d29142089ecf204e4a6acb94edab",
+    "Theorems/Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.lean": "4aa717325a9e3a6d3803da8d084d00a4bc683179eb088ee2dc8528e96147ed80",
+    "Theorems/Thm_CollatzWork_residueAncestor_tail92.lean": "728527c5886db71eb50489c31f8ada426885fa5d8cf1ca85566c66e7fb463ed0",
+    "Theorems/Thm_CollatzWork_affineRepetitionBound.lean": "288309c0e106c427723caf7df49645db90f3f800da54e93aebe6c3e96603780f",
+    "Theorems/Thm_CollatzWork_parityPrefix_dvd_sub_of_le.lean": "0c4c588353a5bbc026efa5411a9df4c5fdde8f889fff1941fdea79b545751da1",
+    "Theorems/Thm_CollatzWork_residueAncestor_refinedTail.lean": "5841b023f82014cd53d9b247739ea615dd5052ebc7fc966dc8bcf431eb64bf50",
+    "Theorems/Thm_CollatzWork_refinedChild_iter.lean": "cee92b2e85ca58af628a155d3633be66f87f35ccd2c4f7121022b38148940ded",
+    "Theorems/Thm_CollatzWork_finiteRepetitionBound.lean": "738b1fae5fbd446d7712ff0fe51a41d699ec89295dcb3a7fb34df646da67138c",
+    "Solutions/Sol_CollatzWork_mechanical_twelve_propagation.lean": "82dd20a64d2956e6ff767d61e753dccae581427f21d906a195d7561fe8beaaec",
+    "Solutions/Sol_CollatzWork_YAH_weightedGapSum_pos.lean": "87d86edf3e8c28fb5eb73fd583f7cb1b774fab0614cd406fe58bc5a03854e1c6",
+    "Solutions/Sol_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean": "c95fab146faafbd4626717b0f522dbd28e22c489a916062fb0b22af54b0d5d2c",
+    "Solutions/Sol_CollatzWork_excursionChain_terminal_descent.lean": "dc4752e911199abd4c8fc8038bb9894f895e7d8cdc5532bea153b292d89be348",
+    "Solutions/Sol_CollatzWork_prefixSeparation.lean": "826001892392b4094718bc8588c3b7304cbac50b7350c5237ef561fbfecebca6",
+    "Solutions/Sol_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.lean": "9e06b559f215593ed77d977a6bb48462d752da45e19e749d026675948feed163",
+    "Solutions/Sol_CollatzWork_YAH_edgeCertificate_shape.lean": "3f0a97068e6c4ee3e974a2dc272b0c43bd50686f70865adb39e8c31570bc0f8e",
+    "Solutions/Sol_CollatzWork_fixedRatioDivisibility.lean": "c9a7f94815b67f24a79bc06c865beaa0b51b3012dfedde9c0def334aa9bb975d",
+    "Solutions/Sol_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.lean": "772de61cc041d5e3f03a8d518a123488c4098fe38a4cc54a6736a2a8aecb058a",
+    "Solutions/Sol_CollatzWork_Disproof_quotientDegreesVanish.lean": "cc493cdaf75f92d63366b29587407eb939375e6e217937312c6365e11d22efd0",
+    "Solutions/Sol_CollatzWork_YAH_yah13_forces_ff_negative.lean": "fcd2f4ad55391113f11d386390479f6776572bd22de8c0e4458996491fb0cbb5",
+    "Solutions/Sol_BlindCollatz_descent_iff_convergence.lean": "52eaafde2422fc410459daf5e331f370ba4de62fa83b0d29f403333604303beb",
+    "Solutions/Sol_CollatzWork_YAH_twoState_rule_equations.lean": "71e415a5deb091496d42f2104534c80a76694b2ab565cb48a0509a9e601d2a2b",
+    "Solutions/Sol_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.lean": "726fade575957d3d09fce3cc6a73fc0fd61363e2348e48f7818f87d700362b95",
+    "Solutions/Sol_CollatzWork_rootDescent_converges_of_smaller.lean": "bfa75563c9b21c389bb631b0c23e542787443d482cde8ee7825d16d0c04b046f",
+    "Solutions/Sol_CollatzWork_YAH_unlabelledRows_semantic.lean": "54ef285153a65be19ccd5824bfbe8f9d92c72163dcec298958553df8cef1e1b7",
+    "Solutions/Sol_CollatzWork_twoBurstDescent.lean": "36a29e8d2de1e4897b015b5d31b8e8f2fcc8541dd5e787a71afb4a25cac7cd0d",
+    "Solutions/Sol_CollatzWork_Disproof_noNonresonantContentGain.lean": "e2badb68ebf9ca088500a2b74aa8330aab67eb2ba52d00c2848e411450ad09a9",
+    "Solutions/Sol_CollatzWork_mechanicalEnvelope.lean": "995a148deee0e05b898ab2de5eceddb92526beedff00916cc3fbb1eafe68236a",
+    "Solutions/Sol_CollatzWork_prefixReturnBernoulli.lean": "1f201b6df3260c599b4e5fbe4a1f50072f0aad2be93eae6460047eb7208485c0",
+    "Solutions/Sol_CollatzWork_mechanicalCoarseBound.lean": "5e08378decec648c40aba555737afe0edb0e16c3ba08008e86897fe25f353a2d",
+    "Solutions/Sol_CollatzWork_mechanical_twelve_identity.lean": "42d0ed80cc3943cd5ef9c421d88b5480aedbe35fecd7277689b3383f90a476a0",
+    "Solutions/Sol_CollatzWork_YAH_symbolCertificate_shape.lean": "15e8e6db5bc8018951d417aa25aaae35f38eb1057fd1ecd952813af355a7bbeb",
+    "Solutions/Sol_CollatzWork_residueAncestor_factor_unit.lean": "6ce897f5a29e1b57f479eea0e0a2161629b5fed08a87f0ecc8816a471cd2f9f9",
+    "Solutions/Sol_CollatzWork_residueAncestor_tail38.lean": "7a13331fd4a2a35359f80c502e883ce4434705f9875448ac0de5dee7759d4714",
+    "Solutions/Sol_CollatzWork_residueAncestor_tail92.lean": "9fe14ba53db5d71ae22897f5a1bbb0b83f6008f05a1360bc00a976299c875dc7",
+    "Solutions/Sol_CollatzWork_YAH_unlabelledCertificate_shape.lean": "ce974c1511740fcf467bf8e7e11ac28153d930e3322d0841d8309af1ec491408",
+    "Solutions/Sol_CollatzWork_YAH_edgeCertificate_canonically_embeddable.lean": "52bf64d07c11fbbb9f11b2c3aa95a53e39ccc07ee8473753289c746be3710e65",
+    "Solutions/Sol_CollatzWork_rootDescent.lean": "7b8f9504c22acdcd83705aed88c46b5dfc802b5cdef6799aa2fe9f0307f62bc8",
+    "Solutions/Sol_CollatzWork_mechanical_fifteen_failure.lean": "dd0721929a3b1bf1f056522103083d951c8c644cbcd2a3b5db15558ed81d65d5",
+    "Solutions/Sol_CollatzWork_refinedMersenneChild_coalesces.lean": "11442d064db6e31cb16a6f1bd89c2cc2525e1d20b571af4c0cf405e00668fdfb",
+    "Solutions/Sol_CollatzWork_finiteRepetitionBound.lean": "1f93bfd97b0fb7890c3f501bd0e52975b401edeaa7502d6354cc87c7f4c68627",
+    "Solutions/Sol_CollatzWork_rootDescentAncestor.lean": "1cca12c651a7bf0b54908e3a957b1962506772604e673e0bcd245a9d390296c9",
+    "Solutions/Sol_CollatzWork_Disproof_twoPumpSyzygy.lean": "b4a0321e37a620e3b93d9413f6917a5e5e1d1eab6fe805376a5d5a8d7e34ebd6",
+    "Solutions/Sol_CollatzWork_smallerCoalescenceCriterion.lean": "3c3d000a19c7bf814415642cb637bb75efccdf9d5950fd17daa24463c448ce36",
+    "Solutions/Sol_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean": "d0df362768ac74811dcffc81314e2f21b35e1e40d106c8f80077cbcea71cbfa1",
+    "Solutions/Sol_CollatzWork_noInfinitePositiveRecurrence.lean": "be15bcaab24a33e4daef3957e2bbd912f58252e5d85591b36bc693858452354b",
+    "Solutions/Sol_CollatzWork_twoBurst_converges_of_smaller.lean": "a681a6bb4270e317c820b9f99130c3ace9f301de6715c67a370a2986ebf53b76",
+    "Solutions/Sol_CollatzWork_prefixCollision.lean": "62ce0a80a887b81ec1d1d792753058d4a12404753d5750a70acde1bbe238771c",
+    "Solutions/Sol_BlindCollatz_AlternatingGrowth_odd_exponents_one_two.lean": "728e3afe3232e4ec3268c4c3dc95fb9f8484d5cf7a63461370c36532be097272",
+    "Solutions/Sol_CollatzWork_YAH_unlabelledRows_legal.lean": "586f4850beb90ccc0b19944d0c991b2e3cd4f61ca5f6b604c5ec607f11738650",
+    "Solutions/Sol_CollatzWork_equalSlopeSmaller.lean": "e97d867e8fe32f119935aa2ffb786c196d06d1daa0c3c6860eab03631d3738fb",
+    "Solutions/Sol_CollatzWork_affineRepetitionBound.lean": "cc8fabf2a7c0737f70b4d4cfd0ce08616242d4f3e42be069c20e22fb0ad4889d",
+    "Solutions/Sol_CollatzWork_floorPower_mul.lean": "59ab2141bde88a1f07c9e7f8b3e59c19d8af9e5e9cd57ff7601dc5acb334f84c",
+    "Solutions/Sol_CollatzWork_residueAncestor_refinedTail.lean": "e9f642a382812e7ea134c877a3a908d8551eeca7f425cbe335f2f5e07b115eb6",
+    "Solutions/Sol_CollatzWork_affineRecurrenceTelescope.lean": "1f6edecf34eb2fc5d65369862cf92122ceb6642e4d82ae160bf1646d2dc24894",
+    "Solutions/Sol_CollatzWork_firstContraction_quarter_of_certificate.lean": "4052cf2c6fa90c939e068b26f087bb446774e14e4ef2a45fc5c461a7c6cdd7e6",
+    "Solutions/Sol_CollatzWork_Disproof_twoPumpCoefficientDependencies.lean": "ecbf4485ffd3249a56b7f57e7b0146d3fe3707fd1026ed16a4d6c3b5be029007",
+    "Solutions/Sol_CollatzWork_rootDescentBurst.lean": "771d9f2aa4d438c75bc47b84a2f0a7d39390d3154c22068ac5a5473e8e122af5",
+    "Solutions/Sol_CollatzWork_refinedChild_iter.lean": "741ff0ba5198c12d5cf3adfa4b000aefaa676c0986c4c6c645aa357cd44dde56",
+    "Solutions/Sol_CollatzWork_affineQuarterCertificate.lean": "1154a0402949b8d9e50ce184ee2aeedf64ff2510861c36c4f7938a7f4b716a5b",
+    "Solutions/Sol_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean": "469e6720d6639d79f55e7879065c047e0a9d9e121c8427520987d847f1ab5e9a",
+    "Solutions/Sol_CollatzWork_finitePalette_path_obstruction.lean": "1c1dfd34a496f278e3dc0eae4c6237c9ca0bed0bd6f8b4a88f35c3d0379d83bf",
+    "Solutions/Sol_CollatzWork_residueAncestor_normalized.lean": "754834822bd4763be5f90042a4895700fc565af0ff96277c40136a82a7f1328c",
+    "Solutions/Sol_CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean": "3b36bf7f6292a9f9835261fa3361ee786e98f83d4ab8c644bda51279d0de3c0f",
+    "Solutions/Sol_CollatzWork_YAH_symbolCertificate_cancellation.lean": "bec213493792c9d9a2fadd35792d6f9bbef3f64acd531c09505a7deb73ef752b",
+    "Solutions/Sol_CollatzWork_Disproof_firstRotatedDeterminantCoefficients.lean": "413a5fa18e4fa86c03a0c8e24589631057e903a743116b821d910b203e1647e6",
+    "Solutions/Sol_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.lean": "840e82ecf2c18ad2677caa4f8a6fefe2ad7a2f8413ed08ec44ec723f9bc0138f",
+    "Solutions/Sol_CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean": "fab7bfa46700406c51333728337fadfb9df96dfccc50a57f3357ed402a7300c5",
+    "Solutions/Sol_CollatzWork_excursionChain_converges_of_smaller.lean": "752fa2fbdaef66208a8095e5ee9c89ee1d25e7bd931362bf74378869bc615652",
+    "Solutions/Sol_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.lean": "94dce2ff134cd66a6898eae192246670dab17068cf11286f5d60eb03a5041d51",
+    "Solutions/Sol_CollatzWork_residueAncestor_prefix_one.lean": "650a01803a83557ab821ce09345f2c9d644fe865ce06c0656eea4bc07000391d",
+    "Solutions/Sol_CollatzWork_Disproof_secondRotatedDeterminantCoefficients.lean": "7ebc0c8a3f397d79b335951eb936384969ee9c8240f84aa22eeb4ac75aee7e6b",
+    "Solutions/Sol_CollatzWork_universalMechanicalQuarterCertificate.lean": "c350f6a70f363a41df9ba2db26bfbc38bd0d3211be93fcf645f94648155a4737",
+    "Solutions/Sol_BlindCollatz_RepetitionBound_telescope.lean": "1f6edecf34eb2fc5d65369862cf92122ceb6642e4d82ae160bf1646d2dc24894",
+    "Solutions/Sol_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean": "0ad1b03a6e8ce701e0aa0ccc425e905891ba468a9eebb616a1cb4ea333968bc1",
+    "Solutions/Sol_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.lean": "6bb5725872bebddb86aea7ddf13087ba7c9ad541d386cb3d935fc5bc1578ef8e",
+    "Solutions/Sol_CollatzWork_twoBurst_power_margin.lean": "5841e39f82957a4d5cd18b7da2de201836d58ac6936b407dfc874d2c08a1654d",
+    "Solutions/Sol_CollatzWork_Disproof_twoPumpConstantObstructionVanishes.lean": "3ee702a0a2e5d9f7fc99222917dab980399ad940a8a735b9582a559d7e99f69d",
+    "Solutions/Sol_CollatzWork_refinedParent_converges_of_smaller.lean": "6217c4b89401cc319ec3ea4e4a50e740349d9fcd1e6d078877198ec928bd2f9f",
+    "Solutions/Sol_BlindCollatz_RepetitionBound_affine_repetition_bound.lean": "7fc95fe080a063b2439523898f607b8bed1a0daeb272fef6a1a01173ead39aa6",
+    "Solutions/Sol_CollatzWork_YAH_unlabelledCertificate_cancellation.lean": "a59201298785d8e4479f92d6e22ae561aee28cd9dadf66d2cf66fc08e224d4f0",
+    "Solutions/Sol_CollatzWork_refinedParent_converges_iff_child.lean": "2155066f33e68c9598fbf48840304809dc9d186ff462fb9be93fb1163d07d912",
+    "Solutions/Sol_CollatzWork_mersenne_prefix_nondecreasing.lean": "4596363df071d87b1d592630cf1a0a867087d9b8ba825c0ba4800c2cc1e62cea",
+    "Solutions/Sol_CollatzWork_equalSlopeWitness.lean": "4f9dab1ce16ec4137519f16f13a8677adbfbe5281cdb6136bdbd4f8f4f70aafd",
+    "Solutions/Sol_CollatzWork_noInfiniteExpandingAffineBlocks.lean": "1b5dc3555715403d36a30ccf038cf61da0361f562a0637a1c421f6d421218e33",
+    "Solutions/Sol_CollatzWork_shiftedEnvelope_compose.lean": "3218eebe54937975991f6f05bdf09e2a12700d0da2934f1ddfbe1948eed8a33e",
+    "Solutions/Sol_CollatzWork_refinedParent_has_smaller_coalescence.lean": "4eccd574384def7262834f7ee34097fbeae7e10527b61a28b116032e0e862046",
+    "Solutions/Sol_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.lean": "dee761d34d3f4791700ea6b310497ff9ff2b74766544b441d3f6001819906052",
+    "Solutions/Sol_CollatzWork_terminalEnvelope_compose.lean": "fe74b0aca572abf4ef11aae95e4e2c5b4c780c9e602954dd17315cf56e27c7ab",
+    "Solutions/Sol_CollatzWork_oddRun.lean": "55b0b317a9f4a4818adb26b254532bfe54239de84b6f2f7280e538062f65e629",
+    "Solutions/Sol_CollatzWork_refinedChild_arithmetic.lean": "bd07b38b0ddf80649c2b734ba822a946de057d7f06c5361fded5966a220478b8",
+    "Solutions/Sol_CollatzWork_finitePaletteObstruction.lean": "235adaeaec3f9fd8ae75dfbdfa2363e69b381098a0d8659a1931839a20605ea1",
+    "Solutions/Sol_CollatzWork_orbitAffine.lean": "9b687fab5ab1cb86b6b6d478053502680b63b3cb91471b97676b0fc95e1980f4",
+    "Solutions/Sol_CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean": "95057ef82f348cc66304a943a8b82dd5638271849e1e5584294dc520b7337412",
+    "Solutions/Sol_CollatzWork_mechanical_large_bound.lean": "aec3cee1fa58834f48b84767efb9e5a8c66b7ea37b1e10f6491ae98f8fefeb96",
+    "Solutions/Sol_CollatzWork_parityPrefix_dvd_sub_of_le.lean": "55f7c4ea60e513a18b3fc8a50d27ebbb851c956ac9000a6d999f744fd97f18ac",
+    "Solutions/Sol_CollatzWork_excursionChainEnvelope.lean": "f17b8be2c6f924a18d3678661c9967f1252d8f256a803a01cdeb7f1662671508",
+    "Solutions/Sol_CollatzWork_firstContractionTime.lean": "04320b744a10c9dfc5cef909b15e86726199d49bae6750fd18e1ac676c845cb6",
+    "Solutions/Sol_BlindCollatz_AlternatingGrowth_ordinary_five.lean": "89346555a120b1903455ea35695f1ad309e7ccd6f5a6803c9ff02d4c4acfafb1",
+    "Solutions/Sol_CollatzWork_firstContractionThirdGap.lean": "9e8bbf75701893357451e859e50614c8a52f5c1d6bc3a0334b544f1d693c58af",
+    "Solutions/Sol_CollatzWork_shortcutIter_OOE.lean": "d881e78c9863310fc7bdfb1ed3c2efa24c8ad3cb098adb19e268784b9271c095",
+    "Solutions/Sol_CollatzWork_firstContractionQuarterGap.lean": "38dfbc3e0530e1595cca74d73b7cc14b38386e6c4419ab2e9a2a876e08e4a5fa",
+    "Solutions/Sol_CollatzWork_allPositiveConverge_of_smallerCoalescence.lean": "cd6290fddde48da644a30d3c8d5f53a3ce734eccfd3a8399fce3b23b484f1cdd",
+    "Solutions/Sol_CollatzWork_descentCriterion.lean": "b981ed3baa036fe6249bfdef78b575e273132053c15ef166c83881d2b53f2598",
+    "Solutions/Sol_CollatzWork_residueAncestor_tail65.lean": "6be72ec72c6d0f975c17dfa129a4ad01209b843e59034acad54dc029f7129027",
+    "Solutions/Sol_CollatzWork_refinedParent_iter.lean": "3d6506ce66c3a0458123a78c8489c119af2f1328d15514bce1baa60fa1cf3a9b",
+    "Solutions/Sol_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.lean": "40a8dba2634aa5cdb6f5e48efa79c44341361e0c0ec632140f09b516fffeb889",
+    "Solutions/Sol_BlindCollatz_RepetitionBound_alternating_repetition_bound.lean": "5aefd3fb4d9f9810fbc0f5f1a1dd6ef710d7bbd2f6a519be897854bfe2f69a55",
+    "Solutions/Sol_CollatzWork_residueAncestor_tail173.lean": "aa7a45f00c9b601183768932327b2b9f161cd8f92de7a7b1892769c1e24e06af",
+    "Solutions/Sol_CollatzWork_residueAncestor.lean": "d4f4243d4209ce92698746d477c4decb5beeb6111114e0e1f0fea08edc270a65",
+    "Solutions/Sol_CollatzWork_converges_shortcutIter_iff.lean": "8409b9ab399c5993185c5733d0dd1c6bdd574c26d40db5a3eb4495b46774b292",
+    "Solutions/Sol_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.lean": "9a65190f8d4cf8b7d6af25b7cc80e6de2ae290dcdccb5731436f897006a83230",
+    "Solutions/Sol_CollatzWork_residueAncestor_tail11.lean": "863145085cd266265e0244fc331b4df6eeecbbd081116cc85d881c24ff311473",
+    "Solutions/Sol_CollatzWork_blockNumerator12_exact_bound.lean": "8d1935525dd538de60f73f1c7b1fef6f84d6e051d37d0b8a4af82a7b1294dbf8",
+    "Solutions/Sol_CollatzWork_YAH_ffPumpWord_canonical.lean": "ff0c2168519d44231e29cec465359a525b0a3163d426f9b9b1532fc9e017ed52",
+    "Solutions/Sol_CollatzWork_prefixReturnNumericalBound.lean": "e519bb4f371d0f70468a7d39e0adfd9e90f2ad11017adfaccc7a9497039e7bdb",
+    "Solutions/Sol_CollatzWork_residueAncestor_of_divisibility.lean": "d926f96ee07a7a41d6ea8e0b2be998fc10878e311e57f9a8f69d5032e4b10468",
+    "Solutions/Sol_CollatzWork_residueAncestor_prefix_two.lean": "f81a3563507e4c0e7d0074d3f9f397cb2670b684b152254d3b076dfbbc024227",
+    "Solutions/Sol_CollatzWork_converges_iff_of_coalesces.lean": "74eabf9821c36824569ac254bd41b9509e7466be396b024b6851a35c8e0e2650",
+    "Solutions/Sol_CollatzWork_YAH_edgeCertificate_cancellation.lean": "ae5ff031fc6909bbe6587d26a52095f09a1fdd03aa317427d85a88391ff6b8ff",
+    "Solutions/Sol_CollatzWork_excursionBudgetDescent.lean": "ca27394739dfa9fcb2eb1cd0b19f78dc13b846ef4f4ffb50d8faeec7575f97a3",
+    "Solutions/Sol_CollatzWork_compatibleProduct_mod_four.lean": "d26f36fb94d03ae7156cca6df0c73f908c401713f1f4e35a718716f8ad58a7f7",
+    "evidence/local-validation.json": "658064f4d7edc3721aa77d033a0a391e54a8ccd0468f7af28bf96ac9efefbad5",
+    "payloads/CollatzWork_twoBurst_converges_of_smaller.theorem.json": "0f292813804ba85bd4687277120aaf332bb2febc59f9c98e1876d8447e261640",
+    "payloads/CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.theorem.json": "d67191f1aa34e5e2c377d819df1f69c5a4f590ef622f15ee03b6080a694b277c",
+    "payloads/BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.theorem.json": "7e764b41ac20bfcf9221d9b72fb677b0dbfa71066ee2db7229ae59adac0d3cfc",
+    "payloads/CollatzWork_YAH_unlabelledCertificate_shape.theorem.json": "aac566ee17937797380589c328fcdaeab344749aa289dc3ed501cde459fbc5a7",
+    "payloads/CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.theorem.json": "2f43bb5af10030c2102e0724439ac1660edc130ba4aa92165b146919e1c49084",
+    "payloads/CollatzWork_converges_shortcutIter_iff.theorem.json": "3097fe9df16e16408396bdb9f6221523bc1c69e32a26ca45c7d8f2b2c9b3cf02",
+    "payloads/CollatzWork_Disproof_PolynomialRatchet.definition.json": "801c5d7453de31d48d95f13052eec0b4d4b08ca3fd93e9e620f9c1ddd3d3debf",
+    "payloads/CollatzWork_YAH_ffPumpWord_canonical.theorem.json": "dda9b2d93acad1baa603798b9d99a4a44b5030685f952c85d3010955dd9120ed",
+    "payloads/CollatzWork_YAH_twoState_rule_equations.theorem.json": "8abe80ecb84b38dff932bca3e4f2c54a7d237d26912350614f734f53aaa6e7f2",
+    "payloads/CollatzWork_fixedRatioDivisibility.theorem.json": "0fbaa3254aad68fdc85d38e089644ebc287a64e118e12ca394b4022f02e8982d",
+    "payloads/CollatzWork_refinedParent_converges_of_smaller.theorem.json": "c01b1df606a8dd6755b65a416932de3c778fbbd8032841c10ef7112b944ee7b4",
+    "payloads/CollatzWork_rootDescentBurst.theorem.json": "6e8b332ceeb55a361bc586acae316ad589834dde606c18850d4d54a10ce4a87c",
+    "payloads/CollatzWork_firstContractionTime.theorem.json": "528ac5369ca4a9ece69943490c766bee1e6540c64b7b3e9f3066d13315306853",
+    "payloads/CollatzWork_blockNumerator12_exact_bound.theorem.json": "a74b733732a65832b06ca60a88e2be87a29c40d517e0f16223db0a6375c7aff3",
+    "payloads/CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.theorem.json": "f50d7e554f3d777f5ec90e5519fc03335c0debdbc5841a0352afb014a2eb04c2",
+    "payloads/CollatzWork_rootDescent_converges_of_smaller.theorem.json": "167c2f7dc5a6730836a79a5a7b6204060fdac98e70e1236a12b72e72457b24c8",
+    "payloads/CollatzWork_mechanical_twelve_identity.theorem.json": "87f25e0f19dccd05ddc7c7391a3440d278e539b55b30ceed054f677647b8e978",
+    "payloads/CollatzWork_prefixReturnBernoulli.theorem.json": "234a40cedadfc8eeb117ea35811a7f67d99a90b056092646e166bd1aa20bf03d",
+    "payloads/CollatzWork_YAHFiniteObstructionStatement.definition.json": "a2335bc8b8a75a8432f5629b5bd50048ef7dd269f9f4d387acd8476ca397cb52",
+    "payloads/CollatzWork_excursionChain_converges_of_smaller.theorem.json": "995218134b613d06daa504edd2b0e843f36059e9a66979b183d7d546e73c899f",
+    "payloads/CollatzWork_mersenne_prefix_nondecreasing.theorem.json": "cf38f1696fb31835d928aa44fcf7d9e98e6ca751bfa394ddae88ceb7139de714",
+    "payloads/CollatzWork_Disproof_secondRotatedDeterminantCoefficients.theorem.json": "796d89931031955512c5ab31ef9ceea5b8235aa4d7fe7ce2b97a5bee48f0cd72",
+    "payloads/CollatzWork_excursionChain_terminal_descent.theorem.json": "274d794eb2cc4e0e2d335ae44dc427c2351ae4a6b8ced90566ddbb05a2e651f4",
+    "payloads/CollatzWork_compatibleProduct_mod_four.theorem.json": "573ea74680fb50da6b3ca25704f6353ee09d950ede71a65374af2282a18e0523",
+    "payloads/CollatzWork_prefixCollision.theorem.json": "2815c42ab90383fcb547d9a84c7f6663f1a02148a792558a507a3d01d5714fa6",
+    "payloads/CollatzWork_prefixSeparation.theorem.json": "600e9990e1b45f76a0d31fb1fdec10d30f0506f8e19d7b16a1e9a2ed65c465cf",
+    "payloads/CollatzWork_Disproof_twoPumpCoefficientDependencies.theorem.json": "07857857d9e289ad2383541fecc88b91d2c6d7138447d35dd833430de0e34a9f",
+    "payloads/CollatzWork_InverseWordBoundaryStatement.definition.json": "217364576a3450dbf6a8cabe460eb0b91f191f1c25a534f9cac38da2aae41cfd",
+    "payloads/CollatzWork_affineRepetitionBound.theorem.json": "9e1423edc39bd6ecd2d3afdd2f1f85f67864fb05b29ca98a661d95f678361b64",
+    "payloads/CollatzWork_RootDescentStatement.definition.json": "5d3fe001b9e08b458033726000a1b3a0de53801c608a1d044d3bc449e0047a70",
+    "payloads/CollatzWork_equalSlopeSmaller.theorem.json": "71785ceb1aa633db27d49cb940048b4edd8372e3abe6b84c18b92b66558814db",
+    "payloads/CollatzWork_smallerCoalescenceCriterion.theorem.json": "3487f77b9ab8cd67087fa105f47e5daf7c24a5db1972717cb190d4158c7d46bd",
+    "payloads/CollatzWork_mechanical_fifteen_failure.theorem.json": "04ef3b9c33979966c60716b45c9b838482fded09e610474dd08a248a78dfd243",
+    "payloads/CollatzWork_finitePalette_path_obstruction.theorem.json": "c7e997406d1561c8b3a7c1cd5ade0cbff7b596874ec10eb50aefee4009a84157",
+    "payloads/CollatzWork_Disproof_quotientDegreesVanish.theorem.json": "8de448aa3abeb851c86d241949a47b1151b8c0e6527677e56ce58ae0517f0ea6",
+    "payloads/CollatzWork_residueAncestor.theorem.json": "7431eda7a3093db52d64bc38bc218d380cd36619af15147c747441453f50c00e",
+    "payloads/CollatzWork_allPositiveConverge_of_smallerCoalescence.theorem.json": "cd2df9cc1715ae18e98a06e932d67d65bbae39096536cf9f8b06bf25f425868f",
+    "payloads/CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.theorem.json": "a82e0921c01457ac7c7d82feb7eaccfac99c76cc104874243d0044c8a82ced26",
+    "payloads/CollatzWork_orbitAffine.theorem.json": "bc6cde511a12cee1d052520090691a38f9e1588a05f4315a10e6a5218b954b1b",
+    "payloads/CollatzWork_residueAncestor_tail11.theorem.json": "927b37e20e0d27e474effcf32de239675bdefa54a3b5ac038697b7b97c89c63e",
+    "payloads/CollatzWork_mechanical_twelve_propagation.theorem.json": "4843604ef9255442c247afa101b141496073487cfc2a0d43dc3da88c9696de35",
+    "payloads/CollatzWork_affineRecurrenceTelescope.theorem.json": "758fa65a9dd461009f247a74c24ecadb2fd0ce4ce4fe1f75ac443151c30e6336",
+    "payloads/CollatzWork_Disproof_firstRotatedDeterminantCoefficients.theorem.json": "273aeb570645e5bfb3a2c04b7bc5ca16826b4e1831d9f72340f7adfb56bfba29",
+    "payloads/CollatzWork_mechanicalCoarseBound.theorem.json": "2a8213eab4e00ff3b2bbe479e03c99ab0bd8ae38653da206fd9dcf294b0b9dc4",
+    "payloads/CollatzWork_excursionChainEnvelope.theorem.json": "6f26e1ad69580ffffac62eae5ddd3b660bd741f4939507ea2284e8cb12a623a3",
+    "payloads/CollatzWork_refinedParent_converges_iff_child.theorem.json": "4d008c0458642b7914552f9599105d5441ffc0b0de941ba0d132016d628156ca",
+    "payloads/CollatzWork_YAH_edgeCertificate_canonically_embeddable.theorem.json": "033749534ed369bf3f143e03dc7c212518570f3fed3ff0317dd975687bccac37",
+    "payloads/CollatzWork_ExcursionBudgetStatement.definition.json": "7f906252346c87229df8859e1941224c8e93f5a2c417ee809f0d67bf10c4da2e",
+    "payloads/CollatzWork_YAHFiniteObstruction.definition.json": "68b4c4e489d055eace37f507d1ffd6176eb40db86dff62c3a217b32e27a148da",
+    "payloads/CollatzWork_residueAncestor_tail65.theorem.json": "85469fb7ed9dc90e26248e252f6ff1b08a5f49a0f015e98b08713c70f75a67d8",
+    "payloads/CollatzWork_refinedParent_has_smaller_coalescence.theorem.json": "bdb4f724ebfc179527386b37da95b8ce89a5e782dcb01cad5dfafd4da22abf0d",
+    "payloads/CollatzWork_PrefixCollisionStatement.definition.json": "899b10376fbbc7c8f9c227b65acf3155c353c745eb7f966ab9d59bdc528a5192",
+    "payloads/CollatzWork_RefinedMersenneChild.definition.json": "db57f66c85cc06835a31b5ad0b64313e2ee789f2e6bf38724c5a0cb45c6b8fa0",
+    "payloads/CollatzWork_floorPower_mul.theorem.json": "08d08299fd4165ca771605146ab8decd4b713b7556d15d021a9efcaf1e71c57e",
+    "payloads/CollatzWork_Disproof_noNonresonantContentGain.theorem.json": "3ea94eacf986862d0563ad7c6fc82a6d3b6e9599a57cdbbefc191b6c975d941c",
+    "payloads/BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.theorem.json": "40c9b8473d9589fee360bcbe9fb0ad0f37153575837fa8b217586ad818b94834",
+    "payloads/CollatzWork_residueAncestor_tail92.theorem.json": "f9e21f60cb8da16d036414d046f9eec1b42a4dddd38fe52995b84b31667e3fff",
+    "payloads/CollatzWork_Disproof_BranchingCenter.definition.json": "befc2b5568b967f3cbd670ef1a45dcad5d669777c6db9e5ac12b21364fba50fe",
+    "payloads/CollatzWork_descentCriterion.theorem.json": "c254947c441fb61b8ed66c9b7792d9567f176afb33c86db7b81a010da58558ce",
+    "payloads/CollatzWork_firstContractionQuarterGap.theorem.json": "34173c65ef1816b8af11df9ac2f1c57dc31c66d91b9416153589a911fd212caf",
+    "payloads/BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.theorem.json": "a790458558e2150790e6ba396f1f75810f97ed49d85d61988c403895b2a09ea9",
+    "payloads/CollatzWork_residueAncestor_prefix_one.theorem.json": "d902f282b7a83137feca7652976119273b449b6e74d7e1f8e7caf358b0547766",
+    "payloads/CollatzWork_twoBurst_power_margin.theorem.json": "222a7be554620abb20278697f70a9738cfd47996bef2dd886bdc133ee86977ec",
+    "payloads/CollatzWork_shiftedEnvelope_compose.theorem.json": "a0aa56ce98c681958c4baeda1d744c5950135954a8a0a2c59dca3279af2ef171",
+    "payloads/CollatzWork_FirstContractionStatement.definition.json": "7c40b8e05223bf3bd6589eeded06c6caa76f430dd92e4ce3ff7d9aa7d0a44ac2",
+    "payloads/BlindCollatz_RepetitionBound_telescope.theorem.json": "5412fe536dd70cd5ffad0d3a51819de1ba773526a4352687919791e695c1cea7",
+    "payloads/CollatzWork_refinedChild_iter.theorem.json": "a94ba7ae5d33b01f35ef52a15f37261eefc699990f32040230b4f6c7f92096f5",
+    "payloads/CollatzWork_residueAncestor_tail38.theorem.json": "6e814802b38dffd025fe96b2ea00c744e7c2a7460e353d374b1406e62c9d548d",
+    "payloads/CollatzWork_firstContractionThirdGap.theorem.json": "5bf8a2d4f785ba9ba70345253b11f0583a0d986212b8a2e86fc147622bedaa70",
+    "payloads/CollatzWork_QuarterGapStatement.definition.json": "aa7c0e5204ed659d90a90cbd873aebd9316c69427ab4b2d024fc712d6746c4d1",
+    "payloads/CollatzWork_YAH_yah13_forces_ff_negative.theorem.json": "32ae5a941ec487152575a93eedb62f7cd9fb8ca3eebe6abd8f640f0616b2d271",
+    "payloads/CollatzWork_finiteRepetitionBound.theorem.json": "db1b2b5185f1f7169b4927bb56fd793d58cacbb824557cc9383e28cffa775d8f",
+    "payloads/CollatzWork_Disproof_twoPowerOddNormalFormUnique.theorem.json": "fffeec28d48f6e6b357ad07b1cf98ba777c9d61001b938686ab5712a14fcbf66",
+    "payloads/ArchiveDescent.definition.json": "0ada64528281537f6de53648f9b756c6ba451180636a415355f820c997d12bfa",
+    "payloads/CollatzWork_YAH_unlabelledRows_semantic.theorem.json": "8c4a52c354e0a79d8e490cbec608af87542f988e90c328fc19d0227816a7dc42",
+    "payloads/CollatzWork_mechanical_large_bound.theorem.json": "806a08f6f97e637bfe1a05b2d79115faf19f23e46eb6749f95c07775a57665f0",
+    "payloads/CollatzWork_residueAncestor_tail173.theorem.json": "beb384e9ca8d113d71aa0e0ce84baaa80b59027a9282cd180f7d2ab259da9d03",
+    "payloads/CollatzWork_finitePaletteObstruction.theorem.json": "d931391ae42d84f354845d04b4546cfb3095c90119f0f6a711b530b73d6a17a2",
+    "payloads/CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.theorem.json": "9cf19c206f682618eeb1bb311127aa558efa4ec16864494bab898783efebd8ff",
+    "payloads/CollatzWork_refinedMersenneChild_coalesces.theorem.json": "c0a249cdf91f2fa47268697dad24a5a72a0a58d19e0ddf628ef348481841c2fa",
+    "payloads/CollatzWork_residueAncestor_prefix_two.theorem.json": "19c6a463d74b3e169fc40d01abc5ac652d418798c24df1b5ffcdacf733958377",
+    "payloads/CollatzWork_equalSlopeWitness.theorem.json": "8069b5224fbe81a50b75d7b0d5b8c28c36137b0e654ce2b71aa35863bdd76bab",
+    "payloads/CollatzWork_noInfinitePositiveRecurrence.theorem.json": "8e5a161acdabf6aaa90e8d380e55b0bba19108774427220ec3dd420029b2f00c",
+    "payloads/CollatzWork_residueAncestor_of_divisibility.theorem.json": "57fa845251b50c8ee31329101ee930734376fadfca713cb87c58d18c917f2931",
+    "payloads/CollatzWork_refinedParent_iter.theorem.json": "7e651eca1fd09cc5a4d1e61edf8e502eee7544844ed5ea2a75fb8bafad93bafa",
+    "payloads/CollatzWork_AffineRepetitionStatement.definition.json": "e5b83bea34c83ce9d9184df67aaf7cebfbc172b422a76606fc214105cb91e583",
+    "payloads/CollatzWork_YAH_unlabelledRows_legal.theorem.json": "3d731cc52d0ef10c32d4cd7fc1ff773d6bff6de99f82c3f8d6b8c56c3f79b77b",
+    "payloads/CollatzWork_excursionBudgetDescent.theorem.json": "01fb6979a1bb89b13555a9bdb80ecd874d70aec49425985926159ce4f9da7d6f",
+    "payloads/BlindCollatz_AlternatingGrowth_odd_exponents_one_two.theorem.json": "82e13f380ea975315bb9d0e32e75555c0d998c09f54e64548c4e290fb4030992",
+    "payloads/CollatzWork_ResidueAncestorStatement.definition.json": "5f77dcdc0d5b8d827306247732b734a525685de0231bda136d4fba5504773b23",
+    "payloads/CollatzWork_YAH_symbolCertificate_shape.theorem.json": "c61156127c214aa3cb0bc2b96afdc85ea9fcc02edfb33832b690bdb880ff3df8",
+    "payloads/CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.theorem.json": "4201825d7cd67a11027f1c71fabadff5f2986dae860e2d7a3893f9ddf179694c",
+    "payloads/CollatzWork_affineQuarterCertificate.theorem.json": "0feebd9648372bfc1189315f58dc3c27c0a2a1e28a63f1959925a873bbbf1b39",
+    "payloads/CollatzWork_shortcutIter_OOE.theorem.json": "4b904a11ef5f5e6e03dd492e5f7febf9d0504cfa849737045fa92ce5deb790d1",
+    "payloads/CollatzWork_TwoBurstStatement.definition.json": "629894a3aea23565c6e119d4a7d14dbefc87915649497dff2fd96f1f8278e1da",
+    "payloads/BlindCollatz_RepetitionBound_affine_repetition_bound.theorem.json": "68b375fe9510154db3f944f5bb906b7e0c3020bb910bfcbc3938156820f4b1b1",
+    "payloads/CollatzWork_YAH_unlabelledCertificate_cancellation.theorem.json": "324ad8c3e882dc118df81fbb9b0d4ea42e35eef40a7d42dc49f98836fe71d012",
+    "payloads/ArchiveAlternatingGrowth.definition.json": "f82a7873bea09c63c081827c546ba56d52339cea430f1be26764f91394b0853e",
+    "payloads/CollatzWork_terminalEnvelope_compose.theorem.json": "ba0fc88422a6a3d6d3d0c7d228a8ee83539f814774874f6ca176207e782b4968",
+    "payloads/CollatzWork_YAH_edgeCertificate_cancellation.theorem.json": "2319b18825f39247465fa5b568b94aeb52f3fd5a4d4bf45a0944d52ec182d5d3",
+    "payloads/CollatzWork_YAH_edgeCertificate_shape.theorem.json": "293cdf824a5fd652929b3b1aec6f66223ac6d7c039eecf229e3bda2a1b0464ea",
+    "payloads/CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.theorem.json": "333ac83bde752d143100c7b474c5bcfba48a7d66e4878cb8b2c2e02a78ada2fc",
+    "payloads/CollatzWork_YAH_evalCoefficients_weightedCoefficient.theorem.json": "40e7e524f7a718d71e55a379f59edb441c634de39718a20c9a3cee178c08f509",
+    "payloads/CollatzWork_YAH_symbolCertificate_canonically_embeddable.theorem.json": "4978fbdd67386931a6efccbe5b6e811c46b78aaa47f97287c7e73a6bd536a83d",
+    "payloads/CollatzWork_FloorPower.definition.json": "e6c4fbb80ea0553442641400ceb059093904f80a2b42dbce163d11f1b12e8cdf",
+    "payloads/CollatzWork_noInfiniteExpandingAffineBlocks.theorem.json": "3e9642d43c8cbb5eabd1fe108757b8b3a93168595a4adfc9812777ab4025968d",
+    "payloads/BlindCollatz_AlternatingGrowth_ordinary_five.theorem.json": "9dd499eb518ceb2df95fef39e36d00875734aeb256185fdffda46774d3c904cb",
+    "payloads/CollatzWork_prefixReturnNumericalBound.theorem.json": "b0cd1d5dbbff14da5f092624b061c1fae0eee6233c81d6600668bdfe6b8cc39a",
+    "payloads/CollatzWork_ConvergenceStatement.definition.json": "7d8873ef854440a29968470ee57a585a73b3025e7fe649120409a074ab14b367",
+    "payloads/CollatzWork_residueAncestor_factor_unit.theorem.json": "3d45777d179fb66420c87347f9a081d70cf936b4cbd0c9ea7931cef43102101c",
+    "payloads/BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.theorem.json": "c05d75171e496924a12a6700835ab25e34f204408c51f5f2c9490d83a35e31c5",
+    "payloads/BlindCollatz_descent_iff_convergence.theorem.json": "df6e3390bdab1ec3df2b977da9174e83745d81f681bb56a3c4edc85e9b11a64d",
+    "payloads/CollatzWork_YAH_symbolCertificate_cancellation.theorem.json": "79b0f83223c06ed66be2ae3242f099915b5b4c437a4b163c3ef06ccf87e09c65",
+    "payloads/CollatzWork_converges_iff_of_coalesces.theorem.json": "035744fcaeeedc294b17b6654f2bb26f1d1bf88a6dbaca728dc5c3162e05900b",
+    "payloads/CollatzWork_refinedChild_arithmetic.theorem.json": "07e5f12a22aedeab2f33ac7413aaac1e57385504c5707225ce65b881b4360b76",
+    "payloads/CollatzWork_QuarterGapUniversalStatement.definition.json": "d9977e63a7c4b56bc3469800fdffcd71ad2043ccb0797b7cde6be400139c6727",
+    "payloads/CollatzWork_oddRun.theorem.json": "cd5b351379c8a0cbe6a186f602c2db594921343fe9dde4fc3695319dd061fb6c",
+    "payloads/BlindCollatz_RepetitionBound_alternating_repetition_bound.theorem.json": "76f0bc2ed4c37f95f83c5960a9fb6853e2f4ced221e832dd6d96fdedaac75d48",
+    "payloads/CollatzWork_twoBurstDescent.theorem.json": "f884f8bebb18d8e8715f422fb02dc2244dcad290c24129f39d1257ea030f8fc0",
+    "payloads/CollatzWork_Disproof_twoPumpConstantObstructionVanishes.theorem.json": "dd8574afe4425fad7d836204022ee1c6f3e633710121718225adc0d547e6bf49",
+    "payloads/CollatzWork_residueAncestor_refinedTail.theorem.json": "e4df10fd3c5062ce9e11eaca168e6b2774e7a4f3f6ce2c796652a080ff474da2",
+    "payloads/CollatzWork_parityPrefix_dvd_sub_of_le.theorem.json": "3317c45eeebe4c6a60616c818998f3060b1f58180e82e261b313c820d01f2587",
+    "payloads/CollatzWork_rootDescentAncestor.theorem.json": "da86fb7327b1e2aa8f7c5e9da53220543147d2070722fe62b93ee67be61e1b56",
+    "payloads/CollatzWork_mechanicalEnvelope.theorem.json": "43c2d9926f6c7c7188428e9f60a9ecb5e95b6c89ca7519cbb942d90f8b5bb2d4",
+    "payloads/CollatzWork_Disproof_FiniteResidueFirstIntegral.definition.json": "ddf551ffa78624c3bc5b667b81f169af4b50e5e301101438c81f792472988b61",
+    "payloads/CollatzWork_FinitePaletteObstructionStatement.definition.json": "db3872fe6a14aeb355d9e44995db7e9d57893efe1982d03f8fe82edb581ecfde",
+    "payloads/CollatzWork_universalMechanicalQuarterCertificate.theorem.json": "e08b77a6ab0a619ea3bd49aff580556f34afd23b60c82cd7b4cb6bb48d89faf0",
+    "payloads/CollatzWork_BlockArithmetic.definition.json": "e949d0698e25eee5b91ca86d1c4356c551aff8de45dc654c4ba026a695486a95",
+    "payloads/BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.theorem.json": "e4f6b0356a890c560ff4d636cee764f3390268f96132ce899109e602be24f21b",
+    "payloads/CollatzWork_rootDescent.theorem.json": "a85bce219ad316fe237ec6b15b29f2d584f05f48641c4ffc5de31e44ef7efc45",
+    "payloads/CollatzWork_Disproof_twoPumpSyzygy.theorem.json": "51af648caa66613a30a8deb5bd97b3fe87817c5780b8d761f1c98a81dc7ffbed",
+    "payloads/CollatzWork_residueAncestor_normalized.theorem.json": "e914eb5ef4a20e866a4783db051a59cc7ef8e20199b076f108629fb46f95322f",
+    "payloads/CollatzWork_YAH_weightedGapSum_pos.theorem.json": "8ca2c49b54fa377aa4c96f44980642c9a16c5622337d5a840290e69bf04370c7",
+    "payloads/CollatzWork_firstContraction_quarter_of_certificate.theorem.json": "a4d8c1d2a8c500ba07612ac36e7976bdca68241b76465dd396587a798792a6ea",
+    "payloads/CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.theorem.json": "b2bfcc70be932febafad8f19def0899c78f113c2091ae4869e76ee90e7d6ab0b"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "path": "EgyptianFractions.lean",
+    "exit_code": 0,
+    "output": "EgyptianFractions.sketch.jsonl"
+  },
+  {
+    "path": "EgyptianFractions/Baseline18.lean",
+    "exit_code": 0,
+    "output": "EgyptianFractions__Baseline18.sketch.jsonl"
+  },
+  {
+    "path": "EgyptianFractions/Certificate.lean",
+    "exit_code": 0,
+    "output": "EgyptianFractions__Certificate.sketch.jsonl"
+  }
+]

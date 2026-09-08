@@ -1,0 +1,464 @@
+[
+  {
+    "module": "Extension734",
+    "name": "no_new_triples",
+    "start_line": 9,
+    "end_line": 12,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "fullCardinal",
+    "start_line": 14,
+    "end_line": 15,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "fullDomain",
+    "start_line": 17,
+    "end_line": 17,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "full_domain_membership",
+    "start_line": 19,
+    "end_line": 23,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "full_domain_nodup",
+    "start_line": 25,
+    "end_line": 31,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "full_cardinal_domain",
+    "start_line": 33,
+    "end_line": 35,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "base_cardinal_congr",
+    "start_line": 37,
+    "end_line": 44,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "trim",
+    "start_line": 46,
+    "end_line": 46,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "liftTo",
+    "start_line": 47,
+    "end_line": 48,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "trim_cardinal",
+    "start_line": 50,
+    "end_line": 53,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "lift_cardinal",
+    "start_line": 55,
+    "end_line": 59,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "trim_admissible",
+    "start_line": 61,
+    "end_line": 69,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "lift_admissible",
+    "start_line": 71,
+    "end_line": 92,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "full_lift_733",
+    "start_line": 94,
+    "end_line": 96,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "full_lift_734",
+    "start_line": 98,
+    "end_line": 100,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "upper_full_733",
+    "start_line": 102,
+    "end_line": 109,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "upper_full_734",
+    "start_line": 111,
+    "end_line": 112,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "FullExactMaximum",
+    "start_line": 114,
+    "end_line": 116,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "exact_maximum_733_transfer",
+    "start_line": 118,
+    "end_line": 128,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "exact_maximum_734_transfer",
+    "start_line": 130,
+    "end_line": 140,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "numerical_733_from_731",
+    "start_line": 143,
+    "end_line": 145,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "numerical_734_from_731",
+    "start_line": 147,
+    "end_line": 149,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Extension734",
+    "name": "add734",
+    "start_line": 159,
+    "end_line": 159,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "erase734",
+    "start_line": 160,
+    "end_line": 160,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Extension734",
+    "name": "add734_base_cardinal",
+    "start_line": 162,
+    "end_line": 166,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "erase734_base_cardinal",
+    "start_line": 168,
+    "end_line": 172,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "erase734_admissible",
+    "start_line": 174,
+    "end_line": 187,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "add734_admissible",
+    "start_line": 189,
+    "end_line": 207,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "add734_cardinal",
+    "start_line": 209,
+    "end_line": 216,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "erase734_cardinal",
+    "start_line": 218,
+    "end_line": 220,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Extension734",
+    "name": "exact_maximum_734_from_733",
+    "start_line": 222,
+    "end_line": 230,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "KernelEndpoints734",
+    "name": "endpointCheck",
+    "start_line": 8,
+    "end_line": 9,
+    "classification": "definition_material"
+  },
+  {
+    "module": "KernelEndpoints734",
+    "name": "endpoint733_check",
+    "start_line": 11,
+    "end_line": 11,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelEndpoints734",
+    "name": "endpoint734_check",
+    "start_line": 12,
+    "end_line": 12,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelEndpoints734",
+    "name": "endpoint_impossible",
+    "start_line": 14,
+    "end_line": 26,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelEndpoints734",
+    "name": "no_new_triples",
+    "start_line": 28,
+    "end_line": 34,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "inGNat",
+    "start_line": 5,
+    "end_line": 6,
+    "classification": "definition_material"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "Expected",
+    "start_line": 8,
+    "end_line": 11,
+    "classification": "definition_material"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": null,
+    "start_line": 12,
+    "end_line": 14,
+    "classification": "definition_material"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "quotient",
+    "start_line": 16,
+    "end_line": 16,
+    "classification": "definition_material"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "third_eq_quotient",
+    "start_line": 18,
+    "end_line": 25,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "first_certificate",
+    "start_line": 27,
+    "end_line": 33,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "second_certificate",
+    "start_line": 35,
+    "end_line": 41,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "third_certificate",
+    "start_line": 43,
+    "end_line": 49,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "KernelIsolation",
+    "name": "isolated_nat",
+    "start_line": 51,
+    "end_line": 78,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Plateau302",
+    "name": "unit_fraction_equivalence",
+    "start_line": 24,
+    "end_line": 36,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "inGNat",
+    "start_line": 38,
+    "end_line": 39,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "isolated_nat",
+    "start_line": 41,
+    "end_line": 48,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "gadget",
+    "start_line": 50,
+    "end_line": 50,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "outside",
+    "start_line": 51,
+    "end_line": 51,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "cardinal",
+    "start_line": 53,
+    "end_line": 54,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "Admissible",
+    "start_line": 56,
+    "end_line": 58,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "replacement",
+    "start_line": 60,
+    "end_line": 61,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "replacement_bound",
+    "start_line": 63,
+    "end_line": 73,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "replacement_admissible",
+    "start_line": 75,
+    "end_line": 91,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Plateau302",
+    "name": "local_cardinal_bound",
+    "start_line": 93,
+    "end_line": 105,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "replacement_cardinal",
+    "start_line": 107,
+    "end_line": 121,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "Plateau302",
+    "name": "plateau_732",
+    "start_line": 123,
+    "end_line": 134,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "domain_membership",
+    "start_line": 141,
+    "end_line": 144,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "domain_nodup",
+    "start_line": 146,
+    "end_line": 154,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "cardinal_eq_domain_count",
+    "start_line": 156,
+    "end_line": 158,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "ExactMaximum",
+    "start_line": 160,
+    "end_line": 162,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "exact_maximum_transfer",
+    "start_line": 165,
+    "end_line": 175,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "RatAdmissible",
+    "start_line": 184,
+    "end_line": 187,
+    "classification": "definition_material"
+  },
+  {
+    "module": "Plateau302",
+    "name": "admissible_iff_rat",
+    "start_line": 189,
+    "end_line": 201,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "Plateau302",
+    "name": "rat_plateau_732",
+    "start_line": 203,
+    "end_line": 207,
+    "classification": "theorem_node"
+  }
+]

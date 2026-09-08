@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.excursionBudgetDescent",
+  "theorem_title": "Arbitrary finite actual-orbit envelope composition and conditional original-root descent",
+  "natural_language_statement": "For every finite list of actual shortcut-orbit segments, ExcursionChain requires a positive denominator for each segment and its shifted bound D_i*(endpoint+3)<=A_i*(start+3). Lean proves that their product envelope holds relative to the unchanged original root. For root>=3, an appended terminal strict bound E*endpoint<B*(prefix_endpoint+3) and the cumulative budget 2*(product(A_i)*B)<=product(D_i)*E imply endpoint<root. The convergence corollary additionally assumes convergence of every smaller positive input. The empty list is allowed, and no uniform bound on list length or segment lengths is assumed. Limitations: All local envelopes and the terminal repayment budget remain explicit premises. The six declarations establish the generic composition/descent core only: concrete OOEO inequalities, actual parity/CRT realization, exact valuation labels, selector identities, arbitrary infinite schedules, all-root coverage and universal convergence are not formalized by this core. Priority and external mathematical review are unestablished.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_ExcursionBudgetStatement\n\n\n",
+  "formal_statement": "theorem CollatzWork.excursionBudgetDescent : ExcursionBudgetDescentStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L61-L71"
+}

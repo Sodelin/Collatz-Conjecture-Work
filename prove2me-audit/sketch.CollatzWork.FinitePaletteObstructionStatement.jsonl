@@ -1,0 +1,15 @@
+{"end":{"col":21,"line":3,"offset":62},"kind":"command","start":{"col":0,"line":3,"offset":41},"syntaxKind":"Lean.Parser.Command.namespace"}
+{"end":{"col":33,"line":18,"offset":866},"kind":"command","start":{"col":0,"line":5,"offset":64},"syntaxKind":"Lean.Parser.Command.declaration"}
+{"end":{"col":15,"line":20,"offset":883},"kind":"command","start":{"col":0,"line":20,"offset":868},"syntaxKind":"Lean.Parser.Command.end"}
+{"end":{"col":0,"line":21,"offset":884},"kind":"command","start":{"col":0,"line":21,"offset":884},"syntaxKind":"Lean.Parser.Command.eoi"}
+{"declEnd":{"col":33,"line":18,"offset":866},"declStart":{"col":0,"line":5,"offset":64},"docstring":{"end":{"col":68,"line":11,"offset":511},"start":{"col":0,"line":5,"offset":64}},"kind":"decl","nameRange":{"end":{"col":37,"line":12,"offset":549},"start":{"col":4,"line":12,"offset":516}},"nameText":"FinitePaletteObstructionStatement","privateTok":null,"valKind":"simple","valStart":{"col":45,"line":12,"offset":557}}
+{"const":"CollatzWork.FinitePaletteObstructionStatement","end":{"col":37,"line":12,"offset":549},"kind":"ref","start":{"col":4,"line":12,"offset":516}}
+{"const":"Nat","end":{"col":19,"line":13,"offset":581},"kind":"ref","start":{"col":16,"line":13,"offset":578}}
+{"const":"Nat","end":{"col":29,"line":13,"offset":591},"kind":"ref","start":{"col":26,"line":13,"offset":588}}
+{"const":"Nat","end":{"col":35,"line":13,"offset":599},"kind":"ref","start":{"col":32,"line":13,"offset":596}}
+{"const":"Fin","end":{"col":45,"line":13,"offset":609},"kind":"ref","start":{"col":42,"line":13,"offset":606}}
+{"const":"Nat","end":{"col":53,"line":13,"offset":619},"kind":"ref","start":{"col":50,"line":13,"offset":616}}
+{"const":"Nat","end":{"col":59,"line":13,"offset":627},"kind":"ref","start":{"col":56,"line":13,"offset":624}}
+{"const":"Nat","end":{"col":19,"line":14,"offset":648},"kind":"ref","start":{"col":16,"line":14,"offset":645}}
+{"const":"Fin","end":{"col":25,"line":14,"offset":656},"kind":"ref","start":{"col":22,"line":14,"offset":653}}
+{"const":"CollatzWork.shortcutIter","end":{"col":21,"line":18,"offset":854},"kind":"ref","start":{"col":9,"line":18,"offset":842}}

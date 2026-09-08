@@ -1,0 +1,25 @@
+{
+  "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
+  "source_commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+  "source_branch": "main",
+  "main_commit": null,
+  "imports": [
+    "EgyptianFractions"
+  ],
+  "declaration_prefix": "EgyptianFractions",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "files": [
+    {
+      "path": "EgyptianFractions.lean",
+      "sha256": "a576bf70a0b0cb0610c3c60b9622e9720cdc2a270ab01aa7fb2cb28c4a08a88c"
+    },
+    {
+      "path": "EgyptianFractions/Baseline18.lean",
+      "sha256": "95f6a2758b799d7f8327237034e9a532739caee6eee3e1162c5ed5dac86e7bd8"
+    },
+    {
+      "path": "EgyptianFractions/Certificate.lean",
+      "sha256": "ef25ce4bde407a0f3cbcaf68e3bd0dda228352b05ea9ff833098779b2fc9139d"
+    }
+  ]
+}

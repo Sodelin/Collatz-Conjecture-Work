@@ -1,0 +1,11 @@
+{
+  "theorem_name": "BlindCollatz.descent_iff_convergence",
+  "theorem_title": "BlindCollatz.descent_iff_convergence",
+  "natural_language_statement": "Exact reduction only: proving either side would prove the conjecture.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveDescent\n\n\n",
+  "formal_statement": "theorem BlindCollatz.descent_iff_convergence : UniversalDescent \u2194 CollatzConjecture := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/Descent.lean#L70-L72"
+}

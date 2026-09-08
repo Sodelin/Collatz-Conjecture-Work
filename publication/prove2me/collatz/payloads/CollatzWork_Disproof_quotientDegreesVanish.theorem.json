@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.quotientDegreesVanish",
+  "theorem_title": "CollatzWork.Disproof.quotientDegreesVanish",
+  "natural_language_statement": "Degree telescoping leaves no nonconstant quotient: nonnegative quotient\ndegrees summing to zero are all zero.  The polynomial degree identities around\na state cycle produce exactly the premise of this theorem.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.quotientDegreesVanish\n    (degrees : List Nat)\n    (hSum : degrees.sum = 0) :\n    \u2200 g \u2208 degrees, g = 0 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L119-L136"
+}

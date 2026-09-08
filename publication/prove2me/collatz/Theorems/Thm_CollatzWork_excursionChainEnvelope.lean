@@ -1,0 +1,10 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_ExcursionBudgetStatement
+import Theorems.Thm_CollatzWork_shiftedEnvelope_compose
+
+
+
+theorem CollatzWork.excursionChainEnvelope : ExcursionChainEnvelopeStatement := by sorry
+

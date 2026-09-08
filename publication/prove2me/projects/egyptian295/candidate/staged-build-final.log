@@ -1,0 +1,6 @@
+⚠ [7/13] Replayed Theorems.Thm_EgyptianFractions_exists_minimum_of_representation
+warning: Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean:7:8: declaration uses `sorry`
+⚠ [8/13] Replayed Theorems.Thm_EgyptianFractions_exists_minimum18_le_35
+warning: Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean:9:8: declaration uses `sorry`
+✔ [12/13] Built Solutions.Sol_EgyptianFractions_exists_minimum18_le_35 (3.8s)
+Build completed successfully (13 jobs).

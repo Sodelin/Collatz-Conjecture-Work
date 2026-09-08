@@ -1,0 +1,22 @@
+[
+  {
+    "path": "lean/NewMathDiscovery.lean",
+    "exit_code": 0,
+    "output": "lean__NewMathDiscovery.sketch.jsonl"
+  },
+  {
+    "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+    "exit_code": 0,
+    "output": "lean__NewMathDiscovery__BlindnessRealization.sketch.jsonl"
+  },
+  {
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "exit_code": 0,
+    "output": "lean__NewMathDiscovery__LinearBlindness.sketch.jsonl"
+  },
+  {
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "exit_code": 0,
+    "output": "lean__NewMathDiscovery__RankedCoalescenceSound.sketch.jsonl"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.rootDescentAncestor",
+  "theorem_title": "Guarded actual-orbit ancestor identity",
+  "natural_language_statement": "For e,L,q,r in Nat with q>0 and 3^(L+1)*q=4*r+1, shortcutIter (e+L+2) (2^e*(2^L*q-1))=r. Limitations: This declaration alone makes no smaller-target, residue, or all-root coverage assertion. Classical inverse-word arithmetic.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_RootDescentStatement\nimport Theorems.Thm_CollatzWork_oddRun\n\n\n",
+  "formal_statement": "theorem CollatzWork.rootDescentAncestor : RootDescentAncestorStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L143-L154"
+}

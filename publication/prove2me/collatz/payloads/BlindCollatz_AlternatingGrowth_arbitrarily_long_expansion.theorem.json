@@ -1,0 +1,11 @@
+{
+  "theorem_name": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+  "theorem_title": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+  "natural_language_statement": "An arbitrarily long finite string of these expanding blocks exists in \u2115.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion (m : Nat) (hm : 0 < m) :\n    \u2203 n : Nat, goodBlocks m n \u2227 n < blocks m n := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L105-L109"
+}

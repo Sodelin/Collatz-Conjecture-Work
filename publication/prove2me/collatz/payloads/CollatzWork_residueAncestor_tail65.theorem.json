@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_tail65",
+  "theorem_title": "CollatzWork.residueAncestor_tail65",
+  "natural_language_statement": "The exact tail over `z = 65 mod 81`, including its affine certificate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_tail65 (a : Nat) :\n    0 < 432 * a + 344 \u2227\n    (432 * a + 344) % 27 = 20 \u2227\n    shortcutIter 4 (432 * a + 344) = 81 * a + 65 \u2227\n    3 * (432 * a + 344) + 8 = 16 * (81 * a + 65) \u2227\n    432 * a + 344 \u2264 64 * (81 * a + 65) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L35-L56"
+}

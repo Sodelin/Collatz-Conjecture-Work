@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.affineRecurrenceTelescope",
+  "theorem_title": "CollatzWork.affineRecurrenceTelescope",
+  "natural_language_statement": "Telescoping a finite multiplicative recurrence.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "formal_statement": "theorem CollatzWork.affineRecurrenceTelescope (a b : Nat) (y : Nat \u2192 Nat) (k : Nat)\n    (h : \u2200 i, i < k \u2192 b * y (i + 1) = a * y i) :\n    b ^ k * y k = a ^ k * y 0 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L5-L20"
+}

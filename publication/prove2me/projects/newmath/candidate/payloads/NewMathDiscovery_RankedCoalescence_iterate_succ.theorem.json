@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.RankedCoalescence.iterate_succ",
+  "theorem_title": "NewMathDiscovery.RankedCoalescence.iterate_succ",
+  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_RankedCoalescenceSound\n\n\n",
+  "formal_statement": "@[simp]\ntheorem NewMathDiscovery.RankedCoalescence.iterate_succ {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) (k : Nat) (x : \u03b1) :\n    iterate f (k + 1) x = f (iterate f k x) := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L14-L16"
+}

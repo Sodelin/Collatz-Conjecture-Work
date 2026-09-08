@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.residueAncestor_tail38",
+  "theorem_title": "CollatzWork.residueAncestor_tail38",
+  "natural_language_statement": "The exact tail over `z = 38 mod 81`, including its affine certificate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_tail38 (a : Nat) :\n    0 < 216 * a + 101 \u2227\n    (216 * a + 101) % 27 = 20 \u2227\n    shortcutIter 3 (216 * a + 101) = 81 * a + 38 \u2227\n    3 * (216 * a + 101) + 1 = 8 * (81 * a + 38) \u2227\n    216 * a + 101 \u2264 64 * (81 * a + 38) := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L15-L33"
+}

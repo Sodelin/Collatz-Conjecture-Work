@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lean/NewMathDiscovery.lean",
+    "extraction_path": "lean/NewMathDiscovery.lean",
+    "module": "NewMathDiscovery",
+    "sha256": "99c26ee96150e9d4cf41a4c521bf1093a5407747c855e0d0bc128bd9dde6fe1f"
+  },
+  {
+    "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+    "extraction_path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "sha256": "d341dbb8b7313afa14d0052b9b15914c716fb40760478c6ef226c0c39bccb3a6"
+  },
+  {
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "extraction_path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "sha256": "48cc77a854d9836f19d09e8a9a150ed8a77ae730ea87c36c06dcb5f23285e3bd"
+  },
+  {
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "extraction_path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "sha256": "2f6b8b6dc0ba491a17ed1c4b31a8c8ecf56d3f9ede3e91de595379a007e97eaf"
+  }
+]

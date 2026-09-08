@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
+  "theorem_title": "CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
+  "natural_language_statement": "The exact center-consistency equation admits no genuinely distinct\npositive labels: it forces `a = b = c`.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\nimport Theorems.Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid\n    (a b c : Nat)\n    (_ha : 0 < a) (hb : 0 < b) (hc : 0 < c)\n    (hEq : 2 ^ (b + c) + 3 * 2 ^ b =\n      2 ^ (a + b) + 3 * 2 ^ a) :\n    a = b \u2227 b = c := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean#L88-L113"
+}

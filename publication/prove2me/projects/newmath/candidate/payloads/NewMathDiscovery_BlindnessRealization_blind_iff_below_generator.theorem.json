@@ -1,0 +1,11 @@
+{
+  "theorem_name": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+  "theorem_title": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+  "natural_language_statement": "Exact realization theorem: the blind coalitions are precisely the subsets\nof at least one Boolean generator.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_BlindnessRealization\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.BlindnessRealization.blind_iff_below_generator {I J : Type} (F : J \u2192 I \u2192 Bool)\n    (S : I \u2192 Prop) :\n    Blind S (State.observe F) State.target \u2194\n      \u2203 j, \u2200 i, S i \u2192 F j i = true := by sorry\n\n",
+  "tags": [
+    "sodelin-newmath"
+  ],
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L36-L66"
+}

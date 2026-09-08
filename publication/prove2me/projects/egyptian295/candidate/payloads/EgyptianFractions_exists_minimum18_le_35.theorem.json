@@ -1,0 +1,11 @@
+{
+  "theorem_name": "EgyptianFractions.exists_minimum18_le_35",
+  "theorem_title": "EgyptianFractions.exists_minimum18_le_35",
+  "natural_language_statement": "The minimum length at N = 18 exists and is at most 35.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Baseline18\nimport Definitions.Def_EgyptianFractions_Certificate\nimport Theorems.Thm_EgyptianFractions_exists_minimum_of_representation\n\n\n",
+  "formal_statement": "theorem EgyptianFractions.exists_minimum18_le_35 :\n    \u2203 minimum, IsMinimumLength 18 minimum \u2227 minimum \u2264 35 := by sorry\n\n",
+  "tags": [
+    "sodelin-egyptian295"
+  ],
+  "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Baseline18.lean#L42-L47"
+}

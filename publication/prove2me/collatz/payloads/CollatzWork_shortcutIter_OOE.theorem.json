@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.shortcutIter_OOE",
+  "theorem_title": "CollatzWork.shortcutIter_OOE",
+  "natural_language_statement": "A complete odd, odd, even block on its exact residue class.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "formal_statement": "theorem CollatzWork.shortcutIter_OOE (z : Nat) :\n    shortcutIter 3 (8 * z + 3) = 9 * z + 4 := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L14-L30"
+}

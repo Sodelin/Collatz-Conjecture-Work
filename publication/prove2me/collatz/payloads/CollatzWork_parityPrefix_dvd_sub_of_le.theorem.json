@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.parityPrefix_dvd_sub_of_le",
+  "theorem_title": "CollatzWork.parityPrefix_dvd_sub_of_le",
+  "natural_language_statement": "Ordered subtraction retains its full integer meaning in this lemma.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\n\n\n",
+  "formal_statement": "theorem CollatzWork.parityPrefix_dvd_sub_of_le (k n m : Nat) (hnm : n \u2264 m)\n    (h : SameParityPrefix k n m) : 2 ^ k \u2223 m - n := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollision.lean#L34-L61"
+}

@@ -1,0 +1,66 @@
+info: sodelin_erdos302_staging: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✖ [0/30] Running job computation
+error: Definitions: some modules have bad imports
+error: Theorems: some modules have bad imports
+error: Solutions: some modules have bad imports
+✔ [2/30] Built Definitions.Def_KernelIsolation (5.2s)
+✔ [3/30] Built Definitions.Def_KernelEndpoints734 (5.4s)
+✔ [4/30] Built Definitions.Def_Plateau302 (5.4s)
+✔ [5/30] Built Definitions.Def_Extension734 (10s)
+✔ [7/30] Built Solutions.Sol_Erdos302Finite_replacement_cardinal (14s)
+⚠ [8/30] Built Theorems.Thm_Erdos302Finite_replacement_cardinal (14s)
+warning: Theorems/Thm_Erdos302Finite_replacement_cardinal.lean:98:8: declaration uses `sorry`
+✔ [9/30] Built Solutions.Sol_Erdos302Extension734_full_cardinal_domain (11s)
+✔ [10/30] Built Solutions.Sol_Erdos302Extension734_full_domain_nodup (15s)
+✖ [11/30] Building Solutions.Sol_Erdos302Extension734_lift_admissible (19s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/Solutions/Sol_Erdos302Extension734_lift_admissible.lean -o /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_Erdos302Extension734_lift_admissible.olean -i /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_Erdos302Extension734_lift_admissible.ilean -c /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_Erdos302Extension734_lift_admissible.c --setup /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_Erdos302Extension734_lift_admissible.setup.json --json
+error: Solutions/Sol_Erdos302Extension734_lift_admissible.lean:14:7: Unknown identifier `Erdos302KernelEndpoints734.no_new_triples`
+error: Lean exited with code 1
+✖ [12/30] Building Solutions.Sol_Erdos302Extension734_exact_maximum_734_from_733 (20s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.lean -o /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.olean -i /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.ilean -c /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.c --setup /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.setup.json --json
+error: Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.lean:14:7: Unknown identifier `Erdos302KernelEndpoints734.no_new_triples`
+error: Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.lean:28:5: Unknown identifier `cardinal_eq_domain_count`
+error: Solutions/Sol_Erdos302Extension734_exact_maximum_734_from_733.lean:27:69: unsolved goals
+S T : Nat → Bool
+h : ∀ (x : Nat), 0 < x → x ≤ 732 → S x = T x
+⊢ cardinal S = cardinal T
+error: Lean exited with code 1
+✔ [13/30] Built Solutions.Sol_Erdos302Extension734_full_domain_membership (9.8s)
+⚠ [14/30] Built Theorems.Thm_Erdos302Extension734_full_domain_membership (10s)
+warning: Theorems/Thm_Erdos302Extension734_full_domain_membership.lean:90:8: declaration uses `sorry`
+⚠ [15/30] Built Theorems.Thm_Erdos302Extension734_full_cardinal_domain (8.7s)
+warning: Theorems/Thm_Erdos302Extension734_full_cardinal_domain.lean:8:8: declaration uses `sorry`
+⚠ [16/30] Built Theorems.Thm_Erdos302Extension734_full_domain_nodup (14s)
+warning: Theorems/Thm_Erdos302Extension734_full_domain_nodup.lean:98:8: declaration uses `sorry`
+✖ [17/30] Building Theorems.Thm_Erdos302Extension734_lift_admissible (12s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/Theorems/Thm_Erdos302Extension734_lift_admissible.lean -o /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_Erdos302Extension734_lift_admissible.olean -i /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_Erdos302Extension734_lift_admissible.ilean -c /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_Erdos302Extension734_lift_admissible.c --setup /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_Erdos302Extension734_lift_admissible.setup.json --json
+error: Theorems/Thm_Erdos302Extension734_lift_admissible.lean:14:7: Unknown identifier `Erdos302KernelEndpoints734.no_new_triples`
+warning: Theorems/Thm_Erdos302Extension734_lift_admissible.lean:126:8: declaration uses `sorry`
+error: Lean exited with code 1
+✖ [18/30] Building Theorems.Thm_Erdos302Extension734_exact_maximum_734_from_733 (13s)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean -o /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.olean -i /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/lib/lean/Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.ilean -c /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.c --setup /workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit/staged/.lake/build/ir/Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.setup.json --json
+error: Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean:14:7: Unknown identifier `Erdos302KernelEndpoints734.no_new_triples`
+error: Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean:28:5: Unknown identifier `cardinal_eq_domain_count`
+error: Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean:27:69: unsolved goals
+S T : Nat → Bool
+h : ∀ (x : Nat), 0 < x → x ≤ 732 → S x = T x
+⊢ cardinal S = cardinal T
+warning: Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean:265:8: declaration uses `sorry`
+error: Lean exited with code 1
+⚠ [19/30] Built Theorems.Thm_Erdos302Kernel_isolated_nat (78s)
+warning: Theorems/Thm_Erdos302Kernel_isolated_nat.lean:57:8: declaration uses `sorry`
+✔ [20/30] Built Solutions.Sol_Erdos302Kernel_isolated_nat (79s)
+⚠ [21/30] Built Theorems.Thm_Erdos302Finite_replacement_admissible (2.1s)
+warning: Theorems/Thm_Erdos302Finite_replacement_admissible.lean:104:8: declaration uses `sorry`
+✔ [26/30] Built Solutions.Sol_Erdos302Finite_replacement_admissible (2.1s)
+⚠ [27/30] Built Theorems.Thm_Erdos302Finite_rat_plateau_732 (1.9s)
+warning: Theorems/Thm_Erdos302Finite_rat_plateau_732.lean:123:8: declaration uses `sorry`
+✔ [29/30] Built Solutions.Sol_Erdos302Finite_rat_plateau_732 (1.9s)
+Some required targets logged failures:
+- job computation
+- Solutions.Sol_Erdos302Extension734_lift_admissible
+- Solutions.Sol_Erdos302Extension734_exact_maximum_734_from_733
+- Theorems.Thm_Erdos302Extension734_lift_admissible
+- Theorems.Thm_Erdos302Extension734_exact_maximum_734_from_733
+error: build failed

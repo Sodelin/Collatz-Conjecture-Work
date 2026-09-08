@@ -1,0 +1,1 @@
+"∀ (S : Nat → Bool), Erdos302Finite.Admissible 732 S → Erdos302Finite.Admissible 731 (Erdos302Finite.replacement S)"

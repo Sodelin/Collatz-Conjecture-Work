@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.finitePaletteObstruction",
+  "theorem_title": "Finite-palette bounded-progress obstruction",
+  "natural_language_statement": "For any finite nonempty palette of Nat-valued functions each eventually nondecreasing, any selector assigning a palette member to each start, any positive uniform shortcut-time horizon H, and any start threshold, some positive start beyond that threshold has no strict selected-potential decrease within H actual shortcut steps. The selector is unrestricted. Limitations: Complete Nat-valued statement is Lean-checked. Ordered-codomain and eventually nondecreasing polynomial consequences are prose. Does not exclude unbounded return times, infinitely many potentials, state-dependent proof methods outside the class, or YAH matrix interpretations. External novelty unconfirmed.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_FinitePaletteObstructionStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_finitePalette_path_obstruction\nimport Theorems.Thm_CollatzWork_mersenne_prefix_nondecreasing\n\n\n",
+  "formal_statement": "theorem CollatzWork.finitePaletteObstruction : FinitePaletteObstructionStatement := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstruction.lean#L109-L164"
+}

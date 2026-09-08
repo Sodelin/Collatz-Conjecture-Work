@@ -1,0 +1,26 @@
+ℹ [2/7] Built KernelEndpoints734 (3.8s)
+info: KernelEndpoints734.lean:36:0: 'Erdos302KernelEndpoints734.endpoint733_check' does not depend on any axioms
+info: KernelEndpoints734.lean:37:0: 'Erdos302KernelEndpoints734.endpoint734_check' does not depend on any axioms
+info: KernelEndpoints734.lean:38:0: 'Erdos302KernelEndpoints734.no_new_triples' depends on axioms: [propext, Quot.sound]
+ℹ [3/7] Built KernelIsolation (24s)
+info: KernelIsolation.lean:80:0: 'Erdos302Kernel.isolated_nat' depends on axioms: [propext, Quot.sound]
+info: KernelIsolation.lean:81:0: 'Erdos302Kernel.third_eq_quotient' depends on axioms: [propext, Quot.sound]
+info: KernelIsolation.lean:82:0: 'Erdos302Kernel.first_certificate' does not depend on any axioms
+info: KernelIsolation.lean:83:0: 'Erdos302Kernel.second_certificate' does not depend on any axioms
+info: KernelIsolation.lean:84:0: 'Erdos302Kernel.third_certificate' does not depend on any axioms
+ℹ [4/7] Built Plateau302 (2.8s)
+info: Plateau302.lean:136:0: 'Erdos302Finite.plateau_732' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:177:0: 'Erdos302Finite.domain_membership' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:178:0: 'Erdos302Finite.domain_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:179:0: 'Erdos302Finite.exact_maximum_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:209:0: 'Erdos302Finite.unit_fraction_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:210:0: 'Erdos302Finite.admissible_iff_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Plateau302.lean:211:0: 'Erdos302Finite.rat_plateau_732' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6/7] Built Extension734 (1.9s)
+info: Extension734.lean:151:0: 'Erdos302Extension734.no_new_triples' depends on axioms: [propext, Quot.sound]
+info: Extension734.lean:152:0: 'Erdos302Extension734.full_domain_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Extension734.lean:153:0: 'Erdos302Extension734.exact_maximum_733_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Extension734.lean:154:0: 'Erdos302Extension734.exact_maximum_734_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Extension734.lean:155:0: 'Erdos302Extension734.numerical_734_from_731' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Extension734.lean:232:0: 'Erdos302Extension734.exact_maximum_734_from_733' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (7 jobs).

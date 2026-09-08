@@ -1,0 +1,11 @@
+{
+  "theorem_name": "CollatzWork.firstContraction_quarter_of_certificate",
+  "theorem_title": "CollatzWork.firstContraction_quarter_of_certificate",
+  "natural_language_statement": "A numerical certificate at an odd count is sound for every corresponding\nactual first contraction, with no trajectory sampling.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\nimport Theorems.Thm_CollatzWork_orbitAffine\nimport Theorems.Thm_CollatzWork_mechanicalEnvelope\nimport Theorems.Thm_CollatzWork_affineQuarterCertificate\n\n\n",
+  "formal_statement": "theorem CollatzWork.firstContraction_quarter_of_certificate {n k d : Nat}\n    (hn : 0 < n) (hfirst : FirstCoefficientContraction n k)\n    (hreturn : shortcutIter k n = n + d)\n    (hcert : 4 * mechanicalMax (orbitOddCount n k) \u2264\n      orbitOddCount n k * 2 ^ coefficientCrossingExponent (orbitOddCount n k)) :\n    4 * d < orbitOddCount n k := by sorry\n\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGap.lean#L94-L116"
+}

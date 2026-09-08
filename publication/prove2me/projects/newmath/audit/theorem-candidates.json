@@ -1,0 +1,154 @@
+[
+  {
+    "name": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+    "startLine": 36,
+    "endLine": 66,
+    "proof_lines": 25
+  },
+  {
+    "name": "NewMathDiscovery.BlindnessRealization.blind_downward",
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+    "startLine": 68,
+    "endLine": 76,
+    "proof_lines": 3
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 56,
+    "endLine": 75,
+    "proof_lines": 14
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 84,
+    "endLine": 110,
+    "proof_lines": 18
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 112,
+    "endLine": 119,
+    "proof_lines": 2
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 156,
+    "endLine": 158,
+    "proof_lines": 1
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 160,
+    "endLine": 163,
+    "proof_lines": 2
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.witness_in_sensor_kernel",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 165,
+    "endLine": 168,
+    "proof_lines": 2
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 170,
+    "endLine": 173,
+    "proof_lines": 2
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 175,
+    "endLine": 182,
+    "proof_lines": 3
+  },
+  {
+    "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+    "module": "NewMathDiscovery.LinearBlindness",
+    "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+    "startLine": 184,
+    "endLine": 194,
+    "proof_lines": 3
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.iterate_zero",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 10,
+    "endLine": 12,
+    "proof_lines": 0
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.iterate_succ",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 14,
+    "endLine": 16,
+    "proof_lines": 0
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.iterate_add",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 18,
+    "endLine": 24,
+    "proof_lines": 4
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.iterate_fixed",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 26,
+    "endLine": 33,
+    "proof_lines": 4
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.reaches_iterate",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 39,
+    "endLine": 47,
+    "proof_lines": 5
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.coalescence_transfer",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 49,
+    "endLine": 61,
+    "proof_lines": 7
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.ranked_coalescence_sound",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 63,
+    "endLine": 93,
+    "proof_lines": 8
+  },
+  {
+    "name": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+    "startLine": 95,
+    "endLine": 120,
+    "proof_lines": 6
+  }
+]

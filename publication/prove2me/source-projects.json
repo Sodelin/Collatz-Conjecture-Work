@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "repository": "Sodelin/oldest-conjecture-",
+      "source_url": "https://github.com/Sodelin/oldest-conjecture-",
+      "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
+      "source_branch": "main",
+      "main_commit": null,
+      "toolchain": "leanprover/lean4:v4.33.1",
+      "module_count": 4,
+      "modules": [
+        {
+          "path": "Extension734.lean",
+          "extraction_path": "Extension734.lean",
+          "module": "Extension734",
+          "sha256": "f3e3a3bd24f5114424eaa30ad8b4444da42f1763c7ecd2a2d0cff4f6adaf063e"
+        },
+        {
+          "path": "KernelEndpoints734.lean",
+          "extraction_path": "KernelEndpoints734.lean",
+          "module": "KernelEndpoints734",
+          "sha256": "b6f5213f08431773d7e5c8f5ec253e332d6a645c401c4ddf814a534da87b71bf"
+        },
+        {
+          "path": "KernelIsolation.lean",
+          "extraction_path": "KernelIsolation.lean",
+          "module": "KernelIsolation",
+          "sha256": "bbef0699242a37f8f170abb5f88c33fb696312c4ae6db4e281847b7349eb7bb4"
+        },
+        {
+          "path": "Plateau302.lean",
+          "extraction_path": "Plateau302.lean",
+          "module": "Plateau302",
+          "sha256": "a512d8eb18ae785def432daadf9790da2f83baf76ce8b6df4be0cddb3fad3241"
+        }
+      ],
+      "graph_declarations": 82,
+      "source_theorem_candidates": 46,
+      "audited_declarations": 82,
+      "nonstandard_axiom_declarations": 0,
+      "audit_directory": "projects/erdos302/audit",
+      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "local_build": "passed",
+      "sketch_extraction": "passed",
+      "source_modified": false,
+      "runtime_note": "Exact official Lean4.33.1 with source-provided executable-path discovery launcher; no proof or kernel changes.",
+      "scope": "Finite Erdos302 transfer relations at732/733/734; source does not formalize the externally reported upper bound f731=606.",
+      "candidate_directory": "projects/erdos302/candidate",
+      "candidate_theorem_nodes": 11,
+      "candidate_definition_bundles": 4,
+      "exact_payload_build": "passed",
+      "type_comparison": "11_of_11_exact_matches"
+    },
+    {
+      "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
+      "source_url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295",
+      "source_commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+      "source_branch": "main",
+      "main_commit": null,
+      "toolchain": "leanprover/lean4:v4.33.1",
+      "module_count": 3,
+      "modules": [
+        {
+          "path": "EgyptianFractions.lean",
+          "extraction_path": "EgyptianFractions.lean",
+          "module": "EgyptianFractions",
+          "sha256": "a576bf70a0b0cb0610c3c60b9622e9720cdc2a270ab01aa7fb2cb28c4a08a88c"
+        },
+        {
+          "path": "EgyptianFractions/Baseline18.lean",
+          "extraction_path": "EgyptianFractions/Baseline18.lean",
+          "module": "EgyptianFractions.Baseline18",
+          "sha256": "95f6a2758b799d7f8327237034e9a532739caee6eee3e1162c5ed5dac86e7bd8"
+        },
+        {
+          "path": "EgyptianFractions/Certificate.lean",
+          "extraction_path": "EgyptianFractions/Certificate.lean",
+          "module": "EgyptianFractions.Certificate",
+          "sha256": "ef25ce4bde407a0f3cbcaf68e3bd0dda228352b05ea9ff833098779b2fc9139d"
+        }
+      ],
+      "graph_declarations": 17,
+      "source_theorem_candidates": 11,
+      "audited_declarations": 17,
+      "nonstandard_axiom_declarations": 0,
+      "audit_directory": "projects/egyptian295/audit",
+      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "local_build": "passed",
+      "sketch_extraction": "passed",
+      "source_modified": false,
+      "runtime_note": "Exact official Lean4.33.1 with source-provided executable-path discovery launcher; no proof or kernel changes.",
+      "scope": "Reproduction of known35-term unit-fraction representation with denominators at least18; no novel solution claimed.",
+      "candidate_directory": "projects/egyptian295/candidate",
+      "candidate_theorem_nodes": 2,
+      "candidate_definition_bundles": 2,
+      "exact_payload_build": "passed",
+      "type_comparison": "2_of_2_exact_matches"
+    },
+    {
+      "repository": "Sodelin/new-math-discovery",
+      "source_url": "https://github.com/Sodelin/new-math-discovery",
+      "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+      "source_branch": "codex/freeze-blindness-realization",
+      "main_commit": "e0312af07d774b300525dbcf4380c317dce5eaac",
+      "toolchain": "leanprover/lean4:v4.33.1",
+      "module_count": 4,
+      "modules": [
+        {
+          "path": "lean/NewMathDiscovery.lean",
+          "extraction_path": "lean/NewMathDiscovery.lean",
+          "module": "NewMathDiscovery",
+          "sha256": "99c26ee96150e9d4cf41a4c521bf1093a5407747c855e0d0bc128bd9dde6fe1f"
+        },
+        {
+          "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+          "extraction_path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+          "module": "NewMathDiscovery.BlindnessRealization",
+          "sha256": "d341dbb8b7313afa14d0052b9b15914c716fb40760478c6ef226c0c39bccb3a6"
+        },
+        {
+          "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+          "extraction_path": "lean/NewMathDiscovery/LinearBlindness.lean",
+          "module": "NewMathDiscovery.LinearBlindness",
+          "sha256": "48cc77a854d9836f19d09e8a9a150ed8a77ae730ea87c36c06dcb5f23285e3bd"
+        },
+        {
+          "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+          "extraction_path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+          "module": "NewMathDiscovery.RankedCoalescenceSound",
+          "sha256": "2f6b8b6dc0ba491a17ed1c4b31a8c8ecf56d3f9ede3e91de595379a007e97eaf"
+        }
+      ],
+      "graph_declarations": 94,
+      "source_theorem_candidates": 19,
+      "audited_declarations": 94,
+      "nonstandard_axiom_declarations": 0,
+      "audit_directory": "projects/newmath/audit",
+      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "local_build": "passed",
+      "sketch_extraction": "passed",
+      "source_modified": false,
+      "runtime_note": "Exact official Lean4.33.1 with source-provided executable-path discovery launcher; no proof or kernel changes.",
+      "scope": "Includes unmerged supplemental blindness modules from PR2; ordinary umbrella omitted them, so both were built explicitly. No universal Collatz certificate or novelty claim.",
+      "candidate_directory": "projects/newmath/candidate",
+      "candidate_theorem_nodes": 11,
+      "candidate_definition_bundles": 3,
+      "exact_payload_build": "passed",
+      "type_comparison": "11_of_11_exact_matches"
+    }
+  ],
+  "collatz": {
+    "repository": "Sodelin/Collatz-Conjecture-Work",
+    "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+    "module_count": 38,
+    "audit_owner": "collatz_import_package",
+    "scope": "Auxiliary formal results only; universal Collatz unresolved; proof scope tracked claim by claim.",
+    "local_build": "passed",
+    "candidate_directory": "collatz",
+    "candidate_theorem_nodes": 113,
+    "candidate_definition_bundles": 22,
+    "candidate_text_build": "passed",
+    "candidate_type_comparison": "passed",
+    "metadata_status": "pending",
+    "platform_environment_pin": "pending",
+    "remote_status": "not_submitted"
+  },
+  "other_research_not_lean": [
+    {
+      "repository": "Sodelin/Erdos-Work",
+      "reason": "Main and prior-art branch contain JSON/Python certificates but no Lean project."
+    },
+    {
+      "repository": "Sodelin/ai-math-discovery",
+      "reason": "Main and phase-erasure-spectrum branch contain manuscripts/Python but no Lean project."
+    },
+    {
+      "repository": "Sodelin/math-paper-denied",
+      "reason": "Empty repository."
+    }
+  ],
+  "publication_status": {
+    "remote_status": "not_submitted",
+    "signed_in_account": "Sodelin",
+    "api_key_status": "creation_rejected_by_automatic_approval_review; explicit authorization required",
+    "source_files_compiled": 49,
+    "candidate_theorem_nodes": 137,
+    "candidate_definition_bundles": 31,
+    "academic_metadata_review": "pending",
+    "live_environment_pin": "pending",
+    "server_verification": "not_started"
+  }
+}

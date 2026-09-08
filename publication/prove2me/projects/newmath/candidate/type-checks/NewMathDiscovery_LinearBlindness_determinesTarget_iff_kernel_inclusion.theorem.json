@@ -1,0 +1,1 @@
+"∀ {Index State Value : Type} (system : NewMathDiscovery.LinearBlindness.System Index State Value)\n  (selected : Index → Prop),\n  NewMathDiscovery.LinearBlindness.DeterminesTarget system selected ↔\n    ∀ (direction : State),\n      NewMathDiscovery.LinearBlindness.InObservationKernel system selected direction →\n        system.target direction = system.zeroValue"

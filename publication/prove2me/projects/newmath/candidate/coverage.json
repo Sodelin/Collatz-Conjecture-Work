@@ -1,0 +1,261 @@
+[
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "State",
+    "start_line": 5,
+    "end_line": 9,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "target",
+    "start_line": 13,
+    "end_line": 15,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "observe",
+    "start_line": 17,
+    "end_line": 21,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "AgreeOn",
+    "start_line": 25,
+    "end_line": 28,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "Blind",
+    "start_line": 30,
+    "end_line": 34,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "blind_iff_below_generator",
+    "start_line": 36,
+    "end_line": 66,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.BlindnessRealization",
+    "name": "blind_downward",
+    "start_line": 68,
+    "end_line": 76,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "System",
+    "start_line": 14,
+    "end_line": 33,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "PairBlind",
+    "start_line": 35,
+    "end_line": 41,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "InObservationKernel",
+    "start_line": 43,
+    "end_line": 47,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "KernelWitness",
+    "start_line": 49,
+    "end_line": 54,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "pairBlind_iff_kernelWitness",
+    "start_line": 56,
+    "end_line": 75,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "DeterminesTarget",
+    "start_line": 77,
+    "end_line": 82,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "determinesTarget_iff_kernel_inclusion",
+    "start_line": 84,
+    "end_line": 110,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "pairBlind_downward",
+    "start_line": 112,
+    "end_line": 119,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "targetRow",
+    "start_line": 141,
+    "end_line": 141,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "sensorRow",
+    "start_line": 143,
+    "end_line": 143,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "determinant",
+    "start_line": 145,
+    "end_line": 146,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "target",
+    "start_line": 148,
+    "end_line": 148,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "observe",
+    "start_line": 150,
+    "end_line": 151,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "witness",
+    "start_line": 153,
+    "end_line": 154,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "target_sensor_minor",
+    "start_line": 156,
+    "end_line": 158,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "distinct_sensor_minor",
+    "start_line": 160,
+    "end_line": 163,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "witness_in_sensor_kernel",
+    "start_line": 165,
+    "end_line": 168,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "target_nonzero_on_witness",
+    "start_line": 170,
+    "end_line": 173,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "unbounded_target_on_gauge_fixed_kernel",
+    "start_line": 175,
+    "end_line": 182,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.LinearBlindness",
+    "name": "tail_witnesses_uniformly_large",
+    "start_line": 184,
+    "end_line": 194,
+    "classification": "theorem_node"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "iterate",
+    "start_line": 5,
+    "end_line": 8,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "iterate_zero",
+    "start_line": 10,
+    "end_line": 12,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "iterate_succ",
+    "start_line": 14,
+    "end_line": 16,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "iterate_add",
+    "start_line": 18,
+    "end_line": 24,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "iterate_fixed",
+    "start_line": 26,
+    "end_line": 33,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "Reaches",
+    "start_line": 35,
+    "end_line": 37,
+    "classification": "definition_material"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "reaches_iterate",
+    "start_line": 39,
+    "end_line": 47,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "coalescence_transfer",
+    "start_line": 49,
+    "end_line": 61,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "ranked_coalescence_sound",
+    "start_line": 63,
+    "end_line": 93,
+    "classification": "inline_helper"
+  },
+  {
+    "module": "NewMathDiscovery.RankedCoalescenceSound",
+    "name": "covered_ranked_coalescence_sound",
+    "start_line": 95,
+    "end_line": 120,
+    "classification": "theorem_node"
+  }
+]

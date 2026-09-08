@@ -1,0 +1,19 @@
+{
+  "all_match": true,
+  "comparisons": [
+    {
+      "name": "EgyptianFractions.exists_minimum18_le_35",
+      "original": "\u2203 minimum, EgyptianFractions.IsMinimumLength 18 minimum \u2227 minimum \u2264 35",
+      "theorem": "\u2203 minimum, EgyptianFractions.IsMinimumLength 18 minimum \u2227 minimum \u2264 35",
+      "solution": "\u2203 minimum, EgyptianFractions.IsMinimumLength 18 minimum \u2227 minimum \u2264 35",
+      "exact_pretty_type_match": true
+    },
+    {
+      "name": "EgyptianFractions.exists_minimum_of_representation",
+      "original": "\u2200 {lower terms : Nat},\n  EgyptianFractions.HasRepresentation lower terms \u2192 \u2203 minimum, EgyptianFractions.IsMinimumLength lower minimum",
+      "theorem": "\u2200 {lower terms : Nat},\n  EgyptianFractions.HasRepresentation lower terms \u2192 \u2203 minimum, EgyptianFractions.IsMinimumLength lower minimum",
+      "solution": "\u2200 {lower terms : Nat},\n  EgyptianFractions.HasRepresentation lower terms \u2192 \u2203 minimum, EgyptianFractions.IsMinimumLength lower minimum",
+      "exact_pretty_type_match": true
+    }
+  ]
+}

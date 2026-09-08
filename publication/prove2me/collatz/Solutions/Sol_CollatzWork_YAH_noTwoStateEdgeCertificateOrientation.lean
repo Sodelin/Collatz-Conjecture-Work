@@ -1,0 +1,246 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_YAHFiniteObstruction
+import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
+import Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos
+import Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient
+import Theorems.Thm_CollatzWork_YAH_edgeCertificate_cancellation
+namespace CollatzWork.YAH
+
+/-!
+# Kernel-checked YAH finite obstruction certificates
+
+The concrete data below replay the project's 13-row unlabelled adjacent-edge
+certificate and the fixed two-state 8-row symbol / 50-row edge certificates.
+The exported theorems concern only these finite identities and their generic
+positive-combination consequence.
+-/
+
+open Lean.Grind
+open Lean.Grind.AddCommMonoid
+open Lean.Grind.IntModule
+
+section GenericCertificate
+
+section OrderedCertificate
+
+variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
+  [Std.LawfulOrderLT M]
+  [IntModule M] [OrderedAdd M]
+
+
+
+
+
+theorem positiveCertificate_ne_zero
+    (certificate : List (Nat × ρ)) (gap : ρ → M)
+    (hnonneg : ∀ entry ∈ certificate, 0 ≤ gap entry.2)
+    (hstrict : ∃ entry ∈ certificate,
+      0 < entry.1 ∧ 0 < gap entry.2) :
+    weightedGapSum certificate gap ≠ 0 := by
+  have hpos := weightedGapSum_pos certificate gap hnonneg hstrict
+  intro hzero
+  rw [hzero] at hpos
+  exact Preorder.lt_irrefl 0 hpos
+
+end OrderedCertificate
+
+section LinearEvaluation
+
+variable {M : Type u} [IntModule M]
+
+
+
+
+
+
+
+
+
+theorem evalCoefficients_eq_zero_of_map_eq
+    (features : List φ) (weight : φ → M) (coeff : φ → Int)
+    (h : features.map coeff = features.map (fun _ => 0)) :
+    evalCoefficients features weight coeff = 0 := by
+  induction features with
+  | nil => rfl
+  | cons feature rest ih =>
+      simp only [List.map_cons, List.cons.injEq] at h
+      rcases h with ⟨hhead, htail⟩
+      change coeff feature • weight feature +
+        evalCoefficients rest weight coeff = 0
+      rw [hhead, IntModule.zero_zsmul, ih htail,
+        AddCommMonoid.add_zero]
+
+
+
+end LinearEvaluation
+
+end GenericCertificate
+
+/-! ## The 13-row unlabelled adjacent-edge certificate -/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section UnlabelledConsequence
+
+variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
+  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end UnlabelledConsequence
+
+/-! ## The exact fixed two-state suffix algebra -/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/-! ## The 50-row fixed-label adjacent-edge certificate -/
+
+
+
+
+
+
+
+
+
+
+
+/-! ## Ordered-algebra consequences of the exact zero cancellations -/
+
+section LabeledNoGo
+
+variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
+  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]
+
+
+
+
+
+
+
+omit [LE M] [LT M] [Std.IsPreorder M] [Std.LawfulOrderLT M]
+  [OrderedAdd M] in
+theorem edgeCertificate_weightedGap_zero (weight : Token × Token → M) :
+    weightedGapSum edgeCertificate (edgeGap weight) = 0 := by
+  calc
+    weightedGapSum edgeCertificate (edgeGap weight) =
+        evalCoefficients allTokenEdges weight
+          (weightedCoefficient edgeCertificate labeledEdgeDelta) := by
+            exact (evalCoefficients_weightedCoefficient allTokenEdges weight
+              edgeCertificate labeledEdgeDelta).symm
+    _ = 0 := evalCoefficients_eq_zero_of_map_eq allTokenEdges weight _
+      edgeCertificate_cancellation
+
+
+
+
+
+
+
+
+
+end LabeledNoGo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end CollatzWork.YAH
+
+open Lean.Grind
+open Lean.Grind.AddCommMonoid
+open Lean.Grind.IntModule
+variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
+  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]
+
+open CollatzWork.YAH in
+theorem solution
+    (weight : Token × Token → M) :
+    ¬ (∀ entry ∈ edgeCertificate,
+      if (rule entry.2.ruleName).dynamic = true
+      then 0 < edgeGap weight entry.2
+      else 0 ≤ edgeGap weight entry.2) := by
+  intro horients
+  have hnonneg : ∀ entry ∈ edgeCertificate,
+      0 ≤ edgeGap weight entry.2 := by
+    intro entry hentry
+    have h := horients entry hentry
+    by_cases hdynamic : (rule entry.2.ruleName).dynamic = true
+    · simp [hdynamic] at h
+      exact Preorder.le_of_lt h
+    · simp [hdynamic] at h
+      exact h
+  let first : Nat × LabeledInstance :=
+    (57168, ⟨.Df, false, some (.t, false), none⟩)
+  have hfirstMem : first ∈ edgeCertificate := by
+    simp [first, edgeCertificate]
+  have hfirstPos : 0 < edgeGap weight first.2 := by
+    have h := horients first hfirstMem
+    simpa [first, rule] using h
+  have hne := positiveCertificate_ne_zero edgeCertificate
+    (edgeGap weight) hnonneg
+    ⟨first, hfirstMem, by decide, hfirstPos⟩
+  exact hne (edgeCertificate_weightedGap_zero weight)

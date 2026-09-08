@@ -1,0 +1,46 @@
+{
+  "repository": "Sodelin/oldest-conjecture-",
+  "source_url": "https://github.com/Sodelin/oldest-conjecture-",
+  "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
+  "source_branch": "main",
+  "main_commit": null,
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "module_count": 4,
+  "modules": [
+    {
+      "path": "Extension734.lean",
+      "extraction_path": "Extension734.lean",
+      "module": "Extension734",
+      "sha256": "f3e3a3bd24f5114424eaa30ad8b4444da42f1763c7ecd2a2d0cff4f6adaf063e"
+    },
+    {
+      "path": "KernelEndpoints734.lean",
+      "extraction_path": "KernelEndpoints734.lean",
+      "module": "KernelEndpoints734",
+      "sha256": "b6f5213f08431773d7e5c8f5ec253e332d6a645c401c4ddf814a534da87b71bf"
+    },
+    {
+      "path": "KernelIsolation.lean",
+      "extraction_path": "KernelIsolation.lean",
+      "module": "KernelIsolation",
+      "sha256": "bbef0699242a37f8f170abb5f88c33fb696312c4ae6db4e281847b7349eb7bb4"
+    },
+    {
+      "path": "Plateau302.lean",
+      "extraction_path": "Plateau302.lean",
+      "module": "Plateau302",
+      "sha256": "a512d8eb18ae785def432daadf9790da2f83baf76ce8b6df4be0cddb3fad3241"
+    }
+  ],
+  "graph_declarations": 82,
+  "source_theorem_candidates": 46,
+  "audited_declarations": 82,
+  "nonstandard_axiom_declarations": 0,
+  "audit_directory": "/workspace/scratch/ce6b142fd07d/oldest-conjecture-/prove2me-audit",
+  "payload_status": "not-yet-compiled",
+  "local_build": "passed",
+  "sketch_extraction": "passed",
+  "source_modified": false,
+  "runtime_note": "Exact official Lean4.33.1 with source-provided executable-path discovery launcher; no proof or kernel changes.",
+  "scope": "Finite Erdos302 transfer relations at732/733/734; source does not formalize the externally reported upper bound f731=606."
+}

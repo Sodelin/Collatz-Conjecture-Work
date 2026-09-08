@@ -1,0 +1,10 @@
+{
+  "definition_name": "CollatzWork_FloorPower",
+  "definition_title": "CollatzWork.FloorPower definitions",
+  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.FloorPower.",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace CollatzWork\n\ndef floorPower (x : Nat) : Nat := 2 ^ Nat.log2 x\n\n\n\n\n\n\n\n\nend CollatzWork\n",
+  "tags": [
+    "collatz-work-import"
+  ],
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FloorPower.lean"
+}

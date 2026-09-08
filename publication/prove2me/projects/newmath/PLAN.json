@@ -1,0 +1,13 @@
+{
+  "status": "exact_payloads_compiled_types_matched_metadata_pending",
+  "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+  "public_source_theorems": 19,
+  "candidate_theorem_nodes": 11,
+  "candidate_definition_bundles": 3,
+  "remaining": [
+    "Complete academic metadata and live platform environment-pin check.",
+    "Explicit API-key authorization, then authenticated idempotent upload and remote acceptance verification."
+  ],
+  "exact_payload_build": "passed",
+  "type_comparison": "11_of_11_exact_matches"
+}

@@ -1,0 +1,13 @@
+import Std
+import Init.Grind.Ordered.Module
+import Definitions.Def_CollatzWork_ConvergenceStatement
+import Definitions.Def_CollatzWork_FirstContractionStatement
+import Definitions.Def_CollatzWork_QuarterGapStatement
+import Theorems.Thm_CollatzWork_mechanicalCoarseBound
+import Theorems.Thm_CollatzWork_orbitAffine
+import Theorems.Thm_CollatzWork_mechanicalEnvelope
+
+
+
+theorem CollatzWork.firstContractionThirdGap : FirstContractionThirdGapStatement := by sorry
+

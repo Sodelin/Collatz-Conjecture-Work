@@ -1,0 +1,1 @@
+"∀ (S : Nat → Bool),\n  Erdos302Finite.Admissible 732 S → Erdos302Finite.cardinal S ≤ Erdos302Finite.cardinal (Erdos302Finite.replacement S)"
