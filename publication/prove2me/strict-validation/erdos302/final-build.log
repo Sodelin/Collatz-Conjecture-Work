@@ -1,0 +1,23 @@
+⚠ [6/27] Replayed Theorems.Thm_Erdos302Extension734_exact_maximum_734_from_733
+warning: Theorems/Thm_Erdos302Extension734_exact_maximum_734_from_733.lean:9:8: declaration uses `sorry`
+⚠ [8/27] Replayed Theorems.Thm_Erdos302Extension734_full_cardinal_domain
+warning: Theorems/Thm_Erdos302Extension734_full_cardinal_domain.lean:8:8: declaration uses `sorry`
+⚠ [10/27] Replayed Theorems.Thm_Erdos302Extension734_full_domain_membership
+warning: Theorems/Thm_Erdos302Extension734_full_domain_membership.lean:8:8: declaration uses `sorry`
+⚠ [12/27] Replayed Theorems.Thm_Erdos302Extension734_full_domain_nodup
+warning: Theorems/Thm_Erdos302Extension734_full_domain_nodup.lean:8:8: declaration uses `sorry`
+⚠ [14/27] Replayed Theorems.Thm_Erdos302Extension734_lift_admissible
+warning: Theorems/Thm_Erdos302Extension734_lift_admissible.lean:9:8: declaration uses `sorry`
+⚠ [16/27] Replayed Theorems.Thm_Erdos302Kernel_isolated_nat
+warning: Theorems/Thm_Erdos302Kernel_isolated_nat.lean:7:8: declaration uses `sorry`
+⚠ [17/27] Replayed Theorems.Thm_Erdos302Finite_replacement_admissible
+warning: Theorems/Thm_Erdos302Finite_replacement_admissible.lean:8:8: declaration uses `sorry`
+⚠ [18/27] Replayed Theorems.Thm_Erdos302Finite_replacement_cardinal
+warning: Theorems/Thm_Erdos302Finite_replacement_cardinal.lean:7:8: declaration uses `sorry`
+⚠ [19/27] Replayed Theorems.Thm_Erdos302Extension734_numerical_733_from_731
+warning: Theorems/Thm_Erdos302Extension734_numerical_733_from_731.lean:11:8: declaration uses `sorry`
+⚠ [21/27] Replayed Theorems.Thm_Erdos302Extension734_numerical_734_from_731
+warning: Theorems/Thm_Erdos302Extension734_numerical_734_from_731.lean:11:8: declaration uses `sorry`
+⚠ [23/27] Replayed Theorems.Thm_Erdos302Finite_rat_plateau_732
+warning: Theorems/Thm_Erdos302Finite_rat_plateau_732.lean:9:8: declaration uses `sorry`
+Build completed successfully (27 jobs).

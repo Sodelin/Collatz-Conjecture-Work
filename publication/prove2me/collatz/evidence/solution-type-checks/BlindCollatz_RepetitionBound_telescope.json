@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (a b : Nat) (y : Nat → Nat) (k : Nat),\n  (∀ (i : Nat),\n      @LT.lt.{0} Nat instLTNat i k →\n        @Eq.{1} Nat\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) b\n            (y\n              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) a (y i))) →\n    @Eq.{1} Nat\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat)) b k) (y k))\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat)) a k)\n        (y (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (a b : Nat) (y : Nat → Nat) (k : Nat),\n  (∀ (i : Nat),\n      @LT.lt.{0} Nat instLTNat i k →\n        @Eq.{1} Nat\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) b\n            (y\n              (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n                (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) a (y i))) →\n    @Eq.{1} Nat\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat)) b k) (y k))\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat)) a k)\n        (y (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))",
+  "target_universe_parameters": [],
+  "theorem_name": "BlindCollatz.RepetitionBound.telescope",
+  "universe_count_equal": true,
+  "solution_sha256": "1f6edecf34eb2fc5d65369862cf92122ceb6642e4d82ae160bf1646d2dc24894",
+  "theorem_sha256": "8e0a368ef6ce4124f15080f145944d201056eeec04a75a44954fb8e6151ea991",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/BlindCollatz_RepetitionBound_telescope.lean",
+  "source_files_unchanged": true
+}

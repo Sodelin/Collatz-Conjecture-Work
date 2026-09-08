@@ -179,7 +179,7 @@ class Generator:
             content=self.imports(defdeps,set())+self.skeleton(m,selected)
             path='Definitions/Def_'+slug(m)+'.lean';(self.out/path).write_text(content)
             key='def:'+m
-            payload=dict(definition_name=slug(m),definition_title=m+' definitions',natural_language_description='Definitions and necessary proof-bearing construction material from '+m+'.',definition=content,tags=['collatz-work-import'],source=repo+'/blob/'+commit+'/'+self.mods[m]['path'])
+            payload=dict(definition_name=slug(m),definition_title=m+' definitions',natural_language_statement='Definitions and necessary proof-bearing construction material from '+m+'.',definition=content,tags=['collatz-work-import'],source=repo+'/blob/'+commit+'/'+self.mods[m]['path'])
             pp='payloads/'+slug(m)+'.definition.json';(self.out/pp).write_text(json.dumps(payload,indent=2)+'\n')
             items.append(dict(key=key,kind='definition',depends_on=['def:'+x for x in sorted(defdeps)],payload_file=pp,definition_file=path))
         for k in sorted(self.nodes,key=lambda k:self.node_names[k]):
@@ -191,10 +191,10 @@ class Generator:
             imp=self.imports(dmods,ndeps)
             helper=''.join(self.skeleton(hm,{x for x in inline if x[0]==hm}) for hm in self.helper_order(inline))
             ctx=self.context(k)
-            preamble=imp+'\n'+ctx
+            preamble=imp+'\n'+ctx+'\n'
             statement=self.target(k)
             thmpath='Theorems/Thm_'+slug(name)+'.lean';solpath='Solutions/Sol_'+slug(name)+'.lean'
-            (self.out/thmpath).write_text(preamble+'\n'+statement)
+            (self.out/thmpath).write_text(preamble+statement)
             available=deps|{s for s in self.defs if s[0] in dmods}
             solution=imp+helper+'\n'+ctx+'\n'+self.target(k,True,available)
             (self.out/solpath).write_text(solution)
@@ -208,11 +208,11 @@ class Generator:
         for k,u in self.units.items():
             coverage.append(dict(module=k[0],name=u.get('nameText'),start_line=u['declStart']['line'],end_line=u['declEnd']['line'],classification='definition_material' if k in self.defs else 'theorem_node' if k in self.nodes else 'inline_helper' if k in self.inline else 'source_checked_no_exported_declaration' if not u['rows'] else 'unreferenced_source_helper'))
         (self.out/'coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')
-        (self.out/'lakefile.toml').write_text('name = "collatz_prove2me_staging"\nversion = "0.1.0"\ndefaultTargets = ["Definitions", "Theorems", "Solutions"]\n\n[[lean_lib]]\nname = "Definitions"\nglobs = ["Definitions.**"]\n\n[[lean_lib]]\nname = "Theorems"\nglobs = ["Theorems.**"]\n\n[[lean_lib]]\nname = "Solutions"\nglobs = ["Solutions.**"]\n')
+        (self.out/'lakefile.toml').write_text('name = "collatz_prove2me_staging"\nversion = "0.1.0"\ndefaultTargets = ["Definitions", "Theorems", "Solutions"]\nleanOptions = { autoImplicit = false }\n\n[[lean_lib]]\nname = "Definitions"\nglobs = ["Definitions.**"]\n\n[[lean_lib]]\nname = "Theorems"\nglobs = ["Theorems.**"]\n\n[[lean_lib]]\nname = "Solutions"\nglobs = ["Solutions.**"]\n')
         (self.out/'lean-toolchain').write_text((self.root/'lean-toolchain').read_text())
         for lib in ('Definitions','Theorems','Solutions'):
             (self.out/(lib+'.lean')).write_text('-- Generated library root; payload modules are built by Lake globs.\n')
-        manifest=dict(schema_version=1,project_tag='collatz-work-import',source=dict(repository=repo,commit=commit),environment=dict(toolchain=(self.root/'lean-toolchain').read_text().strip(),mathlib_rev=None),validation=dict(status='pending',remote_status='not_submitted',required=['exact upload text compilation','exact elaborated type comparison','metadata review','platform environment pin check']),items=items)
+        manifest=dict(schema_version=1,project_tag='collatz-work-import',source=dict(repository=repo,commit=commit),environment=dict(toolchain=(self.root/'lean-toolchain').read_text().strip(),mathlib_rev=None),validation=dict(status='pending',remote_status='not_submitted',required=['exact upload text compilation with autoImplicit=false','original versus staged theorem and definition type comparison','exact solution versus target type comparison','metadata review','platform environment pin check']),items=items)
         manifest['files']={str(p.relative_to(self.out)):sha(p) for p in self.out.rglob('*') if p.is_file() and '.lake' not in p.parts and p.name!='manifest.json'}
         (self.out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
         print(json.dumps(dict(definitions=len(self.defmods),theorems=len(self.nodes),inline_helpers=len(self.inline),declaration_units=len(self.units),coverage=len(coverage))))

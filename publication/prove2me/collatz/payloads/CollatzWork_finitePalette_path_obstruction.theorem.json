@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.finitePalette_path_obstruction",
-  "theorem_title": "CollatzWork.finitePalette_path_obstruction",
-  "natural_language_statement": "A nondecreasing path cannot carry `r` consecutive strict rank decreases\nwhen every rank is selected from `r` nondecreasing functions.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
-  "formal_statement": "theorem CollatzWork.finitePalette_path_obstruction\n    (r B : Nat) (V : Nat \u2192 Nat) (f : Fin r \u2192 Nat \u2192 Nat)\n    (selector : Nat \u2192 Fin r) (x : Nat \u2192 Nat)\n    (hf : \u2200 i a b, B \u2264 a \u2192 a \u2264 b \u2192 f i a \u2264 f i b)\n    (hV : \u2200 n, B \u2264 n \u2192 V n = f (selector n) n)\n    (hB : B \u2264 x 0)\n    (hx : \u2200 k, k < r \u2192 x k \u2264 x (k + 1))\n    (hdec : \u2200 k, k < r \u2192 V (x (k + 1)) < V (x k)) : False := by sorry\n\n",
+  "theorem_title": "A finite monotone palette cannot decrease along too long a rising path",
+  "natural_language_statement": "Let $r,B\\in\\mathbb N$, let $f_0,\\ldots,f_{r-1}:\\mathbb N\\to\\mathbb N$ be nondecreasing on inputs at least $B$, and let $\\sigma:\\mathbb N\\to\\{0,\\ldots,r-1\\}$. Let $V:\\mathbb N\\to\\mathbb N$ satisfy $V(n)=f_{\\sigma(n)}(n)$ for $n\\ge B$.\n\nLet $x:\\mathbb N\\to\\mathbb N$ have $x_0\\ge B$ and $x_k\\le x_{k+1}$ for $k<r$. Then it is impossible that\n\n$$\n\\forall k<r,\\quad V(x_{k+1})<V(x_k).\n$$\n\nThis is a finite pigeonhole obstruction for ranks selected from monotone functions; it is independent of Collatz.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.finitePalette_path_obstruction\n    (r B : Nat) (V : Nat → Nat) (f : Fin r → Nat → Nat)\n    (selector : Nat → Fin r) (x : Nat → Nat)\n    (hf : ∀ i a b, B ≤ a → a ≤ b → f i a ≤ f i b)\n    (hV : ∀ n, B ≤ n → V n = f (selector n) n)\n    (hB : B ≤ x 0)\n    (hx : ∀ k, k < r → x k ≤ x (k + 1))\n    (hdec : ∀ k, k < r → V (x (k + 1)) < V (x k)) : False := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

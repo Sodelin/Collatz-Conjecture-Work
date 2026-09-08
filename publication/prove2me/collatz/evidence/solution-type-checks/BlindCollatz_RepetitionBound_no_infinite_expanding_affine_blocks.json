@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (b d c : Nat),\n  b.Coprime (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) b d) →\n    @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) b →\n      ∀ (x : Nat → Nat),\n        @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) d\n                (x (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))\n              c) →\n          Not\n            (∀ (i : Nat),\n              @Eq.{1} Nat\n                (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) b\n                  (x\n                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n                  (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) b d) (x i))\n                  c))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (b d c : Nat),\n  b.Coprime (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) b d) →\n    @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) b →\n      ∀ (x : Nat → Nat),\n        @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) d\n                (x (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))))\n              c) →\n          Not\n            (∀ (i : Nat),\n              @Eq.{1} Nat\n                (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) b\n                  (x\n                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n                      (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n                (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n                  (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n                    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) b d) (x i))\n                  c))",
+  "target_universe_parameters": [],
+  "theorem_name": "BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
+  "universe_count_equal": true,
+  "solution_sha256": "0ad1b03a6e8ce701e0aa0ccc425e905891ba468a9eebb616a1cb4ea333968bc1",
+  "theorem_sha256": "fb02b239510af3fa384938425ecb1fddbde6b8218d0080abf8725ffbb76a69fb",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean",
+  "source_files_unchanged": true
+}

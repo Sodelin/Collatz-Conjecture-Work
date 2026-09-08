@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.AffineQuarterCertificateStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.AffineQuarterCertificateStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.affineQuarterCertificate",
+  "universe_count_equal": true,
+  "solution_sha256": "1154a0402949b8d9e50ce184ee2aeedf64ff2510861c36c4f7938a7f4b716a5b",
+  "theorem_sha256": "84ce8a1b07c4d377252c498a2a86fad34603f842d8712060373e5a1bdb819e51",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_affineQuarterCertificate.lean",
+  "source_files_unchanged": true
+}

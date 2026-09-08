@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (name : CollatzWork.YAH.RuleName),\n  @Membership.mem.{0, 0} CollatzWork.YAH.RuleName (List.{0} CollatzWork.YAH.RuleName)\n      (@List.instMembership.{0} CollatzWork.YAH.RuleName) CollatzWork.YAH.allRuleNames name →\n    ∀ (tail : Bool),\n      @Eq.{1} Bool (CollatzWork.YAH.evalWord (CollatzWork.YAH.rule name).lhs tail)\n        (CollatzWork.YAH.evalWord (CollatzWork.YAH.rule name).rhs tail)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (name : CollatzWork.YAH.RuleName),\n  @Membership.mem.{0, 0} CollatzWork.YAH.RuleName (List.{0} CollatzWork.YAH.RuleName)\n      (@List.instMembership.{0} CollatzWork.YAH.RuleName) CollatzWork.YAH.allRuleNames name →\n    ∀ (tail : Bool),\n      @Eq.{1} Bool (CollatzWork.YAH.evalWord (CollatzWork.YAH.rule name).lhs tail)\n        (CollatzWork.YAH.evalWord (CollatzWork.YAH.rule name).rhs tail)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.twoState_rule_equations",
+  "universe_count_equal": true,
+  "solution_sha256": "71e415a5deb091496d42f2104534c80a76694b2ab565cb48a0509a9e601d2a2b",
+  "theorem_sha256": "3c96b375417012f7083d99884a337cd3b36f7b021954c81150946124269521f5",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_twoState_rule_equations.lean",
+  "source_files_unchanged": true
+}

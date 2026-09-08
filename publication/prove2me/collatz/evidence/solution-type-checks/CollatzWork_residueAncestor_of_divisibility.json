@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.ResidueAncestorDivisibilityStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.ResidueAncestorDivisibilityStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.residueAncestor_of_divisibility",
+  "universe_count_equal": true,
+  "solution_sha256": "d926f96ee07a7a41d6ea8e0b2be998fc10878e311e57f9a8f69d5032e4b10468",
+  "theorem_sha256": "37c45a46a9f434f03e52ca4c5236c9edb534693f01c6b9ff58fd91d170dcf2b0",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_residueAncestor_of_divisibility.lean",
+  "source_files_unchanged": true
+}

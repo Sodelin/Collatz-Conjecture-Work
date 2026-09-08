@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ {n m r s : Nat},\n  @Eq.{1} Nat (CollatzWork.shortcutIter r n) (CollatzWork.shortcutIter s m) →\n    Iff (CollatzWork.Converges n) (CollatzWork.Converges m)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ {n m r s : Nat},\n  @Eq.{1} Nat (CollatzWork.shortcutIter r n) (CollatzWork.shortcutIter s m) →\n    Iff (CollatzWork.Converges n) (CollatzWork.Converges m)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.converges_iff_of_coalesces",
+  "universe_count_equal": true,
+  "solution_sha256": "74eabf9821c36824569ac254bd41b9509e7466be396b024b6851a35c8e0e2650",
+  "theorem_sha256": "b7cd3ad4c756ef7cc55a347a9107130351ca6cf7856b978f409652066940b9fe",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_converges_iff_of_coalesces.lean",
+  "source_files_unchanged": true
+}

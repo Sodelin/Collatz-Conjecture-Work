@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Finite.rat_plateau_732",
-  "theorem_title": "Erdos302Finite.rat_plateau_732",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Finite_replacement_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_cardinal\n\n\n",
-  "formal_statement": "theorem Erdos302Finite.rat_plateau_732 (k : Nat) :\n (\u2203 S : Nat \u2192 Bool, RatAdmissible 732 S \u2227 k \u2264 cardinal S) \u2194\n (\u2203 S : Nat \u2192 Bool, RatAdmissible 731 S \u2227 k \u2264 cardinal S) := by sorry\n\n",
+  "theorem_title": "Reciprocal-triple-free cardinality plateau at 732",
+  "natural_language_statement": "For a natural number $k$, consider subsets $S$ of $\\{1,\\ldots,n\\}$ containing no distinct $a<b<c$ with $1/a=1/b+1/c$. The attainable cardinality thresholds at 731 and 732 coincide:\n\n$$\n\\exists S\\subseteq\\{1,\\ldots,732\\},\\ S\\text{ admissible},\\ |S|\\geq k\\quad\\Longleftrightarrow\\quad\\exists S\\subseteq\\{1,\\ldots,731\\},\\ S\\text{ admissible},\\ |S|\\geq k.\n$$\n\nThis is a finite plateau result and does not assume a numerical value of the extremal function at 731. It does not settle the asymptotic Erdős problem 302; no first-discovery claim is made.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Finite_replacement_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_cardinal\n\n\n\n",
+  "formal_statement": "theorem Erdos302Finite.rat_plateau_732 (k : Nat) :\n (∃ S : Nat → Bool, RatAdmissible 732 S ∧ k ≤ cardinal S) ↔\n (∃ S : Nat → Bool, RatAdmissible 731 S ∧ k ≤ cardinal S) := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "extremal-combinatorics",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L203-L207"
 }

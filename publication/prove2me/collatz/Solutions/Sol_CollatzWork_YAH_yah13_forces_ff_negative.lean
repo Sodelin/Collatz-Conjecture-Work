@@ -5,6 +5,8 @@ import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
 import Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos
 import Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient
 import Theorems.Thm_CollatzWork_YAH_unlabelledCertificate_cancellation
+universe u
+
 namespace CollatzWork.YAH
 
 /-!
@@ -50,7 +52,7 @@ variable {M : Type u} [IntModule M]
 
 
 
-theorem evalCoefficients_eq_of_map_eq
+theorem evalCoefficients_eq_of_map_eq {φ : Type _}
     (features : List φ) (weight : φ → M) (left right : φ → Int)
     (h : features.map left = features.map right) :
     evalCoefficients features weight left =

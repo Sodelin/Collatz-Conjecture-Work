@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.equalSlopeSmaller",
-  "theorem_title": "Equal-slope affine comparison and concrete coalescence witness",
-  "natural_language_statement": "For natural A,B,R, the statement that A*x+B<A*x+R for every natural x is equivalent to B<R. For every natural x, the starts 8*x+5 and 8*x+4 reach 3*x+2 after three shortcut steps, with 0<8*x+4<8*x+5. Limitations: A correction to a local inverse-word classifier and one witnessed family. It is not a complete inverse-word search or universal convergence result.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\n\n\n",
+  "theorem_title": "Strict comparison of affine functions with equal slopes",
+  "natural_language_statement": "For natural coefficients $A,B,R$,\n\n$$\n\\bigl(\\forall x\\in\\mathbb N,\\ Ax+B<Ax+R\\bigr)\\iff B<R.\n$$\n\nThis isolates the intercept boundary for equal-slope affine comparisons.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.equalSlopeSmaller : EqualSlopeSmallerStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

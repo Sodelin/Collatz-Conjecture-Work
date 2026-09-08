@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.UnlabelledInstance\n      (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) CollatzWork.YAH.unlabelledCertificate\n      CollatzWork.YAH.unlabelledEdgeDelta)\n    CollatzWork.YAH.allSymbolEdges)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) Int\n    CollatzWork.YAH.negativeFFCoefficient CollatzWork.YAH.allSymbolEdges)",
+  "solution_universe_parameters": [],
+  "target_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.UnlabelledInstance\n      (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) CollatzWork.YAH.unlabelledCertificate\n      CollatzWork.YAH.unlabelledEdgeDelta)\n    CollatzWork.YAH.allSymbolEdges)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol) Int\n    CollatzWork.YAH.negativeFFCoefficient CollatzWork.YAH.allSymbolEdges)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.unlabelledCertificate_cancellation",
+  "universe_count_equal": true,
+  "solution_sha256": "a59201298785d8e4479f92d6e22ae561aee28cd9dadf66d2cf66fc08e224d4f0",
+  "theorem_sha256": "10f9b37dbc6477fe6e4c1e8c89fd520dab858e54ecbccb1abeee88cf1ece622e",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_unlabelledCertificate_cancellation.lean",
+  "source_files_unchanged": true
+}

@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.mechanical_twelve_identity",
-  "theorem_title": "Universal mechanical certificate and sharp eventual threshold 16",
-  "natural_language_statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range. Limitations: The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_BlockArithmetic\nimport Definitions.Def_CollatzWork_FloorPower\nimport Definitions.Def_CollatzWork_QuarterGapStatement\nimport Theorems.Thm_CollatzWork_floorPower_mul\n\n\n",
+  "theorem_title": "Exact twelve-step recurrence of the mechanical envelope",
+  "natural_language_statement": "For $s\\in\\mathbb N$, define $M(0)=0$, $M(s+1)=3M(s)+2^{\\lfloor\\log_2(3^s)\\rfloor}$, and $e(s)=\\lfloor\\log_2(3^s)\\rfloor+1$. For $B,x\\in\\mathbb N$, define the normalized twelve-term numerator $N_{12}(B,x)=\\sum_{i=0}^{11}3^{11-i}D_i(B,x)$. Here $f_i=\\lfloor\\log_2(3^i)\\rfloor$, and $D_i(B,x)$ is $2^{f_i}B$ when $3^i x<2^{f_i+1}B$, and $2^{f_i+1}B$ otherwise.\n\nFor every $s\\in\\mathbb N$,\n\n$$\nM(s+12)=3^{12}M(s)+N_{12}\\bigl(2^{\\lfloor\\log_2(3^s)\\rfloor},3^s\\bigr).\n$$\n\nThis groups twelve scalar recurrence steps while preserving all dyadic rounding phases.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_BlockArithmetic\nimport Definitions.Def_CollatzWork_FloorPower\nimport Definitions.Def_CollatzWork_QuarterGapStatement\nimport Theorems.Thm_CollatzWork_floorPower_mul\n\n\n\n",
   "formal_statement": "theorem CollatzWork.mechanical_twelve_identity (s : Nat) :\n    mechanicalMax (s + 12) = 531441 * mechanicalMax s +\n      blockNumerator12 (floorPower (3 ^ s)) (3 ^ s) := by sorry\n\n",
   "tags": [
     "collatz-work-import"

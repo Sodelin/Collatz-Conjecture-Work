@@ -12,6 +12,8 @@ The exported theorems concern only these finite identities and their generic
 positive-combination consequence.
 -/
 
+universe u
+
 open Lean.Grind
 open Lean.Grind.AddCommMonoid
 open Lean.Grind.IntModule

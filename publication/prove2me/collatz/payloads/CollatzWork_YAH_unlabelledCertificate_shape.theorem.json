@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.unlabelledCertificate_shape",
-  "theorem_title": "CollatzWork.YAH.unlabelledCertificate_shape",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
-  "formal_statement": "theorem CollatzWork.YAH.unlabelledCertificate_shape :\n    unlabelledRows.length = 13 \u2227\n    unlabelledCertificate.length = 13 := by sorry\n\n",
+  "theorem_title": "Size of the unlabelled YAH certificate",
+  "natural_language_statement": "Let $R$ be the displayed list of unlabelled YAH instances and let $C$ be the list pairing those instances with the specified natural multipliers. Then\n\n$$|R|=13\\quad\\text{and}\\quad|C|=13.$$\n\nLengths count list entries. This records the exact size of the finite data used in the unlabelled adjacent-edge obstruction.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.unlabelledCertificate_shape :\n    unlabelledRows.length = 13 ∧\n    unlabelledCertificate.length = 13 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.ExcursionBudgetDescentStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.ExcursionBudgetDescentStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.excursionBudgetDescent",
+  "universe_count_equal": true,
+  "solution_sha256": "ca27394739dfa9fcb2eb1cd0b19f78dc13b846ef4f4ffb50d8faeec7575f97a3",
+  "theorem_sha256": "e586e982d62ffb12c4f1c8c2899d8e9b333146ed34cd577cfd403001ebd0687b",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_excursionBudgetDescent.lean",
+  "source_files_unchanged": true
+}

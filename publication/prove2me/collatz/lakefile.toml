@@ -1,6 +1,7 @@
 name = "collatz_prove2me_staging"
 version = "0.1.0"
 defaultTargets = ["Definitions", "Theorems", "Solutions"]
+leanOptions = { autoImplicit = false }
 
 [[lean_lib]]
 name = "Definitions"

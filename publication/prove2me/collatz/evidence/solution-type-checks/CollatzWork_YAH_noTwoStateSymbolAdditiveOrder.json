@@ -1,0 +1,23 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [
+    "audit_universe_0"
+  ],
+  "solution_type": "∀ {M : Type audit_universe_0} [inst : LE.{audit_universe_0} M] [inst_1 : LT.{audit_universe_0} M]\n  [inst_2 : @Std.IsPreorder.{audit_universe_0} M inst] [@Std.LawfulOrderLT.{audit_universe_0} M inst_1 inst]\n  [inst_4 : Lean.Grind.IntModule.{audit_universe_0} M]\n  [@Lean.Grind.OrderedAdd.{audit_universe_0} M\n      (@instHAdd.{audit_universe_0} M\n        (@Lean.Grind.AddCommMonoid.toAdd.{audit_universe_0} M\n          (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n            (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4))))\n      inst inst_2]\n  (weight : CollatzWork.YAH.Token → M),\n  Not\n    (∀ (row : CollatzWork.YAH.LabeledInstance),\n      @Eq.{1} Bool (CollatzWork.YAH.validLabeledInstance row) Bool.true →\n        @ite.{1} Prop (@Eq.{1} Bool (CollatzWork.YAH.rule row.ruleName).dynamic Bool.true)\n          (instDecidableEqBool (CollatzWork.YAH.rule row.ruleName).dynamic Bool.true)\n          (@LT.lt.{audit_universe_0} M inst_1\n            (@OfNat.ofNat.{audit_universe_0} M (nat_lit 0)\n              (@Zero.toOfNat0.{audit_universe_0} M\n                (@Lean.Grind.AddCommMonoid.toZero.{audit_universe_0} M\n                  (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n                    (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4)))))\n            (@CollatzWork.YAH.symbolGap.{audit_universe_0} M inst_4 weight row))\n          (@LE.le.{audit_universe_0} M inst\n            (@OfNat.ofNat.{audit_universe_0} M (nat_lit 0)\n              (@Zero.toOfNat0.{audit_universe_0} M\n                (@Lean.Grind.AddCommMonoid.toZero.{audit_universe_0} M\n                  (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n                    (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4)))))\n            (@CollatzWork.YAH.symbolGap.{audit_universe_0} M inst_4 weight row)))",
+  "solution_universe_parameters": [
+    "u"
+  ],
+  "target_type": "∀ {M : Type audit_universe_0} [inst : LE.{audit_universe_0} M] [inst_1 : LT.{audit_universe_0} M]\n  [inst_2 : @Std.IsPreorder.{audit_universe_0} M inst] [@Std.LawfulOrderLT.{audit_universe_0} M inst_1 inst]\n  [inst_4 : Lean.Grind.IntModule.{audit_universe_0} M]\n  [@Lean.Grind.OrderedAdd.{audit_universe_0} M\n      (@instHAdd.{audit_universe_0} M\n        (@Lean.Grind.AddCommMonoid.toAdd.{audit_universe_0} M\n          (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n            (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4))))\n      inst inst_2]\n  (weight : CollatzWork.YAH.Token → M),\n  Not\n    (∀ (row : CollatzWork.YAH.LabeledInstance),\n      @Eq.{1} Bool (CollatzWork.YAH.validLabeledInstance row) Bool.true →\n        @ite.{1} Prop (@Eq.{1} Bool (CollatzWork.YAH.rule row.ruleName).dynamic Bool.true)\n          (instDecidableEqBool (CollatzWork.YAH.rule row.ruleName).dynamic Bool.true)\n          (@LT.lt.{audit_universe_0} M inst_1\n            (@OfNat.ofNat.{audit_universe_0} M (nat_lit 0)\n              (@Zero.toOfNat0.{audit_universe_0} M\n                (@Lean.Grind.AddCommMonoid.toZero.{audit_universe_0} M\n                  (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n                    (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4)))))\n            (@CollatzWork.YAH.symbolGap.{audit_universe_0} M inst_4 weight row))\n          (@LE.le.{audit_universe_0} M inst\n            (@OfNat.ofNat.{audit_universe_0} M (nat_lit 0)\n              (@Zero.toOfNat0.{audit_universe_0} M\n                (@Lean.Grind.AddCommMonoid.toZero.{audit_universe_0} M\n                  (@Lean.Grind.NatModule.toAddCommMonoid.{audit_universe_0} M\n                    (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst_4)))))\n            (@CollatzWork.YAH.symbolGap.{audit_universe_0} M inst_4 weight row)))",
+  "target_universe_parameters": [
+    "u"
+  ],
+  "theorem_name": "CollatzWork.YAH.noTwoStateSymbolAdditiveOrder",
+  "universe_count_equal": true,
+  "solution_sha256": "4a59fd37124eca55074e05cf72dcfb44343d81378c29c1d46c131a9171f64988",
+  "theorem_sha256": "7e2fe2cdb665b1bd6ecc067cb6b2942b6a5f0c7691af10e34c82806ebd6f7708",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean",
+  "source_files_unchanged": true
+}

@@ -21,6 +21,8 @@ The ASCII source mapping is `a=f`, `b=t`, `c=^`, `d=$`, `e=0`, `f=1`,
 `g=2`.
 -/
 
+universe u
+
 open Lean.Grind
 
 /-- The seven symbols of the exact YAH mixed binary/ternary system. -/
@@ -210,7 +212,7 @@ def allSymbols : List Symbol :=
 def allTokens : List Token :=
   allSymbols.flatMap fun symbol => [(symbol, false), (symbol, true)]
 
-def adjacentPairs : List α → List (α × α)
+def adjacentPairs {α : Type _} : List α → List (α × α)
   | [] => []
   | _ :: [] => []
   | first :: second :: rest =>
@@ -219,7 +221,7 @@ def adjacentPairs : List α → List (α × α)
 def allTokenEdges : List (Token × Token) :=
   allTokens.flatMap fun left => allTokens.map fun right => (left, right)
 
-def countDelta [BEq α] (lhs rhs : List α) (feature : α) : Int :=
+def countDelta {α : Type _} [BEq α] (lhs rhs : List α) (feature : α) : Int :=
   Int.ofNat (lhs.count feature) - Int.ofNat (rhs.count feature)
 
 def unlabelledEdgeDelta (row : UnlabelledInstance)
@@ -233,18 +235,18 @@ def labeledEdgeDelta (row : LabeledInstance) (edge : Token × Token) : Int :=
   countDelta (adjacentPairs row.lhs) (adjacentPairs row.rhs) edge
 
 /-- Pointwise integer sum of a positive-multiplier row certificate. -/
-def weightedCoefficient (certificate : List (Nat × ρ))
+def weightedCoefficient {ρ : Type _} {φ : Sort _} (certificate : List (Nat × ρ))
     (delta : ρ → φ → Int) (feature : φ) : Int :=
   certificate.foldr
     (fun entry total => Int.ofNat entry.1 * delta entry.2 feature + total) 0
 
 /-- Weighted sum of row gaps in an abstract additive ordered target. -/
-def weightedGapSum {M : Type u} [NatModule M]
+def weightedGapSum {ρ : Type _} {M : Type u} [NatModule M]
     (certificate : List (Nat × ρ)) (gap : ρ → M) : M :=
   certificate.foldr (fun entry total => entry.1 • gap entry.2 + total) 0
 
 /-- Evaluation of a finite integer feature vector in an additive group. -/
-def evalCoefficients {M : Type u} [IntModule M]
+def evalCoefficients {φ : Type _} {M : Type u} [IntModule M]
     (features : List φ) (weight : φ → M) (coeff : φ → Int) : M :=
   features.foldr (fun feature total => coeff feature • weight feature + total) 0
 

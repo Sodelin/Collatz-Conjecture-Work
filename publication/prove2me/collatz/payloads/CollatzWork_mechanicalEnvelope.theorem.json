@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.mechanicalEnvelope",
-  "theorem_title": "Actual-orbit affine envelope and first crossing time",
-  "natural_language_statement": "For every finite actual shortcut prefix, 2^k*T^k(n)=3^(q_k)*n+C_k. Under every prior coefficient barrier 2^j<=3^(q_j) for j<k, C_k<=Cmax(q_k). At a first coefficient contraction, k=floor(log2(3^(q_k)))+1. For positive n and a nonnegative first-contraction defect d, the older inequality 3*d<q_k also follows. Limitations: First-contraction existence is assumed for the crossing and defect claims. Full extremizer uniqueness and displacement-penalty formulations in the prose L9 note are outside these formal statements.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n",
+  "theorem_title": "Mechanical upper envelope before the first coefficient crossing",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Let $q_k(n)$ count the odd inputs among the first $k$ shortcut steps, and let $R_0(n)=0$; recursively $R_{k+1}(n)=R_k(n)$ for an even input $T^k(n)$ and $R_{k+1}(n)=3R_k(n)+2^k$ for an odd input. For $s\\in\\mathbb N$, define $M(0)=0$, $M(s+1)=3M(s)+2^{\\lfloor\\log_2(3^s)\\rfloor}$, and $e(s)=\\lfloor\\log_2(3^s)\\rfloor+1$.\n\nLet $n,k\\in\\mathbb N$ and assume $2^j\\le3^{q_j(n)}$ for every $j<k$. Then\n\n$$\nR_k(n)\\le M(q_k(n)).\n$$\n\nThe earlier coefficient barriers are explicit assumptions, so this is not an unconditional bound on all orbit prefixes.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.mechanicalEnvelope : MechanicalEnvelopeStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

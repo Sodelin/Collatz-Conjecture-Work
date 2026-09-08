@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
-  "theorem_title": "BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
-  "natural_language_statement": "Each successive certified block endpoint is strictly larger.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n",
-  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows (m n : Nat) (hgood : goodBlocks m n) :\n    \u2200 j : Nat, j < m \u2192 blocks j n < blocks (j + 1) n := by sorry\n\n",
+  "theorem_title": "Every certified alternating block strictly increases its endpoint",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Write $B=T^3$, and let $B^j$ be its j-fold iterate. A start $n$ has $m$ good blocks if $B^j(n)\\equiv11\\pmod{16}$ for every $j<m$.\n\nLet $m,n\\in\\mathbb N$ and assume that $n$ has $m$ good blocks. Then\n\n$$\n\\forall j<m,\\quad B^j(n)<B^{j+1}(n).\n$$\n\nThis makes the finite growth certificate local at every successive block endpoint.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows (m n : Nat) (hgood : goodBlocks m n) :\n    ∀ j : Nat, j < m → blocks j n < blocks (j + 1) n := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

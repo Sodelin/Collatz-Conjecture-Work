@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FiniteRepetitionBoundStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FiniteRepetitionBoundStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.finiteRepetitionBound",
+  "universe_count_equal": true,
+  "solution_sha256": "1f93bfd97b0fb7890c3f501bd0e52975b401edeaa7502d6354cc87c7f4c68627",
+  "theorem_sha256": "738b1fae5fbd446d7712ff0fe51a41d699ec89295dcb3a7fb34df646da67138c",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_finiteRepetitionBound.lean",
+  "source_files_unchanged": true
+}

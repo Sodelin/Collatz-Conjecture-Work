@@ -1,0 +1,960 @@
+{
+  "reviewed_at": "2026-09-08T14:13:08.716243+00:00",
+  "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+  "baseline_packaging_commit": "641ed48191d0c3af2253e9c700f635ad8c25cbea",
+  "theorems": 113,
+  "definitions": 22,
+  "all_solution_lean_bytes_unchanged": true,
+  "all_definition_lean_bytes_unchanged": true,
+  "all_formal_statements_unchanged": true,
+  "all_preamble_plus_statement_match_checked_staged_files": true,
+  "preamble_correction": "one blank separator matching previously checked staged theorem file",
+  "scope_review": "Per-theorem hypotheses, conclusions, natural-number boundaries, named parameter definitions, role, and separate proof methods; no novelty or universal-convergence assertion. Independent main-claims spot review corrected zero-block truncated subtraction.",
+  "items": [
+    {
+      "name": "ArchiveAlternatingGrowth",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L1-L170",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "ArchiveDescent",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/Descent.lean#L1-L81",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_AffineRepetitionStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetitionStatement.lean#L1-L43",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_BlockArithmetic",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/BlockArithmetic.lean#L1-L145",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_ConvergenceStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ConvergenceStatement.lean#L1-L47",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_Disproof_BranchingCenter",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean#L1-L119",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_Disproof_FiniteResidueFirstIntegral",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean#L1-L117",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_Disproof_PolynomialRatchet",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L1-L143",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_ExcursionBudgetStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudgetStatement.lean#L1-L48",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_FinitePaletteObstructionStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstructionStatement.lean#L1-L20",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_FirstContractionStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContractionStatement.lean#L1-L18",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_FloorPower",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FloorPower.lean#L1-L54",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_InverseWordBoundaryStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/InverseWordBoundaryStatement.lean#L1-L30",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_PrefixCollisionStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollisionStatement.lean#L1-L27",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_QuarterGapStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapStatement.lean#L1-L60",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_QuarterGapUniversalStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversalStatement.lean#L1-L26",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_RefinedMersenneChild",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L1-L243",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_ResidueAncestorStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorStatement.lean#L1-L22",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_RootDescentStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescentStatement.lean#L1-L34",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_TwoBurstStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurstStatement.lean#L1-L22",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_YAHFiniteObstruction",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L1-L727",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork_YAHFiniteObstructionStatement",
+      "kind": "definition",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstructionStatement.lean#L1-L252",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L105-L109",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L115-L126",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.AlternatingGrowth.odd_exponents_one_two",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L30-L33",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.AlternatingGrowth.ordinary_five",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L136-L155",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/AlternatingGrowth.lean#L157-L159",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.RepetitionBound.affine_repetition_bound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/RepetitionBound.lean#L67-L76",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.RepetitionBound.alternating_repetition_bound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/RepetitionBound.lean#L93-L98",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/RepetitionBound.lean#L100-L106",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/RepetitionBound.lean#L78-L87",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.RepetitionBound.telescope",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/RepetitionBound.lean#L10-L25",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "BlindCollatz.descent_iff_convergence",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/research/blind-2026-09-05/Descent.lean#L70-L72",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean#L88-L113",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/BranchingCenter.lean#L35-L76",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean#L96-L109",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.firstRotatedDeterminantCoefficients",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L31-L54",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.noNonresonantContentGain",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L98-L117",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.quotientDegreesVanish",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L119-L136",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.secondRotatedDeterminantCoefficients",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L56-L78",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/PolynomialRatchet.lean#L44-L84",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.twoPumpCoefficientDependencies",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L16-L29",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L80-L136",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.Disproof.twoPumpSyzygy",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Disproof/TwoPumpDependency.lean#L138-L172",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.edgeCertificate_cancellation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L581-L585",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.edgeCertificate_canonically_embeddable",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L570-L574",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.edgeCertificate_shape",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L576-L579",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L171-L190",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.ffPumpWord_canonical",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L357-L359",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L441-L458",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.noTwoStateEdgeAdditiveOrder",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L698-L709",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.noTwoStateEdgeCertificateOrientation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L656-L683",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.noTwoStateSymbolAdditiveOrder",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L685-L696",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.noTwoStateSymbolCertificateOrientation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L626-L654",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.symbolCertificate_cancellation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L506-L509",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L496-L499",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.symbolCertificate_shape",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L501-L504",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.twoState_rule_equations",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L464-L468",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.unlabelledCertificate_cancellation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L265-L268",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.unlabelledCertificate_shape",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L257-L259",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.unlabelledRows_legal",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L251-L252",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.unlabelledRows_semantic",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L254-L255",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.weightedGapSum_pos",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L46-L88",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.YAH.yah13_forces_ff_negative",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/YAHFiniteObstruction.lean#L306-L335",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.affineQuarterCertificate",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGap.lean#L75-L83",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.affineRecurrenceTelescope",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L5-L20",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.affineRepetitionBound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L52-L56",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.allPositiveConverge_of_smallerCoalescence",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L52-L65",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.blockNumerator12_exact_bound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/BlockArithmetic.lean#L21-L126",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.compatibleProduct_mod_four",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L85-L104",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.converges_iff_of_coalesces",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L41-L50",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.converges_shortcutIter_iff",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L33-L39",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.descentCriterion",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L97-L102",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.equalSlopeSmaller",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/InverseWordBoundary.lean#L6-L13",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.equalSlopeWitness",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/InverseWordBoundary.lean#L15-L47",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.excursionBudgetDescent",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L61-L71",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.excursionChainEnvelope",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L28-L43",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.excursionChain_converges_of_smaller",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L99-L111",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.excursionChain_terminal_descent",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L73-L86",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.finitePaletteObstruction",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstruction.lean#L109-L164",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.finitePalette_path_obstruction",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstruction.lean#L38-L74",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.finiteRepetitionBound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L28-L30",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.firstContractionQuarterGap",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L147-L155",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.firstContractionThirdGap",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContraction.lean#L41-L58",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.firstContractionTime",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContraction.lean#L6-L22",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.firstContraction_quarter_of_certificate",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGap.lean#L94-L116",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.fixedRatioDivisibility",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L22-L26",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.floorPower_mul",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FloorPower.lean#L7-L41",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanicalCoarseBound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FirstContraction.lean#L24-L39",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanicalEnvelope",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGap.lean#L52-L67",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanical_fifteen_failure",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L129-L135",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanical_large_bound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L115-L127",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanical_twelve_identity",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L8-L85",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mechanical_twelve_propagation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L87-L107",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.mersenne_prefix_nondecreasing",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FinitePaletteObstruction.lean#L84-L107",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.noInfiniteExpandingAffineBlocks",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L58-L62",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.noInfinitePositiveRecurrence",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L32-L36",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.oddRun",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L44-L58",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.orbitAffine",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGap.lean#L22-L50",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.parityPrefix_dvd_sub_of_le",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollision.lean#L34-L61",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.prefixCollision",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollision.lean#L95-L95",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.prefixReturnBernoulli",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L64-L81",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.prefixReturnNumericalBound",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/AffineRepetition.lean#L83-L95",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.prefixSeparation",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/PrefixCollision.lean#L96-L96",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedChild_arithmetic",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L128-L147",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedChild_iter",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L173-L227",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedMersenneChild_coalesces",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L229-L236",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedParent_converges_iff_child",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L104-L112",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedParent_converges_of_smaller",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L126-L135",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedParent_has_smaller_coalescence",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L114-L124",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.refinedParent_iter",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L149-L171",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L126-L130",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_factor_unit",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L132-L146",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_normalized",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L90-L124",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_of_divisibility",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L148-L161",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_prefix_one",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L52-L68",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_prefix_two",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestor.lean#L70-L84",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_refinedTail",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L151-L174",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_tail11",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L58-L86",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_tail173",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L124-L149",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_tail38",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L15-L33",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_tail65",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L35-L56",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.residueAncestor_tail92",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ResidueAncestorTails.lean#L88-L122",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.rootDescent",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L94-L119",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.rootDescentAncestor",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L143-L154",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.rootDescentBurst",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L38-L52",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.rootDescent_converges_of_smaller",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L121-L129",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.shiftedEnvelope_compose",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L13-L26",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.shortcutIter_OOE",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RootDescent.lean#L14-L30",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.smallerCoalescenceCriterion",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/Convergence.lean#L75-L77",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.terminalEnvelope_compose",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/ExcursionBudget.lean#L45-L59",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.twoBurstDescent",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurst.lean#L99-L172",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.twoBurst_converges_of_smaller",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurst.lean#L174-L183",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.twoBurst_power_margin",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/TwoBurst.lean#L40-L69",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    },
+    {
+      "name": "CollatzWork.universalMechanicalQuarterCertificate",
+      "kind": "theorem",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/QuarterGapUniversal.lean#L137-L145",
+      "academic_metadata": "reviewed",
+      "formal_code": "matches_existing_checked_stage"
+    }
+  ]
+}

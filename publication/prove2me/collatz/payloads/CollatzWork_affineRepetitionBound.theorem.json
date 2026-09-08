@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.affineRepetitionBound",
-  "theorem_title": "Fixed affine repetition and conditional prefix-return budget",
-  "natural_language_statement": "For coprime a,b and a natural-valued sequence with b*y(i+1)=a*y(i) for i<k, b^k divides y(0); if y(0)>0 then b^k<=y(0). For coprime b,b+d and b*x(i+1)=(b+d)*x(i)+c, positive d*x(0)+c bounds b^k. Also2*32^d<27^d*(n+1) implies10*d+27<27*n and d<=(27*n-28)/10. Limitations: The recurrence multiplier is fixed. Changing blocks do not inherit the same budget. The numerical return theorem requires its exponential premise; it does not formalize the complete Thue-Morse application.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_AffineRepetitionStatement\nimport Theorems.Thm_CollatzWork_finiteRepetitionBound\n\n\n",
+  "theorem_title": "Divisibility budget for a repeated affine block",
+  "natural_language_statement": "Let $b,d,c,k\\in\\mathbb N$ with $\\gcd(b,b+d)=1$, and $x:\\mathbb N\\to\\mathbb N$ with $d x_0+c>0$. Assume $b x_{i+1}=(b+d)x_i+c$ for every $i<k$. Then\n\n$$\nb^k\\le d x_0+c.\n$$\n\nThe positive shifted initial value bounds repetitions of a fixed affine rule. Degenerate parameters remain covered when they satisfy the stated hypotheses.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_AffineRepetitionStatement\nimport Theorems.Thm_CollatzWork_finiteRepetitionBound\n\n\n\n",
   "formal_statement": "theorem CollatzWork.affineRepetitionBound : AffineRepetitionBoundStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

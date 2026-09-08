@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Extension734.numerical_733_from_731",
-  "theorem_title": "Erdos302Extension734.numerical_733_from_731",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Extension734_lift_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_cardinal\n\nopen Erdos302Finite\n",
+  "theorem_title": "Conditional reciprocal-triple-free maximum at 733",
+  "natural_language_statement": "Call a subset of positive integers admissible if it contains no $a<b<c$ satisfying $a(b+c)=bc$, equivalently $1/a=1/b+1/c$. Let $f(n)$ denote the maximum cardinality of an admissible subset of $\\{1,\\ldots,n\\}$. Assuming an attained maximum and matching upper bound $f(731)=606$, one has\n\n$$\nf(733)=607.\n$$\n\nThe baseline at 731 is an explicit hypothesis. This theorem proves a finite conditional transfer; it does not prove that baseline, a lower-bound table, or the asymptotic Erdős conjecture.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\nimport Theorems.Thm_Erdos302Extension734_lift_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_admissible\nimport Theorems.Thm_Erdos302Finite_replacement_cardinal\n\nopen Erdos302Finite\n\n",
   "formal_statement": "theorem Erdos302Extension734.numerical_733_from_731 (h : ExactMaximum 731 606) :\n FullExactMaximum 733 607 := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "conditional-result",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L143-L145"
 }

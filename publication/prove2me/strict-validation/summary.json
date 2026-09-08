@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "files": 57,
+  "autoImplicit": false,
+  "projects": [
+    {
+      "project": "erdos302",
+      "status": "passed",
+      "checked_files": 26,
+      "manifest_sha256": "a52c1d6b3501a64c0cc5f97d66573d68daddc75f91141bd0458f040a14546c83"
+    },
+    {
+      "project": "egyptian295",
+      "status": "passed",
+      "checked_files": 6,
+      "manifest_sha256": "8be6b059646a1ed48278ab8515e10291eeb7bd41406e39a17a24d8ab71de78b0"
+    },
+    {
+      "project": "newmath",
+      "status": "passed",
+      "checked_files": 25,
+      "manifest_sha256": "a549b613533627d797f99578c25002290d88eee32c09bde2c5e80d8e333b04e4"
+    }
+  ]
+}

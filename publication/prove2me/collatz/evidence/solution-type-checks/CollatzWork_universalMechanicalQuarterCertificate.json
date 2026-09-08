@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.UniversalMechanicalQuarterCertificateStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.UniversalMechanicalQuarterCertificateStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.universalMechanicalQuarterCertificate",
+  "universe_count_equal": true,
+  "solution_sha256": "c350f6a70f363a41df9ba2db26bfbc38bd0d3211be93fcf645f94648155a4737",
+  "theorem_sha256": "46a7d48bcd50aca1863322815ae0bddb1bbc0dadc4383475177d1edae1068003",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_universalMechanicalQuarterCertificate.lean",
+  "source_files_unchanged": true
+}

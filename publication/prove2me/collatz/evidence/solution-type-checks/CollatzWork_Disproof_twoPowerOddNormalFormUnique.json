@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (R S A B : Nat),\n  CollatzWork.Disproof.ArithOdd A →\n    CollatzWork.Disproof.ArithOdd B →\n      @Eq.{1} Nat\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) R)\n            A)\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) S)\n            B) →\n        And (@Eq.{1} Nat R S) (@Eq.{1} Nat A B)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (R S A B : Nat),\n  CollatzWork.Disproof.ArithOdd A →\n    CollatzWork.Disproof.ArithOdd B →\n      @Eq.{1} Nat\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) R)\n            A)\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) S)\n            B) →\n        And (@Eq.{1} Nat R S) (@Eq.{1} Nat A B)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+  "universe_count_equal": true,
+  "solution_sha256": "fab7bfa46700406c51333728337fadfb9df96dfccc50a57f3357ed402a7300c5",
+  "theorem_sha256": "ee60fa5f88d254c5a71562400826b807083e5e4c36869d59a9efa222e0682830",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean",
+  "source_files_unchanged": true
+}

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.PrefixCollisionStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.PrefixCollisionStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.prefixCollision",
+  "universe_count_equal": true,
+  "solution_sha256": "62ce0a80a887b81ec1d1d792753058d4a12404753d5750a70acde1bbe238771c",
+  "theorem_sha256": "2fdf1a7a9824d24dd5c31fdee553623ab76a3c448d32096cac92efd46505471b",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_prefixCollision.lean",
+  "source_files_unchanged": true
+}

@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.prefixSeparation",
-  "theorem_title": "Actual shortcut parity prefixes determine residue classes",
-  "natural_language_statement": "Two naturals whose first k actual shortcut parity bits agree are congruent modulo2^k. If they are distinct, their natural absolute difference is at least2^k. Limitations: Finite actual-map statement, not a universal recurrence claim. Elementary classical parity arithmetic; no external priority claim.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\nimport Theorems.Thm_CollatzWork_parityPrefix_dvd_sub_of_le\n\n\n",
+  "theorem_title": "Distinct starts with one parity prefix are dyadically separated",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. The starts $n,m\\in\\mathbb N$ have the same parity prefix of length $k\\in\\mathbb N$ when $T^i(n)\\equiv T^i(m)\\pmod2$ for every $i<k$.\n\nIf $n\\ne m$ and their parity prefixes of length $k$ agree, then\n\n$$\n2^k\\le|n-m|.\n$$\n\nThe modulus supplies a quantitative separation between distinct starts with the same finite itinerary.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\nimport Theorems.Thm_CollatzWork_parityPrefix_dvd_sub_of_le\n\n\n\n",
   "formal_statement": "theorem CollatzWork.prefixSeparation : PrefixSeparationStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

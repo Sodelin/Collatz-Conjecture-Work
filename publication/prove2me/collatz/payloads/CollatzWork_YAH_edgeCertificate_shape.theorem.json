@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.edgeCertificate_shape",
-  "theorem_title": "CollatzWork.YAH.edgeCertificate_shape",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
-  "formal_statement": "theorem CollatzWork.YAH.edgeCertificate_shape :\n    edgeCertificate.length = 50 \u2227\n    (edgeCertificate.filter fun entry => (rule entry.2.ruleName).dynamic).foldr\n      (fun entry total => entry.1 + total) 0 = 144057 := by sorry\n\n",
+  "theorem_title": "Size and dynamic multiplier sum of the 50-row YAH adjacent-edge certificate",
+  "natural_language_statement": "Let $C_e$ be the fixed labeled YAH adjacent-edge certificate, whose entries $(a,r)$ consist of a natural multiplier $a$ and a row $r$. A row is dynamic exactly when its rule is $D_f$ or $D_t$. Then\n\n$$|C_e|=50\\quad\\text{and}\\quad\\sum_{(a,r)\\in C_e\\,:\\,r\\text{ dynamic}}a=144057.$$\n\nThe second number is the sum of multipliers on dynamic rows, not the number of such rows. This records the finite certificate data independently of its cancellation consequence.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.edgeCertificate_shape :\n    edgeCertificate.length = 50 ∧\n    (edgeCertificate.filter fun entry => (rule entry.2.ruleName).dynamic).foldr\n      (fun entry total => entry.1 + total) 0 = 144057 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.DescentCriterionStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.DescentCriterionStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.descentCriterion",
+  "universe_count_equal": true,
+  "solution_sha256": "b981ed3baa036fe6249bfdef78b575e273132053c15ef166c83881d2b53f2598",
+  "theorem_sha256": "e417ac13ac6f666c86e0f2cb59d61042ee9fe79de4a5284b2ef341a86b17b2e3",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_descentCriterion.lean",
+  "source_files_unchanged": true
+}

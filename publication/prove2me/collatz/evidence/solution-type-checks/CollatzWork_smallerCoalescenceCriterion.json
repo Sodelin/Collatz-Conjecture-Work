@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.SmallerCoalescenceCriterionStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.SmallerCoalescenceCriterionStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.smallerCoalescenceCriterion",
+  "universe_count_equal": true,
+  "solution_sha256": "3c3d000a19c7bf814415642cb637bb75efccdf9d5950fd17daa24463c448ce36",
+  "theorem_sha256": "536c8c19a44d1b68034cb4b4cbf210c45da7a7861cd32a0cef008115158427ca",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_smallerCoalescenceCriterion.lean",
+  "source_files_unchanged": true
+}

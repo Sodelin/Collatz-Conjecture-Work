@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.floorPower_mul",
-  "theorem_title": "Universal mechanical certificate and sharp eventual threshold 16",
-  "natural_language_statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range. Limitations: The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_FloorPower\n\n\n",
-  "formal_statement": "theorem CollatzWork.floorPower_mul {a x f k : Nat}\n    (ha : 2 ^ f \u2264 a) (ha' : a < 2 ^ (f + 1))\n    (hx : 2 ^ k \u2264 x) (hx' : x < 2 ^ (k + 1)) :\n    floorPower (a * x) =\n      if a * x < 2 ^ (f + 1) * 2 ^ k then 2 ^ f * 2 ^ k\n      else 2 ^ (f + 1) * 2 ^ k := by sorry\n\n",
+  "theorem_title": "The two dyadic bins for a product",
+  "natural_language_statement": "Let $a,x,f,k\\in\\mathbb N$ satisfy $2^f\\le a<2^{f+1}$ and $2^k\\le x<2^{k+1}$. Write $F(y)=2^{\\lfloor\\log_2 y\\rfloor}$ for positive $y$. Then\n\n$$\nF(ax)=\\begin{cases}2^{f+k}&ax<2^{f+k+1},\\\\2^{f+k+1}&ax\\ge2^{f+k+1}.\\end{cases}\n$$\n\nThis converts multiplication of dyadic floor powers into one exact threshold test.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_FloorPower\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.floorPower_mul {a x f k : Nat}\n    (ha : 2 ^ f ≤ a) (ha' : a < 2 ^ (f + 1))\n    (hx : 2 ^ k ≤ x) (hx' : x < 2 ^ (k + 1)) :\n    floorPower (a * x) =\n      if a * x < 2 ^ (f + 1) * 2 ^ k then 2 ^ f * 2 ^ k\n      else 2 ^ (f + 1) * 2 ^ k := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

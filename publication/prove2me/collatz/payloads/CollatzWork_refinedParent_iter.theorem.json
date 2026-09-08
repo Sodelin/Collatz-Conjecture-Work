@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.refinedParent_iter",
-  "theorem_title": "CollatzWork.refinedParent_iter",
-  "natural_language_statement": "The parent reaches the common endpoint after `L+2` one-division shortcut\nsteps on the parity-compatible residue child.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\nimport Theorems.Thm_CollatzWork_compatibleProduct_mod_four\n\n\n",
-  "formal_statement": "theorem CollatzWork.refinedParent_iter (L epsilon z : Nat)\n    (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    shortcutIter (L + 2) (refinedParent L epsilon z) =\n      (3 ^ L * refinedA epsilon z - 1) / 4 := by sorry\n\n",
+  "theorem_title": "The parity-compatible refined parent reaches an explicit endpoint",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. For natural parameters $L,\\varepsilon,z$, put $A=4z+2\\varepsilon+1$, $P=2^LA-1$, and $Q=3\\cdot2^{L-2}A-1$. When $L<2$, the exponent $L-2$ uses truncated natural subtraction.\n\nAssume $\\varepsilon\\le1$ and $\\varepsilon\\equiv L\\pmod2$. Then\n\n$$\nT^{L+2}(P)=\\left\\lfloor\\frac{3^LA-1}{4}\\right\\rfloor.\n$$\n\nThe endpoint identity also covers L equal to 0 or 1; no claim of positivity or a smaller child is included here.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\nimport Theorems.Thm_CollatzWork_compatibleProduct_mod_four\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedParent_iter (L epsilon z : Nat)\n    (hepsilon : epsilon ≤ 1)\n    (hparity : epsilon % 2 = L % 2) :\n    shortcutIter (L + 2) (refinedParent L epsilon z) =\n      (3 ^ L * refinedA epsilon z - 1) / 4 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

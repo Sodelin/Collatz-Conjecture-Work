@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.smallerCoalescenceCriterion",
-  "theorem_title": "Formal descent and smaller-coalescence equivalences",
-  "natural_language_statement": "AllPositiveConverge is equivalent both to UniversalDescent and to UniversalSmallerCoalescence. The latter requires, for every n>1, a positive m<n and r,s in Nat such that T^r(n)=T^s(m). Converges means an actual finite shortcut iterate reaches 1. Convergence is preserved by finite prefixes and by coalescence. Limitations: These are induction criteria and semantic equivalences. UniversalSmallerCoalescence and UniversalDescent are not proved; each is Collatz-equivalent. The map keeps the cycle 1->2->1 rather than making 1 absorbing. No novelty claim for the criteria.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence\n\n\n",
+  "theorem_title": "Convergence is equivalent to universal smaller coalescence",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Write $\\mathcal C(n)$ for the assertion that $T^j(n)=1$ for some $j\\in\\mathbb N$.\n\nLet $\\mathsf S$ assert that every $n>1$ has a positive $m<n$ and $r,s\\in\\mathbb N$ with $T^r(n)=T^s(m)$. Then\n\n$$\n\\bigl(\\forall n>0,\\ \\mathcal C(n)\\bigr)\\iff\\mathsf S.\n$$\n\nThis exact equivalence identifies a possible proof obligation; it does not discharge that obligation.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence\n\n\n\n",
   "formal_statement": "theorem CollatzWork.smallerCoalescenceCriterion : SmallerCoalescenceCriterionStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

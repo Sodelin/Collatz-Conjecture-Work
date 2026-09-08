@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
-  "theorem_title": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
-  "natural_language_statement": "Entry coverage lifts configuration soundness to every value in a domain.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_RankedCoalescenceSound\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound\n    {\u03b1 C W : Type}\n    (f : \u03b1 \u2192 \u03b1)\n    (one : \u03b1)\n    (decode : C \u2192 \u03b1)\n    (rank : C \u2192 W)\n    (lt : W \u2192 W \u2192 Prop)\n    (edge : C \u2192 Nat \u2192 Nat \u2192 C \u2192 Prop)\n    (Entry : C \u2192 Prop)\n    (Domain : \u03b1 \u2192 Prop)\n    (hfix : f one = one)\n    (hwf : WellFounded (fun c' c => lt (rank c') (rank c)))\n    (hprogress : \u2200 c, decode c \u2260 one \u2192 \u2203 a b c', edge c a b c')\n    (hexact : \u2200 {c a b c'}, edge c a b c' \u2192\n      iterate f a (decode c) = iterate f b (decode c'))\n    (hdecrease : \u2200 {c a b c'}, edge c a b c' \u2192\n      lt (rank c') (rank c))\n    (hcoverage : \u2200 x, Domain x \u2192 \u2203 c, Entry c \u2227 decode c = x) :\n    \u2200 x, Domain x \u2192 Reaches f one x := by sorry\n\n",
+  "theorem_title": "Domain coverage and ranked coalescence imply finite reachability",
+  "natural_language_statement": "Let $X,C,W$ be types, $f:X\\to X$ a transition, $e\\in X$ a terminal state, $d:C\\to X$ a decoding map, $\\rho:C\\to W$ a rank, and $\\prec$ a relation on $W$. Let $E(c,a,b,c')$ be a relation with $a,b\\in\\mathbb N$, $\\mathrm{Entry}\\subseteq C$, and $D\\subseteq X$. Assume:\n\n1. $f(e)=e$.\n2. The pullback relation $c'\\triangleleft c\\iff\\rho(c')\\prec\\rho(c)$ is well founded.\n3. Every configuration $c$ with $d(c)\\ne e$ admits some edge $E(c,a,b,c')$.\n4. Every such edge satisfies $f^a(d(c))=f^b(d(c'))$ and $\\rho(c')\\prec\\rho(c)$.\n5. For every $x\\in D$, there is $c\\in\\mathrm{Entry}$ with $d(c)=x$.\n\nHere $f^k$ denotes $k$-fold iteration, with $f^0$ the identity. Then\n\n$$\n\\forall x\\in D\\ \\exists k\\in\\mathbb N,\\ f^k(x)=e.\n$$\n\nThis is an abstract soundness theorem for a supplied ranked coalescence certificate. Progress and rank decrease are assumed for all configurations, while entry coverage is only needed for the selected domain. It does not construct a certificate for Collatz or prove universal Collatz termination.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_RankedCoalescenceSound\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound\n    {α C W : Type}\n    (f : α → α)\n    (one : α)\n    (decode : C → α)\n    (rank : C → W)\n    (lt : W → W → Prop)\n    (edge : C → Nat → Nat → C → Prop)\n    (Entry : C → Prop)\n    (Domain : α → Prop)\n    (hfix : f one = one)\n    (hwf : WellFounded (fun c' c => lt (rank c') (rank c)))\n    (hprogress : ∀ c, decode c ≠ one → ∃ a b c', edge c a b c')\n    (hexact : ∀ {c a b c'}, edge c a b c' →\n      iterate f a (decode c) = iterate f b (decode c'))\n    (hdecrease : ∀ {c a b c'}, edge c a b c' →\n      lt (rank c') (rank c))\n    (hcoverage : ∀ x, Domain x → ∃ c, Entry c ∧ decode c = x) :\n    ∀ x, Domain x → Reaches f one x := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "dynamical-systems",
+    "well-foundedness",
+    "formal-verification"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L95-L120"
 }

@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
-  "theorem_title": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [IntModule M]\n",
-  "formal_statement": "theorem CollatzWork.YAH.evalCoefficients_weightedCoefficient\n    (features : List \u03c6) (weight : \u03c6 \u2192 M)\n    (certificate : List (Nat \u00d7 \u03c1)) (delta : \u03c1 \u2192 \u03c6 \u2192 Int) :\n    evalCoefficients features weight\n        (weightedCoefficient certificate delta) =\n      weightedGapSum certificate\n        (fun row => evalCoefficients features weight (delta row)) := by sorry\n\n",
+  "theorem_title": "Evaluation commutes with a finite weighted coefficient sum",
+  "natural_language_statement": "Let $M$ be an integer module, $F$ a finite list of features of any type $\\varphi$, $w:\\varphi\\to M$, $C$ a finite list of pairs $(a,r)\\in\\mathbb N\\times\\rho$, and $\\delta:\\rho\\times\\varphi\\to\\mathbb Z$. Integer scalar multiplication in $M$ is denoted by juxtaposition. Then\n\n$$\\sum_{e\\in F}\\left(\\sum_{(a,r)\\in C}a\\,\\delta(r,e)\\right)w(e)=\\sum_{(a,r)\\in C}a\\left(\\sum_{e\\in F}\\delta(r,e)w(e)\\right).$$\n\nBoth sums retain duplicate list entries. This algebraic identity transfers a coefficient-level certificate to a weighted sum of evaluated row gaps; it requires no order assumptions.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nuniverse u\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [IntModule M]\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.evalCoefficients_weightedCoefficient {φ : Type _} {ρ : Type _}\n    (features : List φ) (weight : φ → M)\n    (certificate : List (Nat × ρ)) (delta : ρ → φ → Int) :\n    evalCoefficients features weight\n        (weightedCoefficient certificate delta) =\n      weightedGapSum certificate\n        (fun row => evalCoefficients features weight (delta row)) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

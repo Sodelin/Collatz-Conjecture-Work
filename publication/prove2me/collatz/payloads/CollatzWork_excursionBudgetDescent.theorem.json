@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.excursionBudgetDescent",
-  "theorem_title": "Arbitrary finite actual-orbit envelope composition and conditional original-root descent",
-  "natural_language_statement": "For every finite list of actual shortcut-orbit segments, ExcursionChain requires a positive denominator for each segment and its shifted bound D_i*(endpoint+3)<=A_i*(start+3). Lean proves that their product envelope holds relative to the unchanged original root. For root>=3, an appended terminal strict bound E*endpoint<B*(prefix_endpoint+3) and the cumulative budget 2*(product(A_i)*B)<=product(D_i)*E imply endpoint<root. The convergence corollary additionally assumes convergence of every smaller positive input. The empty list is allowed, and no uniform bound on list length or segment lengths is assumed. Limitations: All local envelopes and the terminal repayment budget remain explicit premises. The six declarations establish the generic composition/descent core only: concrete OOEO inequalities, actual parity/CRT realization, exact valuation labels, selector identities, arbitrary infinite schedules, all-root coverage and universal convergence are not formalized by this core. Priority and external mathematical review are unestablished.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_ExcursionBudgetStatement\n\n\n",
+  "theorem_title": "A half-margin envelope forces descent below the original root",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $n,k,A,D\\in\\mathbb N$ satisfy $n\\ge3$, $D T^k(n)<A(n+3)$, and $2A\\le D$. Then\n\n$$\nT^k(n)<n.\n$$\n\nThis is the numerical repayment condition for the shifted orbit envelope.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_ExcursionBudgetStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.excursionBudgetDescent : ExcursionBudgetDescentStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

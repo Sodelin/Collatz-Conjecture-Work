@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
-  "theorem_title": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
-  "natural_language_statement": "Exact realization theorem: the blind coalitions are precisely the subsets\nof at least one Boolean generator.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_BlindnessRealization\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.BlindnessRealization.blind_iff_below_generator {I J : Type} (F : J \u2192 I \u2192 Bool)\n    (S : I \u2192 Prop) :\n    Blind S (State.observe F) State.target \u2194\n      \u2203 j, \u2200 i, S i \u2192 F j i = true := by sorry\n\n",
+  "theorem_title": "Exact realization of blind coalitions by Boolean generators",
+  "natural_language_statement": "Let $I,J$ be arbitrary types and $F:J\\times I\\to\\{0,1\\}$ a Boolean family. Construct a base state $*$ with target 0 and a state $[j]$ of target 1 for each $j\\in J$. Observer $i$ returns 0 at the base and $1-F(j,i)$ at $[j]$. A coalition $S\\subseteq I$ is blind when two states have different targets but equal observations on every $i\\in S$. Then\n\n$$\nS\\text{ is blind}\\quad\\Longleftrightarrow\\quad\\exists j\\in J\\ \\forall i\\in S,\\ F(j,i)=1.\n$$\n\nThis realizes exactly the family of coalitions lying below at least one Boolean generator. No finiteness or nonemptiness assumptions on either index type are required.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_BlindnessRealization\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.BlindnessRealization.blind_iff_below_generator {I J : Type} (F : J → I → Bool)\n    (S : I → Prop) :\n    Blind S (State.observe F) State.target ↔\n      ∃ j, ∀ i, S i → F j i = true := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "combinatorics",
+    "information",
+    "boolean-systems"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L36-L66"
 }

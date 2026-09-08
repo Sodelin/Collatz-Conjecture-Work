@@ -1,0 +1,1 @@
+TYPECHECK_JSON {"definitionally_equal_at_rigid_levels":true,"no_metavariables":true,"passed":true,"rigid_universe_parameters":[],"solution_type":"CollatzWork.EqualSlopeWitnessStatement","solution_universe_parameters":[],"target_type":"CollatzWork.EqualSlopeWitnessStatement","target_universe_parameters":[],"theorem_name":"CollatzWork.equalSlopeWitness","universe_count_equal":true}

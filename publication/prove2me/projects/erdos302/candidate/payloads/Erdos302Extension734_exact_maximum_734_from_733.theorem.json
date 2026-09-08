@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Extension734.exact_maximum_734_from_733",
-  "theorem_title": "Erdos302Extension734.exact_maximum_734_from_733",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_KernelEndpoints734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n",
+  "theorem_title": "The reciprocal-triple-free maximum increases by one from 733 to 734",
+  "natural_language_statement": "Call a subset of positive integers admissible if it contains no $a<b<c$ satisfying $a(b+c)=bc$, equivalently $1/a=1/b+1/c$. Let $k\\in\\mathbb N$. If $k$ is an attained maximum cardinality for admissible subsets of $\\{1,\\ldots,733\\}$, then\n\n$$\n\\max\\{|S|:S\\subseteq\\{1,\\ldots,734\\},\\ S\\text{ admissible}\\}=k+1.\n$$\n\nThis exact finite transfer is independent of any specified numerical baseline at 731 or733. The maximum includes both an attaining witness and a universal upper bound.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_KernelEndpoints734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n\n",
   "formal_statement": "theorem Erdos302Extension734.exact_maximum_734_from_733 (k : Nat) (h : FullExactMaximum 733 k) :\n FullExactMaximum 734 (k + 1) := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "extremal-combinatorics",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L222-L230"
 }

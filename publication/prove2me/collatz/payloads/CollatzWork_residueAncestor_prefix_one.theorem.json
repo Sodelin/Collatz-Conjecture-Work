@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.residueAncestor_prefix_one",
-  "theorem_title": "CollatzWork.residueAncestor_prefix_one",
-  "natural_language_statement": "The h=1 variable prefix, expressed using x=2^k u.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_rootDescentAncestor\n\n\n",
+  "theorem_title": "Variable ancestor prefix of length k plus 3",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $k,u,r\\in\\mathbb N$ with $u>0$ and $3^{k+3}u=4r+1$. Then\n\n$$\nT^{k+3}(6\\cdot2^k u-1)=r.\n$$\n\nThis computes a guarded forward prefix without claiming that its starting value is smaller than r.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_rootDescentAncestor\n\n\n\n",
   "formal_statement": "theorem CollatzWork.residueAncestor_prefix_one (k u r : Nat) (hu : 0 < u)\n    (hguard : 3 ^ (k + 3) * u = 4 * r + 1) :\n    shortcutIter (k + 3) (6 * (2 ^ k * u) - 1) = r := by sorry\n\n",
   "tags": [
     "collatz-work-import"

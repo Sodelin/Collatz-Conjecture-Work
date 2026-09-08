@@ -1,10 +1,13 @@
 {
   "definition_name": "KernelEndpoints734",
-  "definition_title": "KernelEndpoints734 definitions",
-  "natural_language_description": "Definitions and necessary proof-bearing construction material from KernelEndpoints734.",
+  "definition_title": "Finite divisibility check for new reciprocal-triple endpoints",
   "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace Erdos302KernelEndpoints734\n\nset_option maxRecDepth 100000\nset_option maxHeartbeats 10000000\n\ndef endpointCheck (c : Nat) : Bool :=\n (List.range 735).all (fun b => !(0 < b && b < c) || b * c % (b + c) != 0)\n\n\n\n\n\n\n\n\n\n\n\n\nend Erdos302KernelEndpoints734\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "finite-certificates",
+    "erdos-302"
   ],
-  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelEndpoints734.lean"
+  "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelEndpoints734.lean#L1-L40",
+  "natural_language_statement": "For $c\\in\\mathbb N$, define a Boolean check over $b\\in\\{0,\\ldots,734\\}$ by\n\n$$\n\\operatorname{check}(c)=\\bigwedge_{b=0}^{734}\\Bigl(\\neg(0<b<c)\\ \\lor\\ bc\\bmod(b+c)\\ne0\\Bigr).\n$$\n\nThis interface expresses the finite arithmetic obstruction to an integer first denominator when c is the largest endpoint. Downstream kernel certificates evaluate it for 733 and 734; the definition alone is not an assertion that it succeeds."
 }

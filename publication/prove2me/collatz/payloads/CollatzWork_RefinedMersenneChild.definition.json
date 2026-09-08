@@ -1,10 +1,10 @@
 {
   "definition_name": "CollatzWork_RefinedMersenneChild",
-  "definition_title": "CollatzWork.RefinedMersenneChild definitions",
-  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.RefinedMersenneChild.",
+  "definition_title": "Refined Mersenne parent and child families",
   "definition": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nnamespace CollatzWork\n\n/-!\n# Refined Mersenne child identity\n\nThis file formalizes one isolated arithmetic certificate for the one-division\nshortcut map `onceAccelerated`.  It does not assert termination or route\nclosure.\n-/\n\n@[simp] theorem shortcutIter_zero (n : Nat) : shortcutIter 0 n = n := rfl\n\n@[simp] theorem shortcutIter_succ (k n : Nat) :\n    shortcutIter (k + 1) n = shortcutIter k (onceAccelerated n) := rfl\n\n\n\n\n\n@[simp] theorem onceAccelerated_two_mul (b : Nat) :\n    onceAccelerated (2 * b) = b := by\n  rw [onceAccelerated]\n  simp\n\n\n\n\n\n/-- The parameter used by the two residue children. -/\ndef refinedA (epsilon z : Nat) : Nat := 4 * z + 2 * epsilon + 1\n\n/-- The exact-valuation Mersenne parent after splitting its odd parameter\nmodulo four. -/\ndef refinedParent (L epsilon z : Nat) : Nat :=\n  2 ^ L * refinedA epsilon z - 1\n\n/-- The smaller coalescing child on the parity-compatible branch. -/\ndef refinedChild (L epsilon z : Nat) : Nat :=\n  3 * 2 ^ (L - 2) * refinedA epsilon z - 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend CollatzWork\n",
   "tags": [
     "collatz-work-import"
   ],
-  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean"
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/RefinedMersenneChild.lean#L1-L243",
+  "natural_language_statement": "For natural parameters $L,\\varepsilon,z$, put $A=4z+2\\varepsilon+1$, $P=2^LA-1$, and $Q=3\\cdot2^{L-2}A-1$. When $L<2$, the exponent $L-2$ uses truncated natural subtraction.\n\nThe family relations are\n\n$$\nP=2^L(4z+2\\varepsilon+1)-1,\\qquad Q=3\\cdot2^{L-2}(4z+2\\varepsilon+1)-1.\n$$\n\nThese definitions organize an explicit smaller-child construction; the parity guard is a hypothesis of later orbit theorems. The bundle also retains the elementary simp identities needed to elaborate the shared shortcut map."
 }

@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
-  "theorem_title": "CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
-  "natural_language_statement": "Exact uniqueness of a power-of-two times an odd natural.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\n\n\n",
-  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique :\n    \u2200 R S A B : Nat,\n      CenterOdd A \u2192 CenterOdd B \u2192\n      2 ^ R * A = 2 ^ S * B \u2192\n      R = S \u2227 A = B := by sorry\n\n",
+  "theorem_title": "Uniqueness of a power-of-two times an odd natural",
+  "natural_language_statement": "Let $R,S,A,B\\in\\mathbb N$, with $A$ and $B$ odd: each has the form $2k+1$ for a natural number $k$. Then\n\n$$2^R A=2^S B\\quad\\Longrightarrow\\quad R=S\\ \\text{and}\\ A=B.$$\n\nOddness makes both factors positive, so no separate nonzero assumption is needed. This is uniqueness of the power-of-two times odd-part representation; it is a reusable arithmetic lemma.\n\n**Formalization Note.** This version uses the local `CenterOdd` predicate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique :\n    ∀ R S A B : Nat,\n      CenterOdd A → CenterOdd B →\n      2 ^ R * A = 2 ^ S * B →\n      R = S ∧ A = B := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

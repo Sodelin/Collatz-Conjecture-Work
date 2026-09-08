@@ -1,0 +1,992 @@
+{
+  "complete": false,
+  "events": [
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876930.3501542
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876938.2464612,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788876943.7071016,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788876949.3168159,
+      "intent_id": "5d8bc5cdb6f447b19191d3b15b244eb5",
+      "key": "def:ArchiveAlternatingGrowth",
+      "payload_sha256": "bc28d2abcd35646a4eaebd7dc7594470003c11409ae502a2c612fef255e2cb39"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788876955.1930857,
+      "job_id": "2a885ddb-c6a6-4c95-8512-89470825a8b7",
+      "key": "def:ArchiveAlternatingGrowth"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788876967.518588,
+      "key": "def:ArchiveAlternatingGrowth",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788877223.3730319
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788877231.9410005,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877238.7735426,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877246.2926838,
+      "intent_id": "78a6450c88a443c5b160ec25aecc1967",
+      "key": "def:CollatzWork.AffineRepetitionStatement",
+      "payload_sha256": "bdb8ab258f8bca910e1183784c9b24e70b540b7bea3862eec0d2d2ca8cda3b5e"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877247.0055568,
+      "intent_id": "a30b08e5cd42402692f8428ce2cb8294",
+      "key": "def:ArchiveDescent",
+      "payload_sha256": "0e566552efc7dea50ec5954bbba746a1dbf86ba8795db9c8aa5e2c8c540541ba"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877247.0899487,
+      "intent_id": "e086bbeafbc343e5bc9538990f32c2b4",
+      "key": "def:CollatzWork.BlockArithmetic",
+      "payload_sha256": "a8b92cfca21477343ca92b925f01351860a34b50dbdc7d2ab8f45cf7b7a93cf4"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877247.0937605,
+      "intent_id": "688d69cc58ae4933b9bfb151b800ee8b",
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral",
+      "payload_sha256": "385c67a21fb37590c8c62d13ca394ea80409490247aaa524d33b02003359394b"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877247.098849,
+      "intent_id": "fc8a1da8d21d46f5ba746349f51c6dc3",
+      "key": "def:CollatzWork.Disproof.BranchingCenter",
+      "payload_sha256": "d657c8a4501121453a069ebbca5fdeba41549396437ecca41c411341f4d5563c"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877247.1006632,
+      "intent_id": "cff85e92562b40cbad587ac6a0ef8044",
+      "key": "def:CollatzWork.InverseWordBoundaryStatement",
+      "payload_sha256": "506d070b398a18a1f64ce86a94efcf43f1161eb7b5c2595ef114d94129be6eaf"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.194516,
+      "job_id": "10843215-b0fa-4981-9612-b1d8eef8a637",
+      "key": "def:CollatzWork.BlockArithmetic"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.196009,
+      "job_id": "c71b7280-609c-4c37-9f82-1e5d85cb9971",
+      "key": "def:CollatzWork.InverseWordBoundaryStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.2091978,
+      "job_id": "3aef9910-3e74-411a-9e97-3a797c460274",
+      "key": "def:CollatzWork.AffineRepetitionStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.5636976,
+      "job_id": "c2211b2a-39d5-4e60-845c-b105ca61271c",
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877254.5853715,
+      "job_id": "8335ac1e-72eb-4036-8466-43d8513ac275",
+      "key": "def:CollatzWork.Disproof.BranchingCenter"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877254.7688508,
+      "job_id": "6e67ff69-a18f-48a2-88c6-21587bcccaed",
+      "key": "def:ArchiveDescent"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877258.8832421,
+      "key": "def:CollatzWork.BlockArithmetic",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877259.0464225,
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877259.1001153,
+      "key": "def:CollatzWork.Disproof.BranchingCenter",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877259.2467883,
+      "key": "def:ArchiveDescent",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877265.3555834,
+      "key": "def:CollatzWork.InverseWordBoundaryStatement",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877265.4248009,
+      "key": "def:CollatzWork.AffineRepetitionStatement",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877265.446581,
+      "intent_id": "6e9079733e8d487d85c52c9009b1a5da",
+      "key": "def:CollatzWork.FloorPower",
+      "payload_sha256": "1099d70ce8bbf506204ebbf0745aa5570d9acfe06feb7a03182280934007e871"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877265.5886495,
+      "intent_id": "624163859e0841ac9cd238e02ab06f70",
+      "key": "def:CollatzWork.Disproof.PolynomialRatchet",
+      "payload_sha256": "cd0210f7f2ca147efd805a27d892a69ea5ecb933ee1a826645109b4b6583a8a6"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877266.7955978,
+      "intent_id": "2c8dbe795aa146888fa12a67e0fe4635",
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement",
+      "payload_sha256": "96e74b0381934f5f185402ac8254351c0cd89fa083c9ef18e92ca6408bcecec2"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877273.1667492,
+      "job_id": "e2d28743-e3d1-4d46-ad8e-983e60ed22cc",
+      "key": "def:CollatzWork.FloorPower"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877273.242833,
+      "job_id": "1009a45c-e9d3-49f3-aeab-677128db8f71",
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877275.3353112,
+      "job_id": "26bb381a-c6a8-46a5-973a-81639cca7f72",
+      "key": "def:CollatzWork.Disproof.PolynomialRatchet"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877304.8265505,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877312.4712493,
+      "intent_id": "e67bcc43a1e4445ba707b4427cdf001e",
+      "key": "def:CollatzWork.ConvergenceStatement",
+      "payload_sha256": "0d5b8ed10622b07a9355f83aa9e754368c0926085798982a1076039461186717"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.5516481,
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.599413,
+      "key": "def:ArchiveDescent",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.644043,
+      "key": "def:CollatzWork.Disproof.BranchingCenter",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.6616497,
+      "key": "def:CollatzWork.BlockArithmetic",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.6688063,
+      "key": "def:CollatzWork.Disproof.PolynomialRatchet",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877318.6892905,
+      "job_id": "039f83a0-c833-459f-8925-595cdc1e40b9",
+      "key": "def:CollatzWork.ConvergenceStatement"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877325.6821702,
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement",
+      "status": "FAILED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877332.361393,
+      "key": "def:CollatzWork.FloorPower",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877332.42648,
+      "key": "def:CollatzWork.ConvergenceStatement",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877520.3329687,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877633.3298066,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "failed_publication_explicitly_repaired",
+      "at": 1788878344.2702935,
+      "failed_job_evidence_sha256": "5db0f2a01b5f2b2a79641870fdd70c5b993ffc68c427fcfacd76b0f4490dade9",
+      "job_id": "1009a45c-e9d3-49f3-aeab-677128db8f71",
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement",
+      "new_manifest_sha256": "b78edba0a3f9070da909ead5815247106150c615319b2b1ae1d5125a8739ab3c",
+      "old_manifest_sha256": "d3e8cf34e216f9111db7250408c80ec73fd13df895a2c386ce38d5b4a01448e1",
+      "repair_id": "e192f105f4774e909414c35ac3ab3d80"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788878390.8861527
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788878398.495466,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878405.2772396,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878415.6235056,
+      "intent_id": "c9457dfb8a4a49f9b2fd1d96bda12b59",
+      "key": "def:CollatzWork.ExcursionBudgetStatement",
+      "payload_sha256": "33a3109f17f316e3c18d27ced98bc9f352032bcc38cc3bc30fcf342a3d753ba2"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878415.6543174,
+      "intent_id": "5387d615ee1244f98b686e7cd86202e5",
+      "key": "def:CollatzWork.QuarterGapStatement",
+      "payload_sha256": "2bf9a2f6df45583588a8c899654e23887fc3427da6ca131b6bc7960016b2c460"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878415.8398702,
+      "intent_id": "127b4a7d2fc04d83b92e356ca63fb2ff",
+      "key": "def:CollatzWork.FinitePaletteObstructionStatement",
+      "payload_sha256": "f466799b1fccff44c2b71df457725ed122557492ded13d5cb6a6371896f5f8dc"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878416.271971,
+      "intent_id": "cdbb22146024485b99fd3e453ca16c46",
+      "key": "def:CollatzWork.PrefixCollisionStatement",
+      "payload_sha256": "e0f0f8d2abfbf79d72a9d1395b6c0ee7f0a3613ae1b2ee10bf1dff3f206ee4f4"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878422.7459705,
+      "job_id": "7b29fc7d-42a7-4b39-91c7-c9a178fade27",
+      "key": "def:CollatzWork.PrefixCollisionStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878422.8604195,
+      "job_id": "77e994b2-9a08-4c65-9ec8-483d35917cb3",
+      "key": "def:CollatzWork.FinitePaletteObstructionStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878422.8841634,
+      "job_id": "abdecfcd-598d-4cc0-99a3-85aae3f476f8",
+      "key": "def:CollatzWork.QuarterGapStatement"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878423.4567096,
+      "job_id": "e21f6180-ad89-4add-a29c-cdd99e0ec99d",
+      "key": "def:CollatzWork.ExcursionBudgetStatement"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878429.2442334,
+      "key": "def:CollatzWork.ExcursionBudgetStatement",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878429.2916696,
+      "key": "def:CollatzWork.FinitePaletteObstructionStatement",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878429.3297098,
+      "key": "def:CollatzWork.PrefixCollisionStatement",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878430.0042498,
+      "key": "def:CollatzWork.QuarterGapStatement",
+      "status": "COMPILING"
+    }
+  ],
+  "items": {
+    "def:ArchiveAlternatingGrowth": {
+      "api_url": "https://prove2.me/api/v1/theorems/8d3bcba5-651a-478c-a15f-70215d2641a7",
+      "intent_id": "5d8bc5cdb6f447b19191d3b15b244eb5",
+      "job_id": "2a885ddb-c6a6-4c95-8512-89470825a8b7",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "8d3bcba5-651a-478c-a15f-70215d2641a7"
+    },
+    "def:ArchiveDescent": {
+      "api_url": "https://prove2.me/api/v1/theorems/2ddd9e76-8d52-4740-9b06-281561ed2d86",
+      "intent_id": "a30b08e5cd42402692f8428ce2cb8294",
+      "job_id": "6e67ff69-a18f-48a2-88c6-21587bcccaed",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "2ddd9e76-8d52-4740-9b06-281561ed2d86"
+    },
+    "def:CollatzWork.AffineRepetitionStatement": {
+      "api_url": "https://prove2.me/api/v1/theorems/9848ab79-5911-4edb-9f4e-eb9787852f38",
+      "intent_id": "78a6450c88a443c5b160ec25aecc1967",
+      "job_id": "3aef9910-3e74-411a-9e97-3a797c460274",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "9848ab79-5911-4edb-9f4e-eb9787852f38"
+    },
+    "def:CollatzWork.BlockArithmetic": {
+      "api_url": "https://prove2.me/api/v1/theorems/00acab94-a987-4fa6-ba4c-0f35800e8b61",
+      "intent_id": "e086bbeafbc343e5bc9538990f32c2b4",
+      "job_id": "10843215-b0fa-4981-9612-b1d8eef8a637",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "00acab94-a987-4fa6-ba4c-0f35800e8b61"
+    },
+    "def:CollatzWork.ConvergenceStatement": {
+      "api_url": "https://prove2.me/api/v1/theorems/5943ba6a-67e3-45d5-9e42-014cd1874a14",
+      "intent_id": "e67bcc43a1e4445ba707b4427cdf001e",
+      "job_id": "039f83a0-c833-459f-8925-595cdc1e40b9",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "5943ba6a-67e3-45d5-9e42-014cd1874a14"
+    },
+    "def:CollatzWork.Disproof.BranchingCenter": {
+      "api_url": "https://prove2.me/api/v1/theorems/032b92f5-c811-48ac-ace2-f8dca7093ec6",
+      "intent_id": "fc8a1da8d21d46f5ba746349f51c6dc3",
+      "job_id": "8335ac1e-72eb-4036-8466-43d8513ac275",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "032b92f5-c811-48ac-ace2-f8dca7093ec6"
+    },
+    "def:CollatzWork.Disproof.FiniteResidueFirstIntegral": {
+      "api_url": "https://prove2.me/api/v1/theorems/f3a54825-e548-4f8c-b169-0317a655ffed",
+      "intent_id": "688d69cc58ae4933b9bfb151b800ee8b",
+      "job_id": "c2211b2a-39d5-4e60-845c-b105ca61271c",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "f3a54825-e548-4f8c-b169-0317a655ffed"
+    },
+    "def:CollatzWork.Disproof.PolynomialRatchet": {
+      "api_url": "https://prove2.me/api/v1/theorems/758723d5-5f48-4a4a-b16c-133c1b2ee3c5",
+      "intent_id": "624163859e0841ac9cd238e02ab06f70",
+      "job_id": "26bb381a-c6a8-46a5-973a-81639cca7f72",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "758723d5-5f48-4a4a-b16c-133c1b2ee3c5"
+    },
+    "def:CollatzWork.ExcursionBudgetStatement": {
+      "intent_id": "c9457dfb8a4a49f9b2fd1d96bda12b59",
+      "job_id": "e21f6180-ad89-4add-a29c-cdd99e0ec99d",
+      "publish_status": "COMPILING",
+      "status": "publish_queued"
+    },
+    "def:CollatzWork.FinitePaletteObstructionStatement": {
+      "intent_id": "127b4a7d2fc04d83b92e356ca63fb2ff",
+      "job_id": "77e994b2-9a08-4c65-9ec8-483d35917cb3",
+      "publish_status": "COMPILING",
+      "status": "publish_queued"
+    },
+    "def:CollatzWork.FirstContractionStatement": {
+      "status": "new"
+    },
+    "def:CollatzWork.FloorPower": {
+      "api_url": "https://prove2.me/api/v1/theorems/f1827d2a-53e6-4fd1-a372-53bfee69021e",
+      "intent_id": "6e9079733e8d487d85c52c9009b1a5da",
+      "job_id": "e2d28743-e3d1-4d46-ad8e-983e60ed22cc",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "f1827d2a-53e6-4fd1-a372-53bfee69021e"
+    },
+    "def:CollatzWork.InverseWordBoundaryStatement": {
+      "api_url": "https://prove2.me/api/v1/theorems/cbf34df0-bec4-48b2-8a8f-487104b9aef1",
+      "intent_id": "cff85e92562b40cbad587ac6a0ef8044",
+      "job_id": "c71b7280-609c-4c37-9f82-1e5d85cb9971",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "cbf34df0-bec4-48b2-8a8f-487104b9aef1"
+    },
+    "def:CollatzWork.PrefixCollisionStatement": {
+      "intent_id": "cdbb22146024485b99fd3e453ca16c46",
+      "job_id": "7b29fc7d-42a7-4b39-91c7-c9a178fade27",
+      "publish_status": "COMPILING",
+      "status": "publish_queued"
+    },
+    "def:CollatzWork.QuarterGapStatement": {
+      "intent_id": "5387d615ee1244f98b686e7cd86202e5",
+      "job_id": "abdecfcd-598d-4cc0-99a3-85aae3f476f8",
+      "publish_status": "COMPILING",
+      "status": "publish_queued"
+    },
+    "def:CollatzWork.QuarterGapUniversalStatement": {
+      "status": "new"
+    },
+    "def:CollatzWork.RefinedMersenneChild": {
+      "status": "new"
+    },
+    "def:CollatzWork.ResidueAncestorStatement": {
+      "status": "new"
+    },
+    "def:CollatzWork.RootDescentStatement": {
+      "status": "new"
+    },
+    "def:CollatzWork.TwoBurstStatement": {
+      "status": "new"
+    },
+    "def:CollatzWork.YAHFiniteObstruction": {
+      "status": "new"
+    },
+    "def:CollatzWork.YAHFiniteObstructionStatement": {
+      "repair_id": "e192f105f4774e909414c35ac3ab3d80",
+      "repair_of_job_id": "1009a45c-e9d3-49f3-aeab-677128db8f71",
+      "status": "new"
+    },
+    "thm:BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.AlternatingGrowth.odd_exponents_one_two": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.AlternatingGrowth.ordinary_five": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.RepetitionBound.affine_repetition_bound": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.RepetitionBound.alternating_repetition_bound": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.RepetitionBound.no_infinite_alternating_blocks": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.RepetitionBound.telescope": {
+      "status": "new"
+    },
+    "thm:BlindCollatz.descent_iff_convergence": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.firstRotatedDeterminantCoefficients": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.noNonresonantContentGain": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.quotientDegreesVanish": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.secondRotatedDeterminantCoefficients": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.twoPowerOddNormalFormUnique": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.twoPumpCoefficientDependencies": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.twoPumpConstantObstructionVanishes": {
+      "status": "new"
+    },
+    "thm:CollatzWork.Disproof.twoPumpSyzygy": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.edgeCertificate_cancellation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.edgeCertificate_canonically_embeddable": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.edgeCertificate_shape": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.ffPumpWord_canonical": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.noTwoStateEdgeAdditiveOrder": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.noTwoStateSymbolAdditiveOrder": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.symbolCertificate_cancellation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.symbolCertificate_canonically_embeddable": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.symbolCertificate_shape": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.twoState_rule_equations": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.unlabelledCertificate_cancellation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.unlabelledCertificate_shape": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.unlabelledRows_legal": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.unlabelledRows_semantic": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.weightedGapSum_pos": {
+      "status": "new"
+    },
+    "thm:CollatzWork.YAH.yah13_forces_ff_negative": {
+      "status": "new"
+    },
+    "thm:CollatzWork.affineQuarterCertificate": {
+      "status": "new"
+    },
+    "thm:CollatzWork.affineRecurrenceTelescope": {
+      "status": "new"
+    },
+    "thm:CollatzWork.affineRepetitionBound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence": {
+      "status": "new"
+    },
+    "thm:CollatzWork.blockNumerator12_exact_bound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.compatibleProduct_mod_four": {
+      "status": "new"
+    },
+    "thm:CollatzWork.converges_iff_of_coalesces": {
+      "status": "new"
+    },
+    "thm:CollatzWork.converges_shortcutIter_iff": {
+      "status": "new"
+    },
+    "thm:CollatzWork.descentCriterion": {
+      "status": "new"
+    },
+    "thm:CollatzWork.equalSlopeSmaller": {
+      "status": "new"
+    },
+    "thm:CollatzWork.equalSlopeWitness": {
+      "status": "new"
+    },
+    "thm:CollatzWork.excursionBudgetDescent": {
+      "status": "new"
+    },
+    "thm:CollatzWork.excursionChainEnvelope": {
+      "status": "new"
+    },
+    "thm:CollatzWork.excursionChain_converges_of_smaller": {
+      "status": "new"
+    },
+    "thm:CollatzWork.excursionChain_terminal_descent": {
+      "status": "new"
+    },
+    "thm:CollatzWork.finitePaletteObstruction": {
+      "status": "new"
+    },
+    "thm:CollatzWork.finitePalette_path_obstruction": {
+      "status": "new"
+    },
+    "thm:CollatzWork.finiteRepetitionBound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.firstContractionQuarterGap": {
+      "status": "new"
+    },
+    "thm:CollatzWork.firstContractionThirdGap": {
+      "status": "new"
+    },
+    "thm:CollatzWork.firstContractionTime": {
+      "status": "new"
+    },
+    "thm:CollatzWork.firstContraction_quarter_of_certificate": {
+      "status": "new"
+    },
+    "thm:CollatzWork.fixedRatioDivisibility": {
+      "status": "new"
+    },
+    "thm:CollatzWork.floorPower_mul": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanicalCoarseBound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanicalEnvelope": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanical_fifteen_failure": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanical_large_bound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanical_twelve_identity": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mechanical_twelve_propagation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.mersenne_prefix_nondecreasing": {
+      "status": "new"
+    },
+    "thm:CollatzWork.noInfiniteExpandingAffineBlocks": {
+      "status": "new"
+    },
+    "thm:CollatzWork.noInfinitePositiveRecurrence": {
+      "status": "new"
+    },
+    "thm:CollatzWork.oddRun": {
+      "status": "new"
+    },
+    "thm:CollatzWork.orbitAffine": {
+      "status": "new"
+    },
+    "thm:CollatzWork.parityPrefix_dvd_sub_of_le": {
+      "status": "new"
+    },
+    "thm:CollatzWork.prefixCollision": {
+      "status": "new"
+    },
+    "thm:CollatzWork.prefixReturnBernoulli": {
+      "status": "new"
+    },
+    "thm:CollatzWork.prefixReturnNumericalBound": {
+      "status": "new"
+    },
+    "thm:CollatzWork.prefixSeparation": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedChild_arithmetic": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedChild_iter": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedMersenneChild_coalesces": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedParent_converges_iff_child": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedParent_converges_of_smaller": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedParent_has_smaller_coalescence": {
+      "status": "new"
+    },
+    "thm:CollatzWork.refinedParent_iter": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_factor_unit": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_normalized": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_of_divisibility": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_prefix_one": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_prefix_two": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_refinedTail": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_tail11": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_tail173": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_tail38": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_tail65": {
+      "status": "new"
+    },
+    "thm:CollatzWork.residueAncestor_tail92": {
+      "status": "new"
+    },
+    "thm:CollatzWork.rootDescent": {
+      "status": "new"
+    },
+    "thm:CollatzWork.rootDescentAncestor": {
+      "status": "new"
+    },
+    "thm:CollatzWork.rootDescentBurst": {
+      "status": "new"
+    },
+    "thm:CollatzWork.rootDescent_converges_of_smaller": {
+      "status": "new"
+    },
+    "thm:CollatzWork.shiftedEnvelope_compose": {
+      "status": "new"
+    },
+    "thm:CollatzWork.shortcutIter_OOE": {
+      "status": "new"
+    },
+    "thm:CollatzWork.smallerCoalescenceCriterion": {
+      "status": "new"
+    },
+    "thm:CollatzWork.terminalEnvelope_compose": {
+      "status": "new"
+    },
+    "thm:CollatzWork.twoBurstDescent": {
+      "status": "new"
+    },
+    "thm:CollatzWork.twoBurst_converges_of_smaller": {
+      "status": "new"
+    },
+    "thm:CollatzWork.twoBurst_power_margin": {
+      "status": "new"
+    },
+    "thm:CollatzWork.universalMechanicalQuarterCertificate": {
+      "status": "new"
+    }
+  },
+  "manifest_amendments": [
+    {
+      "at": 1788878344.2702935,
+      "changed_items": [
+        {
+          "after_sha256": "c965117fdfec0337962a946e2bf94be77eb8872682c8ff94be81687d917dacd4",
+          "before_sha256": "0d5b2b9dfecaa91ab400e63846c35ba69ecb4bd98a755b8abf42b3ec22b66f05",
+          "key": "def:CollatzWork.YAHFiniteObstruction"
+        },
+        {
+          "after_sha256": "ab99c1d0384d32e5875366d4fbf4ba20b70976f914f7e6b93f971520258bfcd7",
+          "before_sha256": "9baa0a2b8b5fb1202699d7924f402c1de1a7bde683f3cd7fcd85a59e8769fdbd",
+          "key": "def:CollatzWork.YAHFiniteObstructionStatement"
+        },
+        {
+          "after_sha256": "1fa3919c49f915232d25634d08c4d72e54d88e6bfd4426857dafa1d7141f7001",
+          "before_sha256": "4f568ae04d0c3058c9d7151a50f51f82afbf3554b7d7623777b655eab11da312",
+          "key": "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient"
+        },
+        {
+          "after_sha256": "075f4c6636152b7f588dae35e92831ad024ce7c04bc29c321e4e4eb09484e4e5",
+          "before_sha256": "90e43b17ac86fa2750040be8c55d797d175d3bdfdbff72c72e3094f697600feb",
+          "key": "thm:CollatzWork.YAH.ffPumpWord_canonical"
+        },
+        {
+          "after_sha256": "6d8c13c3256e8f18afb42409be023a1ee9b27da57482db365764931c7de8faff",
+          "before_sha256": "52ecf215c248e06c22b730cbd27fae6a898accc315a76d6b9cd6a9313a3d26c7",
+          "key": "thm:CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords"
+        },
+        {
+          "after_sha256": "539178d81a24c5f0293bfc5ef1701fc9c472d3c8187ebc363e36a8e9f8afc413",
+          "before_sha256": "8ce3ec65fda3438c9b87e870a8a43e6b9d6a99c5d9fb69e9e503e61fc46b4ac4",
+          "key": "thm:CollatzWork.YAH.noTwoStateEdgeAdditiveOrder"
+        },
+        {
+          "after_sha256": "dc151a0add9a7118b33c020a52058db8834d909d39dbda0b0410b63a85957ac3",
+          "before_sha256": "ee4cdfc9682d300b22fe9addd32c5438760c10e7af29ca6086f8fb83f9bc5110",
+          "key": "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation"
+        },
+        {
+          "after_sha256": "6b528bebab0bebd1e5afeb63f63b8a9548b14269190f41e73916f06f18cedd46",
+          "before_sha256": "ffd8aae94c7abf4a9d83cd0306a25ebbec77472ba88baeabdd541b75f4359c5e",
+          "key": "thm:CollatzWork.YAH.noTwoStateSymbolAdditiveOrder"
+        },
+        {
+          "after_sha256": "c959367dac1b899a745f2261de92f29b26d6dc2aa897513af2a5489daf6646a5",
+          "before_sha256": "ed2ecc9221019bea98e2e78ad4cf6e8698194e353dfd0673bdbefe9cefe31b7b",
+          "key": "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation"
+        },
+        {
+          "after_sha256": "89750ff34148fa0e967c7b243720a75447316c0f11dc48049d312edc6ba567b8",
+          "before_sha256": "0065b51fe7324f8d691cef4089d979c471ba31786a66be4dc5ed08f06a623ef0",
+          "key": "thm:CollatzWork.YAH.weightedGapSum_pos"
+        },
+        {
+          "after_sha256": "e3e2467affbed7ac1d474b4e031411b7c53d749995867a50a77d81a6fd7db1cc",
+          "before_sha256": "dee3c0d2914f2b44395dba4bcc95798a38e17f8ab1fd8daea9fb7bfc38de3803",
+          "key": "thm:CollatzWork.YAH.yah13_forces_ff_negative"
+        }
+      ],
+      "failed_job_evidence_sha256": "5db0f2a01b5f2b2a79641870fdd70c5b993ffc68c427fcfacd76b0f4490dade9",
+      "failed_job_id": "1009a45c-e9d3-49f3-aeab-677128db8f71",
+      "new_manifest_sha256": "b78edba0a3f9070da909ead5815247106150c615319b2b1ae1d5125a8739ab3c",
+      "old_manifest_sha256": "d3e8cf34e216f9111db7250408c80ec73fd13df895a2c386ce38d5b4a01448e1",
+      "previous_record": {
+        "intent_id": "2c8dbe795aa146888fa12a67e0fe4635",
+        "job_id": "1009a45c-e9d3-49f3-aeab-677128db8f71",
+        "publish_status": "FAILED",
+        "status": "failed"
+      },
+      "repair_id": "e192f105f4774e909414c35ac3ab3d80",
+      "repair_key": "def:CollatzWork.YAHFiniteObstructionStatement",
+      "state_backup": "/workspace/scratch/ce6b142fd07d/prove2me-private/collatz.state.json.before-repair-e192f105f4774e909414c35ac3ab3d80.json"
+    }
+  ],
+  "manifest_sha256": "b78edba0a3f9070da909ead5815247106150c615319b2b1ae1d5125a8739ab3c",
+  "schema_version": 1,
+  "source": {
+    "commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+    "digests": {
+      "lake-manifest.json": "162d5b852cdd7bc1c06352e5981911f2a18cb06768bed22877e04300b8fc7e7b",
+      "lakefile.toml": "7d07bd0850d3d663fa5cffc5d8e75d3498598faf3b86b75ede5dac17ffd041f9",
+      "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "lean/CollatzWork.lean": "01f3002cec763089d65918fd127c35109d40c7a6b24cc3fa4b449cca8682e1fb",
+      "lean/CollatzWork/AffineRepetition.lean": "62cad80ec42483be80f9eccb37a0bb3a78bd686b52f30479ed4dfb3d111660cc",
+      "lean/CollatzWork/AffineRepetitionStatement.lean": "dd805f09caa4fdaa344e65682259c40b45a8dfcb97294c2edd271bb3d2b66f48",
+      "lean/CollatzWork/BlockArithmetic.lean": "839ce06cbed82a676d7dd916b0fcd6f6e3d85e08181eac65bcf1cb7f5498ebc3",
+      "lean/CollatzWork/Convergence.lean": "d7ba650385465dbdb375681f47c591ba3b1d45915ee96255939871acfb6f6757",
+      "lean/CollatzWork/ConvergenceStatement.lean": "f5c54df7d93587427fef891beedea6b9013d624a4f1b3baf3ee838dc6386c67e",
+      "lean/CollatzWork/Disproof/BranchingCenter.lean": "ceacbace8c08f0302bde35fdac19e3660be95dc50c65352dd4d8aea722d40c26",
+      "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean": "ef19d5151cbe2c8c22824bad1ce380063027136aa5924dc21fe2ac5e287a21ff",
+      "lean/CollatzWork/Disproof/PolynomialRatchet.lean": "e3f38db03605171cb094728ebb8089037d9a0f77a773047852666f26ba188c6a",
+      "lean/CollatzWork/Disproof/TwoPumpDependency.lean": "c3634f38d213d54ea2a532ecb60dec9b212ac58f6e4e32fb9bd62738df0262f7",
+      "lean/CollatzWork/ExcursionBudget.lean": "033b51515c7fc25a4f83682fb7af86e6eeb68f38c5162dedb9a8978f9ce5dd36",
+      "lean/CollatzWork/ExcursionBudgetStatement.lean": "43621f3018c3ce65c981a00af24fdf10380bd4f8e0ae7eb877ed892a28d16012",
+      "lean/CollatzWork/FinitePaletteObstruction.lean": "6fe63716b3b5a7871c737ee6cfce43e4cf507058dfcc9d4a8ce55a3d1ecc2f94",
+      "lean/CollatzWork/FinitePaletteObstructionStatement.lean": "bf54aa54cb2655d6a01c2c1613d90d4814f6befd730561fe59b75886c0c13588",
+      "lean/CollatzWork/FirstContraction.lean": "41eb1a73437f18eb3796e6dd054efa64d6648e60e13de829ade4d7eeeb244a2e",
+      "lean/CollatzWork/FirstContractionStatement.lean": "1e5cb863051bf052b562434552729c13aa1b15a4b89f88f499269ea383a6b7a6",
+      "lean/CollatzWork/FloorPower.lean": "97ed65c31e02422cb7e0e17da431e9ddc6e9c7adbe274174e403f37a49751cef",
+      "lean/CollatzWork/InverseWordBoundary.lean": "f31c18940fecd747c797d60c6346e36bbc4b00d50c583f00fcff49f27cae62d7",
+      "lean/CollatzWork/InverseWordBoundaryStatement.lean": "bf6585a2b0b98af539afe82f618912e8904c0c0f0fb1ecba05b53f2c30fd3fd2",
+      "lean/CollatzWork/PrefixCollision.lean": "6513a67191840ffcccec673edf1656a55b9fdbf4505c5be7796be6765155d2f1",
+      "lean/CollatzWork/PrefixCollisionStatement.lean": "7ffdd5f945da61bba8396b7b491a7ce8366d5d65823ea5fb0aa169e7e553ad96",
+      "lean/CollatzWork/QuarterGap.lean": "8b0f9cc29719cf665f2d5227dad8b482a5db3381556d61b39d78c595aeefb89e",
+      "lean/CollatzWork/QuarterGapStatement.lean": "e759f72d4f692efce5c78b7a5e762fd097dfe6900fddf72f66bcb6019735f539",
+      "lean/CollatzWork/QuarterGapUniversal.lean": "969e21be9e19326071fb8e110d5eddfd560f9926f083fd125f674f503a7be647",
+      "lean/CollatzWork/QuarterGapUniversalStatement.lean": "b084a1ae690fb95d135858c68f9177205ed550a882bd6deefccd82bb70eac556",
+      "lean/CollatzWork/RefinedMersenneChild.lean": "2ef6e464c93e01e3163ecc4efe7e16b965606f24b66ea0b519c3f53f72e6eb17",
+      "lean/CollatzWork/ResidueAncestor.lean": "71218cbe2b8c89d20ecd1ac471e112d7ba02ae8d40bac568cf30a0c049175a0d",
+      "lean/CollatzWork/ResidueAncestorStatement.lean": "e2f108f0caa0d44cbaa47b31ce0560ab6bbe2bc2d6f7e3e1c93825b4d45a32e7",
+      "lean/CollatzWork/ResidueAncestorTails.lean": "cba2ecf3404aace6649748f16f3ca0ba6bf180b33242709f3fe73601a46352f3",
+      "lean/CollatzWork/RootDescent.lean": "fa0b9bf92e65fc5e1c66089273b2d22b12819f6d41d411b5793f1f0dcf81c557",
+      "lean/CollatzWork/RootDescentStatement.lean": "499eb39ec87dfae53fe5bd4b554b88e3754b5f386e01ae823433cb0056949334",
+      "lean/CollatzWork/TwoBurst.lean": "edf5027ec484ba5a94b2837fbb4fa31055ea52804644c4256f6749421f207242",
+      "lean/CollatzWork/TwoBurstStatement.lean": "b66e37f58872451aae5d3a697dd1880685347dd403458d498513093164f15a90",
+      "lean/CollatzWork/YAHFiniteObstruction.lean": "c5b3e30059e8358aa59f0b4e155a09b11e5b7eb5c7caf419df9d3587b6408af4",
+      "lean/CollatzWork/YAHFiniteObstructionStatement.lean": "b703978accc652bbdb243ac38f8aac512bbe4664791dc39dfe33476858186c3f",
+      "research/blind-2026-09-05/AlternatingGrowth.lean": "8a53286a000f20c048da7c8c57add0eb74f5f403a822b858f74a7b761de55607",
+      "research/blind-2026-09-05/Descent.lean": "6734197b31382be15c59a642577a31dbe80b137786ba9109bb90fc9ef76546de",
+      "research/blind-2026-09-05/RepetitionBound.lean": "b6be440cbf1843ca4eb8fb8ee89e8f8479a84f6c79d8d9a653d447cb1836c91f"
+    },
+    "repository": "https://github.com/Sodelin/Collatz-Conjecture-Work"
+  }
+}

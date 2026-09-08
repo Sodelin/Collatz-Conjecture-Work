@@ -3,6 +3,8 @@ import Init.Grind.Ordered.Module
 import Definitions.Def_CollatzWork_YAHFiniteObstruction
 import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
 import Theorems.Thm_CollatzWork_YAH_yah13_forces_ff_negative
+universe u
+
 namespace CollatzWork.YAH
 
 /-!

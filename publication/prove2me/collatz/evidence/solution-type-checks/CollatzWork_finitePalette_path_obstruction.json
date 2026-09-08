@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (r B : Nat) (V : Nat → Nat) (f : Fin r → Nat → Nat) (selector : Nat → Fin r) (x : Nat → Nat),\n  (∀ (i : Fin r) (a b : Nat),\n      @LE.le.{0} Nat instLENat B a → @LE.le.{0} Nat instLENat a b → @LE.le.{0} Nat instLENat (f i a) (f i b)) →\n    (∀ (n : Nat), @LE.le.{0} Nat instLENat B n → @Eq.{1} Nat (V n) (f (selector n) n)) →\n      @LE.le.{0} Nat instLENat B (x (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) →\n        (∀ (k : Nat),\n            @LT.lt.{0} Nat instLTNat k r →\n              @LE.le.{0} Nat instLENat (x k)\n                (x\n                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) k\n                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))) →\n          (∀ (k : Nat),\n              @LT.lt.{0} Nat instLTNat k r →\n                @LT.lt.{0} Nat instLTNat\n                  (V\n                    (x\n                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) k\n                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n                  (V (x k))) →\n            False",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (r B : Nat) (V : Nat → Nat) (f : Fin r → Nat → Nat) (selector : Nat → Fin r) (x : Nat → Nat),\n  (∀ (i : Fin r) (a b : Nat),\n      @LE.le.{0} Nat instLENat B a → @LE.le.{0} Nat instLENat a b → @LE.le.{0} Nat instLENat (f i a) (f i b)) →\n    (∀ (n : Nat), @LE.le.{0} Nat instLENat B n → @Eq.{1} Nat (V n) (f (selector n) n)) →\n      @LE.le.{0} Nat instLENat B (x (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))) →\n        (∀ (k : Nat),\n            @LT.lt.{0} Nat instLTNat k r →\n              @LE.le.{0} Nat instLENat (x k)\n                (x\n                  (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) k\n                    (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))) →\n          (∀ (k : Nat),\n              @LT.lt.{0} Nat instLTNat k r →\n                @LT.lt.{0} Nat instLTNat\n                  (V\n                    (x\n                      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) k\n                        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n                  (V (x k))) →\n            False",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.finitePalette_path_obstruction",
+  "universe_count_equal": true,
+  "solution_sha256": "1c1dfd34a496f278e3dc0eae4c6237c9ca0bed0bd6f8b4a88f35c3d0379d83bf",
+  "theorem_sha256": "664215f0655765458730bbb230000365d7461211e1417c4fab35536ddcc519b8",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_finitePalette_path_obstruction.lean",
+  "source_files_unchanged": true
+}

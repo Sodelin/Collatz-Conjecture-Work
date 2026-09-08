@@ -1,8 +1,8 @@
 {
   "theorem_name": "BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
-  "theorem_title": "BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\nimport Theorems.Thm_BlindCollatz_AlternatingGrowth_ordinary_five\n\n\n",
+  "theorem_title": "Three shortcut steps agree with five ordinary steps on the alternating block",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Let $C:\\mathbb N\\to\\mathbb N$ be the ordinary Collatz map: $C(n)=n/2$ for even $n$ and $C(n)=3n+1$ for odd $n$. Write $C^k$ for its $k$-fold iterate.\n\nFor every $q\\in\\mathbb N$,\n\n$$\nT^3(16q+11)=C^5(16q+11).\n$$\n\nThis is an explicit bridge between the two iteration conventions on the stated residue family only.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\nimport Theorems.Thm_BlindCollatz_AlternatingGrowth_ordinary_five\n\n\n\n",
   "formal_statement": "theorem BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five (q : Nat) :\n    block (16 * q + 11) = ordinarySteps 5 (16 * q + 11) := by sorry\n\n",
   "tags": [
     "collatz-work-import"

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.PrefixSeparationStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.PrefixSeparationStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.prefixSeparation",
+  "universe_count_equal": true,
+  "solution_sha256": "826001892392b4094718bc8588c3b7304cbac50b7350c5237ef561fbfecebca6",
+  "theorem_sha256": "cd3b6712f12a8ac16f5340fa97a28e42af117ca9f37018e7a944545ca1ab8580",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_prefixSeparation.lean",
+  "source_files_unchanged": true
+}

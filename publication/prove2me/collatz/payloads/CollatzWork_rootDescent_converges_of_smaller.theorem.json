@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.rootDescent_converges_of_smaller",
-  "theorem_title": "Guarded unbounded OOE burst descent",
-  "natural_language_statement": "For positive naturals k,u,m with 2^k*m+5=9^k*u, shortcutIter (4*k) (8^k*u-5)=m and m<8^k*u-5. The general burst identity shortcutIter (3*k) (8^k*u-5)=9^k*u-5 holds for k>=0,u>0. Limitations: The final-halving equation is a substantive guard. The separate residue20 CRT specialization is prose; convergence transfer assumes convergence of all smaller positive starts. No external priority claim.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_converges_shortcutIter_iff\nimport Theorems.Thm_CollatzWork_rootDescent\n\n\n",
-  "formal_statement": "theorem CollatzWork.rootDescent_converges_of_smaller (k u m : Nat)\n    (hk : 0 < k) (hu : 0 < u) (hm : 0 < m)\n    (hguard : 2 ^ k * m + 5 = 9 ^ k * u)\n    (ih : \u2200 a : Nat, 0 < a \u2192 a < 8 ^ k * u - 5 \u2192 Converges a) :\n    Converges (8 ^ k * u - 5) := by sorry\n\n",
+  "theorem_title": "Conditional convergence transfer from guarded burst descent",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Write $\\mathcal C(n)$ for the assertion that $T^j(n)=1$ for some $j\\in\\mathbb N$.\n\nLet $k,u,m>0$ be natural numbers with $2^k m+5=9^k u$, and put $N=8^k u-5$. Assume $\\mathcal C(a)$ for every natural $a$ with $0<a<N$. Then\n\n$$\n\\mathcal C(N).\n$$\n\nThis is a strong-induction transfer for a guarded family; the hypothesis on all smaller starts remains explicit.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_converges_shortcutIter_iff\nimport Theorems.Thm_CollatzWork_rootDescent\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.rootDescent_converges_of_smaller (k u m : Nat)\n    (hk : 0 < k) (hu : 0 < u) (hm : 0 < m)\n    (hguard : 2 ^ k * m + 5 = 9 ^ k * u)\n    (ih : ∀ a : Nat, 0 < a → a < 8 ^ k * u - 5 → Converges a) :\n    Converges (8 ^ k * u - 5) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

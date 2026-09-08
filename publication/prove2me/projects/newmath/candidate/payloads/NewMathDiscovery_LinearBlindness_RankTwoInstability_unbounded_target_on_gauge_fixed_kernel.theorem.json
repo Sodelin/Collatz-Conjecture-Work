@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
-  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel (bound : Nat) :\n    \u2203 n direction,\n      observe n direction = 0 \u2227\n      direction.2 = -1 \u2227\n      target direction > Int.ofNat bound := by sorry\n\n",
+  "theorem_title": "Gauge-fixed single-sensor kernels have arbitrarily large target values",
+  "natural_language_statement": "For $n\\in\\mathbb N$ and $x=(x_1,x_2)\\in\\mathbb Z^2$, define the observation $r_n(x)=x_1+(n+1)x_2$, target $q(x)=x_1$, and witness $w_n=(n+1,-1)$. For every natural bound $B$, there exist $n\\in\\mathbb N$ and $d\\in\\mathbb Z^2$ such that\n\n$$\nr_n(d)=0,\\qquad d_2=-1,\\qquad q(d)>B.\n$$\n\nThis is an exact unbounded family with fixed second coordinate. The sensor index varies with the bound; the statement does not assert a common nonzero direction for all sensors or a normalized condition-number estimate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel (bound : Nat) :\n    ∃ n direction,\n      observe n direction = 0 ∧\n      direction.2 = -1 ∧\n      target direction > Int.ofNat bound := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "algebra",
+    "kernel",
+    "counterexample"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L175-L182"
 }

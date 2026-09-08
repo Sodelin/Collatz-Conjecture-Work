@@ -1,10 +1,10 @@
 {
   "definition_name": "CollatzWork_FloorPower",
-  "definition_title": "CollatzWork.FloorPower definitions",
-  "natural_language_description": "Definitions and necessary proof-bearing construction material from CollatzWork.FloorPower.",
+  "definition_title": "Dyadic floor power",
   "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace CollatzWork\n\ndef floorPower (x : Nat) : Nat := 2 ^ Nat.log2 x\n\n\n\n\n\n\n\n\nend CollatzWork\n",
   "tags": [
     "collatz-work-import"
   ],
-  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FloorPower.lean"
+  "source": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/lean/CollatzWork/FloorPower.lean#L1-L54",
+  "natural_language_statement": "For a natural number $x$, define\n\n$$\nF(x)=2^{\\operatorname{log2}(x)}.\n$$\n\nFor positive x this is the greatest power of two at most x. The natural-number convention has log2(0)=0, hence F(0)=1. This convention keeps the function total; product-bin theorems impose positive dyadic lower bounds."
 }

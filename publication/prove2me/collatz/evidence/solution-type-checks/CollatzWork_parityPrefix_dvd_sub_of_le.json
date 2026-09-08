@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (k n m : Nat),\n  @LE.le.{0} Nat instLENat n m →\n    CollatzWork.SameParityPrefix k n m →\n      @Dvd.dvd.{0} Nat Nat.instDvd\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)\n        (@HSub.hSub.{0, 0, 0} Nat Nat Nat (@instHSub.{0} Nat instSubNat) m n)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (k n m : Nat),\n  @LE.le.{0} Nat instLENat n m →\n    CollatzWork.SameParityPrefix k n m →\n      @Dvd.dvd.{0} Nat Nat.instDvd\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n          (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)\n        (@HSub.hSub.{0, 0, 0} Nat Nat Nat (@instHSub.{0} Nat instSubNat) m n)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.parityPrefix_dvd_sub_of_le",
+  "universe_count_equal": true,
+  "solution_sha256": "55f7c4ea60e513a18b3fc8a50d27ebbb851c956ac9000a6d999f744fd97f18ac",
+  "theorem_sha256": "0c4c588353a5bbc026efa5411a9df4c5fdde8f889fff1941fdea79b545751da1",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_parityPrefix_dvd_sub_of_le.lean",
+  "source_files_unchanged": true
+}

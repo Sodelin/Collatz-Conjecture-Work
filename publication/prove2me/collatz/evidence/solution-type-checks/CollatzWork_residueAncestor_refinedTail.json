@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (z : Nat),\n  @Eq.{1} Nat\n      (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) z\n        (@OfNat.ofNat.{0} Nat (nat_lit 27) (instOfNatNat (nat_lit 27))))\n      (@OfNat.ofNat.{0} Nat (nat_lit 11) (instOfNatNat (nat_lit 11))) →\n    @Exists.{1} Nat fun m =>\n      @Exists.{1} Nat fun b =>\n        And (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m)\n          (And\n            (@Eq.{1} Nat\n              (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) m\n                (@OfNat.ofNat.{0} Nat (nat_lit 27) (instOfNatNat (nat_lit 27))))\n              (@OfNat.ofNat.{0} Nat (nat_lit 20) (instOfNatNat (nat_lit 20))))\n            (And (@Eq.{1} Nat (CollatzWork.shortcutIter b m) z)\n              (@LE.le.{0} Nat instLENat m\n                (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n                  (@OfNat.ofNat.{0} Nat (nat_lit 64) (instOfNatNat (nat_lit 64))) z))))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (z : Nat),\n  @Eq.{1} Nat\n      (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) z\n        (@OfNat.ofNat.{0} Nat (nat_lit 27) (instOfNatNat (nat_lit 27))))\n      (@OfNat.ofNat.{0} Nat (nat_lit 11) (instOfNatNat (nat_lit 11))) →\n    @Exists.{1} Nat fun m =>\n      @Exists.{1} Nat fun b =>\n        And (@LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m)\n          (And\n            (@Eq.{1} Nat\n              (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) m\n                (@OfNat.ofNat.{0} Nat (nat_lit 27) (instOfNatNat (nat_lit 27))))\n              (@OfNat.ofNat.{0} Nat (nat_lit 20) (instOfNatNat (nat_lit 20))))\n            (And (@Eq.{1} Nat (CollatzWork.shortcutIter b m) z)\n              (@LE.le.{0} Nat instLENat m\n                (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n                  (@OfNat.ofNat.{0} Nat (nat_lit 64) (instOfNatNat (nat_lit 64))) z))))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.residueAncestor_refinedTail",
+  "universe_count_equal": true,
+  "solution_sha256": "e9f642a382812e7ea134c877a3a908d8551eeca7f425cbe335f2f5e07b115eb6",
+  "theorem_sha256": "5841b023f82014cd53d9b247739ea615dd5052ebc7fc966dc8bcf431eb64bf50",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_residueAncestor_refinedTail.lean",
+  "source_files_unchanged": true
+}

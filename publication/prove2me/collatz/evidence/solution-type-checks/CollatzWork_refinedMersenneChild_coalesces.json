@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        @Eq.{1} Nat\n          (CollatzWork.shortcutIter\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) L\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n            (CollatzWork.refinedParent L epsilon z))\n          (CollatzWork.shortcutIter L (CollatzWork.refinedChild L epsilon z))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        @Eq.{1} Nat\n          (CollatzWork.shortcutIter\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) L\n              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n            (CollatzWork.refinedParent L epsilon z))\n          (CollatzWork.shortcutIter L (CollatzWork.refinedChild L epsilon z))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.refinedMersenneChild_coalesces",
+  "universe_count_equal": true,
+  "solution_sha256": "11442d064db6e31cb16a6f1bd89c2cc2525e1d20b571af4c0cf405e00668fdfb",
+  "theorem_sha256": "a97fb745505d6fb8e951ef122945f19933cd9468b6aa880e2bcbcc8bb31c5160",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_refinedMersenneChild_coalesces.lean",
+  "source_files_unchanged": true
+}

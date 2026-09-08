@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FinitePaletteObstructionStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FinitePaletteObstructionStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.finitePaletteObstruction",
+  "universe_count_equal": true,
+  "solution_sha256": "235adaeaec3f9fd8ae75dfbdfa2363e69b381098a0d8659a1931839a20605ea1",
+  "theorem_sha256": "5f69d9fe01464de948fe31c26edc139a6ae9952c05d0d27e63fe7b02cdb5b6c0",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_finitePaletteObstruction.lean",
+  "source_files_unchanged": true
+}

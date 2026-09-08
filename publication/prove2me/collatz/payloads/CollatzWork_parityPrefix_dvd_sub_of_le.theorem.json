@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.parityPrefix_dvd_sub_of_le",
-  "theorem_title": "CollatzWork.parityPrefix_dvd_sub_of_le",
-  "natural_language_statement": "Ordered subtraction retains its full integer meaning in this lemma.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\n\n\n",
-  "formal_statement": "theorem CollatzWork.parityPrefix_dvd_sub_of_le (k n m : Nat) (hnm : n \u2264 m)\n    (h : SameParityPrefix k n m) : 2 ^ k \u2223 m - n := by sorry\n\n",
+  "theorem_title": "Equal parity prefixes force power-of-two divisibility",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. The starts $n,m\\in\\mathbb N$ have the same parity prefix of length $k\\in\\mathbb N$ when $T^i(n)\\equiv T^i(m)\\pmod2$ for every $i<k$.\n\nAssume equal parity prefixes of length $k$ and $n\\le m$. Then\n\n$$\n2^k\\mid(m-n).\n$$\n\nThe order hypothesis makes natural subtraction agree with integer subtraction.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_PrefixCollisionStatement\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.parityPrefix_dvd_sub_of_le (k n m : Nat) (hnm : n ≤ m)\n    (h : SameParityPrefix k n m) : 2 ^ k ∣ m - n := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

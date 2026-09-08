@@ -1,0 +1,243 @@
+{"name":"BlindCollatz.AlternatingGrowth.block","type":"Nat → Nat","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.blocks","type":"Nat → Nat → Nat","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.goodBlocks","type":"Nat → Nat → Prop","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.ordinaryStep","type":"Nat → Nat","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.ordinarySteps","type":"Nat → Nat → Nat","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.seed","type":"Nat → Nat → Nat","universes":[]}
+{"name":"BlindCollatz.AlternatingGrowth.step","type":"Nat → Nat","universes":[]}
+{"name":"BlindCollatz.CollatzConjecture","type":"Prop","universes":[]}
+{"name":"BlindCollatz.UniversalDescent","type":"Prop","universes":[]}
+{"name":"BlindCollatz.iterate","type":"Nat → Nat → Nat","universes":[]}
+{"name":"BlindCollatz.step","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.AffineQuarterCertificateStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.AffineRepetitionBoundStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.AllPositiveConverge","type":"Prop","universes":[]}
+{"name":"CollatzWork.Converges","type":"Nat → Prop","universes":[]}
+{"name":"CollatzWork.DescentCriterionStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.Disproof.ArithOdd","type":"Nat → Prop","universes":[]}
+{"name":"CollatzWork.Disproof.BranchingCenter.CenterOdd","type":"Nat → Prop","universes":[]}
+{"name":"CollatzWork.Disproof.FiniteResidueFirstIntegral.IsInvariant","type":"{X Color : Type} → (X → Color) → (X → X) → Prop","universes":[]}
+{"name":"CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator","type":"{X : Type} → (X → X) → (X → X) → (X → X) → (X → X) → X → X","universes":[]}
+{"name":"CollatzWork.Disproof.FiniteResidueFirstIntegral.iterate","type":"{X : Type} → (X → X) → Nat → X → X","universes":[]}
+{"name":"CollatzWork.EqualSlopeSmallerStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.EqualSlopeWitnessStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.ExcursionBudgetDescentStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.ExcursionChain","type":"Nat → List.{0} CollatzWork.ExcursionSegment → Prop","universes":[]}
+{"name":"CollatzWork.ExcursionChainEnvelopeStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.ExcursionSegment","type":"Type","universes":[]}
+{"name":"CollatzWork.ExcursionSegment.casesOn","type":"{motive : CollatzWork.ExcursionSegment → Sort u} →\n  (t : CollatzWork.ExcursionSegment) →\n    ((steps numerator denominator : Nat) →\n        motive { steps := steps, numerator := numerator, denominator := denominator }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.ExcursionSegment.denominator","type":"CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.ExcursionSegment.mk","type":"Nat → Nat → Nat → CollatzWork.ExcursionSegment","universes":[]}
+{"name":"CollatzWork.ExcursionSegment.mk.noConfusion","type":"{P : Sort u} →\n  {steps numerator denominator steps' numerator' denominator' : Nat} →\n    @Eq.{1} CollatzWork.ExcursionSegment { steps := steps, numerator := numerator, denominator := denominator }\n        { steps := steps', numerator := numerator', denominator := denominator' } →\n      (@Eq.{1} Nat steps steps' → @Eq.{1} Nat numerator numerator' → @Eq.{1} Nat denominator denominator' → P) → P","universes":["u"]}
+{"name":"CollatzWork.ExcursionSegment.noConfusion","type":"{P : Sort u} →\n  {t t' : CollatzWork.ExcursionSegment} →\n    @Eq.{1} CollatzWork.ExcursionSegment t t' → CollatzWork.ExcursionSegment.noConfusionType.{u} P t t'","universes":["u"]}
+{"name":"CollatzWork.ExcursionSegment.numerator","type":"CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.ExcursionSegment.rec","type":"{motive : CollatzWork.ExcursionSegment → Sort u} →\n  ((steps numerator denominator : Nat) →\n      motive { steps := steps, numerator := numerator, denominator := denominator }) →\n    (t : CollatzWork.ExcursionSegment) → motive t","universes":["u"]}
+{"name":"CollatzWork.ExcursionSegment.recOn","type":"{motive : CollatzWork.ExcursionSegment → Sort u} →\n  (t : CollatzWork.ExcursionSegment) →\n    ((steps numerator denominator : Nat) →\n        motive { steps := steps, numerator := numerator, denominator := denominator }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.ExcursionSegment.steps","type":"CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.FinitePaletteObstructionStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.FiniteRepetitionBoundStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.FirstCoefficientContraction","type":"Nat → Nat → Prop","universes":[]}
+{"name":"CollatzWork.FirstContractionQuarterGapStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.FirstContractionThirdGapStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.FirstContractionTimeStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.FixedRatioDivisibilityStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.MechanicalCoarseBoundStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.MechanicalEnvelopeStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.MechanicalFifteenFailureStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.MechanicalSixteenEnvelopeStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.NoInfiniteExpandingAffineBlocksStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.NoInfinitePositiveRecurrenceStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.OrbitAffineStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.PrefixCollisionStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.PrefixReturnNumericalBoundStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.PrefixSeparationStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.ResidueAncestorDivisibilityStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.ResidueAncestorStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.RootDescentAncestorStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.RootDescentBurstStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.RootDescentStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.SameParityPrefix","type":"Nat → Nat → Nat → Prop","universes":[]}
+{"name":"CollatzWork.SmallFirstContractionQuarterGapStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.SmallMechanicalCertificateStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.SmallerCoalescenceCriterionStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.TwoBurstDescentStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.UniversalDescent","type":"Prop","universes":[]}
+{"name":"CollatzWork.UniversalMechanicalQuarterCertificateStatement","type":"Prop","universes":[]}
+{"name":"CollatzWork.UniversalSmallerCoalescence","type":"Prop","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.casesOn","type":"{motive : CollatzWork.YAH.LabeledInstance → Sort u} →\n  (t : CollatzWork.YAH.LabeledInstance) →\n    ((ruleName : CollatzWork.YAH.RuleName) →\n        (tail : Bool) →\n          (left right : Option.{0} CollatzWork.YAH.Token) →\n            motive { ruleName := ruleName, tail := tail, left := left, right := right }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.LabeledInstance.coreLhs","type":"CollatzWork.YAH.LabeledInstance → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.coreRhs","type":"CollatzWork.YAH.LabeledInstance → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.left","type":"CollatzWork.YAH.LabeledInstance → Option.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.lhs","type":"CollatzWork.YAH.LabeledInstance → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.mk","type":"CollatzWork.YAH.RuleName →\n  Bool → Option.{0} CollatzWork.YAH.Token → Option.{0} CollatzWork.YAH.Token → CollatzWork.YAH.LabeledInstance","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.mk.noConfusion","type":"{P : Sort u} →\n  {ruleName : CollatzWork.YAH.RuleName} →\n    {tail : Bool} →\n      {left right : Option.{0} CollatzWork.YAH.Token} →\n        {ruleName' : CollatzWork.YAH.RuleName} →\n          {tail' : Bool} →\n            {left' right' : Option.{0} CollatzWork.YAH.Token} →\n              @Eq.{1} CollatzWork.YAH.LabeledInstance\n                  { ruleName := ruleName, tail := tail, left := left, right := right }\n                  { ruleName := ruleName', tail := tail', left := left', right := right' } →\n                (@Eq.{1} CollatzWork.YAH.RuleName ruleName ruleName' →\n                    @Eq.{1} Bool tail tail' →\n                      @Eq.{1} (Option.{0} CollatzWork.YAH.Token) left left' →\n                        @Eq.{1} (Option.{0} CollatzWork.YAH.Token) right right' → P) →\n                  P","universes":["u"]}
+{"name":"CollatzWork.YAH.LabeledInstance.noConfusion","type":"{P : Sort u} →\n  {t t' : CollatzWork.YAH.LabeledInstance} →\n    @Eq.{1} CollatzWork.YAH.LabeledInstance t t' → CollatzWork.YAH.LabeledInstance.noConfusionType.{u} P t t'","universes":["u"]}
+{"name":"CollatzWork.YAH.LabeledInstance.rec","type":"{motive : CollatzWork.YAH.LabeledInstance → Sort u} →\n  ((ruleName : CollatzWork.YAH.RuleName) →\n      (tail : Bool) →\n        (left right : Option.{0} CollatzWork.YAH.Token) →\n          motive { ruleName := ruleName, tail := tail, left := left, right := right }) →\n    (t : CollatzWork.YAH.LabeledInstance) → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.LabeledInstance.recOn","type":"{motive : CollatzWork.YAH.LabeledInstance → Sort u} →\n  (t : CollatzWork.YAH.LabeledInstance) →\n    ((ruleName : CollatzWork.YAH.RuleName) →\n        (tail : Bool) →\n          (left right : Option.{0} CollatzWork.YAH.Token) →\n            motive { ruleName := ruleName, tail := tail, left := left, right := right }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.LabeledInstance.rhs","type":"CollatzWork.YAH.LabeledInstance → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.right","type":"CollatzWork.YAH.LabeledInstance → Option.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.ruleName","type":"CollatzWork.YAH.LabeledInstance → CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.LabeledInstance.tail","type":"CollatzWork.YAH.LabeledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.NegativeMultiplesCofinal","type":"{M : Type u} → [LT.{u} M] → [Lean.Grind.IntModule.{u} M] → Prop","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.Rule.casesOn","type":"{motive : CollatzWork.YAH.Rule → Sort u} →\n  (t : CollatzWork.YAH.Rule) →\n    ((name : CollatzWork.YAH.RuleName) →\n        (lhs rhs : List.{0} CollatzWork.YAH.Symbol) →\n          (dynamic : Bool) → motive { name := name, lhs := lhs, rhs := rhs, dynamic := dynamic }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule.dynamic","type":"CollatzWork.YAH.Rule → Bool","universes":[]}
+{"name":"CollatzWork.YAH.Rule.lhs","type":"CollatzWork.YAH.Rule → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Rule.mk","type":"CollatzWork.YAH.RuleName →\n  List.{0} CollatzWork.YAH.Symbol → List.{0} CollatzWork.YAH.Symbol → Bool → CollatzWork.YAH.Rule","universes":[]}
+{"name":"CollatzWork.YAH.Rule.mk.noConfusion","type":"{P : Sort u} →\n  {name : CollatzWork.YAH.RuleName} →\n    {lhs rhs : List.{0} CollatzWork.YAH.Symbol} →\n      {dynamic : Bool} →\n        {name' : CollatzWork.YAH.RuleName} →\n          {lhs' rhs' : List.{0} CollatzWork.YAH.Symbol} →\n            {dynamic' : Bool} →\n              @Eq.{1} CollatzWork.YAH.Rule { name := name, lhs := lhs, rhs := rhs, dynamic := dynamic }\n                  { name := name', lhs := lhs', rhs := rhs', dynamic := dynamic' } →\n                (@Eq.{1} CollatzWork.YAH.RuleName name name' →\n                    @Eq.{1} (List.{0} CollatzWork.YAH.Symbol) lhs lhs' →\n                      @Eq.{1} (List.{0} CollatzWork.YAH.Symbol) rhs rhs' → @Eq.{1} Bool dynamic dynamic' → P) →\n                  P","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule.name","type":"CollatzWork.YAH.Rule → CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.Rule.noConfusion","type":"{P : Sort u} →\n  {t t' : CollatzWork.YAH.Rule} → @Eq.{1} CollatzWork.YAH.Rule t t' → CollatzWork.YAH.Rule.noConfusionType.{u} P t t'","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule.rec","type":"{motive : CollatzWork.YAH.Rule → Sort u} →\n  ((name : CollatzWork.YAH.RuleName) →\n      (lhs rhs : List.{0} CollatzWork.YAH.Symbol) →\n        (dynamic : Bool) → motive { name := name, lhs := lhs, rhs := rhs, dynamic := dynamic }) →\n    (t : CollatzWork.YAH.Rule) → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule.recOn","type":"{motive : CollatzWork.YAH.Rule → Sort u} →\n  (t : CollatzWork.YAH.Rule) →\n    ((name : CollatzWork.YAH.RuleName) →\n        (lhs rhs : List.{0} CollatzWork.YAH.Symbol) →\n          (dynamic : Bool) → motive { name := name, lhs := lhs, rhs := rhs, dynamic := dynamic }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Rule.rhs","type":"CollatzWork.YAH.Rule → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.RuleName","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Df","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Df.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 0) → motive CollatzWork.YAH.RuleName.Df → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Dt","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Dt.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 1) → motive CollatzWork.YAH.RuleName.Dt → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xf0","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xf0.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 2) → motive CollatzWork.YAH.RuleName.Xf0 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xf1","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xf1.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 3) → motive CollatzWork.YAH.RuleName.Xf1 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xf2","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xf2.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 4) → motive CollatzWork.YAH.RuleName.Xf2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xhat0","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xhat0.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 8) → motive CollatzWork.YAH.RuleName.Xhat0 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xhat1","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xhat1.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 9) → motive CollatzWork.YAH.RuleName.Xhat1 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xhat2","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xhat2.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 10) → motive CollatzWork.YAH.RuleName.Xhat2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xt0","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xt0.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 5) → motive CollatzWork.YAH.RuleName.Xt0 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xt1","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xt1.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 6) → motive CollatzWork.YAH.RuleName.Xt1 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.Xt2","type":"CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.RuleName.Xt2.elim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) → @Eq.{1} Nat t.ctorIdx (nat_lit 7) → motive CollatzWork.YAH.RuleName.Xt2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.casesOn","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) →\n    motive CollatzWork.YAH.RuleName.Df →\n      motive CollatzWork.YAH.RuleName.Dt →\n        motive CollatzWork.YAH.RuleName.Xf0 →\n          motive CollatzWork.YAH.RuleName.Xf1 →\n            motive CollatzWork.YAH.RuleName.Xf2 →\n              motive CollatzWork.YAH.RuleName.Xt0 →\n                motive CollatzWork.YAH.RuleName.Xt1 →\n                  motive CollatzWork.YAH.RuleName.Xt2 →\n                    motive CollatzWork.YAH.RuleName.Xhat0 →\n                      motive CollatzWork.YAH.RuleName.Xhat1 → motive CollatzWork.YAH.RuleName.Xhat2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.ctorElim","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (ctorIdx : Nat) →\n    (t : CollatzWork.YAH.RuleName) →\n      @Eq.{1} Nat ctorIdx t.ctorIdx → @CollatzWork.YAH.RuleName.ctorElimType.{u} motive ctorIdx → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.noConfusion","type":"{P : Sort v✝} →\n  {x y : CollatzWork.YAH.RuleName} →\n    @Eq.{1} CollatzWork.YAH.RuleName x y → CollatzWork.YAH.RuleName.noConfusionType.{v✝} P x y","universes":["v._@.CollatzWork.YAHFiniteObstructionStatement.3513813332._hygCtx._hyg.6"]}
+{"name":"CollatzWork.YAH.RuleName.rec","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  motive CollatzWork.YAH.RuleName.Df →\n    motive CollatzWork.YAH.RuleName.Dt →\n      motive CollatzWork.YAH.RuleName.Xf0 →\n        motive CollatzWork.YAH.RuleName.Xf1 →\n          motive CollatzWork.YAH.RuleName.Xf2 →\n            motive CollatzWork.YAH.RuleName.Xt0 →\n              motive CollatzWork.YAH.RuleName.Xt1 →\n                motive CollatzWork.YAH.RuleName.Xt2 →\n                  motive CollatzWork.YAH.RuleName.Xhat0 →\n                    motive CollatzWork.YAH.RuleName.Xhat1 →\n                      motive CollatzWork.YAH.RuleName.Xhat2 → (t : CollatzWork.YAH.RuleName) → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.RuleName.recOn","type":"{motive : CollatzWork.YAH.RuleName → Sort u} →\n  (t : CollatzWork.YAH.RuleName) →\n    motive CollatzWork.YAH.RuleName.Df →\n      motive CollatzWork.YAH.RuleName.Dt →\n        motive CollatzWork.YAH.RuleName.Xf0 →\n          motive CollatzWork.YAH.RuleName.Xf1 →\n            motive CollatzWork.YAH.RuleName.Xf2 →\n              motive CollatzWork.YAH.RuleName.Xt0 →\n                motive CollatzWork.YAH.RuleName.Xt1 →\n                  motive CollatzWork.YAH.RuleName.Xt2 →\n                    motive CollatzWork.YAH.RuleName.Xhat0 →\n                      motive CollatzWork.YAH.RuleName.Xhat1 → motive CollatzWork.YAH.RuleName.Xhat2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.casesOn","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) →\n    motive CollatzWork.YAH.Symbol.f →\n      motive CollatzWork.YAH.Symbol.t →\n        motive CollatzWork.YAH.Symbol.d0 →\n          motive CollatzWork.YAH.Symbol.d1 →\n            motive CollatzWork.YAH.Symbol.d2 →\n              motive CollatzWork.YAH.Symbol.hat → motive CollatzWork.YAH.Symbol.dollar → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.ctorElim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (ctorIdx : Nat) →\n    (t : CollatzWork.YAH.Symbol) →\n      @Eq.{1} Nat ctorIdx t.ctorIdx → @CollatzWork.YAH.Symbol.ctorElimType.{u} motive ctorIdx → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.d0","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.d0.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 2) → motive CollatzWork.YAH.Symbol.d0 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.d1","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.d1.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 3) → motive CollatzWork.YAH.Symbol.d1 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.d2","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.d2.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 4) → motive CollatzWork.YAH.Symbol.d2 → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.dollar","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.dollar.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 6) → motive CollatzWork.YAH.Symbol.dollar → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.f","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.f.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 0) → motive CollatzWork.YAH.Symbol.f → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.hat","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.hat.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 5) → motive CollatzWork.YAH.Symbol.hat → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.noConfusion","type":"{P : Sort v✝} →\n  {x y : CollatzWork.YAH.Symbol} →\n    @Eq.{1} CollatzWork.YAH.Symbol x y → CollatzWork.YAH.Symbol.noConfusionType.{v✝} P x y","universes":["v._@.CollatzWork.YAHFiniteObstructionStatement.1299529672._hygCtx._hyg.6"]}
+{"name":"CollatzWork.YAH.Symbol.rec","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  motive CollatzWork.YAH.Symbol.f →\n    motive CollatzWork.YAH.Symbol.t →\n      motive CollatzWork.YAH.Symbol.d0 →\n        motive CollatzWork.YAH.Symbol.d1 →\n          motive CollatzWork.YAH.Symbol.d2 →\n            motive CollatzWork.YAH.Symbol.hat →\n              motive CollatzWork.YAH.Symbol.dollar → (t : CollatzWork.YAH.Symbol) → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.recOn","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) →\n    motive CollatzWork.YAH.Symbol.f →\n      motive CollatzWork.YAH.Symbol.t →\n        motive CollatzWork.YAH.Symbol.d0 →\n          motive CollatzWork.YAH.Symbol.d1 →\n            motive CollatzWork.YAH.Symbol.d2 →\n              motive CollatzWork.YAH.Symbol.hat → motive CollatzWork.YAH.Symbol.dollar → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Symbol.t","type":"CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.Symbol.t.elim","type":"{motive : CollatzWork.YAH.Symbol → Sort u} →\n  (t : CollatzWork.YAH.Symbol) → @Eq.{1} Nat t.ctorIdx (nat_lit 1) → motive CollatzWork.YAH.Symbol.t → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.Token","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance","type":"Type","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.casesOn","type":"{motive : CollatzWork.YAH.UnlabelledInstance → Sort u} →\n  (t : CollatzWork.YAH.UnlabelledInstance) →\n    ((ruleName : CollatzWork.YAH.RuleName) →\n        (pre post : List.{0} CollatzWork.YAH.Symbol) → motive { ruleName := ruleName, pre := pre, post := post }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.lhs","type":"CollatzWork.YAH.UnlabelledInstance → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.mk","type":"CollatzWork.YAH.RuleName →\n  List.{0} CollatzWork.YAH.Symbol → List.{0} CollatzWork.YAH.Symbol → CollatzWork.YAH.UnlabelledInstance","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.mk.noConfusion","type":"{P : Sort u} →\n  {ruleName : CollatzWork.YAH.RuleName} →\n    {pre post : List.{0} CollatzWork.YAH.Symbol} →\n      {ruleName' : CollatzWork.YAH.RuleName} →\n        {pre' post' : List.{0} CollatzWork.YAH.Symbol} →\n          @Eq.{1} CollatzWork.YAH.UnlabelledInstance { ruleName := ruleName, pre := pre, post := post }\n              { ruleName := ruleName', pre := pre', post := post' } →\n            (@Eq.{1} CollatzWork.YAH.RuleName ruleName ruleName' →\n                @Eq.{1} (List.{0} CollatzWork.YAH.Symbol) pre pre' →\n                  @Eq.{1} (List.{0} CollatzWork.YAH.Symbol) post post' → P) →\n              P","universes":["u"]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.noConfusion","type":"{P : Sort u} →\n  {t t' : CollatzWork.YAH.UnlabelledInstance} →\n    @Eq.{1} CollatzWork.YAH.UnlabelledInstance t t' → CollatzWork.YAH.UnlabelledInstance.noConfusionType.{u} P t t'","universes":["u"]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.post","type":"CollatzWork.YAH.UnlabelledInstance → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.pre","type":"CollatzWork.YAH.UnlabelledInstance → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.rec","type":"{motive : CollatzWork.YAH.UnlabelledInstance → Sort u} →\n  ((ruleName : CollatzWork.YAH.RuleName) →\n      (pre post : List.{0} CollatzWork.YAH.Symbol) → motive { ruleName := ruleName, pre := pre, post := post }) →\n    (t : CollatzWork.YAH.UnlabelledInstance) → motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.recOn","type":"{motive : CollatzWork.YAH.UnlabelledInstance → Sort u} →\n  (t : CollatzWork.YAH.UnlabelledInstance) →\n    ((ruleName : CollatzWork.YAH.RuleName) →\n        (pre post : List.{0} CollatzWork.YAH.Symbol) → motive { ruleName := ruleName, pre := pre, post := post }) →\n      motive t","universes":["u"]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.rhs","type":"CollatzWork.YAH.UnlabelledInstance → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.UnlabelledInstance.ruleName","type":"CollatzWork.YAH.UnlabelledInstance → CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.addContext","type":"Option.{0} CollatzWork.YAH.Token →\n  List.{0} CollatzWork.YAH.Token → Option.{0} CollatzWork.YAH.Token → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.adjacentPairs","type":"{α : Type u_1} → List.{u_1} α → List.{u_1} (Prod.{u_1, u_1} α α)","universes":["u_1"]}
+{"name":"CollatzWork.YAH.algebra","type":"CollatzWork.YAH.Symbol → Bool → Bool","universes":[]}
+{"name":"CollatzWork.YAH.allRuleNames","type":"List.{0} CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.allSymbolEdges","type":"List.{0} (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol)","universes":[]}
+{"name":"CollatzWork.YAH.allSymbols","type":"List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.allTokenEdges","type":"List.{0} (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token)","universes":[]}
+{"name":"CollatzWork.YAH.allTokens","type":"List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.canonical","type":"List.{0} CollatzWork.YAH.Symbol → Bool","universes":[]}
+{"name":"CollatzWork.YAH.canonicalExtension","type":"List.{0} CollatzWork.YAH.Token → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.canonicalLabeled","type":"List.{0} CollatzWork.YAH.Token → Bool","universes":[]}
+{"name":"CollatzWork.YAH.canonicalLabeledInstance","type":"CollatzWork.YAH.RuleName → Bool → CollatzWork.YAH.LabeledInstance","universes":[]}
+{"name":"CollatzWork.YAH.countDelta","type":"{α : Type u_1} → [BEq.{u_1} α] → List.{u_1} α → List.{u_1} α → α → Int","universes":["u_1"]}
+{"name":"CollatzWork.YAH.edgeCertificate","type":"List.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance)","universes":[]}
+{"name":"CollatzWork.YAH.edgeGap","type":"{M : Type u} →\n  [Lean.Grind.IntModule.{u} M] →\n    (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token → M) → CollatzWork.YAH.LabeledInstance → M","universes":["u"]}
+{"name":"CollatzWork.YAH.edgePotential","type":"{M : Type u} →\n  [Lean.Grind.IntModule.{u} M] →\n    (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol → M) → List.{0} CollatzWork.YAH.Symbol → M","universes":["u"]}
+{"name":"CollatzWork.YAH.evalCoefficients","type":"{φ : Type u_1} → {M : Type u} → [Lean.Grind.IntModule.{u} M] → List.{u_1} φ → (φ → M) → (φ → Int) → M","universes":["u","u_1"]}
+{"name":"CollatzWork.YAH.evalWord","type":"List.{0} CollatzWork.YAH.Symbol → Bool → Bool","universes":[]}
+{"name":"CollatzWork.YAH.ffPumpPotential","type":"{M : Type u} → [Lean.Grind.IntModule.{u} M] → (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol → M) → Nat → M","universes":["u"]}
+{"name":"CollatzWork.YAH.ffPumpWord","type":"Nat → List.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.instBEqLabeledInstance","type":"BEq.{0} CollatzWork.YAH.LabeledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instBEqLabeledInstance.beq","type":"CollatzWork.YAH.LabeledInstance → CollatzWork.YAH.LabeledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.instBEqRule","type":"BEq.{0} CollatzWork.YAH.Rule","universes":[]}
+{"name":"CollatzWork.YAH.instBEqRule.beq","type":"CollatzWork.YAH.Rule → CollatzWork.YAH.Rule → Bool","universes":[]}
+{"name":"CollatzWork.YAH.instBEqRuleName","type":"BEq.{0} CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.instBEqRuleName.beq","type":"CollatzWork.YAH.RuleName → CollatzWork.YAH.RuleName → Bool","universes":[]}
+{"name":"CollatzWork.YAH.instBEqSymbol","type":"BEq.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.instBEqSymbol.beq","type":"CollatzWork.YAH.Symbol → CollatzWork.YAH.Symbol → Bool","universes":[]}
+{"name":"CollatzWork.YAH.instBEqUnlabelledInstance","type":"BEq.{0} CollatzWork.YAH.UnlabelledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instBEqUnlabelledInstance.beq","type":"CollatzWork.YAH.UnlabelledInstance → CollatzWork.YAH.UnlabelledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqLabeledInstance","type":"DecidableEq.{1} CollatzWork.YAH.LabeledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqLabeledInstance.decEq","type":"(x x_1 : CollatzWork.YAH.LabeledInstance) → Decidable (@Eq.{1} CollatzWork.YAH.LabeledInstance x x_1)","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqRule","type":"DecidableEq.{1} CollatzWork.YAH.Rule","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqRule.decEq","type":"(x x_1 : CollatzWork.YAH.Rule) → Decidable (@Eq.{1} CollatzWork.YAH.Rule x x_1)","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqRuleName","type":"DecidableEq.{1} CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqSymbol","type":"DecidableEq.{1} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqUnlabelledInstance","type":"DecidableEq.{1} CollatzWork.YAH.UnlabelledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instDecidableEqUnlabelledInstance.decEq","type":"(x x_1 : CollatzWork.YAH.UnlabelledInstance) → Decidable (@Eq.{1} CollatzWork.YAH.UnlabelledInstance x x_1)","universes":[]}
+{"name":"CollatzWork.YAH.instReprLabeledInstance","type":"Repr.{0} CollatzWork.YAH.LabeledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instReprLabeledInstance.repr","type":"CollatzWork.YAH.LabeledInstance → Nat → Std.Format","universes":[]}
+{"name":"CollatzWork.YAH.instReprRule","type":"Repr.{0} CollatzWork.YAH.Rule","universes":[]}
+{"name":"CollatzWork.YAH.instReprRule.repr","type":"CollatzWork.YAH.Rule → Nat → Std.Format","universes":[]}
+{"name":"CollatzWork.YAH.instReprRuleName","type":"Repr.{0} CollatzWork.YAH.RuleName","universes":[]}
+{"name":"CollatzWork.YAH.instReprRuleName.repr","type":"CollatzWork.YAH.RuleName → Nat → Std.Format","universes":[]}
+{"name":"CollatzWork.YAH.instReprSymbol","type":"Repr.{0} CollatzWork.YAH.Symbol","universes":[]}
+{"name":"CollatzWork.YAH.instReprSymbol.repr","type":"CollatzWork.YAH.Symbol → Nat → Std.Format","universes":[]}
+{"name":"CollatzWork.YAH.instReprUnlabelledInstance","type":"Repr.{0} CollatzWork.YAH.UnlabelledInstance","universes":[]}
+{"name":"CollatzWork.YAH.instReprUnlabelledInstance.repr","type":"CollatzWork.YAH.UnlabelledInstance → Nat → Std.Format","universes":[]}
+{"name":"CollatzWork.YAH.isDigit","type":"CollatzWork.YAH.Symbol → Bool","universes":[]}
+{"name":"CollatzWork.YAH.labelWord","type":"List.{0} CollatzWork.YAH.Symbol → Bool → List.{0} CollatzWork.YAH.Token","universes":[]}
+{"name":"CollatzWork.YAH.labeledEdgeDelta","type":"CollatzWork.YAH.LabeledInstance → Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token → Int","universes":[]}
+{"name":"CollatzWork.YAH.labeledSymbolDelta","type":"CollatzWork.YAH.LabeledInstance → CollatzWork.YAH.Token → Int","universes":[]}
+{"name":"CollatzWork.YAH.labelsConsistent","type":"List.{0} CollatzWork.YAH.Token → Bool","universes":[]}
+{"name":"CollatzWork.YAH.negativeFFCoefficient","type":"Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol → Int","universes":[]}
+{"name":"CollatzWork.YAH.rule","type":"CollatzWork.YAH.RuleName → CollatzWork.YAH.Rule","universes":[]}
+{"name":"CollatzWork.YAH.shortcut","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.YAH.symbolCertificate","type":"List.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance)","universes":[]}
+{"name":"CollatzWork.YAH.symbolGap","type":"{M : Type u} → [Lean.Grind.IntModule.{u} M] → (CollatzWork.YAH.Token → M) → CollatzWork.YAH.LabeledInstance → M","universes":["u"]}
+{"name":"CollatzWork.YAH.symbolValueStep","type":"Nat → CollatzWork.YAH.Symbol → Nat","universes":[]}
+{"name":"CollatzWork.YAH.unlabelledCertificate","type":"List.{0} (Prod.{0, 0} Nat CollatzWork.YAH.UnlabelledInstance)","universes":[]}
+{"name":"CollatzWork.YAH.unlabelledEdgeDelta","type":"CollatzWork.YAH.UnlabelledInstance → Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol → Int","universes":[]}
+{"name":"CollatzWork.YAH.unlabelledGap","type":"{M : Type u} →\n  [Lean.Grind.IntModule.{u} M] →\n    (Prod.{0, 0} CollatzWork.YAH.Symbol CollatzWork.YAH.Symbol → M) → CollatzWork.YAH.UnlabelledInstance → M","universes":["u"]}
+{"name":"CollatzWork.YAH.unlabelledRows","type":"List.{0} CollatzWork.YAH.UnlabelledInstance","universes":[]}
+{"name":"CollatzWork.YAH.validLabeledInstance","type":"CollatzWork.YAH.LabeledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.validLeftContext","type":"CollatzWork.YAH.Rule → Bool → Option.{0} CollatzWork.YAH.Token → Bool","universes":[]}
+{"name":"CollatzWork.YAH.validRightContext","type":"CollatzWork.YAH.Rule → Bool → Option.{0} CollatzWork.YAH.Token → Bool","universes":[]}
+{"name":"CollatzWork.YAH.validUnlabelledInstance","type":"CollatzWork.YAH.UnlabelledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.validUnlabelledSemantics","type":"CollatzWork.YAH.UnlabelledInstance → Bool","universes":[]}
+{"name":"CollatzWork.YAH.weightedCoefficient","type":"{ρ : Type u_1} → {φ : Sort u_2} → List.{u_1} (Prod.{0, u_1} Nat ρ) → (ρ → φ → Int) → φ → Int","universes":["u_1","u_2"]}
+{"name":"CollatzWork.YAH.weightedGapSum","type":"{ρ : Type u_1} → {M : Type u} → [Lean.Grind.NatModule.{u} M] → List.{u_1} (Prod.{0, u_1} Nat ρ) → (ρ → M) → M","universes":["u","u_1"]}
+{"name":"CollatzWork.YAH.wordValue","type":"List.{0} CollatzWork.YAH.Symbol → Nat","universes":[]}
+{"name":"CollatzWork.blockNumerator12","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.coefficientCrossingExponent","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.excursionDenominator","type":"List.{0} CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.excursionNumerator","type":"List.{0} CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.excursionSteps","type":"List.{0} CollatzWork.ExcursionSegment → Nat","universes":[]}
+{"name":"CollatzWork.floorPower","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.mechanicalMax","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.onceAccelerated","type":"Nat → Nat","universes":[]}
+{"name":"CollatzWork.onceAccelerated_two_mul","type":"∀ (b : Nat),\n  @Eq.{1} Nat\n    (CollatzWork.onceAccelerated\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) b))\n    b","universes":[]}
+{"name":"CollatzWork.orbitOddCount","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.orbitRemainder","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.prefixGap","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.refinedA","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.refinedChild","type":"Nat → Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.refinedParent","type":"Nat → Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.shortcutIter","type":"Nat → Nat → Nat","universes":[]}
+{"name":"CollatzWork.shortcutIter_succ","type":"∀ (k n : Nat),\n  @Eq.{1} Nat\n    (CollatzWork.shortcutIter\n      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) k\n        (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))\n      n)\n    (CollatzWork.shortcutIter k (CollatzWork.onceAccelerated n))","universes":[]}
+{"name":"CollatzWork.shortcutIter_zero","type":"∀ (n : Nat), @Eq.{1} Nat (CollatzWork.shortcutIter (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) n) n","universes":[]}

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (degrees : List.{0} Nat),\n  @Eq.{1} Nat (@List.sum.{0} Nat instAddNat (@Zero.ofOfNat0.{0} Nat (instOfNatNat (nat_lit 0))) degrees)\n      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) →\n    ∀ (g : Nat),\n      @Membership.mem.{0, 0} Nat (List.{0} Nat) (@List.instMembership.{0} Nat) degrees g →\n        @Eq.{1} Nat g (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (degrees : List.{0} Nat),\n  @Eq.{1} Nat (@List.sum.{0} Nat instAddNat (@Zero.ofOfNat0.{0} Nat (instOfNatNat (nat_lit 0))) degrees)\n      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) →\n    ∀ (g : Nat),\n      @Membership.mem.{0, 0} Nat (List.{0} Nat) (@List.instMembership.{0} Nat) degrees g →\n        @Eq.{1} Nat g (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.Disproof.quotientDegreesVanish",
+  "universe_count_equal": true,
+  "solution_sha256": "cc493cdaf75f92d63366b29587407eb939375e6e217937312c6365e11d22efd0",
+  "theorem_sha256": "740cbf81eb69b0135d628d89c1a49015334a4946b33f6da49ac208f9465772a6",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_Disproof_quotientDegreesVanish.lean",
+  "source_files_unchanged": true
+}

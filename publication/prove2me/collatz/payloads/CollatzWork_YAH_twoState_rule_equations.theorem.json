@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.twoState_rule_equations",
-  "theorem_title": "Fixed-algebra YAH additive cancellation cores",
-  "natural_language_statement": "Lean verifies fixed two-state rule equations, an unlabelled13-row adjacent-edge cancellation with a cofinal pumping/lower-bound contradiction, an8-row labeled-symbol cancellation, and a50-row labeled-edge cancellation. Generic symbol/edge ordered-additive-group wrappers exclude orientations that make every dynamic rule strict and every auxiliary rule weak in that fixed algebra. Limitations: The unlabelled lower-bound conclusion has a genuine cofinality hypothesis. This does not formalize scalar-arctic full/top certificates, all70algebras, arbitrary labelings or general termination. The broader first-rule-removal support statement retains Python/prose status; it is not the generic Lean wrapper.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
-  "formal_statement": "theorem CollatzWork.YAH.twoState_rule_equations :\n    \u2200 name \u2208 allRuleNames, \u2200 tail : Bool,\n      evalWord (rule name).lhs tail = evalWord (rule name).rhs tail := by sorry\n\n",
+  "theorem_title": "The fixed two-state suffix algebra satisfies every YAH rule equation",
+  "natural_language_statement": "Let $\\mathcal R$ be the list of all eleven YAH rules and let $A_s$ denote the specified Boolean unary map of a symbol $s$. For a word $s_1\\cdots s_k$, define $E(s_1\\cdots s_k,b)=A_{s_1}(\\cdots A_{s_k}(b)\\cdots)$, with $E(\\varnothing,b)=b$. Then\n\n$$\\forall r\\in\\mathcal R\\;\\forall b\\in\\{\\mathrm{false},\\mathrm{true}\\},\\qquad E(\\operatorname{lhs}(r),b)=E(\\operatorname{rhs}(r),b).$$\n\nThis verifies the rule equations for the one fixed two-state algebra used for suffix labeling. It does not assert that any induced order proves termination.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.twoState_rule_equations :\n    ∀ name ∈ allRuleNames, ∀ tail : Bool,\n      evalWord (rule name).lhs tail = evalWord (rule name).rhs tail := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

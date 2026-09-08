@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "And\n  (@Eq.{1} Nat (@List.length.{0} CollatzWork.YAH.UnlabelledInstance CollatzWork.YAH.unlabelledRows)\n    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))\n  (@Eq.{1} Nat\n    (@List.length.{0} (Prod.{0, 0} Nat CollatzWork.YAH.UnlabelledInstance) CollatzWork.YAH.unlabelledCertificate)\n    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))",
+  "solution_universe_parameters": [],
+  "target_type": "And\n  (@Eq.{1} Nat (@List.length.{0} CollatzWork.YAH.UnlabelledInstance CollatzWork.YAH.unlabelledRows)\n    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))\n  (@Eq.{1} Nat\n    (@List.length.{0} (Prod.{0, 0} Nat CollatzWork.YAH.UnlabelledInstance) CollatzWork.YAH.unlabelledCertificate)\n    (@OfNat.ofNat.{0} Nat (nat_lit 13) (instOfNatNat (nat_lit 13))))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.unlabelledCertificate_shape",
+  "universe_count_equal": true,
+  "solution_sha256": "ce974c1511740fcf467bf8e7e11ac28153d930e3322d0841d8309af1ec491408",
+  "theorem_sha256": "602ee9938f778f0e3655abd435cc167473a2f45ad7b5c6feb3cf28f7a7838a36",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_unlabelledCertificate_shape.lean",
+  "source_files_unchanged": true
+}

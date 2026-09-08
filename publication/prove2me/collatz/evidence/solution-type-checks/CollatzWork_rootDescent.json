@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.RootDescentStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.RootDescentStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.rootDescent",
+  "universe_count_equal": true,
+  "solution_sha256": "7b8f9504c22acdcd83705aed88c46b5dfc802b5cdef6799aa2fe9f0307f62bc8",
+  "theorem_sha256": "289a04665dd537280744a7aa5d221e0bee1bcc431a64df131c93341d0d0e873a",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_rootDescent.lean",
+  "source_files_unchanged": true
+}

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.TwoBurstDescentStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.TwoBurstDescentStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.twoBurstDescent",
+  "universe_count_equal": true,
+  "solution_sha256": "36a29e8d2de1e4897b015b5d31b8e8f2fcc8541dd5e787a71afb4a25cac7cd0d",
+  "theorem_sha256": "20e82bf1480dc063c6290cdbf4d83a1727bb90283c4d71be843e3b8363baaecd",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_twoBurstDescent.lean",
+  "source_files_unchanged": true
+}

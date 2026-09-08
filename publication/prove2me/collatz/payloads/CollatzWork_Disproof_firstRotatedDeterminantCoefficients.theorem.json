@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.Disproof.firstRotatedDeterminantCoefficients",
-  "theorem_title": "CollatzWork.Disproof.firstRotatedDeterminantCoefficients",
-  "natural_language_statement": "Exact expansion of the first cyclic determinant. If\n`(q-p)*gr=qr-pr`, then the determinant for context `U V^r W` and pump `Z`\nhas coefficients `A` and `B`.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "theorem_title": "Coefficient expansion for the first rotated determinant",
+  "natural_language_statement": "Let $a,b,c,d,e,f,g,h,\\ell,p,q,t\\in\\mathbb Z$ be arbitrary, and put $\\Delta_v=q-p$ and $\\Delta_z=t-h$. Let $p_r,q_r,g_r\\in\\mathbb Z$ be three further parameters satisfying $\\Delta_v g_r=q_r-p_r$; the subscripts are labels and impose no power interpretation. Put $\\alpha=adp_r$, $\\beta=dbp_r+cdeg_r+cfq_r$, and $\\gamma=cgq_r$. Define\n\n$$\\begin{aligned}A&=\\Delta_z(db\\Delta_v-cde)+\\Delta_v ad\\ell,\\\\B&=\\Delta_z(cde+cf\\Delta_v)-\\Delta_v cg\\ell.\\end{aligned}$$\n\nThen\n\n$$\\Delta_v\\bigl(\\Delta_z\\beta-(\\gamma-\\alpha)\\ell\\bigr)=Ap_r+Bq_r.$$\n\nThis records the exact first coefficient expansion under its stated relation. It uses multiplication rather than division and therefore remains valid when $\\Delta_v=0$.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
   "formal_statement": "theorem CollatzWork.Disproof.firstRotatedDeterminantCoefficients\n    (a b c p e q d f g h ell t pr qr gr : Int)\n    (hgr : (q - p) * gr = qr - pr) :\n    let dv := q - p\n    let dz := t - h\n    let alpha := a * d * pr\n    let beta := d * b * pr + c * d * e * gr + c * f * qr\n    let gamma := c * g * qr\n    let A := dz * (d * b * dv - c * d * e) + dv * a * d * ell\n    let B := dz * (c * d * e + c * f * dv) - dv * c * g * ell\n    dv * (dz * beta - (gamma - alpha) * ell) = A * pr + B * qr := by sorry\n\n",
   "tags": [
     "collatz-work-import"

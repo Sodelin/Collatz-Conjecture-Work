@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        (∀ (m : Nat),\n            @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m →\n              @LT.lt.{0} Nat instLTNat m (CollatzWork.refinedParent L epsilon z) → CollatzWork.Converges m) →\n          CollatzWork.Converges (CollatzWork.refinedParent L epsilon z)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        (∀ (m : Nat),\n            @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m →\n              @LT.lt.{0} Nat instLTNat m (CollatzWork.refinedParent L epsilon z) → CollatzWork.Converges m) →\n          CollatzWork.Converges (CollatzWork.refinedParent L epsilon z)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.refinedParent_converges_of_smaller",
+  "universe_count_equal": true,
+  "solution_sha256": "6217c4b89401cc319ec3ea4e4a50e740349d9fcd1e6d078877198ec928bd2f9f",
+  "theorem_sha256": "a3a0b7f1751fbd60ec98b3ee800d9754220221107486687c56ebed865d339e30",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_refinedParent_converges_of_smaller.lean",
+  "source_files_unchanged": true
+}

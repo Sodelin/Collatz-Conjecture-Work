@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.equalSlopeWitness",
-  "theorem_title": "Equal-slope affine comparison and concrete coalescence witness",
-  "natural_language_statement": "For natural A,B,R, the statement that A*x+B<A*x+R for every natural x is equivalent to B<R. For every natural x, the starts 8*x+5 and 8*x+4 reach 3*x+2 after three shortcut steps, with 0<8*x+4<8*x+5. Limitations: A correction to a local inverse-word classifier and one witnessed family. It is not a complete inverse-word search or universal convergence result.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\n\n\n",
+  "theorem_title": "A pair of equal-time coalescing residue families",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nFor every $x\\in\\mathbb N$,\n\n$$\nT^3(8x+5)=3x+2,\\quad T^3(8x+4)=3x+2,\\quad 0<8x+4<8x+5.\n$$\n\nThis gives one explicit smaller coalescing start for each member of the first family.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.equalSlopeWitness : EqualSlopeWitnessStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.EqualSlopeSmallerStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.EqualSlopeSmallerStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.equalSlopeSmaller",
+  "universe_count_equal": true,
+  "solution_sha256": "e97d867e8fe32f119935aa2ffb786c196d06d1daa0c3c6860eab03631d3738fb",
+  "theorem_sha256": "2c4b02b4584fd87fd4d9eddf706510c7684907d18326ff0ee1d579d8ebd7364f",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_equalSlopeSmaller.lean",
+  "source_files_unchanged": true
+}

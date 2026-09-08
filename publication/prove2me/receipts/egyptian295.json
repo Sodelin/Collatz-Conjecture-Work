@@ -1,0 +1,370 @@
+{
+  "complete": true,
+  "events": [
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876533.0410838
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876542.9069502,
+      "version": "0.9.8"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876590.46106
+    },
+    {
+      "action": "credential_exchange_failed",
+      "at": 1788876605.479401
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876693.8384256
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876700.6980114,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788876714.1490374,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788876721.6694021,
+      "intent_id": "0ed2b6e29dc945a0873d65f706ad3cca",
+      "key": "def:EgyptianFractions.Baseline18",
+      "payload_sha256": "7fc13ac58516c8f7dad2cde36fa67312096c13c89e2967b6c581ef97d6ea0395"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788876736.111458,
+      "job_id": "6a10cdac-f8c0-452a-83cb-5c98486be029",
+      "key": "def:EgyptianFractions.Baseline18"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788876743.0682135,
+      "key": "def:EgyptianFractions.Baseline18",
+      "status": "COMPILING"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876836.9826653
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876845.1275697,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788876851.897758,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788876864.417811,
+      "key": "def:EgyptianFractions.Baseline18",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788876875.139252,
+      "intent_id": "4f0276838894415d8944ac6a999773fa",
+      "key": "def:EgyptianFractions.Certificate",
+      "payload_sha256": "eaf26170d4079af8da261321d8cf7e453c33416c7869bbf7159a80a77218618d"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788876880.9688058,
+      "job_id": "089d60a1-cab7-47aa-92b5-b03d906bad02",
+      "key": "def:EgyptianFractions.Certificate"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788876887.0240433,
+      "key": "def:EgyptianFractions.Certificate",
+      "status": "COMPILING"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876977.7359548
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876983.980243,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788876990.1174426,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877001.1191769,
+      "key": "def:EgyptianFractions.Certificate",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877006.9547796,
+      "intent_id": "d5c94b50bb2647979b2508f42e956df2",
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "payload_sha256": "6cb2f9dcb62e6409654084a6ff674334c7663cd297a4161e2e8c02fb8799427a"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877014.2100863,
+      "job_id": "2d4029bb-16a7-4b18-88e4-1836be47ec29",
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877019.8003566,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "status": "COMPILING"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788877068.6374986
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788877074.9437215,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877081.1861684,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877094.389747,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877094.4058025,
+      "intent_id": "47998e4f81834caea49f7f76920fa340",
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "payload_sha256": "4d25ae93b16ab955d9784fff29b6ba123882ba110fa6b43ff374aab466b7457a"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877101.5526128,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "submission_id": "70982dc8-072a-43d5-9f4a-ad9c54af3b95"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877107.027997,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "status": "PENDING"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788877223.2178242
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788877231.8876529,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877238.7309833,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877246.0144641,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788877252.9232333,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877258.9658883,
+      "intent_id": "6a3cba5c00964952a26be68611d832fb",
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "payload_sha256": "6a5b352bf79b70c88e6dbbec1be6703812266e10308c3b9c7614f593fb4ee46b"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877265.533962,
+      "job_id": "f7225641-3c25-4d1d-9276-cddba8264c57",
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877273.1923351,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "status": "COMPILING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877304.840637,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.4455237,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877318.4617703,
+      "intent_id": "0732cbe946014c8cbfb7e2894fdae697",
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "payload_sha256": "16bb552ed26a5a281e15f8e0e461c5e43811bf192caf9e4573baffd6aa83127f"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877325.9955368,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "submission_id": "2b7235ef-5d1c-4dd3-a8a4-297debc4ec0c"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877332.3962755,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877521.819382,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877527.3370788,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788877534.8908317,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35",
+      "status": "Proved"
+    },
+    {
+      "action": "final_catalog_page_checked",
+      "at": 1788877547.2003944,
+      "page": 0
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788877550.8718114,
+      "key": "def:EgyptianFractions.Baseline18"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788877550.8799326,
+      "key": "def:EgyptianFractions.Certificate"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788877551.033083,
+      "key": "thm:EgyptianFractions.exists_minimum18_le_35"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788877559.3406353,
+      "key": "thm:EgyptianFractions.exists_minimum_of_representation"
+    },
+    {
+      "action": "final_verification_passed",
+      "at": 1788877560.5007997,
+      "count": 4
+    }
+  ],
+  "final_verification": {
+    "checked": [
+      "def:EgyptianFractions.Baseline18",
+      "def:EgyptianFractions.Certificate",
+      "thm:EgyptianFractions.exists_minimum18_le_35",
+      "thm:EgyptianFractions.exists_minimum_of_representation"
+    ],
+    "page": 1,
+    "scan_done": true,
+    "seen": [
+      "15317248-a9c0-4e15-b75c-9fd367fc5bc3",
+      "3ea4504b-a670-471e-b353-fd24ac5dc24d",
+      "53df6d07-299f-4652-901e-25e89229e1f0",
+      "57b6119c-08da-46b9-ab75-1c44261c678b"
+    ]
+  },
+  "items": {
+    "def:EgyptianFractions.Baseline18": {
+      "api_url": "https://prove2.me/api/v1/theorems/3ea4504b-a670-471e-b353-fd24ac5dc24d",
+      "intent_id": "0ed2b6e29dc945a0873d65f706ad3cca",
+      "job_id": "6a10cdac-f8c0-452a-83cb-5c98486be029",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "3ea4504b-a670-471e-b353-fd24ac5dc24d"
+    },
+    "def:EgyptianFractions.Certificate": {
+      "api_url": "https://prove2.me/api/v1/theorems/53df6d07-299f-4652-901e-25e89229e1f0",
+      "intent_id": "4f0276838894415d8944ac6a999773fa",
+      "job_id": "089d60a1-cab7-47aa-92b5-b03d906bad02",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "53df6d07-299f-4652-901e-25e89229e1f0"
+    },
+    "thm:EgyptianFractions.exists_minimum18_le_35": {
+      "api_url": "https://prove2.me/api/v1/theorems/57b6119c-08da-46b9-ab75-1c44261c678b",
+      "intent_id": "0732cbe946014c8cbfb7e2894fdae697",
+      "job_id": "f7225641-3c25-4d1d-9276-cddba8264c57",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "2b7235ef-5d1c-4dd3-a8a4-297debc4ec0c",
+      "theorem_id": "57b6119c-08da-46b9-ab75-1c44261c678b",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:EgyptianFractions.exists_minimum_of_representation": {
+      "api_url": "https://prove2.me/api/v1/theorems/15317248-a9c0-4e15-b75c-9fd367fc5bc3",
+      "intent_id": "47998e4f81834caea49f7f76920fa340",
+      "job_id": "2d4029bb-16a7-4b18-88e4-1836be47ec29",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "70982dc8-072a-43d5-9f4a-ad9c54af3b95",
+      "theorem_id": "15317248-a9c0-4e15-b75c-9fd367fc5bc3",
+      "verify_status": "ACCEPTED"
+    }
+  },
+  "manifest_sha256": "8be6b059646a1ed48278ab8515e10291eeb7bd41406e39a17a24d8ab71de78b0",
+  "schema_version": 1,
+  "source": {
+    "commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+    "digests": {
+      "EgyptianFractions.lean": "a576bf70a0b0cb0610c3c60b9622e9720cdc2a270ab01aa7fb2cb28c4a08a88c",
+      "EgyptianFractions/Baseline18.lean": "95f6a2758b799d7f8327237034e9a532739caee6eee3e1162c5ed5dac86e7bd8",
+      "EgyptianFractions/Certificate.lean": "ef25ce4bde407a0f3cbcaf68e3bd0dda228352b05ea9ff833098779b2fc9139d"
+    },
+    "repository": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295"
+  }
+}

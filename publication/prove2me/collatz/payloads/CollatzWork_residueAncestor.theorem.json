@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.residueAncestor",
-  "theorem_title": "Complete uniform divisibility ancestor theorem at threshold13",
-  "natural_language_statement": "For every r in Nat with 3^13 dividing 4*r+1, there exist naturals m,b such that 0<m<r, m mod27=20, and shortcutIter b m=r. The factorization, selector, strict comparison, and actual parity semantics are included. Limitations: Supersedes the older uniform threshold21 selector. Individually lower guarded rows and selected-table sharpness retain prose/Python scope. The divisor guard is not known for arbitrary residual roots. Novelty unconfirmed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ResidueAncestorStatement\nimport Theorems.Thm_CollatzWork_residueAncestor_normalized\n\n\n",
+  "theorem_title": "A smaller residue-20 ancestor under a factorization guard",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $v,u,r\\in\\mathbb N$ satisfy $v\\ge13$, $u>0$, $u\\not\\equiv0\\pmod3$, and $3^v u=4r+1$. Then\n\n$$\n\\exists m,b\\in\\mathbb N,\\quad 0<m<r,\\quad m\\equiv20\\pmod{27},\\quad T^b(m)=r.\n$$\n\nThis gives a smaller positive ancestor for roots satisfying the explicit valuation guard. It asserts no coverage of roots outside that guard.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ResidueAncestorStatement\nimport Theorems.Thm_CollatzWork_residueAncestor_normalized\n\n\n\n",
   "formal_statement": "theorem CollatzWork.residueAncestor : ResidueAncestorStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

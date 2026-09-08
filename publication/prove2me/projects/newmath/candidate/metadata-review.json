@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-08",
+  "reviewer": "ChatGPT/Codex metadata review; not an independent human audit",
+  "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+  "source_repository": "https://github.com/Sodelin/new-math-discovery",
+  "method": "Read preserved source definitions, theorem statements and proofs; compare each payload with its exact source. Retain Lean code byte-for-byte and separate mathematical proof explanations from statements. Correct definition description field to official natural_language_statement. No external priority or novelty conclusion inferred.",
+  "official_references": [
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/contribute.md",
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/upload_full_project.md"
+  ],
+  "status": "passed",
+  "reviewed_items": [
+    {
+      "name": "NewMathDiscovery_BlindnessRealization",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L1-L81",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "A base-and-face Boolean observation system"
+    },
+    {
+      "name": "NewMathDiscovery.BlindnessRealization.blind_downward",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L68-L76",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Blindness is downward closed in the Boolean realization"
+    },
+    {
+      "name": "NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L36-L66",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Exact realization of blind coalitions by Boolean generators"
+    },
+    {
+      "name": "NewMathDiscovery_LinearBlindness",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L1-L209",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Subtraction-preserving observation systems and an integer instability family"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L160-L163",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Distinct sensors have nonzero determinant"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L184-L194",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Every sensor in a tail has a large gauge-fixed witness"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L170-L173",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Each explicit sensor-kernel witness has nonzero target"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L156-L158",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The target–sensor determinant is n plus one"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L175-L182",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Gauge-fixed single-sensor kernels have arbitrarily large target values"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L84-L110",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Observations determine a target exactly when their common kernel is included in its kernel"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L112-L119",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Removing observations preserves a target-blind pair"
+    },
+    {
+      "name": "NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L56-L75",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Target blindness is equivalent to a common-kernel witness"
+    },
+    {
+      "name": "NewMathDiscovery_RankedCoalescenceSound",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L1-L128",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Finite iteration and terminal reachability"
+    },
+    {
+      "name": "NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L95-L120",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Domain coverage and ranked coalescence imply finite reachability"
+    },
+    {
+      "name": "NewMathDiscovery.RankedCoalescence.iterate_succ",
+      "kind": "theorem",
+      "publication_status": "stale_payload_not_scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L14-L16",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The successor iterate applies the transition once more"
+    },
+    {
+      "name": "NewMathDiscovery.RankedCoalescence.iterate_zero",
+      "kind": "theorem",
+      "publication_status": "stale_payload_not_scheduled",
+      "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L10-L12",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Zero iterations return the input"
+    }
+  ],
+  "payload_byte_check": "Every scheduled definition body and every preamble+formal_statement equals the already compiled staged Lean file byte-for-byte. The pre-existing missing separator newline in theorem JSON preambles was restored. No staged or source Lean code changed."
+}

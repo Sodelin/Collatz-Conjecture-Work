@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.rootDescentBurst",
-  "theorem_title": "Guarded unbounded OOE burst descent",
-  "natural_language_statement": "For positive naturals k,u,m with 2^k*m+5=9^k*u, shortcutIter (4*k) (8^k*u-5)=m and m<8^k*u-5. The general burst identity shortcutIter (3*k) (8^k*u-5)=9^k*u-5 holds for k>=0,u>0. Limitations: The final-halving equation is a substantive guard. The separate residue20 CRT specialization is prose; convergence transfer assumes convergence of all smaller positive starts. No external priority claim.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_RootDescentStatement\nimport Theorems.Thm_CollatzWork_shortcutIter_OOE\n\n\n",
+  "theorem_title": "Exact iterate for an arbitrary finite OOE burst",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nFor $k,u\\in\\mathbb N$ with $u>0$,\n\n$$\nT^{3k}(8^k u-5)=9^k u-5.\n$$\n\nThe burst length is unbounded, but the statement describes only a finite prefix and does not claim descent.\n\nSubtraction is truncated on natural numbers; this matters when k=0 and u is less than 5.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_RootDescentStatement\nimport Theorems.Thm_CollatzWork_shortcutIter_OOE\n\n\n\n",
   "formal_statement": "theorem CollatzWork.rootDescentBurst : RootDescentBurstStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

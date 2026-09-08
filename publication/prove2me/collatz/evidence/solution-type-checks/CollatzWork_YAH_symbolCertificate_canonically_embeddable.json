@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "@Eq.{1} Bool\n  (@List.all.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) CollatzWork.YAH.symbolCertificate fun entry =>\n    (CollatzWork.YAH.canonicalLabeled\n          (CollatzWork.YAH.canonicalExtension (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).lhs)).and\n      (CollatzWork.YAH.canonicalLabeled\n        (CollatzWork.YAH.canonicalExtension (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).rhs)))\n  Bool.true",
+  "solution_universe_parameters": [],
+  "target_type": "@Eq.{1} Bool\n  (@List.all.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) CollatzWork.YAH.symbolCertificate fun entry =>\n    (CollatzWork.YAH.canonicalLabeled\n          (CollatzWork.YAH.canonicalExtension (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).lhs)).and\n      (CollatzWork.YAH.canonicalLabeled\n        (CollatzWork.YAH.canonicalExtension (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).rhs)))\n  Bool.true",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+  "universe_count_equal": true,
+  "solution_sha256": "95057ef82f348cc66304a943a8b82dd5638271849e1e5584294dc520b7337412",
+  "theorem_sha256": "b7efb09222196efd50849959efa4c8ff0f3e07e7ae2fc35e411142b710f680c7",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean",
+  "source_files_unchanged": true
+}

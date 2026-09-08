@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
-  "theorem_title": "BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
-  "natural_language_statement": "No positive shifted orbit can follow a fixed such affine block forever.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n",
-  "formal_statement": "theorem BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks (b d c : Nat)\n    (hcop : b.Coprime (b + d)) (hb : 1 < b) (x : Nat \u2192 Nat)\n    (hpos : 0 < d * x 0 + c) :\n    \u00ac (\u2200 i, b * x (i + 1) = (b + d) * x i + c) := by sorry\n\n",
+  "theorem_title": "Exclusion of an infinitely repeated affine block",
+  "natural_language_statement": "Let $b,d,c\\in\\mathbb N$ with $\\gcd(b,b+d)=1$ and $b>1$, and let $x:\\mathbb N\\to\\mathbb N$ satisfy $d x_0+c>0$. Then\n\n$$\n\\neg\\bigl(\\forall i\\in\\mathbb N,\\ b x_{i+1}=(b+d)x_i+c\\bigr).\n$$\n\nOnly the displayed fixed block is excluded; this does not exclude every nonconvergent Collatz itinerary.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks (b d c : Nat)\n    (hcop : b.Coprime (b + d)) (hb : 1 < b) (x : Nat → Nat)\n    (hpos : 0 < d * x 0 + c) :\n    ¬ (∀ i, b * x (i + 1) = (b + d) * x i + c) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

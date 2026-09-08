@@ -1,0 +1,943 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-08",
+  "queries": [
+    [
+      "Lean",
+      "Collatz",
+      "Erdos",
+      "certificate"
+    ],
+    [
+      "Collatz",
+      "Erdos",
+      "AOGGhostContactCore",
+      ".lean"
+    ],
+    [
+      "Erdos",
+      "AOGGhostContactCore",
+      ".lean",
+      "phase-erasure"
+    ]
+  ],
+  "query_mode": "filename_metadata_only",
+  "scope_limit": "Bounded search, not an exhaustive library inventory. The focused Collatz query reached top_k=100 with no cursor, so older matching items may remain outside the response.",
+  "focused_result_count": 100,
+  "results": [
+    {
+      "original_name": "Collatz-Research-Evidence.zip",
+      "library_file_id": "libfile_7c5b3c2c0d2c8191860615da2a5d5da4",
+      "file_id": "file_00000000a6f882309fe1e539e4b07c5d",
+      "reported_size_bytes": 40397,
+      "reported_created_at": "2026-09-07T14:47:01.821839Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz-Research-Review.md",
+      "library_file_id": "libfile_e8a1c4d2bd2c81918740358d0d77e1cc",
+      "file_id": "file_000000005ee081fdaade511a190697fd",
+      "reported_size_bytes": 9024,
+      "reported_created_at": "2026-09-07T14:47:01.674987Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Multi_Excursion_Evidence_2026-09-05.zip",
+      "library_file_id": "libfile_896766c67b0c819196e8af91941091c4",
+      "file_id": "file_000000000f7481fdb088b297fc96e5df",
+      "reported_size_bytes": 1105871,
+      "reported_created_at": "2026-09-05T19:48:18.895312Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Multi_Excursion_Research_2026-09-05.md",
+      "library_file_id": "libfile_afe8f3f517d88191a90be00f08c40027",
+      "file_id": "file_00000000c52481fdb257529e9872cd6e",
+      "reported_size_bytes": 22664,
+      "reported_created_at": "2026-09-05T19:48:18.021010Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Recovery_Evidence_2026-09-05.zip",
+      "library_file_id": "libfile_412ff1490818819182647ac929d815a0",
+      "file_id": "file_00000000ceb881fd9ad71b18d46ef46b",
+      "reported_size_bytes": 1243966,
+      "reported_created_at": "2026-09-05T18:57:59.489828Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Recovery_Handoff_2026-09-05.md",
+      "library_file_id": "libfile_f71fccded0e08191b03113fcc8093023",
+      "file_id": "file_00000000788c81fd94b9a6af86087936",
+      "reported_size_bytes": 14642,
+      "reported_created_at": "2026-09-05T18:57:58.634416Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_PR17_Audit_2026-09-05.md",
+      "library_file_id": "libfile_9ab79d3a8c788191b25a4431e7fc06f5",
+      "file_id": "file_00000000800c81fda3af69a613ec8e8d",
+      "reported_size_bytes": 24082,
+      "reported_created_at": "2026-09-05T16:02:27.218471Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_PR16_Audit_2026-09-05.md",
+      "library_file_id": "libfile_2c6b3427ae4481918ecf5c70ceccbb70",
+      "file_id": "file_00000000a4b081fd9eefb239452eea3a",
+      "reported_size_bytes": 29551,
+      "reported_created_at": "2026-09-05T14:38:32.717610Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Publication_Readiness_Packet_2026-08-27.pdf",
+      "library_file_id": "libfile_3dd64b9c25c88191bec0123dfdb72677",
+      "file_id": "file_0000000090b081fb9d041ec4585b8430",
+      "reported_size_bytes": 74317,
+      "reported_created_at": "2026-08-27T03:55:54.749566Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "CODEX_MASTER_PROMPT_COLLATZ.md",
+      "library_file_id": "libfile_403d768ef15081919d43cd2b05bf17f5",
+      "file_id": "file_00000000b34c81fda8b27311b5fc751e",
+      "reported_size_bytes": 23192,
+      "reported_created_at": "2026-08-24T04:31:11.761432Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Full_Research_Archive_2026-08-23.zip",
+      "library_file_id": "libfile_0933eee4b4e081919099405d0a1a0f50",
+      "file_id": "file_000000004ed081fbbf41973220da8402",
+      "reported_size_bytes": 4233913,
+      "reported_created_at": "2026-08-24T00:44:37.782662Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01(1).pdf",
+      "library_file_id": "libfile_7c843a1a4f2c8191bf7ea6f69168ff18",
+      "file_id": "file_0000000002ac81fd8e859ed7e348350c",
+      "reported_size_bytes": 252940,
+      "reported_created_at": "2026-08-02T03:26:04.200821Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round6b_checks(1).py",
+      "library_file_id": "libfile_c8510a1df6d88191ae9f9aabda7a1beb",
+      "file_id": "file_00000000cce881fdbff717a12ea8f26d",
+      "reported_size_bytes": 7697,
+      "reported_created_at": "2026-08-02T03:26:03.954338Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_c8a69d7a313081918a1bf3e4e745e21a",
+      "file_id": "file_00000000534881fd9a5b6104f485a9fa",
+      "reported_size_bytes": 76437,
+      "reported_created_at": "2026-08-02T03:26:03.935810Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Expert_Audit_Brief_2026-08-01-1.pdf",
+      "library_file_id": "libfile_f7e632a0049081918d9986ffb2bfb519",
+      "file_id": "file_00000000205081fd84e0462cff386e1c",
+      "reported_size_bytes": 118626,
+      "reported_created_at": "2026-08-02T03:26:03.677936Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Claim_Ledger_2026-08-01(1).csv",
+      "library_file_id": "libfile_4dc665a5dc808191af4a5a7d8ad536b2",
+      "file_id": "file_00000000f6a081fda6157d034028edcf",
+      "reported_size_bytes": 1716,
+      "reported_created_at": "2026-08-02T03:26:03.385800Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_SHA256_2026-08-01.txt",
+      "library_file_id": "libfile_ae59afffb1888191813f696a934b3635",
+      "file_id": "file_00000000df7081fdbe7c6696e9e8a0ba",
+      "reported_size_bytes": 1273,
+      "reported_created_at": "2026-08-02T03:22:34.676608Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round6b_checks.py",
+      "library_file_id": "libfile_f8d557b44ce4819184c114b4833d52e6",
+      "file_id": "file_000000008fdc81fd9fc7d30a6123015c",
+      "reported_size_bytes": 7697,
+      "reported_created_at": "2026-08-02T03:22:33.493148Z",
+      "mime_type": "text/x-python",
+      "status": "read_for_recovery"
+    },
+    {
+      "original_name": "Collatz_Round6B_Claim_Ledger_2026-08-01.csv",
+      "library_file_id": "libfile_5ee575e8148c8191aa4f47d80965bbcc",
+      "file_id": "file_00000000270081fdb7fe212acf1ebccd",
+      "reported_size_bytes": 1716,
+      "reported_created_at": "2026-08-02T03:22:32.846317Z",
+      "mime_type": "text/csv",
+      "status": "read_for_recovery"
+    },
+    {
+      "original_name": "Collatz_Round6B_Independent_Audit_Prompt_2026-08-01.md",
+      "library_file_id": "libfile_fad6213816e88191893ef35691363ef5",
+      "file_id": "file_000000003e2c81fd866fc88606277432",
+      "reported_size_bytes": 2186,
+      "reported_created_at": "2026-08-02T03:22:32.221727Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Expert_Audit_Brief_2026-08-01.md",
+      "library_file_id": "libfile_8dcc10aa928481919427c947c7d35f2e",
+      "file_id": "file_00000000e9a481fd806dd8a5f91fb07f",
+      "reported_size_bytes": 3924,
+      "reported_created_at": "2026-08-02T03:22:31.633817Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Expert_Audit_Brief_2026-08-01.docx",
+      "library_file_id": "libfile_fb16a17340748191a806cc5b7654198c",
+      "file_id": "file_0000000029a081fd8c8290e5788e7f19",
+      "reported_size_bytes": 12726,
+      "reported_created_at": "2026-08-02T03:22:31.096468Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Expert_Audit_Brief_2026-08-01.pdf",
+      "library_file_id": "libfile_dbb1db52a4ac819193aa40e3a41db23d",
+      "file_id": "file_00000000199881fdad51742bd00c5046",
+      "reported_size_bytes": 76437,
+      "reported_created_at": "2026-08-02T03:22:30.497081Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.md",
+      "library_file_id": "libfile_478d9916a81c8191bd0f18e309c71ecb",
+      "file_id": "file_00000000d78081fd8bcc1c8b28ac016e",
+      "reported_size_bytes": 26287,
+      "reported_created_at": "2026-08-02T03:22:29.973041Z",
+      "mime_type": "text/markdown",
+      "status": "read_for_recovery"
+    },
+    {
+      "original_name": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.docx",
+      "library_file_id": "libfile_7dcbd5b6f6e08191b2f26e8487f2fa81",
+      "file_id": "file_00000000d42481fdbf73b5593ad3baa4",
+      "reported_size_bytes": 24157,
+      "reported_created_at": "2026-08-02T03:22:29.416659Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.pdf",
+      "library_file_id": "libfile_3ce0193a8a848191a546f4ecf8aef9ff",
+      "file_id": "file_0000000016e481fd859f8b2a4f2cfdf7",
+      "reported_size_bytes": 252940,
+      "reported_created_at": "2026-08-02T03:22:28.864492Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Expert_Audit_Brief_2026-08-01(2).pdf",
+      "library_file_id": "libfile_7f97065e38f0819194072fb9a87e355f",
+      "file_id": "file_00000000893c81fda12a12fc8f88ed3f",
+      "reported_size_bytes": 118626,
+      "reported_created_at": "2026-08-02T03:22:28.394159Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6B_Terminal_Packet_2026-08-01.zip",
+      "library_file_id": "libfile_c8a2d7f5229481919f4ee59f14371728",
+      "file_id": "file_00000000740481fda9d4fbc86a24794b",
+      "reported_size_bytes": 228110,
+      "reported_created_at": "2026-08-02T03:22:27.584697Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Independent_Audit_Prompt_2026-08-01(1).md",
+      "library_file_id": "libfile_7486b4a5cc288191903b4e6911cbd4bf",
+      "file_id": "file_00000000b36c81fd9338f327ea81220f",
+      "reported_size_bytes": 4514,
+      "reported_created_at": "2026-08-02T03:11:12.653873Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01(1).docx",
+      "library_file_id": "libfile_19325d0efc1881918dd7f84c20bade30",
+      "file_id": "file_000000007c1481fdb9405ad85a04ee41",
+      "reported_size_bytes": 39055,
+      "reported_created_at": "2026-08-02T03:11:11.566010Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_e099029a75788191bca607750f852c9b",
+      "file_id": "file_000000009c2481fd9d6c8e311aa20dee",
+      "reported_size_bytes": 118626,
+      "reported_created_at": "2026-08-02T03:11:10.850975Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round6a_checks(1).py",
+      "library_file_id": "libfile_4173c302e53481919bbcab9dac9f2424",
+      "file_id": "file_00000000c04c81fd84d27b5ad165f29d",
+      "reported_size_bytes": 9624,
+      "reported_created_at": "2026-08-02T03:11:10.821393Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_SHA256_2026-08-01.txt",
+      "library_file_id": "libfile_683c588b39ac8191a3888acc47767733",
+      "file_id": "file_000000000dbc81fdb2e60d317dbddd9a",
+      "reported_size_bytes": 1497,
+      "reported_created_at": "2026-08-02T03:02:44.461067Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Zotero_Import_2026-08-01.bib",
+      "library_file_id": "libfile_b3d1071b81588191bd7a99e8d8986227",
+      "file_id": "file_00000000fec081fd8b9fe561b39ec03b",
+      "reported_size_bytes": 2058,
+      "reported_created_at": "2026-08-02T03:02:43.929415Z",
+      "mime_type": "text/x-bibtex",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round6a_checks.py",
+      "library_file_id": "libfile_73a269a1a164819198afaca47ca6d888",
+      "file_id": "file_00000000c35c81fdb9f13d4eb77e82fc",
+      "reported_size_bytes": 9624,
+      "reported_created_at": "2026-08-02T03:02:42.655269Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Claim_Ledger_2026-08-01.csv",
+      "library_file_id": "libfile_4245f56cf0648191a3431623c97566e1",
+      "file_id": "file_00000000702081fd8bd477cdaaabe191",
+      "reported_size_bytes": 2513,
+      "reported_created_at": "2026-08-02T03:02:42.133497Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Independent_Audit_Prompt_2026-08-01.md",
+      "library_file_id": "libfile_5a81caa74ab08191b89f719a2141f941",
+      "file_id": "file_00000000901c81fd9d398a67b384e198",
+      "reported_size_bytes": 4514,
+      "reported_created_at": "2026-08-02T03:02:41.576363Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Expert_Audit_Brief_2026-08-01.pdf",
+      "library_file_id": "libfile_3aa4362d45348191ab2e2bcb2e307636",
+      "file_id": "file_00000000b24c81fda352a5a0b2137606",
+      "reported_size_bytes": 118626,
+      "reported_created_at": "2026-08-02T03:02:40.988513Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.md",
+      "library_file_id": "libfile_c780b5140bd48191a8964ee5b72cc6a4",
+      "file_id": "file_00000000425881fdab11a4c8bea88bc4",
+      "reported_size_bytes": 46651,
+      "reported_created_at": "2026-08-02T03:02:40.484198Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.docx",
+      "library_file_id": "libfile_f104a8e2fafc81919a00ceba1a2fad10",
+      "file_id": "file_000000003dd881fd9cafecccf2a246d3",
+      "reported_size_bytes": 39055,
+      "reported_created_at": "2026-08-02T03:02:40.049757Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Verification_Distributed_Ghost_Stress_Dossier_2026-08-01.pdf",
+      "library_file_id": "libfile_33504f0c20148191a3ccb25ab70abc17",
+      "file_id": "file_0000000018e881fd8e79bb5e2eede85c",
+      "reported_size_bytes": 503237,
+      "reported_created_at": "2026-08-02T03:02:39.340490Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round6A_Packet_2026-08-01.zip",
+      "library_file_id": "libfile_c8f4c0ba123c8191966ed2793ca498d9",
+      "file_id": "file_0000000038e881fda55a874468088e41",
+      "reported_size_bytes": 389610,
+      "reported_created_at": "2026-08-02T03:02:38.736536Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Skeleton_Sharpness_and_Critical_Compensation_Dossier_2026-08-01(2).pdf",
+      "library_file_id": "libfile_832415f360988191948cc66c9f8a5f1a",
+      "file_id": "file_0000000027e481fda87a4e3f7e1f1295",
+      "reported_size_bytes": 357736,
+      "reported_created_at": "2026-08-02T02:41:06.574941Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Periodic_Ghost_Shadows_and_Depth_Tax_Obstructions_Dossier_2026-08-01(2).pdf",
+      "library_file_id": "libfile_30af5c4894888191962610f1f3e4f057",
+      "file_id": "file_00000000489481fd8a1b1d3a8acb7448",
+      "reported_size_bytes": 162331,
+      "reported_created_at": "2026-08-02T02:41:05.819399Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5B_checks(2).py",
+      "library_file_id": "libfile_4ab599a31de08191889554330768f32f",
+      "file_id": "file_00000000f76881fda39a53b518952c91",
+      "reported_size_bytes": 11528,
+      "reported_created_at": "2026-08-02T02:41:05.545996Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Expert_Audit_Brief_2026-08-01(2).pdf",
+      "library_file_id": "libfile_5d742ff126148191bf576e786ff3fcd8",
+      "file_id": "file_000000006e2481fd9255503e16c0d97e",
+      "reported_size_bytes": 125753,
+      "reported_created_at": "2026-08-02T02:41:05.382313Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Independent_Audit_Prompt_2026-08-01(2).md",
+      "library_file_id": "libfile_0126d72c9cf0819192446f7ea4b67cf2",
+      "file_id": "file_00000000984481fd9064d388a1b6620b",
+      "reported_size_bytes": 4881,
+      "reported_created_at": "2026-08-02T02:41:05.013774Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Expert_Audit_Brief_2026-08-01(2).pdf",
+      "library_file_id": "libfile_332115da7914819194f2cc9b28f8f1b9",
+      "file_id": "file_000000005a8881fda056b0571ce3dcc5",
+      "reported_size_bytes": 54208,
+      "reported_created_at": "2026-08-02T02:41:04.801937Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Independent_Audit_Prompt_2026-08-01(2).md",
+      "library_file_id": "libfile_da23a962bb1881918acffbf28ab7cbfc",
+      "file_id": "file_00000000b59c81fd852be69e25d76ad2",
+      "reported_size_bytes": 5716,
+      "reported_created_at": "2026-08-02T02:41:04.745627Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5a_checks(2).py",
+      "library_file_id": "libfile_a37332e8c1d4819188672a9a83ad4486",
+      "file_id": "file_0000000099a081fda853e4e4da89ba14",
+      "reported_size_bytes": 7104,
+      "reported_created_at": "2026-08-02T02:41:04.724514Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Claim_Ledger_2026-08-01(2).csv",
+      "library_file_id": "libfile_6fdca1c7fd1c819194cbcbc21e39d69c",
+      "file_id": "file_00000000d2e881fd8c0c8630ccd823c8",
+      "reported_size_bytes": 2437,
+      "reported_created_at": "2026-08-02T02:41:04.408398Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Claim_Ledger_2026-08-01(2).csv",
+      "library_file_id": "libfile_11f505e6115c8191a77b819b37277e9d",
+      "file_id": "file_00000000246481fdbe5a92c4ef9910aa",
+      "reported_size_bytes": 5695,
+      "reported_created_at": "2026-08-02T02:41:04.029955Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_ea298be1900c8191b67b5fda62a3db06",
+      "file_id": "file_000000009d7c81fdaf6bc3fb05b59643",
+      "reported_size_bytes": 54208,
+      "reported_created_at": "2026-08-02T02:40:15.013003Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Periodic_Ghost_Shadows_and_Depth_Tax_Obstructions_Dossier_2026-08-01(1).pdf",
+      "library_file_id": "libfile_a9b2fe5a8c848191994944fda9083651",
+      "file_id": "file_000000001f6081fd98fa65a8ff35d242",
+      "reported_size_bytes": 162331,
+      "reported_created_at": "2026-08-02T02:40:12.873968Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Independent_Audit_Prompt_2026-08-01(1).md",
+      "library_file_id": "libfile_5eab0a6949a081918603cff00b95e570",
+      "file_id": "file_000000000a1081fdb72e5e889b16d57b",
+      "reported_size_bytes": 5716,
+      "reported_created_at": "2026-08-02T02:40:12.343962Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5B_checks(1).py",
+      "library_file_id": "libfile_fcdc553df080819182a9d0362358b7a0",
+      "file_id": "file_00000000351c81fd8050f8b04c82215c",
+      "reported_size_bytes": 11528,
+      "reported_created_at": "2026-08-02T02:40:12.178188Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Claim_Ledger_2026-08-01(1).csv",
+      "library_file_id": "libfile_e5add53eda448191885634b616266c2a",
+      "file_id": "file_00000000420c81fda276aff362f40184",
+      "reported_size_bytes": 5695,
+      "reported_created_at": "2026-08-02T02:40:11.376779Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_efebc10a41e081919c8cb25b9f7aa255",
+      "file_id": "file_00000000551881fd90f0bd162842bbb4",
+      "reported_size_bytes": 125753,
+      "reported_created_at": "2026-08-02T02:39:36.673302Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Skeleton_Sharpness_and_Critical_Compensation_Dossier_2026-08-01(1).pdf",
+      "library_file_id": "libfile_279df3c3999c8191a2eba1ff09fed9fe",
+      "file_id": "file_0000000049c481fd9c77d533e63ddb1c",
+      "reported_size_bytes": 357736,
+      "reported_created_at": "2026-08-02T02:39:35.690859Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Independent_Audit_Prompt_2026-08-01(1).md",
+      "library_file_id": "libfile_dd6325287060819181cb2d6bde05b3ff",
+      "file_id": "file_00000000589881fd97b721749c92e5a4",
+      "reported_size_bytes": 4881,
+      "reported_created_at": "2026-08-02T02:39:34.780396Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5a_checks(1).py",
+      "library_file_id": "libfile_f7e9055756848191b73df07506ee0f4c",
+      "file_id": "file_00000000fc3c81fd98ba7db2da0f7297",
+      "reported_size_bytes": 7104,
+      "reported_created_at": "2026-08-02T02:39:34.280840Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Claim_Ledger_2026-08-01(1).csv",
+      "library_file_id": "libfile_3f520aa5678c8191ba579b12e5f7f5b4",
+      "file_id": "file_00000000349481fdb094106d3c23e3fe",
+      "reported_size_bytes": 2437,
+      "reported_created_at": "2026-08-02T02:39:33.742532Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_README_2026-08-01.md",
+      "library_file_id": "libfile_283b6bf77c9881918500ca9f885c6f21",
+      "file_id": "file_00000000c6fc81fdb2b1e770bb255aad",
+      "reported_size_bytes": 2982,
+      "reported_created_at": "2026-08-02T00:10:19.581780Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_SHA256_2026-08-01.txt",
+      "library_file_id": "libfile_f456078bc7fc8191ade89cc496bc350a",
+      "file_id": "file_000000001b9c81fd8b05c557cf6cf349",
+      "reported_size_bytes": 1285,
+      "reported_created_at": "2026-08-02T00:10:18.964207Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5B_checks.py",
+      "library_file_id": "libfile_9a14d94fd6b48191b6bb867ce6fa92e5",
+      "file_id": "file_00000000769481fdb677ba5672ed064d",
+      "reported_size_bytes": 11528,
+      "reported_created_at": "2026-08-02T00:10:17.837214Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Zotero_Import_2026-08-01.bib",
+      "library_file_id": "libfile_ee084e9177208191b17752df016541c6",
+      "file_id": "file_00000000714c81fda172f37c82dfc30d",
+      "reported_size_bytes": 5129,
+      "reported_created_at": "2026-08-02T00:10:17.186751Z",
+      "mime_type": "text/x-bibtex",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Claim_Ledger_2026-08-01.csv",
+      "library_file_id": "libfile_63a558903a60819198f1c320277a081f",
+      "file_id": "file_00000000141881fda1f72fd78218eda6",
+      "reported_size_bytes": 5695,
+      "reported_created_at": "2026-08-02T00:10:16.699838Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_4A_4B_Reconciliation_2026-08-01.md",
+      "library_file_id": "libfile_2066e56b4af481918427bae018910e90",
+      "file_id": "file_000000003a0881fd85270758f79d4f53",
+      "reported_size_bytes": 2233,
+      "reported_created_at": "2026-08-02T00:10:16.114294Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Independent_Audit_Prompt_2026-08-01.md",
+      "library_file_id": "libfile_f432185be19c8191ae6bd4cdd5382f41",
+      "file_id": "file_00000000017081fd83b64dc09b9ffe47",
+      "reported_size_bytes": 5716,
+      "reported_created_at": "2026-08-02T00:10:15.490128Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Expert_Audit_Brief_2026-08-01.md",
+      "library_file_id": "libfile_15c32f54983881918b493b7c54cddbee",
+      "file_id": "file_00000000845881fdb01004b44216ae61",
+      "reported_size_bytes": 8511,
+      "reported_created_at": "2026-08-02T00:10:14.722605Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Expert_Audit_Brief_2026-08-01.pdf",
+      "library_file_id": "libfile_5b8820e2755881919fdb401f4b9739f3",
+      "file_id": "file_00000000301481fdac7a73837e049f46",
+      "reported_size_bytes": 54208,
+      "reported_created_at": "2026-08-02T00:10:14.083653Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Periodic_Ghost_Shadows_and_Depth_Tax_Obstructions_Dossier_2026-08-01.md",
+      "library_file_id": "libfile_b3ff7afc52c48191aae0b5738475246f",
+      "file_id": "file_00000000dcf481fda2c3d2f6cd734ef0",
+      "reported_size_bytes": 63715,
+      "reported_created_at": "2026-08-02T00:10:13.602619Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Periodic_Ghost_Shadows_and_Depth_Tax_Obstructions_Dossier_2026-08-01.pdf",
+      "library_file_id": "libfile_e3b434fb37d88191ae67a10764ac9a6e",
+      "file_id": "file_00000000b1ac81fdbee875cfee0e5d9d",
+      "reported_size_bytes": 162331,
+      "reported_created_at": "2026-08-02T00:10:12.999347Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5B_Packet_2026-08-01.zip",
+      "library_file_id": "libfile_0f62e9b787e08191a550be8ddbec5a5c",
+      "file_id": "file_00000000164881fdad0f05dc76d545f8",
+      "reported_size_bytes": 253084,
+      "reported_created_at": "2026-08-02T00:10:12.313827Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_SHA256_2026-08-01.txt",
+      "library_file_id": "libfile_2223ae1249188191aba7839cc4a39f36",
+      "file_id": "file_00000000e5fc81fd8d86eb81769cc12f",
+      "reported_size_bytes": 1426,
+      "reported_created_at": "2026-08-01T23:59:30.584224Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Zotero_Import_2026-08-01.bib",
+      "library_file_id": "libfile_2a89db3db4088191aff3207ee97b4ce8",
+      "file_id": "file_00000000bba081fd95bac9416e7324ed",
+      "reported_size_bytes": 3405,
+      "reported_created_at": "2026-08-01T23:59:29.869909Z",
+      "mime_type": "text/x-bibtex",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round5a_checks.py",
+      "library_file_id": "libfile_70c9296367948191b967da0f3b96487f",
+      "file_id": "file_0000000057ac81fd82dc884e0f9d8899",
+      "reported_size_bytes": 7104,
+      "reported_created_at": "2026-08-01T23:59:28.701346Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Claim_Ledger_2026-08-01.csv",
+      "library_file_id": "libfile_de2b223be87c81918ceba99e87e62946",
+      "file_id": "file_00000000d95c81fd8f5832d90c91f8fd",
+      "reported_size_bytes": 2437,
+      "reported_created_at": "2026-08-01T23:59:28.017721Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Independent_Audit_Prompt_2026-08-01.md",
+      "library_file_id": "libfile_848b80c242788191a78d01fa96bb82b2",
+      "file_id": "file_00000000a7bc81fd82f95a02fcb27f47",
+      "reported_size_bytes": 4881,
+      "reported_created_at": "2026-08-01T23:59:27.436883Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Expert_Audit_Brief_2026-08-01.md",
+      "library_file_id": "libfile_3e96ed7856e8819186a3c7fca832a71f",
+      "file_id": "file_00000000029481fdbe3e29a12315b7c9",
+      "reported_size_bytes": 5941,
+      "reported_created_at": "2026-08-01T23:59:26.937026Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Expert_Audit_Brief_2026-08-01.docx",
+      "library_file_id": "libfile_5a558e14a5408191a71908dc3172aa38",
+      "file_id": "file_000000002c0c81fd8633de685c65136c",
+      "reported_size_bytes": 42526,
+      "reported_created_at": "2026-08-01T23:59:26.389504Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Skeleton_Sharpness_and_Critical_Compensation_Dossier_2026-08-01.md",
+      "library_file_id": "libfile_b846d2018be88191b78999a552445bf7",
+      "file_id": "file_00000000b88881fdb03541bc0aa75bc8",
+      "reported_size_bytes": 51607,
+      "reported_created_at": "2026-08-01T23:59:25.860796Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Skeleton_Sharpness_and_Critical_Compensation_Dossier_2026-08-01.docx",
+      "library_file_id": "libfile_03af970588d88191a9d45352a12e3db9",
+      "file_id": "file_000000000e1c81fd9d9e8bbc71d0e47b",
+      "reported_size_bytes": 67164,
+      "reported_created_at": "2026-08-01T23:59:25.241808Z",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Expert_Audit_Brief_2026-08-01.pdf",
+      "library_file_id": "libfile_1a26c6bc323881919e28b5b74b28cdda",
+      "file_id": "file_00000000bd8881fdb746c9882bd300f9",
+      "reported_size_bytes": 125753,
+      "reported_created_at": "2026-08-01T23:59:24.586820Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Skeleton_Sharpness_and_Critical_Compensation_Dossier_2026-08-01.pdf",
+      "library_file_id": "libfile_2989a0ef96b4819181667ba1b392fc6e",
+      "file_id": "file_000000006c1081fd85c68d020439f511",
+      "reported_size_bytes": 357736,
+      "reported_created_at": "2026-08-01T23:59:24.093987Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round5A_Packet_2026-08-01.zip",
+      "library_file_id": "libfile_58278daf1f30819193c7ea4d4ce8197a",
+      "file_id": "file_00000000373081fda891d6745e0de7e4",
+      "reported_size_bytes": 430050,
+      "reported_created_at": "2026-08-01T23:59:23.385330Z",
+      "mime_type": "application/zip",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_Shadow_Deficit_and_Priority_Dossier_2026-08-01(1).pdf",
+      "library_file_id": "libfile_c704b38701f88191a2d6023afa048183",
+      "file_id": "file_00000000fa6c81fd821339bacbae1218",
+      "reported_size_bytes": 501135,
+      "reported_created_at": "2026-08-01T23:34:10.028522Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_00c9cc2c513881918f84603981562a45",
+      "file_id": "file_00000000804081fd8a53ab2e72a7adc0",
+      "reported_size_bytes": 134715,
+      "reported_created_at": "2026-08-01T23:34:09.483151Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_SHA256SUMS(1).txt",
+      "library_file_id": "libfile_fca26c9e78188191869b6a64e52a00ec",
+      "file_id": "file_00000000a9e081fdaac52185e4e392fa",
+      "reported_size_bytes": 1159,
+      "reported_created_at": "2026-08-01T23:34:09.299195Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round4a_checks(1).py",
+      "library_file_id": "libfile_fdd0dc18b6488191b08b07821a4a705f",
+      "file_id": "file_00000000cdf081fd84a01b69302758c1",
+      "reported_size_bytes": 8867,
+      "reported_created_at": "2026-08-01T23:34:09.266256Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_Independent_Audit_Prompt_2026-08-01(1).md",
+      "library_file_id": "libfile_cf59dd9163408191a2e34d0a40444c19",
+      "file_id": "file_00000000553881fd8961404c9b831e55",
+      "reported_size_bytes": 3664,
+      "reported_created_at": "2026-08-01T23:34:09.156750Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_Expert_Audit_Brief_2026-08-01(1).md",
+      "library_file_id": "libfile_34d6daf302888191a011109f5ba28bb3",
+      "file_id": "file_0000000027a881fda66da336093ca65e",
+      "reported_size_bytes": 6423,
+      "reported_created_at": "2026-08-01T23:34:09.061435Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_Shadow_Debt_and_Compensation_Dossier_2026-08-01(1).pdf",
+      "library_file_id": "libfile_084bbb809354819181bf920958d641e2",
+      "file_id": "file_00000000976481fdb5d2d4c1a35e8f41",
+      "reported_size_bytes": 156178,
+      "reported_created_at": "2026-08-01T23:31:40.564068Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_README_2026-08-01(1).md",
+      "library_file_id": "libfile_28942b73a6588191888430a33d56ed4f",
+      "file_id": "file_00000000457881fdb1a5859d2d30b3cb",
+      "reported_size_bytes": 1600,
+      "reported_created_at": "2026-08-01T23:31:39.373041Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_Expert_Audit_Brief_2026-08-01(1).pdf",
+      "library_file_id": "libfile_b6f9474329ec8191936bf8e71024956e",
+      "file_id": "file_00000000e5c481fd85decec9df9bc929",
+      "reported_size_bytes": 66730,
+      "reported_created_at": "2026-08-01T23:31:39.244767Z",
+      "mime_type": "application/pdf",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "collatz_round4B_checks(1).py",
+      "library_file_id": "libfile_86ddd3fcfadc8191b7b125e8ea439bb7",
+      "file_id": "file_00000000b53081fd860fb46260059077",
+      "reported_size_bytes": 8894,
+      "reported_created_at": "2026-08-01T23:31:39.218617Z",
+      "mime_type": "text/x-python",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_Claim_Ledger_2026-08-01(1).csv",
+      "library_file_id": "libfile_dd5c6ad81aa08191806c5a3e998e9016",
+      "file_id": "file_0000000084a881fd992b4a29045a9c59",
+      "reported_size_bytes": 3855,
+      "reported_created_at": "2026-08-01T23:31:39.192704Z",
+      "mime_type": "text/csv",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_Independent_Audit_Prompt_2026-08-01(1).md",
+      "library_file_id": "libfile_5a5320e645108191a0ba2e2138fb2902",
+      "file_id": "file_00000000d9ac81fd91f0a8c4806c3704",
+      "reported_size_bytes": 5949,
+      "reported_created_at": "2026-08-01T23:31:38.869760Z",
+      "mime_type": "text/markdown",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4B_SHA256_2026-08-01(1).txt",
+      "library_file_id": "libfile_9f107a775bb48191af9c3d6145cfd26d",
+      "file_id": "file_00000000ec7c81fda0662677e2855db4",
+      "reported_size_bytes": 1126,
+      "reported_created_at": "2026-08-01T23:31:38.804265Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    },
+    {
+      "original_name": "Collatz_Round4A_SHA256SUMS.txt",
+      "library_file_id": "libfile_110ee04a451481918f319f47fbb4119b",
+      "file_id": "file_00000000a27481fd874375ac91f3fa21",
+      "reported_size_bytes": 1159,
+      "reported_created_at": "2026-08-01T23:25:55.393543Z",
+      "mime_type": "text/plain",
+      "status": "metadata_only_not_inspected"
+    }
+  ],
+  "archive_download_attempts": [
+    {
+      "selection": "newest nine research artifacts including full archive",
+      "status": "failed_HTTP502"
+    },
+    {
+      "library_file_id": "libfile_0933eee4b4e081919099405d0a1a0f50",
+      "original_name": "Collatz_Full_Research_Archive_2026-08-23.zip",
+      "reported_size_bytes": 4233913,
+      "status": "failed_HTTP502"
+    }
+  ],
+  "negative_query_note": "No filenames were returned for the final Erdos/AOGGhostContactCore/.lean/phase-erasure query. This does not establish absence from unindexed content.",
+  "inspection_boundary": "Unrelated filename matches were ignored. No food images, unrelated personal content, opaque archive payloads, or credentials were read."
+}

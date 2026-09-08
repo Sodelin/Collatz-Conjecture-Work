@@ -1,0 +1,9 @@
+index,claim_id,claim,correctness_status,priority_status,usefulness,collatz_relevance,recommended_action
+0,6B.1,Phase-frozen surrogate with sup error e_r has same-phase debt Delta_r <= 2 e_r,complete elementary proof,generic finite-sequence lemma; novelty low,technical,none,retain
+1,6B.2,Universal beta-log descent forces liminf e_r/r >= (alpha log lambda/2)(m-beta A)/(m+beta log_2 lambda),complete conditional on 6A.1,exact formulation not located,technical-methodological,indirect,retain as addendum
+2,6B.2a,Finite 2-adic sensor model plus global o(log n) residual cannot satisfy universal fixed-fraction descent,complete conditional on 6A.1 and 5B freezing,exact formulation not located; likely immediate,methodological,indirect,retain
+3,6B.2b,For w_m normalized approximation-gap lower bound tends to rho_beta/2,elementary limit,synthesis constant; novelty low-moderate,interpretive,none,retain
+4,6B.3,Every finite truncation of a successful countable finite-sensor expansion must leave Omega(log N) residual amplitude on some high-period stress shadows,complete conditional on 6A.1,exact formulation not located,methodological,indirect,retain
+5,6B.3a,Uniformly convergent infinite-sensor expansions cannot satisfy universal beta-log descent,complete corollary,functional-analytic closure statement; novelty low,methodological,indirect,retain
+6,6B.3b,A correction uniformly within bounded error of one finite-sensor model cannot satisfy universal beta-log descent,complete corollary,exact formulation not located; immediate,methodological,indirect,retain
+7,COMM,Round 6B is preferable to Round 6A as first expert follow-up,false/not recommended,not applicable,communication,none,send 6A brief instead

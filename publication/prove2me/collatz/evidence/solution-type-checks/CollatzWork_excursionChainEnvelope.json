@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.ExcursionChainEnvelopeStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.ExcursionChainEnvelopeStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.excursionChainEnvelope",
+  "universe_count_equal": true,
+  "solution_sha256": "f17b8be2c6f924a18d3678661c9967f1252d8f256a803a01cdeb7f1662671508",
+  "theorem_sha256": "4b5a8368488fd1d1bfef425853469e6c305ee294679c42cf95b9619fdd502491",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_excursionChainEnvelope.lean",
+  "source_files_unchanged": true
+}

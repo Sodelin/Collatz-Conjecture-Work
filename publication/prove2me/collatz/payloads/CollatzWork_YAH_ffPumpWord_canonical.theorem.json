@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.YAH.ffPumpWord_canonical",
-  "theorem_title": "CollatzWork.YAH.ffPumpWord_canonical",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]\n",
+  "theorem_title": "Canonical form of the repeated-$f$ pumping words",
+  "natural_language_statement": "For $m\\in\\mathbb N$, let $W_m$ be the YAH word consisting of the start symbol $\\hat{}$, followed by $m+1$ copies of $f$, followed by the end symbol $\\$$. Then\n\n$$\\forall m\\in\\mathbb N,\\qquad\\operatorname{canonical}(W_m)=\\mathrm{true}.$$\n\nCanonical means exactly a start symbol, a digit-only interior, and an end symbol. This provides the syntactic domain check for the family used in the unlabelled potential obstruction.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nuniverse u\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M] [IntModule M] [OrderedAdd M]\n\n",
   "formal_statement": "theorem CollatzWork.YAH.ffPumpWord_canonical (multiplicity : Nat) :\n    canonical (ffPumpWord multiplicity) = true := by sorry\n\n",
   "tags": [
     "collatz-work-import"

@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.RepetitionBound.alternating_repetition_bound",
-  "theorem_title": "BlindCollatz.RepetitionBound.alternating_repetition_bound",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n",
-  "formal_statement": "theorem BlindCollatz.RepetitionBound.alternating_repetition_bound (x : Nat \u2192 Nat) (k : Nat)\n    (h : \u2200 i, i < k \u2192 8 * x (i + 1) = 9 * x i + 5) :\n    8 ^ k \u2264 x 0 + 5 := by sorry\n\n",
+  "theorem_title": "Finite budget for the alternating expansion recurrence",
+  "natural_language_statement": "Let $x:\\mathbb N\\to\\mathbb N$ and $k\\in\\mathbb N$. If $8x_{i+1}=9x_i+5$ for every $i<k$, then\n\n$$\n8^k\\le x_0+5.\n$$\n\nThis specializes the fixed affine-block budget to the alternating expansion parameters.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.RepetitionBound.alternating_repetition_bound (x : Nat → Nat) (k : Nat)\n    (h : ∀ i, i < k → 8 * x (i + 1) = 9 * x i + 5) :\n    8 ^ k ≤ x 0 + 5 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.YAH.edgeCertificate_canonically_embeddable",
-  "theorem_title": "CollatzWork.YAH.edgeCertificate_canonically_embeddable",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "theorem_title": "Canonical extensions of the 50-row YAH adjacent-edge certificate",
+  "natural_language_statement": "Let $C_e$ be the fixed 50-row labeled YAH adjacent-edge certificate. For a row $r$, let $L_r,R_r$ be its locally labeled left and right lists, and let $E$ be the specified canonical-extension procedure. Let $K$ mean that the unlabeled word is canonical, its last token is $(\\$,\\mathrm{false})$, and its adjacent suffix labels satisfy the fixed two-state algebra. Then\n\n$$\\forall(a,r)\\in C_e,\\qquad K(E(L_r))\\land K(E(R_r)).$$\n\nThis verifies the canonical labeled-word predicate separately on the deterministic extensions of both sides of every listed row, providing a concrete domain check for the certificate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
   "formal_statement": "set_option maxRecDepth 100000 in\ntheorem CollatzWork.YAH.edgeCertificate_canonically_embeddable :\n    edgeCertificate.all (fun entry =>\n      canonicalLabeled (canonicalExtension entry.2.lhs) &&\n      canonicalLabeled (canonicalExtension entry.2.rhs)) = true := by sorry\n\n",
   "tags": [
     "collatz-work-import"

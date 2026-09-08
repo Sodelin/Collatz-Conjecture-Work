@@ -1,5 +1,8 @@
 """Offline integration tests for publication safety and interrupted-run recovery."""
 import json
+import copy
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import subprocess
 import tempfile
@@ -196,6 +199,181 @@ class SafetyTests(unittest.TestCase):
         with self.assertRaises(u.Stop):
             pub.run()
         self.assertFalse(api.posts)
+
+
+class ConcurrentTransport:
+    def __init__(self, package, state):
+        self.package, self.state = package, state
+        self.posts = []
+        self.created = set()
+        self.proved = set()
+        self.lock = threading.Lock()
+        self.before_post = lambda key: None
+        self.after_receive = lambda key: None
+
+    def row(self, key):
+        item = self.package.items[key]
+        return {**item["payload"], "theorem_id": "th-" + key,
+                "status": "Proved" if key in self.proved else "Open",
+                "mathlib_rev": self.package.env["mathlib_rev"]}
+
+    def get(self, path):
+        if path == "/environments":
+            return {"environments": [self.package.env]}
+        if path.startswith("/publish-jobs/"):
+            key = path.split("job-", 1)[1]
+            return {**self.package.items[key]["payload"], "id": "job-" + key,
+                    "status": "PUBLISHED", "theorem_id": "th-" + key,
+                    "definitions": ""}
+        if path.startswith("/theorems/th-"):
+            return self.row(path.split("th-", 1)[1])
+        if path.startswith("/verify?"):
+            key = path.split("sub-", 1)[1]
+            return {"id": "sub-" + key, "theorem_id": "th-" + key, "status": "ACCEPTED"}
+        if path.startswith("/theorems?"):
+            query = u.urllib.parse.parse_qs(u.urllib.parse.urlsplit(path).query)
+            rows = [self.row(key) for key in self.created]
+            if "theorem_name" in query:
+                rows = [row for row in rows if row["theorem_name"] == query["theorem_name"][0]]
+            return {"theorems": rows}
+        raise AssertionError(path)
+
+    def post_json(self, path, payload):
+        key = payload["theorem_name"].split(".")[-1]
+        # Observed at the network boundary, not just an in-memory promise.
+        disk = json.loads(self.state.read_text())
+        assert disk["items"][key]["status"] == "publish_intent"
+        for dep in self.package.items[key]["depends_on"]:
+            assert disk["items"][dep]["status"] == "complete"
+        self.before_post(key)
+        with self.lock:
+            self.posts.append(key)
+            self.created.add(key)
+        self.after_receive(key)
+        return {"job_id": "job-" + key}
+
+    def verify(self, theorem_id, code, explanation):
+        key = theorem_id.split("th-", 1)[1]
+        assert json.loads(self.state.read_text())["items"][key]["status"] == "verify_intent"
+        with self.lock:
+            self.posts.append("verify-" + key)
+            self.proved.add(key)
+        return {"submission_id": "sub-" + key}
+
+
+class ParallelSafetyTests(unittest.TestCase):
+    setUp = SafetyTests.setUp
+    def multiple(self, dependencies=((), ())):
+        original = self.f.data["items"][0]
+        items = []
+        for n, deps in enumerate(dependencies):
+            item = copy.deepcopy(original)
+            item["key"] = "item" + str(n)
+            item["payload"]["theorem_name"] = "Example." + item["key"]
+            item["payload"]["formal_statement"] = "theorem Example." + item["key"] + " : True := by sorry"
+            item["depends_on"] = ["item" + str(dep) for dep in deps]
+            items.append(item)
+        self.f.data["items"] = items
+        self.f.write()
+        package = self.f.package()
+        api = ConcurrentTransport(package, self.state)
+        return u.Publisher(package, self.state, api), api
+
+    def test_parallel_failure_drains_receipts_and_resume_never_reposts(self):
+        pub, api = self.multiple()
+        barrier = threading.Barrier(2)
+        failure_received = threading.Event()
+        api.before_post = lambda key: barrier.wait(timeout=3)
+
+        def receive(key):
+            if key == "item0":
+                failure_received.set()
+                raise u.Stop("Connection lost after receive")
+            self.assertTrue(failure_received.wait(3))
+        api.after_receive = receive
+        with self.assertRaises(u.Stop):
+            pub.run(workers=2)
+        disk = json.loads(self.state.read_text())
+        self.assertEqual(disk["items"]["item0"]["status"], "needs_reconciliation")
+        self.assertEqual(disk["items"]["item1"]["job_id"], "job-item1")
+        self.assertEqual(sorted(api.posts), ["item0", "item1"])
+        resumed = u.Publisher(self.f.package(), self.state, api)
+        with self.assertRaises(u.Stop):
+            resumed.run(workers=2)
+        self.assertEqual(len(api.posts), 2)
+        resumed.reconcile("item0", job_id="job-item0")
+        resumed.run(workers=2, max_mutations=0)
+        self.assertEqual(len(api.posts), 2)
+        self.assertEqual(resumed.state["items"]["item0"]["theorem_id"], "th-item0")
+
+    def test_parallel_quota_is_global_across_workers(self):
+        pub, api = self.multiple(((), (), (), ()))
+        result = pub.run(workers=4, max_mutations=1)
+        self.assertEqual(len(api.posts), 1)
+        self.assertEqual(result["publication_mutations_this_run"], 1)
+
+    def test_parallel_dag_waits_for_proved_parents_and_checks_all_ids(self):
+        pub, api = self.multiple(((), (), (0, 1)))
+        barrier = threading.Barrier(2)
+        api.before_post = lambda key: barrier.wait(timeout=3) if key != "item2" else None
+        result = pub.run(workers=2)
+        self.assertTrue(result["complete"])
+        self.assertGreater(api.posts.index("item2"), api.posts.index("verify-item0"))
+        self.assertGreater(api.posts.index("item2"), api.posts.index("verify-item1"))
+        self.assertEqual(len(set(api.posts)), 6)
+        self.assertEqual(len(json.loads(self.state.read_text())["final_verification"]["checked"]), 3)
+
+    def test_slow_older_state_write_cannot_replace_newer_events(self):
+        pub, _ = self.multiple()
+        original = u.atomic_json
+        first_entered, release_first, second_started, second_entered = (threading.Event() for _ in range(4))
+        writes = 0
+
+        def delayed_write(path, value):
+            nonlocal writes
+            writes += 1
+            if writes == 1:
+                first_entered.set()
+                self.assertTrue(release_first.wait(3))
+            else:
+                second_entered.set()
+            original(path, value)
+
+        def newer_event():
+            second_started.set()
+            pub.event("newer", {})
+
+        with patch.object(u, "atomic_json", side_effect=delayed_write):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                old = pool.submit(pub.event, "older", {})
+                self.assertTrue(first_entered.wait(3))
+                new = pool.submit(newer_event)
+                self.assertTrue(second_started.wait(3))
+                try:
+                    self.assertFalse(second_entered.wait(0.05))
+                finally:
+                    release_first.set()
+                old.result()
+                new.result()
+        self.assertEqual([event["action"] for event in json.loads(self.state.read_text())["events"]], ["older", "newer"])
+
+
+    def test_parallel_token_refresh_exchanges_key_only_once(self):
+        credentials = self.f.root / "test-credentials.json"
+        u.atomic_json(credentials, {"api_key": "p2m_offline_test_only"})
+        transport = u.Transport(credentials, lambda action, fields: None)
+        barrier = threading.Barrier(4)
+
+        def worker():
+            barrier.wait(timeout=3)
+            transport.ensure_token()
+
+        with patch.object(transport, "_request", return_value={"version": u.PROTOCOL_VERSION,
+                "access_token": "offline_test_token", "expires_at": u.time.time() + 3600}) as request:
+            with ThreadPoolExecutor(max_workers=4) as pool:
+                list(pool.map(lambda _: worker(), range(4)))
+            self.assertEqual(request.call_count, 1)
+        self.assertFalse(self.state.exists())
 
 
 if __name__ == "__main__":

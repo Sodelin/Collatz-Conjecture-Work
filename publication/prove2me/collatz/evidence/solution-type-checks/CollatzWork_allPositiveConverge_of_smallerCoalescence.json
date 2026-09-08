@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.UniversalSmallerCoalescence → CollatzWork.AllPositiveConverge",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.UniversalSmallerCoalescence → CollatzWork.AllPositiveConverge",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.allPositiveConverge_of_smallerCoalescence",
+  "universe_count_equal": true,
+  "solution_sha256": "cd6290fddde48da644a30d3c8d5f53a3ce734eccfd3a8399fce3b23b484f1cdd",
+  "theorem_sha256": "3710ef4e99737b5de78e03fea18b088adf717f32cb6f916b96309dd29e0563eb",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_allPositiveConverge_of_smallerCoalescence.lean",
+  "source_files_unchanged": true
+}

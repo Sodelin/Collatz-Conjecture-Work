@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
-  "theorem_title": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
-  "natural_language_statement": "An arbitrarily long finite string of these expanding blocks exists in \u2115.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n",
-  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion (m : Nat) (hm : 0 < m) :\n    \u2203 n : Nat, goodBlocks m n \u2227 n < blocks m n := by sorry\n\n",
+  "theorem_title": "Arbitrarily long finite sequences of expanding alternating blocks",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Write $B=T^3$, and let $B^j$ be its j-fold iterate. A start $n$ has $m$ good blocks if $B^j(n)\\equiv11\\pmod{16}$ for every $j<m$.\n\nFor every natural $m>0$,\n\n$$\n\\exists n\\in\\mathbb N,\\quad (\\forall j<m,\\ B^j(n)\\equiv11\\pmod{16})\\ \\land\\ n<B^m(n).\n$$\n\nThe starting value may depend on the finite requested length. This does not assert the existence of one infinitely expanding orbit.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion (m : Nat) (hm : 0 < m) :\n    ∃ n : Nat, goodBlocks m n ∧ n < blocks m n := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

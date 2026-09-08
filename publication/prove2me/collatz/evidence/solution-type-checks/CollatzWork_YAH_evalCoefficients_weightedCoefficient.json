@@ -1,0 +1,29 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [
+    "audit_universe_0",
+    "audit_universe_1",
+    "audit_universe_2"
+  ],
+  "solution_type": "∀ {M : Type audit_universe_0} [inst : Lean.Grind.IntModule.{audit_universe_0} M] {φ : Type audit_universe_1}\n  {ρ : Type audit_universe_2} (features : List.{audit_universe_1} φ) (weight : φ → M)\n  (certificate : List.{audit_universe_2} (Prod.{0, audit_universe_2} Nat ρ)) (delta : ρ → φ → Int),\n  @Eq.{audit_universe_0 + 1} M\n    (@CollatzWork.YAH.evalCoefficients.{audit_universe_0, audit_universe_1} φ M inst features weight\n      (@CollatzWork.YAH.weightedCoefficient.{audit_universe_2, audit_universe_1 + 1} ρ φ certificate delta))\n    (@CollatzWork.YAH.weightedGapSum.{audit_universe_0, audit_universe_2} ρ M\n      (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst) certificate fun row =>\n      @CollatzWork.YAH.evalCoefficients.{audit_universe_0, audit_universe_1} φ M inst features weight (delta row))",
+  "solution_universe_parameters": [
+    "u",
+    "u_1",
+    "u_2"
+  ],
+  "target_type": "∀ {M : Type audit_universe_0} [inst : Lean.Grind.IntModule.{audit_universe_0} M] {φ : Type audit_universe_1}\n  {ρ : Type audit_universe_2} (features : List.{audit_universe_1} φ) (weight : φ → M)\n  (certificate : List.{audit_universe_2} (Prod.{0, audit_universe_2} Nat ρ)) (delta : ρ → φ → Int),\n  @Eq.{audit_universe_0 + 1} M\n    (@CollatzWork.YAH.evalCoefficients.{audit_universe_0, audit_universe_1} φ M inst features weight\n      (@CollatzWork.YAH.weightedCoefficient.{audit_universe_2, audit_universe_1 + 1} ρ φ certificate delta))\n    (@CollatzWork.YAH.weightedGapSum.{audit_universe_0, audit_universe_2} ρ M\n      (@Lean.Grind.IntModule.toNatModule.{audit_universe_0} M inst) certificate fun row =>\n      @CollatzWork.YAH.evalCoefficients.{audit_universe_0, audit_universe_1} φ M inst features weight (delta row))",
+  "target_universe_parameters": [
+    "u",
+    "u_1",
+    "u_2"
+  ],
+  "theorem_name": "CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+  "universe_count_equal": true,
+  "solution_sha256": "d2365465104a01e265d0e6672df07bb4c1a26c25af8a4f631e1159ba8d46cfa3",
+  "theorem_sha256": "6c79a1d8a3070d571ed8194466d0de74a21a9c572cd88d82f5feaaca2c7b8f2c",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean",
+  "source_files_unchanged": true
+}

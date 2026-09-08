@@ -40,7 +40,7 @@
       "audited_declarations": 82,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/erdos302/audit",
-      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "payload_status": "ready_for_upload",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -50,7 +50,11 @@
       "candidate_theorem_nodes": 11,
       "candidate_definition_bundles": 4,
       "exact_payload_build": "passed",
-      "type_comparison": "11_of_11_exact_matches"
+      "type_comparison": "11_of_11_exact_matches",
+      "candidate_text_build": "passed",
+      "candidate_type_comparison": "passed",
+      "metadata_status": "passed",
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
     },
     {
       "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
@@ -85,7 +89,7 @@
       "audited_declarations": 17,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/egyptian295/audit",
-      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "payload_status": "ready_for_upload",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -95,7 +99,11 @@
       "candidate_theorem_nodes": 2,
       "candidate_definition_bundles": 2,
       "exact_payload_build": "passed",
-      "type_comparison": "2_of_2_exact_matches"
+      "type_comparison": "2_of_2_exact_matches",
+      "candidate_text_build": "passed",
+      "candidate_type_comparison": "passed",
+      "metadata_status": "passed",
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
     },
     {
       "repository": "Sodelin/new-math-discovery",
@@ -136,7 +144,7 @@
       "audited_declarations": 94,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/newmath/audit",
-      "payload_status": "exact_payloads_compiled_types_matched_metadata_pending",
+      "payload_status": "ready_for_upload",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -146,7 +154,11 @@
       "candidate_theorem_nodes": 11,
       "candidate_definition_bundles": 3,
       "exact_payload_build": "passed",
-      "type_comparison": "11_of_11_exact_matches"
+      "type_comparison": "11_of_11_exact_matches",
+      "candidate_text_build": "passed",
+      "candidate_type_comparison": "passed",
+      "metadata_status": "passed",
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
     }
   ],
   "collatz": {
@@ -161,9 +173,9 @@
     "candidate_definition_bundles": 22,
     "candidate_text_build": "passed",
     "candidate_type_comparison": "passed",
-    "metadata_status": "pending",
-    "platform_environment_pin": "pending",
-    "remote_status": "not_submitted"
+    "metadata_status": "passed",
+    "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "remote_status": "in_progress"
   },
   "other_research_not_lean": [
     {
@@ -180,14 +192,15 @@
     }
   ],
   "publication_status": {
-    "remote_status": "not_submitted",
+    "remote_status": "in_progress",
     "signed_in_account": "Sodelin",
-    "api_key_status": "creation_rejected_by_automatic_approval_review; explicit authorization required",
+    "api_key_status": "authorized_created_and_privately_stored; expires2026-10-08",
     "source_files_compiled": 49,
     "candidate_theorem_nodes": 137,
     "candidate_definition_bundles": 31,
-    "academic_metadata_review": "pending",
-    "live_environment_pin": "pending",
-    "server_verification": "not_started"
-  }
+    "academic_metadata_review": "passed",
+    "live_environment_pin": "passed",
+    "server_verification": "in_progress"
+  },
+  "supporting_research_catalog": "supporting/catalog.json"
 }

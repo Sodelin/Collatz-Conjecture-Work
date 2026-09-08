@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
-  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
-  "natural_language_statement": "Every sensor in a tail beginning at `offset` has a gauge-fixed kernel\nwitness whose target coordinate is larger than `offset`.  Taking any fixed\nfinite number of indices from later and later tails makes the degeneration\nsimultaneous across the whole finite representation.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large (offset index : Nat) :\n    observe (offset + index) (witness (offset + index)) = 0 \u2227\n    (witness (offset + index)).2 = -1 \u2227\n    target (witness (offset + index)) > Int.ofNat offset := by sorry\n\n",
+  "theorem_title": "Every sensor in a tail has a large gauge-fixed witness",
+  "natural_language_statement": "For $n\\in\\mathbb N$ and $x=(x_1,x_2)\\in\\mathbb Z^2$, define the observation $r_n(x)=x_1+(n+1)x_2$, target $q(x)=x_1$, and witness $w_n=(n+1,-1)$. For any natural offset $O$ and index $j$,\n\n$$\nr_{O+j}(w_{O+j})=0,\\qquad (w_{O+j})_2=-1,\\qquad q(w_{O+j})>O.\n$$\n\nThe lower bound is uniform over the tail indices. Each sensor has its own witness; no single direction annihilating the entire tail is asserted.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large (offset index : Nat) :\n    observe (offset + index) (witness (offset + index)) = 0 ∧\n    (witness (offset + index)).2 = -1 ∧\n    target (witness (offset + index)) > Int.ofNat offset := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "algebra",
+    "kernel",
+    "counterexample"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L184-L194"
 }

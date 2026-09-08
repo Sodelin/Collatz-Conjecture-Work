@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "And\n  (@Eq.{1} Nat (@List.length.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) CollatzWork.YAH.edgeCertificate)\n    (@OfNat.ofNat.{0} Nat (nat_lit 50) (instOfNatNat (nat_lit 50))))\n  (@Eq.{1} Nat\n    (@List.foldr.{0, 0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) Nat\n      (fun entry total =>\n        @HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n          (@Prod.fst.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry) total)\n      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))\n      (@List.filter.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance)\n        (fun entry =>\n          (CollatzWork.YAH.rule (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).ruleName).dynamic)\n        CollatzWork.YAH.edgeCertificate))\n    (@OfNat.ofNat.{0} Nat (nat_lit 144057) (instOfNatNat (nat_lit 144057))))",
+  "solution_universe_parameters": [],
+  "target_type": "And\n  (@Eq.{1} Nat (@List.length.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) CollatzWork.YAH.edgeCertificate)\n    (@OfNat.ofNat.{0} Nat (nat_lit 50) (instOfNatNat (nat_lit 50))))\n  (@Eq.{1} Nat\n    (@List.foldr.{0, 0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance) Nat\n      (fun entry total =>\n        @HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n          (@Prod.fst.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry) total)\n      (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0)))\n      (@List.filter.{0} (Prod.{0, 0} Nat CollatzWork.YAH.LabeledInstance)\n        (fun entry =>\n          (CollatzWork.YAH.rule (@Prod.snd.{0, 0} Nat CollatzWork.YAH.LabeledInstance entry).ruleName).dynamic)\n        CollatzWork.YAH.edgeCertificate))\n    (@OfNat.ofNat.{0} Nat (nat_lit 144057) (instOfNatNat (nat_lit 144057))))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.edgeCertificate_shape",
+  "universe_count_equal": true,
+  "solution_sha256": "3f0a97068e6c4ee3e974a2dc272b0c43bd50686f70865adb39e8c31570bc0f8e",
+  "theorem_sha256": "d8eeb52601f67a1d17e24bc5e27182e63f5ce8ac754734430ccf576bf749f69c",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_edgeCertificate_shape.lean",
+  "source_files_unchanged": true
+}

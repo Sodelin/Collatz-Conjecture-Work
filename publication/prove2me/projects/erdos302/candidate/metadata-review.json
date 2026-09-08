@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-08",
+  "reviewer": "ChatGPT/Codex metadata review; not an independent human audit",
+  "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
+  "source_repository": "https://github.com/Sodelin/oldest-conjecture-",
+  "method": "Read preserved source definitions, theorem statements and proofs; compare each payload with its exact source. Retain Lean code byte-for-byte and separate mathematical proof explanations from statements. Correct definition description field to official natural_language_statement. No external priority or novelty conclusion inferred.",
+  "official_references": [
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/contribute.md",
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/upload_full_project.md"
+  ],
+  "status": "passed",
+  "reviewed_items": [
+    {
+      "name": "Erdos302Extension734.exact_maximum_734_from_733",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L222-L230",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The reciprocal-triple-free maximum increases by one from 733 to 734"
+    },
+    {
+      "name": "Erdos302Extension734.full_cardinal_domain",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L33-L35",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Extended cardinality equals the filtered domain count"
+    },
+    {
+      "name": "Erdos302Extension734.full_domain_membership",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L19-L23",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The extended counting domain is exactly 1 through 734"
+    },
+    {
+      "name": "Erdos302Extension734.full_domain_nodup",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L25-L31",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The extended counting domain has no repeated entries"
+    },
+    {
+      "name": "Erdos302Extension734.lift_admissible",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L71-L92",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Adjoining endpoints through 734 preserves admissibility"
+    },
+    {
+      "name": "Erdos302Extension734.numerical_733_from_731",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L143-L145",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Conditional reciprocal-triple-free maximum at 733"
+    },
+    {
+      "name": "Erdos302Extension734.numerical_734_from_731",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L147-L149",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Conditional reciprocal-triple-free maximum at 734"
+    },
+    {
+      "name": "Erdos302Finite.rat_plateau_732",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L203-L207",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Reciprocal-triple-free cardinality plateau at 732"
+    },
+    {
+      "name": "Erdos302Finite.replacement_admissible",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L75-L91",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The 732 gadget replacement preserves admissibility"
+    },
+    {
+      "name": "Erdos302Finite.replacement_cardinal",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L107-L121",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The 732 gadget replacement does not decrease size"
+    },
+    {
+      "name": "Erdos302Kernel.isolated_nat",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelIsolation.lean#L51-L78",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Isolation of the reciprocal-triple gadget at 732"
+    },
+    {
+      "name": "Extension734",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L1-L234",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Counting, trimming and lifting admissible sets through 734"
+    },
+    {
+      "name": "KernelEndpoints734",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelEndpoints734.lean#L1-L40",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Finite divisibility check for new reciprocal-triple endpoints"
+    },
+    {
+      "name": "KernelIsolation",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelIsolation.lean#L1-L85",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Finite quotient interface for the 732 reciprocal-triple gadget"
+    },
+    {
+      "name": "Plateau302",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L1-L213",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Reciprocal-triple admissibility and the 732 gadget interface"
+    }
+  ],
+  "payload_byte_check": "Every scheduled definition body and every preamble+formal_statement equals the already compiled staged Lean file byte-for-byte. The pre-existing missing separator newline in theorem JSON preambles was restored. No staged or source Lean code changed."
+}

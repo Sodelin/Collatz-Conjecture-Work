@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.mersenne_prefix_nondecreasing",
-  "theorem_title": "CollatzWork.mersenne_prefix_nondecreasing",
-  "natural_language_statement": "Arbitrarily large Mersenne-type starts have arbitrarily long\nnondecreasing initial shortcut segments.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\n\n\n",
-  "formal_statement": "theorem CollatzWork.mersenne_prefix_nondecreasing (L q : Nat) (hq : 0 < q) :\n    \u2200 k, k < L \u2192\n      shortcutIter k (2 ^ L * q - 1) \u2264\n      shortcutIter (k + 1) (2 ^ L * q - 1) := by sorry\n\n",
+  "theorem_title": "Nondecreasing prefixes of arbitrary finite Mersenne length",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $L,q\\in\\mathbb N$ with $q>0$, and put $N=2^Lq-1$. Then\n\n$$\n\\forall k<L,\\quad T^k(N)\\le T^{k+1}(N).\n$$\n\nThe length L is arbitrary, but the conclusion is confined to the finite initial prefix.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_oddRun\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.mersenne_prefix_nondecreasing (L q : Nat) (hq : 0 < q) :\n    ∀ k, k < L →\n      shortcutIter k (2 ^ L * q - 1) ≤\n      shortcutIter (k + 1) (2 ^ L * q - 1) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

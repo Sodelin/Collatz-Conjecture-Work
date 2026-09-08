@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "source_manifest_sha256": "8be6b059646a1ed48278ab8515e10291eeb7bd41406e39a17a24d8ab71de78b0",
+  "source_manifest": "publication/prove2me/projects/egyptian295/candidate/manifest.json",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "lean_commit": "819816b",
+  "strict_option": {
+    "autoImplicit": false
+  },
+  "checked_files": 6,
+  "checks": [
+    {
+      "module": "Definitions.Def_EgyptianFractions_Baseline18",
+      "source_sha256": "1b841b16d4dd5b66823b9126185a98a5e717fe6f812f0c59e7ffb31dddfbef2a",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "4823ce1099090d23b08f8917b04b0feb1644cb33836260ff1ecabd7b8eb69bb4"
+    },
+    {
+      "module": "Definitions.Def_EgyptianFractions_Certificate",
+      "source_sha256": "eb5d906c1b40c398ee1bb8cf44f97209706f52bc4f925d271dc555a80cc35aeb",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "80a0a2971c854ec14fec6f2b18e5402fd5bb58bc832eb01865beb64bd8c27bbe"
+    },
+    {
+      "module": "Theorems.Thm_EgyptianFractions_exists_minimum18_le_35",
+      "source_sha256": "a9118b92a149aa563d445deb5493e5ec3dd8bea71e0f23205c9f4c27c538bee3",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "5d655677b0881d92fb9d387472a8d84138feea8a79364a730aeb6c6bf7b3f02b"
+    },
+    {
+      "module": "Solutions.Sol_EgyptianFractions_exists_minimum18_le_35",
+      "source_sha256": "16bb552ed26a5a281e15f8e0e461c5e43811bf192caf9e4573baffd6aa83127f",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "01c3b4dceefb6fc2dec41d0de0aa328b044a9d135873db997d61b18227f38286"
+    },
+    {
+      "module": "Theorems.Thm_EgyptianFractions_exists_minimum_of_representation",
+      "source_sha256": "1ee8f765ba4595cfdea5e14a337f6b29a7c947743024e674d4b2a159905af243",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "4ba39f37fd17254bb46f068ff8fcd9dd68c40d102c2cb236a8e3a238968f447e"
+    },
+    {
+      "module": "Solutions.Sol_EgyptianFractions_exists_minimum_of_representation",
+      "source_sha256": "4d25ae93b16ab955d9784fff29b6ba123882ba110fa6b43ff374aab466b7457a",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "89dcdbcfad0a338de532c762d8920251ae8346a18e94f257a4b03a9c8131f419"
+    }
+  ],
+  "build_exit_code": 0,
+  "scope": "All scheduled definition bodies, theorem preamble+statement files and top-level solution files. No source or candidate manifest changed. Staged byte hashes match the active import manifests.",
+  "method": "Recompiled exact scheduled payload files in isolated copies with package leanOptions autoImplicit=false. Checked every module setup JSON records autoImplicit=false and every compiled artifact exists. Requested independent module targets, because separate solutions deliberately declare the same top-level solution identifier and cannot be jointly imported into one root module.",
+  "harness_deviation": "Initial aggregate StrictCheck root failed only because it imported multiple distinct top-level solution declarations. All57 actual payload modules compiled successfully before that aggregate failure. The final invocation targets modules independently and exits0.",
+  "limitations": "Expected sorry warnings arise only in theorem statement stubs. This local elaboration check is distinct from the server acceptance/axiom check. Hosted runtime uses the existing executable-location compatibility launcher."
+}

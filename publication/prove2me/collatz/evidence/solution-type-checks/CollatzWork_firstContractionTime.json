@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FirstContractionTimeStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FirstContractionTimeStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.firstContractionTime",
+  "universe_count_equal": true,
+  "solution_sha256": "04320b744a10c9dfc5cef909b15e86726199d49bae6750fd18e1ac676c845cb6",
+  "theorem_sha256": "715e83b744ee2041b6b4f8f8a59910393b611429db6d62853023cabc834cf7be",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_firstContractionTime.lean",
+  "source_files_unchanged": true
+}

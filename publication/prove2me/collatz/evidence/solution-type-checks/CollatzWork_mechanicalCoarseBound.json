@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.MechanicalCoarseBoundStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.MechanicalCoarseBoundStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.mechanicalCoarseBound",
+  "universe_count_equal": true,
+  "solution_sha256": "5e08378decec648c40aba555737afe0edb0e16c3ba08008e86897fe25f353a2d",
+  "theorem_sha256": "678bbb90dca2b1894ff84afcc286499e3f997a38fee9842ee97c609fbce5bd55",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_mechanicalCoarseBound.lean",
+  "source_files_unchanged": true
+}

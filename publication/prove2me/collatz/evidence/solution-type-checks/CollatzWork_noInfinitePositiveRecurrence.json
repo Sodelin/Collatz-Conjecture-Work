@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.NoInfinitePositiveRecurrenceStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.NoInfinitePositiveRecurrenceStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.noInfinitePositiveRecurrence",
+  "universe_count_equal": true,
+  "solution_sha256": "be15bcaab24a33e4daef3957e2bbd912f58252e5d85591b36bc693858452354b",
+  "theorem_sha256": "2ead158937d31d9d5192647f4d6c3f1958dcc63377bbd7ae90fa27d505253426",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_noInfinitePositiveRecurrence.lean",
+  "source_files_unchanged": true
+}

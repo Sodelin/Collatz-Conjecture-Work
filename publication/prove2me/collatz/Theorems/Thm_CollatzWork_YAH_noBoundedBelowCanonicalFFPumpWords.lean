@@ -4,6 +4,8 @@ import Definitions.Def_CollatzWork_YAHFiniteObstruction
 import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
 import Theorems.Thm_CollatzWork_YAH_yah13_forces_ff_negative
 
+universe u
+
 open Lean.Grind
 open Lean.Grind.AddCommMonoid
 open Lean.Grind.IntModule

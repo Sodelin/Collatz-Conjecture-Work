@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-09-08T14:41:57.998501+00:00",
+  "account": "Sodelin",
+  "projects": [
+    {
+      "project": "collatz",
+      "source": "https://github.com/Sodelin/Collatz-Conjecture-Work",
+      "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+      "expected_theorems": 113,
+      "proved_theorems": 0,
+      "expected_definitions": 22,
+      "published_definitions": 10,
+      "final_verification_passed": false,
+      "receipt": "receipts/collatz.json",
+      "failed_items": [],
+      "uncertain_items": []
+    },
+    {
+      "project": "erdos302",
+      "source": "https://github.com/Sodelin/oldest-conjecture-",
+      "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
+      "expected_theorems": 11,
+      "proved_theorems": 7,
+      "expected_definitions": 4,
+      "published_definitions": 4,
+      "final_verification_passed": false,
+      "receipt": "receipts/erdos302.json",
+      "failed_items": [],
+      "uncertain_items": []
+    },
+    {
+      "project": "egyptian295",
+      "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295",
+      "source_commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+      "expected_theorems": 2,
+      "proved_theorems": 2,
+      "expected_definitions": 2,
+      "published_definitions": 2,
+      "final_verification_passed": true,
+      "receipt": "receipts/egyptian295.json",
+      "failed_items": [],
+      "uncertain_items": []
+    },
+    {
+      "project": "newmath",
+      "source": "https://github.com/Sodelin/new-math-discovery",
+      "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+      "expected_theorems": 11,
+      "proved_theorems": 6,
+      "expected_definitions": 3,
+      "published_definitions": 3,
+      "final_verification_passed": false,
+      "receipt": "receipts/newmath.json",
+      "failed_items": [],
+      "uncertain_items": []
+    }
+  ],
+  "complete": false,
+  "proved_theorems": 15,
+  "published_definitions": 19
+}

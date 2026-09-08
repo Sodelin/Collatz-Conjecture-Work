@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.residueAncestor_tail65",
-  "theorem_title": "CollatzWork.residueAncestor_tail65",
-  "natural_language_statement": "The exact tail over `z = 65 mod 81`, including its affine certificate.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
-  "formal_statement": "theorem CollatzWork.residueAncestor_tail65 (a : Nat) :\n    0 < 432 * a + 344 \u2227\n    (432 * a + 344) % 27 = 20 \u2227\n    shortcutIter 4 (432 * a + 344) = 81 * a + 65 \u2227\n    3 * (432 * a + 344) + 8 = 16 * (81 * a + 65) \u2227\n    432 * a + 344 \u2264 64 * (81 * a + 65) := by sorry\n\n",
+  "theorem_title": "Exact residue-20 tail to 65 modulo 81",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nFor $a\\in\\mathbb N$, put $m=432a+344$ and $z=81a+65$. Then\n\n$$\nm>0,\\quad m\\equiv20\\pmod{27},\\quad T^{4}(m)=z,\\quad 3m+8=16z,\\quad m\\le64z.\n$$\n\nThis is one row of the finite tail selector. The bound by 64z is not a claim that the ancestor is smaller than z.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_tail65 (a : Nat) :\n    0 < 432 * a + 344 ∧\n    (432 * a + 344) % 27 = 20 ∧\n    shortcutIter 4 (432 * a + 344) = 81 * a + 65 ∧\n    3 * (432 * a + 344) + 8 = 16 * (81 * a + 65) ∧\n    432 * a + 344 ≤ 64 * (81 * a + 65) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

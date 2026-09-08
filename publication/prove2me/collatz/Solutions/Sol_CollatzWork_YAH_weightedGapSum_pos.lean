@@ -1,6 +1,8 @@
 import Std
 import Init.Grind.Ordered.Module
 import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
+universe u
+
 namespace CollatzWork.YAH
 
 /-!
@@ -25,7 +27,7 @@ variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
   [IntModule M] [OrderedAdd M]
 
 omit [LT M] [Std.LawfulOrderLT M] in
-theorem weightedGapSum_nonneg
+theorem weightedGapSum_nonneg {ρ : Type _}
     (certificate : List (Nat × ρ)) (gap : ρ → M)
     (h : ∀ entry ∈ certificate, 0 ≤ gap entry.2) :
     0 ≤ weightedGapSum certificate gap := by
@@ -200,7 +202,7 @@ variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
   [IntModule M] [OrderedAdd M]
 
 open CollatzWork.YAH in
-theorem solution
+theorem solution {ρ : Type _}
     (certificate : List (Nat × ρ)) (gap : ρ → M)
     (hnonneg : ∀ entry ∈ certificate, 0 ≤ gap entry.2)
     (hstrict : ∃ entry ∈ certificate,

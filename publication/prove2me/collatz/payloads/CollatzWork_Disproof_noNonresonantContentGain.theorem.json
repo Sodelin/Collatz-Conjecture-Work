@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.Disproof.noNonresonantContentGain",
-  "theorem_title": "CollatzWork.Disproof.noNonresonantContentGain",
-  "natural_language_statement": "If a positive power of a base coprime to three divides the normalized\ncontent product, the leading-coefficient telescope is impossible.  For an odd\nprime `p != 3`, the hypotheses `1 < p` and `Nat.Coprime p 3` hold.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_PolynomialRatchet\nimport Theorems.Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique\n\n\n",
-  "formal_statement": "theorem CollatzWork.Disproof.noNonresonantContentGain\n    (d Q K R H p E : Nat)\n    (hHodd : ArithOdd H)\n    (hLead : 2 ^ R * 3 ^ (d * Q) = 2 ^ (d * K) * H)\n    (hp : 1 < p)\n    (hp3 : Nat.Coprime p 3)\n    (hE : 0 < E)\n    (hGain : p ^ E \u2223 H) : False := by sorry\n\n",
+  "theorem_title": "Coprime-to-three powers cannot divide a normalized odd content",
+  "natural_language_statement": "Let $d,Q,K,R,H,p,E\\in\\mathbb N$. Assume $H$ is odd, $p>1$, $\\gcd(p,3)=1$, $E>0$, and the leading-coefficient equality\n\n$$2^R3^{dQ}=2^{dK}H.$$\n\nThen\n\n$$p^E\\nmid H.$$\n\nEquivalently, adding the divisibility hypothesis $p^E\\mid H$ makes these assumptions inconsistent, which is the form proved in Lean. No primality assumption on $p$ is needed. This checks the arithmetic core of the normalized-content obstruction; the resonant base $3$ is outside its coprimality hypothesis.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_PolynomialRatchet\nimport Theorems.Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.noNonresonantContentGain\n    (d Q K R H p E : Nat)\n    (hHodd : ArithOdd H)\n    (hLead : 2 ^ R * 3 ^ (d * Q) = 2 ^ (d * K) * H)\n    (hp : 1 < p)\n    (hp3 : Nat.Coprime p 3)\n    (hE : 0 < E)\n    (hGain : p ^ E ∣ H) : False := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

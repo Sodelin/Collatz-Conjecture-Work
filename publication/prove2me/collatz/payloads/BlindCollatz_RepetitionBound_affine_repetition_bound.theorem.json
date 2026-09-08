@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.RepetitionBound.affine_repetition_bound",
-  "theorem_title": "BlindCollatz.RepetitionBound.affine_repetition_bound",
-  "natural_language_statement": "Bound for k exact repetitions of any coprime expanding affine block.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n",
-  "formal_statement": "theorem BlindCollatz.RepetitionBound.affine_repetition_bound (b d c : Nat)\n    (hcop : b.Coprime (b + d)) (x : Nat \u2192 Nat)\n    (hpos : 0 < d * x 0 + c) (k : Nat)\n    (h : \u2200 i, i < k \u2192 b * x (i + 1) = (b + d) * x i + c) :\n    b ^ k \u2264 d * x 0 + c := by sorry\n\n",
+  "theorem_title": "Divisibility budget for a repeated affine block",
+  "natural_language_statement": "Let $b,d,c,k\\in\\mathbb N$ with $\\gcd(b,b+d)=1$, and $x:\\mathbb N\\to\\mathbb N$ with $d x_0+c>0$. Assume $b x_{i+1}=(b+d)x_i+c$ for every $i<k$. Then\n\n$$\nb^k\\le d x_0+c.\n$$\n\nThe positive shifted initial value bounds repetitions of a fixed affine rule. Degenerate parameters remain covered when they satisfy the stated hypotheses.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.RepetitionBound.affine_repetition_bound (b d c : Nat)\n    (hcop : b.Coprime (b + d)) (x : Nat → Nat)\n    (hpos : 0 < d * x 0 + c) (k : Nat)\n    (h : ∀ i, i < k → b * x (i + 1) = (b + d) * x i + c) :\n    b ^ k ≤ d * x 0 + c := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

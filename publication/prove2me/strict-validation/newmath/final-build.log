@@ -1,0 +1,23 @@
+⚠ [5/26] Replayed Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator.lean:7:8: declaration uses `sorry`
+⚠ [6/26] Replayed Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_downward
+warning: Theorems/Thm_NewMathDiscovery_BlindnessRealization_blind_downward.lean:8:8: declaration uses `sorry`
+⚠ [9/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor.lean:7:8: declaration uses `sorry`
+⚠ [11/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large.lean:7:8: declaration uses `sorry`
+⚠ [13/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness.lean:7:8: declaration uses `sorry`
+⚠ [15/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor.lean:7:8: declaration uses `sorry`
+⚠ [17/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel.lean:7:8: declaration uses `sorry`
+⚠ [19/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion.lean:7:8: declaration uses `sorry`
+⚠ [21/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward.lean:7:8: declaration uses `sorry`
+⚠ [23/26] Replayed Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness
+warning: Theorems/Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness.lean:7:8: declaration uses `sorry`
+⚠ [25/26] Replayed Theorems.Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound
+warning: Theorems/Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound.lean:7:8: declaration uses `sorry`
+Build completed successfully (26 jobs).

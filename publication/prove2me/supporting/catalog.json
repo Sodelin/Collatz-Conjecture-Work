@@ -1,0 +1,535 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-08",
+  "purpose": "Public discovery index for existing mathematical supporting work. Prove2Me Lean uploads are tracked separately.",
+  "scope": {
+    "repositories_with_artifacts": 6,
+    "source_snapshots": 8,
+    "empty_repository": "Sodelin/math-paper-denied",
+    "branch_inventory_note": "All then-listed branches for Erdos-Work and ai-math-discovery were inspected through complete GitHub trees. Retained remote branches of four local Lean repositories were compared against the selected source; no extra Lean changes beyond the selected source were found.",
+    "limits": "Does not inventory inaccessible past chats, every historic deleted blob, unrelated creative/research repositories, or new remote branches after this check."
+  },
+  "groups": [
+    {
+      "id": "erdos128-restricted-certificate",
+      "title": "Restricted sparse-half certificate on the Grotzsch graph",
+      "repository": "Sodelin/Erdos-Work",
+      "source_branch": "main",
+      "source_commit": "408f225cc4c24e897008b885b4e6b76873c7990e",
+      "status": "existing_public_github",
+      "description": "Exact rational certificate for weights (a,a,a,a,a,b,b,b,b,b,c), with nonnegative a,b,c and 5a+5b+c=1. The JSON contains 32 triangular cells and 13 partition lines; the documented argument additionally uses nine endpoint witnesses and an external large-independent-set theorem.",
+      "evidence_class": "executable_exact_arithmetic_certificate",
+      "scope_limits": [
+        "No Lean formalization in this repository.",
+        "The large-independent-set theorem is an external mathematical dependency.",
+        "Does not prove arbitrary-weight Grotzsch or the full Erdos128 conjecture.",
+        "Novelty remains unresolved; this catalog did not rerun the two checkers."
+      ],
+      "artifacts": [
+        {
+          "path": "research/results/erdos128/README.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/results/erdos128/README.md"
+        },
+        {
+          "path": "research/results/erdos128/grotzsch_symmetric_certificate.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/results/erdos128/grotzsch_symmetric_certificate.json"
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/results/erdos128/verify_grotzsch_symmetric.py"
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric_independent.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/results/erdos128/verify_grotzsch_symmetric_independent.py"
+        },
+        {
+          "path": "research/ideas/erdos128-symmetric.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/ideas/erdos128-symmetric.json"
+        },
+        {
+          "path": "research/ideas/erdos128-allweights.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/408f225cc4c24e897008b885b4e6b76873c7990e/research/ideas/erdos128-allweights.json"
+        }
+      ]
+    },
+    {
+      "id": "erdos128-prior-art",
+      "title": "Full Erdos128 research target and prior-art review",
+      "repository": "Sodelin/Erdos-Work",
+      "source_branch": "idea/erdos128-full-prior-art",
+      "source_commit": "d6ea128def74cb47c75988377d24b29ff340f5a1",
+      "status": "existing_public_github",
+      "description": "Persisted full-problem scope, historical methods, known barrier replay, source ledger and next proposed research gap. This branch is three commits ahead of the catalogued main with no commits behind.",
+      "evidence_class": "literature_review_and_research_plan",
+      "scope_limits": [
+        "The full conjecture remains unproved in these artifacts.",
+        "The known Clebsch barrier replay is described in the review; no separately named Clebsch replay program appears in either current tree.",
+        "This catalog does not revalidate novelty, reward eligibility, or external papers."
+      ],
+      "artifacts": [
+        {
+          "path": "research/ideas/erdos128-full.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/d6ea128def74cb47c75988377d24b29ff340f5a1/research/ideas/erdos128-full.json"
+        },
+        {
+          "path": "research/reviews/erdos128-prior-art-2026-09-07.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Erdos-Work/blob/d6ea128def74cb47c75988377d24b29ff340f5a1/research/reviews/erdos128-prior-art-2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "id": "phase-erasure",
+      "title": "Phase-erasure spectrum candidate manuscript",
+      "repository": "Sodelin/ai-math-discovery",
+      "source_branch": "codex/phase-erasure-spectrum",
+      "source_commit": "251238baa23332faca792e584bc0939188308dd8",
+      "status": "existing_public_github",
+      "description": "Public candidate manuscript and PDF, eight claim records, source-based prior-art and internal audit records, finite Python checks and bibliographies.",
+      "evidence_class": "candidate_prose_mathematics_with_finite_computational_checks",
+      "scope_limits": [
+        "All eight claim records list formal verification as not available.",
+        "External specialist review and priority review remain open.",
+        "Finite checking does not establish the general theorem.",
+        "Full compatible-gauge result is a lower bound, not an orbit classification.",
+        "No Collatz proof or disproof is claimed."
+      ],
+      "artifacts": [
+        {
+          "path": "papers/phase-erasure-spectrum/MANUSCRIPT.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/papers/phase-erasure-spectrum/MANUSCRIPT.md"
+        },
+        {
+          "path": "output/pdf/phase-erasure-spectrum.pdf",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/output/pdf/phase-erasure-spectrum.pdf"
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/THEOREM.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/discoveries/AI-MATH-0001/THEOREM.md"
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/CLAIMS.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/discoveries/AI-MATH-0001/CLAIMS.json"
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/AUDIT.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/discoveries/AI-MATH-0001/AUDIT.md"
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/PRIOR_ART.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/discoveries/AI-MATH-0001/PRIOR_ART.md"
+        },
+        {
+          "path": "verification",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/ai-math-discovery/tree/251238baa23332faca792e584bc0939188308dd8/verification"
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/REFERENCES.bib",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/papers/phase-erasure-spectrum/REFERENCES.bib"
+        },
+        {
+          "path": "archive/zotero",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/ai-math-discovery/tree/251238baa23332faca792e584bc0939188308dd8/archive/zotero"
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/SUBMISSION_CHECKLIST.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/papers/phase-erasure-spectrum/SUBMISSION_CHECKLIST.md"
+        }
+      ]
+    },
+    {
+      "id": "phase-erasure-main-checkers",
+      "title": "Main-branch checker safeguards",
+      "repository": "Sodelin/ai-math-discovery",
+      "source_branch": "main",
+      "source_commit": "08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf",
+      "status": "existing_public_github",
+      "description": "Current main snapshot contains tests/test_assertion_modes.py, which is absent from the manuscript branch. Both snapshots are retained so the manuscript branch is not mistaken for a complete superset.",
+      "evidence_class": "verification_infrastructure",
+      "scope_limits": [
+        "The manuscript branch is four commits ahead and one behind main.",
+        "No merge or checker run was performed by this catalog task."
+      ],
+      "artifacts": [
+        {
+          "path": "tests/test_assertion_modes.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf/tests/test_assertion_modes.py"
+        },
+        {
+          "path": "verification/check_repository.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf/verification/check_repository.py"
+        },
+        {
+          "path": "verification/check_phase_fiber.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf/verification/check_phase_fiber.py"
+        }
+      ]
+    },
+    {
+      "id": "negative-research-ledger",
+      "title": "Prior-art collisions and retired candidates",
+      "repository": "Sodelin/ai-math-discovery",
+      "source_branch": "codex/phase-erasure-spectrum",
+      "source_commit": "251238baa23332faca792e584bc0939188308dd8",
+      "status": "existing_public_github",
+      "description": "Three retired candidates record why proof transport atlas, finite return jets, and window-count hierarchy directions were abandoned or reclassified.",
+      "evidence_class": "negative_results_and_prior_art_records",
+      "scope_limits": [
+        "Retired candidates are historical research records, not accepted new theorems."
+      ],
+      "artifacts": [
+        {
+          "path": "killed",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/ai-math-discovery/tree/251238baa23332faca792e584bc0939188308dd8/killed"
+        },
+        {
+          "path": "DISCOVERY_INDEX.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/DISCOVERY_INDEX.md"
+        }
+      ]
+    },
+    {
+      "id": "cross-project-research",
+      "title": "Property-aware research program and cross-project record",
+      "repository": "Sodelin/ai-math-discovery",
+      "source_branch": "codex/phase-erasure-spectrum",
+      "source_commit": "251238baa23332faca792e584bc0939188308dd8",
+      "status": "existing_public_github",
+      "description": "Proposed certificate program and an historical record referencing arithmetic orbit geometry work from an isolated source task.",
+      "evidence_class": "research_program_and_unrecovered_source_reference",
+      "scope_limits": [
+        "AOGGhostContactCore.lean and its eight named theorem references were not found in the four inventoried Lean repositories or retained remote branch Lean changes.",
+        "Its source proof cannot be rechecked or uploaded from this record alone.",
+        "The historical reported build is not treated as a recovered checked artifact."
+      ],
+      "artifacts": [
+        {
+          "path": "research-programs/PROPERTY_AWARE_FIBERED_CERTIFICATES.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/research-programs/PROPERTY_AWARE_FIBERED_CERTIFICATES.md"
+        },
+        {
+          "path": "research-programs/CROSS_PROJECT_EVIDENCE.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/research-programs/CROSS_PROJECT_EVIDENCE.json"
+        }
+      ]
+    },
+    {
+      "id": "collatz-supporting",
+      "title": "Collatz manuscripts, exact checkers and complete research archive",
+      "repository": "Sodelin/Collatz-Conjecture-Work",
+      "source_branch": "main",
+      "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+      "status": "existing_public_github",
+      "description": "Public manuscript and 40 claim groups, exact Python and JSON certificates, route arguments, rejected attempts, source notes, and research reconciliations accompany the separate Lean import.",
+      "evidence_class": "mixed_claim_by_claim_research_archive",
+      "scope_limits": [
+        "The 40 claim groups do not mean 40 solved conjectures or 40 Lean theorems.",
+        "The focused scalar-arctic YAH obstruction uses exact certificates and prose and is not itself Lean-formalized.",
+        "Universal Collatz termination remains unresolved.",
+        "Historical inclusion does not promote a provisional or rejected claim."
+      ],
+      "artifacts": [
+        {
+          "path": "publication/announcement.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/publication/announcement.md"
+        },
+        {
+          "path": "publication/yah-obstruction.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/publication/yah-obstruction.md"
+        },
+        {
+          "path": "publication/claims.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/publication/claims.json"
+        },
+        {
+          "path": "publication/metadata.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/publication/metadata.json"
+        },
+        {
+          "path": "verification",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/verification"
+        },
+        {
+          "path": "proof-search",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/proof-search"
+        },
+        {
+          "path": "papers",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/papers"
+        },
+        {
+          "path": "research",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/research"
+        },
+        {
+          "path": "research-review",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/research-review"
+        },
+        {
+          "path": "knowledge/sources",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271/knowledge/sources"
+        },
+        {
+          "path": "PROVENANCE.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/blob/026aa4ad4be6453a005ab950b160a9f2204c5271/PROVENANCE.md"
+        }
+      ]
+    },
+    {
+      "id": "erdos302-supporting",
+      "title": "Finite Erdos302 witnesses and explanatory results",
+      "repository": "Sodelin/oldest-conjecture-",
+      "source_branch": "main",
+      "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
+      "status": "existing_public_github",
+      "description": "Three JSON witnesses at 732, 733 and 734, two integer verifiers, result notes, a general identity in prose, novelty record and submission ledger accompany the four Lean modules.",
+      "evidence_class": "exact_integer_witnesses_and_prose_context",
+      "scope_limits": [
+        "Witness sizes are 606, 607 and 608.",
+        "The source does not formalize the external upper bound f(731)=606.",
+        "The general large-prime identity is prose and may be folklore.",
+        "Historical submission receipts do not imply acceptance."
+      ],
+      "artifacts": [
+        {
+          "path": "witness302.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/witness302.json"
+        },
+        {
+          "path": "witness733.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/witness733.json"
+        },
+        {
+          "path": "witness734.json",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/witness734.json"
+        },
+        {
+          "path": "verify302.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/verify302.py"
+        },
+        {
+          "path": "verify734.py",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/verify734.py"
+        },
+        {
+          "path": "RESULT-302.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/RESULT-302.md"
+        },
+        {
+          "path": "RESULT-734.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/RESULT-734.md"
+        },
+        {
+          "path": "docs/general-identity.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/docs/general-identity.md"
+        },
+        {
+          "path": "docs/novelty-record.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/docs/novelty-record.md"
+        },
+        {
+          "path": "docs/submission-status.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/docs/submission-status.md"
+        }
+      ]
+    },
+    {
+      "id": "egyptian295-supporting",
+      "title": "Egyptian fraction search probes and research record",
+      "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
+      "source_branch": "main",
+      "source_commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+      "status": "existing_public_github",
+      "description": "Bounded construction-search code and outputs, the exact known-baseline research record, and publication-status notes accompany the three Lean source files.",
+      "evidence_class": "bounded_search_records_and_known_construction_context",
+      "scope_limits": [
+        "The 35-term representation with denominators at least18 reproduces a known construction.",
+        "Failed bounded searches do not prove a minimum or exclude all shorter representations.",
+        "No new result or solution is claimed."
+      ],
+      "artifacts": [
+        {
+          "path": "probes",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/tree/566f9800910aae6936d93d1a9f5c756070616f31/probes"
+        },
+        {
+          "path": "docs/research-record.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/docs/research-record.md"
+        },
+        {
+          "path": "docs/submission-status.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/docs/submission-status.md"
+        },
+        {
+          "path": "README.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/README.md"
+        }
+      ]
+    },
+    {
+      "id": "newmath-supporting",
+      "title": "Ranked certificates and blindness research explanations",
+      "repository": "Sodelin/new-math-discovery",
+      "source_branch": "codex/freeze-blindness-realization",
+      "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+      "status": "existing_public_github",
+      "description": "Ranked certificate specifications, exact finite certificate data and Python checkers, plus the blindness realization posting packet and frontier memo.",
+      "evidence_class": "formal_theorem_context_and_bounded_certificates",
+      "scope_limits": [
+        "The selected supplemental branch has the two additional blindness Lean modules.",
+        "No universal Collatz certificate or historical novelty is claimed.",
+        "The Boolean finite-complex corollary in the posting packet is prose context; the general generator theorem is the formal declaration."
+      ],
+      "artifacts": [
+        {
+          "path": "publication/BLINDNESS_REALIZATION_POSTING_PACKET.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/publication/BLINDNESS_REALIZATION_POSTING_PACKET.md"
+        },
+        {
+          "path": "publication/BLINDNESS_FRONTIER_MEMO.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/publication/BLINDNESS_FRONTIER_MEMO.md"
+        },
+        {
+          "path": "RG-CERT-0.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/RG-CERT-0.md"
+        },
+        {
+          "path": "RG-SOUND-001.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/RG-SOUND-001.md"
+        },
+        {
+          "path": "THEOREM.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/THEOREM.md"
+        },
+        {
+          "path": "verification",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/new-math-discovery/tree/fc2ce68341a0556cebb4e5843a3127f0881b91db/verification"
+        },
+        {
+          "path": "research-objects",
+          "kind": "directory",
+          "url": "https://github.com/Sodelin/new-math-discovery/tree/fc2ce68341a0556cebb4e5843a3127f0881b91db/research-objects"
+        },
+        {
+          "path": "PROVENANCE.md",
+          "kind": "file",
+          "url": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/PROVENANCE.md"
+        }
+      ]
+    }
+  ],
+  "unrecovered_items": [
+    {
+      "id": "aog-ghost-contact-core-2026-08-30",
+      "expected_path": "lean/CollatzWork/AOGGhostContactCore.lean",
+      "source_record": "https://github.com/Sodelin/ai-math-discovery/blob/251238baa23332faca792e584bc0939188308dd8/research-programs/CROSS_PROJECT_EVIDENCE.json",
+      "status": "referenced_source_not_found",
+      "action_needed": "Recover the original isolated source task or a public commit containing exact Lean source before verifying or uploading.",
+      "counted_as_uploadable_proof": false,
+      "recovery_audit": {
+        "checked_at": "2026-09-08",
+        "local_checks": [
+          {
+            "repositories": [
+              "Sodelin/Collatz-Conjecture-Work",
+              "Sodelin/new-math-discovery"
+            ],
+            "command": "git log --all --format=%H %s --name-only -- *AOG* *GhostContact*",
+            "result": "no_matching_history"
+          },
+          {
+            "repositories": [
+              "Sodelin/Collatz-Conjecture-Work",
+              "Sodelin/new-math-discovery"
+            ],
+            "command": "git log --all --format=%H %s --all-match --grep=ghost --regexp-ignore-case",
+            "result": "no_matching_commit_message"
+          }
+        ],
+        "remote_path_history": "https://api.github.com/repos/Sodelin/Collatz-Conjecture-Work/commits?path=lean%2FCollatzWork%2FAOGGhostContactCore.lean&per_page=10",
+        "remote_path_history_result": "empty",
+        "reference_creation_commit": "bedfb0e12bf2c28c2c0d33dab4e168201267a027",
+        "reference_expansion_commit": "fc126ae25ab8d9039e517682d0963c80436d6304",
+        "reference_commit_finding": "Both commit patches contain metadata and checker expectations only; neither includes the Lean proof file or a source branch/hash.",
+        "original_source_task": "01a054a4-93fb-7370-943f-d88e1594e421",
+        "result": "unrecovered_after_bounded_history_search",
+        "saved_file_search": "No AOGGhostContactCore or .lean filename match in the bounded saved-file query; archive bytes could not be downloaded."
+      }
+    }
+  ],
+  "persistence_note": "The 58 originally catalogued source links already exist at pinned public GitHub commits. Recovered historical text files are included alongside this new index and require the parent publication commit. No source artifacts were republished to Prove2Me by this catalog task.",
+  "secret_handling": "No API keys, credentials, session cookies or authentication data belong in this catalog.",
+  "saved_file_recovery": {
+    "status": "two_historical_source_files_recovered",
+    "archive_directory": "library-archive",
+    "exact_source_files": [
+      "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.md",
+      "collatz_round6b_checks.py"
+    ],
+    "exact_source_bytes": 33984,
+    "identity_check": "Both SHA256 values match the independently saved Round6B checksum manifest.",
+    "other_outputs": [
+      "Collatz_Round6B_SHA256_2026-08-01.txt",
+      "Collatz_Round6B_Claim_Ledger_2026-08-01.read-export.txt",
+      "provenance.json"
+    ],
+    "proof_status": "Historical research/probes only; not reverified and not additional Lean proofs.",
+    "inventory": "library-search-inventory.json",
+    "remaining_gap": "Archive download failed HTTP502 twice; 100 Collatz filename matches include duplicates and uninspected files. Full saved-file coverage is not claimed."
+  }
+}

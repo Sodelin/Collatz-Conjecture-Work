@@ -1,10 +1,12 @@
 {
   "definition_name": "NewMathDiscovery_RankedCoalescenceSound",
-  "definition_title": "NewMathDiscovery.RankedCoalescenceSound definitions",
-  "natural_language_description": "Definitions and necessary proof-bearing construction material from NewMathDiscovery.RankedCoalescenceSound.",
-  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace NewMathDiscovery.RankedCoalescence\n\n/-- Exact finite iteration, with the zeroth iterate equal to the input. -/\ndef iterate {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) : Nat \u2192 \u03b1 \u2192 \u03b1\n  | 0 => fun x => x\n  | k + 1 => fun x => f (iterate f k x)\n\n\n\n\n\n\n\n\n\n/-- `x` reaches the distinguished terminal element under finite iteration. -/\ndef Reaches {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) (one x : \u03b1) : Prop :=\n  \u2203 k : Nat, iterate f k x = one\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend NewMathDiscovery.RankedCoalescence\n",
+  "definition_title": "Finite iteration and terminal reachability",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace NewMathDiscovery.RankedCoalescence\n\n/-- Exact finite iteration, with the zeroth iterate equal to the input. -/\ndef iterate {α : Type} (f : α → α) : Nat → α → α\n  | 0 => fun x => x\n  | k + 1 => fun x => f (iterate f k x)\n\n\n\n\n\n\n\n\n\n/-- `x` reaches the distinguished terminal element under finite iteration. -/\ndef Reaches {α : Type} (f : α → α) (one x : α) : Prop :=\n  ∃ k : Nat, iterate f k x = one\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nend NewMathDiscovery.RankedCoalescence\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "dynamical-systems",
+    "formal-verification"
   ],
-  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean"
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L1-L128",
+  "natural_language_statement": "For a type $X$ and transition $f:X\\to X$, define the $k$-fold iterate recursively for $k\\in\\mathbb N$ by $f^0(x)=x$ and $f^{k+1}(x)=f(f^k(x))$. For a designated terminal $e\\in X$, finite reachability is\n\n$$\n\\operatorname{Reaches}(f,e,x)\\iff\\exists k\\in\\mathbb N,\\ f^k(x)=e.\n$$\n\nThis interface supports abstract ranked-coalescence soundness. Reachability itself imposes no fixed-point hypothesis; that hypothesis appears explicitly in the theorems that transfer reachability along orbit tails."
 }

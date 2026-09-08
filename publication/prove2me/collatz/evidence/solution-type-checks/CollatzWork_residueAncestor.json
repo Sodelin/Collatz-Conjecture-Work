@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.ResidueAncestorStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.ResidueAncestorStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.residueAncestor",
+  "universe_count_equal": true,
+  "solution_sha256": "d4f4243d4209ce92698746d477c4decb5beeb6111114e0e1f0fea08edc270a65",
+  "theorem_sha256": "fd5012480aa6c7657a22aa9bf2d8703ce4f65262344ceb3dfb363d91d2a98f75",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_residueAncestor.lean",
+  "source_files_unchanged": true
+}

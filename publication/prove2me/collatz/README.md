@@ -1,6 +1,6 @@
 # Collatz Prove2Me import checkpoint
 
-Status: **locally compiled and statement-checked; not submitted or remotely verified**.
+Status: **locally compiled, statement-checked, and metadata-reviewed; ready for authenticated submission**. This checkpoint does not claim remote publication or verification.
 
 Source: `https://github.com/Sodelin/Collatz-Conjecture-Work`, commit
 `026aa4ad4be6453a005ab950b160a9f2204c5271`, Lean `leanprover/lean4:v4.33.1`.
@@ -35,24 +35,52 @@ The original source axiom audit, rather than the stub tree, establishes that the
 underlying proofs are complete. Platform acceptance must still check each
 submitted top-level `solution` against its registered theorem.
 
-## Remaining publication gates
+## Publication readiness
 
-1. Review and complete academic natural-language metadata. Existing publication
-   claims supply draft metadata for registered target names; other items are
-   explicitly marked for review. Some claim text covers a group of lemmas and must
-   be narrowed to each individual theorem before publication.
-2. Confirm the server environment and fill the exact `mathlib_rev`. Local compilation
-   used the original Std-only toolchain; it does not substitute for a server pin check.
-3. Obtain the separately required authenticated API access through the parent task.
-4. Run the idempotent uploader only after its readiness gates pass, publishing
+All 113 theorem statements now have individual academic descriptions with their
+actual hypotheses, displayed conclusions, mathematical roles, and separate proof
+explanations. All 22 definition bundles have descriptions under the documented
+`natural_language_statement` API field. Broad descriptions copied from grouped
+publication claims were narrowed to the specific formal declarations. Source
+links identify immutable source commits and line ranges. The YAH and Disproof
+subsets received a separate review; independent spot review also checked the
+main conditional orbit results and caught the zero-block natural-subtraction
+convention. No novelty or universal-convergence claim is made.
+
+The live authenticated environment check on 2026-09-08 confirms Lean 4.33.1 and
+Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`; its nonsecret response is saved in
+`evidence/live-environment.json`. The original project uses Std only, so its
+mathematical sources do not acquire any Mathlib dependencies in this transplant.
+
+Every theorem payload concatenates byte-for-byte to its staged theorem file.
+The original metadata pass corrected a missing blank separator without changing
+the checked code. A subsequent server check exposed an environment mismatch:
+the server disables automatic implicit variables, while the first local build
+had allowed them. The generated YAH code now explicitly declares the same
+generic binders and universes inferred in the source. In particular,
+`weightedCoefficient` remains polymorphic over a feature `Sort`, rather than
+being restricted to a `Type`. Mathematical source and proof bodies are unchanged.
+
+`lakefile.toml` now enforces `autoImplicit = false` for all three libraries.
+The full strict build passes 255 jobs. Every theorem's elaborated type still
+matches its source exactly. The repair evidence additionally checks definition
+declarations and every solution against its target. Only two YAH definition
+bundles and nine YAH theorem/solution contexts changed; already accepted
+definition payloads retain their original bytes. The server's failed job and
+the old candidate are preserved by the publication coordinator before resuming.
+
+The remaining operations are:
+
+1. Run the idempotent uploader, publishing
    definitions and then theorem/solution pairs in dependency order. Record and poll
    every queued publication/verification job. Confirm every final theorem is Proved.
-5. Review a Collatz collaboration mission proposal after publication. These are
+2. Review a Collatz collaboration mission proposal after publication. These are
    auxiliary results and conditional reductions; universal Collatz termination
    remains unproved. No novelty claim is made by this import.
 
-`manifest.json` deliberately retains `validation.status = "pending"` so the uploader
-cannot mistake this checkpoint for permission to bypass remaining gates.
+`manifest.json` records `validation.status = "passed"` only after all local
+publication checks. The separate uploader state and final receipts establish
+what was actually published and proved; a failed or queued job is not success.
 
 ## Reproduction
 

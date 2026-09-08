@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.MechanicalFifteenFailureStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.MechanicalFifteenFailureStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.mechanical_fifteen_failure",
+  "universe_count_equal": true,
+  "solution_sha256": "dd0721929a3b1bf1f056522103083d951c8c644cbcd2a3b5db15558ed81d65d5",
+  "theorem_sha256": "235e02eb0154a3c210adb780ab0bd207874fcd2acf37c1d82bbf6445a8e70f56",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_mechanical_fifteen_failure.lean",
+  "source_files_unchanged": true
+}

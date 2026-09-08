@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Kernel.isolated_nat",
-  "theorem_title": "Erdos302Kernel.isolated_nat",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_KernelIsolation\n\n\n",
-  "formal_statement": "theorem Erdos302Kernel.isolated_nat (a b c : Nat)\n (ha : 0 < a) (hab : a < b) (hbc : b < c) (hc : c \u2264 732)\n (hrel : a * (b + c) = b * c)\n (hG : inGNat a || inGNat b || inGNat c) :\n (a = 122 \u2227 b = 183 \u2227 c = 366) \u2228\n (a = 183 \u2227 b = 244 \u2227 c = 732) \u2228\n (a = 244 \u2227 b = 366 \u2227 c = 732) := by sorry\n\n",
+  "theorem_title": "Isolation of the reciprocal-triple gadget at 732",
+  "natural_language_statement": "Let $a,b,c\\in\\mathbb N$ satisfy $0<a<b<c\\leq732$ and $a(b+c)=bc$. If at least one of $a,b,c$ belongs to $G=\\{122,183,244,366,732\\}$, then\n\n$$\n(a,b,c)\\in\\{(122,183,366),(183,244,732),(244,366,732)\\}.\n$$\n\nThis finite classification says that every forbidden reciprocal triple meeting the gadget lies wholly inside it. It supplies the isolation fact needed for the cardinality-preserving replacement.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_KernelIsolation\n\n\n\n",
+  "formal_statement": "theorem Erdos302Kernel.isolated_nat (a b c : Nat)\n (ha : 0 < a) (hab : a < b) (hbc : b < c) (hc : c ≤ 732)\n (hrel : a * (b + c) = b * c)\n (hG : inGNat a || inGNat b || inGNat c) :\n (a = 122 ∧ b = 183 ∧ c = 366) ∨\n (a = 183 ∧ b = 244 ∧ c = 732) ∨\n (a = 244 ∧ b = 366 ∧ c = 732) := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "finite-certificates",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/KernelIsolation.lean#L51-L78"
 }

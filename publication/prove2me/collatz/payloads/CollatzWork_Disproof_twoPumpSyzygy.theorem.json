@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.Disproof.twoPumpSyzygy",
-  "theorem_title": "Two-pump cyclic-elimination coefficient dependency",
-  "natural_language_statement": "For the integer coefficient expressions A,B,C,E defined in TwoPumpDependency.lean, a*B=c*C and g*A=d*E; consequently c*g*A*C-a*d*B*E=0. The hoped-for constant resultant in this cyclic-elimination construction vanishes identically. Limitations: An algebraic obstruction for the specified route. It proves neither existence of a positive nontrivial cycle nor a disproof of Collatz. The module namespace Disproof describes the research route only.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
+  "theorem_title": "A polynomial relation among the two rotated expressions",
+  "natural_language_statement": "Let $a,c,d,g,A,B,C,E,p_r,q_r,h_s,t_s\\in\\mathbb Z$ be arbitrary parameters satisfying $aB=cC$ and $gA=dE$. Define\n\n$$D=cgq_rt_s-adp_rh_s,\\qquad P=Ap_r+Bq_r,\\qquad Q=Ch_s+Et_s.$$\n\nThe subscripted parameters are arbitrary integers, with no power relations assumed. Then\n\n$$BED-cgPQ+cgCh_sP+cgAp_rQ=0.$$\n\nThis explicit algebraic dependency, often called a syzygy, relates the two rotated expressions to the total expression $D$. No coefficient is assumed nonzero, so the identity needs no cancellation or division hypotheses.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
   "formal_statement": "theorem CollatzWork.Disproof.twoPumpSyzygy\n    (a c d g A B C E pr qr hs ts : Int)\n    (hAB : a * B = c * C) (hAE : g * A = d * E) :\n    let D := c * g * qr * ts - a * d * pr * hs\n    let P := A * pr + B * qr\n    let Q := C * hs + E * ts\n    B * E * D - c * g * P * Q + c * g * C * hs * P +\n      c * g * A * pr * Q = 0 := by sorry\n\n",
   "tags": [
     "collatz-work-import"

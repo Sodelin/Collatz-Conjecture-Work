@@ -4,6 +4,8 @@ import Definitions.Def_CollatzWork_YAHFiniteObstruction
 import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
 import Theorems.Thm_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation
 
+universe u
+
 open Lean.Grind
 open Lean.Grind.AddCommMonoid
 open Lean.Grind.IntModule

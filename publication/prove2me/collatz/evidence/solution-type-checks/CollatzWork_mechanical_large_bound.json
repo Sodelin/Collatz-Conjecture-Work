@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.MechanicalSixteenEnvelopeStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.MechanicalSixteenEnvelopeStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.mechanical_large_bound",
+  "universe_count_equal": true,
+  "solution_sha256": "aec3cee1fa58834f48b84767efb9e5a8c66b7ea37b1e10f6491ae98f8fefeb96",
+  "theorem_sha256": "62e06a32dbe8899c0df2920d96d038c428785238f56e62d8570ac4985180dae9",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_mechanical_large_bound.lean",
+  "source_files_unchanged": true
+}

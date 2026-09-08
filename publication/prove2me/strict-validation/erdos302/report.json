@@ -1,0 +1,226 @@
+{
+  "status": "passed",
+  "source_manifest_sha256": "a52c1d6b3501a64c0cc5f97d66573d68daddc75f91141bd0458f040a14546c83",
+  "source_manifest": "publication/prove2me/projects/erdos302/candidate/manifest.json",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "lean_commit": "819816b",
+  "strict_option": {
+    "autoImplicit": false
+  },
+  "checked_files": 26,
+  "checks": [
+    {
+      "module": "Definitions.Def_Extension734",
+      "source_sha256": "afb3750b6716f6b7452a7093fec58205ac3bd31084abe0d7fdc8b4493fa363d0",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "3bb6ae4565d8549bd430f932f711c149c6d190bbcd2a494b34222c40850dceae"
+    },
+    {
+      "module": "Definitions.Def_KernelEndpoints734",
+      "source_sha256": "a880c67b439ff1a1910a236aa45b0e3d6b5fb634ae2a3f947d05de4d2e31e265",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "6ca893d8a76c6e4e6392e2cddd5a33bd72b67bffd04c02d9cce1c2b4dfe28c5c"
+    },
+    {
+      "module": "Definitions.Def_KernelIsolation",
+      "source_sha256": "9cd09a850775891a7342ea2f423fccbf45986cbb65f2e246bebc1e376d44b87d",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "43e59c25026c2dcc67667424aa0e2637cae8a5fa8c6ca7d2e0a89a6a84debe10"
+    },
+    {
+      "module": "Definitions.Def_Plateau302",
+      "source_sha256": "bbc9d5c3517c3cc81804c94903a0cb812731a29a0ba6530d32e06604f3581061",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "28487099cf62c6c6501506e25fff7595c6e972040af432c6309a54ec3fe0b717"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_exact_maximum_734_from_733",
+      "source_sha256": "dd0ae32d353025aba9a4345f6df8d94b21d74166c82898df7698adc463ff4cb8",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "ce1473462fcc924a2d1f428b9d2bbe256c8cf181bdb56767f15a1a99629aa0b2"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_exact_maximum_734_from_733",
+      "source_sha256": "fe5e4a47961dbefa27ce59f79a649524cf5b2bb587e7abcc49224f3f5ec1591e",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "40b35fed91d98557057feb50409f6d903bbbf42efda8ece2ee671d095d59fbf0"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_full_cardinal_domain",
+      "source_sha256": "9d975f63fd9a35966427849890ca993c980b5623d54471034918f6802f0e23c1",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "e5fae50dfeb82d91cc50bb6a9a9c19de4fd370b1ba31bc0b2105858e77cf8daa"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_full_cardinal_domain",
+      "source_sha256": "d5a908867e6e18a9d868aa9c65986abc7913310df5ee4db82d850310aeaff515",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "7c45d60d080638b4ea5e665e690b7623bd0523219a97ab1528928d481a214667"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_full_domain_membership",
+      "source_sha256": "a57585e0fa878f8b9c0a6bed0dcee48ad72086b8a2794820e922071a6bf072dd",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "13353228407c9561f44b8f6ad2e95a1152a3ba0c1935986092aa078147a5e00b"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_full_domain_membership",
+      "source_sha256": "931317185a77d34bdd5cadb79f4a15c0110c82b4ddeced214c5c707c20a3d063",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "7a72ed09aed02157a611ac695cea234999de6321c021ed1d512181c98c694d16"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_full_domain_nodup",
+      "source_sha256": "ba09ab244b239aa45d4f4e53d1b5dc34b3b168a1bcf96bf0f7fe89c818a92c8e",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "8efb6f86f89a4b0502a91d5317844e9ce69196f86d2ba8e6bce1041ff8a2a02f"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_full_domain_nodup",
+      "source_sha256": "be08b452ca1f16b1f973a63617e459d80176ef8a1be5fcb6c25ba37f18ed8ae1",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "b5b0026521ecf24a56471c255347d44940e5773658a4f69881fb75f137ae460f"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_lift_admissible",
+      "source_sha256": "dda05559b0f6ab43e816d9b9609d952f64728b8bc958450e902ac0fa9409a22f",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "92012ce355139eb90f4076de1784b8223257155ed841c959e84f162d8cf83412"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_lift_admissible",
+      "source_sha256": "30ad04f3c14be462e382e3fc7f9e44861275b841da00681e816abf0f025b08e1",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "65014496fe0a25734b09426474a1a5bd6776ea1da1b6a849182477785f35035a"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_numerical_733_from_731",
+      "source_sha256": "9b490bb122aee2e22c224e78a2b084006edbed9324ef8c9222a80429617164d6",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "6b91b967bd46957dd05618e68430e23db80dcf55ab95715bdaddd0d52c4817b6"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_numerical_733_from_731",
+      "source_sha256": "b9fd637fbab7e2091f8731fde882420dac148e801da089d42561cd5a3a96b23c",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "fdbf2e170b80eb9922ca4089f27901dad3e68a53f670486d71eed4c4b13eb9ee"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Extension734_numerical_734_from_731",
+      "source_sha256": "73bb64ad5018ac5568af5a6675eb3d51745e23e8afb0610124d72c4464521321",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "4a38ac8c825f135405875a6af283ecd1c1e9e77126ecfc62aacdba0495bcf85f"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Extension734_numerical_734_from_731",
+      "source_sha256": "66fa57042648d4ead530889b607057e377c3a369940040bf77bb5ad6dc0f815d",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "5dda40f1f083f93b35267da12a77d0cfcae6c000558a833ff12cb7b269ff157a"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Finite_rat_plateau_732",
+      "source_sha256": "941fc67cd73364f9b85ca780e508f6156e1f8a2ca59141f4dd9f222de6e1615e",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "f35bc57689ca5b6827cd133a817945550edea9c088cf132259047a1d80f13618"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Finite_rat_plateau_732",
+      "source_sha256": "706b1a32ac9ac0a6ff374c4c4e793bb143c6f36087012e0b7a1fae88923cbeb9",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "dfa71b2e3c0f431654e9bceacd8f8a94e887a42691f0c1ebe64bdc86902ada88"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Finite_replacement_admissible",
+      "source_sha256": "7c7da5f93f4a7024b52c2cc914aaa0ee0514a33ae2a86e2b7120197d2a1194bb",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "f915170d99f1ac927fa0ae2e245391c86e051601d9ee49881c59d5124b26cdc1"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Finite_replacement_admissible",
+      "source_sha256": "219dcbf800a946260bd0fdae5efe15786bfc472a557a8795faf13841d4ed3b0b",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "980c35d7071c0729fef4b17020a320076c84171c3256339b69bbb00193b2ec51"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Finite_replacement_cardinal",
+      "source_sha256": "016aaf24fdfebe45b55a1dc1bdc0c24b9c180856c36830f5a3ab571607cb0b84",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "01f1ad97bf844635781e3e640e34aa1c6a4d5f4f03b90fdc5756d71f976b80f5"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Finite_replacement_cardinal",
+      "source_sha256": "eca8f9f964e2facf3dee0d47bbe205cf97cca40efe016337ccecefd733fc9262",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "5c5366a17f4c933488628b305e8b9c462c70a6b121de6756d2e60334cda3183f"
+    },
+    {
+      "module": "Theorems.Thm_Erdos302Kernel_isolated_nat",
+      "source_sha256": "c2f799e16fdcbeb0fd9e6864c0c5d5b1e3095074891a539bc66ec05bbc0c0abe",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "343742b343cc78d2eeb364876c3adf7e95a55ea27b6d7e6f3d38b7a0ef4aa81e"
+    },
+    {
+      "module": "Solutions.Sol_Erdos302Kernel_isolated_nat",
+      "source_sha256": "29716245d0991c0799994b6b7e51a7debe5fa3731b4fffe60353701c1d9e23f1",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "50be76a111d53bd9d8b86bb21c27597ba0ee1786af60978f3c41b9fc76e9840d"
+    }
+  ],
+  "build_exit_code": 0,
+  "scope": "All scheduled definition bodies, theorem preamble+statement files and top-level solution files. No source or candidate manifest changed. Staged byte hashes match the active import manifests.",
+  "method": "Recompiled exact scheduled payload files in isolated copies with package leanOptions autoImplicit=false. Checked every module setup JSON records autoImplicit=false and every compiled artifact exists. Requested independent module targets, because separate solutions deliberately declare the same top-level solution identifier and cannot be jointly imported into one root module.",
+  "harness_deviation": "Initial aggregate StrictCheck root failed only because it imported multiple distinct top-level solution declarations. All57 actual payload modules compiled successfully before that aggregate failure. The final invocation targets modules independently and exits0.",
+  "limitations": "Expected sorry warnings arise only in theorem statement stubs. This local elaboration check is distinct from the server acceptance/axiom check. Hosted runtime uses the existing executable-location compatibility launcher."
+}

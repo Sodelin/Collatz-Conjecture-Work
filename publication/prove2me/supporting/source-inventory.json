@@ -1,0 +1,2965 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-08",
+  "scope": "Pinned GitHub branch snapshots checked for supporting mathematics artifacts; file presence and metadata audit, not a new mathematical verification.",
+  "snapshots": [
+    {
+      "repository": "Sodelin/Erdos-Work",
+      "branch": "idea/erdos128-full-prior-art",
+      "commit": "d6ea128def74cb47c75988377d24b29ff340f5a1",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/pull_request_template.md",
+          "git_blob_sha": "8f510d0945fcada72052213a4f6c3eea433f4eb7",
+          "size_bytes": 373
+        },
+        {
+          "path": ".github/workflows/research-checks.yml",
+          "git_blob_sha": "dfb3ad50c1125ce177dab900a2cec66d27326e53",
+          "size_bytes": 2966
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "564af7459042a8117fee13cf199c6813d03fe70e",
+          "size_bytes": 41
+        },
+        {
+          "path": "AGENTS.md",
+          "git_blob_sha": "234998d4512940bd14e0a2565df916b917cb3769",
+          "size_bytes": 2770
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "28f350ba86bb24bf8cccdde7280ee556fa74d883",
+          "size_bytes": 3353
+        },
+        {
+          "path": "docs/novelty-workflow.md",
+          "git_blob_sha": "8e06c750afa5ec932475c7d87bc1e6419d7e63f0",
+          "size_bytes": 3620
+        },
+        {
+          "path": "docs/submission-workflow.md",
+          "git_blob_sha": "70763c78feeaca23cd46d9fceb97e1c3b6ab77fd",
+          "size_bytes": 2736
+        },
+        {
+          "path": "research/ideas/erdos128-allweights.json",
+          "git_blob_sha": "ee863849594a60d8de3fc4ab91ca67809cadef6e",
+          "size_bytes": 3818
+        },
+        {
+          "path": "research/ideas/erdos128-full.json",
+          "git_blob_sha": "f7a0a48fe75b944913a291d9245dcb8b17afa654",
+          "size_bytes": 10375
+        },
+        {
+          "path": "research/ideas/erdos128-symmetric.json",
+          "git_blob_sha": "a57aeb4878ff0094a28fa09903916ec4bc6069ad",
+          "size_bytes": 3991
+        },
+        {
+          "path": "research/intake/2026-09-07.json",
+          "git_blob_sha": "1fa5ffdbaefed09bc57ba655dfde0da11f142851",
+          "size_bytes": 1612
+        },
+        {
+          "path": "research/results/erdos128/README.md",
+          "git_blob_sha": "9773d959b134ac1fdbe9d9789a852d144aee9549",
+          "size_bytes": 1274
+        },
+        {
+          "path": "research/results/erdos128/grotzsch_symmetric_certificate.json",
+          "git_blob_sha": "ce945dc18d8049ae53140b6cb9d0ec93511efe9b",
+          "size_bytes": 4309
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric.py",
+          "git_blob_sha": "bdde4d07e53bac54c026058379014682d45e1713",
+          "size_bytes": 5784
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric_independent.py",
+          "git_blob_sha": "5ef13c3cf4d822f3673be7b6d4356b0cc308b6c4",
+          "size_bytes": 5305
+        },
+        {
+          "path": "research/reviews/erdos128-prior-art-2026-09-07.md",
+          "git_blob_sha": "275697c33457d0659ac048095ab3885bf08e961d",
+          "size_bytes": 11807
+        },
+        {
+          "path": "scripts/LICENSE",
+          "git_blob_sha": "0bf03c78969d092e8ea68f46494a226f97b6fcb6",
+          "size_bytes": 1085
+        },
+        {
+          "path": "scripts/README.md",
+          "git_blob_sha": "33c5ddbeb502f4f5bd0e0bf1df85ed8fd307ffe6",
+          "size_bytes": 2175
+        },
+        {
+          "path": "scripts/check_idea.py",
+          "git_blob_sha": "8899c0d424fd86c41ae058d58d39a848222af313",
+          "size_bytes": 8598
+        },
+        {
+          "path": "scripts/check_references.py",
+          "git_blob_sha": "b6c18e92742e8f043fecdf7cb89567cb1ec498c3",
+          "size_bytes": 10309
+        },
+        {
+          "path": "tests/test_check_idea.py",
+          "git_blob_sha": "3e81b5c7d42f45babf4709eacafb09de951088d4",
+          "size_bytes": 6560
+        },
+        {
+          "path": "tests/test_check_references.py",
+          "git_blob_sha": "2370e1ac595cace18b11a30e74d76c4223638588",
+          "size_bytes": 7861
+        }
+      ],
+      "url": "https://github.com/Sodelin/Erdos-Work/tree/d6ea128def74cb47c75988377d24b29ff340f5a1",
+      "counts": {
+        "tracked_files": 22,
+        "lean_files": 0
+      }
+    },
+    {
+      "repository": "Sodelin/Erdos-Work",
+      "branch": "main",
+      "commit": "408f225cc4c24e897008b885b4e6b76873c7990e",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/pull_request_template.md",
+          "git_blob_sha": "8f510d0945fcada72052213a4f6c3eea433f4eb7",
+          "size_bytes": 373
+        },
+        {
+          "path": ".github/workflows/research-checks.yml",
+          "git_blob_sha": "dfb3ad50c1125ce177dab900a2cec66d27326e53",
+          "size_bytes": 2966
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "564af7459042a8117fee13cf199c6813d03fe70e",
+          "size_bytes": 41
+        },
+        {
+          "path": "AGENTS.md",
+          "git_blob_sha": "234998d4512940bd14e0a2565df916b917cb3769",
+          "size_bytes": 2770
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "28f350ba86bb24bf8cccdde7280ee556fa74d883",
+          "size_bytes": 3353
+        },
+        {
+          "path": "docs/novelty-workflow.md",
+          "git_blob_sha": "8e06c750afa5ec932475c7d87bc1e6419d7e63f0",
+          "size_bytes": 3620
+        },
+        {
+          "path": "docs/submission-workflow.md",
+          "git_blob_sha": "70763c78feeaca23cd46d9fceb97e1c3b6ab77fd",
+          "size_bytes": 2736
+        },
+        {
+          "path": "research/ideas/erdos128-allweights.json",
+          "git_blob_sha": "ee863849594a60d8de3fc4ab91ca67809cadef6e",
+          "size_bytes": 3818
+        },
+        {
+          "path": "research/ideas/erdos128-symmetric.json",
+          "git_blob_sha": "a57aeb4878ff0094a28fa09903916ec4bc6069ad",
+          "size_bytes": 3991
+        },
+        {
+          "path": "research/intake/2026-09-07.json",
+          "git_blob_sha": "1fa5ffdbaefed09bc57ba655dfde0da11f142851",
+          "size_bytes": 1612
+        },
+        {
+          "path": "research/results/erdos128/README.md",
+          "git_blob_sha": "9773d959b134ac1fdbe9d9789a852d144aee9549",
+          "size_bytes": 1274
+        },
+        {
+          "path": "research/results/erdos128/grotzsch_symmetric_certificate.json",
+          "git_blob_sha": "ce945dc18d8049ae53140b6cb9d0ec93511efe9b",
+          "size_bytes": 4309
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric.py",
+          "git_blob_sha": "bdde4d07e53bac54c026058379014682d45e1713",
+          "size_bytes": 5784
+        },
+        {
+          "path": "research/results/erdos128/verify_grotzsch_symmetric_independent.py",
+          "git_blob_sha": "5ef13c3cf4d822f3673be7b6d4356b0cc308b6c4",
+          "size_bytes": 5305
+        },
+        {
+          "path": "scripts/LICENSE",
+          "git_blob_sha": "0bf03c78969d092e8ea68f46494a226f97b6fcb6",
+          "size_bytes": 1085
+        },
+        {
+          "path": "scripts/README.md",
+          "git_blob_sha": "33c5ddbeb502f4f5bd0e0bf1df85ed8fd307ffe6",
+          "size_bytes": 2175
+        },
+        {
+          "path": "scripts/check_idea.py",
+          "git_blob_sha": "8899c0d424fd86c41ae058d58d39a848222af313",
+          "size_bytes": 8598
+        },
+        {
+          "path": "scripts/check_references.py",
+          "git_blob_sha": "b6c18e92742e8f043fecdf7cb89567cb1ec498c3",
+          "size_bytes": 10309
+        },
+        {
+          "path": "tests/test_check_idea.py",
+          "git_blob_sha": "3e81b5c7d42f45babf4709eacafb09de951088d4",
+          "size_bytes": 6560
+        },
+        {
+          "path": "tests/test_check_references.py",
+          "git_blob_sha": "2370e1ac595cace18b11a30e74d76c4223638588",
+          "size_bytes": 7861
+        }
+      ],
+      "url": "https://github.com/Sodelin/Erdos-Work/tree/408f225cc4c24e897008b885b4e6b76873c7990e",
+      "counts": {
+        "tracked_files": 20,
+        "lean_files": 0
+      }
+    },
+    {
+      "repository": "Sodelin/ai-math-discovery",
+      "branch": "codex/phase-erasure-spectrum",
+      "commit": "251238baa23332faca792e584bc0939188308dd8",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/audit.yml",
+          "git_blob_sha": "2de153419c7b09466526e2b3ad942e3d82442ea7",
+          "size_bytes": 1050
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "git_blob_sha": "d814190715ba1b60d8b394ddef603a3b2052bbac",
+          "size_bytes": 236
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/discovery.yml",
+          "git_blob_sha": "24887ec39b3126219d2eb1b7c1a271faffb5efa9",
+          "size_bytes": 1678
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "git_blob_sha": "27ce8c10b9c6a451765296425200b651b6fed006",
+          "size_bytes": 440
+        },
+        {
+          "path": ".github/workflows/verify.yml",
+          "git_blob_sha": "d7319cb4e19e66dae3def135e0de488260a6334b",
+          "size_bytes": 590
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "4a5bb25f7096ae714e1567277512b7b2c15ce857",
+          "size_bytes": 33
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "git_blob_sha": "c5d3042b19994f1cce7887957d390af2fa715fb7",
+          "size_bytes": 1823
+        },
+        {
+          "path": "DISCOVERY_INDEX.md",
+          "git_blob_sha": "5c838533e9ba3a66ec5b17bb04cbd1e346df1536",
+          "size_bytes": 1257
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "03389e415c87ace79e816fdd26bc8f85785494c9",
+          "size_bytes": 4110
+        },
+        {
+          "path": "archive/zotero/BIBLIOGRAPHY.bib",
+          "git_blob_sha": "fa257d18d81f5c5c98f6129713350eee2be81a7b",
+          "size_bytes": 4180
+        },
+        {
+          "path": "archive/zotero/README.md",
+          "git_blob_sha": "66a5faf29584e456a117e3080bde6996703757a7",
+          "size_bytes": 2704
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/AUDIT.md",
+          "git_blob_sha": "661cb89edcc8b9f93787dc6145cea70b99beb70a",
+          "size_bytes": 6025
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/CLAIMS.json",
+          "git_blob_sha": "975bb6d919cd722eaa7993538c7379067414e555",
+          "size_bytes": 11817
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/PRIOR_ART.md",
+          "git_blob_sha": "ee2ab89203f8f9017cbaaa061a7e44a47fa51f42",
+          "size_bytes": 5445
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/README.md",
+          "git_blob_sha": "734f32899c959c499df17e6ba0421a4ff689aec6",
+          "size_bytes": 5798
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/THEOREM.md",
+          "git_blob_sha": "4de385a282226911f4cb2b37e4237a993ad44a17",
+          "size_bytes": 15796
+        },
+        {
+          "path": "killed/KILLED-0001-proof-transport-atlas.md",
+          "git_blob_sha": "1eff6cb9d8c87ee66f64f2d8673d1f1ea274da4c",
+          "size_bytes": 1260
+        },
+        {
+          "path": "killed/KILLED-0002-finite-return-jets.md",
+          "git_blob_sha": "8602407eb7a524c51954c09187bf5bafedeeb0f0",
+          "size_bytes": 1576
+        },
+        {
+          "path": "killed/KILLED-0003-window-count-hierarchy.md",
+          "git_blob_sha": "fc33f559eda2a501dae72f05ac92c8e12d2e2274",
+          "size_bytes": 1095
+        },
+        {
+          "path": "killed/README.md",
+          "git_blob_sha": "2d6f574f43497795ef3ccdd4ed47031925a4a8c9",
+          "size_bytes": 760
+        },
+        {
+          "path": "output/pdf/README.md",
+          "git_blob_sha": "866da3e92e30282e1cb68b589fbde2aa84a2390b",
+          "size_bytes": 358
+        },
+        {
+          "path": "output/pdf/phase-erasure-spectrum.pdf",
+          "git_blob_sha": "f5a7b990102c0cdf9c5e235f15af925049ca31e2",
+          "size_bytes": 1065072
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/MANUSCRIPT.md",
+          "git_blob_sha": "126c2bac7e238959f238ff35fb91a8a6a2d880b0",
+          "size_bytes": 25755
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/REFERENCES.bib",
+          "git_blob_sha": "663af97e75212a80f5e162624e85ad136a4d4a85",
+          "size_bytes": 3296
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/SUBMISSION_CHECKLIST.md",
+          "git_blob_sha": "d6f5e7e8d702cc1515fe7f75650bfb24b4b60a02",
+          "size_bytes": 3683
+        },
+        {
+          "path": "papers/phase-erasure-spectrum/paper.css",
+          "git_blob_sha": "963ca57a0c86fd970b5e0360a55c8d6621533a45",
+          "size_bytes": 1871
+        },
+        {
+          "path": "research-programs/CROSS_PROJECT_EVIDENCE.json",
+          "git_blob_sha": "96d02bc1b5fce62e351baf3e68fa04922c8d2683",
+          "size_bytes": 2457
+        },
+        {
+          "path": "research-programs/PROPERTY_AWARE_FIBERED_CERTIFICATES.md",
+          "git_blob_sha": "d2bb1b8fcf7c28a5b8b8f843ae2fdc4df7067a48",
+          "size_bytes": 6543
+        },
+        {
+          "path": "research-programs/README.md",
+          "git_blob_sha": "361c6a3d86a1f4b15d71a993af3bb7a30bbfaf54",
+          "size_bytes": 496
+        },
+        {
+          "path": "templates/DISCOVERY.md",
+          "git_blob_sha": "c450810673a336e2db1a1fd4110ffc31d96dfe64",
+          "size_bytes": 1208
+        },
+        {
+          "path": "verification/check_phase_fiber.py",
+          "git_blob_sha": "ae01a3167dd5a3e6bc7863249515912a08e69ebb",
+          "size_bytes": 12098
+        },
+        {
+          "path": "verification/check_repository.py",
+          "git_blob_sha": "d5912d11404ca0604770af81bd206d8f785b5ad3",
+          "size_bytes": 7420
+        },
+        {
+          "path": "verification/check_spectrum_recursive.py",
+          "git_blob_sha": "4db226ae1b59e1a9e02843ef5a00d07f226d5721",
+          "size_bytes": 2129
+        }
+      ],
+      "url": "https://github.com/Sodelin/ai-math-discovery/tree/251238baa23332faca792e584bc0939188308dd8",
+      "counts": {
+        "tracked_files": 33,
+        "lean_files": 0
+      }
+    },
+    {
+      "repository": "Sodelin/ai-math-discovery",
+      "branch": "main",
+      "commit": "08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/audit.yml",
+          "git_blob_sha": "2de153419c7b09466526e2b3ad942e3d82442ea7",
+          "size_bytes": 1050
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/config.yml",
+          "git_blob_sha": "d814190715ba1b60d8b394ddef603a3b2052bbac",
+          "size_bytes": 236
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/discovery.yml",
+          "git_blob_sha": "24887ec39b3126219d2eb1b7c1a271faffb5efa9",
+          "size_bytes": 1678
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "git_blob_sha": "27ce8c10b9c6a451765296425200b651b6fed006",
+          "size_bytes": 440
+        },
+        {
+          "path": ".github/workflows/verify.yml",
+          "git_blob_sha": "0c112ca815386d26e3fabff3930f5b92146feef5",
+          "size_bytes": 567
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "4a5bb25f7096ae714e1567277512b7b2c15ce857",
+          "size_bytes": 33
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "git_blob_sha": "c5d3042b19994f1cce7887957d390af2fa715fb7",
+          "size_bytes": 1823
+        },
+        {
+          "path": "DISCOVERY_INDEX.md",
+          "git_blob_sha": "63a4522997dd06133fe3de7dca31a146216b6cb8",
+          "size_bytes": 1211
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "1e45a190bf57721a97d4bd037a4637250e95ed25",
+          "size_bytes": 3231
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/AUDIT.md",
+          "git_blob_sha": "a2ef14032f3ca0c638f84931cb4f4324334828ab",
+          "size_bytes": 4176
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/PRIOR_ART.md",
+          "git_blob_sha": "91358193af3328cce73747797c2d92e83d2436ec",
+          "size_bytes": 3709
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/README.md",
+          "git_blob_sha": "fbaad0509ba676c665248ed18db954a217792d0b",
+          "size_bytes": 4905
+        },
+        {
+          "path": "discoveries/AI-MATH-0001/THEOREM.md",
+          "git_blob_sha": "e188b9960934f60e8b933627a2aba51d10996e8c",
+          "size_bytes": 9898
+        },
+        {
+          "path": "killed/KILLED-0001-proof-transport-atlas.md",
+          "git_blob_sha": "1eff6cb9d8c87ee66f64f2d8673d1f1ea274da4c",
+          "size_bytes": 1260
+        },
+        {
+          "path": "killed/KILLED-0002-finite-return-jets.md",
+          "git_blob_sha": "8602407eb7a524c51954c09187bf5bafedeeb0f0",
+          "size_bytes": 1576
+        },
+        {
+          "path": "killed/KILLED-0003-window-count-hierarchy.md",
+          "git_blob_sha": "fc33f559eda2a501dae72f05ac92c8e12d2e2274",
+          "size_bytes": 1095
+        },
+        {
+          "path": "killed/README.md",
+          "git_blob_sha": "2d6f574f43497795ef3ccdd4ed47031925a4a8c9",
+          "size_bytes": 760
+        },
+        {
+          "path": "templates/DISCOVERY.md",
+          "git_blob_sha": "c450810673a336e2db1a1fd4110ffc31d96dfe64",
+          "size_bytes": 1208
+        },
+        {
+          "path": "tests/test_assertion_modes.py",
+          "git_blob_sha": "b5d8f526dcda3b4fd8bbb492f9199870402de704",
+          "size_bytes": 1457
+        },
+        {
+          "path": "verification/check_phase_fiber.py",
+          "git_blob_sha": "c4d5fd2ff9540c3543b1127a25b1133547ab1cf5",
+          "size_bytes": 6806
+        },
+        {
+          "path": "verification/check_repository.py",
+          "git_blob_sha": "42d5ae57cc42855a6ca9d4eddaa54992b60708c5",
+          "size_bytes": 2523
+        }
+      ],
+      "url": "https://github.com/Sodelin/ai-math-discovery/tree/08cbb7cd2c3f2fe0625c181d9f22ac835f964ebf",
+      "counts": {
+        "tracked_files": 21,
+        "lean_files": 0
+      }
+    },
+    {
+      "repository": "Sodelin/Collatz-Conjecture-Work",
+      "branch": "main",
+      "commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".gitattributes",
+          "git_blob_sha": "9283f74112aa5adf751b537d0dbad0d7bd1ab1eb",
+          "size_bytes": 150
+        },
+        {
+          "path": ".github/workflows/knowledge-notebook.yml",
+          "git_blob_sha": "636525efaabfcbbf30653a259171faa73925ea50",
+          "size_bytes": 588
+        },
+        {
+          "path": ".github/workflows/lean-verification.yml",
+          "git_blob_sha": "a6c4c9e1dcbf041aa655089d2bf741adae6accf9",
+          "size_bytes": 1219
+        },
+        {
+          "path": ".github/workflows/markdown-presentation.yml",
+          "git_blob_sha": "f277ce3968ba34a49e5fa55a993214a27d9d3851",
+          "size_bytes": 472
+        },
+        {
+          "path": ".github/workflows/publish-research.yml",
+          "git_blob_sha": "756736940695520020d519f042c40cb3b745fd65",
+          "size_bytes": 6279
+        },
+        {
+          "path": ".github/workflows/python-verification.yml",
+          "git_blob_sha": "b02beb9ed054578438d0272fd3c39213dc4ce395",
+          "size_bytes": 1317
+        },
+        {
+          "path": ".github/workflows/verify.yml",
+          "git_blob_sha": "0bc3b2c7d1ae38101c303da2c1db17ead56b7591",
+          "size_bytes": 3215
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "4a0ca3371cfc31ad620bde3cf80b789436c9ba77",
+          "size_bytes": 68
+        },
+        {
+          "path": "ASTRA_CONTINUATION_2026-09-05.md",
+          "git_blob_sha": "afa0931785ab17f4b4489810a43afb862658bf2b",
+          "size_bytes": 16933
+        },
+        {
+          "path": "ASTRA_REFERENCES_2026-09-05.bib",
+          "git_blob_sha": "3dc57daa2647c591e330b32a00de9e99ec355768",
+          "size_bytes": 3974
+        },
+        {
+          "path": "ASTRA_RESEARCH_PASS_2026-09-05.md",
+          "git_blob_sha": "f8e3b4cc4f1e7a49769643cc7ad7cf0ff8e9c079",
+          "size_bytes": 21442
+        },
+        {
+          "path": "ATLAS.md",
+          "git_blob_sha": "c52d15d71f5ea5fbb21b2cdb0d56b1d80d6db88a",
+          "size_bytes": 18569
+        },
+        {
+          "path": "BLIND_RECONCILIATION_2026-09-05.md",
+          "git_blob_sha": "3da01eb66e2af51598e68df59460f3f84ddf4826",
+          "size_bytes": 7769
+        },
+        {
+          "path": "CODEX_HANDOFF_2026-08-23.md",
+          "git_blob_sha": "206c085c7af1c0374e327b269f3a88a940d37d7b",
+          "size_bytes": 9519
+        },
+        {
+          "path": "CONSOLIDATION_2026-09-05.md",
+          "git_blob_sha": "d6f98ff52ec68766060abf83cb74141b26f4bfb5",
+          "size_bytes": 6913
+        },
+        {
+          "path": "CONTINUATION.md",
+          "git_blob_sha": "516e065811ac7697764bfc621e7cae53e360f5fa",
+          "size_bytes": 23438
+        },
+        {
+          "path": "LATEST.md",
+          "git_blob_sha": "a5076c7df4b8069bc335c0d4df989df8a3520fe1",
+          "size_bytes": 2377
+        },
+        {
+          "path": "LEAN_TARGETS.md",
+          "git_blob_sha": "6754a6b2da551b2d5420de39e88af0e6ba77e72b",
+          "size_bytes": 13006
+        },
+        {
+          "path": "MATHEMATICIAN_HANDOFF_2026-08-25.md",
+          "git_blob_sha": "9f3ddccaba7a7eddcbfaed29ce50b0fdf90ff8c7",
+          "size_bytes": 59444
+        },
+        {
+          "path": "ORIGINAL_ROOT_BRIDGE_PROGRESS_2026-09-05.md",
+          "git_blob_sha": "180b90f0ed79c4f809a62cdce23d8c1f4b9e7b65",
+          "size_bytes": 26957
+        },
+        {
+          "path": "PROVENANCE.md",
+          "git_blob_sha": "b74c88bb8d73f62a834cee4f3fc18de884033863",
+          "size_bytes": 3377
+        },
+        {
+          "path": "PUBLIC_STATUS_2026-08-24.md",
+          "git_blob_sha": "836e5e24185502285b521eb99f723c95055d9358",
+          "size_bytes": 17075
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "9384d92fea17f31d2cedc74b95aaa98b47ac78a5",
+          "size_bytes": 10315
+        },
+        {
+          "path": "RECHARGE_ESCAPE_PROGRESS_2026-09-05.md",
+          "git_blob_sha": "65d44c792901f3630c4992801af80d19d6771cdb",
+          "size_bytes": 12396
+        },
+        {
+          "path": "RESEARCH_PROTOCOL_V2.md",
+          "git_blob_sha": "b5b47ae389b22659f03e3a6e1d4780ce5c65f97b",
+          "size_bytes": 10512
+        },
+        {
+          "path": "ROOT_RELATIVE_PROGRESS_2026-09-05.md",
+          "git_blob_sha": "9f7b32d4ca12248422eb83e9e1cb03114fdff1bd",
+          "size_bytes": 11101
+        },
+        {
+          "path": "checksums/FULL_ARCHIVE_ZIP_SHA256.txt",
+          "git_blob_sha": "9afa841ac0eec25f823ba11a09c9a41f8eb84801",
+          "size_bytes": 111
+        },
+        {
+          "path": "checksums/PUBLICATION_SHA256SUMS_2026-08-23.txt",
+          "git_blob_sha": "ca9f30d2f569677e812ce66c8030fddfc4eb9aee",
+          "size_bytes": 8941
+        },
+        {
+          "path": "checksums/original/Collatz_Round4A_SHA256SUMS.txt",
+          "git_blob_sha": "f2002e8fbf6513b1393885afb19edad94597d65b",
+          "size_bytes": 1159
+        },
+        {
+          "path": "checksums/original/Collatz_Round4B_SHA256_2026-08-01.txt",
+          "git_blob_sha": "9f4a0bdaf939a174375b6f56ce6d307694e74db2",
+          "size_bytes": 1126
+        },
+        {
+          "path": "checksums/original/Collatz_Round5A_SHA256_2026-08-01.txt",
+          "git_blob_sha": "52e4428700959f183d23840f524129f619faa1c5",
+          "size_bytes": 1426
+        },
+        {
+          "path": "checksums/original/Collatz_Round5B_SHA256_2026-08-01.txt",
+          "git_blob_sha": "94fc31ea22e2a1896e0d3f65bf0326a0e4075caf",
+          "size_bytes": 1285
+        },
+        {
+          "path": "checksums/original/Collatz_Round6A_SHA256_2026-08-01.txt",
+          "git_blob_sha": "266ea4b3d607ffefe0ff99ef0c43cfdc7e09b447",
+          "size_bytes": 1497
+        },
+        {
+          "path": "checksums/original/Collatz_Round6B_SHA256_2026-08-01.txt",
+          "git_blob_sha": "1618bf87aefaea7c90c023617f7d7899eb78e3b0",
+          "size_bytes": 1273
+        },
+        {
+          "path": "docs/MATH_TOOL_SETUP.md",
+          "git_blob_sha": "672f4beb55ecac9bf86375863b3b6a218f2befb6",
+          "size_bytes": 2862
+        },
+        {
+          "path": "knowledge/README.md",
+          "git_blob_sha": "165ca133311e729d32f84182f4007755ec31b782",
+          "size_bytes": 2371
+        },
+        {
+          "path": "knowledge/_generated/BACKLINKS.md",
+          "git_blob_sha": "528edc3e1f4908cc60a99416aa33f45eea5e9588",
+          "size_bytes": 84668
+        },
+        {
+          "path": "knowledge/_generated/FILE_CATALOG.md",
+          "git_blob_sha": "ea04febb6a9676c120031f7cc2c1cddc4c35aac9",
+          "size_bytes": 33808
+        },
+        {
+          "path": "knowledge/_generated/LINK_AUDIT.md",
+          "git_blob_sha": "81a45382af4807e04fa6a673046d8b0510a5496a",
+          "size_bytes": 604
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-ANDREI-KUDLEK-NICULESCU-2000-RESULTS.md",
+          "git_blob_sha": "e119bb794c0864ed1cf95986a9f64e305129d192",
+          "size_bytes": 1252
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-ANDREI-MASALAGIU-1998-ABOUT-COLLATZ.md",
+          "git_blob_sha": "9e4d61b57739fe29fd39b7e39d9fbfcf68ef2977",
+          "size_bytes": 1215
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-APPLEGATE-LAGARIAS-2006-SEMIGROUP.md",
+          "git_blob_sha": "a020b1ce01e8b87edac8b734f14b2f5929bd1c76",
+          "size_bytes": 1242
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BARINA-2025-VERIFICATION.md",
+          "git_blob_sha": "d14eed3e9559676335b3874941b9d2f930890547",
+          "size_bytes": 1389
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BAU-ENDRULLIS-WALDMANN-2013-SAT-COMPILATION.md",
+          "git_blob_sha": "bc8f453a2f10e3d4e94a71af8a90f7f7044519fa",
+          "size_bytes": 1328
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BERNSTEIN-LAGARIAS-1996-CONJUGACY.md",
+          "git_blob_sha": "f8e0d32bd2a72e1bf9d2beb1dd52fb62b5ccbe7f",
+          "size_bytes": 1385
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BOHM-SONTACCHI-1978-CYCLES.md",
+          "git_blob_sha": "0774f85d21e28b05becf49b4c897014853d64075",
+          "size_bytes": 1339
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BOTTESCH-HASLBECK-THIEMANN-2019-LINEAR-ARITHMETIC.md",
+          "git_blob_sha": "8d3941de345cf0a3d974e6ba8bb1b272bc39486b",
+          "size_bytes": 1389
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-BROX-2000-FEW-DESCENTS.md",
+          "git_blob_sha": "7d7d864279bb19fc059c20a856f95b7f23a50e37",
+          "size_bytes": 1168
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-CONWAY-2013-UNSETTLEABLE.md",
+          "git_blob_sha": "44dc0eae5bf5070dca1fadde07afcf8288b637a8",
+          "size_bytes": 1403
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-CRANDALL-1978-3X1.md",
+          "git_blob_sha": "28a9ca8b38d9a8c60c8ce1b4c453d496918f14db",
+          "size_bytes": 1197
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-ENDRULLIS-WALDMANN-ZANTEMA-2008-MATRIX-INTERPRETATIONS.md",
+          "git_blob_sha": "a496e9f815d33d2090fd1c1458bd797678a9a567",
+          "size_bytes": 1370
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-EVERETT-1977-ITERATION.md",
+          "git_blob_sha": "f0cf5c4274d3d21c2dba459e726e6cda161b2c4c",
+          "size_bytes": 1204
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-EVERTSE-1984-S-UNITS.md",
+          "git_blob_sha": "287a5704c3cc35a66b14fae5787d18be3deb7b84",
+          "size_bytes": 1309
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-EVERTSE-GYORY-STEWART-TIJDEMAN-1988-S-UNITS.md",
+          "git_blob_sha": "ee915637eb67c5d78bf368c642c29d74a24d24ea",
+          "size_bytes": 1326
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-GARCIA-TAL-1999-GENERALIZED.md",
+          "git_blob_sha": "87209660446180d6a38900e9a1765ece77cd2b2a",
+          "size_bytes": 2253
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-GESER-HOFBAUER-WALDMANN-2020-SPARSE-TILING.md",
+          "git_blob_sha": "3b59c51defea59dabf0df31791f0bded06e23fa0",
+          "size_bytes": 1419
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-HERCHER-2023-NO-M-CYCLES.md",
+          "git_blob_sha": "21db79f141c2188c9d70eb6fef662e686d6d6de9",
+          "size_bytes": 1298
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2006-MATRIX-INTERPRETATIONS.md",
+          "git_blob_sha": "dd7dde3cb204a18ac4376da57eac9deb7792f608",
+          "size_bytes": 1328
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-HOFBAUER-WALDMANN-2026-SEMANTIC-LABELLING.md",
+          "git_blob_sha": "3823419035ede77c0f3e6279935a8366207eea4f",
+          "size_bytes": 1348
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-KOPROWSKI-WALDMANN-2008-ARCTIC.md",
+          "git_blob_sha": "e4297f71de257d494385b7b3eb09577eaf8ac0a7",
+          "size_bytes": 1267
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-KRAMER-2026-ADAPTIVE-SEARCH.md",
+          "git_blob_sha": "147c026630ce31154b2ec7c9ef4d196d4fd39579",
+          "size_bytes": 1333
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-LAGARIAS-1985-GENERALIZATIONS.md",
+          "git_blob_sha": "78d906a6570c982049051abab240717c9301388c",
+          "size_bytes": 1256
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-MONKS-2006-ARITHMETIC-PROGRESSIONS.md",
+          "git_blob_sha": "ee1ff65eb4fe7ebc29cc0526bb4926f2941b4fe1",
+          "size_bytes": 1404
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-MONKS-ET-AL-2013-STRONGLY-SUFFICIENT.md",
+          "git_blob_sha": "daeb6033457e0faec3efe5663416419c522e14bf",
+          "size_bytes": 1435
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-ROZIER-TERRACOL-2026-PARADOXICAL.md",
+          "git_blob_sha": "587d9fc2dda64d2879efe9fa071d79bfa4582829",
+          "size_bytes": 1369
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-SIMONS-2005-NO-2-CYCLES.md",
+          "git_blob_sha": "5cfeb627b5abd2bf2ce486ac8fe8f21e154e892a",
+          "size_bytes": 1279
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-SINYOR-2010-STRING-REWRITING.md",
+          "git_blob_sha": "4914f8b23126727be9dcdb9378a47f753f4c66c6",
+          "size_bytes": 1329
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-STERNAGEL-THIEMANN-2014-MONOTONE-ALGEBRAS.md",
+          "git_blob_sha": "21ad88085bcdb2a0c7853494a624569a1f99cc5d",
+          "size_bytes": 1432
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-TERRAS-1976-STOPPING-TIME.md",
+          "git_blob_sha": "c0584bed9d029477f9622efe10dd859556ea2046",
+          "size_bytes": 1208
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-TRUEMPER-2014-FREE-SEMIGROUP.md",
+          "git_blob_sha": "4a306f56c1cf83fe34c8f2b9493bf0ffcd78470e",
+          "size_bytes": 1342
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-WANG-2019-E-SEQUENCE.md",
+          "git_blob_sha": "68328cf957f75536759179e53d55a42e46837fe6",
+          "size_bytes": 1314
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2021-MIXED-BASE.md",
+          "git_blob_sha": "f4bed4efdad75bf3aea02fe815f9ba252143e5d4",
+          "size_bytes": 1291
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-2023-AUTOMATED.md",
+          "git_blob_sha": "8cbe5a113c979c732a4043d6b7c956ec397cd9c3",
+          "size_bytes": 1527
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-YOLCU-AARONSON-HEULE-REWRITING-COLLATZ.md",
+          "git_blob_sha": "f151ecc7772166b067a07a0d99db0055daa516ef",
+          "size_bytes": 1296
+        },
+        {
+          "path": "knowledge/sources/CW-SRC-ZANTEMA-1995-SEMANTIC-LABELLING.md",
+          "git_blob_sha": "cf8782f56bb04c4a83a0190f0e3fcae165fb8787",
+          "size_bytes": 1289
+        },
+        {
+          "path": "knowledge/sources/INDEX.md",
+          "git_blob_sha": "759d070ce7791cf92cb724fa7407b950669b29a7",
+          "size_bytes": 3658
+        },
+        {
+          "path": "knowledge/sources/collatz_ai_assisted_research.bib",
+          "git_blob_sha": "4f1882ec4d75b76927a7de7a9fa86e6c42ecf0c4",
+          "size_bytes": 15816
+        },
+        {
+          "path": "knowledge/sources/manifest.json",
+          "git_blob_sha": "bd9d475cb339432775cbd847eecd318bb67b259f",
+          "size_bytes": 13752
+        },
+        {
+          "path": "knowledge/tools/build_index.py",
+          "git_blob_sha": "784f7a0c03426c13e1fac4cc3c7031364bd590fc",
+          "size_bytes": 15768
+        },
+        {
+          "path": "lake-manifest.json",
+          "git_blob_sha": "0402d1df93e654fb3a333b4ae4106b037bbf865e",
+          "size_bytes": 144
+        },
+        {
+          "path": "lakefile.toml",
+          "git_blob_sha": "669a597740ec6b0cfc3644fe04e3d3610734ac90",
+          "size_bytes": 124
+        },
+        {
+          "path": "lean-toolchain",
+          "git_blob_sha": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+          "size_bytes": 25
+        },
+        {
+          "path": "lean/CollatzWork.lean",
+          "git_blob_sha": "c9fb6018037aebce7f15be1e2a43357344b9afba",
+          "size_bytes": 756
+        },
+        {
+          "path": "lean/CollatzWork/AffineRepetition.lean",
+          "git_blob_sha": "bcd86f0a8bbfeaaeb7ba84247b9043eb40076b01",
+          "size_bytes": 4540
+        },
+        {
+          "path": "lean/CollatzWork/AffineRepetitionStatement.lean",
+          "git_blob_sha": "f850c5ef92f9b098ed719cc223c3effdf89d522e",
+          "size_bytes": 1960
+        },
+        {
+          "path": "lean/CollatzWork/BlockArithmetic.lean",
+          "git_blob_sha": "1b9d42758d6f164d5e7fa9c101f59f73ba0bd970",
+          "size_bytes": 7903
+        },
+        {
+          "path": "lean/CollatzWork/Convergence.lean",
+          "git_blob_sha": "a7a448fe888a0942538a4415bdc6583d11b800c2",
+          "size_bytes": 6177
+        },
+        {
+          "path": "lean/CollatzWork/ConvergenceStatement.lean",
+          "git_blob_sha": "4dbbdb86d35b055f5fc56b778233c92e992a3912",
+          "size_bytes": 1813
+        },
+        {
+          "path": "lean/CollatzWork/Disproof/BranchingCenter.lean",
+          "git_blob_sha": "1467387d86222cce400c3a4add35b66e68bfed6d",
+          "size_bytes": 4158
+        },
+        {
+          "path": "lean/CollatzWork/Disproof/FiniteResidueFirstIntegral.lean",
+          "git_blob_sha": "c7340dd5012bd69a6d2c5a454db3d5a5f154b868",
+          "size_bytes": 4575
+        },
+        {
+          "path": "lean/CollatzWork/Disproof/PolynomialRatchet.lean",
+          "git_blob_sha": "7782215dfa279f42ef61d98369f292a51d645d1e",
+          "size_bytes": 5175
+        },
+        {
+          "path": "lean/CollatzWork/Disproof/TwoPumpDependency.lean",
+          "git_blob_sha": "e5897e0b293e2e2b2ef190cf29b0326181563bcd",
+          "size_bytes": 7245
+        },
+        {
+          "path": "lean/CollatzWork/ExcursionBudget.lean",
+          "git_blob_sha": "20a7d777462937a8ce23587b9e3d02b7de96035a",
+          "size_bytes": 5822
+        },
+        {
+          "path": "lean/CollatzWork/ExcursionBudgetStatement.lean",
+          "git_blob_sha": "3b2db62fd97a004705ece1eaaa264604ec8361bf",
+          "size_bytes": 1602
+        },
+        {
+          "path": "lean/CollatzWork/FinitePaletteObstruction.lean",
+          "git_blob_sha": "d126d73dcffc94cc8eda1f002223a5b2b8262dd0",
+          "size_bytes": 6793
+        },
+        {
+          "path": "lean/CollatzWork/FinitePaletteObstructionStatement.lean",
+          "git_blob_sha": "82d79f394b45d9f711057e7920be6da67b646ad6",
+          "size_bytes": 884
+        },
+        {
+          "path": "lean/CollatzWork/FirstContraction.lean",
+          "git_blob_sha": "a201e3f707c1c3f61f246a4db6c81fdd6be51f14",
+          "size_bytes": 2906
+        },
+        {
+          "path": "lean/CollatzWork/FirstContractionStatement.lean",
+          "git_blob_sha": "7d2e0793fd7b21ee935dc66c9d957b1661a8eed1",
+          "size_bytes": 609
+        },
+        {
+          "path": "lean/CollatzWork/FloorPower.lean",
+          "git_blob_sha": "64f5b398454674555c6f33ca2154c06c9037a3ab",
+          "size_bytes": 2141
+        },
+        {
+          "path": "lean/CollatzWork/InverseWordBoundary.lean",
+          "git_blob_sha": "a8867aa3f02efb18bff3b52f7bca42d87f0d1b75",
+          "size_bytes": 1536
+        },
+        {
+          "path": "lean/CollatzWork/InverseWordBoundaryStatement.lean",
+          "git_blob_sha": "9db441b073e8cf241dec8f546aed0719b0591777",
+          "size_bytes": 874
+        },
+        {
+          "path": "lean/CollatzWork/PrefixCollision.lean",
+          "git_blob_sha": "3bfcecfeb35732ea18046ce5403d9604d5ca217c",
+          "size_bytes": 3731
+        },
+        {
+          "path": "lean/CollatzWork/PrefixCollisionStatement.lean",
+          "git_blob_sha": "b727bd01419bcf408ffb20f009e5fa25dd66fffe",
+          "size_bytes": 982
+        },
+        {
+          "path": "lean/CollatzWork/QuarterGap.lean",
+          "git_blob_sha": "868b0f0a3dfa057fa78790a0d7439322fefa464b",
+          "size_bytes": 6608
+        },
+        {
+          "path": "lean/CollatzWork/QuarterGapStatement.lean",
+          "git_blob_sha": "417d54d88ed1068eafcf80f056683a1b8a42900b",
+          "size_bytes": 2307
+        },
+        {
+          "path": "lean/CollatzWork/QuarterGapUniversal.lean",
+          "git_blob_sha": "20abccd547eae9ec37eb9dab59b62274603b67cc",
+          "size_bytes": 8073
+        },
+        {
+          "path": "lean/CollatzWork/QuarterGapUniversalStatement.lean",
+          "git_blob_sha": "80cd1cb6fe7c209f07c59a6da304408da433cbc8",
+          "size_bytes": 1092
+        },
+        {
+          "path": "lean/CollatzWork/RefinedMersenneChild.lean",
+          "git_blob_sha": "7f29268bbdf9b1a966d8391a4e790f010ac0b280",
+          "size_bytes": 8557
+        },
+        {
+          "path": "lean/CollatzWork/ResidueAncestor.lean",
+          "git_blob_sha": "59bdc60120d9dfadedd437153e34e50c50dbd461",
+          "size_bytes": 7520
+        },
+        {
+          "path": "lean/CollatzWork/ResidueAncestorStatement.lean",
+          "git_blob_sha": "ac622e15d88a901d6423735019eb72cfecda0f8c",
+          "size_bytes": 1033
+        },
+        {
+          "path": "lean/CollatzWork/ResidueAncestorTails.lean",
+          "git_blob_sha": "70e77cf820609d0aecf2ebd2247cf9bb8d18d1dd",
+          "size_bytes": 8594
+        },
+        {
+          "path": "lean/CollatzWork/RootDescent.lean",
+          "git_blob_sha": "53a69ddc7e50a1213f05dfb5d0943ec71a05b08a",
+          "size_bytes": 6651
+        },
+        {
+          "path": "lean/CollatzWork/RootDescentStatement.lean",
+          "git_blob_sha": "498b86ed16eecba0e379f929f66ca353b8b51870",
+          "size_bytes": 1406
+        },
+        {
+          "path": "lean/CollatzWork/TwoBurst.lean",
+          "git_blob_sha": "890d567f24effd4c01ba00d2adae0e7af72877cb",
+          "size_bytes": 7749
+        },
+        {
+          "path": "lean/CollatzWork/TwoBurstStatement.lean",
+          "git_blob_sha": "23a6a0e3af3a5d3b91e8a5cae3482bbdcdd20608",
+          "size_bytes": 895
+        },
+        {
+          "path": "lean/CollatzWork/YAHFiniteObstruction.lean",
+          "git_blob_sha": "d16285bac84f799b2726c882ee24e9f5ef02e5ae",
+          "size_bytes": 30951
+        },
+        {
+          "path": "lean/CollatzWork/YAHFiniteObstructionStatement.lean",
+          "git_blob_sha": "ddda40fdb5a7d038a81a8e38477c2b38f2ae18b4",
+          "size_bytes": 9293
+        },
+        {
+          "path": "lean/VERIFICATION_POLICY.md",
+          "git_blob_sha": "46a82ee40cd1aaa3a55de445f259822c1d114b7e",
+          "size_bytes": 6632
+        },
+        {
+          "path": "methodology/AI_ASSISTED_DISCOVERY_CONTROL_SOURCE_SYNTHESIS_2026-08-30.md",
+          "git_blob_sha": "d292026252cb1642f78d7d9aba7fc029f8b867bd",
+          "size_bytes": 13053
+        },
+        {
+          "path": "methodology/ANTHROPIC_RH_WORKFLOW_NOTES.md",
+          "git_blob_sha": "88ec00f45c15c2bdd2dbd64a03933167c5e31fe6",
+          "size_bytes": 9970
+        },
+        {
+          "path": "methodology/MARKDOWN_MATH_STYLE.md",
+          "git_blob_sha": "ed96a4bda934efc0b2f8560b21e1b69ea5f0c1f2",
+          "size_bytes": 2154
+        },
+        {
+          "path": "methodology/NOTE_GRAPH_STANDARD.md",
+          "git_blob_sha": "6b252513a514636862613dab2f2641c581341cb7",
+          "size_bytes": 6284
+        },
+        {
+          "path": "methodology/RESEARCH_OBJECT_BANK_BOUNDARY.md",
+          "git_blob_sha": "c186747590eadbbf14a8bac6f87f734dc6f5bcdf",
+          "size_bytes": 5823
+        },
+        {
+          "path": "methodology/ROZIER_TERRACOL_BARINA_SOURCE_INTEGRATION_2026-08-23.md",
+          "git_blob_sha": "473c4aa038e27e36c490bde2dc0491dd98ba570e",
+          "size_bytes": 5579
+        },
+        {
+          "path": "methodology/SHARED_PROOF_ATTACK_STRUCTURE.md",
+          "git_blob_sha": "df93a4ca85443e459648bbd405fc85ef832802c8",
+          "size_bytes": 5175
+        },
+        {
+          "path": "methodology/TOOLCHAIN_AND_PROMPT_INTEGRATION_2026-08-23.md",
+          "git_blob_sha": "9a3bfd65b992284dc9fab833208aff8702f1b6b6",
+          "size_bytes": 9840
+        },
+        {
+          "path": "methodology/YAH_REWRITE_SOURCE_INTEGRATION_2026-08-23.md",
+          "git_blob_sha": "44819ee6532b3994cf4960671db86ccd47f5cd82",
+          "size_bytes": 6207
+        },
+        {
+          "path": "papers/round-6a/Theorem_6A1_Public_Review_Note.md",
+          "git_blob_sha": "1b3efbfa43e93099ffefcfc4b272d27d3c97ccfb",
+          "size_bytes": 5432
+        },
+        {
+          "path": "papers/round-6b/Round6B_Public_Summary.md",
+          "git_blob_sha": "eb8d80cd474b6ad7603aab841501666b9905a996",
+          "size_bytes": 2552
+        },
+        {
+          "path": "prompts/COLLATZ_EGDC_PROFILE.json",
+          "git_blob_sha": "d3044cbc23a9373e89847a269d5eae27d3473ca9",
+          "size_bytes": 37427
+        },
+        {
+          "path": "prompts/COLLATZ_ORCHESTRATOR_V2.md",
+          "git_blob_sha": "e2efc25ad0cd3591153b3a2952e62ea28e2b42a1",
+          "size_bytes": 7093
+        },
+        {
+          "path": "prompts/COLLATZ_ORCHESTRATOR_V3.md",
+          "git_blob_sha": "835d534ae37c5f500d0d96350424f33d107830ed",
+          "size_bytes": 10700
+        },
+        {
+          "path": "prompts/COLLATZ_ORCHESTRATOR_V4.md",
+          "git_blob_sha": "7a2b2526a996071679dc701cbcea09d857bbf203",
+          "size_bytes": 17195
+        },
+        {
+          "path": "proof-search/APPROACH_REGISTRY.md",
+          "git_blob_sha": "773929629fd42f34162f8ffce49a344dd6b19cdd",
+          "size_bytes": 21860
+        },
+        {
+          "path": "proof-search/CLAIM_REGISTRY.md",
+          "git_blob_sha": "bb93a40eb303a6c5cc07990a80249a91b1aabf46",
+          "size_bytes": 47984
+        },
+        {
+          "path": "proof-search/CODEX_CYCLE_1_CLOSURE_AUDIT_2026-08-23.md",
+          "git_blob_sha": "b0a2e25b0b81e4ec650427c6a435576e4568de6e",
+          "size_bytes": 9063
+        },
+        {
+          "path": "proof-search/FAILURE_LEDGER.md",
+          "git_blob_sha": "cf3e05b7bda6ea37ee7f0e18d9c4c4e6fdc65d1d",
+          "size_bytes": 38886
+        },
+        {
+          "path": "proof-search/MISSING_LEMMA_LADDER.md",
+          "git_blob_sha": "b0ce0bedc8d52c665382d6f79259c01bfa3e8d74",
+          "size_bytes": 11709
+        },
+        {
+          "path": "proof-search/disproof/CODEX_BRANCHING_CENTER_HOSTILE_AUDIT_2026-08-24.md",
+          "git_blob_sha": "bde4f90aef186c4bf1c67da5849116f7201a6011",
+          "size_bytes": 8363
+        },
+        {
+          "path": "proof-search/disproof/CODEX_BRANCHING_CENTER_SHOT_2026-08-24.md",
+          "git_blob_sha": "381f7a4b58b89f958d61dce91e0509ad9764afd0",
+          "size_bytes": 9833
+        },
+        {
+          "path": "proof-search/disproof/CODEX_DISPROOF_CYCLE_DP_AUDIT_2026-08-24.md",
+          "git_blob_sha": "8accf634068a3a31e7ad16f1ce9daeaee1774f65",
+          "size_bytes": 4057
+        },
+        {
+          "path": "proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_HOSTILE_AUDIT_2026-08-24.md",
+          "git_blob_sha": "47629516fe3060e6501e59fd89fed3eb0cb14d13",
+          "size_bytes": 9197
+        },
+        {
+          "path": "proof-search/disproof/CODEX_FINITE_RESIDUE_FIRST_INTEGRAL_SHOT_2026-08-24.md",
+          "git_blob_sha": "484b682668162219f96c71573995833c6eb97995",
+          "size_bytes": 10431
+        },
+        {
+          "path": "proof-search/disproof/CODEX_F_POLY_RATCHET_HOSTILE_AUDIT_2026-08-24.md",
+          "git_blob_sha": "6f366166d081d17545349096901acd34deb1b7e9",
+          "size_bytes": 12837
+        },
+        {
+          "path": "proof-search/disproof/CODEX_F_POLY_RATCHET_SHOT_2026-08-24.md",
+          "git_blob_sha": "37a25fea553e350ce307444183539dcb40dd513e",
+          "size_bytes": 7750
+        },
+        {
+          "path": "proof-search/disproof/CODEX_SMOOTH_RATIO_SEMICONJUGACY_SHOT_2026-08-24.md",
+          "git_blob_sha": "812eeb6aac40c86945c283af222f0c8eee7e4b8b",
+          "size_bytes": 6523
+        },
+        {
+          "path": "proof-search/disproof/CODEX_TM_MAHLER_ANCHOR_2026-08-24.md",
+          "git_blob_sha": "8a7930cd5d76a4730c52036b372c31e3758db093",
+          "size_bytes": 4860
+        },
+        {
+          "path": "proof-search/disproof/CODEX_TWO_PUMP_DEPENDENCY_AUDIT_2026-08-24.md",
+          "git_blob_sha": "fb29922857c7933c0e34e2b76d8b93b1b8d979e1",
+          "size_bytes": 6208
+        },
+        {
+          "path": "proof-search/disproof/TM_Prefix_Return_Exclusion_2026-09-05.md",
+          "git_blob_sha": "549897a330a1485bd796af36b22c406f92967b24",
+          "size_bytes": 12127
+        },
+        {
+          "path": "proof-search/effective-flashes/README.md",
+          "git_blob_sha": "5ef615250aeaa58febbc720af3877eac86c7c7a9",
+          "size_bytes": 2251
+        },
+        {
+          "path": "proof-search/effective-flashes/issue-10-phase-summability.md",
+          "git_blob_sha": "8b859e4c7fd6da9b5b654c3f1f89c18e208fc120",
+          "size_bytes": 3547
+        },
+        {
+          "path": "proof-search/effective-flashes/issue-11-finite-adelic-phase.md",
+          "git_blob_sha": "e3e28963428cbb2da7bf90b6f890d63d3fc38842",
+          "size_bytes": 3451
+        },
+        {
+          "path": "proof-search/effective-flashes/issue-7-reciprocal-summability.md",
+          "git_blob_sha": "ec1fb81a48d0f0b6dfa395d98a27263d563dffd6",
+          "size_bytes": 4260
+        },
+        {
+          "path": "proof-search/effective-flashes/issue-9-global-carry-rigidity.md",
+          "git_blob_sha": "133f8cee4d7cfeefe11a7553c1c8f1c498d3d12b",
+          "size_bytes": 3383
+        },
+        {
+          "path": "proof-search/lemmas/Bounded_Ancestor_Depth_Obstruction.md",
+          "git_blob_sha": "8361c57c2d9f3995a32344040102273b93ff1b45",
+          "size_bytes": 11201
+        },
+        {
+          "path": "proof-search/lemmas/Complementary_Ancestor_Cylinders.md",
+          "git_blob_sha": "ef7d353a279ec2ccb169aa33ef9dc3a498f50e72",
+          "size_bytes": 7808
+        },
+        {
+          "path": "proof-search/lemmas/Finite_Growing_First_Return_Spells.md",
+          "git_blob_sha": "3054fbfcef530df9b1291ebd3e4f9a7592081f9e",
+          "size_bytes": 7486
+        },
+        {
+          "path": "proof-search/lemmas/Finite_Palette_Bounded_Progress_Obstruction.md",
+          "git_blob_sha": "9a4b4f997cf1895c5797efbce74c55321e2a1752",
+          "size_bytes": 10351
+        },
+        {
+          "path": "proof-search/lemmas/L0_Global_Descent_Equivalence.md",
+          "git_blob_sha": "bf3ba25a7cf875c1573422c13ed7076a97af873a",
+          "size_bytes": 4304
+        },
+        {
+          "path": "proof-search/lemmas/L10_Near_Return_and_Dual_Residue_Certificate.md",
+          "git_blob_sha": "29ed38b0d76e7650e40bc069fef3df4a2ac652c9",
+          "size_bytes": 8335
+        },
+        {
+          "path": "proof-search/lemmas/L11_Near_Return_Hard_Exit_Inheritance.md",
+          "git_blob_sha": "538c9ad0a911004bba771491b445de5b57b44610",
+          "size_bytes": 5857
+        },
+        {
+          "path": "proof-search/lemmas/L12_Hard_Exit_Gap_Valuation_Transition.md",
+          "git_blob_sha": "7b80dbb9d47927d875cf6904a515be6cb9fdf101",
+          "size_bytes": 8949
+        },
+        {
+          "path": "proof-search/lemmas/L13_Refined_Mersenne_Child_Macros.md",
+          "git_blob_sha": "ccb81205057c05e86321d2eaba42a7f814cd1b66",
+          "size_bytes": 11277
+        },
+        {
+          "path": "proof-search/lemmas/L14_ThreeNMinusOne_Trajectory_Normal_Form.md",
+          "git_blob_sha": "1dabf0490877faa627b2ab3166c0a826a0d4fcdb",
+          "size_bytes": 7810
+        },
+        {
+          "path": "proof-search/lemmas/L15_Expanded_Rewrite_and_Mixed_Inverse_Words.md",
+          "git_blob_sha": "1ccd668cf89a1c5339599c87492cfd5982d8480e",
+          "size_bytes": 8910
+        },
+        {
+          "path": "proof-search/lemmas/L15_Quarter_Gap_and_Rotation_Block_Certificate.md",
+          "git_blob_sha": "34252874ea61918554addf6cbb50b4d4a48a3b5c",
+          "size_bytes": 8584
+        },
+        {
+          "path": "proof-search/lemmas/L1_Exact_Prefix_Descent_Bound.md",
+          "git_blob_sha": "09f396db5ca7e3f00f8d67bb32c330cbba65078e",
+          "size_bytes": 4175
+        },
+        {
+          "path": "proof-search/lemmas/L2_Cylinder_Refinement_and_Slope_Pruning.md",
+          "git_blob_sha": "677e27d78eba1ef716a0f7a014d12ce46cc67867",
+          "size_bytes": 6427
+        },
+        {
+          "path": "proof-search/lemmas/L3_Trailing_Ternary_Two_Coalescence.md",
+          "git_blob_sha": "ada99d40508e2b8ead81c24b0465d0a7e46aac88",
+          "size_bytes": 5465
+        },
+        {
+          "path": "proof-search/lemmas/L4_General_Inverse_Word_Coalescence.md",
+          "git_blob_sha": "dde6d848232dcea3200ce35b11b9db1807a91442",
+          "size_bytes": 7583
+        },
+        {
+          "path": "proof-search/lemmas/L5_Inverse_Word_Search_Completeness_Bound.md",
+          "git_blob_sha": "cf59235fba1631b950c1840ca98b8fb1848e5755",
+          "size_bytes": 8166
+        },
+        {
+          "path": "proof-search/lemmas/L6_Minimal_Counterexample_Exit_Constraint.md",
+          "git_blob_sha": "2400b0ca03fc0fff8af1ce385e8b46e8f3132a56",
+          "size_bytes": 5624
+        },
+        {
+          "path": "proof-search/lemmas/L7_Least_Counterexample_Coefficient_Barrier.md",
+          "git_blob_sha": "6ce3f67854200e1b7388d92256c504f72dd2eb63",
+          "size_bytes": 5904
+        },
+        {
+          "path": "proof-search/lemmas/L8_Farey_Certified_Coefficient_Barrier.md",
+          "git_blob_sha": "a1e213e451e60a87bc8e79b45fedfbea395d3fb5",
+          "size_bytes": 7601
+        },
+        {
+          "path": "proof-search/lemmas/L9_First_Contraction_Mechanical_Envelope.md",
+          "git_blob_sha": "cb5d9504cbb7845eeec4e800cdf23ce3f497fe3a",
+          "size_bytes": 7758
+        },
+        {
+          "path": "proof-search/lemmas/Postspell_Guarded_Root_Descent.md",
+          "git_blob_sha": "097339a77aef280b109833d8d4d5698b24ebdcf2",
+          "size_bytes": 8685
+        },
+        {
+          "path": "proof-search/lemmas/Postspell_Odd_Run_Obstruction.md",
+          "git_blob_sha": "cdd25074f43cbfc1961e09f844ebe71c2405545c",
+          "size_bytes": 5288
+        },
+        {
+          "path": "proof-search/lemmas/Q2_Exit_Descent.md",
+          "git_blob_sha": "0a53647915fe34977166d85d222503d95f79cfe7",
+          "size_bytes": 8794
+        },
+        {
+          "path": "proof-search/lemmas/Residue20_Refined_Ancestor.md",
+          "git_blob_sha": "e0e957990cf86e5efce06231f57a2cbea5f890ce",
+          "size_bytes": 9936
+        },
+        {
+          "path": "proof-search/lemmas/Residue20_Valuation_Ancestor.md",
+          "git_blob_sha": "8157174e421031b00dc2172530646b38f1bd6f5b",
+          "size_bytes": 10359
+        },
+        {
+          "path": "proof-search/lemmas/Root_Relative_Burst_Descent.md",
+          "git_blob_sha": "894ef5fe2313add6bd7d412a69f4d678664c1b8c",
+          "size_bytes": 8619
+        },
+        {
+          "path": "proof-search/lemmas/Two_Burst_Recharge_Escape.md",
+          "git_blob_sha": "e2f05b1334548d9a250ebcdb38dece57ed04bfb3",
+          "size_bytes": 11545
+        },
+        {
+          "path": "proof-search/routes/AB_direct_H_return_and_renewal_filters.md",
+          "git_blob_sha": "771bc42b75c52ac89c58bace363c818e5b80beb0",
+          "size_bytes": 8623
+        },
+        {
+          "path": "proof-search/routes/AB_finite_residue_original_return_no_go.md",
+          "git_blob_sha": "08d684cbf57509265978598b6d8333f798c66f78",
+          "size_bytes": 10298
+        },
+        {
+          "path": "proof-search/routes/AB_frozen_debt_size_rank_no_go.md",
+          "git_blob_sha": "e7975fc8443e2c891ffb68c3cc29b8151e8125f4",
+          "size_bytes": 7027
+        },
+        {
+          "path": "proof-search/routes/AB_hard_boundary_return_system.md",
+          "git_blob_sha": "46dd59150fd776cf47aee0a9624b420a46349382",
+          "size_bytes": 5398
+        },
+        {
+          "path": "proof-search/routes/AB_mersenne_inverse_word_no_go.md",
+          "git_blob_sha": "55f6036703ac652556f340109fd2df3aef26ed67",
+          "size_bytes": 10002
+        },
+        {
+          "path": "proof-search/routes/AB_mixed_radix_coalescence_bridge.md",
+          "git_blob_sha": "f3bd78aed3cc56c242b5a062daa973251787d53d",
+          "size_bytes": 9876
+        },
+        {
+          "path": "proof-search/routes/AB_prime_renewal_finite_window_no_go.md",
+          "git_blob_sha": "393a9f8b65be7d73d327fabe8a12fc03bb0690dd",
+          "size_bytes": 7448
+        },
+        {
+          "path": "proof-search/routes/AB_ternary_normalized_core_residue_obstruction.md",
+          "git_blob_sha": "50cdb4bd7e7c797720430ca362d489bd5fffe22d",
+          "size_bytes": 19084
+        },
+        {
+          "path": "proof-search/routes/AB_three_adic_rank_no_go.md",
+          "git_blob_sha": "31cdcbb6792ceab9e3347716a851930cf3ba4dc7",
+          "size_bytes": 7097
+        },
+        {
+          "path": "proof-search/routes/AC_shadow_debt_recharge.md",
+          "git_blob_sha": "dbc92ade37ff83d69286921447f7e1e391e7f3a9",
+          "size_bytes": 6772
+        },
+        {
+          "path": "proof-search/routes/A_yah_2local_edge_potential_no_go.md",
+          "git_blob_sha": "703e2551a49f97d78c93aae1937ad9ef895f99d5",
+          "size_bytes": 5326
+        },
+        {
+          "path": "proof-search/routes/A_yah_finite_obstruction_formal_audit.md",
+          "git_blob_sha": "5eef2edf9f2ae77a7cc07e30bd9fdb05428a1128",
+          "size_bytes": 8447
+        },
+        {
+          "path": "proof-search/routes/A_yah_two_state_scalar_arctic_full_no_start.md",
+          "git_blob_sha": "4e4687a8d5b517a7556908811be651a1257f9dfc",
+          "size_bytes": 7648
+        },
+        {
+          "path": "proof-search/routes/A_yah_two_state_semantic_label_no_go.md",
+          "git_blob_sha": "75ce63660343057b865452557636b64784460510",
+          "size_bytes": 8514
+        },
+        {
+          "path": "proof-search/routes/B_recursive_residue_graph.md",
+          "git_blob_sha": "83d0fb73645e04884d0b08e369696a3664015125",
+          "size_bytes": 7832
+        },
+        {
+          "path": "proof-search/routes/F_bounded_alphabet_endpoint_residue_gate.md",
+          "git_blob_sha": "3d85f99ab711f2d1d8b4a9d2557824d546f7feb8",
+          "size_bytes": 8400
+        },
+        {
+          "path": "proof-search/sources/Primary_Bridge_Audit_2026-09-05.md",
+          "git_blob_sha": "dbd43c05146f7f64db3a5aa337909c2ab004389d",
+          "size_bytes": 12269
+        },
+        {
+          "path": "proof-search/sources/Sufficiency_Rank_Audit_2026-09-05.md",
+          "git_blob_sha": "8f1c6ebc4f9f43148e72104b64f4ad743a469bcf",
+          "size_bytes": 10538
+        },
+        {
+          "path": "publication/README.md",
+          "git_blob_sha": "d36774f25c8184a587bc7b864377f16c868d7428",
+          "size_bytes": 6129
+        },
+        {
+          "path": "publication/VENUES.md",
+          "git_blob_sha": "a48a490ce4c4a6881eab694edd331ca9d6e93c56",
+          "size_bytes": 10535
+        },
+        {
+          "path": "publication/YAH_SCALAR_ARCTIC_CANDIDATE.md",
+          "git_blob_sha": "589a166ed130a78a6d664270444273307f255641",
+          "size_bytes": 3468
+        },
+        {
+          "path": "publication/announcement.md",
+          "git_blob_sha": "3e3abfff28f80044eef389df8f27d0f6d4454eb2",
+          "size_bytes": 9543
+        },
+        {
+          "path": "publication/build.py",
+          "git_blob_sha": "dc0e80ca0d1c35732c6113a12121cf51df93ef3f",
+          "size_bytes": 17722
+        },
+        {
+          "path": "publication/claims.json",
+          "git_blob_sha": "946e7693e5d916405f0bf21d8b6376a879a93a23",
+          "size_bytes": 41600
+        },
+        {
+          "path": "publication/metadata.json",
+          "git_blob_sha": "16cc30098631434236102594f8daa8ff9227bf57",
+          "size_bytes": 8081
+        },
+        {
+          "path": "publication/publish_release.py",
+          "git_blob_sha": "0038719964e45a4a377fc49dcddf17ff8cfec23f",
+          "size_bytes": 13111
+        },
+        {
+          "path": "publication/verify_source.py",
+          "git_blob_sha": "40a75d614451d0b09dcab0b8df2227f4a0fbebaa",
+          "size_bytes": 17568
+        },
+        {
+          "path": "publication/vibemathed-schema.json",
+          "git_blob_sha": "fc6050b77e0b9c743dc5a1e8ff2ee7161a8c7bad",
+          "size_bytes": 13739
+        },
+        {
+          "path": "publication/yah-obstruction.md",
+          "git_blob_sha": "9f80444928fd96cd91920478591fed83aed9ca30",
+          "size_bytes": 17007
+        },
+        {
+          "path": "requirements-math.txt",
+          "git_blob_sha": "7c9cce518dd497d820927d4629c60014ebf3fcd9",
+          "size_bytes": 110
+        },
+        {
+          "path": "research-objects/BANK_EXPORT_MANIFEST.json",
+          "git_blob_sha": "e5275db14ce183cecdf563c0a16b20030a1ab5cc",
+          "size_bytes": 4420
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/FINITE_PALETTE.md",
+          "git_blob_sha": "7b0b55c0cdc5327542e28b8a2fc10ac4c4d4953c",
+          "size_bytes": 10401
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/ISSUE7_PROVENANCE.md",
+          "git_blob_sha": "8a5f246cb767160c6f9521e4766bb20a4f8427de",
+          "size_bytes": 8918
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/ISSUE_CONTRIBUTIONS.md",
+          "git_blob_sha": "5e014fc429597ed34d331e69f8e5fe136088ef17",
+          "size_bytes": 10850
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/LEGACY_CONTRIBUTIONS.md",
+          "git_blob_sha": "30a9953c0bda981569bc3e24643fbeabcf0111db",
+          "size_bytes": 14051
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/MODERN_CONTRIBUTIONS.md",
+          "git_blob_sha": "60e905ad6cf5a3daa2bf0d0b5de27d5ceb19bad4",
+          "size_bytes": 11531
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/NEW_DISCOVERY_SCREEN.md",
+          "git_blob_sha": "13c0d2fe516b207f575c372661847e956166be1e",
+          "size_bytes": 9704
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/REPORT.md",
+          "git_blob_sha": "a3793bb54822db34d4a1a6c663bba3c23c389605",
+          "size_bytes": 8777
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/YAH_NOVELTY.md",
+          "git_blob_sha": "919b6e01fa4ab79f84394657fc13b5548f6da8b9",
+          "size_bytes": 16768
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/YAH_SEMANTICS.md",
+          "git_blob_sha": "83f580b55bd55669f7395ce0c86e8e4f22155eb4",
+          "size_bytes": 13475
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/discovery.json",
+          "git_blob_sha": "22e5541fc94bf0c26c3bc95379ace66f6a58e4b3",
+          "size_bytes": 4315
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/failure-ledger-id-map.json",
+          "git_blob_sha": "54a95b1474abc14ea4eac611290d735277c77b79",
+          "size_bytes": 999
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/input-heads.json",
+          "git_blob_sha": "a6fc8f7592ce0d448bc5a6702e13b7db106a88ad",
+          "size_bytes": 9623
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/issue-source-snapshot.json",
+          "git_blob_sha": "3c5c521a18e7146621993de355c41c817db38ddd",
+          "size_bytes": 55822
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/legacy-paths.json",
+          "git_blob_sha": "f1d548158c22a71ae989d6ebce1324298520a6a7",
+          "size_bytes": 6282
+        },
+        {
+          "path": "research-review/consolidation-2026-09-05/yah-semantic-differential.py",
+          "git_blob_sha": "e5c16bafa5fc78bd6e8d85067b7d83279e6d2015",
+          "size_bytes": 6132
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/COMPARISONS.md",
+          "git_blob_sha": "3874adf1d7ca769f047b1ed8ebf97801688a040f",
+          "size_bytes": 4885
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/REPORT.md",
+          "git_blob_sha": "ffc74860539530039b024910b500d968b2a762c4",
+          "size_bytes": 15310
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/SEARCH_LOG.md",
+          "git_blob_sha": "ba3af3a453352ec356db1a8fe3933121e49f8a64",
+          "size_bytes": 8836
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/YAH_REVIEW.md",
+          "git_blob_sha": "c477efc6617a2d8b983612fe58e3b99e15ac7bbe",
+          "size_bytes": 9920
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/discovery.json",
+          "git_blob_sha": "9c79df99a1cc23d1d8e73cf036b08286478206c9",
+          "size_bytes": 6241
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/references.bib",
+          "git_blob_sha": "e59e20eda7ae24c7ee0c9761a6c6721b27e1ada6",
+          "size_bytes": 10066
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/review.json",
+          "git_blob_sha": "2799f2377f6e9bd84e5b846cde7f599d78b0c26f",
+          "size_bytes": 13332
+        },
+        {
+          "path": "research-review/novelty-2026-09-05/workflow-rehearsal.json",
+          "git_blob_sha": "ab2dcb74812634416f5cb9d21ab3d1e65fb0eeda",
+          "size_bytes": 1576
+        },
+        {
+          "path": "research/blind-2026-09-05/AlternatingGrowth.lean",
+          "git_blob_sha": "eb0df672d918d9a30f9c1b425bd152f9744acb5c",
+          "size_bytes": 5914
+        },
+        {
+          "path": "research/blind-2026-09-05/BlindAttempt.md",
+          "git_blob_sha": "e0117d7d6aaa6848f48911bf895c2cd6038f0558",
+          "size_bytes": 12176
+        },
+        {
+          "path": "research/blind-2026-09-05/Descent.lean",
+          "git_blob_sha": "f4746dd31a27245db57900b76fb974fc4ab7b8d1",
+          "size_bytes": 2468
+        },
+        {
+          "path": "research/blind-2026-09-05/InverseNotes.md",
+          "git_blob_sha": "18fdd9e691135c140d11153afce8e32aaf07ed1e",
+          "size_bytes": 5430
+        },
+        {
+          "path": "research/blind-2026-09-05/README.md",
+          "git_blob_sha": "07aa08a564eede5623ce40d3ea787c995c265df7",
+          "size_bytes": 1453
+        },
+        {
+          "path": "research/blind-2026-09-05/RepetitionBound.lean",
+          "git_blob_sha": "b93d0378e634082b234b4271cfe215a3d08922c2",
+          "size_bytes": 4391
+        },
+        {
+          "path": "research/blind-2026-09-05/SymbolicNotes.md",
+          "git_blob_sha": "96f483d8301b1f6ece1c2294cc77c659da70b680",
+          "size_bytes": 10574
+        },
+        {
+          "path": "tests/test_assertion_modes.py",
+          "git_blob_sha": "f68b684ae124f27b274cf5d6dcf91d3ccc9abbd3",
+          "size_bytes": 1994
+        },
+        {
+          "path": "tests/test_multi_excursion_budget.py",
+          "git_blob_sha": "8925dffcf293c4389b34a732fdf19b794f127df5",
+          "size_bytes": 1641
+        },
+        {
+          "path": "tests/test_publication_export.py",
+          "git_blob_sha": "025e169d5d3bbdb1a326160aac69ca731526162a",
+          "size_bytes": 9285
+        },
+        {
+          "path": "tests/test_publication_release.py",
+          "git_blob_sha": "f8b6c1cbfb49098c99b51dd5aabe03d0fd8aeef4",
+          "size_bytes": 11977
+        },
+        {
+          "path": "tests/test_publication_verification.py",
+          "git_blob_sha": "80722446495d28a3d3649770dfee83b708471985",
+          "size_bytes": 9429
+        },
+        {
+          "path": "verification/Blind_Recurrence_Verification_2026-09-05.md",
+          "git_blob_sha": "beef72f5823eaecc12e578a6f4eb7fde37deaea6",
+          "size_bytes": 5194
+        },
+        {
+          "path": "verification/Quarter_Gap_Formal_Scope_2026-09-05.md",
+          "git_blob_sha": "844cc2b25af78aef7ea2c27dd2f0651ce6db454e",
+          "size_bytes": 5511
+        },
+        {
+          "path": "verification/README.md",
+          "git_blob_sha": "de8f44d99acd9bd10d5beea12adc54f546035c0c",
+          "size_bytes": 23909
+        },
+        {
+          "path": "verification/RELEASE_AUDIT_2026-08-24.md",
+          "git_blob_sha": "f295d3379cd8944a5f4ed60e676f8b0a389da987",
+          "size_bytes": 6145
+        },
+        {
+          "path": "verification/blind_arithmetic_00.txt",
+          "git_blob_sha": "a268f410104a28091a8bbb01fc34dffdca6108a3",
+          "size_bytes": 279
+        },
+        {
+          "path": "verification/blind_arithmetic_01.txt",
+          "git_blob_sha": "d056e51dafcca3f8a859b51296ae30695776fdaa",
+          "size_bytes": 988
+        },
+        {
+          "path": "verification/blind_arithmetic_02.txt",
+          "git_blob_sha": "418c2062f3dc17ee51a541e17cdf1aaccf501442",
+          "size_bytes": 163
+        },
+        {
+          "path": "verification/blind_arithmetic_03.txt",
+          "git_blob_sha": "169c1b6185d9873247387961835f003ba0cce69a",
+          "size_bytes": 690
+        },
+        {
+          "path": "verification/blind_arithmetic_04.txt",
+          "git_blob_sha": "c522fbd932f08ffe581b96dea08d21859ad1b3bc",
+          "size_bytes": 273
+        },
+        {
+          "path": "verification/blind_arithmetic_05.txt",
+          "git_blob_sha": "4ec4498382307d30a3ff0f2d4d387c20d6424dfd",
+          "size_bytes": 341
+        },
+        {
+          "path": "verification/blind_arithmetic_06.txt",
+          "git_blob_sha": "fa02d7295afa8ad092c13c6642ff2274d5a27326",
+          "size_bytes": 336
+        },
+        {
+          "path": "verification/blind_arithmetic_07.txt",
+          "git_blob_sha": "c3fbf746b27b7a4fc27c2eccb32585d2fc5e17cd",
+          "size_bytes": 972
+        },
+        {
+          "path": "verification/blind_arithmetic_08.txt",
+          "git_blob_sha": "ea6a73be8e8f7bd3a2ef756669b4a16e45a7ab72",
+          "size_bytes": 1383
+        },
+        {
+          "path": "verification/blind_arithmetic_09.txt",
+          "git_blob_sha": "a2a914c171906b414e871dacdc73a2a65c406f27",
+          "size_bytes": 675
+        },
+        {
+          "path": "verification/blind_arithmetic_10.txt",
+          "git_blob_sha": "19778f3f1b5369aac4d8a748435674cc01f991de",
+          "size_bytes": 656
+        },
+        {
+          "path": "verification/blind_arithmetic_11.txt",
+          "git_blob_sha": "53d68b1806b43fbbaa0192ffbfdd94fc52822f44",
+          "size_bytes": 530
+        },
+        {
+          "path": "verification/blind_arithmetic_12.txt",
+          "git_blob_sha": "53d68b1806b43fbbaa0192ffbfdd94fc52822f44",
+          "size_bytes": 530
+        },
+        {
+          "path": "verification/blind_arithmetic_13.txt",
+          "git_blob_sha": "d5a831fda16f39aacfbfbdfc94fc891c276f5097",
+          "size_bytes": 745
+        },
+        {
+          "path": "verification/blind_arithmetic_14.txt",
+          "git_blob_sha": "d5a831fda16f39aacfbfbdfc94fc891c276f5097",
+          "size_bytes": 745
+        },
+        {
+          "path": "verification/blind_arithmetic_15.txt",
+          "git_blob_sha": "7474a06d3ba60e7abc9f0dc5774f68cbea5c28e4",
+          "size_bytes": 123
+        },
+        {
+          "path": "verification/blind_arithmetic_16.txt",
+          "git_blob_sha": "7474a06d3ba60e7abc9f0dc5774f68cbea5c28e4",
+          "size_bytes": 123
+        },
+        {
+          "path": "verification/blind_arithmetic_17.txt",
+          "git_blob_sha": "d0528a77d92e47a9fc0ee5cbc80b6a28d87bb5dd",
+          "size_bytes": 79
+        },
+        {
+          "path": "verification/blind_arithmetic_18.txt",
+          "git_blob_sha": "d0528a77d92e47a9fc0ee5cbc80b6a28d87bb5dd",
+          "size_bytes": 79
+        },
+        {
+          "path": "verification/blind_arithmetic_19.txt",
+          "git_blob_sha": "3c2cdd5b08f0e1a37cb4ee0fdfd9823de1753d31",
+          "size_bytes": 671
+        },
+        {
+          "path": "verification/blind_arithmetic_20.txt",
+          "git_blob_sha": "3c2cdd5b08f0e1a37cb4ee0fdfd9823de1753d31",
+          "size_bytes": 671
+        },
+        {
+          "path": "verification/blind_final_note_graph.txt",
+          "git_blob_sha": "3e059ac9a4c0eb1d5350c0728406e16b0657809f",
+          "size_bytes": 163
+        },
+        {
+          "path": "verification/blind_formal_00.txt",
+          "git_blob_sha": "5315c24ffbe16b903d9b0d5b3669bb31daa804de",
+          "size_bytes": 11206
+        },
+        {
+          "path": "verification/blind_formal_01.txt",
+          "git_blob_sha": "7c1f298c7d8abf1a820444466d594899edfadf19",
+          "size_bytes": 225
+        },
+        {
+          "path": "verification/blind_formal_02.txt",
+          "git_blob_sha": "2095be4e3208dcc4a73a91c86dea876e74e3fb70",
+          "size_bytes": 503
+        },
+        {
+          "path": "verification/blind_formal_03.txt",
+          "git_blob_sha": "446c3d8ef15e310c390b9b6c8847a221d02001d6",
+          "size_bytes": 405
+        },
+        {
+          "path": "verification/blind_formal_04.txt",
+          "git_blob_sha": "d8fd3b456ec64825a108586d189de80577068a3a",
+          "size_bytes": 38
+        },
+        {
+          "path": "verification/blind_formal_05.txt",
+          "git_blob_sha": "f322db5438f4205d0c027000757a916a8582f838",
+          "size_bytes": 39
+        },
+        {
+          "path": "verification/blind_formal_06.txt",
+          "git_blob_sha": "bf231aa657a03d15be7f2c3b53d3f7e1ab4feaed",
+          "size_bytes": 437
+        },
+        {
+          "path": "verification/blind_formal_07.txt",
+          "git_blob_sha": "805fdd3ee3b76a34f4a8e027adca8c1c16a9c96d",
+          "size_bytes": 758
+        },
+        {
+          "path": "verification/blind_formal_08.txt",
+          "git_blob_sha": "334ccf39714775323997d8b41e35f67f1273e052",
+          "size_bytes": 608
+        },
+        {
+          "path": "verification/blind_parent_complementary_ancestor_check.txt",
+          "git_blob_sha": "942b6a24b6d6c54e9fe539f713e2c207f12b6968",
+          "size_bytes": 330
+        },
+        {
+          "path": "verification/blind_parent_complementary_ancestor_check_optimized.txt",
+          "git_blob_sha": "942b6a24b6d6c54e9fe539f713e2c207f12b6968",
+          "size_bytes": 330
+        },
+        {
+          "path": "verification/blind_parent_q2_exit_descent_check.txt",
+          "git_blob_sha": "b6d098958a847fa8d231d0bcbe90fd9343fa88c5",
+          "size_bytes": 626
+        },
+        {
+          "path": "verification/blind_parent_q2_exit_descent_check_optimized.txt",
+          "git_blob_sha": "b6d098958a847fa8d231d0bcbe90fd9343fa88c5",
+          "size_bytes": 626
+        },
+        {
+          "path": "verification/blind_parent_two_burst_recharge_escape_check.txt",
+          "git_blob_sha": "e3c7e14da6c9149df430a71e98f5be9c40755bf1",
+          "size_bytes": 231
+        },
+        {
+          "path": "verification/blind_parent_two_burst_recharge_escape_check_optimized.txt",
+          "git_blob_sha": "e3c7e14da6c9149df430a71e98f5be9c40755bf1",
+          "size_bytes": 231
+        },
+        {
+          "path": "verification/blind_recurrence_verification.json",
+          "git_blob_sha": "ccd8a5c45b4b2b3cf5f84359d5d4c044ca51a9e2",
+          "size_bytes": 18121
+        },
+        {
+          "path": "verification/blind_word_recurrence_check.py",
+          "git_blob_sha": "51c405e5399e91b7ee328d60c792f4ceb72f371e",
+          "size_bytes": 6939
+        },
+        {
+          "path": "verification/block_arithmetic_certificate.py",
+          "git_blob_sha": "217d1ffc2c3ba0594e78d565b93b3a12e96305bc",
+          "size_bytes": 3888
+        },
+        {
+          "path": "verification/block_arithmetic_certificate_output_2026-09-05.txt",
+          "git_blob_sha": "c3fbf746b27b7a4fc27c2eccb32585d2fc5e17cd",
+          "size_bytes": 972
+        },
+        {
+          "path": "verification/bounded_alphabet_endpoint_residue_gate.py",
+          "git_blob_sha": "f920ae435e254e3366874809656591ece80cbea3",
+          "size_bytes": 7223
+        },
+        {
+          "path": "verification/bounded_alphabet_endpoint_residue_gate_output_2026-08-24.txt",
+          "git_blob_sha": "f2caee109d83b47c5651ed565e4a3d1cace4203c",
+          "size_bytes": 568
+        },
+        {
+          "path": "verification/bounded_ancestor_depth_check.py",
+          "git_blob_sha": "cf8e71f85d0dd5498667be7752fb8ab84bd4e7d9",
+          "size_bytes": 5984
+        },
+        {
+          "path": "verification/bounded_ancestor_depth_output_2026-09-05.json",
+          "git_blob_sha": "f4a44b419f4caaa40f2b23c48acaa3f73da07ee2",
+          "size_bytes": 313
+        },
+        {
+          "path": "verification/check_markdown_math.py",
+          "git_blob_sha": "318a96b90e47e95792d57ab88079cf079510c35c",
+          "size_bytes": 17233
+        },
+        {
+          "path": "verification/check_note_graph.py",
+          "git_blob_sha": "e43058835da6c846462a36d04b4b3575188475af",
+          "size_bytes": 3899
+        },
+        {
+          "path": "verification/check_shadow_debt_recharge.py",
+          "git_blob_sha": "b17e2b44d98b17432c4a4e78f5597af6890640d5",
+          "size_bytes": 3863
+        },
+        {
+          "path": "verification/complementary_ancestor_check.py",
+          "git_blob_sha": "980ab9fb6245c8a911e76abf01693d1c1abd7a64",
+          "size_bytes": 5151
+        },
+        {
+          "path": "verification/complementary_ancestor_output_2026-09-05.json",
+          "git_blob_sha": "942b6a24b6d6c54e9fe539f713e2c207f12b6968",
+          "size_bytes": 330
+        },
+        {
+          "path": "verification/core_residue_obstruction_check.py",
+          "git_blob_sha": "81a384efb4030f33d1182f9211114200c9d1a0fb",
+          "size_bytes": 7047
+        },
+        {
+          "path": "verification/core_residue_obstruction_output_2026-09-05.json",
+          "git_blob_sha": "a2a914c171906b414e871dacdc73a2a65c406f27",
+          "size_bytes": 675
+        },
+        {
+          "path": "verification/direct_H_return_renewal_regression.py",
+          "git_blob_sha": "75cb343869bdd3f7f6fbfab34bb6eb93dbc7c5a0",
+          "size_bytes": 6872
+        },
+        {
+          "path": "verification/disproof_cycle_search.py",
+          "git_blob_sha": "4a028c604afe1c0ccc8410757816943316ccf425",
+          "size_bytes": 7917
+        },
+        {
+          "path": "verification/disproof_cycle_search_output_2026-08-24.txt",
+          "git_blob_sha": "89ea14c4f625ec5b23561cbbdf48a18ff9ca58f7",
+          "size_bytes": 516
+        },
+        {
+          "path": "verification/expanded_rewrite_inverse_word_regression.py",
+          "git_blob_sha": "be7645bfab0aec0907af5b8227e2dc413d93dcee",
+          "size_bytes": 6295
+        },
+        {
+          "path": "verification/finite_first_return_spell_check.py",
+          "git_blob_sha": "ecac5351408d6dd4f39c5731acbbc1333a36e9b5",
+          "size_bytes": 3365
+        },
+        {
+          "path": "verification/finite_first_return_spell_output_2026-09-05.json",
+          "git_blob_sha": "46dfa372f542e2e4e393f05afea3efd77fd992b1",
+          "size_bytes": 205
+        },
+        {
+          "path": "verification/finite_palette_SHA256SUMS_2026-09-05.txt",
+          "git_blob_sha": "81d88b3d025ea9c41e8ef70534f3f05b1841981f",
+          "size_bytes": 2449
+        },
+        {
+          "path": "verification/finite_palette_obstruction.py",
+          "git_blob_sha": "05eb7c30d4280ae412c670b41fee9e55b48ebe41",
+          "size_bytes": 6444
+        },
+        {
+          "path": "verification/finite_palette_verification_2026-09-05.txt",
+          "git_blob_sha": "32c3c2756fa64ec091387671e5a429c366ecf1ec",
+          "size_bytes": 4367
+        },
+        {
+          "path": "verification/finite_residue_hard_return_check.py",
+          "git_blob_sha": "fbf1a6f93f58cbb1327138660767bbc7943e473d",
+          "size_bytes": 6630
+        },
+        {
+          "path": "verification/finite_residue_hard_return_output_2026-09-05.txt",
+          "git_blob_sha": "ea6a73be8e8f7bd3a2ef756669b4a16e45a7ab72",
+          "size_bytes": 1383
+        },
+        {
+          "path": "verification/hard_return_frozen_debt_check.py",
+          "git_blob_sha": "c19db730ba0072494a4644b50e36c2b327c26c52",
+          "size_bytes": 3623
+        },
+        {
+          "path": "verification/hard_return_frozen_debt_output_2026-09-05.txt",
+          "git_blob_sha": "c522fbd932f08ffe581b96dea08d21859ad1b3bc",
+          "size_bytes": 273
+        },
+        {
+          "path": "verification/lean_convergence_ci_2026-09-05.txt",
+          "git_blob_sha": "1116d42c2d36cdd5f933919c11316b1483e404a4",
+          "size_bytes": 4861
+        },
+        {
+          "path": "verification/lean_inverse_word_boundary_build_output_2026-08-23.txt",
+          "git_blob_sha": "07511f3c3065558139dd2194e8611fbfb259d3a4",
+          "size_bytes": 1446
+        },
+        {
+          "path": "verification/lean_inverse_word_boundary_sha256_2026-08-23.txt",
+          "git_blob_sha": "997613908d88724a9581454c92cf027a78539635",
+          "size_bytes": 783
+        },
+        {
+          "path": "verification/lean_quarter_gap_ci_2026-09-05.txt",
+          "git_blob_sha": "73a2a0f42342cabd8f16941507f1b2b9fd064ef8",
+          "size_bytes": 12303
+        },
+        {
+          "path": "verification/math_tool_smoke.py",
+          "git_blob_sha": "4e260631c9e6a6f11d556dbcf2c2beb2d45f6cad",
+          "size_bytes": 983
+        },
+        {
+          "path": "verification/mod27_rank_check.py",
+          "git_blob_sha": "78f05ae60ae9c35a4945b05698990619de111bc9",
+          "size_bytes": 4380
+        },
+        {
+          "path": "verification/mod27_rank_output_2026-09-05.txt",
+          "git_blob_sha": "19778f3f1b5369aac4d8a748435674cc01f991de",
+          "size_bytes": 656
+        },
+        {
+          "path": "verification/multi_excursion_budget_2026-09-05.json",
+          "git_blob_sha": "4a5dd0d71a4dbb70b2963478ddf070988c75bc2d",
+          "size_bytes": 1052
+        },
+        {
+          "path": "verification/multi_excursion_budget_check.py",
+          "git_blob_sha": "98556c579d44d4dab4979e377cb345bc6b098893",
+          "size_bytes": 12803
+        },
+        {
+          "path": "verification/multi_excursion_formal_receipt_2026-09-05.json",
+          "git_blob_sha": "714d3e5ddaf4134049a6bbf913d457dd1dc07eda",
+          "size_bytes": 1377
+        },
+        {
+          "path": "verification/near_return_quarter_bound.py",
+          "git_blob_sha": "c116e9fce2c668c4a6855536a346b39de7be7a71",
+          "size_bytes": 4760
+        },
+        {
+          "path": "verification/near_return_quarter_bound_output_2026-09-05.txt",
+          "git_blob_sha": "169c1b6185d9873247387961835f003ba0cce69a",
+          "size_bytes": 690
+        },
+        {
+          "path": "verification/postspell_guarded_descent_check.py",
+          "git_blob_sha": "367b4c3167d6426255a817be80d4076b0f36d6d7",
+          "size_bytes": 4803
+        },
+        {
+          "path": "verification/postspell_guarded_descent_output_2026-09-05.json",
+          "git_blob_sha": "2244950cd0c6ace8e9e35023c710f88ebccffa7e",
+          "size_bytes": 330
+        },
+        {
+          "path": "verification/postspell_odd_run_check.py",
+          "git_blob_sha": "5059e78127896f3f196438fd31aae05532663a3e",
+          "size_bytes": 3395
+        },
+        {
+          "path": "verification/postspell_odd_run_output_2026-09-05.json",
+          "git_blob_sha": "b73d73eb8d6e998c4cbfe4adae61325871d6e964",
+          "size_bytes": 220
+        },
+        {
+          "path": "verification/primary_bridge_counterexamples.py",
+          "git_blob_sha": "9c61305b9aeca6fab3366f41976ad2d5ffcf5fb0",
+          "size_bytes": 2379
+        },
+        {
+          "path": "verification/primary_bridge_counterexamples_output_2026-09-05.txt",
+          "git_blob_sha": "fa02d7295afa8ad092c13c6642ff2274d5a27326",
+          "size_bytes": 336
+        },
+        {
+          "path": "verification/prime_renewal_regression.py",
+          "git_blob_sha": "ff6864c741845f59204c7a3881fccdd475e9aaaf",
+          "size_bytes": 6023
+        },
+        {
+          "path": "verification/q2_exit_descent_check.py",
+          "git_blob_sha": "ff0360942c17ad306160f420c7946e96df9c45e8",
+          "size_bytes": 4420
+        },
+        {
+          "path": "verification/q2_exit_descent_output_2026-09-05.json",
+          "git_blob_sha": "b6d098958a847fa8d231d0bcbe90fd9343fa88c5",
+          "size_bytes": 626
+        },
+        {
+          "path": "verification/residue20_refined_ancestor_check.py",
+          "git_blob_sha": "9ee0f7c71e7beb425f2420cda50d61872867edb9",
+          "size_bytes": 5484
+        },
+        {
+          "path": "verification/residue20_refined_ancestor_output_2026-09-05.json",
+          "git_blob_sha": "d5a831fda16f39aacfbfbdfc94fc891c276f5097",
+          "size_bytes": 745
+        },
+        {
+          "path": "verification/residue20_valuation_inverse_check.py",
+          "git_blob_sha": "ed247c399a39c52d1808499d916348704d59787f",
+          "size_bytes": 4707
+        },
+        {
+          "path": "verification/residue20_valuation_inverse_output_2026-09-05.json",
+          "git_blob_sha": "53d68b1806b43fbbaa0192ffbfdd94fc52822f44",
+          "size_bytes": 530
+        },
+        {
+          "path": "verification/residue_ancestor_ci_2026-09-05.txt",
+          "git_blob_sha": "20331f5966cf9a498e41ae8a2b1f0bd24ba50d95",
+          "size_bytes": 5488
+        },
+        {
+          "path": "verification/root_burst_descent_check.py",
+          "git_blob_sha": "964313c75a43bf4c4120af7998b5ed5ff74a8f01",
+          "size_bytes": 4695
+        },
+        {
+          "path": "verification/root_burst_descent_output_2026-09-05.txt",
+          "git_blob_sha": "7474a06d3ba60e7abc9f0dc5774f68cbea5c28e4",
+          "size_bytes": 123
+        },
+        {
+          "path": "verification/root_descent_ci_initial_2026-09-05.txt",
+          "git_blob_sha": "6aadb282ecf2c1d598dc0d359620884730f29113",
+          "size_bytes": 2802
+        },
+        {
+          "path": "verification/round-6a/Collatz_Round6A_Claim_Ledger_2026-08-01.csv",
+          "git_blob_sha": "b4db5454969561ee144744e58c010ac9fa9a50fa",
+          "size_bytes": 2513
+        },
+        {
+          "path": "verification/round-6a/collatz_round6a_checks.py",
+          "git_blob_sha": "cd0f6cd96bf7bf175f421545a8bae9ce4d8c7488",
+          "size_bytes": 9093
+        },
+        {
+          "path": "verification/round-6a/round6a_check_output.txt",
+          "git_blob_sha": "59870cd5ab0233ec338857ace42bee2db48c59d4",
+          "size_bytes": 722
+        },
+        {
+          "path": "verification/round7_accelerated_macro_coalescence_output_2026-08-23.txt",
+          "git_blob_sha": "9da908b5926c1ae137f38a882add91231d5fc423",
+          "size_bytes": 4041
+        },
+        {
+          "path": "verification/round7_accelerated_macro_coalescence_search.py",
+          "git_blob_sha": "c836926e24f50bb28e63dc54173bc0078f9a94ca",
+          "size_bytes": 6725
+        },
+        {
+          "path": "verification/round7_affine_coalescence_output_2026-08-23.txt",
+          "git_blob_sha": "8e81662c2d4ad9d97ebdb7688d9215fbf43d1664",
+          "size_bytes": 4312
+        },
+        {
+          "path": "verification/round7_affine_coalescence_search.py",
+          "git_blob_sha": "e1ae485b389c30cd3fdb5de7951f6f5b63ac899b",
+          "size_bytes": 8823
+        },
+        {
+          "path": "verification/round7_exhaustive_inverse_word_classifier.py",
+          "git_blob_sha": "4734270c3e4ad15f9fe7e1a1b43339227c00a096",
+          "size_bytes": 8115
+        },
+        {
+          "path": "verification/round7_exhaustive_inverse_word_classifier_output_2026-08-23.txt",
+          "git_blob_sha": "cd88c0cf7b83944bc9afeb44802690e8c21e6a14",
+          "size_bytes": 4815
+        },
+        {
+          "path": "verification/round7_farey_coefficient_barrier.py",
+          "git_blob_sha": "9a8f49ceb1c18a24fb0456210111ef69f56689b9",
+          "size_bytes": 4586
+        },
+        {
+          "path": "verification/round7_farey_coefficient_barrier_output_2026-08-23.txt",
+          "git_blob_sha": "b0596cb2e3736bcfb43d418b50140e23b496bf87",
+          "size_bytes": 1592
+        },
+        {
+          "path": "verification/round7_first_crossing_oracle.py",
+          "git_blob_sha": "5a2aebcc1a08099d3a2a3865134cb1c8a8744435",
+          "size_bytes": 6869
+        },
+        {
+          "path": "verification/round7_first_crossing_oracle_output_2026-08-23.txt",
+          "git_blob_sha": "7412410fe8882eed465e05ea7877221e52aa4e09",
+          "size_bytes": 1568
+        },
+        {
+          "path": "verification/round7_paradoxical_prefix_barrier.py",
+          "git_blob_sha": "6d38df51f35aef326676d2774e2ebe32f0b57ecc",
+          "size_bytes": 3335
+        },
+        {
+          "path": "verification/round7_paradoxical_prefix_barrier_output_2026-08-23.txt",
+          "git_blob_sha": "7535d4de0adc667e3eb21ee6599d40f7ae605e8b",
+          "size_bytes": 1488
+        },
+        {
+          "path": "verification/round7_survivor_language_signatures.py",
+          "git_blob_sha": "8bc1a747b391405ace62ab76c7298a339c256687",
+          "size_bytes": 2457
+        },
+        {
+          "path": "verification/round7_survivor_language_signatures_output_2026-08-23.txt",
+          "git_blob_sha": "3ae8bc709f283a48375e4334ee159a4a09be049d",
+          "size_bytes": 1605
+        },
+        {
+          "path": "verification/round7_survivor_structure.py",
+          "git_blob_sha": "23d29d87c9104ad353f5ad46a7baa1ff4a23e51b",
+          "size_bytes": 3762
+        },
+        {
+          "path": "verification/round7_survivor_structure_output_2026-08-23.txt",
+          "git_blob_sha": "79efc8e157f298857f25b915a609d0f1ab44a4c7",
+          "size_bytes": 2167
+        },
+        {
+          "path": "verification/run_release_checks.ps1",
+          "git_blob_sha": "8bba4cd7b286e5ef4873a174fa38c054a9a72940",
+          "size_bytes": 2975
+        },
+        {
+          "path": "verification/shadow_debt_recharge_output_2026-09-05.txt",
+          "git_blob_sha": "d0528a77d92e47a9fc0ee5cbc80b6a28d87bb5dd",
+          "size_bytes": 79
+        },
+        {
+          "path": "verification/three_adic_hard_return_check.py",
+          "git_blob_sha": "bea55056bed6ee486df48424e23ffda3bbd6bd59",
+          "size_bytes": 3450
+        },
+        {
+          "path": "verification/three_adic_hard_return_output_2026-09-05.txt",
+          "git_blob_sha": "4ec4498382307d30a3ff0f2d4d387c20d6424dfd",
+          "size_bytes": 341
+        },
+        {
+          "path": "verification/trajectory_normal_form_regression.py",
+          "git_blob_sha": "489a03c920c63db9b8f63c2e376a6684083cc749",
+          "size_bytes": 5816
+        },
+        {
+          "path": "verification/two_burst_ci_2026-09-05.txt",
+          "git_blob_sha": "66f0f6f0bd8cca219e1b9dd985b9196eddaa7c0b",
+          "size_bytes": 45369
+        },
+        {
+          "path": "verification/two_burst_recharge_escape_check.py",
+          "git_blob_sha": "75f93915a22cd80daea553d7b84fd12092541894",
+          "size_bytes": 7954
+        },
+        {
+          "path": "verification/two_burst_recharge_escape_output_2026-09-05.txt",
+          "git_blob_sha": "e3c7e14da6c9149df430a71e98f5be9c40755bf1",
+          "size_bytes": 231
+        },
+        {
+          "path": "verification/yah_2local_edge_no_go.py",
+          "git_blob_sha": "32a0eaa019487747372b840c7f97df5c84f81c39",
+          "size_bytes": 2909
+        },
+        {
+          "path": "verification/yah_finite_obstruction_replay_2026-08-24.txt",
+          "git_blob_sha": "a03d4c767b7ffbe731b394e6b27beb78cb2a47ff",
+          "size_bytes": 2789
+        },
+        {
+          "path": "verification/yah_natural_matrix_2d/README.md",
+          "git_blob_sha": "a528d21502530c2b0644149fbda505c292159290",
+          "size_bytes": 3680
+        },
+        {
+          "path": "verification/yah_natural_matrix_2d/full_bound_2.smt2",
+          "git_blob_sha": "beab84d725d3249c31a424a20c3c11d872e78543",
+          "size_bytes": 84806
+        },
+        {
+          "path": "verification/yah_natural_matrix_2d/full_bound_8.smt2",
+          "git_blob_sha": "9b85b0e54cf4a6e68efdab67f75544f9ccb5c1f3",
+          "size_bytes": 81320
+        },
+        {
+          "path": "verification/yah_natural_matrix_2d/result.json",
+          "git_blob_sha": "6e92d6902fababec10b93c36f8d64b07a81c903a",
+          "size_bytes": 3495
+        },
+        {
+          "path": "verification/yah_natural_matrix_2d/search_natural_matrices.py",
+          "git_blob_sha": "9411786f92eeb96f1e70eca3b6327fd4eb1a2733",
+          "size_bytes": 7573
+        },
+        {
+          "path": "verification/yah_scalar_arctic_top/top_cert_common.py",
+          "git_blob_sha": "194946b8ac5a476b0abcc8958c56039c75d83b10",
+          "size_bytes": 13669
+        },
+        {
+          "path": "verification/yah_scalar_arctic_top/top_certificates.json",
+          "git_blob_sha": "6301a3e9eaa171ba28d3dc0de74698989dffb56b",
+          "size_bytes": 419526
+        },
+        {
+          "path": "verification/yah_scalar_arctic_top/verify_top_certificates.py",
+          "git_blob_sha": "deb348afdf5b5cb6a8176de74e732a4534142f01",
+          "size_bytes": 3511
+        },
+        {
+          "path": "verification/yah_two_state_scalar_arctic_full_no_start.py",
+          "git_blob_sha": "7a5d1c2f308a03133e9cef64569f7d4cb94e7d41",
+          "size_bytes": 6352
+        },
+        {
+          "path": "verification/yah_two_state_semantic_label_no_go.py",
+          "git_blob_sha": "03402b83892062a4aeea35b301e8746ed50793c8",
+          "size_bytes": 11822
+        }
+      ],
+      "url": "https://github.com/Sodelin/Collatz-Conjecture-Work/tree/026aa4ad4be6453a005ab950b160a9f2204c5271",
+      "counts": {
+        "tracked_files": 385,
+        "lean_files": 38
+      }
+    },
+    {
+      "repository": "Sodelin/oldest-conjecture-",
+      "branch": "main",
+      "commit": "48bcf1429395b980198207bf6a876994fab80789",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/workflows/lean.yml",
+          "git_blob_sha": "75af9285288bf0dab50932189d719f8a5d89f25a",
+          "size_bytes": 923
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "d87650339264230471018cfe9d57d95dd8ea99a8",
+          "size_bytes": 36
+        },
+        {
+          "path": "Extension734.lean",
+          "git_blob_sha": "7c935491c2f100fab63a780bdd5a4dbbc31d9e39",
+          "size_bytes": 8072
+        },
+        {
+          "path": "KernelEndpoints734.lean",
+          "git_blob_sha": "2fdc27eb2ccb228cdb6be3aabb935108c465df7f",
+          "size_bytes": 1380
+        },
+        {
+          "path": "KernelIsolation.lean",
+          "git_blob_sha": "43be62d4f569f5795ed69500760ff07e254a0a37",
+          "size_bytes": 3372
+        },
+        {
+          "path": "Plateau302.lean",
+          "git_blob_sha": "440cf8eed3be33136954e9300976748c78e6fcf6",
+          "size_bytes": 8287
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "86ab731d1ade2b2b7bb9b3d1df7879bb77f2d69a",
+          "size_bytes": 4381
+        },
+        {
+          "path": "RESULT-302.md",
+          "git_blob_sha": "7f452d0380009f423598fe8716e32e77fe9820b8",
+          "size_bytes": 4600
+        },
+        {
+          "path": "RESULT-734.md",
+          "git_blob_sha": "f2a20728231486818a92f16a2645e954c81f539c",
+          "size_bytes": 3776
+        },
+        {
+          "path": "docs/frontier-review-request.md",
+          "git_blob_sha": "26747ac13300d7fef48c5b99c347d89a3aeddfad",
+          "size_bytes": 2471
+        },
+        {
+          "path": "docs/general-identity.md",
+          "git_blob_sha": "ab955d64d2f8c1d760057d6deb73d234a713da35",
+          "size_bytes": 5168
+        },
+        {
+          "path": "docs/historical-native-extension-validation.log",
+          "git_blob_sha": "c9fb41fae3ca75d07c445e4c3a91d71cd44f7ebd",
+          "size_bytes": 1701
+        },
+        {
+          "path": "docs/kernel-build-validation.log",
+          "git_blob_sha": "5234d1275aeda8872b5d71915f128dfba39e55e8",
+          "size_bytes": 2703
+        },
+        {
+          "path": "docs/local-lean-validation.log",
+          "git_blob_sha": "e8d2db57c3c76771e7afedd41045cb473226a54f",
+          "size_bytes": 794
+        },
+        {
+          "path": "docs/novelty-record.md",
+          "git_blob_sha": "ed2ca81f3798584df0fb029a7b66acc6d4cc4ae4",
+          "size_bytes": 5274
+        },
+        {
+          "path": "docs/oeis-proposal.md",
+          "git_blob_sha": "ab030c35294fdc8349b3349095a9515408512654",
+          "size_bytes": 1799
+        },
+        {
+          "path": "docs/submission-status.md",
+          "git_blob_sha": "7955cf14b55b03f82d10ce6786cf60b24c738f2b",
+          "size_bytes": 4752
+        },
+        {
+          "path": "docs/target-shortlist.md",
+          "git_blob_sha": "c60a8106cdf2f1779a3072e89879a83967141245",
+          "size_bytes": 5148
+        },
+        {
+          "path": "docs/verification-record.md",
+          "git_blob_sha": "715201597866657bcbf39aeba4151be1c1399fd6",
+          "size_bytes": 3716
+        },
+        {
+          "path": "docs/vibemathed-addendum-receipt.json",
+          "git_blob_sha": "b1a9cb4eafd2d3c8d0e94564b5fb816b557670a3",
+          "size_bytes": 1191
+        },
+        {
+          "path": "docs/vibemathed-submission.json",
+          "git_blob_sha": "65f2572f9d46285dc8edd1de7b3bcdadb3bb9c88",
+          "size_bytes": 4458
+        },
+        {
+          "path": "lake-manifest.json",
+          "git_blob_sha": "3fe83a3f407e5516110c5f7fc695f0180fdca817",
+          "size_bytes": 160
+        },
+        {
+          "path": "lakefile.toml",
+          "git_blob_sha": "fe62e2ff2cab497c22dbfebee171888fce4317a8",
+          "size_bytes": 251
+        },
+        {
+          "path": "lean-toolchain",
+          "git_blob_sha": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+          "size_bytes": 25
+        },
+        {
+          "path": "scripts/local-lake.sh",
+          "git_blob_sha": "87df5e42d60c4956e218db70a1412baffc43fee5",
+          "size_bytes": 654
+        },
+        {
+          "path": "scripts/local-runtime-location.c",
+          "git_blob_sha": "2e3dd02c12369fffacddcce89ea3acccf6f32225",
+          "size_bytes": 1171
+        },
+        {
+          "path": "verify302.py",
+          "git_blob_sha": "fcc12aa1205dac0632b8c7f588592ab12be33ebc",
+          "size_bytes": 1452
+        },
+        {
+          "path": "verify734.py",
+          "git_blob_sha": "b294561cdc43c8d28411f04897aadff633b720e4",
+          "size_bytes": 1004
+        },
+        {
+          "path": "witness302.json",
+          "git_blob_sha": "aa3c3e71d727ce05400ff481e0c1e739a2f29e30",
+          "size_bytes": 6646
+        },
+        {
+          "path": "witness733.json",
+          "git_blob_sha": "ff99609635292cc3f70a204a097991134e8ef6c8",
+          "size_bytes": 6684
+        },
+        {
+          "path": "witness734.json",
+          "git_blob_sha": "cc2f769d818c64e4f434e77d07712affc5d8fbdf",
+          "size_bytes": 6693
+        }
+      ],
+      "url": "https://github.com/Sodelin/oldest-conjecture-/tree/48bcf1429395b980198207bf6a876994fab80789",
+      "counts": {
+        "tracked_files": 31,
+        "lean_files": 4
+      }
+    },
+    {
+      "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
+      "branch": "main",
+      "commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".github/workflows/lean.yml",
+          "git_blob_sha": "333b1648cc3a8ac2dec8c0060f01ff8d8ebc1b0e",
+          "size_bytes": 762
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "c8596ed64e590ff24dc1e617af613cb87c956307",
+          "size_bytes": 86
+        },
+        {
+          "path": "EgyptianFractions.lean",
+          "git_blob_sha": "b7c9bbfce73e83e92042ce5604da44604775eb0e",
+          "size_bytes": 73
+        },
+        {
+          "path": "EgyptianFractions/Baseline18.lean",
+          "git_blob_sha": "4fd51a969882377c51d26dceec640138f1130370",
+          "size_bytes": 2201
+        },
+        {
+          "path": "EgyptianFractions/Certificate.lean",
+          "git_blob_sha": "4788ee529c69bf8aca05562b79ffca68910bca5f",
+          "size_bytes": 3238
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "f5f6c1931d5a82b76257d3f5271cb98f3b076e55",
+          "size_bytes": 2433
+        },
+        {
+          "path": "docs/research-record.md",
+          "git_blob_sha": "4ea7d36ef36719b6bf526e981d299c1fe23e8614",
+          "size_bytes": 10149
+        },
+        {
+          "path": "docs/submission-status.md",
+          "git_blob_sha": "a903b378b24d54f09d2245bc3f71a3fc86f3b18b",
+          "size_bytes": 2679
+        },
+        {
+          "path": "docs/target-shortlist.md",
+          "git_blob_sha": "c60a8106cdf2f1779a3072e89879a83967141245",
+          "size_bytes": 5148
+        },
+        {
+          "path": "lake-manifest.json",
+          "git_blob_sha": "c7c16d6ecd528955b535db13a19947ab05243ba9",
+          "size_bytes": 164
+        },
+        {
+          "path": "lakefile.toml",
+          "git_blob_sha": "6f9ae4fee734c3e4b730debe6f09cefe4deea8f9",
+          "size_bytes": 136
+        },
+        {
+          "path": "lean-toolchain",
+          "git_blob_sha": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+          "size_bytes": 25
+        },
+        {
+          "path": "probes/README.md",
+          "git_blob_sha": "67d81dcbdd26d6ef08dd6fd0185dbc0c9a95255a",
+          "size_bytes": 3801
+        },
+        {
+          "path": "probes/bounded_surgery.cpp",
+          "git_blob_sha": "1a0cc4ae1355f18059f1bf309f479da1c648f6d5",
+          "size_bytes": 4013
+        },
+        {
+          "path": "probes/check_surgery3.py",
+          "git_blob_sha": "baeccf95cfa97a25ac2000a19d51190949f77793",
+          "size_bytes": 1137
+        },
+        {
+          "path": "probes/global34.log",
+          "git_blob_sha": "2cdb6084915e1f84bf0cf442b7cb72295e4c996f",
+          "size_bytes": 13160
+        },
+        {
+          "path": "probes/heuristic_global.cpp",
+          "git_blob_sha": "96ac6b06d013f317ff43773f16a73ec7283e6b81",
+          "size_bytes": 1818
+        },
+        {
+          "path": "probes/surgery3.jsonl",
+          "git_blob_sha": "73abee8d63b76023ccede5efabb37ba73b284f28",
+          "size_bytes": 123
+        },
+        {
+          "path": "probes/surgery4.jsonl",
+          "git_blob_sha": "2ccee885ed908ed11100877068a483a78cbcb902",
+          "size_bytes": 129
+        },
+        {
+          "path": "probes/surgery5.jsonl",
+          "git_blob_sha": "aad735d19696e8ed3b7e29b0db9bc37b8267cc79",
+          "size_bytes": 133
+        },
+        {
+          "path": "scripts/local-lake.sh",
+          "git_blob_sha": "762e143395bd5a6aa19a4707655c6220c74a3dff",
+          "size_bytes": 669
+        },
+        {
+          "path": "scripts/local-runtime-location.c",
+          "git_blob_sha": "2e3dd02c12369fffacddcce89ea3acccf6f32225",
+          "size_bytes": 1171
+        }
+      ],
+      "url": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/tree/566f9800910aae6936d93d1a9f5c756070616f31",
+      "counts": {
+        "tracked_files": 22,
+        "lean_files": 3
+      }
+    },
+    {
+      "repository": "Sodelin/new-math-discovery",
+      "branch": "codex/freeze-blindness-realization",
+      "commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+      "visibility": "public",
+      "tree_complete": true,
+      "files": [
+        {
+          "path": ".gitattributes",
+          "git_blob_sha": "4d9c66ae54666e2d719decf57dd308621bdaf335",
+          "size_bytes": 198
+        },
+        {
+          "path": ".gitignore",
+          "git_blob_sha": "1e655d62fe4092df26939a3d5ffdcf77695e2858",
+          "size_bytes": 30
+        },
+        {
+          "path": "CONSTRUCTION.md",
+          "git_blob_sha": "01433abd48e2f2312ae22d71ee44ab0c8ff77689",
+          "size_bytes": 11342
+        },
+        {
+          "path": "PROVENANCE.md",
+          "git_blob_sha": "39e521dd3a6d7c61494e1e4615440eaae74348cb",
+          "size_bytes": 11831
+        },
+        {
+          "path": "README.md",
+          "git_blob_sha": "35afaf7a4bc82fec80612cf0ffde34bdaa0ca9ff",
+          "size_bytes": 8955
+        },
+        {
+          "path": "REPOSITORY-RELATION.md",
+          "git_blob_sha": "c18aa623d7c460fe9859203cbbeaab5ab631969b",
+          "size_bytes": 1920
+        },
+        {
+          "path": "RG-CERT-0.md",
+          "git_blob_sha": "86eaf67916c1ad511acf5798400a2edf71c966b1",
+          "size_bytes": 13913
+        },
+        {
+          "path": "RG-MACRO-001.md",
+          "git_blob_sha": "c0a236b3ad1235e5321e82f182873ac053f66709",
+          "size_bytes": 12248
+        },
+        {
+          "path": "RG-RANK-OBS-001.md",
+          "git_blob_sha": "f3fa5f771eedc33c9cd90dc91ad1b2c777cee685",
+          "size_bytes": 9855
+        },
+        {
+          "path": "RG-SOUND-001.md",
+          "git_blob_sha": "8d698726680392d882b30151005629872ed1745a",
+          "size_bytes": 13813
+        },
+        {
+          "path": "RG-TRANS-001.md",
+          "git_blob_sha": "f61079c75dac5f758597da4ebdaeda3bf7acfdc6",
+          "size_bytes": 14731
+        },
+        {
+          "path": "STATUS.md",
+          "git_blob_sha": "fc601bde6c0f25fd933da0fb3dd2ee273f3d70b6",
+          "size_bytes": 7410
+        },
+        {
+          "path": "THEOREM.md",
+          "git_blob_sha": "1688a2b542bd75fe913a28da2d4bda853138ca37",
+          "size_bytes": 7263
+        },
+        {
+          "path": "lake-manifest.json",
+          "git_blob_sha": "b29925c8a4fd70483459280ab68b22ee3603334b",
+          "size_bytes": 150
+        },
+        {
+          "path": "lakefile.toml",
+          "git_blob_sha": "630789dc195d89c86786f4f4208d2fbc365d44c7",
+          "size_bytes": 140
+        },
+        {
+          "path": "lean-toolchain",
+          "git_blob_sha": "a8afa7d1b02d96f0671eba854a8dc4b416beb473",
+          "size_bytes": 25
+        },
+        {
+          "path": "lean/NewMathDiscovery.lean",
+          "git_blob_sha": "85ca4ccb44d5fa36d1142e7a6aff2c53d5b0176a",
+          "size_bytes": 47
+        },
+        {
+          "path": "lean/NewMathDiscovery/BlindnessRealization.lean",
+          "git_blob_sha": "e3b153776ddec848b2ed759ae68c5218efd1cf21",
+          "size_bytes": 2647
+        },
+        {
+          "path": "lean/NewMathDiscovery/LinearBlindness.lean",
+          "git_blob_sha": "3be314f1b7c4c2f689a341f8bdaab069f7acb8ab",
+          "size_bytes": 8175
+        },
+        {
+          "path": "lean/NewMathDiscovery/RankedCoalescenceSound.lean",
+          "git_blob_sha": "0cc284250df67d56cc02f2c5460abab09f8425f6",
+          "size_bytes": 4586
+        },
+        {
+          "path": "publication/BLINDNESS_FRONTIER_MEMO.md",
+          "git_blob_sha": "1c98f1d2e8f6e1adce9bb5dd8b5e056ad018db85",
+          "size_bytes": 9079
+        },
+        {
+          "path": "publication/BLINDNESS_REALIZATION_POSTING_PACKET.md",
+          "git_blob_sha": "67e9df2406359049159fdc3ed385d7375cc91138",
+          "size_bytes": 12818
+        },
+        {
+          "path": "research-objects/BANK_EXPORT_MANIFEST.json",
+          "git_blob_sha": "ab7e38cfedc78db68d46839b3bf2aeeeeff2248a",
+          "size_bytes": 5546
+        },
+        {
+          "path": "research-objects/README.md",
+          "git_blob_sha": "1c1263ecd9124342d0eadfe90eaeaaebd43ef8b5",
+          "size_bytes": 1416
+        },
+        {
+          "path": "verification/README.md",
+          "git_blob_sha": "4980e50aa87e59643126d85aa4ffbea2fb681df3",
+          "size_bytes": 2470
+        },
+        {
+          "path": "verification/build_rg_cert0_route_b.py",
+          "git_blob_sha": "7693fa84be2749eba4fdf9e0d7f43c39ef783980",
+          "size_bytes": 29813
+        },
+        {
+          "path": "verification/check_h_fcs_001.py",
+          "git_blob_sha": "6308b94fd1e53305d7ca8762f6cbf04c47ac8388",
+          "size_bytes": 7771
+        },
+        {
+          "path": "verification/check_h_fcs_001_output.txt",
+          "git_blob_sha": "eb683f39fded25d1894a6d3ea74d9fa43c891328",
+          "size_bytes": 322
+        },
+        {
+          "path": "verification/check_rg_cert0.py",
+          "git_blob_sha": "1b7a43404ab1433d3f2683eaf1d975e5b143f68a",
+          "size_bytes": 17577
+        },
+        {
+          "path": "verification/check_rg_macro_001.py",
+          "git_blob_sha": "30af236824149da985acf2cd7a3dd9a826a1b543",
+          "size_bytes": 18839
+        },
+        {
+          "path": "verification/check_rg_macro_001_output.txt",
+          "git_blob_sha": "3d7195c58637e9819b7a1ccd766075c3b0755d2f",
+          "size_bytes": 2038
+        },
+        {
+          "path": "verification/lean_rg_sound_build_output.txt",
+          "git_blob_sha": "7954f75eb18af91102ad6327b46f62110c3629bf",
+          "size_bytes": 969
+        },
+        {
+          "path": "verification/rg_cert0_route_b_build_output.txt",
+          "git_blob_sha": "ef81175bf9db60fff8f2a76f7997738dc33b9b0b",
+          "size_bytes": 548
+        },
+        {
+          "path": "verification/rg_cert0_route_b_check_output.txt",
+          "git_blob_sha": "21f7f2977828aa93ecdcda7391a7a67b019449e1",
+          "size_bytes": 3152
+        },
+        {
+          "path": "verification/rg_cert0_route_b_k12.json",
+          "git_blob_sha": "e31880357a16ec7a81004a7387fe061c77e85d4e",
+          "size_bytes": 783574
+        }
+      ],
+      "url": "https://github.com/Sodelin/new-math-discovery/tree/fc2ce68341a0556cebb4e5843a3127f0881b91db",
+      "counts": {
+        "tracked_files": 35,
+        "lean_files": 4
+      }
+    }
+  ],
+  "readme_generation_note": "This inventory retains all tracked paths, including source/build infrastructure; supporting research groups are curated separately in catalog.json. Source hashes identify existing published bytes."
+}

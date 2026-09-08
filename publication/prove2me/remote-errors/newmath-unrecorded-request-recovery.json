@@ -1,0 +1,35 @@
+{
+  "recovery": {
+    "at": 1788878233.9481864,
+    "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+    "previous_record": {
+      "api_url": "https://prove2.me/api/v1/theorems/15f12888-7a4e-4083-ac77-1981c658aa5b",
+      "intent_id": "82b91c7a1bd140e89dfcb259c170e312",
+      "job_id": "a0744b5b-50e1-4db5-801e-b2246d9e2fb6",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Open",
+      "status": "needs_reconciliation",
+      "theorem_id": "15f12888-7a4e-4083-ac77-1981c658aa5b",
+      "uncertain_action": "verify"
+    },
+    "previous_intent": {
+      "action": "verify_before",
+      "at": 1788877735.7331958,
+      "intent_id": "82b91c7a1bd140e89dfcb259c170e312",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "payload_sha256": "8e4bb9b488554a272018f64b9a14fae070b14562387d498796d62ac5357e8ca6"
+    },
+    "evidence_sha256": "01756af9fcdace67a94bde5853c69955f826b48757eebf5f4fd3dea843bb2cac",
+    "reason": "Two all-status theorem histories, a complete own-submission history, and target Open status confirm no recorded submission more than300seconds after the timed-out request. Explicit review; no automatic POST retry.",
+    "server_submission_count": 0
+  },
+  "checked_at": "2026-09-08T14:36:31.378168+00:00",
+  "target_id": "15f12888-7a4e-4083-ac77-1981c658aa5b",
+  "theorem_history": {
+    "submissions": [],
+    "total": 0
+  },
+  "target_status": "Open",
+  "complete_own_history_count": 12,
+  "own_history_target_matches": 0
+}

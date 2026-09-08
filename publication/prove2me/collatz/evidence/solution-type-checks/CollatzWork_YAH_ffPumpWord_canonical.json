@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (multiplicity : Nat), @Eq.{1} Bool (CollatzWork.YAH.canonical (CollatzWork.YAH.ffPumpWord multiplicity)) Bool.true",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (multiplicity : Nat), @Eq.{1} Bool (CollatzWork.YAH.canonical (CollatzWork.YAH.ffPumpWord multiplicity)) Bool.true",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.ffPumpWord_canonical",
+  "universe_count_equal": true,
+  "solution_sha256": "a39ae35dc0d3b1e27da69bb0a87dc3ad083aade06d24fcf73f216793f0c267ed",
+  "theorem_sha256": "e76ed5a3a6da3136945f334075d4ba91635194d43366df929831e0cdde54e9b9",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_ffPumpWord_canonical.lean",
+  "source_files_unchanged": true
+}

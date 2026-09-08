@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Extension734.full_domain_membership",
-  "theorem_title": "Erdos302Extension734.full_domain_membership",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n",
-  "formal_statement": "theorem Erdos302Extension734.full_domain_membership (x : Nat) :\n x \u2208 fullDomain \u2194 0 < x \u2227 x \u2264 734 := by sorry\n\n",
+  "theorem_title": "The extended counting domain is exactly 1 through 734",
+  "natural_language_statement": "Let $D$ be the source list formed by concatenating the complement of $G=\\{122,183,244,366,732\\}$ in $\\{1,\\ldots,732\\}$, the list of elements of $G$, and $[733,734]$. For every $x\\in\\mathbb N$,\n\n$$\nx\\in D\\quad\\Longleftrightarrow\\quad 0<x\\leq734.\n$$\n\nThis support lemma identifies the explicit list used by the finite cardinality function with the intended interval.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n\n",
+  "formal_statement": "theorem Erdos302Extension734.full_domain_membership (x : Nat) :\n x ∈ fullDomain ↔ 0 < x ∧ x ≤ 734 := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "finite-sets",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L19-L23"
 }

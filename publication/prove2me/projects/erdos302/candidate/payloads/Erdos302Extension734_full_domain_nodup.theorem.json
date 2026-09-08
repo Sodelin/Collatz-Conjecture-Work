@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Extension734.full_domain_nodup",
-  "theorem_title": "Erdos302Extension734.full_domain_nodup",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n",
+  "theorem_title": "The extended counting domain has no repeated entries",
+  "natural_language_statement": "Let $D$ be the list obtained by concatenating the complement of $G=\\{122,183,244,366,732\\}$ in $\\{1,\\ldots,732\\}$, the gadget list $G$, and $[733,734]$. Then\n\n$$\nD\\text{ has no duplicate entries}.\n$$\n\nThis counting-interface lemma ensures that filtering the domain measures set cardinality rather than multiplicity.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n\n",
   "formal_statement": "theorem Erdos302Extension734.full_domain_nodup : fullDomain.Nodup := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "finite-sets",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L25-L31"
 }

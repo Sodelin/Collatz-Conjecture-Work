@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.descent_iff_convergence",
-  "theorem_title": "BlindCollatz.descent_iff_convergence",
-  "natural_language_statement": "Exact reduction only: proving either side would prove the conjecture.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveDescent\n\n\n",
-  "formal_statement": "theorem BlindCollatz.descent_iff_convergence : UniversalDescent \u2194 CollatzConjecture := by sorry\n\n",
+  "theorem_title": "Ordinary Collatz convergence is equivalent to universal descent",
+  "natural_language_statement": "Let $C:\\mathbb N\\to\\mathbb N$ be the ordinary Collatz map: $C(n)=n/2$ for even $n$ and $C(n)=3n+1$ for odd $n$. Write $C^k$ for its $k$-fold iterate.\n\nUniversal descent means that each $n>1$ has a positive time $k$ with $C^k(n)<n$. Then\n\n$$\n\\bigl(\\forall n>1,\\ \\exists k>0,\\ C^k(n)<n\\bigr)\\iff\\bigl(\\forall n>0,\\ \\exists j\\in\\mathbb N,\\ C^j(n)=1\\bigr).\n$$\n\nThis is an equivalence of two unproved universal assertions, not a proof of either assertion.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveDescent\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.descent_iff_convergence : UniversalDescent ↔ CollatzConjecture := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.LabeledInstance\n      (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) CollatzWork.YAH.edgeCertificate\n      CollatzWork.YAH.labeledEdgeDelta)\n    CollatzWork.YAH.allTokenEdges)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) Int\n    (fun x => @OfNat.ofNat.{0} Int (nat_lit 0) (@instOfNat (nat_lit 0))) CollatzWork.YAH.allTokenEdges)",
+  "solution_universe_parameters": [],
+  "target_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.LabeledInstance\n      (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) CollatzWork.YAH.edgeCertificate\n      CollatzWork.YAH.labeledEdgeDelta)\n    CollatzWork.YAH.allTokenEdges)\n  (@List.map.{0, 0} (Prod.{0, 0} CollatzWork.YAH.Token CollatzWork.YAH.Token) Int\n    (fun x => @OfNat.ofNat.{0} Int (nat_lit 0) (@instOfNat (nat_lit 0))) CollatzWork.YAH.allTokenEdges)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.edgeCertificate_cancellation",
+  "universe_count_equal": true,
+  "solution_sha256": "ae5ff031fc6909bbe6587d26a52095f09a1fdd03aa317427d85a88391ff6b8ff",
+  "theorem_sha256": "c318f1b05deffcbb6c31f8eb891b2f19dde1776f1fa8d3411073173afe21ab33",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_edgeCertificate_cancellation.lean",
+  "source_files_unchanged": true
+}

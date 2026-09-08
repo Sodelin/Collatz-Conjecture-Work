@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.prefixReturnBernoulli",
-  "theorem_title": "CollatzWork.prefixReturnBernoulli",
-  "natural_language_statement": "An integral form of Bernoulli's inequality for the ratio 32/27.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
-  "formal_statement": "theorem CollatzWork.prefixReturnBernoulli (d : Nat) :\n    (27 + 5 * d) * 27 ^ d \u2264 27 * 32 ^ d := by sorry\n\n",
+  "theorem_title": "Integral Bernoulli bound for the ratio 32 over 27",
+  "natural_language_statement": "For every $d\\in\\mathbb N$,\n\n$$\n(27+5d)27^d\\le27\\cdot32^d.\n$$\n\nThis is a denominator-cleared Bernoulli estimate used in conditional repetition budgets.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.prefixReturnBernoulli (d : Nat) :\n    (27 + 5 * d) * 27 ^ d ≤ 27 * 32 ^ d := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

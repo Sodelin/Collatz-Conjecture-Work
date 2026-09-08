@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.PrefixReturnNumericalBoundStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.PrefixReturnNumericalBoundStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.prefixReturnNumericalBound",
+  "universe_count_equal": true,
+  "solution_sha256": "e519bb4f371d0f70468a7d39e0adfd9e90f2ad11017adfaccc7a9497039e7bdb",
+  "theorem_sha256": "27993f28a60f43c1ecd8929f4bf3c8b5ee1557381d14fe84567627845fc67b46",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_prefixReturnNumericalBound.lean",
+  "source_files_unchanged": true
+}

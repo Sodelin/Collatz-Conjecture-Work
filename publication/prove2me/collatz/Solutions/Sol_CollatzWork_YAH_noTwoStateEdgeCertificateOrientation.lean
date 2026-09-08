@@ -5,6 +5,8 @@ import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
 import Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos
 import Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient
 import Theorems.Thm_CollatzWork_YAH_edgeCertificate_cancellation
+universe u
+
 namespace CollatzWork.YAH
 
 /-!
@@ -32,7 +34,7 @@ variable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]
 
 
 
-theorem positiveCertificate_ne_zero
+theorem positiveCertificate_ne_zero {ρ : Type _}
     (certificate : List (Nat × ρ)) (gap : ρ → M)
     (hnonneg : ∀ entry ∈ certificate, 0 ≤ gap entry.2)
     (hstrict : ∃ entry ∈ certificate,
@@ -57,7 +59,7 @@ variable {M : Type u} [IntModule M]
 
 
 
-theorem evalCoefficients_eq_zero_of_map_eq
+theorem evalCoefficients_eq_zero_of_map_eq {φ : Type _}
     (features : List φ) (weight : φ → M) (coeff : φ → Int)
     (h : features.map coeff = features.map (fun _ => 0)) :
     evalCoefficients features weight coeff = 0 := by

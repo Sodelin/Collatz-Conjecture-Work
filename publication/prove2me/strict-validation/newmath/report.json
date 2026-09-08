@@ -1,0 +1,218 @@
+{
+  "status": "passed",
+  "source_manifest_sha256": "a549b613533627d797f99578c25002290d88eee32c09bde2c5e80d8e333b04e4",
+  "source_manifest": "publication/prove2me/projects/newmath/candidate/manifest.json",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "lean_commit": "819816b",
+  "strict_option": {
+    "autoImplicit": false
+  },
+  "checked_files": 25,
+  "checks": [
+    {
+      "module": "Definitions.Def_NewMathDiscovery_BlindnessRealization",
+      "source_sha256": "836a0ca79f5fc1e51a0e633402a7538be143638f0eb115297d741a5adad3ddc3",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "3c287dffe11a30680e3b28814269bd21b9296227b24d901286f72937d533ea4c"
+    },
+    {
+      "module": "Definitions.Def_NewMathDiscovery_LinearBlindness",
+      "source_sha256": "40737c5f6930c775fba76c1b8aceb448f93d823efa80796344eaade95381bb48",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "c078709ccac07fc4121d3f384cbeeed113d443f9254ed04fff39345c2e6f339b"
+    },
+    {
+      "module": "Definitions.Def_NewMathDiscovery_RankedCoalescenceSound",
+      "source_sha256": "c6c8f80b052d6414c7fad4648a2d55c0ea08da6f65624957679eadbd5e6adb71",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "8003effe665629ff14ef58e41ea7b1fa12664197a65dab42d172d2ff3454e709"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_downward",
+      "source_sha256": "6fff73b83cd445636222bac216cdbbae35e94af4704dba1151f0334c71274e18",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "111a3258385fe6ee0d2b7c20bcbdb89f51e853a315273c0c33bc51f527cea964"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_BlindnessRealization_blind_downward",
+      "source_sha256": "f4101820f14c460a68c717f4020e8d06d8599d1e3d7225afa5aaacfe85bc5bc1",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "a0b84cae426b28dab0d37a7a043263df4f1e5b2fb39305569d6c342bec8ffbc6"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator",
+      "source_sha256": "66d077f9acd52cc9cded8c5fbd26d46d19f8a28dc4a0be50bf38d694c044715b",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "b4abb8c7610b7f10a07190f083a3dd3ad1974bea4f2d8b99e54e0b973f485796"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_BlindnessRealization_blind_iff_below_generator",
+      "source_sha256": "56b25fb855076829929fc725b48af30083cba4399d230f76d044d4372de725fc",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "f1809857cb202db569d0a45feb3beaf77d9435df490132411c6d2e838683c9c9"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor",
+      "source_sha256": "2cdd3d998ee35698c5771118e58ad2bd42ad4e3e22abfa4ce36e6b5d6f245d2e",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "e9784919c54c679cc542fb3f5bc39e9a58a70f4a5c95ac124b677c687c7cd21e"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_distinct_sensor_minor",
+      "source_sha256": "484d8cb675a4760407feb0c9e830488ceb1083bdc5a391950b19c7b6c7fe77b0",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "eab9717bc5096de97df716871f944131829fce42258bd23f7a7970b15499a8c6"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large",
+      "source_sha256": "3a0a2ac015825c5fbeaa5034e5fdd65a7977e5a99d9a3cb55a9919e04b1382a4",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "98d0c493f67f6ac51b5f73389cd194365bd63163271e2116e92d6698b9f320cb"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_tail_witnesses_uniformly_large",
+      "source_sha256": "3a827f9589cf856a45bf5b6c18f1a0ecb1002d3792710e237c4a1955d09d8104",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "e9af366b2f59db6844df2b3163fdb96ffe58c162c12b7a854ac5616e9d7dd5ec"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness",
+      "source_sha256": "682d9cc084afa04a93136de86c142e5abd77ccc7bbb8011c3dacee6fb1d0d1da",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "ea911a1040e70f76e926ac1c169bc729d2dbf7a730fb26762a878a8dab69ec9a"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_nonzero_on_witness",
+      "source_sha256": "fab7d3892a64e49d02bd6755e4e2ad6449d043b51a5ba416d1d89fe8cf8c7479",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "af22db1edf8e165851891ca34192d8fb252aac4f18d72106c194dd68e166c53f"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor",
+      "source_sha256": "b36bbf382e3bcf7f384c63e928ef9fdb41b7056a7a2cdaed41dada40a75b3d40",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "5bfb6261067fe1ef1c2fde8961e051774dec7506c69a06eec318ddf684d2cd5d"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_target_sensor_minor",
+      "source_sha256": "8e4bb9b488554a272018f64b9a14fae070b14562387d498796d62ac5357e8ca6",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "fad697e010277a1f511ca6737384f0b85452fb4f55f5c51b5a981e54d6a868c5"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel",
+      "source_sha256": "adf1f7e5474ddc85de858ca8603461a9e6bfc27eb6a33bca6a3f73627072fa97",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "9a86cde8bf61db20990eeb347b5f38c3b1e66c23e1b185b94d8180ac5d675542"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_RankTwoInstability_unbounded_target_on_gauge_fixed_kernel",
+      "source_sha256": "711d1b78026285d394a94eec3033de229d80bac86c7d06dac049c4c5d1b7d91f",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "47644884903e629ab670eda39fda81042bc55a16b21d63bf6a7ac261da07398b"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion",
+      "source_sha256": "8d2a0d6008b0f9048811dc91837c07dd0bb3efb837fe85b2f74832a19ab6181c",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "828e1f3f906526659aadeac2d5db0fde5f8db47ba2d4029fbb2aae98f0ee0b6d"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_determinesTarget_iff_kernel_inclusion",
+      "source_sha256": "58516fd291d6a58f6ac58d37a84fe402f412bfd2ef19d174eb649c993acb3d92",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "aff4e7f547e2dace8e507935239091cbfc836d6d5bad622a2015a5cca810e9a7"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_downward",
+      "source_sha256": "81521620945711d87d20812f003257b32cf928e358edafbc0808c7e473c45cab",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "64b0b398503e51dda1f93516508b56204d82b7a14e4ec33c09442f5d3769ec8a"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_pairBlind_downward",
+      "source_sha256": "57966cb3bf0a8aeefbeb87f58d53f0f7a0741e4c0653c83ddeaee8d48d537cf0",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "9b9fafa073985146fc8a546df7bd687721b271005431aa1e1bbf6a4862fd02cd"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness",
+      "source_sha256": "5f365338a3ffb3e630fe7d13baca0d03a6016158b04b6234a2b8c22a7d09a030",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "e801345d47bcb33b999f3c275193964074e83f7a5571213c5c7b690c06bacfc5"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_LinearBlindness_pairBlind_iff_kernelWitness",
+      "source_sha256": "c4269540f5d60bc55f6fb231e1ccf21cdddef598722535468405a0773d70d72d",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "d10c961a32dc8165c1bddcd73ceb5043f5c81b3c43d53ff31a1461d6aff8a5e6"
+    },
+    {
+      "module": "Theorems.Thm_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound",
+      "source_sha256": "57446ea3e68c7df725db99d7c8d8dca00b6833eb897acc86d174fda3b227548c",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "c2fadc4a5c953bec47b05ce1d362a2a490fae21c4ab834342c4a756f77d6ec54"
+    },
+    {
+      "module": "Solutions.Sol_NewMathDiscovery_RankedCoalescence_covered_ranked_coalescence_sound",
+      "source_sha256": "356762427a886c4589acb5929af2f16591866845a92510ead06856c6992ab2f5",
+      "compiler_options": {
+        "autoImplicit": false
+      },
+      "compiled_artifact_sha256": "9f9a1ce433feb0accc5c6e2e48493c089c7a36d6fa2ca04ffcac9c47ce23a335"
+    }
+  ],
+  "build_exit_code": 0,
+  "scope": "All scheduled definition bodies, theorem preamble+statement files and top-level solution files. No source or candidate manifest changed. Staged byte hashes match the active import manifests.",
+  "method": "Recompiled exact scheduled payload files in isolated copies with package leanOptions autoImplicit=false. Checked every module setup JSON records autoImplicit=false and every compiled artifact exists. Requested independent module targets, because separate solutions deliberately declare the same top-level solution identifier and cannot be jointly imported into one root module.",
+  "harness_deviation": "Initial aggregate StrictCheck root failed only because it imported multiple distinct top-level solution declarations. All57 actual payload modules compiled successfully before that aggregate failure. The final invocation targets modules independently and exits0.",
+  "limitations": "Expected sorry warnings arise only in theorem statement stubs. This local elaboration check is distinct from the server acceptance/axiom check. Hosted runtime uses the existing executable-location compatibility launcher."
+}

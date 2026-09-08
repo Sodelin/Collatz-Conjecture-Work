@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
-  "theorem_title": "CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
-  "natural_language_statement": "The exact center-consistency equation admits no genuinely distinct\npositive labels: it forces `a = b = c`.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\nimport Theorems.Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique\n\n\n",
-  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid\n    (a b c : Nat)\n    (_ha : 0 < a) (hb : 0 < b) (hc : 0 < c)\n    (hEq : 2 ^ (b + c) + 3 * 2 ^ b =\n      2 ^ (a + b) + 3 * 2 ^ a) :\n    a = b \u2227 b = c := by sorry\n\n",
+  "theorem_title": "Rigidity of the positive-label branching-center equation",
+  "natural_language_statement": "Let $a,b,c$ be positive natural numbers satisfying\n\n$$2^{b+c}+3\\,2^b=2^{a+b}+3\\,2^a.$$\n\nThen\n\n$$a=b\\quad\\text{and}\\quad b=c.$$\n\nThis is the arithmetic obstruction for the particular two-center, three-edge ansatz described in the source: its displayed consistency equation allows no distinct positive labels. The theorem does not assert existence of a Collatz trajectory or settle termination.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_BranchingCenter\nimport Theorems.Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid\n    (a b c : Nat)\n    (_ha : 0 < a) (hb : 0 < b) (hc : 0 < c)\n    (hEq : 2 ^ (b + c) + 3 * 2 ^ b =\n      2 ^ (a + b) + 3 * 2 ^ a) :\n    a = b ∧ b = c := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

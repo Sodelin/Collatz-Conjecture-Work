@@ -1,13 +1,15 @@
 {
-  "status": "exact_payloads_compiled_types_matched_metadata_pending",
+  "status": "local_validation_passed_ready_for_upload",
   "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
   "public_source_theorems": 46,
   "candidate_theorem_nodes": 11,
   "candidate_definition_bundles": 4,
   "remaining": [
-    "Complete academic metadata and live platform environment-pin check.",
-    "Explicit API-key authorization, then authenticated idempotent upload and remote acceptance verification."
+    "Authenticated idempotent upload and remote acceptance verification."
   ],
   "exact_payload_build": "passed",
-  "type_comparison": "11_of_11_exact_matches"
+  "type_comparison": "11_of_11_exact_matches",
+  "metadata_review": "passed",
+  "api_key_authorization": "granted by user on2026-09-08; credential handling is outside this package",
+  "platform_environment_check": "passed"
 }

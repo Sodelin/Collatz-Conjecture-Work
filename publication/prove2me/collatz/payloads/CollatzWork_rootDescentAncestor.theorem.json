@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.rootDescentAncestor",
-  "theorem_title": "Guarded actual-orbit ancestor identity",
-  "natural_language_statement": "For e,L,q,r in Nat with q>0 and 3^(L+1)*q=4*r+1, shortcutIter (e+L+2) (2^e*(2^L*q-1))=r. Limitations: This declaration alone makes no smaller-target, residue, or all-root coverage assertion. Classical inverse-word arithmetic.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_RootDescentStatement\nimport Theorems.Thm_CollatzWork_oddRun\n\n\n",
+  "theorem_title": "Guarded ancestor identity for an odd run and even padding",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $e,L,q,r\\in\\mathbb N$, $q>0$, and $3^{L+1}q=4r+1$. Then\n\n$$\nT^{e+L+2}\\bigl(2^e(2^Lq-1)\\bigr)=r.\n$$\n\nThis supplies an actual forward ancestor trajectory; no size, residue, or all-root coverage claim is part of the result.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Definitions.Def_CollatzWork_RootDescentStatement\nimport Theorems.Thm_CollatzWork_oddRun\n\n\n\n",
   "formal_statement": "theorem CollatzWork.rootDescentAncestor : RootDescentAncestorStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

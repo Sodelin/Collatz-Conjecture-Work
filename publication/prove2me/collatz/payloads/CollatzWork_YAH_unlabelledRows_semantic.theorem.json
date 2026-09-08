@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.YAH.unlabelledRows_semantic",
-  "theorem_title": "CollatzWork.YAH.unlabelledRows_semantic",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "theorem_title": "Arithmetic semantics of the thirteen unlabelled YAH rows",
+  "natural_language_statement": "Let $R$ be the fixed list of thirteen unlabelled YAH instances, with full words $L_r$ and $R_r$ for each row $r$. Let $V$ evaluate a word from the initial value $1$, with digit maps $f:x\\mapsto2x$, $t:x\\mapsto2x+1$, and $j:x\\mapsto3x+j$ for $j\\in\\{0,1,2\\}$; boundary symbols leave the value unchanged. Define $S(n)=n/2$ for even $n$ and $S(n)=(3n+1)/2$ for odd $n$. Then\n\n$$\\forall r\\in R,\\qquad V(R_r)=\\begin{cases}S(V(L_r)),&r\\text{ uses a dynamic rule},\\\\ V(L_r),&r\\text{ uses an auxiliary rule}.\\end{cases}$$\n\nHere the two dynamic rule names are $D_f,D_t$. The theorem checks the arithmetic meaning of these thirteen concrete instances; it does not quantify over all contexts.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
   "formal_statement": "theorem CollatzWork.YAH.unlabelledRows_semantic :\n    unlabelledRows.all validUnlabelledSemantics = true := by sorry\n\n",
   "tags": [
     "collatz-work-import"

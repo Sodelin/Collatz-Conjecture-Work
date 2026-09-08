@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.residueAncestor_refinedTail",
-  "theorem_title": "Complete uniform divisibility ancestor theorem at threshold13",
-  "natural_language_statement": "For every r in Nat with 3^13 dividing 4*r+1, there exist naturals m,b such that 0<m<r, m mod27=20, and shortcutIter b m=r. The factorization, selector, strict comparison, and actual parity semantics are included. Limitations: Supersedes the older uniform threshold21 selector. Individually lower guarded rows and selected-table sharpness retain prose/Python scope. The divisor guard is not known for arbitrary residual roots. Novelty unconfirmed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_residueAncestor_tail38\nimport Theorems.Thm_CollatzWork_residueAncestor_tail65\nimport Theorems.Thm_CollatzWork_residueAncestor_tail11\nimport Theorems.Thm_CollatzWork_residueAncestor_tail92\nimport Theorems.Thm_CollatzWork_residueAncestor_tail173\n\n\n",
-  "formal_statement": "theorem CollatzWork.residueAncestor_refinedTail (z : Nat) (hz : z % 27 = 11) :\n    \u2203 m b : Nat, 0 < m \u2227 m % 27 = 20 \u2227\n      shortcutIter b m = z \u2227 m \u2264 64 * z := by sorry\n\n",
+  "theorem_title": "A uniform residue-20 tail for every root congruent to eleven modulo twenty-seven",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $z\\in\\mathbb N$ satisfy $z\\equiv11\\pmod{27}$. Then\n\n$$\n\\exists m,b\\in\\mathbb N,\\quad m>0,\\quad m\\equiv20\\pmod{27},\\quad T^b(m)=z,\\quad m\\le64z.\n$$\n\nThis gives a bounded-size ancestor; strict descent relative to the later original root requires a separate power comparison.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_residueAncestor_tail38\nimport Theorems.Thm_CollatzWork_residueAncestor_tail65\nimport Theorems.Thm_CollatzWork_residueAncestor_tail11\nimport Theorems.Thm_CollatzWork_residueAncestor_tail92\nimport Theorems.Thm_CollatzWork_residueAncestor_tail173\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_refinedTail (z : Nat) (hz : z % 27 = 11) :\n    ∃ m b : Nat, 0 < m ∧ m % 27 = 20 ∧\n      shortcutIter b m = z ∧ m ≤ 64 * z := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

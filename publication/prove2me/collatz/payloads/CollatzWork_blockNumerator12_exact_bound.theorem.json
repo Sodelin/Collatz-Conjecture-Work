@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.blockNumerator12_exact_bound",
-  "theorem_title": "Universal mechanical certificate and sharp eventual threshold 16",
-  "natural_language_statement": "Let Cmax(0)=0 and Cmax(s+1)=3*Cmax(s)+2^floor(log2(3^s)). For every natural s>=16, 4*Cmax(s)<=s*3^s. At 15, 4*Cmax(15)=217653340>215233605=15*3^15, proving 16 is the smallest eventual threshold. For every s>=1, 4*Cmax(s)<=s*2^(floor(log2(3^s))+1), including the separate small-count range. Limitations: The threshold concerns the supporting normalized mechanical envelope, not the minimum count at which the quarter-gap theorem applies. Failure at 15 does not assert failure at every smaller count. Mathematical priority is unassessed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_BlockArithmetic\n\n\n",
-  "formal_statement": "theorem CollatzWork.blockNumerator12_exact_bound {B x : Nat} (hB : 0 < B)\n    (hxlo : B \u2264 x) (hxhi : x < 2 * B) :\n    262144 * blockNumerator12 B x \u2264 416200322061 * x := by sorry\n\n",
+  "theorem_title": "Exact uniform bound for the twelve-term normalized numerator",
+  "natural_language_statement": "For $B,x\\in\\mathbb N$, define the normalized twelve-term numerator $N_{12}(B,x)=\\sum_{i=0}^{11}3^{11-i}D_i(B,x)$. Here $f_i=\\lfloor\\log_2(3^i)\\rfloor$, and $D_i(B,x)$ is $2^{f_i}B$ when $3^i x<2^{f_i+1}B$, and $2^{f_i+1}B$ otherwise.\n\nIf $B>0$ and $B\\le x<2B$, then\n\n$$\n262144\\,N_{12}(B,x)\\le416200322061\\,x.\n$$\n\nThis finite phase bound is the arithmetic input to twelve-step mechanical-envelope propagation.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_BlockArithmetic\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.blockNumerator12_exact_bound {B x : Nat} (hB : 0 < B)\n    (hxlo : B ≤ x) (hxhi : x < 2 * B) :\n    262144 * blockNumerator12 B x ≤ 416200322061 * x := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

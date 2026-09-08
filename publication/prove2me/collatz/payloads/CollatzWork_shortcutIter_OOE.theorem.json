@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.shortcutIter_OOE",
-  "theorem_title": "CollatzWork.shortcutIter_OOE",
-  "natural_language_statement": "A complete odd, odd, even block on its exact residue class.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
+  "theorem_title": "Three-step odd–odd–even shortcut identity",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nFor every $z\\in\\mathbb N$,\n\n$$\nT^3(8z+3)=9z+4.\n$$\n\nThis is the elementary block underlying the guarded burst construction.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n\n",
   "formal_statement": "theorem CollatzWork.shortcutIter_OOE (z : Nat) :\n    shortcutIter 3 (8 * z + 3) = 9 * z + 4 := by sorry\n\n",
   "tags": [
     "collatz-work-import"

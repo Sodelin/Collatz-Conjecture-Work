@@ -1,11 +1,15 @@
 {
   "theorem_name": "EgyptianFractions.exists_minimum_of_representation",
-  "theorem_title": "EgyptianFractions.exists_minimum_of_representation",
-  "natural_language_statement": "Once a representation is supplied, well-ordering gives an actual minimum.\nThis does not assume existence of representations at unsupplied lower bounds.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Certificate\n\n\n",
-  "formal_statement": "theorem EgyptianFractions.exists_minimum_of_representation {lower terms : Nat}\n    (hRepresentation : HasRepresentation lower terms) :\n    \u2203 minimum, IsMinimumLength lower minimum := by sorry\n\n",
+  "theorem_title": "A supplied Egyptian-fraction representation has a least possible length",
+  "natural_language_statement": "Let $L,t\\in\\mathbb N$. Suppose there is a list of exactly $t$ distinct positive natural numbers, each at least $L$, whose reciprocals sum to 1. Then there exists a natural number $m$ such that\n\n$$\n\\exists\\, d_1,\\ldots,d_m\\text{ distinct},\\quad d_i>0,\\quad d_i\\geq L,\\quad\\sum_{i=1}^{m}\\frac1{d_i}=1,\\qquad m\\leq u\\ \\text{for every such representation of length }u.\n$$\n\nThis is a well-ordering consequence for the set of attainable lengths. Existence of one representation is a required premise, including when the lower bound is zero; positivity of every denominator remains required.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Certificate\n\n\n\n",
+  "formal_statement": "theorem EgyptianFractions.exists_minimum_of_representation {lower terms : Nat}\n    (hRepresentation : HasRepresentation lower terms) :\n    ∃ minimum, IsMinimumLength lower minimum := by sorry\n\n",
   "tags": [
-    "sodelin-egyptian295"
+    "sodelin-egyptian295",
+    "number-theory",
+    "egyptian-fractions",
+    "erdos-295",
+    "well-ordering"
   ],
   "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Certificate.lean#L57-L75"
 }

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import hashlib
 import json
 import os
@@ -12,6 +13,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -258,7 +260,8 @@ class Transport:
         self.audit = audit
         self.token = None
         self.expires_at = 0
-        self.opener = urllib.request.build_opener(NoRedirect())
+        self._token_lock = threading.Lock()
+        self._thread_local = threading.local()
 
     def _request(self, method, path, data=None, content_type=None, token=None):
         if not path.startswith("/") or path.startswith("//") or ".." in path:
@@ -270,7 +273,9 @@ class Transport:
             headers["Authorization"] = "Bearer " + token
         request = urllib.request.Request(BASE + path, data=data, headers=headers, method=method)
         try:
-            with self.opener.open(request, timeout=15) as response:
+            if not hasattr(self._thread_local, "opener"):
+                self._thread_local.opener = urllib.request.build_opener(NoRedirect())
+            with self._thread_local.opener.open(request, timeout=45) as response:
                 if response.geturl() != BASE + path:
                     raise Stop("Redirect refused; credentials are restricted to the fixed API origin")
                 if response.status not in {200, 201, 202}:
@@ -288,6 +293,10 @@ class Transport:
             raise Stop("API request failed; no automatic retry was performed") from None
 
     def ensure_token(self):
+        with self._token_lock:
+            self._ensure_token_locked()
+
+    def _ensure_token_locked(self):
         if self.token and time.time() < self.expires_at - 120:
             return
         try:
@@ -336,6 +345,7 @@ class Transport:
 class Publisher:
     def __init__(self, package, state_path, transport=None):
         self.package = package
+        self._state_lock = threading.RLock()
         self.path = Path(state_path)
         if self.path.exists():
             self.state = json.loads(read_bytes(self.path))
@@ -349,11 +359,13 @@ class Publisher:
         self.transport = transport
 
     def save(self):
-        atomic_json(self.path, self.state)
+        with self._state_lock:
+            atomic_json(self.path, self.state)
 
     def event(self, action, fields):
-        self.state["events"].append({"at": time.time(), "action": action, **fields})
-        self.save()
+        with self._state_lock:
+            self.state["events"].append({"at": time.time(), "action": action, **fields})
+            self.save()
 
     def validate_environment(self):
         response = self.transport.get("/environments")
@@ -364,35 +376,41 @@ class Publisher:
     def mutate(self, key, action):
         self.package.execution_gate()
         item, record = self.package.items[key], self.state["items"][key]
-        record["status"] = action + "_intent"
-        record["intent_id"] = uuid.uuid4().hex
         payload_hash = digest(canonical(item["payload"])) if action == "publish" else digest(self.package.file_bytes(item["solution_file"]))
-        self.event(action + "_before", {"key": key, "intent_id": record["intent_id"], "payload_sha256": payload_hash})
+        with self._state_lock:
+            record["status"] = action + "_intent"
+            record["intent_id"] = uuid.uuid4().hex
+            self.event(action + "_before", {"key": key, "intent_id": record["intent_id"], "payload_sha256": payload_hash})
         try:
             if action == "publish":
                 endpoint = "/submit-definition" if item["kind"] == "definition" else "/submit-problem"
                 response = self.transport.post_json(endpoint, item["payload"])
                 if response.get("errors"):
-                    record["status"] = "needs_reconciliation"
-                    self.event("publish_response_requires_review", {"key": key})
+                    with self._state_lock:
+                        record["status"] = "needs_reconciliation"
+                        self.event("publish_response_requires_review", {"key": key})
                     raise Stop("Publish response reported rejection; reconcile before any further submission")
                 job_id = response.get("job_id")
                 if not job_id:
                     jobs = response.get("jobs", [])
                     if len(jobs) == 1 and jobs[0].get("name") == item["name"]:
                         job_id = jobs[0].get("job_id")
-                record.update(status="publish_queued", job_id=safe_id(job_id))
-                fields = {"key": key, "job_id": record["job_id"]}
+                job_id = safe_id(job_id)
+                with self._state_lock:
+                    record.update(status="publish_queued", job_id=job_id)
+                    self.event(action + "_after", {"key": key, "job_id": job_id})
             else:
                 response = self.transport.verify(record["theorem_id"], self.package.file_bytes(item["solution_file"]), item["explanation"])
-                record.update(status="verify_queued", submission_id=safe_id(response.get("submission_id")))
-                fields = {"key": key, "submission_id": record["submission_id"]}
-            self.event(action + "_after", fields)
+                submission_id = safe_id(response.get("submission_id"))
+                with self._state_lock:
+                    record.update(status="verify_queued", submission_id=submission_id)
+                    self.event(action + "_after", {"key": key, "submission_id": submission_id})
         except BaseException:
-            if record["status"] in {"publish_intent", "verify_intent"}:
-                record["status"] = "needs_reconciliation"
-                record["uncertain_action"] = action
-                self.event(action + "_outcome_unknown", {"key": key})
+            with self._state_lock:
+                if record["status"] in {"publish_intent", "verify_intent"}:
+                    record["status"] = "needs_reconciliation"
+                    record["uncertain_action"] = action
+                    self.event(action + "_outcome_unknown", {"key": key})
             raise
 
     def check_entity(self, key, theorem_id):
@@ -408,12 +426,13 @@ class Publisher:
                     raise Stop("Remote immutable theorem text differs from the validated payload")
         if row.get("deprecated_at"):
             raise Stop("Remote entity is deprecated")
-        record = self.state["items"][key]
-        record["remote_status"] = row.get("status")
-        record["api_url"] = BASE + "/theorems/" + theorem_id
-        url = row.get("url")
-        if isinstance(url, str) and urllib.parse.urlsplit(url).scheme == "https" and urllib.parse.urlsplit(url).netloc == "prove2.me":
-            record["public_url"] = url
+        with self._state_lock:
+            record = self.state["items"][key]
+            record["remote_status"] = row.get("status")
+            record["api_url"] = BASE + "/theorems/" + theorem_id
+            url = row.get("url")
+            if isinstance(url, str) and urllib.parse.urlsplit(url).scheme == "https" and urllib.parse.urlsplit(url).netloc == "prove2.me":
+                record["public_url"] = url
         return row
 
     def poll(self, key):
@@ -423,38 +442,43 @@ class Publisher:
             if response.get("id") != record["job_id"]:
                 raise Stop("Publish job ID mismatch")
             status = response.get("status")
-            record["publish_status"] = status
+            updates = {"publish_status": status}
             if status == "PUBLISHED":
                 theorem_id = safe_id(response.get("theorem_id"))
-                record.update(theorem_id=theorem_id, status="published")
                 row = self.check_entity(key, theorem_id)
+                updates.update(theorem_id=theorem_id, status="published")
                 if item["kind"] == "definition" and row.get("status") == "Definition":
-                    record["status"] = "complete"
+                    updates["status"] = "complete"
             elif status in {"FAILED", "ERROR"}:
-                record["status"] = "failed"
+                updates["status"] = "failed"
             elif status not in {"PENDING", "COMPILING"}:
                 raise Stop("Unrecognized publish job status")
-            self.event("publish_polled", {"key": key, "status": status})
+            with self._state_lock:
+                record.update(updates)
+                self.event("publish_polled", {"key": key, "status": status})
         elif record["status"] == "verify_queued":
             response = self.transport.get("/verify?" + urllib.parse.urlencode({"submission_id": record["submission_id"]}))
             if response.get("id") != record["submission_id"] or response.get("theorem_id") != record["theorem_id"]:
                 raise Stop("Verification submission identity mismatch")
             status = response.get("status")
-            record["verify_status"] = status
+            updates = {"verify_status": status}
             if status == "ACCEPTED":
-                record["status"] = "accepted_pending_catalog"
+                updates["status"] = "accepted_pending_catalog"
             elif status == "SKETCH_ACCEPTED":
-                record["status"] = "sketch_accepted"
+                updates["status"] = "sketch_accepted"
             elif status in {"CE", "WA", "SORRY", "FAILED", "ERROR"}:
-                record["status"] = "failed"
+                updates["status"] = "failed"
             elif status != "PENDING":
                 raise Stop("Unrecognized proof verification status")
-            self.event("verify_polled", {"key": key, "status": status})
+            with self._state_lock:
+                record.update(updates)
+                self.event("verify_polled", {"key": key, "status": status})
         if record["status"] in {"accepted_pending_catalog", "sketch_accepted"}:
             row = self.check_entity(key, record["theorem_id"])
-            if row.get("status") == "Proved":
-                record["status"] = "complete"
-            self.event("theorem_status_checked", {"key": key, "status": row.get("status")})
+            with self._state_lock:
+                if row.get("status") == "Proved":
+                    record["status"] = "complete"
+                self.event("theorem_status_checked", {"key": key, "status": row.get("status")})
 
     def reconcile(self, key, job_id=None, submission_id=None):
         """Attach an independently discovered server ID; never POST to resolve uncertainty."""
@@ -489,7 +513,7 @@ class Publisher:
             record.update(status="verify_queued", submission_id=submission_id)
         self.event("uncertain_mutation_reconciled", {"key": key, "job_id": job_id, "submission_id": submission_id})
 
-    def final_verify(self, deadline):
+    def final_verify(self, deadline, workers=1):
         expected = {r["theorem_id"] for r in self.state["items"].values()}
         progress = self.state.setdefault("final_verification", {"page": 0, "seen": [], "scan_done": False, "checked": []})
         while not progress["scan_done"]:
@@ -512,21 +536,152 @@ class Publisher:
             self.state.pop("final_verification", None)
             self.save()
             raise Stop("Final catalog has not exposed every expected publication")
-        for key, record in self.state["items"].items():
-            if key in progress["checked"]:
-                continue
-            if time.monotonic() >= deadline:
+        abort = threading.Event()
+
+        def check_final(key):
+            if time.monotonic() >= deadline or abort.is_set():
                 return
-            row = self.check_entity(key, record["theorem_id"])
-            required = "Definition" if self.package.items[key]["kind"] == "definition" else "Proved"
-            if row.get("status") != required:
-                raise Stop("Final per-ID verification did not confirm the exact required status")
-            progress["checked"].append(key)
-            self.event("final_item_checked", {"key": key})
+            try:
+                record = self.state["items"][key]
+                row = self.check_entity(key, record["theorem_id"])
+                required = "Definition" if self.package.items[key]["kind"] == "definition" else "Proved"
+                if row.get("status") != required:
+                    raise Stop("Final per-ID verification did not confirm the exact required status")
+                with self._state_lock:
+                    progress["checked"].append(key)
+                    self.event("final_item_checked", {"key": key})
+            except BaseException:
+                abort.set()
+                raise
+
+        unchecked = [key for key in self.state["items"] if key not in progress["checked"]]
+        if workers == 1:
+            for key in unchecked:
+                check_final(key)
+        else:
+            # Only these independent read-only checks fan out; paginated catalog
+            # discovery above retains a single durable cursor.
+            with ThreadPoolExecutor(max_workers=workers) as executor:
+                try:
+                    list(executor.map(check_final, unchecked))
+                except BaseException:
+                    abort.set()
+                    raise
+        if len(progress["checked"]) != len(self.state["items"]):
+            return
         self.state["complete"] = True
         self.event("final_verification_passed", {"count": len(expected)})
 
-    def run(self, max_mutations=10, max_seconds=45):
+    def run_parallel(self, max_mutations, max_seconds, workers):
+        """One owner per item; concurrent I/O with serialized durable transitions.
+
+        A tick stops starting work at its deadline, then drains in-flight calls.
+        Mutation slots are reserved before the intent/POST and never refunded.
+        """
+        self.package.execution_gate()
+        self.validate_environment()
+        deadline = time.monotonic() + max_seconds
+        abort = threading.Event()
+        mutations = 0
+        attempted, inflight = set(), {}
+        first_error = None
+        with self._state_lock:
+            if self.state["complete"]:
+                self.state["complete"] = False
+                self.state.pop("final_verification", None)
+            for record in self.state["items"].values():
+                if record["status"] in {"publish_intent", "verify_intent", "needs_reconciliation"}:
+                    raise Stop("An interrupted POST needs reconciliation; no request was repeated")
+                if record["status"] == "failed":
+                    raise Stop("A publish or verification job failed; inspect its server ID before repair")
+
+        def may_continue():
+            return not abort.is_set() and time.monotonic() < deadline
+
+        def reserve():
+            nonlocal mutations
+            with self._state_lock:
+                if not may_continue() or mutations >= max_mutations:
+                    return False
+                mutations += 1
+                return True
+
+        def advance(key):
+            try:
+                record = self.state["items"][key]
+                if not may_continue():
+                    return
+                if record["status"] == "new":
+                    with self._state_lock:
+                        if mutations >= max_mutations:
+                            return
+                    response = self.transport.get("/theorems?" + urllib.parse.urlencode({"theorem_name": self.package.items[key]["name"], "env": self.package.env["mathlib_rev"], "limit": 2}))
+                    if response.get("theorems"):
+                        raise Stop("Publication name already exists; reconcile or explicitly reuse it before proceeding")
+                    if not reserve():
+                        return
+                    self.mutate(key, "publish")
+                if may_continue():
+                    self.poll(key)
+                if record["status"] == "published" and self.package.items[key]["kind"] == "theorem" and reserve():
+                    self.mutate(key, "verify")
+                    if may_continue():
+                        self.poll(key)
+                if record["status"] == "failed":
+                    raise Stop("A publish or verification job failed; inspect its server ID before repair")
+            except BaseException:
+                abort.set()
+                raise
+
+        # The context manager drains every submitted operation, including on a
+        # KeyboardInterrupt. Each mutation's receipt/uncertainty reaches disk
+        # before this method reports an error or releases the process lock.
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            try:
+                while True:
+                    if may_continue():
+                        with self._state_lock:
+                            for key in self.package.order:
+                                if len(inflight) >= workers:
+                                    break
+                                if key in attempted:
+                                    continue
+                                record = self.state["items"][key]
+                                if record["status"] == "complete":
+                                    continue
+                                if record["status"] == "new" and mutations >= max_mutations:
+                                    continue
+                                if all(self.state["items"][dep]["status"] == "complete" for dep in self.package.items[key]["depends_on"]):
+                                    attempted.add(key)
+                                    inflight[executor.submit(advance, key)] = key
+                    if not inflight:
+                        break
+                    done, _ = wait(inflight, return_when=FIRST_COMPLETED)
+                    for future in done:
+                        inflight.pop(future)
+                        try:
+                            future.result()
+                        except BaseException as error:
+                            abort.set()
+                            if first_error is None:
+                                first_error = error
+            except BaseException:
+                abort.set()
+                raise
+        self.save()
+        if first_error is not None:
+            raise first_error
+        if all(record["status"] == "complete" for record in self.state["items"].values()):
+            self.final_verify(deadline, workers=workers)
+        self.save()
+        return {"complete": self.state["complete"], "publication_mutations_this_run": mutations,
+                "items": {key: {k: v for k, v in row.items() if k in {"status", "theorem_id", "job_id", "submission_id", "api_url", "public_url", "remote_status"}} for key, row in self.state["items"].items()}}
+
+    def run(self, max_mutations=10, max_seconds=45, workers=1):
+        if not isinstance(workers, int) or not 1 <= workers <= 8:
+            raise Stop("Use 1–8 workers")
+        if workers > 1:
+            return self.run_parallel(max_mutations, max_seconds, workers)
         self.package.execution_gate()
         self.validate_environment()
         mutations, start = 0, time.monotonic()
@@ -571,6 +726,7 @@ def main():
     parser.add_argument("--state", type=Path)
     parser.add_argument("--max-mutations", type=int, default=10)
     parser.add_argument("--max-seconds", type=int, default=45)
+    parser.add_argument("--workers", type=int, default=1, help="Concurrent independent items (1–8; default 1)")
     parser.add_argument("--reconcile-key")
     parser.add_argument("--job-id")
     parser.add_argument("--submission-id")
@@ -591,7 +747,7 @@ def main():
             if args.reconcile_key:
                 publisher.validate_environment()
                 publisher.reconcile(args.reconcile_key, args.job_id, args.submission_id)
-            result = publisher.run(args.max_mutations, args.max_seconds)
+            result = publisher.run(args.max_mutations, args.max_seconds, args.workers)
             print(json.dumps(result, indent=2))
             return 0 if result["complete"] else 2
     except (Stop, OSError, ValueError, TypeError, KeyError) as error:

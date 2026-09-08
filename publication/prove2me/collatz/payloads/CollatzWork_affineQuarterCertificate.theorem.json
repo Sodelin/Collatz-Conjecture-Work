@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.affineQuarterCertificate",
-  "theorem_title": "Actual-orbit affine envelope and first crossing time",
-  "natural_language_statement": "For every finite actual shortcut prefix, 2^k*T^k(n)=3^(q_k)*n+C_k. Under every prior coefficient barrier 2^j<=3^(q_j) for j<k, C_k<=Cmax(q_k). At a first coefficient contraction, k=floor(log2(3^(q_k)))+1. For positive n and a nonnegative first-contraction defect d, the older inequality 3*d<q_k also follows. Limitations: First-contraction existence is assumed for the crossing and defect claims. Full extremizer uniqueness and displacement-penalty formulations in the prose L9 note are outside these formal statements.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n",
+  "theorem_title": "Soundness of an arithmetic quarter-gap certificate",
+  "natural_language_statement": "Let $n,d,a,b,C,s\\in\\mathbb N$ satisfy $n>0$, $a<b$, $b(n+d)=an+C$, and $4C\\le sb$. Then\n\n$$\n4d<s.\n$$\n\nThis is an arithmetic certificate independent of the Collatz map and does not assert that the hypotheses hold on any orbit.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.affineQuarterCertificate : AffineQuarterCertificateStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

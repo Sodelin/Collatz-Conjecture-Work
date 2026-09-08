@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.weightedGapSum_pos",
-  "theorem_title": "CollatzWork.YAH.weightedGapSum_pos",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M]\n  [IntModule M] [OrderedAdd M]\n",
-  "formal_statement": "theorem CollatzWork.YAH.weightedGapSum_pos\n    (certificate : List (Nat \u00d7 \u03c1)) (gap : \u03c1 \u2192 M)\n    (hnonneg : \u2200 entry \u2208 certificate, 0 \u2264 gap entry.2)\n    (hstrict : \u2203 entry \u2208 certificate,\n      0 < entry.1 \u2227 0 < gap entry.2) :\n    0 < weightedGapSum certificate gap := by sorry\n\n",
+  "theorem_title": "Positivity of a finite nonnegative weighted gap sum",
+  "natural_language_statement": "Let $M$ be an integer module equipped with a preorder, its associated lawful strict order, and order-compatible addition. Let $\\rho$ be any row type, let $C$ be a finite list of pairs $(a,r)$ with $a\\in\\mathbb N$ and $r\\in\\rho$, and let $g:\\rho\\to M$. Assume $g(r)\\ge0$ for every entry $(a,r)$ of $C$, and that some entry has both $a>0$ and $g(r)>0$. Then\n\n$$\\sum_{(a,r)\\in C}a\\,g(r)>0.$$\n\nThe sum counts list entries with multiplicity; $a\\,g(r)$ denotes repeated addition. This is the generic positivity principle used to turn a finite cancellation certificate into an orientation obstruction.\n\n**Formalization Note.** The assumptions are Lean’s `IntModule M`, `Std.IsPreorder M`, `Std.LawfulOrderLT M`, and `OrderedAdd M`; no total-order or Archimedean assumption is imposed unless stated.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nuniverse u\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\nvariable {M : Type u} [LE M] [LT M] [Std.IsPreorder M]\n  [Std.LawfulOrderLT M]\n  [IntModule M] [OrderedAdd M]\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.weightedGapSum_pos {ρ : Type _}\n    (certificate : List (Nat × ρ)) (gap : ρ → M)\n    (hnonneg : ∀ entry ∈ certificate, 0 ≤ gap entry.2)\n    (hstrict : ∃ entry ∈ certificate,\n      0 < entry.1 ∧ 0 < gap entry.2) :\n    0 < weightedGapSum certificate gap := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

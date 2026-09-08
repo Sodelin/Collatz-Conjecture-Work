@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FirstContractionThirdGapStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FirstContractionThirdGapStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.firstContractionThirdGap",
+  "universe_count_equal": true,
+  "solution_sha256": "9e8bbf75701893357451e859e50614c8a52f5c1d6bc3a0334b544f1d693c58af",
+  "theorem_sha256": "dc3dd2e7dde7e8aa229646b2a7b0e7be86384ae2579a585c2702f188992e0b54",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_firstContractionThirdGap.lean",
+  "source_files_unchanged": true
+}

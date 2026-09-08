@@ -1,6 +1,8 @@
 import Std
 import Init.Grind.Ordered.Module
 import Definitions.Def_CollatzWork_YAHFiniteObstructionStatement
+universe u
+
 namespace CollatzWork.YAH
 
 /-!
@@ -36,7 +38,7 @@ section LinearEvaluation
 
 variable {M : Type u} [IntModule M]
 
-theorem evalCoefficients_zero (features : List φ) (weight : φ → M) :
+theorem evalCoefficients_zero {φ : Type _} (features : List φ) (weight : φ → M) :
     evalCoefficients features weight (fun _ => 0) = 0 := by
   induction features with
   | nil => rfl
@@ -45,7 +47,7 @@ theorem evalCoefficients_zero (features : List φ) (weight : φ → M) :
         evalCoefficients rest weight (fun _ => 0) = 0
       rw [IntModule.zero_zsmul, ih, AddCommMonoid.add_zero]
 
-theorem evalCoefficients_add (features : List φ) (weight : φ → M)
+theorem evalCoefficients_add {φ : Type _} (features : List φ) (weight : φ → M)
     (left right : φ → Int) :
     evalCoefficients features weight (fun feature => left feature + right feature) =
       evalCoefficients features weight left +
@@ -75,7 +77,7 @@ theorem evalCoefficients_add (features : List φ) (weight : φ → M)
         _ = (a + c) + (b + d) :=
           (AddCommMonoid.add_assoc a c (b + d)).symm
 
-theorem evalCoefficients_scale (features : List φ) (weight : φ → M)
+theorem evalCoefficients_scale {φ : Type _} (features : List φ) (weight : φ → M)
     (multiplicity : Nat) (coeff : φ → Int) :
     evalCoefficients features weight
         (fun feature => Int.ofNat multiplicity * coeff feature) =
@@ -238,7 +240,7 @@ open Lean.Grind.IntModule
 variable {M : Type u} [IntModule M]
 
 open CollatzWork.YAH in
-theorem solution
+theorem solution {φ : Type _} {ρ : Type _}
     (features : List φ) (weight : φ → M)
     (certificate : List (Nat × ρ)) (delta : ρ → φ → Int) :
     evalCoefficients features weight

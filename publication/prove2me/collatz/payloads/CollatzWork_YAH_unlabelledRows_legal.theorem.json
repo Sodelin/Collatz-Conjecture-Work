@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.YAH.unlabelledRows_legal",
-  "theorem_title": "CollatzWork.YAH.unlabelledRows_legal",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
+  "theorem_title": "Canonical-word legality of the thirteen unlabelled YAH rows",
+  "natural_language_statement": "Let $R$ be the fixed list of thirteen unlabelled YAH rule instances. For a row $r$, let $L_r$ and $R_r$ be its left and right words after inserting its stored prefix and suffix. A word is canonical when it starts with $\\hat{}$, ends with $\\$$, and has only the five digit symbols $f,t,0,1,2$ in its interior. Then\n\n$$\\forall r\\in R,\\quad \\operatorname{canonical}(L_r)\\land\\operatorname{canonical}(R_r).$$\n\nThis checks the syntactic domain of the displayed finite certificate rows. The statement is restricted to this list of instances.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
   "formal_statement": "theorem CollatzWork.YAH.unlabelledRows_legal :\n    unlabelledRows.all validUnlabelledInstance = true := by sorry\n\n",
   "tags": [
     "collatz-work-import"

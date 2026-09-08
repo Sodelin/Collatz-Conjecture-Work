@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.OrbitAffineStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.OrbitAffineStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.orbitAffine",
+  "universe_count_equal": true,
+  "solution_sha256": "9b687fab5ab1cb86b6b6d478053502680b63b3cb91471b97676b0fc95e1980f4",
+  "theorem_sha256": "eba71f894202d3d48523a28f734e8bbb9a49a6bb4218a40d9c782d2762cda36c",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_orbitAffine.lean",
+  "source_files_unchanged": true
+}

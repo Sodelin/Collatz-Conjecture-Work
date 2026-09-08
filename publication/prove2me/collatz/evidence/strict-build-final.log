@@ -1,0 +1,289 @@
+⚠ [27/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_tail173
+warning: Theorems/Thm_CollatzWork_residueAncestor_tail173.lean:9:8: declaration uses `sorry`
+⚠ [28/255] Replayed Theorems.Thm_CollatzWork_oddRun
+warning: Theorems/Thm_CollatzWork_oddRun.lean:9:8: declaration uses `sorry`
+⚠ [29/255] Replayed Theorems.Thm_CollatzWork_rootDescentAncestor
+warning: Theorems/Thm_CollatzWork_rootDescentAncestor.lean:11:8: declaration uses `sorry`
+⚠ [30/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_prefix_one
+warning: Theorems/Thm_CollatzWork_residueAncestor_prefix_one.lean:8:8: declaration uses `sorry`
+⚠ [31/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_prefix_two
+warning: Theorems/Thm_CollatzWork_residueAncestor_prefix_two.lean:8:8: declaration uses `sorry`
+⚠ [32/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_tail38
+warning: Theorems/Thm_CollatzWork_residueAncestor_tail38.lean:9:8: declaration uses `sorry`
+⚠ [33/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_tail65
+warning: Theorems/Thm_CollatzWork_residueAncestor_tail65.lean:9:8: declaration uses `sorry`
+⚠ [34/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_tail11
+warning: Theorems/Thm_CollatzWork_residueAncestor_tail11.lean:9:8: declaration uses `sorry`
+⚠ [35/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_tail92
+warning: Theorems/Thm_CollatzWork_residueAncestor_tail92.lean:9:8: declaration uses `sorry`
+⚠ [36/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_refinedTail
+warning: Theorems/Thm_CollatzWork_residueAncestor_refinedTail.lean:12:8: declaration uses `sorry`
+⚠ [37/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_normalized
+warning: Theorems/Thm_CollatzWork_residueAncestor_normalized.lean:12:8: declaration uses `sorry`
+⚠ [38/255] Replayed Theorems.Thm_CollatzWork_residueAncestor
+warning: Theorems/Thm_CollatzWork_residueAncestor.lean:8:8: declaration uses `sorry`
+⚠ [39/255] Replayed Theorems.Thm_CollatzWork_blockNumerator12_exact_bound
+warning: Theorems/Thm_CollatzWork_blockNumerator12_exact_bound.lean:7:8: declaration uses `sorry`
+⚠ [40/255] Replayed Theorems.Thm_CollatzWork_floorPower_mul
+warning: Theorems/Thm_CollatzWork_floorPower_mul.lean:7:8: declaration uses `sorry`
+⚠ [41/255] Replayed Theorems.Thm_CollatzWork_mechanical_twelve_identity
+warning: Theorems/Thm_CollatzWork_mechanical_twelve_identity.lean:10:8: declaration uses `sorry`
+⚠ [42/255] Replayed Theorems.Thm_CollatzWork_mechanical_twelve_propagation
+warning: Theorems/Thm_CollatzWork_mechanical_twelve_propagation.lean:11:8: declaration uses `sorry`
+⚠ [43/255] Replayed Theorems.Thm_CollatzWork_parityPrefix_dvd_sub_of_le
+warning: Theorems/Thm_CollatzWork_parityPrefix_dvd_sub_of_le.lean:8:8: declaration uses `sorry`
+⚠ [44/255] Replayed Theorems.Thm_CollatzWork_prefixCollision
+warning: Theorems/Thm_CollatzWork_prefixCollision.lean:9:8: declaration uses `sorry`
+⚠ [45/255] Replayed Theorems.Thm_CollatzWork_mechanical_large_bound
+warning: Theorems/Thm_CollatzWork_mechanical_large_bound.lean:9:8: declaration uses `sorry`
+⚠ [46/255] Replayed Theorems.Thm_CollatzWork_affineRecurrenceTelescope
+warning: Theorems/Thm_CollatzWork_affineRecurrenceTelescope.lean:6:8: declaration uses `sorry`
+⚠ [47/255] Replayed Theorems.Thm_CollatzWork_fixedRatioDivisibility
+warning: Theorems/Thm_CollatzWork_fixedRatioDivisibility.lean:8:8: declaration uses `sorry`
+⚠ [48/255] Replayed Theorems.Thm_CollatzWork_finiteRepetitionBound
+warning: Theorems/Thm_CollatzWork_finiteRepetitionBound.lean:8:8: declaration uses `sorry`
+⚠ [49/255] Replayed Theorems.Thm_CollatzWork_affineRepetitionBound
+warning: Theorems/Thm_CollatzWork_affineRepetitionBound.lean:8:8: declaration uses `sorry`
+⚠ [50/255] Replayed Theorems.Thm_BlindCollatz_RepetitionBound_telescope
+warning: Theorems/Thm_BlindCollatz_RepetitionBound_telescope.lean:6:8: declaration uses `sorry`
+⚠ [51/255] Replayed Theorems.Thm_CollatzWork_shortcutIter_OOE
+warning: Theorems/Thm_CollatzWork_shortcutIter_OOE.lean:9:8: declaration uses `sorry`
+⚠ [52/255] Replayed Theorems.Thm_CollatzWork_rootDescentBurst
+warning: Theorems/Thm_CollatzWork_rootDescentBurst.lean:11:8: declaration uses `sorry`
+⚠ [53/255] Replayed Theorems.Thm_BlindCollatz_RepetitionBound_affine_repetition_bound
+warning: Theorems/Thm_BlindCollatz_RepetitionBound_affine_repetition_bound.lean:7:8: declaration uses `sorry`
+⚠ [54/255] Replayed Theorems.Thm_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion
+warning: Theorems/Thm_BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean:7:8: declaration uses `sorry`
+⚠ [55/255] Replayed Theorems.Thm_CollatzWork_converges_shortcutIter_iff
+warning: Theorems/Thm_CollatzWork_converges_shortcutIter_iff.lean:9:8: declaration uses `sorry`
+⚠ [56/255] Replayed Theorems.Thm_CollatzWork_converges_iff_of_coalesces
+warning: Theorems/Thm_CollatzWork_converges_iff_of_coalesces.lean:8:8: declaration uses `sorry`
+⚠ [57/255] Replayed Theorems.Thm_CollatzWork_compatibleProduct_mod_four
+warning: Theorems/Thm_CollatzWork_compatibleProduct_mod_four.lean:7:8: declaration uses `sorry`
+⚠ [58/255] Replayed Theorems.Thm_CollatzWork_refinedParent_iter
+warning: Theorems/Thm_CollatzWork_refinedParent_iter.lean:11:8: declaration uses `sorry`
+⚠ [59/255] Replayed Theorems.Thm_CollatzWork_refinedChild_iter
+warning: Theorems/Thm_CollatzWork_refinedChild_iter.lean:11:8: declaration uses `sorry`
+⚠ [60/255] Replayed Theorems.Thm_CollatzWork_refinedMersenneChild_coalesces
+warning: Theorems/Thm_CollatzWork_refinedMersenneChild_coalesces.lean:10:8: declaration uses `sorry`
+⚠ [61/255] Replayed Theorems.Thm_CollatzWork_refinedParent_converges_iff_child
+warning: Theorems/Thm_CollatzWork_refinedParent_converges_iff_child.lean:10:8: declaration uses `sorry`
+⚠ [62/255] Replayed Theorems.Thm_CollatzWork_refinedChild_arithmetic
+warning: Theorems/Thm_CollatzWork_refinedChild_arithmetic.lean:7:8: declaration uses `sorry`
+⚠ [63/255] Replayed Theorems.Thm_CollatzWork_refinedParent_converges_of_smaller
+warning: Theorems/Thm_CollatzWork_refinedParent_converges_of_smaller.lean:10:8: declaration uses `sorry`
+⚠ [64/255] Replayed Theorems.Thm_CollatzWork_twoBurst_power_margin
+warning: Theorems/Thm_CollatzWork_twoBurst_power_margin.lean:6:8: declaration uses `sorry`
+⚠ [65/255] Replayed Theorems.Thm_CollatzWork_twoBurstDescent
+warning: Theorems/Thm_CollatzWork_twoBurstDescent.lean:12:8: declaration uses `sorry`
+⚠ [66/255] Replayed Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos
+warning: Theorems/Thm_CollatzWork_YAH_weightedGapSum_pos.lean:14:8: declaration uses `sorry`
+⚠ [67/255] Replayed Theorems.Thm_CollatzWork_YAH_edgeCertificate_shape
+warning: Theorems/Thm_CollatzWork_YAH_edgeCertificate_shape.lean:10:8: declaration uses `sorry`
+⚠ [68/255] Replayed Theorems.Thm_CollatzWork_YAH_unlabelledRows_semantic
+warning: Theorems/Thm_CollatzWork_YAH_unlabelledRows_semantic.lean:10:8: declaration uses `sorry`
+⚠ [69/255] Replayed Theorems.Thm_CollatzWork_universalMechanicalQuarterCertificate
+warning: Theorems/Thm_CollatzWork_universalMechanicalQuarterCertificate.lean:9:8: declaration uses `sorry`
+⚠ [70/255] Replayed Theorems.Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence
+warning: Theorems/Thm_CollatzWork_allPositiveConverge_of_smallerCoalescence.lean:8:8: declaration uses `sorry`
+⚠ [71/255] Replayed Theorems.Thm_CollatzWork_noInfinitePositiveRecurrence
+warning: Theorems/Thm_CollatzWork_noInfinitePositiveRecurrence.lean:8:8: declaration uses `sorry`
+⚠ [72/255] Replayed Theorems.Thm_CollatzWork_noInfiniteExpandingAffineBlocks
+warning: Theorems/Thm_CollatzWork_noInfiniteExpandingAffineBlocks.lean:8:8: declaration uses `sorry`
+⚠ [73/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_factor_unit
+warning: Theorems/Thm_CollatzWork_residueAncestor_factor_unit.lean:6:8: declaration uses `sorry`
+⚠ [74/255] Replayed Theorems.Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique
+warning: Theorems/Thm_CollatzWork_Disproof_BranchingCenter_centerTwoPowerOddNormalFormUnique.lean:7:8: declaration uses `sorry`
+⚠ [75/255] Replayed Theorems.Thm_CollatzWork_orbitAffine
+warning: Theorems/Thm_CollatzWork_orbitAffine.lean:9:8: declaration uses `sorry`
+⚠ [76/255] Replayed Theorems.Thm_CollatzWork_mechanicalEnvelope
+warning: Theorems/Thm_CollatzWork_mechanicalEnvelope.lean:8:8: declaration uses `sorry`
+⚠ [77/255] Replayed Theorems.Thm_CollatzWork_affineQuarterCertificate
+warning: Theorems/Thm_CollatzWork_affineQuarterCertificate.lean:7:8: declaration uses `sorry`
+⚠ [78/255] Replayed Theorems.Thm_CollatzWork_firstContraction_quarter_of_certificate
+warning: Theorems/Thm_CollatzWork_firstContraction_quarter_of_certificate.lean:11:8: declaration uses `sorry`
+⚠ [79/255] Replayed Theorems.Thm_CollatzWork_YAH_symbolCertificate_cancellation
+warning: Theorems/Thm_CollatzWork_YAH_symbolCertificate_cancellation.lean:10:8: declaration uses `sorry`
+⚠ [80/255] Replayed Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient
+warning: Theorems/Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient.lean:12:8: declaration uses `sorry`
+⚠ [81/255] Replayed Theorems.Thm_CollatzWork_YAH_unlabelledCertificate_cancellation
+warning: Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_cancellation.lean:10:8: declaration uses `sorry`
+⚠ [82/255] Replayed Theorems.Thm_CollatzWork_YAH_yah13_forces_ff_negative
+warning: Theorems/Thm_CollatzWork_YAH_yah13_forces_ff_negative.lean:17:8: declaration uses `sorry`
+⚠ [83/255] Replayed Theorems.Thm_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords
+warning: Theorems/Thm_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords.lean:15:8: declaration uses `sorry`
+⚠ [84/255] Replayed Theorems.Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies
+warning: Theorems/Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies.lean:6:8: declaration uses `sorry`
+⚠ [85/255] Replayed Theorems.Thm_BlindCollatz_AlternatingGrowth_ordinary_five
+warning: Theorems/Thm_BlindCollatz_AlternatingGrowth_ordinary_five.lean:7:8: declaration uses `sorry`
+⚠ [86/255] Replayed Theorems.Thm_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five
+warning: Theorems/Thm_BlindCollatz_AlternatingGrowth_shortcut_three_eq_ordinary_five.lean:8:8: declaration uses `sorry`
+⚠ [87/255] Replayed Theorems.Thm_CollatzWork_shiftedEnvelope_compose
+warning: Theorems/Thm_CollatzWork_shiftedEnvelope_compose.lean:9:8: declaration uses `sorry`
+⚠ [88/255] Replayed Theorems.Thm_CollatzWork_excursionChainEnvelope
+warning: Theorems/Thm_CollatzWork_excursionChainEnvelope.lean:9:8: declaration uses `sorry`
+⚠ [89/255] Replayed Theorems.Thm_CollatzWork_terminalEnvelope_compose
+warning: Theorems/Thm_CollatzWork_terminalEnvelope_compose.lean:9:8: declaration uses `sorry`
+⚠ [90/255] Replayed Theorems.Thm_CollatzWork_excursionBudgetDescent
+warning: Theorems/Thm_CollatzWork_excursionBudgetDescent.lean:8:8: declaration uses `sorry`
+⚠ [91/255] Replayed Theorems.Thm_CollatzWork_excursionChain_terminal_descent
+warning: Theorems/Thm_CollatzWork_excursionChain_terminal_descent.lean:11:8: declaration uses `sorry`
+⚠ [92/255] Replayed Theorems.Thm_CollatzWork_prefixReturnBernoulli
+warning: Theorems/Thm_CollatzWork_prefixReturnBernoulli.lean:6:8: declaration uses `sorry`
+⚠ [93/255] Replayed Theorems.Thm_CollatzWork_prefixReturnNumericalBound
+warning: Theorems/Thm_CollatzWork_prefixReturnNumericalBound.lean:8:8: declaration uses `sorry`
+⚠ [94/255] Replayed Theorems.Thm_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant
+warning: Theorems/Thm_CollatzWork_Disproof_FiniteResidueFirstIntegral_commutator_transitive_forces_constant.lean:7:8: declaration uses `sorry`
+⚠ [95/255] Replayed Theorems.Thm_CollatzWork_YAH_symbolCertificate_shape
+warning: Theorems/Thm_CollatzWork_YAH_symbolCertificate_shape.lean:10:8: declaration uses `sorry`
+⚠ [96/255] Replayed Theorems.Thm_CollatzWork_YAH_symbolCertificate_canonically_embeddable
+warning: Theorems/Thm_CollatzWork_YAH_symbolCertificate_canonically_embeddable.lean:10:8: declaration uses `sorry`
+⚠ [97/255] Replayed Theorems.Thm_CollatzWork_rootDescent
+warning: Theorems/Thm_CollatzWork_rootDescent.lean:11:8: declaration uses `sorry`
+⚠ [98/255] Replayed Theorems.Thm_CollatzWork_rootDescent_converges_of_smaller
+warning: Theorems/Thm_CollatzWork_rootDescent_converges_of_smaller.lean:9:8: declaration uses `sorry`
+⚠ [99/255] Replayed Theorems.Thm_CollatzWork_finitePalette_path_obstruction
+warning: Theorems/Thm_CollatzWork_finitePalette_path_obstruction.lean:6:8: declaration uses `sorry`
+⚠ [100/255] Replayed Theorems.Thm_CollatzWork_mersenne_prefix_nondecreasing
+warning: Theorems/Thm_CollatzWork_mersenne_prefix_nondecreasing.lean:10:8: declaration uses `sorry`
+⚠ [101/255] Replayed Theorems.Thm_CollatzWork_finitePaletteObstruction
+warning: Theorems/Thm_CollatzWork_finitePaletteObstruction.lean:12:8: declaration uses `sorry`
+⚠ [102/255] Replayed Theorems.Thm_CollatzWork_Disproof_twoPumpSyzygy
+warning: Theorems/Thm_CollatzWork_Disproof_twoPumpSyzygy.lean:6:8: declaration uses `sorry`
+⚠ [103/255] Replayed Theorems.Thm_BlindCollatz_RepetitionBound_alternating_repetition_bound
+warning: Theorems/Thm_BlindCollatz_RepetitionBound_alternating_repetition_bound.lean:7:8: declaration uses `sorry`
+⚠ [104/255] Replayed Theorems.Thm_CollatzWork_Disproof_secondRotatedDeterminantCoefficients
+warning: Theorems/Thm_CollatzWork_Disproof_secondRotatedDeterminantCoefficients.lean:6:8: declaration uses `sorry`
+⚠ [105/255] Replayed Theorems.Thm_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks
+warning: Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_expanding_affine_blocks.lean:7:8: declaration uses `sorry`
+⚠ [106/255] Replayed Theorems.Thm_CollatzWork_equalSlopeWitness
+warning: Theorems/Thm_CollatzWork_equalSlopeWitness.lean:7:8: declaration uses `sorry`
+⚠ [107/255] Replayed Theorems.Thm_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation
+warning: Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation.lean:17:8: declaration uses `sorry`
+⚠ [108/255] Replayed Theorems.Thm_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder
+warning: Theorems/Thm_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder.lean:15:8: declaration uses `sorry`
+⚠ [109/255] Replayed Theorems.Thm_CollatzWork_smallerCoalescenceCriterion
+warning: Theorems/Thm_CollatzWork_smallerCoalescenceCriterion.lean:8:8: declaration uses `sorry`
+⚠ [110/255] Replayed Theorems.Thm_BlindCollatz_descent_iff_convergence
+warning: Theorems/Thm_BlindCollatz_descent_iff_convergence.lean:7:8: declaration uses `sorry`
+⚠ [111/255] Replayed Theorems.Thm_CollatzWork_mechanical_fifteen_failure
+warning: Theorems/Thm_CollatzWork_mechanical_fifteen_failure.lean:11:8: declaration uses `sorry`
+⚠ [112/255] Replayed Theorems.Thm_CollatzWork_YAH_edgeCertificate_cancellation
+warning: Theorems/Thm_CollatzWork_YAH_edgeCertificate_cancellation.lean:11:8: declaration uses `sorry`
+⚠ [113/255] Replayed Theorems.Thm_CollatzWork_Disproof_quotientDegreesVanish
+warning: Theorems/Thm_CollatzWork_Disproof_quotientDegreesVanish.lean:6:8: declaration uses `sorry`
+⚠ [114/255] Replayed Theorems.Thm_CollatzWork_mechanicalCoarseBound
+warning: Theorems/Thm_CollatzWork_mechanicalCoarseBound.lean:8:8: declaration uses `sorry`
+⚠ [115/255] Replayed Theorems.Thm_CollatzWork_firstContractionThirdGap
+warning: Theorems/Thm_CollatzWork_firstContractionThirdGap.lean:12:8: declaration uses `sorry`
+⚠ [116/255] Replayed Theorems.Thm_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid
+warning: Theorems/Thm_CollatzWork_Disproof_BranchingCenter_branchingCenterEquationRigid.lean:8:8: declaration uses `sorry`
+⚠ [117/255] Replayed Theorems.Thm_CollatzWork_refinedParent_has_smaller_coalescence
+warning: Theorems/Thm_CollatzWork_refinedParent_has_smaller_coalescence.lean:10:8: declaration uses `sorry`
+⚠ [118/255] Replayed Theorems.Thm_CollatzWork_YAH_ffPumpWord_canonical
+warning: Theorems/Thm_CollatzWork_YAH_ffPumpWord_canonical.lean:14:8: declaration uses `sorry`
+⚠ [119/255] Replayed Theorems.Thm_CollatzWork_YAH_unlabelledRows_legal
+warning: Theorems/Thm_CollatzWork_YAH_unlabelledRows_legal.lean:10:8: declaration uses `sorry`
+⚠ [120/255] Replayed Theorems.Thm_CollatzWork_prefixSeparation
+warning: Theorems/Thm_CollatzWork_prefixSeparation.lean:9:8: declaration uses `sorry`
+⚠ [121/255] Replayed Theorems.Thm_CollatzWork_descentCriterion
+warning: Theorems/Thm_CollatzWork_descentCriterion.lean:8:8: declaration uses `sorry`
+⚠ [122/255] Replayed Theorems.Thm_CollatzWork_firstContractionQuarterGap
+warning: Theorems/Thm_CollatzWork_firstContractionQuarterGap.lean:12:8: declaration uses `sorry`
+⚠ [123/255] Replayed Theorems.Thm_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation
+warning: Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation.lean:17:8: declaration uses `sorry`
+⚠ [124/255] Replayed Theorems.Thm_CollatzWork_twoBurst_converges_of_smaller
+warning: Theorems/Thm_CollatzWork_twoBurst_converges_of_smaller.lean:9:8: declaration uses `sorry`
+⚠ [125/255] Replayed Theorems.Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique
+warning: Theorems/Thm_CollatzWork_Disproof_twoPowerOddNormalFormUnique.lean:7:8: declaration uses `sorry`
+⚠ [126/255] Replayed Theorems.Thm_CollatzWork_Disproof_noNonresonantContentGain
+warning: Theorems/Thm_CollatzWork_Disproof_noNonresonantContentGain.lean:8:8: declaration uses `sorry`
+⚠ [127/255] Replayed Theorems.Thm_CollatzWork_Disproof_twoPumpConstantObstructionVanishes
+warning: Theorems/Thm_CollatzWork_Disproof_twoPumpConstantObstructionVanishes.lean:7:8: declaration uses `sorry`
+⚠ [128/255] Replayed Theorems.Thm_CollatzWork_firstContractionTime
+warning: Theorems/Thm_CollatzWork_firstContractionTime.lean:9:8: declaration uses `sorry`
+⚠ [129/255] Replayed Theorems.Thm_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks
+warning: Theorems/Thm_BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean:7:8: declaration uses `sorry`
+⚠ [130/255] Replayed Theorems.Thm_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows
+warning: Theorems/Thm_BlindCollatz_AlternatingGrowth_goodBlocks_each_block_grows.lean:7:8: declaration uses `sorry`
+⚠ [131/255] Replayed Theorems.Thm_CollatzWork_Disproof_firstRotatedDeterminantCoefficients
+warning: Theorems/Thm_CollatzWork_Disproof_firstRotatedDeterminantCoefficients.lean:6:8: declaration uses `sorry`
+⚠ [132/255] Replayed Theorems.Thm_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder
+warning: Theorems/Thm_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder.lean:15:8: declaration uses `sorry`
+⚠ [133/255] Replayed Theorems.Thm_BlindCollatz_AlternatingGrowth_odd_exponents_one_two
+warning: Theorems/Thm_BlindCollatz_AlternatingGrowth_odd_exponents_one_two.lean:6:8: declaration uses `sorry`
+⚠ [134/255] Replayed Theorems.Thm_CollatzWork_YAH_unlabelledCertificate_shape
+warning: Theorems/Thm_CollatzWork_YAH_unlabelledCertificate_shape.lean:10:8: declaration uses `sorry`
+⚠ [135/255] Replayed Theorems.Thm_CollatzWork_residueAncestor_of_divisibility
+warning: Theorems/Thm_CollatzWork_residueAncestor_of_divisibility.lean:10:8: declaration uses `sorry`
+⚠ [136/255] Replayed Theorems.Thm_CollatzWork_YAH_edgeCertificate_canonically_embeddable
+warning: Theorems/Thm_CollatzWork_YAH_edgeCertificate_canonically_embeddable.lean:11:8: declaration uses `sorry`
+⚠ [137/255] Replayed Theorems.Thm_CollatzWork_YAH_twoState_rule_equations
+warning: Theorems/Thm_CollatzWork_YAH_twoState_rule_equations.lean:9:8: declaration uses `sorry`
+⚠ [138/255] Replayed Theorems.Thm_CollatzWork_equalSlopeSmaller
+warning: Theorems/Thm_CollatzWork_equalSlopeSmaller.lean:7:8: declaration uses `sorry`
+⚠ [139/255] Replayed Theorems.Thm_CollatzWork_excursionChain_converges_of_smaller
+warning: Theorems/Thm_CollatzWork_excursionChain_converges_of_smaller.lean:11:8: declaration uses `sorry`
+⚠ [163/255] Replayed Solutions.Sol_CollatzWork_twoBurst_power_margin
+warning: Solutions/Sol_CollatzWork_twoBurst_power_margin.lean:70:43: This simp argument is unused:
+  Nat.mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.mul_assoc, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [198/255] Replayed Solutions.Sol_CollatzWork_mechanicalCoarseBound
+warning: Solutions/Sol_CollatzWork_mechanicalCoarseBound.lean:23:43: This simp argument is unused:
+  Nat.mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Solutions/Sol_CollatzWork_mechanicalCoarseBound.lean:23:56: This simp argument is unused:
+  Nat.mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.pow_succ, Nat.add_mul, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [212/255] Replayed Solutions.Sol_CollatzWork_blockNumerator12_exact_bound
+warning: Solutions/Sol_CollatzWork_blockNumerator12_exact_bound.lean:8:30: Variable name `hB` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hB
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [213/255] Replayed Solutions.Sol_CollatzWork_excursionChainEnvelope
+warning: Solutions/Sol_CollatzWork_excursionChainEnvelope.lean:15:70: This simp argument is unused:
+  shortcutIter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [excursionDenominator, excursionNumerator, excursionSteps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [224/255] Replayed Solutions.Sol_CollatzWork_floorPower_mul
+warning: Solutions/Sol_CollatzWork_floorPower_mul.lean:40:20: This simp argument is unused:
+  Nat.mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.pow_add, Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [239/255] Replayed Solutions.Sol_CollatzWork_orbitAffine
+warning: Solutions/Sol_CollatzWork_orbitAffine.lean:83:49: This simp argument is unused:
+  Nat.mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.pow_succ, Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm, Nat.add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [247/255] Built Solutions.Sol_CollatzWork_YAH_noTwoStateSymbolAdditiveOrder (760ms)
+✔ [248/255] Built Solutions.Sol_CollatzWork_YAH_evalCoefficients_weightedCoefficient (780ms)
+✔ [249/255] Built Solutions.Sol_CollatzWork_YAH_noTwoStateSymbolCertificateOrientation (943ms)
+✔ [250/255] Built Solutions.Sol_CollatzWork_YAH_noTwoStateEdgeAdditiveOrder (883ms)
+✔ [251/255] Built Solutions.Sol_CollatzWork_YAH_weightedGapSum_pos (876ms)
+✔ [252/255] Built Solutions.Sol_CollatzWork_YAH_noBoundedBelowCanonicalFFPumpWords (1.0s)
+✔ [253/255] Built Solutions.Sol_CollatzWork_YAH_yah13_forces_ff_negative (966ms)
+✔ [254/255] Built Solutions.Sol_CollatzWork_YAH_noTwoStateEdgeCertificateOrientation (944ms)
+Build completed successfully (255 jobs).

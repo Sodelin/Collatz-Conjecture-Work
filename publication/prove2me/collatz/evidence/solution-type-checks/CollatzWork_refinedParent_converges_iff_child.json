@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        Iff (CollatzWork.Converges (CollatzWork.refinedParent L epsilon z))\n          (CollatzWork.Converges (CollatzWork.refinedChild L epsilon z))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (L epsilon z : Nat),\n  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) L →\n    @LE.le.{0} Nat instLENat epsilon (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) →\n      @Eq.{1} Nat\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) epsilon\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))\n          (@HMod.hMod.{0, 0, 0} Nat Nat Nat (@instHMod.{0} Nat Nat.instMod) L\n            (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) →\n        Iff (CollatzWork.Converges (CollatzWork.refinedParent L epsilon z))\n          (CollatzWork.Converges (CollatzWork.refinedChild L epsilon z))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.refinedParent_converges_iff_child",
+  "universe_count_equal": true,
+  "solution_sha256": "2155066f33e68c9598fbf48840304809dc9d186ff462fb9be93fb1163d07d912",
+  "theorem_sha256": "2687c434354f3a8dc417d97a9596ea56f75047e115011d403a0f0d0d74c40110",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_refinedParent_converges_iff_child.lean",
+  "source_files_unchanged": true
+}

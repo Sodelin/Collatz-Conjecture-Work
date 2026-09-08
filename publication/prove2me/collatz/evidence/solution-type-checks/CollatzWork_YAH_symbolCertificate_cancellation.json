@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} CollatzWork.YAH.Token Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.LabeledInstance CollatzWork.YAH.Token\n      CollatzWork.YAH.symbolCertificate CollatzWork.YAH.labeledSymbolDelta)\n    CollatzWork.YAH.allTokens)\n  (@List.map.{0, 0} CollatzWork.YAH.Token Int (fun x => @OfNat.ofNat.{0} Int (nat_lit 0) (@instOfNat (nat_lit 0)))\n    CollatzWork.YAH.allTokens)",
+  "solution_universe_parameters": [],
+  "target_type": "@Eq.{1} (List.{0} Int)\n  (@List.map.{0, 0} CollatzWork.YAH.Token Int\n    (@CollatzWork.YAH.weightedCoefficient.{0, 1} CollatzWork.YAH.LabeledInstance CollatzWork.YAH.Token\n      CollatzWork.YAH.symbolCertificate CollatzWork.YAH.labeledSymbolDelta)\n    CollatzWork.YAH.allTokens)\n  (@List.map.{0, 0} CollatzWork.YAH.Token Int (fun x => @OfNat.ofNat.{0} Int (nat_lit 0) (@instOfNat (nat_lit 0)))\n    CollatzWork.YAH.allTokens)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.symbolCertificate_cancellation",
+  "universe_count_equal": true,
+  "solution_sha256": "bec213493792c9d9a2fadd35792d6f9bbef3f64acd531c09505a7deb73ef752b",
+  "theorem_sha256": "34a78e2258af3d85d3e6162d53c47f70d77f1115bc5ce75345d7305aad48f08e",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_symbolCertificate_cancellation.lean",
+  "source_files_unchanged": true
+}

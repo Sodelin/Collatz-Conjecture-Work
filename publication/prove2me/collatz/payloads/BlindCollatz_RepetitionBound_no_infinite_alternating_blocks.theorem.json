@@ -1,9 +1,9 @@
 {
   "theorem_name": "BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
-  "theorem_title": "BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n",
-  "formal_statement": "theorem BlindCollatz.RepetitionBound.no_infinite_alternating_blocks (x : Nat \u2192 Nat) :\n    \u00ac (\u2200 i, 8 * x (i + 1) = 9 * x i + 5) := by sorry\n\n",
+  "theorem_title": "The alternating expansion recurrence cannot hold forever",
+  "natural_language_statement": "For every sequence $x:\\mathbb N\\to\\mathbb N$,\n\n$$\n\\neg\\bigl(\\forall i\\in\\mathbb N,\\ 8x_{i+1}=9x_i+5\\bigr).\n$$\n\nArbitrarily long finite blocks can coexist with the impossibility of one infinite fixed-block orbit.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_BlindCollatz_RepetitionBound_telescope\n\n\n\n",
+  "formal_statement": "theorem BlindCollatz.RepetitionBound.no_infinite_alternating_blocks (x : Nat → Nat) :\n    ¬ (∀ i, 8 * x (i + 1) = 9 * x i + 5) := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

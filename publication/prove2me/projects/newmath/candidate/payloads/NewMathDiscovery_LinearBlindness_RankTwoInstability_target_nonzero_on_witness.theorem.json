@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
-  "theorem_title": "NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness (n : Nat) :\n    target (witness n) \u2260 0 := by sorry\n\n",
+  "theorem_title": "Each explicit sensor-kernel witness has nonzero target",
+  "natural_language_statement": "For $n\\in\\mathbb N$ and $x=(x_1,x_2)\\in\\mathbb Z^2$, define the observation $r_n(x)=x_1+(n+1)x_2$, target $q(x)=x_1$, and witness $w_n=(n+1,-1)$.\n\n$$\nq(w_n)\\ne0\\qquad(n\\in\\mathbb N).\n$$\n\nThis gives the nonvanishing-target component of the explicit blindness witness. The separate kernel identity identifies the associated observation that vanishes.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness (n : Nat) :\n    target (witness n) ≠ 0 := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "algebra",
+    "kernel",
+    "integer-arithmetic"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L170-L173"
 }

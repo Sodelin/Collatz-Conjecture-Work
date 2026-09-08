@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.affineRecurrenceTelescope",
-  "theorem_title": "CollatzWork.affineRecurrenceTelescope",
-  "natural_language_statement": "Telescoping a finite multiplicative recurrence.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
-  "formal_statement": "theorem CollatzWork.affineRecurrenceTelescope (a b : Nat) (y : Nat \u2192 Nat) (k : Nat)\n    (h : \u2200 i, i < k \u2192 b * y (i + 1) = a * y i) :\n    b ^ k * y k = a ^ k * y 0 := by sorry\n\n",
+  "theorem_title": "Telescoping a finite multiplicative recurrence",
+  "natural_language_statement": "Let $a,b,k\\in\\mathbb N$ and $y:\\mathbb N\\to\\mathbb N$. Assume $b y_{i+1}=a y_i$ for every $i<k$. Then\n\n$$\nb^k y_k=a^k y_0.\n$$\n\nThis records the exact accumulated multiplier without division or positivity assumptions.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.affineRecurrenceTelescope (a b : Nat) (y : Nat → Nat) (k : Nat)\n    (h : ∀ i, i < k → b * y (i + 1) = a * y i) :\n    b ^ k * y k = a ^ k * y 0 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

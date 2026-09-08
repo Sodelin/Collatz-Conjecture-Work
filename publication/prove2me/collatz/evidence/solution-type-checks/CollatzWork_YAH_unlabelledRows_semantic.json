@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "@Eq.{1} Bool\n  (@List.all.{0} CollatzWork.YAH.UnlabelledInstance CollatzWork.YAH.unlabelledRows\n    CollatzWork.YAH.validUnlabelledSemantics)\n  Bool.true",
+  "solution_universe_parameters": [],
+  "target_type": "@Eq.{1} Bool\n  (@List.all.{0} CollatzWork.YAH.UnlabelledInstance CollatzWork.YAH.unlabelledRows\n    CollatzWork.YAH.validUnlabelledSemantics)\n  Bool.true",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.YAH.unlabelledRows_semantic",
+  "universe_count_equal": true,
+  "solution_sha256": "54ef285153a65be19ccd5824bfbe8f9d92c72163dcec298958553df8cef1e1b7",
+  "theorem_sha256": "0f65c1ec648be290f6756340cf220dcad0af966a384ecfca2b72f6387f056cad",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_YAH_unlabelledRows_semantic.lean",
+  "source_files_unchanged": true
+}

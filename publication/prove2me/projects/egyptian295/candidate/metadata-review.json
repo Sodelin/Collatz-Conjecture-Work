@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-08",
+  "reviewer": "ChatGPT/Codex metadata review; not an independent human audit",
+  "source_commit": "566f9800910aae6936d93d1a9f5c756070616f31",
+  "source_repository": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295",
+  "method": "Read preserved source definitions, theorem statements and proofs; compare each payload with its exact source. Retain Lean code byte-for-byte and separate mathematical proof explanations from statements. Correct definition description field to official natural_language_statement. No external priority or novelty conclusion inferred.",
+  "official_references": [
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/contribute.md",
+    "https://github.com/prove2me/prove2me_workspace/blob/6b46503a65c3a4252170ed5ca984a796b5a5b6b4/references/upload_full_project.md"
+  ],
+  "status": "passed",
+  "reviewed_items": [
+    {
+      "name": "EgyptianFractions_Baseline18",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Baseline18.lean#L1-L54",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "The explicit known 35-denominator baseline at lower bound 18"
+    },
+    {
+      "name": "EgyptianFractions_Certificate",
+      "kind": "definition",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Certificate.lean#L1-L77",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "Exact rational certificates and minimum lengths for Egyptian fractions"
+    },
+    {
+      "name": "EgyptianFractions.exists_minimum18_le_35",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Baseline18.lean#L42-L47",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "A least Egyptian-fraction length at lower bound 18 exists and is at most 35"
+    },
+    {
+      "name": "EgyptianFractions.exists_minimum_of_representation",
+      "kind": "theorem",
+      "publication_status": "scheduled",
+      "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Certificate.lean#L57-L75",
+      "checked": [
+        "all variables and hypotheses described",
+        "display formula and role paragraph",
+        "proof explanation separated from theorem statement",
+        "source commit and line range",
+        "scope and attribution preserved"
+      ],
+      "title": "A supplied Egyptian-fraction representation has a least possible length"
+    }
+  ],
+  "payload_byte_check": "Every scheduled definition body and every preamble+formal_statement equals the already compiled staged Lean file byte-for-byte. The pre-existing missing separator newline in theorem JSON preambles was restored. No staged or source Lean code changed."
+}

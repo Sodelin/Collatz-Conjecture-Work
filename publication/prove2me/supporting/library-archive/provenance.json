@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "source_records": [
+    {
+      "library_file_id": "libfile_f8d557b44ce4819184c114b4833d52e6",
+      "file_id": "file_000000008fdc81fd9fc7d30a6123015c",
+      "version_id": null,
+      "original_name": "collatz_round6b_checks.py",
+      "original_size_bytes": 7697,
+      "full_read": true,
+      "archive_path": "collatz_round6b_checks.py",
+      "archive_size_bytes": 7697,
+      "archive_sha256": "0693b70cd6e2ba4fcde7ee6e85613012cacd7dc17fb0ebcc216571d7ea16a05d",
+      "source_checksum": "0693b70cd6e2ba4fcde7ee6e85613012cacd7dc17fb0ebcc216571d7ea16a05d",
+      "source_checksum_match": true,
+      "recovery_method": "Complete Library text read; restored final newline.",
+      "byte_fidelity": "matches_independently_saved_source_sha256"
+    },
+    {
+      "library_file_id": "libfile_478d9916a81c8191bd0f18e309c71ecb",
+      "file_id": "file_00000000d78081fd8bcc1c8b28ac016e",
+      "version_id": null,
+      "original_name": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.md",
+      "original_size_bytes": 26287,
+      "full_read": true,
+      "archive_path": "Collatz_Round6B_Terminal_Approximation_Barrier_Dossier_2026-08-01.md",
+      "archive_size_bytes": 26287,
+      "archive_sha256": "82c7220f780aea1afd60f6bdc0658537476908ff8da0edb468a84c72c368ed65",
+      "source_checksum": "82c7220f780aea1afd60f6bdc0658537476908ff8da0edb468a84c72c368ed65",
+      "source_checksum_match": true,
+      "recovery_method": "Complete Library text read; restored final newline.",
+      "byte_fidelity": "matches_independently_saved_source_sha256"
+    },
+    {
+      "library_file_id": "libfile_5ee575e8148c8191aa4f47d80965bbcc",
+      "file_id": "file_00000000270081fdb7fe212acf1ebccd",
+      "version_id": null,
+      "original_name": "Collatz_Round6B_Claim_Ledger_2026-08-01.csv",
+      "original_size_bytes": 1716,
+      "full_read": true,
+      "archive_path": "Collatz_Round6B_Claim_Ledger_2026-08-01.read-export.txt",
+      "archive_size_bytes": 1706,
+      "archive_sha256": "9adb93f81bb0239c152573ea649db5b48c09cce2ff10854db7eebf7fa5e905c5",
+      "source_checksum": "8985a386975e0543b4b3c2ef44184429a4b92c059949ddb39e64b9ae2cca5f61",
+      "source_checksum_match": false,
+      "recovery_method": "Parsed CSV text export, with renderer annotation removed; original CSV quoting/bytes unavailable.",
+      "byte_fidelity": "read_export_only_not_original_bytes"
+    },
+    {
+      "library_file_id": "libfile_ae59afffb1888191813f696a934b3635",
+      "file_id": "file_00000000df7081fdbe7c6696e9e8a0ba",
+      "version_id": null,
+      "original_name": "Collatz_Round6B_SHA256_2026-08-01.txt",
+      "original_size_bytes": 1273,
+      "full_read": true,
+      "archive_path": "Collatz_Round6B_SHA256_2026-08-01.txt",
+      "archive_size_bytes": 1273,
+      "archive_sha256": "da84b6bb49e728fac9f60cd70335d57088c9d91f97d89971531b3f79c7d738be",
+      "source_checksum": null,
+      "source_checksum_match": null,
+      "recovery_method": "Complete Library text read; restored final newline.",
+      "byte_fidelity": "reported_size_matches_no_independent_hash"
+    }
+  ],
+  "authentication_data_included": false,
+  "claim_status": "historical_unverified_research",
+  "proof_status": "No additional Lean source or new theorem verification recovered.",
+  "duplicate_comparison": {
+    "snapshots": 8,
+    "result": "Recovered dossier/checker hashes did not match any tracked file in the eight catalogued snapshots or any retained Collatz git-history blob.",
+    "limits": "Opaque existing ZIP archive contents were not expanded for comparison."
+  },
+  "content_screen": {
+    "result": "No credentials or unrelated personal content found in the recovered math text. The dossier retains its historical private-research heading; the user subsequently authorized publishing all math work.",
+    "execution": "Historical checker source was inspected for file/network/process operations; none were present. It was not executed by this recovery task."
+  }
+}

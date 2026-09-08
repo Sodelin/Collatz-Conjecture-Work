@@ -1,10 +1,13 @@
 {
   "definition_name": "NewMathDiscovery_BlindnessRealization",
-  "definition_title": "NewMathDiscovery.BlindnessRealization definitions",
-  "natural_language_description": "Definitions and necessary proof-bearing construction material from NewMathDiscovery.BlindnessRealization.",
-  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace NewMathDiscovery.BlindnessRealization\n\n/-- One target-false base state and one target-true state for each generator. -/\ninductive State (J : Type) where\n  | base\n  | face (j : J)\n  deriving DecidableEq\n\nnamespace State\n\ndef target {J : Type} : State J \u2192 Bool\n  | .base => false\n  | .face _ => true\n\n/-- The base state reports `false`. A face state reports `false` exactly on\ncoordinates belonging to that face. -/\ndef observe {I J : Type} (F : J \u2192 I \u2192 Bool) (i : I) : State J \u2192 Bool\n  | .base => false\n  | .face j => !(F j i)\n\nend State\n\n/-- Two states are observationally indistinguishable to coalition `S`. -/\ndef AgreeOn {I X : Type} (S : I \u2192 Prop) (r : I \u2192 X \u2192 Bool)\n    (x y : X) : Prop :=\n  \u2200 i, S i \u2192 r i x = r i y\n\n/-- A coalition is target-blind if it cannot distinguish two states with\nopposite Boolean targets. -/\ndef Blind {I X : Type} (S : I \u2192 Prop) (r : I \u2192 X \u2192 Bool)\n    (q : X \u2192 Bool) : Prop :=\n  \u2203 x y, q x \u2260 q y \u2227 AgreeOn S r x y\n\n\n\n\n\n\n\n\nend NewMathDiscovery.BlindnessRealization\n",
+  "definition_title": "A base-and-face Boolean observation system",
+  "definition": "import Std\nimport Init.Grind.Ordered.Module\nnamespace NewMathDiscovery.BlindnessRealization\n\n/-- One target-false base state and one target-true state for each generator. -/\ninductive State (J : Type) where\n  | base\n  | face (j : J)\n  deriving DecidableEq\n\nnamespace State\n\ndef target {J : Type} : State J → Bool\n  | .base => false\n  | .face _ => true\n\n/-- The base state reports `false`. A face state reports `false` exactly on\ncoordinates belonging to that face. -/\ndef observe {I J : Type} (F : J → I → Bool) (i : I) : State J → Bool\n  | .base => false\n  | .face j => !(F j i)\n\nend State\n\n/-- Two states are observationally indistinguishable to coalition `S`. -/\ndef AgreeOn {I X : Type} (S : I → Prop) (r : I → X → Bool)\n    (x y : X) : Prop :=\n  ∀ i, S i → r i x = r i y\n\n/-- A coalition is target-blind if it cannot distinguish two states with\nopposite Boolean targets. -/\ndef Blind {I X : Type} (S : I → Prop) (r : I → X → Bool)\n    (q : X → Bool) : Prop :=\n  ∃ x y, q x ≠ q y ∧ AgreeOn S r x y\n\n\n\n\n\n\n\n\nend NewMathDiscovery.BlindnessRealization\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "combinatorics",
+    "information",
+    "boolean-systems"
   ],
-  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean"
+  "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/BlindnessRealization.lean#L1-L81",
+  "natural_language_statement": "For arbitrary types $I,J$ and a Boolean family $F:J\\times I\\to\\{0,1\\}$, form one base state $*$ and one face state $[j]$ per generator. The target $q$ and observations $r_i$ are\n\n$$\nq(*)=0,\\quad q([j])=1,\\qquad r_i(*)=0,\\quad r_i([j])=1-F(j,i).\n$$\n\nAgreement on a coalition $S\\subseteq I$ means equality of observations for all selected indices. Blindness means existence of an agreeing pair with different targets.\n\nThis finite-or-infinite interface realizes families of blind coalitions in the associated theorem. The types I and J are arbitrary and need not be nonempty."
 }

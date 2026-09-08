@@ -12,10 +12,10 @@
   },
   "environment": {
     "toolchain": "leanprover/lean4:v4.33.1",
-    "mathlib_rev": null
+    "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474"
   },
   "validation": {
-    "status": "pending",
+    "status": "passed",
     "remote_status": "not_submitted",
     "required": [
       "exact upload text compilation",
@@ -26,12 +26,15 @@
     "source_build_status": "passed",
     "exact_upload_text_status": "passed",
     "type_comparison_status": "passed",
-    "metadata_status": "pending",
+    "metadata_status": "passed",
     "evidence_files": [
       "staged-build-final.log",
-      "type-checks/comparison.json"
+      "type-checks/comparison.json",
+      "metadata-review.json",
+      "live-environment.json"
     ],
-    "summary": "All2 definition bundles,2 theorem stubs and2 exact solution files compile. Original/stub/solution elaborated pretty-printed types match exactly for all2 nodes. Academic metadata and live platform environment pin still pending; no upload."
+    "summary": "All2 definition bundles,2 theorem stubs and2 exact solution files compile. Original/stub/solution elaborated pretty-printed types match exactly for all2 nodes. Academic metadata reviewed against exact source with separate proof explanations. Live default Lean4.33.1 / Mathlib 0df444a360eaa60ab8c11dca51a86af692955474 confirmed. These payloads use only Lean core/Std; the Mathlib revision selects the remote environment and introduces no imported Mathlib dependency. Ready for idempotent upload; remote acceptance not yet checked.",
+    "platform_environment_status": "passed"
   },
   "items": [
     {
@@ -39,14 +42,16 @@
       "kind": "definition",
       "depends_on": [],
       "payload_file": "payloads/EgyptianFractions_Baseline18.definition.json",
-      "definition_file": "Definitions/Def_EgyptianFractions_Baseline18.lean"
+      "definition_file": "Definitions/Def_EgyptianFractions_Baseline18.lean",
+      "metadata_status": "passed"
     },
     {
       "key": "def:EgyptianFractions.Certificate",
       "kind": "definition",
       "depends_on": [],
       "payload_file": "payloads/EgyptianFractions_Certificate.definition.json",
-      "definition_file": "Definitions/Def_EgyptianFractions_Certificate.lean"
+      "definition_file": "Definitions/Def_EgyptianFractions_Certificate.lean",
+      "metadata_status": "passed"
     },
     {
       "key": "thm:EgyptianFractions.exists_minimum18_le_35",
@@ -59,7 +64,8 @@
       "payload_file": "payloads/EgyptianFractions_exists_minimum18_le_35.theorem.json",
       "solution_file": "Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.lean",
       "theorem_file": "Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean",
-      "metadata_status": "needs_academic_metadata_review"
+      "metadata_status": "passed",
+      "explanation": "Kernel reduction verifies the explicit baseline list has35 distinct positive denominators at least18 and exact rational reciprocal sum 1. The general well-ordering lemma supplies an attained minimum. Its minimality bounds that length by the certified 35-term representation."
     },
     {
       "key": "thm:EgyptianFractions.exists_minimum_of_representation",
@@ -70,42 +76,45 @@
       "payload_file": "payloads/EgyptianFractions_exists_minimum_of_representation.theorem.json",
       "solution_file": "Solutions/Sol_EgyptianFractions_exists_minimum_of_representation.lean",
       "theorem_file": "Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean",
-      "metadata_status": "needs_academic_metadata_review"
+      "metadata_status": "passed",
+      "explanation": "Use strong induction on the supplied representation length. If a shorter representation exists, apply the induction hypothesis to its length. Otherwise the current length itself is attained and no smaller length is attainable, so it is minimum."
     }
   ],
   "files": {
-    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
-    "staged-build-second.log": "30762710c232cb0cf45137ecfa51b77ebabcb1e9b4413aa2b5d4f34079dcffa7",
-    "lake-manifest.json": "2a7e26addf69fe59881e81f141cae3fffb2b6ee98e2f53b879e407a87c2f0f15",
-    "Theorems.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
-    "Solutions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
-    "Definitions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
-    "coverage.json": "ec1e1e969b99165935ba2c1c23ad6b2ec2fb209ff70aec7358fb25c70798776b",
-    "staged-build.log": "5b4f854671b9008eb7b1878085b7e2029b2454bf8e65dc55a72bbef34bfd6be3",
-    "staged-build-final.log": "fe7f46cfb5202ec9d2a86509c69fa91455e105416aabef7a5a3f3ade2bc0a5be",
-    "lakefile.toml": "58add95f03bb88acc23005bfd029838674f9bac34c75791b72a5c62e422bbb5c",
     "Definitions/Def_EgyptianFractions_Baseline18.lean": "1b841b16d4dd5b66823b9126185a98a5e717fe6f812f0c59e7ffb31dddfbef2a",
     "Definitions/Def_EgyptianFractions_Certificate.lean": "eb5d906c1b40c398ee1bb8cf44f97209706f52bc4f925d271dc555a80cc35aeb",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "type-checks/comparison.json": "4002e004c64a8c8c8cb47e4fe6d2ce5c998c87df71ee5d791a8dabf2650fd091",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.json": "4ed80cbfc06680a45582e5a0f8a26a2dfabeb86bed6e52f5c4561999de7b0627",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.lean": "b2ad9f28a8f114e7c18aaaeaba882fc9dc05ce27553326583e6b27921d03627d",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.json": "1aa038f26bde4c83f9aea0ed463b6614bf2558e5dcf90ae77b865297fff3948c",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.lean": "3f949d74feb59d81df844c0ce17230d84b1718b856af77eb4079e3bc3a0b94d3",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.lean": "86077c7dd96e67ed49d4032513249a7a661ce5e2045ace8489ee403dcf70404c",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.json": "4ed80cbfc06680a45582e5a0f8a26a2dfabeb86bed6e52f5c4561999de7b0627",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.json": "1aa038f26bde4c83f9aea0ed463b6614bf2558e5dcf90ae77b865297fff3948c",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.lean": "f9d9fc7fee1dddde02dacce4c4e128f4e214f5b5b6d19356c0a1ad0795c8059b",
-    "Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean": "1ee8f765ba4595cfdea5e14a337f6b29a7c947743024e674d4b2a159905af243",
-    "Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean": "a9118b92a149aa563d445deb5493e5ec3dd8bea71e0f23205c9f4c27c538bee3",
+    "Definitions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
     "Solutions/Sol_EgyptianFractions_exists_minimum18_le_35.lean": "16bb552ed26a5a281e15f8e0e461c5e43811bf192caf9e4573baffd6aa83127f",
     "Solutions/Sol_EgyptianFractions_exists_minimum_of_representation.lean": "4d25ae93b16ab955d9784fff29b6ba123882ba110fa6b43ff374aab466b7457a",
-    "payloads/EgyptianFractions_Baseline18.definition.json": "14b99bf0f7ddeba2adcbc9dc94011a4f65164f63b1d3709b4dc9e23646bebfef",
-    "payloads/EgyptianFractions_exists_minimum_of_representation.theorem.json": "ef23b3529c2cbe973a9ec4c5b5c20198b76e7753ffa09ca54cf4d6651c4d9245",
-    "payloads/EgyptianFractions_exists_minimum18_le_35.theorem.json": "e19e137fbaac135ff90c351462eaa53d19a310f4e3d0d881a5b76a301f688337",
-    "payloads/EgyptianFractions_Certificate.definition.json": "99c6b1875829ef6f4dc2ee67a8875392efc2f87f63faf08c823a43c58beb9785"
+    "Solutions.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
+    "Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean": "a9118b92a149aa563d445deb5493e5ec3dd8bea71e0f23205c9f4c27c538bee3",
+    "Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean": "1ee8f765ba4595cfdea5e14a337f6b29a7c947743024e674d4b2a159905af243",
+    "Theorems.lean": "5254afac10c0bcd6c3e7810fc6327276ad884c93bf0e1bd8885b44b63e9c681f",
+    "coverage.json": "ec1e1e969b99165935ba2c1c23ad6b2ec2fb209ff70aec7358fb25c70798776b",
+    "lake-manifest.json": "2a7e26addf69fe59881e81f141cae3fffb2b6ee98e2f53b879e407a87c2f0f15",
+    "lakefile.toml": "58add95f03bb88acc23005bfd029838674f9bac34c75791b72a5c62e422bbb5c",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "live-environment.json": "e374579386283836476bbedaf1a801bd68df606e9b2f541e8c7af2dc79316bd5",
+    "metadata-review.json": "29830626ffdc697eefa7c706d159cfdf89e45882137f1ef60763e4b6a4f6aeab",
+    "payloads/EgyptianFractions_Baseline18.definition.json": "32ac82699818aec1800cb11529037e3215d5a065ea41d5060049c603adecaa3c",
+    "payloads/EgyptianFractions_Certificate.definition.json": "1c5d2d1ea0808f9968541fb6b33b8c3924dc2aa06a13143c639707c3fd3dc156",
+    "payloads/EgyptianFractions_exists_minimum18_le_35.theorem.json": "6b1eb85f67a806a538533f1a33b8f60c1041e02343b94269efa04834004e181a",
+    "payloads/EgyptianFractions_exists_minimum_of_representation.theorem.json": "d17e2ba89e264b13b1313ab358acec96a38804f77f736b8cca9b492318e04a92",
+    "staged-build-final.log": "fe7f46cfb5202ec9d2a86509c69fa91455e105416aabef7a5a3f3ade2bc0a5be",
+    "staged-build-second.log": "30762710c232cb0cf45137ecfa51b77ebabcb1e9b4413aa2b5d4f34079dcffa7",
+    "staged-build.log": "5b4f854671b9008eb7b1878085b7e2029b2454bf8e65dc55a72bbef34bfd6be3",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.json": "1aa038f26bde4c83f9aea0ed463b6614bf2558e5dcf90ae77b865297fff3948c",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.lean": "b2ad9f28a8f114e7c18aaaeaba882fc9dc05ce27553326583e6b27921d03627d",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.solution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.json": "1aa038f26bde4c83f9aea0ed463b6614bf2558e5dcf90ae77b865297fff3948c",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.lean": "86077c7dd96e67ed49d4032513249a7a661ce5e2045ace8489ee403dcf70404c",
+    "type-checks/EgyptianFractions_exists_minimum18_le_35.theorem.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.json": "4ed80cbfc06680a45582e5a0f8a26a2dfabeb86bed6e52f5c4561999de7b0627",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.lean": "3f949d74feb59d81df844c0ce17230d84b1718b856af77eb4079e3bc3a0b94d3",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.solution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.json": "4ed80cbfc06680a45582e5a0f8a26a2dfabeb86bed6e52f5c4561999de7b0627",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.lean": "f9d9fc7fee1dddde02dacce4c4e128f4e214f5b5b6d19356c0a1ad0795c8059b",
+    "type-checks/EgyptianFractions_exists_minimum_of_representation.theorem.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type-checks/comparison.json": "4002e004c64a8c8c8cb47e4fe6d2ce5c998c87df71ee5d791a8dabf2650fd091"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (s : Nat),\n  @Eq.{1} Nat\n    (CollatzWork.mechanicalMax\n      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) s\n        (@OfNat.ofNat.{0} Nat (nat_lit 12) (instOfNatNat (nat_lit 12)))))\n    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@OfNat.ofNat.{0} Nat (nat_lit 531441) (instOfNatNat (nat_lit 531441))) (CollatzWork.mechanicalMax s))\n      (CollatzWork.blockNumerator12\n        (CollatzWork.floorPower\n          (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) s))\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) s)))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (s : Nat),\n  @Eq.{1} Nat\n    (CollatzWork.mechanicalMax\n      (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) s\n        (@OfNat.ofNat.{0} Nat (nat_lit 12) (instOfNatNat (nat_lit 12)))))\n    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n        (@OfNat.ofNat.{0} Nat (nat_lit 531441) (instOfNatNat (nat_lit 531441))) (CollatzWork.mechanicalMax s))\n      (CollatzWork.blockNumerator12\n        (CollatzWork.floorPower\n          (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n            (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) s))\n        (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n          (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) s)))",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.mechanical_twelve_identity",
+  "universe_count_equal": true,
+  "solution_sha256": "42d0ed80cc3943cd5ef9c421d88b5480aedbe35fecd7277689b3383f90a476a0",
+  "theorem_sha256": "3938ccecee928fd120f08dbe59147cc2d6c582b00751f0940cfcc0fdb1f62740",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_mechanical_twelve_identity.lean",
+  "source_files_unchanged": true
+}

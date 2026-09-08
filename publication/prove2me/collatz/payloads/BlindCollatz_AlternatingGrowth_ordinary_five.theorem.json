@@ -1,8 +1,8 @@
 {
   "theorem_name": "BlindCollatz.AlternatingGrowth.ordinary_five",
-  "theorem_title": "BlindCollatz.AlternatingGrowth.ordinary_five",
-  "natural_language_statement": "One (1,2) block is two accelerated odd steps, three shortcut steps,\n    and five ordinary Collatz steps.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n",
+  "theorem_title": "Five ordinary steps for one alternating expansion block",
+  "natural_language_statement": "Let $C:\\mathbb N\\to\\mathbb N$ be the ordinary Collatz map: $C(n)=n/2$ for even $n$ and $C(n)=3n+1$ for odd $n$. Write $C^k$ for its $k$-fold iterate.\n\nFor every $q\\in\\mathbb N$,\n\n$$\nC^5(16q+11)=18q+13.\n$$\n\nThis computes the ordinary-map timing for the residue family, without substituting shortcut and ordinary step counts.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_ArchiveAlternatingGrowth\n\n\n\n",
   "formal_statement": "theorem BlindCollatz.AlternatingGrowth.ordinary_five (q : Nat) :\n    ordinarySteps 5 (16 * q + 11) = 18 * q + 13 := by sorry\n\n",
   "tags": [
     "collatz-work-import"

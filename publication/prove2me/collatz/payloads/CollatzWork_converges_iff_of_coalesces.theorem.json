@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.converges_iff_of_coalesces",
-  "theorem_title": "Formal descent and smaller-coalescence equivalences",
-  "natural_language_statement": "AllPositiveConverge is equivalent both to UniversalDescent and to UniversalSmallerCoalescence. The latter requires, for every n>1, a positive m<n and r,s in Nat such that T^r(n)=T^s(m). Converges means an actual finite shortcut iterate reaches 1. Convergence is preserved by finite prefixes and by coalescence. Limitations: These are induction criteria and semantic equivalences. UniversalSmallerCoalescence and UniversalDescent are not proved; each is Collatz-equivalent. The map keeps the cycle 1->2->1 rather than making 1 absorbing. No novelty claim for the criteria.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_converges_shortcutIter_iff\n\n\n",
-  "formal_statement": "theorem CollatzWork.converges_iff_of_coalesces {n m r s : Nat}\n    (h : shortcutIter r n = shortcutIter s m) :\n    Converges n \u2194 Converges m := by sorry\n\n",
+  "theorem_title": "Coalescing shortcut orbits converge equivalently",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$. Write $\\mathcal C(n)$ for the assertion that $T^j(n)=1$ for some $j\\in\\mathbb N$.\n\nLet $n,m,r,s\\in\\mathbb N$ satisfy $T^r(n)=T^s(m)$. Then\n\n$$\n\\mathcal C(n)\\iff\\mathcal C(m).\n$$\n\nA witnessed shared orbit point transfers convergence between starts without requiring equal step counts.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Theorems.Thm_CollatzWork_converges_shortcutIter_iff\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.converges_iff_of_coalesces {n m r s : Nat}\n    (h : shortcutIter r n = shortcutIter s m) :\n    Converges n ↔ Converges m := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

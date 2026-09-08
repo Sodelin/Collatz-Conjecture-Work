@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.NoInfiniteExpandingAffineBlocksStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.NoInfiniteExpandingAffineBlocksStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.noInfiniteExpandingAffineBlocks",
+  "universe_count_equal": true,
+  "solution_sha256": "1b5dc3555715403d36a30ccf038cf61da0361f562a0637a1c421f6d421218e33",
+  "theorem_sha256": "ace9f3abfe6d6458ca2510580e66234f7fb5c14059ecd5b457d05f56b753960d",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_noInfiniteExpandingAffineBlocks.lean",
+  "source_files_unchanged": true
+}

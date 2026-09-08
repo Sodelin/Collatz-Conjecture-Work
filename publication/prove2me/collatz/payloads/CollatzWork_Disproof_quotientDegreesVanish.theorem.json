@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.Disproof.quotientDegreesVanish",
-  "theorem_title": "CollatzWork.Disproof.quotientDegreesVanish",
-  "natural_language_statement": "Degree telescoping leaves no nonconstant quotient: nonnegative quotient\ndegrees summing to zero are all zero.  The polynomial degree identities around\na state cycle produce exactly the premise of this theorem.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n",
-  "formal_statement": "theorem CollatzWork.Disproof.quotientDegreesVanish\n    (degrees : List Nat)\n    (hSum : degrees.sum = 0) :\n    \u2200 g \u2208 degrees, g = 0 := by sorry\n\n",
+  "theorem_title": "Every entry of a zero-sum natural-number list vanishes",
+  "natural_language_statement": "Let $L$ be a finite list of natural numbers whose sum is zero. Then\n\n$$\\sum_{g\\in L}g=0\\quad\\Longrightarrow\\quad\\forall g\\in L,\\ g=0.$$\n\nThe sum counts repeated list entries. This elementary fact can finish a degree-telescoping argument once that argument has produced a zero sum of nonnegative degrees; no polynomial or cycle hypotheses are part of this theorem.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.quotientDegreesVanish\n    (degrees : List Nat)\n    (hSum : degrees.sum = 0) :\n    ∀ g ∈ degrees, g = 0 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

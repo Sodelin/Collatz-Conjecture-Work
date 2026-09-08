@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.residueAncestor_of_divisibility",
-  "theorem_title": "Complete uniform divisibility ancestor theorem at threshold13",
-  "natural_language_statement": "For every r in Nat with 3^13 dividing 4*r+1, there exist naturals m,b such that 0<m<r, m mod27=20, and shortcutIter b m=r. The factorization, selector, strict comparison, and actual parity semantics are included. Limitations: Supersedes the older uniform threshold21 selector. Individually lower guarded rows and selected-table sharpness retain prose/Python scope. The divisor guard is not known for arbitrary residual roots. Novelty unconfirmed.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_ResidueAncestorStatement\nimport Theorems.Thm_CollatzWork_residueAncestor\nimport Theorems.Thm_CollatzWork_residueAncestor_factor_unit\n\n\n",
+  "theorem_title": "A smaller residue-20 ancestor from divisibility by the thirteenth power of three",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $r\\in\\mathbb N$ satisfy $3^{13}\\mid(4r+1)$. Then\n\n$$\n\\exists m,b\\in\\mathbb N,\\quad 0<m<r,\\quad m\\equiv20\\pmod{27},\\quad T^b(m)=r.\n$$\n\nThe premise is only integer divisibility; a maximal power-of-three factorization is constructed within the proof. The divisor condition remains a genuine guard.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_ResidueAncestorStatement\nimport Theorems.Thm_CollatzWork_residueAncestor\nimport Theorems.Thm_CollatzWork_residueAncestor_factor_unit\n\n\n\n",
   "formal_statement": "theorem CollatzWork.residueAncestor_of_divisibility : ResidueAncestorDivisibilityStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

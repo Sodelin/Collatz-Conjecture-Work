@@ -1,11 +1,14 @@
 {
   "theorem_name": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
-  "theorem_title": "NewMathDiscovery.LinearBlindness.pairBlind_downward",
-  "natural_language_statement": "Removing observations cannot destroy an existing blindness witness.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n",
-  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.pairBlind_downward {Index State Value : Type}\n    (system : System Index State Value) {smaller larger : Index \u2192 Prop}\n    (hsubset : \u2200 i, smaller i \u2192 larger i)\n    (hblind : PairBlind system larger) :\n    PairBlind system smaller := by sorry\n\n",
+  "theorem_title": "Removing observations preserves a target-blind pair",
+  "natural_language_statement": "Let $I,X,V$ be arbitrary types with distinguished zeros in $X,V$, subtraction operations, observation maps $r_i:X\\to V$ and target $q:X\\to V$. Assume the maps preserve zero and subtraction, and subtraction in $V$ is zero exactly when its arguments are equal. For a selected set $S\\subseteq I$, let $K_S=\\{d\\in X:\\forall i\\in S,\\ r_i(d)=0\\}$. Let $A,B\\subseteq I$ satisfy $A\\subseteq B$. Write $\\operatorname{Blind}(S)$ for the existence of two states whose target values differ but whose observations agree at every index in $S$. Then\n\n$$\n\\operatorname{Blind}(B)\\Longrightarrow\\operatorname{Blind}(A).\n$$\n\nThis monotonicity lemma permits restriction of the observer coalition while retaining a witness of target nonidentifiability.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_LinearBlindness\n\n\n\n",
+  "formal_statement": "theorem NewMathDiscovery.LinearBlindness.pairBlind_downward {Index State Value : Type}\n    (system : System Index State Value) {smaller larger : Index → Prop}\n    (hsubset : ∀ i, smaller i → larger i)\n    (hblind : PairBlind system larger) :\n    PairBlind system smaller := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "algebra",
+    "information",
+    "monotonicity"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/LinearBlindness.lean#L112-L119"
 }

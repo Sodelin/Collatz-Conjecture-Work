@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Extension734.lift_admissible",
-  "theorem_title": "Erdos302Extension734.lift_admissible",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_KernelEndpoints734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n",
-  "formal_statement": "theorem Erdos302Extension734.lift_admissible (S : Nat \u2192 Bool) (n : Nat)\n (hnlo : 732 \u2264 n) (hnhi : n \u2264 734) (hS : Admissible 732 S) :\n Admissible n (liftTo S n) := by sorry\n\n",
+  "theorem_title": "Adjoining endpoints through 734 preserves admissibility",
+  "natural_language_statement": "Call a subset of positive integers admissible if it contains no $a<b<c$ satisfying $a(b+c)=bc$, equivalently $1/a=1/b+1/c$. Let $S$ be admissible and supported in $\\{1,\\ldots,732\\}$, and let $n\\in\\mathbb N$ satisfy $732\\leq n\\leq734$. Define $L_n(S)$ to agree with $S$ at all $x\\leq732$ and to select exactly those of 733 and 734 that are at most $n$. Then\n\n$$\nL_n(S)\\subseteq\\{1,\\ldots,n\\},\\qquad L_n(S)\\text{ is admissible}.\n$$\n\nThis endpoint extension supplies witnesses for the exact-maximum transfers at 733 and 734.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Extension734\nimport Definitions.Def_KernelEndpoints734\nimport Definitions.Def_Plateau302\n\nopen Erdos302Finite\n\n",
+  "formal_statement": "theorem Erdos302Extension734.lift_admissible (S : Nat → Bool) (n : Nat)\n (hnlo : 732 ≤ n) (hnhi : n ≤ 734) (hS : Admissible 732 S) :\n Admissible n (liftTo S n) := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "extremal-combinatorics",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Extension734.lean#L71-L92"
 }

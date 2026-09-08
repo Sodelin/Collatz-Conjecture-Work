@@ -7,5 +7,10 @@
   "staging_build_jobs": 255,
   "staging_build_exit_code": 0,
   "exact_type_matches": 113,
-  "type_comparison_count": 113
+  "type_comparison_count": 113,
+  "strict_autoImplicit_false": true,
+  "strict_staging_build_exit_code": 0,
+  "strict_exact_type_matches": 113,
+  "strict_definition_type_matches": 243,
+  "strict_solution_target_type_matches": 113
 }

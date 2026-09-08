@@ -1,11 +1,12 @@
 {
   "theorem_name": "NewMathDiscovery.RankedCoalescence.iterate_zero",
-  "theorem_title": "NewMathDiscovery.RankedCoalescence.iterate_zero",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
+  "theorem_title": "Zero iterations return the input",
+  "natural_language_statement": "For any type $X$, function $f:X\\to X$, and element $x\\in X$, let $f^k$ denote the source recursively defined iteration. Then\n\n$$\nf^0(x)=x.\n$$\n\nThis structural identity is inlined in the current publication plan; this leftover payload is not scheduled for upload.",
   "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_NewMathDiscovery_RankedCoalescenceSound\n\n\n",
-  "formal_statement": "@[simp]\ntheorem NewMathDiscovery.RankedCoalescence.iterate_zero {\u03b1 : Type} (f : \u03b1 \u2192 \u03b1) (x : \u03b1) :\n    iterate f 0 x = x := by sorry\n\n",
+  "formal_statement": "@[simp]\ntheorem NewMathDiscovery.RankedCoalescence.iterate_zero {α : Type} (f : α → α) (x : α) :\n    iterate f 0 x = x := by sorry\n\n",
   "tags": [
-    "sodelin-newmath"
+    "sodelin-newmath",
+    "dynamical-systems"
   ],
   "source": "https://github.com/Sodelin/new-math-discovery/blob/fc2ce68341a0556cebb4e5843a3127f0881b91db/lean/NewMathDiscovery/RankedCoalescenceSound.lean#L10-L12"
 }

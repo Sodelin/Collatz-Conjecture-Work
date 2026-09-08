@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.EqualSlopeWitnessStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.EqualSlopeWitnessStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.equalSlopeWitness",
+  "universe_count_equal": true,
+  "solution_sha256": "4f9dab1ce16ec4137519f16f13a8677adbfbe5281cdb6136bdbd4f8f4f70aafd",
+  "theorem_sha256": "aa2c396b1f926337c9d42849d00f20196dfd8eea9ad28fef886e67a521551d91",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_equalSlopeWitness.lean",
+  "source_files_unchanged": true
+}

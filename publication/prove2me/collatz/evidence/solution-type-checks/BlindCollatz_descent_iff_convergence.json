@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "Iff BlindCollatz.UniversalDescent BlindCollatz.CollatzConjecture",
+  "solution_universe_parameters": [],
+  "target_type": "Iff BlindCollatz.UniversalDescent BlindCollatz.CollatzConjecture",
+  "target_universe_parameters": [],
+  "theorem_name": "BlindCollatz.descent_iff_convergence",
+  "universe_count_equal": true,
+  "solution_sha256": "52eaafde2422fc410459daf5e331f370ba4de62fa83b0d29f403333604303beb",
+  "theorem_sha256": "85f209c560fcc1d3e54b55d9e1b0c01df954adab636f38c47f65ed80ceda43a8",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/BlindCollatz_descent_iff_convergence.lean",
+  "source_files_unchanged": true
+}

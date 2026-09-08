@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FixedRatioDivisibilityStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FixedRatioDivisibilityStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.fixedRatioDivisibility",
+  "universe_count_equal": true,
+  "solution_sha256": "c9a7f94815b67f24a79bc06c865beaa0b51b3012dfedde9c0def334aa9bb975d",
+  "theorem_sha256": "d2e5054595f9bfaef76a9838c6f1cb0e2e8e54755dc4ad82dffb105c2898ffd0",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_fixedRatioDivisibility.lean",
+  "source_files_unchanged": true
+}

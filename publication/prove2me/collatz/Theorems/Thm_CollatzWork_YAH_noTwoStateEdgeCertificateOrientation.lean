@@ -6,6 +6,8 @@ import Theorems.Thm_CollatzWork_YAH_weightedGapSum_pos
 import Theorems.Thm_CollatzWork_YAH_evalCoefficients_weightedCoefficient
 import Theorems.Thm_CollatzWork_YAH_edgeCertificate_cancellation
 
+universe u
+
 open Lean.Grind
 open Lean.Grind.AddCommMonoid
 open Lean.Grind.IntModule

@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.AffineRepetitionBoundStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.AffineRepetitionBoundStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.affineRepetitionBound",
+  "universe_count_equal": true,
+  "solution_sha256": "cc8fabf2a7c0737f70b4d4cfd0ce08616242d4f3e42be069c20e22fb0ad4889d",
+  "theorem_sha256": "288309c0e106c427723caf7df49645db90f3f800da54e93aebe6c3e96603780f",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_affineRepetitionBound.lean",
+  "source_files_unchanged": true
+}

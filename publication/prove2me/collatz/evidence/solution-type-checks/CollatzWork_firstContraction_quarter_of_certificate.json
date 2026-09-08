@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ {n k d : Nat},\n  @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) n →\n    CollatzWork.FirstCoefficientContraction n k →\n      @Eq.{1} Nat (CollatzWork.shortcutIter k n) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n d) →\n        @LE.le.{0} Nat instLENat\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n              (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))\n              (CollatzWork.mechanicalMax (CollatzWork.orbitOddCount n k)))\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) (CollatzWork.orbitOddCount n k)\n              (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))\n                (CollatzWork.coefficientCrossingExponent (CollatzWork.orbitOddCount n k)))) →\n          @LT.lt.{0} Nat instLTNat\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n              (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))) d)\n            (CollatzWork.orbitOddCount n k)",
+  "solution_universe_parameters": [],
+  "target_type": "∀ {n k d : Nat},\n  @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) n →\n    CollatzWork.FirstCoefficientContraction n k →\n      @Eq.{1} Nat (CollatzWork.shortcutIter k n) (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) n d) →\n        @LE.le.{0} Nat instLENat\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n              (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))\n              (CollatzWork.mechanicalMax (CollatzWork.orbitOddCount n k)))\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat) (CollatzWork.orbitOddCount n k)\n              (@HPow.hPow.{0, 0, 0} Nat Nat Nat (@instHPow.{0, 0} Nat Nat (@instPowNat.{0} Nat instNatPowNat))\n                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))\n                (CollatzWork.coefficientCrossingExponent (CollatzWork.orbitOddCount n k)))) →\n          @LT.lt.{0} Nat instLTNat\n            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n              (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))) d)\n            (CollatzWork.orbitOddCount n k)",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.firstContraction_quarter_of_certificate",
+  "universe_count_equal": true,
+  "solution_sha256": "4052cf2c6fa90c939e068b26f087bb446774e14e4ef2a45fc5c461a7c6cdd7e6",
+  "theorem_sha256": "27aa0473ac0326d48664e171ee0ffb49878d4aadd496fc2a22117dc57dffc5d3",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_firstContraction_quarter_of_certificate.lean",
+  "source_files_unchanged": true
+}

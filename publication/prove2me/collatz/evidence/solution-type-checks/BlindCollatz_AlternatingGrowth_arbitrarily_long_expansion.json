@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (m : Nat),\n  @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m →\n    @Exists.{1} Nat fun n =>\n      And (BlindCollatz.AlternatingGrowth.goodBlocks m n)\n        (@LT.lt.{0} Nat instLTNat n (BlindCollatz.AlternatingGrowth.blocks m n))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (m : Nat),\n  @LT.lt.{0} Nat instLTNat (@OfNat.ofNat.{0} Nat (nat_lit 0) (instOfNatNat (nat_lit 0))) m →\n    @Exists.{1} Nat fun n =>\n      And (BlindCollatz.AlternatingGrowth.goodBlocks m n)\n        (@LT.lt.{0} Nat instLTNat n (BlindCollatz.AlternatingGrowth.blocks m n))",
+  "target_universe_parameters": [],
+  "theorem_name": "BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+  "universe_count_equal": true,
+  "solution_sha256": "d0df362768ac74811dcffc81314e2f21b35e1e40d106c8f80077cbcea71cbfa1",
+  "theorem_sha256": "18d14ed943e06179a4e0ddec2fd2e914df870ca56ca949705f6fd346347aa0eb",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/BlindCollatz_AlternatingGrowth_arbitrarily_long_expansion.lean",
+  "source_files_unchanged": true
+}

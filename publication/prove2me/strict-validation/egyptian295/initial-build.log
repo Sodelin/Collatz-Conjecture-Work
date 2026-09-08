@@ -1,0 +1,17 @@
+info: strict_egyptian295: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✔ [2/9] Built Definitions.Def_EgyptianFractions_Baseline18 (737ms)
+✔ [3/9] Built Definitions.Def_EgyptianFractions_Certificate (700ms)
+✔ [4/9] Built Solutions.Sol_EgyptianFractions_exists_minimum_of_representation (666ms)
+⚠ [5/9] Built Theorems.Thm_EgyptianFractions_exists_minimum_of_representation (898ms)
+warning: Theorems/Thm_EgyptianFractions_exists_minimum_of_representation.lean:7:8: declaration uses `sorry`
+⚠ [6/9] Built Theorems.Thm_EgyptianFractions_exists_minimum18_le_35 (671ms)
+warning: Theorems/Thm_EgyptianFractions_exists_minimum18_le_35.lean:9:8: declaration uses `sorry`
+✔ [7/9] Built Solutions.Sol_EgyptianFractions_exists_minimum18_le_35 (1.6s)
+✖ [8/9] Building StrictCheck (730ms)
+trace: .> LEAN_PATH=/workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/.lake/build/lib/lean /workspace/scratch/ce6b142fd07d/lean-runtime/lean-4.33.1-linux/bin/lean /workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/StrictCheck.lean -o /workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/.lake/build/lib/lean/StrictCheck.olean -i /workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/.lake/build/lib/lean/StrictCheck.ilean -c /workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/.lake/build/ir/StrictCheck.c --setup /workspace/scratch/ce6b142fd07d/strict-small-projects/egyptian295/.lake/build/ir/StrictCheck.setup.json --json
+error: StrictCheck.lean:1:0: import Solutions.Sol_EgyptianFractions_exists_minimum_of_representation failed, environment already contains 'solution' from Solutions.Sol_EgyptianFractions_exists_minimum18_le_35
+error: Lean exited with code 1
+Some required targets logged failures:
+- StrictCheck
+error: build failed

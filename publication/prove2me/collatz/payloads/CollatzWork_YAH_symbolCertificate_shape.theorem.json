@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.YAH.symbolCertificate_shape",
-  "theorem_title": "CollatzWork.YAH.symbolCertificate_shape",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n",
-  "formal_statement": "theorem CollatzWork.YAH.symbolCertificate_shape :\n    symbolCertificate.length = 8 \u2227\n    (symbolCertificate.filter fun entry => (rule entry.2.ruleName).dynamic).foldr\n      (fun entry total => entry.1 + total) 0 = 5 := by sorry\n\n",
+  "theorem_title": "Size and dynamic multiplier sum of the 8-row YAH symbol certificate",
+  "natural_language_statement": "Let $C_s$ be the fixed labeled YAH symbol certificate, whose entries $(a,r)$ consist of a natural multiplier $a$ and a row $r$. A row is dynamic exactly when its rule is $D_f$ or $D_t$. Then\n\n$$|C_s|=8\\quad\\text{and}\\quad\\sum_{(a,r)\\in C_s\\,:\\,r\\text{ dynamic}}a=5.$$\n\nThe second number is the sum of multipliers on dynamic rows, not the number of such rows. This records the finite certificate data independently of its cancellation consequence.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_YAHFiniteObstruction\nimport Definitions.Def_CollatzWork_YAHFiniteObstructionStatement\n\nopen Lean.Grind\nopen Lean.Grind.AddCommMonoid\nopen Lean.Grind.IntModule\n\n",
+  "formal_statement": "theorem CollatzWork.YAH.symbolCertificate_shape :\n    symbolCertificate.length = 8 ∧\n    (symbolCertificate.filter fun entry => (rule entry.2.ruleName).dynamic).foldr\n      (fun entry total => entry.1 + total) 0 = 5 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

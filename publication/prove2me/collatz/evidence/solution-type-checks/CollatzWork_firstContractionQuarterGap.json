@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.FirstContractionQuarterGapStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.FirstContractionQuarterGapStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.firstContractionQuarterGap",
+  "universe_count_equal": true,
+  "solution_sha256": "38dfbc3e0530e1595cca74d73b7cc14b38386e6c4419ab2e9a2a876e08e4a5fa",
+  "theorem_sha256": "d39dedf60cbe382083c8c9e22b140bcbedb6fa53f43a44010381cb3748dec9f2",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_firstContractionQuarterGap.lean",
+  "source_files_unchanged": true
+}

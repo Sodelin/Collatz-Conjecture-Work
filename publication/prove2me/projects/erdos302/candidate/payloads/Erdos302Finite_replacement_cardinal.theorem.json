@@ -1,11 +1,14 @@
 {
   "theorem_name": "Erdos302Finite.replacement_cardinal",
-  "theorem_title": "Erdos302Finite.replacement_cardinal",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\n\n\n",
-  "formal_statement": "theorem Erdos302Finite.replacement_cardinal (S : Nat \u2192 Bool) (hS : Admissible 732 S) :\n cardinal S \u2264 cardinal (replacement S) := by sorry\n\n",
+  "theorem_title": "The 732 gadget replacement does not decrease size",
+  "natural_language_statement": "Call a subset of positive integers admissible if it contains no $a<b<c$ satisfying $a(b+c)=bc$, equivalently $1/a=1/b+1/c$. Write $G=\\{122,183,244,366,732\\}$ and $B=\\{122,183,244\\}$. For a Boolean membership predicate $S:\\mathbb N\\to\\{\\mathrm{false},\\mathrm{true}\\}$, let $R(S)$ replace its selections in $G$ by exactly $B$ and leave every other membership decision unchanged. If $S$ is admissible and supported in $\\{1,\\ldots,732\\}$, then\n\n$$\n|S|\\leq |R(S)|.\n$$\n\nThis is the quantitative half of the replacement argument. The source cardinal function counts membership on the duplicate-free domain consisting of the gadget and its complement in 1 through 732.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_Plateau302\n\n\n\n",
+  "formal_statement": "theorem Erdos302Finite.replacement_cardinal (S : Nat → Bool) (hS : Admissible 732 S) :\n cardinal S ≤ cardinal (replacement S) := by sorry\n\n",
   "tags": [
-    "sodelin-erdos302"
+    "sodelin-erdos302",
+    "number-theory",
+    "extremal-combinatorics",
+    "erdos-302"
   ],
   "source": "https://github.com/Sodelin/oldest-conjecture-/blob/48bcf1429395b980198207bf6a876994fab80789/Plateau302.lean#L107-L121"
 }

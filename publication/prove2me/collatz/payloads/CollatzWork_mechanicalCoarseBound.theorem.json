@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.mechanicalCoarseBound",
-  "theorem_title": "CollatzWork.mechanicalCoarseBound",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_FirstContractionStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n",
+  "theorem_title": "A coarse one-third bound on the mechanical remainder",
+  "natural_language_statement": "For $s\\in\\mathbb N$, define $M(0)=0$, $M(s+1)=3M(s)+2^{\\lfloor\\log_2(3^s)\\rfloor}$, and $e(s)=\\lfloor\\log_2(3^s)\\rfloor+1$.\n\nFor every $s\\in\\mathbb N$,\n\n$$\n3M(s)\\le s3^s.\n$$\n\nThis universal numerical envelope supports a conditional first-contraction gap estimate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_FirstContractionStatement\nimport Definitions.Def_CollatzWork_QuarterGapStatement\n\n\n\n",
   "formal_statement": "theorem CollatzWork.mechanicalCoarseBound : MechanicalCoarseBoundStatement := by sorry\n\n",
   "tags": [
     "collatz-work-import"

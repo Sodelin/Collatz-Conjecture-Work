@@ -1,0 +1,675 @@
+{
+  "complete": false,
+  "events": [
+    {
+      "action": "credential_exchange_before",
+      "at": 1788876533.0612462
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788876547.2176516,
+      "version": "0.9.8"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788877223.282609
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788877232.001464,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877238.7298505,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877246.084528,
+      "intent_id": "c50a5fb4153d42abbc8f78163a9a7665",
+      "key": "def:NewMathDiscovery.LinearBlindness",
+      "payload_sha256": "6799b11af83632aec1ae801fc3709f8bf0326354c21f983ffbf893bf544d071c"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877246.3076606,
+      "intent_id": "39de914878e04533bc27890f88a457d3",
+      "key": "def:NewMathDiscovery.BlindnessRealization",
+      "payload_sha256": "82d28d52f5baa592b9673b0182e9cea6fb3f2f846d3b3f398915f7cdb4657361"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877246.555068,
+      "intent_id": "5d0f2cc105b04dd0867edbc19e5fbe61",
+      "key": "def:NewMathDiscovery.RankedCoalescenceSound",
+      "payload_sha256": "948ccb4f20176194edb4fab2eafc6f9f25aac3eb20994e823fa149bfcdc2f22b"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.239902,
+      "job_id": "cf5a45db-b5d5-4404-91ad-3060aafcb1eb",
+      "key": "def:NewMathDiscovery.LinearBlindness"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877253.3624945,
+      "job_id": "103be4cf-b3b4-4bbe-b6b3-ebbd96e494db",
+      "key": "def:NewMathDiscovery.BlindnessRealization"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877254.2126586,
+      "job_id": "a046b265-84a5-49a9-96c9-afb5c1b21f03",
+      "key": "def:NewMathDiscovery.RankedCoalescenceSound"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877259.0121934,
+      "key": "def:NewMathDiscovery.BlindnessRealization",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877265.302653,
+      "key": "def:NewMathDiscovery.LinearBlindness",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877265.4879792,
+      "key": "def:NewMathDiscovery.RankedCoalescenceSound",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877304.878675,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877312.016718,
+      "intent_id": "0502b828b87c4bc2a28b4b8d39c6b109",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "payload_sha256": "ff974e312df4fab95b28431c75a3847594924bd41aed0b672b628a771bf1425a"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877312.2359128,
+      "intent_id": "1e1f0b1dba1341af86d12deb43a75c02",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "payload_sha256": "3991e985318c56054b8f80af79626bcaacf816808e91d61217b42e6b99813a46"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877318.593253,
+      "key": "def:NewMathDiscovery.BlindnessRealization",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877318.7732992,
+      "job_id": "40985066-1743-40c8-a3f5-33a882138635",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877318.786503,
+      "job_id": "80bec6a9-a409-4d98-bb7a-fc892f824148",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877325.745167,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877325.790365,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877325.793286,
+      "intent_id": "81201643bf314fa6b797d5d53b582156",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "payload_sha256": "321eb8265131c8b55fa0bfd14d88efcdeab69e7caeac1104823b698b1b82d74e"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877332.4081697,
+      "intent_id": "1f055b6446cf4388a66fd6ce3f60a454",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "payload_sha256": "2dbceaf566393dadb117c9c04ca45eb3f2b6685b2930e13061a1bde2b34a5de5"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877332.6469686,
+      "job_id": "507b234c-272e-4905-a6e5-b43fe40bdd1c",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877332.8821588,
+      "intent_id": "48ce0b0cfad44550b675e004e8c0ffbe",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "payload_sha256": "d3c6edab556bbcad43d7bdfb297c01f50b7fba3c1a5b164b9688c48655136277"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877340.4163828,
+      "job_id": "6247aa91-d6b3-4ecb-b911-b6d49e5b6886",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877340.4884312,
+      "job_id": "a0744b5b-50e1-4db5-801e-b2246d9e2fb6",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877347.5703905,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877520.165732,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877520.1903052,
+      "intent_id": "f2f685336b374de2b2996845218d6ed4",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "payload_sha256": "56b25fb855076829929fc725b48af30083cba4399d230f76d044d4372de725fc"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877527.850761,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "submission_id": "feeb88db-2b64-4b65-bb60-5073df260873"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877534.8349228,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877534.8926196,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877534.8951428,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877534.8983078,
+      "intent_id": "707f2076dae64f2bb970c9f2e2b46c9c",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "payload_sha256": "3a827f9589cf856a45bf5b6c18f1a0ecb1002d3792710e237c4a1955d09d8104"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877534.918963,
+      "intent_id": "2a9012163b5d4b67b2ae38c91685d27d",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "payload_sha256": "484d8cb675a4760407feb0c9e830488ceb1083bdc5a391950b19c7b6c7fe77b0"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877543.814562,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "submission_id": "e01b11b0-7cd2-4971-850d-f9db71c695b4"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877547.2048395,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "submission_id": "295659db-83a3-4843-bbb8-dc2d7866136c"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877550.9472923,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877550.9684272,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877555.459473,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877633.3647878,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877641.0054045,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877641.028068,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877641.054107,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788877648.694186,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788877648.709456,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor",
+      "status": "Proved"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877648.743322,
+      "intent_id": "722598c075404ff0ae0933d80b2ad96a",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "payload_sha256": "fab7d3892a64e49d02bd6755e4e2ad6449d043b51a5ba416d1d89fe8cf8c7479"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788877648.759281,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788877656.7584689,
+      "intent_id": "fb948f5403684ea68981b7a100aae2b4",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "payload_sha256": "950584dd264c1c0887cdb4d049017db0bea66fd586d7eee9a53ed801dc365200"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788877657.1391962,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "submission_id": "1c3cd419-cd3e-4699-8b82-db37db99fde5"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788877665.2834399,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788877665.3199155,
+      "job_id": "eab7e9e3-d5dc-461e-8c1d-400ca63e0b1a",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788877665.3414245,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877735.7049365,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788877735.7331958,
+      "intent_id": "82b91c7a1bd140e89dfcb259c170e312",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "payload_sha256": "8e4bb9b488554a272018f64b9a14fae070b14562387d498796d62ac5357e8ca6"
+    },
+    {
+      "action": "verify_outcome_unknown",
+      "at": 1788877750.8614123,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788877944.0389473
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788877951.8420506,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788877958.810035,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878060.6794786,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "unrecorded_verification_explicitly_resumed",
+      "at": 1788878233.9482393,
+      "evidence_sha256": "01756af9fcdace67a94bde5853c69955f826b48757eebf5f4fd3dea843bb2cac",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788878247.3739283
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788878254.6398444,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878260.507618,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878268.2510166,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788878274.050724,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness",
+      "status": "Proved"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788878274.0698907,
+      "intent_id": "09aa85d9f30e4b6baf25551bb6eddd71",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "payload_sha256": "8e4bb9b488554a272018f64b9a14fae070b14562387d498796d62ac5357e8ca6"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878274.1171527,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788878274.1361663,
+      "intent_id": "43f9e0c6cb2d4f60af2eaeb0e9e7b998",
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "payload_sha256": "f4101820f14c460a68c717f4020e8d06d8599d1e3d7225afa5aaacfe85bc5bc1"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788878280.5609334,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "submission_id": "f146bd90-8959-40b9-832a-2f26e834f4c4"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788878280.7352545,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "submission_id": "24a56635-47be-4e5b-87a6-2f5fcc5ab654"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878286.18134,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878286.3218818,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "status": "PENDING"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788878390.7187622
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788878398.4379966,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878405.2723582,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878415.9946797,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878418.5704749,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788878422.4932172,
+      "key": "thm:NewMathDiscovery.BlindnessRealization.blind_downward",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788878422.5953534,
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878429.3909016,
+      "intent_id": "734b38e067dc4fc18b0feca946d97a12",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel",
+      "payload_sha256": "12b1153f4334c7a879384481824a8647f38278e9ac37c7d326f6a08eaff5450d"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878429.6618478,
+      "intent_id": "fe49a5a948184b089f12a6d9f2066192",
+      "key": "thm:NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion",
+      "payload_sha256": "f7e3d7aacb31e9fd48231972d485c7985ac3fbeef03924ae0ccad714d4452404"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878438.2383826,
+      "job_id": "5e723c3a-00f4-4520-994b-dcfabfa7fd38",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878440.473759,
+      "job_id": "934bc287-e0f4-4d01-9d3b-057ff2d96e58",
+      "key": "thm:NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion"
+    }
+  ],
+  "items": {
+    "def:NewMathDiscovery.BlindnessRealization": {
+      "api_url": "https://prove2.me/api/v1/theorems/39beac99-56aa-4b13-8627-e16b65bc4ee3",
+      "intent_id": "39de914878e04533bc27890f88a457d3",
+      "job_id": "103be4cf-b3b4-4bbe-b6b3-ebbd96e494db",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "39beac99-56aa-4b13-8627-e16b65bc4ee3"
+    },
+    "def:NewMathDiscovery.LinearBlindness": {
+      "api_url": "https://prove2.me/api/v1/theorems/f1404783-7cd8-483a-865b-be2160d13e08",
+      "intent_id": "c50a5fb4153d42abbc8f78163a9a7665",
+      "job_id": "cf5a45db-b5d5-4404-91ad-3060aafcb1eb",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "f1404783-7cd8-483a-865b-be2160d13e08"
+    },
+    "def:NewMathDiscovery.RankedCoalescenceSound": {
+      "api_url": "https://prove2.me/api/v1/theorems/d98a0e51-aa47-4579-96e0-c6f5a7e09697",
+      "intent_id": "5d0f2cc105b04dd0867edbc19e5fbe61",
+      "job_id": "a046b265-84a5-49a9-96c9-afb5c1b21f03",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Definition",
+      "status": "complete",
+      "theorem_id": "d98a0e51-aa47-4579-96e0-c6f5a7e09697"
+    },
+    "thm:NewMathDiscovery.BlindnessRealization.blind_downward": {
+      "api_url": "https://prove2.me/api/v1/theorems/8f1583e9-facd-451e-935b-129a037e7616",
+      "intent_id": "43f9e0c6cb2d4f60af2eaeb0e9e7b998",
+      "job_id": "eab7e9e3-d5dc-461e-8c1d-400ca63e0b1a",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "f146bd90-8959-40b9-832a-2f26e834f4c4",
+      "theorem_id": "8f1583e9-facd-451e-935b-129a037e7616",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.BlindnessRealization.blind_iff_below_generator": {
+      "api_url": "https://prove2.me/api/v1/theorems/6e73d6df-c68b-470a-8f7d-2668e4e33a1e",
+      "intent_id": "f2f685336b374de2b2996845218d6ed4",
+      "job_id": "507b234c-272e-4905-a6e5-b43fe40bdd1c",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "feeb88db-2b64-4b65-bb60-5073df260873",
+      "theorem_id": "6e73d6df-c68b-470a-8f7d-2668e4e33a1e",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.distinct_sensor_minor": {
+      "api_url": "https://prove2.me/api/v1/theorems/b63bf9f5-3f42-45a6-a79e-4144883ac961",
+      "intent_id": "2a9012163b5d4b67b2ae38c91685d27d",
+      "job_id": "80bec6a9-a409-4d98-bb7a-fc892f824148",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "e01b11b0-7cd2-4971-850d-f9db71c695b4",
+      "theorem_id": "b63bf9f5-3f42-45a6-a79e-4144883ac961",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.tail_witnesses_uniformly_large": {
+      "api_url": "https://prove2.me/api/v1/theorems/f653650b-517c-4420-924d-ff9238f1db49",
+      "intent_id": "707f2076dae64f2bb970c9f2e2b46c9c",
+      "job_id": "40985066-1743-40c8-a3f5-33a882138635",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "295659db-83a3-4843-bbb8-dc2d7866136c",
+      "theorem_id": "f653650b-517c-4420-924d-ff9238f1db49",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_nonzero_on_witness": {
+      "api_url": "https://prove2.me/api/v1/theorems/eb66117e-b8ae-4f0a-86b7-4e96b189e25c",
+      "intent_id": "722598c075404ff0ae0933d80b2ad96a",
+      "job_id": "6247aa91-d6b3-4ecb-b911-b6d49e5b6886",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "1c3cd419-cd3e-4699-8b82-db37db99fde5",
+      "theorem_id": "eb66117e-b8ae-4f0a-86b7-4e96b189e25c",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor": {
+      "api_url": "https://prove2.me/api/v1/theorems/15f12888-7a4e-4083-ac77-1981c658aa5b",
+      "intent_id": "09aa85d9f30e4b6baf25551bb6eddd71",
+      "job_id": "a0744b5b-50e1-4db5-801e-b2246d9e2fb6",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "24a56635-47be-4e5b-87a6-2f5fcc5ab654",
+      "theorem_id": "15f12888-7a4e-4083-ac77-1981c658aa5b",
+      "verify_status": "ACCEPTED"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.unbounded_target_on_gauge_fixed_kernel": {
+      "intent_id": "734b38e067dc4fc18b0feca946d97a12",
+      "job_id": "5e723c3a-00f4-4520-994b-dcfabfa7fd38",
+      "status": "publish_queued"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.determinesTarget_iff_kernel_inclusion": {
+      "intent_id": "fe49a5a948184b089f12a6d9f2066192",
+      "job_id": "934bc287-e0f4-4d01-9d3b-057ff2d96e58",
+      "status": "publish_queued"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.pairBlind_downward": {
+      "status": "new"
+    },
+    "thm:NewMathDiscovery.LinearBlindness.pairBlind_iff_kernelWitness": {
+      "status": "new"
+    },
+    "thm:NewMathDiscovery.RankedCoalescence.covered_ranked_coalescence_sound": {
+      "status": "new"
+    }
+  },
+  "manifest_sha256": "a549b613533627d797f99578c25002290d88eee32c09bde2c5e80d8e333b04e4",
+  "request_recoveries": [
+    {
+      "at": 1788878233.9481864,
+      "evidence_sha256": "01756af9fcdace67a94bde5853c69955f826b48757eebf5f4fd3dea843bb2cac",
+      "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+      "previous_intent": {
+        "action": "verify_before",
+        "at": 1788877735.7331958,
+        "intent_id": "82b91c7a1bd140e89dfcb259c170e312",
+        "key": "thm:NewMathDiscovery.LinearBlindness.RankTwoInstability.target_sensor_minor",
+        "payload_sha256": "8e4bb9b488554a272018f64b9a14fae070b14562387d498796d62ac5357e8ca6"
+      },
+      "previous_record": {
+        "api_url": "https://prove2.me/api/v1/theorems/15f12888-7a4e-4083-ac77-1981c658aa5b",
+        "intent_id": "82b91c7a1bd140e89dfcb259c170e312",
+        "job_id": "a0744b5b-50e1-4db5-801e-b2246d9e2fb6",
+        "publish_status": "PUBLISHED",
+        "remote_status": "Open",
+        "status": "needs_reconciliation",
+        "theorem_id": "15f12888-7a4e-4083-ac77-1981c658aa5b",
+        "uncertain_action": "verify"
+      },
+      "reason": "Two all-status theorem histories, a complete own-submission history, and target Open status confirm no recorded submission more than300seconds after the timed-out request. Explicit review; no automatic POST retry.",
+      "server_submission_count": 0
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
+    "digests": {
+      "lean/NewMathDiscovery.lean": "99c26ee96150e9d4cf41a4c521bf1093a5407747c855e0d0bc128bd9dde6fe1f",
+      "lean/NewMathDiscovery/BlindnessRealization.lean": "d341dbb8b7313afa14d0052b9b15914c716fb40760478c6ef226c0c39bccb3a6",
+      "lean/NewMathDiscovery/LinearBlindness.lean": "48cc77a854d9836f19d09e8a9a150ed8a77ae730ea87c36c06dcb5f23285e3bd",
+      "lean/NewMathDiscovery/RankedCoalescenceSound.lean": "2f6b8b6dc0ba491a17ed1c4b31a8c8ecf56d3f9ede3e91de595379a007e97eaf"
+    },
+    "repository": "https://github.com/Sodelin/new-math-discovery"
+  }
+}

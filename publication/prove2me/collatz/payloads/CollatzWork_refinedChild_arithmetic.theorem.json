@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.refinedChild_arithmetic",
-  "theorem_title": "One guarded family of smaller coalescing starts",
-  "natural_language_statement": "For natural L,epsilon,z with L>=2, epsilon<=1, and epsilon mod 2=L mod 2, put A=4*z+2*epsilon+1, parent=2^L*A-1, and child=3*2^(L-2)*A-1. The child is positive and strictly smaller, T^(L+2)(parent)=T^L(child), and the two starts converge equivalently. Parent convergence follows if all smaller positive starts converge. Limitations: The parity-compatibility guard is essential. This supplies one explicit family, not a universal smaller-target selector. The convergence application retains its strong-induction hypothesis.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
-  "formal_statement": "theorem CollatzWork.refinedChild_arithmetic (L epsilon z : Nat) (hL : 2 \u2264 L) :\n    0 < refinedParent L epsilon z \u2227\n    0 < refinedChild L epsilon z \u2227\n    refinedChild L epsilon z < refinedParent L epsilon z \u2227\n    refinedChild L epsilon z = (3 * refinedParent L epsilon z - 1) / 4 := by sorry\n\n",
+  "theorem_title": "The refined child is positive and strictly smaller",
+  "natural_language_statement": "For natural parameters $L,\\varepsilon,z$, put $A=4z+2\\varepsilon+1$, $P=2^LA-1$, and $Q=3\\cdot2^{L-2}A-1$. When $L<2$, the exponent $L-2$ uses truncated natural subtraction.\n\nAssume $L\\ge2$; no parity restriction on $\\varepsilon$ is needed. Then\n\n$$\n0<P,\\quad0<Q<P,\\quad Q=\\left\\lfloor\\frac{3P-1}{4}\\right\\rfloor.\n$$\n\nThis proves the size comparison used by the later guarded coalescence result.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.refinedChild_arithmetic (L epsilon z : Nat) (hL : 2 ≤ L) :\n    0 < refinedParent L epsilon z ∧\n    0 < refinedChild L epsilon z ∧\n    refinedChild L epsilon z < refinedParent L epsilon z ∧\n    refinedChild L epsilon z = (3 * refinedParent L epsilon z - 1) / 4 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

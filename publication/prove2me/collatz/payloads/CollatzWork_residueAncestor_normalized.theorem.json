@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.residueAncestor_normalized",
-  "theorem_title": "CollatzWork.residueAncestor_normalized",
-  "natural_language_statement": "Uniform construction after factoring the valuation as k+3.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_one\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_two\nimport Theorems.Thm_CollatzWork_residueAncestor_refinedTail\n\n\n",
-  "formal_statement": "theorem CollatzWork.residueAncestor_normalized (k u r : Nat) (hk : 10 \u2264 k)\n    (hu : 0 < u) (hunit : u % 3 \u2260 0)\n    (hguard : 3 ^ (k + 3) * u = 4 * r + 1) :\n    \u2203 m b : Nat, 0 < m \u2227 m < r \u2227 m % 27 = 20 \u2227 shortcutIter b m = r := by sorry\n\n",
+  "theorem_title": "Normalized construction of a smaller residue-20 ancestor",
+  "natural_language_statement": "Let $T:\\mathbb N\\to\\mathbb N$ be the shortcut Collatz map: $T(n)=n/2$ for even $n$ and $T(n)=(3n+1)/2$ for odd $n$. Write $T^k$ for its $k$-fold iterate, with $T^0(n)=n$.\n\nLet $k,u,r\\in\\mathbb N$ satisfy $k\\ge10$, $u>0$, $u\\not\\equiv0\\pmod3$, and $3^{k+3}u=4r+1$. Then\n\n$$\n\\exists m,b\\in\\mathbb N,\\quad 0<m<r,\\quad m\\equiv20\\pmod{27},\\quad T^b(m)=r.\n$$\n\nThis is the factorized ancestor construction before replacing k+3 by a single valuation parameter.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_ConvergenceStatement\nimport Definitions.Def_CollatzWork_InverseWordBoundaryStatement\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_one\nimport Theorems.Thm_CollatzWork_residueAncestor_prefix_two\nimport Theorems.Thm_CollatzWork_residueAncestor_refinedTail\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.residueAncestor_normalized (k u r : Nat) (hk : 10 ≤ k)\n    (hu : 0 < u) (hunit : u % 3 ≠ 0)\n    (hguard : 3 ^ (k + 3) * u = 4 * r + 1) :\n    ∃ m b : Nat, 0 < m ∧ m < r ∧ m % 27 = 20 ∧ shortcutIter b m = r := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

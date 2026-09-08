@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "∀ (x : Nat → Nat),\n  Not\n    (∀ (i : Nat),\n      @Eq.{1} Nat\n        (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))\n          (x\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@OfNat.ofNat.{0} Nat (nat_lit 9) (instOfNatNat (nat_lit 9))) (x i))\n          (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))",
+  "solution_universe_parameters": [],
+  "target_type": "∀ (x : Nat → Nat),\n  Not\n    (∀ (i : Nat),\n      @Eq.{1} Nat\n        (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n          (@OfNat.ofNat.{0} Nat (nat_lit 8) (instOfNatNat (nat_lit 8)))\n          (x\n            (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) i\n              (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))))\n        (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)\n          (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)\n            (@OfNat.ofNat.{0} Nat (nat_lit 9) (instOfNatNat (nat_lit 9))) (x i))\n          (@OfNat.ofNat.{0} Nat (nat_lit 5) (instOfNatNat (nat_lit 5)))))",
+  "target_universe_parameters": [],
+  "theorem_name": "BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
+  "universe_count_equal": true,
+  "solution_sha256": "469e6720d6639d79f55e7879065c047e0a9d9e121c8427520987d847f1ab5e9a",
+  "theorem_sha256": "4d00094e1220f67f44f9ce432c112ddd37cc0d4ec1b7ca3977aa9893402e6c1b",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/BlindCollatz_RepetitionBound_no_infinite_alternating_blocks.lean",
+  "source_files_unchanged": true
+}

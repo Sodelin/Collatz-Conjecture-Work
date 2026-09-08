@@ -1,11 +1,15 @@
 {
   "theorem_name": "EgyptianFractions.exists_minimum18_le_35",
-  "theorem_title": "EgyptianFractions.exists_minimum18_le_35",
-  "natural_language_statement": "The minimum length at N = 18 exists and is at most 35.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Baseline18\nimport Definitions.Def_EgyptianFractions_Certificate\nimport Theorems.Thm_EgyptianFractions_exists_minimum_of_representation\n\n\n",
-  "formal_statement": "theorem EgyptianFractions.exists_minimum18_le_35 :\n    \u2203 minimum, IsMinimumLength 18 minimum \u2227 minimum \u2264 35 := by sorry\n\n",
+  "theorem_title": "A least Egyptian-fraction length at lower bound 18 exists and is at most 35",
+  "natural_language_statement": "For distinct positive integers $d_i\\geq18$, consider representations $\\sum_{i=1}^m1/d_i=1$. There exists an attained least length $m$ among all such representations, and\n\n$$\nm\\leq35.\n$$\n\nThe bound reproduces an existing 35-term construction. It does not assert that35 is minimum, give a33- or34-term construction, establish the externally reported lower bound, or settle the asymptotic Erdős problem295.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_EgyptianFractions_Baseline18\nimport Definitions.Def_EgyptianFractions_Certificate\nimport Theorems.Thm_EgyptianFractions_exists_minimum_of_representation\n\n\n\n",
+  "formal_statement": "theorem EgyptianFractions.exists_minimum18_le_35 :\n    ∃ minimum, IsMinimumLength 18 minimum ∧ minimum ≤ 35 := by sorry\n\n",
   "tags": [
-    "sodelin-egyptian295"
+    "sodelin-egyptian295",
+    "number-theory",
+    "egyptian-fractions",
+    "erdos-295",
+    "known-result-reproduction"
   ],
   "source": "https://github.com/Sodelin/Egyptian-Fractions-Erdos-295/blob/566f9800910aae6936d93d1a9f5c756070616f31/EgyptianFractions/Baseline18.lean#L42-L47"
 }

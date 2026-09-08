@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.compatibleProduct_mod_four",
-  "theorem_title": "CollatzWork.compatibleProduct_mod_four",
-  "natural_language_statement": "Exact formal statement is authoritative. Metadata review pending.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n",
-  "formal_statement": "theorem CollatzWork.compatibleProduct_mod_four\n    (L epsilon z : Nat) (hepsilon : epsilon \u2264 1)\n    (hparity : epsilon % 2 = L % 2) :\n    (3 ^ L * refinedA epsilon z) % 4 = 1 := by sorry\n\n",
+  "theorem_title": "Parity compatibility fixes the refined product modulo four",
+  "natural_language_statement": "For natural parameters $L,\\varepsilon,z$, put $A=4z+2\\varepsilon+1$, $P=2^LA-1$, and $Q=3\\cdot2^{L-2}A-1$. When $L<2$, the exponent $L-2$ uses truncated natural subtraction.\n\nAssume $\\varepsilon\\le1$ and $\\varepsilon\\equiv L\\pmod2$. Then\n\n$$\n3^LA\\equiv1\\pmod4.\n$$\n\nThis supplies the exact two-halving guard in the refined parent construction; no lower bound on L is required.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_RefinedMersenneChild\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.compatibleProduct_mod_four\n    (L epsilon z : Nat) (hepsilon : epsilon ≤ 1)\n    (hparity : epsilon % 2 = L % 2) :\n    (3 ^ L * refinedA epsilon z) % 4 = 1 := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

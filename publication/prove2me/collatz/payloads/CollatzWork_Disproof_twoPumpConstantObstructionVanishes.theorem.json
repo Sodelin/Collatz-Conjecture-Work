@@ -1,8 +1,8 @@
 {
   "theorem_name": "CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
-  "theorem_title": "Two-pump cyclic-elimination coefficient dependency",
-  "natural_language_statement": "For the integer coefficient expressions A,B,C,E defined in TwoPumpDependency.lean, a*B=c*C and g*A=d*E; consequently c*g*A*C-a*d*B*E=0. The hoped-for constant resultant in this cyclic-elimination construction vanishes identically. Limitations: An algebraic obstruction for the specified route. It proves neither existence of a positive nontrivial cycle nor a disproof of Collatz. The module namespace Disproof describes the research route only.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies\n\n\n",
+  "theorem_title": "The proposed constant two-pump obstruction vanishes identically",
+  "natural_language_statement": "Let $a,b,c,d,e,f,g,h,\\ell,p,q,t\\in\\mathbb Z$ be arbitrary, and put $\\Delta_v=q-p$ and $\\Delta_z=t-h$. Define the four integer coefficients\n\n$$\\begin{aligned}A&=\\Delta_z(db\\Delta_v-cde)+\\Delta_v ad\\ell,\\\\B&=\\Delta_z(cde+cf\\Delta_v)-\\Delta_v cg\\ell,\\\\C&=\\Delta_v(af\\Delta_z-ag\\ell)+\\Delta_z ade,\\\\E&=\\Delta_v(ag\\ell+bg\\Delta_z)-\\Delta_z cge.\\end{aligned}$$\n\nThen\n\n$$cgAC-adBE=0.$$\n\nThus this particular proposed constant expression supplies no nonzero obstruction. The result is an integer identity for the specified formulas; it asserts neither existence nor exclusion of a Collatz cycle.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Theorems.Thm_CollatzWork_Disproof_twoPumpCoefficientDependencies\n\n\n\n",
   "formal_statement": "theorem CollatzWork.Disproof.twoPumpConstantObstructionVanishes\n    (a b c p e q d f g h ell t : Int) :\n    let dv := q - p\n    let dz := t - h\n    let A := dz * (d * b * dv - c * d * e) + dv * a * d * ell\n    let B := dz * (c * d * e + c * f * dv) - dv * c * g * ell\n    let C := dv * (a * f * dz - a * g * ell) + dz * a * d * e\n    let E := dv * (a * g * ell + b * g * dz) - dz * c * g * e\n    c * g * A * C - a * d * B * E = 0 := by sorry\n\n",
   "tags": [
     "collatz-work-import"

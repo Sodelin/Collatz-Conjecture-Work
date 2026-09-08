@@ -1,9 +1,9 @@
 {
   "theorem_name": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
-  "theorem_title": "CollatzWork.Disproof.twoPowerOddNormalFormUnique",
-  "natural_language_statement": "Uniqueness of the decomposition of a positive natural as a power of two\ntimes an odd natural.  Positivity is automatic from `ArithOdd`.",
-  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_PolynomialRatchet\n\n\n",
-  "formal_statement": "theorem CollatzWork.Disproof.twoPowerOddNormalFormUnique :\n    \u2200 R S A B : Nat,\n      ArithOdd A \u2192 ArithOdd B \u2192\n      2 ^ R * A = 2 ^ S * B \u2192\n      R = S \u2227 A = B := by sorry\n\n",
+  "theorem_title": "Uniqueness of the arithmetic odd-part normal form",
+  "natural_language_statement": "Let $R,S,A,B\\in\\mathbb N$, with $A$ and $B$ odd: each has the form $2k+1$ for a natural number $k$. Then\n\n$$2^R A=2^S B\\quad\\Longrightarrow\\quad R=S\\ \\text{and}\\ A=B.$$\n\nOddness makes both factors positive, so no separate nonzero assumption is needed. This is uniqueness of the power-of-two times odd-part representation; it is a reusable arithmetic lemma.\n\n**Formalization Note.** This version uses the local `ArithOdd` predicate.",
+  "preamble": "import Std\nimport Init.Grind.Ordered.Module\nimport Definitions.Def_CollatzWork_Disproof_PolynomialRatchet\n\n\n\n",
+  "formal_statement": "theorem CollatzWork.Disproof.twoPowerOddNormalFormUnique :\n    ∀ R S A B : Nat,\n      ArithOdd A → ArithOdd B →\n      2 ^ R * A = 2 ^ S * B →\n      R = S ∧ A = B := by sorry\n\n",
   "tags": [
     "collatz-work-import"
   ],

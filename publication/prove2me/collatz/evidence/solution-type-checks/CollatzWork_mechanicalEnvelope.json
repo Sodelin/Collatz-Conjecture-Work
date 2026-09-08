@@ -1,0 +1,17 @@
+{
+  "definitionally_equal_at_rigid_levels": true,
+  "no_metavariables": true,
+  "passed": true,
+  "rigid_universe_parameters": [],
+  "solution_type": "CollatzWork.MechanicalEnvelopeStatement",
+  "solution_universe_parameters": [],
+  "target_type": "CollatzWork.MechanicalEnvelopeStatement",
+  "target_universe_parameters": [],
+  "theorem_name": "CollatzWork.mechanicalEnvelope",
+  "universe_count_equal": true,
+  "solution_sha256": "995a148deee0e05b898ab2de5eceddb92526beedff00916cc3fbb1eafe68236a",
+  "theorem_sha256": "81e7e682df97be6d7934f047d020a3571aaa6b875e78a4bfff8f482336186765",
+  "exit_code": 0,
+  "audit_file": "evidence/solution-type-checks/CollatzWork_mechanicalEnvelope.lean",
+  "source_files_unchanged": true
+}
