@@ -1,5 +1,5 @@
 {
-  "complete": false,
+  "complete": true,
   "events": [
     {
       "action": "credential_exchange_before",
@@ -593,8 +593,400 @@
       "at": 1788878438.081084,
       "key": "thm:Erdos302Finite.replacement_admissible",
       "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878540.5888627,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878547.6263695,
+      "key": "thm:Erdos302Finite.replacement_admissible",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788878553.9154494,
+      "key": "thm:Erdos302Finite.replacement_admissible",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878560.923894,
+      "intent_id": "528f92b3dce145af9f9bf5872cad1072",
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "payload_sha256": "d437afd1f2958cfb21b7ec19d4afc123bc11b87f035a2d4d9a58901de556bbe2"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788878561.4635644,
+      "intent_id": "3a5b58bc17f344e4bbce1b621df3599e",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "payload_sha256": "282a5edbe8f68433277581c48f31785c9a5d48c1822b457bcb105a89cfe847e1"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878568.4741905,
+      "job_id": "a27855fe-f561-4a92-b687-988e56032a63",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788878568.638485,
+      "job_id": "de02b4f6-7131-4208-9091-fcb43e3dabaf",
+      "key": "thm:Erdos302Extension734.numerical_734_from_731"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878574.6669683,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878574.6925788,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "COMPILING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878767.7878122,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878783.61676,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788878783.6432004,
+      "intent_id": "5701bfcdad1448738aa4b1a1a973e944",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "payload_sha256": "b9fd637fbab7e2091f8731fde882420dac148e801da089d42561cd5a3a96b23c"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788878783.7711165,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788878783.7884743,
+      "intent_id": "f6266cd786b44799b49381b029b02b5b",
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "payload_sha256": "66fa57042648d4ead530889b607057e377c3a369940040bf77bb5ad6dc0f815d"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788878792.3637626,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "submission_id": "93c7ccd3-77d5-41b5-8805-f9dccd039bc8"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788878793.0290706,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "submission_id": "7d7e02c2-295f-4e5b-82fa-a385abcac43b"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878800.0364492,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878800.1662886,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788878906.717076,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878935.054712,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788878935.0616271,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "ERROR"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788878943.1286912,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731",
+      "status": "Proved"
+    },
+    {
+      "action": "infrastructure_error_explicitly_repaired",
+      "at": 1788879073.2360876,
+      "evidence_sha256": "8bbe5239d130d8c4eb5921fdde65e5d5841ef1657d537d24a2adace976d4622a",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "prior_submission_id": "93c7ccd3-77d5-41b5-8805-f9dccd039bc8"
+    },
+    {
+      "action": "credential_exchange_before",
+      "at": 1788879087.2955663
+    },
+    {
+      "action": "credential_exchange_after",
+      "at": 1788879093.8618994,
+      "version": "0.9.8"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788879099.9323463,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788879100.0279384,
+      "intent_id": "8e3d34b21308474180bee565a4bd8a89",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "payload_sha256": "b9fd637fbab7e2091f8731fde882420dac148e801da089d42561cd5a3a96b23c"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788879107.079478,
+      "intent_id": "3022e1d6029a420cb8caabf1152f54e7",
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "payload_sha256": "078479009a6ed74fbc04063770edd76afc0dfa29763adc1501bc657154ba65cb"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788879107.1253216,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "submission_id": "79be8d1c-bbea-410c-ba87-16c7cd0d157d"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788879113.6366732,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788879114.5580428,
+      "job_id": "d9163dfa-bb01-48d3-a0f0-aa6c062dc046",
+      "key": "thm:Erdos302Finite.rat_plateau_732"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788879119.8231988,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788879159.9108152,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788879166.7386572,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788879174.2894971,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788879174.303597,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788879174.3847463,
+      "intent_id": "d1b669bf011c4c39ac6f5fe2ac806a62",
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "payload_sha256": "706b1a32ac9ac0a6ff374c4c4e793bb143c6f36087012e0b7a1fae88923cbeb9"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788879182.7194426,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "submission_id": "23d88468-fdcb-4f03-82fa-dd6e5d1769aa"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788879188.7396142,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788879287.068066,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788879294.3418434,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788879300.7859764,
+      "key": "thm:Erdos302Finite.rat_plateau_732",
+      "status": "Proved"
+    },
+    {
+      "action": "final_catalog_page_checked",
+      "at": 1788879308.9189217,
+      "page": 0
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879315.409364,
+      "key": "def:Extension734"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879315.5915139,
+      "key": "def:KernelEndpoints734"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879329.8988082,
+      "key": "def:Plateau302"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879329.9139526,
+      "key": "def:KernelIsolation"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788879443.8807573,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879450.2599478,
+      "key": "thm:Erdos302Extension734.exact_maximum_734_from_733"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879450.4631896,
+      "key": "thm:Erdos302Extension734.full_cardinal_domain"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879457.6437552,
+      "key": "thm:Erdos302Extension734.full_domain_membership"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879457.7088535,
+      "key": "thm:Erdos302Extension734.full_domain_nodup"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879465.06211,
+      "key": "thm:Erdos302Extension734.lift_admissible"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879465.065422,
+      "key": "thm:Erdos302Extension734.numerical_733_from_731"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879473.2090168,
+      "key": "thm:Erdos302Extension734.numerical_734_from_731"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879473.2975926,
+      "key": "thm:Erdos302Finite.rat_plateau_732"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879480.9114332,
+      "key": "thm:Erdos302Finite.replacement_cardinal"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879480.9897213,
+      "key": "thm:Erdos302Finite.replacement_admissible"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788879710.1214674,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788879717.4488873,
+      "key": "thm:Erdos302Kernel.isolated_nat"
+    },
+    {
+      "action": "final_verification_passed",
+      "at": 1788879717.4559374,
+      "count": 15
     }
   ],
+  "final_verification": {
+    "checked": [
+      "def:Extension734",
+      "def:KernelEndpoints734",
+      "def:Plateau302",
+      "def:KernelIsolation",
+      "thm:Erdos302Extension734.exact_maximum_734_from_733",
+      "thm:Erdos302Extension734.full_cardinal_domain",
+      "thm:Erdos302Extension734.full_domain_membership",
+      "thm:Erdos302Extension734.full_domain_nodup",
+      "thm:Erdos302Extension734.lift_admissible",
+      "thm:Erdos302Extension734.numerical_733_from_731",
+      "thm:Erdos302Extension734.numerical_734_from_731",
+      "thm:Erdos302Finite.rat_plateau_732",
+      "thm:Erdos302Finite.replacement_cardinal",
+      "thm:Erdos302Finite.replacement_admissible",
+      "thm:Erdos302Kernel.isolated_nat"
+    ],
+    "page": 1,
+    "scan_done": true,
+    "seen": [
+      "3186980e-c6f5-4969-9b4c-6c00274cebd3",
+      "32aeae2b-2382-4b1d-9947-05de04f86e7f",
+      "3a653d7c-edbd-4ccd-b3ca-63245618f720",
+      "3e84255c-6b8e-4012-a93c-a322f72d6370",
+      "6233f79b-7e60-489f-94c3-8640315e6fa8",
+      "654bb618-c829-4192-be58-85ab54b7cf97",
+      "6c488657-b225-4548-a506-5545dff9f58d",
+      "73828158-2ed3-48e7-9eaa-014f312aa188",
+      "a6a78fb1-390a-4184-9eb5-a99ce5443317",
+      "b75199c5-bb8d-4913-81c0-bc6d9f980eca",
+      "c25da259-3929-472f-9870-75bb13f20042",
+      "c79f8811-d447-46ac-bda2-e537d22a0059",
+      "d2e6bc8f-7763-4f75-88af-67132892efc8",
+      "e8fabaff-cf69-4e7d-b2a3-92017b694232",
+      "ed810a55-ca38-4d85-892f-f186694a74b9"
+    ]
+  },
   "items": {
     "def:Extension734": {
       "api_url": "https://prove2.me/api/v1/theorems/654bb618-c829-4192-be58-85ab54b7cf97",
@@ -688,24 +1080,48 @@
       "verify_status": "ACCEPTED"
     },
     "thm:Erdos302Extension734.numerical_733_from_731": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/73828158-2ed3-48e7-9eaa-014f312aa188",
+      "intent_id": "8e3d34b21308474180bee565a4bd8a89",
+      "job_id": "a27855fe-f561-4a92-b687-988e56032a63",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "79be8d1c-bbea-410c-ba87-16c7cd0d157d",
+      "theorem_id": "73828158-2ed3-48e7-9eaa-014f312aa188",
+      "verify_status": "ACCEPTED"
     },
     "thm:Erdos302Extension734.numerical_734_from_731": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/a6a78fb1-390a-4184-9eb5-a99ce5443317",
+      "intent_id": "f6266cd786b44799b49381b029b02b5b",
+      "job_id": "de02b4f6-7131-4208-9091-fcb43e3dabaf",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "7d7e02c2-295f-4e5b-82fa-a385abcac43b",
+      "theorem_id": "a6a78fb1-390a-4184-9eb5-a99ce5443317",
+      "verify_status": "ACCEPTED"
     },
     "thm:Erdos302Finite.rat_plateau_732": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/c25da259-3929-472f-9870-75bb13f20042",
+      "intent_id": "d1b669bf011c4c39ac6f5fe2ac806a62",
+      "job_id": "d9163dfa-bb01-48d3-a0f0-aa6c062dc046",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "23d88468-fdcb-4f03-82fa-dd6e5d1769aa",
+      "theorem_id": "c25da259-3929-472f-9870-75bb13f20042",
+      "verify_status": "ACCEPTED"
     },
     "thm:Erdos302Finite.replacement_admissible": {
       "api_url": "https://prove2.me/api/v1/theorems/e8fabaff-cf69-4e7d-b2a3-92017b694232",
       "intent_id": "4bf2d2f6d5e84b289e025b2cfe69a01a",
       "job_id": "46420b0b-94b3-42a5-8b57-fa327b9b85cf",
       "publish_status": "PUBLISHED",
-      "remote_status": "Open",
-      "status": "verify_queued",
+      "remote_status": "Proved",
+      "status": "complete",
       "submission_id": "96b64918-88bb-4040-b545-7ab90726f882",
       "theorem_id": "e8fabaff-cf69-4e7d-b2a3-92017b694232",
-      "verify_status": "PENDING"
+      "verify_status": "ACCEPTED"
     },
     "thm:Erdos302Finite.replacement_cardinal": {
       "api_url": "https://prove2.me/api/v1/theorems/3a653d7c-edbd-4ccd-b3ca-63245618f720",
@@ -741,5 +1157,24 @@
       "Plateau302.lean": "a512d8eb18ae785def432daadf9790da2f83baf76ce8b6df4be0cddb3fad3241"
     },
     "repository": "https://github.com/Sodelin/oldest-conjecture-"
-  }
+  },
+  "verification_repairs": [
+    {
+      "at": 1788879073.2360487,
+      "evidence_sha256": "8bbe5239d130d8c4eb5921fdde65e5d5841ef1657d537d24a2adace976d4622a",
+      "key": "thm:Erdos302Extension734.numerical_733_from_731",
+      "previous_record": {
+        "api_url": "https://prove2.me/api/v1/theorems/73828158-2ed3-48e7-9eaa-014f312aa188",
+        "intent_id": "5701bfcdad1448738aa4b1a1a973e944",
+        "job_id": "a27855fe-f561-4a92-b687-988e56032a63",
+        "publish_status": "PUBLISHED",
+        "remote_status": "Open",
+        "status": "failed",
+        "submission_id": "93c7ccd3-77d5-41b5-8805-f9dccd039bc8",
+        "theorem_id": "73828158-2ed3-48e7-9eaa-014f312aa188",
+        "verify_status": "ERROR"
+      },
+      "reason": "Documented infrastructure ERROR: platform import parser timed out. Explicit reviewed resubmission of unchanged proof."
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T14:41:57.998501+00:00",
+  "checked_at": "2026-09-08T15:34:36.918166+00:00",
   "account": "Sodelin",
   "projects": [
     {
@@ -7,9 +7,9 @@
       "source": "https://github.com/Sodelin/Collatz-Conjecture-Work",
       "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
       "expected_theorems": 113,
-      "proved_theorems": 0,
+      "proved_theorems": 96,
       "expected_definitions": 22,
-      "published_definitions": 10,
+      "published_definitions": 22,
       "final_verification_passed": false,
       "receipt": "receipts/collatz.json",
       "failed_items": [],
@@ -20,10 +20,10 @@
       "source": "https://github.com/Sodelin/oldest-conjecture-",
       "source_commit": "48bcf1429395b980198207bf6a876994fab80789",
       "expected_theorems": 11,
-      "proved_theorems": 7,
+      "proved_theorems": 11,
       "expected_definitions": 4,
       "published_definitions": 4,
-      "final_verification_passed": false,
+      "final_verification_passed": true,
       "receipt": "receipts/erdos302.json",
       "failed_items": [],
       "uncertain_items": []
@@ -46,16 +46,16 @@
       "source": "https://github.com/Sodelin/new-math-discovery",
       "source_commit": "fc2ce68341a0556cebb4e5843a3127f0881b91db",
       "expected_theorems": 11,
-      "proved_theorems": 6,
+      "proved_theorems": 11,
       "expected_definitions": 3,
       "published_definitions": 3,
-      "final_verification_passed": false,
+      "final_verification_passed": true,
       "receipt": "receipts/newmath.json",
       "failed_items": [],
       "uncertain_items": []
     }
   ],
   "complete": false,
-  "proved_theorems": 15,
-  "published_definitions": 19
+  "proved_theorems": 120,
+  "published_definitions": 31
 }

@@ -1,0 +1,19 @@
+{
+  "submissions": [
+    {
+      "id": "2b65e288-efd1-4314-a038-c72bb759229f",
+      "theorem_id": "2721a59b-a3df-45ca-9136-efec5b2360be",
+      "user_id": "3be864d5-110e-476c-a039-d8de15f2039b",
+      "username": "Zexuan Liu",
+      "status": "ACCEPTED",
+      "error_message": "",
+      "file_path": "2721a59b-a3df-45ca-9136-efec5b2360be/3be864d5-110e-476c-a039-d8de15f2039b/2b65e288-efd1-4314-a038-c72bb759229f.lean",
+      "created_at": "2026-09-08T03:54:30.077372+00:00",
+      "updated_at": "2026-09-08T03:55:41.402439+00:00",
+      "vote_count": 0,
+      "explanation": "We prove that a single Collatz step strictly decreases every positive even number:\n\n$$n > 0,\\ n \\text{ even} \\quad \\Longrightarrow \\quad C(n) = \\frac{n}{2} < n .$$\n\nHere $C$ is the Collatz step map, $C(n) = n/2$ on even inputs (natural-number division) and $C(n) = 3n+1$ on odd inputs.\n\nThe argument is immediate once the branch of the definition is selected. Since $n$ is even, the guard of the conditional in the definition of $C$ evaluates to true, so $C(n)$ reduces to $n / 2$. For a natural number $n \\ge 1$ one has $n / 2 < n$, the inequality being strict because $n$ is positive; the case $n = 0$ is genuinely excluded, since $C(0) = 0$.\n\nIn Lean the first step is `simp [collatzStep, he]`, which rewrites the goal to $n / 2 < n$, and `omega` closes it, as `omega` handles natural-number division by the literal $2$.\n\nThe role of the statement is as the base case of the residue-class decomposition of the Collatz descent principle modulo $4$: the classes $n \\equiv 0, 2 \\pmod 4$ are exactly the positive even numbers and are settled here in one step, so that only the odd classes remain.",
+      "deprecated_at": null
+    }
+  ],
+  "total": 1
+}

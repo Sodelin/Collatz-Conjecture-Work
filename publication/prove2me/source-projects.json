@@ -40,7 +40,7 @@
       "audited_declarations": 82,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/erdos302/audit",
-      "payload_status": "ready_for_upload",
+      "payload_status": "validated",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -54,7 +54,9 @@
       "candidate_text_build": "passed",
       "candidate_type_comparison": "passed",
       "metadata_status": "passed",
-      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "remote_status": "completed",
+      "receipt": "receipts/erdos302.json"
     },
     {
       "repository": "Sodelin/Egyptian-Fractions-Erdos-295",
@@ -89,7 +91,7 @@
       "audited_declarations": 17,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/egyptian295/audit",
-      "payload_status": "ready_for_upload",
+      "payload_status": "validated",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -103,7 +105,9 @@
       "candidate_text_build": "passed",
       "candidate_type_comparison": "passed",
       "metadata_status": "passed",
-      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "remote_status": "completed",
+      "receipt": "receipts/egyptian295.json"
     },
     {
       "repository": "Sodelin/new-math-discovery",
@@ -144,7 +148,7 @@
       "audited_declarations": 94,
       "nonstandard_axiom_declarations": 0,
       "audit_directory": "projects/newmath/audit",
-      "payload_status": "ready_for_upload",
+      "payload_status": "validated",
       "local_build": "passed",
       "sketch_extraction": "passed",
       "source_modified": false,
@@ -158,7 +162,9 @@
       "candidate_text_build": "passed",
       "candidate_type_comparison": "passed",
       "metadata_status": "passed",
-      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474"
+      "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "remote_status": "completed",
+      "receipt": "receipts/newmath.json"
     }
   ],
   "collatz": {
@@ -175,7 +181,8 @@
     "candidate_type_comparison": "passed",
     "metadata_status": "passed",
     "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
-    "remote_status": "in_progress"
+    "remote_status": "in_progress",
+    "receipt": "receipts/collatz.json"
   },
   "other_research_not_lean": [
     {
@@ -200,7 +207,28 @@
     "candidate_definition_bundles": 31,
     "academic_metadata_review": "passed",
     "live_environment_pin": "passed",
-    "server_verification": "in_progress"
+    "server_verification": "in_progress",
+    "public_results": "PUBLIC_RESULTS.md",
+    "checkpoint": "PUBLICATION_STATUS.json",
+    "client_tests_passed": 28,
+    "completion_condition": "All 137 target solution jobs complete successfully and their theorem catalog entries read Proved; all 31 definition bundles are accepted.",
+    "counting_scope": "137 exported target nodes from 49 source Lean files, with smaller supporting proofs retained in consuming solutions. No claim to 137 solved conjectures, exhaustive source declaration count, novelty, or full historical archive recovery."
   },
-  "supporting_research_catalog": "supporting/catalog.json"
+  "supporting_research_catalog": "supporting/catalog.json",
+  "supporting_research": {
+    "catalog": "supporting/catalog.json",
+    "human_index": "supporting/README.md",
+    "public_repositories": 6,
+    "collections": 10,
+    "pinned_file_or_directory_links": 58,
+    "historical_exact_files_recovered": 2,
+    "historical_recovery": "supporting/library-archive/provenance.json",
+    "saved_file_inventory": "supporting/library-search-inventory.json",
+    "scope_limits": [
+      "The referenced AOGGhostContactCore.lean remains unrecovered and is not counted as verified or uploaded.",
+      "Larger saved archive downloads repeatedly returned HTTP502; complete recovery of every saved math artifact is not claimed.",
+      "Non-Lean certificates, manuscripts and historical read exports retain their existing evidence status."
+    ]
+  },
+  "reuse_record": "reuse/README.md"
 }

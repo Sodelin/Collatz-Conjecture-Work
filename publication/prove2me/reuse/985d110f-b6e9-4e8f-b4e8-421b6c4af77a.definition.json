@@ -1,0 +1,23 @@
+{
+  "theorem_id": "985d110f-b6e9-4e8f-b4e8-421b6c4af77a",
+  "theorem_name": "collatzStepMap",
+  "theorem_title": "Collatz step map $C(n)$",
+  "status": "Definition",
+  "formal_statement": "",
+  "natural_language_statement": "The **Collatz step map** on the natural numbers,\n\n$$C(n) = \\begin{cases} n/2, & n \\text{ even},\\\\ 3n+1, & n \\text{ odd}.\\end{cases}$$\n\nThe even branch uses natural-number division, so the function is total on $\\mathbb{N}$; in particular $C(0)=0$, which is why every statement about the Collatz dynamics carries a positivity hypothesis on the starting value. The Lean declaration is `collatzStep`, character-for-character the definition appearing in the preamble of the mission goal theorem `collatz_conjecture`, packaged here as an importable module so that supporting lemmas and the goal statement share a single Lean constant.",
+  "created_at": "2026-09-08T03:50:14.620695+00:00",
+  "vote_count": 0,
+  "tags": [
+    "dynamical-systems",
+    "iteration",
+    "number-theory"
+  ],
+  "definition": "import Mathlib.Algebra.Group.Nat.Even\n\n/-- One step of the Collatz map: an even number is halved, an odd number `n` is sent to\n`3 * n + 1`.  Natural-number division is used on the even branch, so the definition is total;\n`collatzStep 0 = 0`. -/\ndef collatzStep (n : ℕ) : ℕ :=\n  if Even n then n / 2 else 3 * n + 1\n",
+  "source": "https://en.wikipedia.org/wiki/Collatz_conjecture; matches the local definition in the preamble of the prove2.me theorem collatz_conjecture, itself following google-deepmind/formal-conjectures, FormalConjectures/Wikipedia/CollatzConjecture.lean: https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/Wikipedia/CollatzConjecture.lean",
+  "deprecated_at": null,
+  "deprecated_by": null,
+  "visibility": "public",
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "audits": [],
+  "readback": null
+}

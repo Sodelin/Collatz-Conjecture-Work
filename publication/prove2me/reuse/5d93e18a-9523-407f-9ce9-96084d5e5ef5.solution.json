@@ -1,0 +1,4 @@
+{
+  "content": "import Mathlib\nimport Definitions.Def_collatzStepMap\n\ntheorem solution (k x : ℕ) (h : 2 ^ k ∣ x) : collatzStep^[k] x = x / 2 ^ k := by\n  have key : ∀ j c : ℕ, collatzStep^[j] (2 ^ j * c) = c := by\n    intro j\n    induction j with\n    | zero => simp\n    | succ j ih =>\n        intro c\n        have hev : Even (2 ^ (j + 1) * c) := ⟨2 ^ j * c, by ring⟩\n        have hstep : collatzStep (2 ^ (j + 1) * c) = 2 ^ j * c := by\n          have h1 : collatzStep (2 ^ (j + 1) * c) = 2 ^ (j + 1) * c / 2 := by\n            simp [collatzStep, hev]\n          have h2 : (2 : ℕ) ^ (j + 1) * c = 2 ^ j * c * 2 := by ring\n          rw [h1, h2, Nat.mul_div_cancel _ (by norm_num)]\n        rw [Function.iterate_succ_apply, hstep, ih]\n  obtain ⟨c, hc⟩ := h\n  subst hc\n  rw [key, Nat.mul_div_cancel_left]\n  positivity\n",
+  "file_path": "29fec3ff-8c6b-4264-9525-f1dc50fb00b8/3be864d5-110e-476c-a039-d8de15f2039b/5d93e18a-9523-407f-9ce9-96084d5e5ef5.lean"
+}

@@ -1,0 +1,19 @@
+{
+  "submissions": [
+    {
+      "id": "5d93e18a-9523-407f-9ce9-96084d5e5ef5",
+      "theorem_id": "29fec3ff-8c6b-4264-9525-f1dc50fb00b8",
+      "user_id": "3be864d5-110e-476c-a039-d8de15f2039b",
+      "username": "Zexuan Liu",
+      "status": "ACCEPTED",
+      "error_message": "",
+      "file_path": "29fec3ff-8c6b-4264-9525-f1dc50fb00b8/3be864d5-110e-476c-a039-d8de15f2039b/5d93e18a-9523-407f-9ce9-96084d5e5ef5.lean",
+      "created_at": "2026-09-08T04:29:37.328765+00:00",
+      "updated_at": "2026-09-08T04:30:27.042873+00:00",
+      "vote_count": 0,
+      "explanation": "We prove that a factor $2^{k}$ is divided out by exactly $k$ Collatz steps:\n\n$$2^{k} \\mid x \\quad \\Longrightarrow \\quad C^{k}(x) = \\frac{x}{2^{k}} ,$$\n\nwhere $C$ is the Collatz step map, $C(x) = x/2$ on even inputs and $C(x) = 3x+1$ on odd inputs.\n\nThe point is that divisibility by a power of two propagates through halvings, so the parity branch taken at each of the first $k$ steps is known in advance and none of them is an ascending step.\n\nThe proof is by induction in the multiplicative form: for all $j$ and $c$,\n\n$$C^{j}\\bigl(2^{j} c\\bigr) = c .$$\n\nFor $j = 0$ this is an identity. For the successor step, $2^{j+1}c$ is even, witnessed by $2^{j+1}c = 2 \\cdot (2^{j}c)$, so the first step is a halving and\n\n$$C\\bigl(2^{j+1}c\\bigr) = \\frac{2^{j+1}c}{2} = 2^{j}c ,$$\n\nthe division being exact; the induction hypothesis applied at $c$ then finishes. The stated form follows by writing $x = 2^{k}c$ and cancelling.\n\nNo positivity hypothesis is needed. The map is total with $C(0) = 0$, so the case $x = 0$ holds with both sides equal to $0$; the induction never divides by anything other than the literal $2$.\n\nIn Lean the multiplicative form is proved as an internal `have` generalized over $c$, the parity side condition is discharged by exhibiting the witness $2^{j}c$ for `Even`, and the exactness of each division is `Nat.mul_div_cancel`.\n\nThe lemma is the bridge between the classical Collatz map and the accelerated map: writing $3n+1 = 2^{v} m$ with $m$ odd, it executes the entire run of halvings following an ascending step in one identity.",
+      "deprecated_at": null
+    }
+  ],
+  "total": 1
+}

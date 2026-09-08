@@ -1,0 +1,4 @@
+{
+  "content": "import Mathlib\nimport Definitions.Def_collatzStepMap\n\ntheorem solution (n : ℕ) (hn : 0 < n) (he : Even n) : collatzStep n < n := by\n  have h : collatzStep n = n / 2 := by simp [collatzStep, he]\n  rw [h]\n  omega\n",
+  "file_path": "2721a59b-a3df-45ca-9136-efec5b2360be/3be864d5-110e-476c-a039-d8de15f2039b/2b65e288-efd1-4314-a038-c72bb759229f.lean"
+}

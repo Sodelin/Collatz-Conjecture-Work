@@ -1,0 +1,19 @@
+{
+  "fetched_at": "2026-09-08T14:57:30.471915+00:00",
+  "origin": "https://prove2.me/api/v1",
+  "purpose": "Read-only attributed reuse preparation; not integrated into source library",
+  "files": {
+    "29fec3ff-8c6b-4264-9525-f1dc50fb00b8.submissions.json": "db3dc1ba9eff750f9b950690de73d12217833abbaef61e74dceb12ccb82355a4",
+    "Def_collatzStepMap.lean": "bdb59191da498cf02df45c8caf02cb0c7261b69b03e3db8692cf30d828c08a6e",
+    "985d110f-b6e9-4e8f-b4e8-421b6c4af77a.definition.json": "eff8247acba3534cb23bb760047084f5f6a14961babc54a1cd28531ab5f7173f",
+    "2b65e288-efd1-4314-a038-c72bb759229f.lean": "02072d1b0751ebd1c029ff12cd29a5c7738f38e77b53f4f1b9f133903c60bcc3",
+    "2b65e288-efd1-4314-a038-c72bb759229f.solution.json": "ec5529f5198bb341ffa89042252fab2f2188323d4f09bce72af28f4443a19c1c",
+    "Def_collatzStepMap.catalog.json": "c3e62a45c624d424d52a9f6040108fdf6ad46dae590b99e0d2c1767eb081dc44",
+    "5d93e18a-9523-407f-9ce9-96084d5e5ef5.lean": "5c304a7e2dd04527a26584f5c0ac037180f8220e321fc085cc6b7c8535d00365",
+    "5d93e18a-9523-407f-9ce9-96084d5e5ef5.solution.json": "8a67ad4d7aa21c751356b33d05fad6581705ce23982def36fbbd99f8962a4312",
+    "collatzStepMap.catalog.json": "41d13b24df15ea90cc6467fb5c817554687f04708b1efb63dbbdca539536a5cd",
+    "29fec3ff-8c6b-4264-9525-f1dc50fb00b8.theorem.json": "63874258ca3cbafa57e3223ebc99ee5d24c2c83e8fb307faa753f579e8453842",
+    "2721a59b-a3df-45ca-9136-efec5b2360be.theorem.json": "07063a5288ab6cab6c6542bd8699b9d0abf45854aa387c8fe11bca6f5b0f6191",
+    "2721a59b-a3df-45ca-9136-efec5b2360be.submissions.json": "8d834d2f4d0244fd4c4f1f18327490142fd266225a6773c0a24993e9cefb6b56"
+  }
+}
