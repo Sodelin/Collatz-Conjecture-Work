@@ -1,16 +1,16 @@
 # Prove2Me public results
 
-**120/137 theorems Proved; 31/31 definitions published.** Publication or final catalog verification remains in progress.
+**137/137 theorems Proved; 31/31 definitions published.** Every project passed final catalog verification.
 
 This index reflects saved publication receipts. The links use Prove2Me's public entity route and recorded server IDs; generating this file does not recheck the live website.
 
-Latest recorded activity (UTC): 2026-09-08T15:34:08.961437+00:00.
+Latest recorded activity (UTC): 2026-09-08T16:02:47.339405+00:00.
 
 ## Projects
 
 | Project | Proved theorems | Published definitions | Final catalog verification | Receipts |
 | --- | ---: | ---: | --- | --- |
-| [Collatz auxiliary results](#collatz) | 96/113 | 22/22 | Pending | [JSON](receipts/collatz.json) |
+| [Collatz auxiliary results](#collatz) | 113/113 | 22/22 | Passed | [JSON](receipts/collatz.json) |
 | [Erdős 302 finite certificates](#erdos302) | 11/11 | 4/4 | Passed | [JSON](receipts/erdos302.json) |
 | [Egyptian fractions / Erdős 295](#egyptian295) | 2/2 | 2/2 | Passed | [JSON](receipts/egyptian295.json) |
 | [Abstract discovery results](#newmath) | 11/11 | 3/3 | Passed | [JSON](receipts/newmath.json) |
@@ -78,12 +78,12 @@ Theorems are counted as Proved only when the receipt records both the completed 
 | [`CollatzWork.equalSlopeWitness`](https://prove2.me/theorems/71b97693-398f-40e6-bb31-e0ecc4f0dc2e) | Theorem | Proved | Complete |
 | [`CollatzWork.excursionBudgetDescent`](https://prove2.me/theorems/00b514a8-f36c-42af-8f09-8d6a09b962e7) | Theorem | Proved | Complete |
 | [`CollatzWork.excursionChainEnvelope`](https://prove2.me/theorems/fe09db2b-7d5a-40f9-8b58-fc8622eade60) | Theorem | Proved | Complete |
-| [`CollatzWork.excursionChain_converges_of_smaller`](https://prove2.me/theorems/d920c106-0366-40fd-95f6-5d645b27639b) | Theorem | Open | Proof queued |
+| [`CollatzWork.excursionChain_converges_of_smaller`](https://prove2.me/theorems/d920c106-0366-40fd-95f6-5d645b27639b) | Theorem | Proved | Complete |
 | [`CollatzWork.excursionChain_terminal_descent`](https://prove2.me/theorems/8ba0ae62-dd07-423c-b3aa-4103e5fa261a) | Theorem | Proved | Complete |
 | [`CollatzWork.finitePaletteObstruction`](https://prove2.me/theorems/681c467e-ac99-4f64-ac3d-dbab3ea365dc) | Theorem | Proved | Complete |
 | [`CollatzWork.finitePalette_path_obstruction`](https://prove2.me/theorems/4f4d5f5f-de2c-4d35-ae80-73864751db42) | Theorem | Proved | Complete |
 | [`CollatzWork.finiteRepetitionBound`](https://prove2.me/theorems/fe19079d-9980-40eb-8861-d6f3068d437a) | Theorem | Proved | Complete |
-| `CollatzWork.firstContractionQuarterGap` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.firstContractionQuarterGap`](https://prove2.me/theorems/a90d9d2e-f349-478e-9eec-b2f6e19fd597) | Theorem | Proved | Complete |
 | [`CollatzWork.firstContractionThirdGap`](https://prove2.me/theorems/f22cb99c-527d-4d7e-9cac-c550caa8b071) | Theorem | Proved | Complete |
 | [`CollatzWork.firstContractionTime`](https://prove2.me/theorems/161e7d22-1105-46dc-9f4b-0f1bd104b914) | Theorem | Proved | Complete |
 | [`CollatzWork.firstContraction_quarter_of_certificate`](https://prove2.me/theorems/0a2c561c-3852-456d-a787-0619b8152e7c) | Theorem | Proved | Complete |
@@ -92,7 +92,7 @@ Theorems are counted as Proved only when the receipt records both the completed 
 | [`CollatzWork.mechanicalCoarseBound`](https://prove2.me/theorems/2eb8326e-dac3-48c6-8a99-fe986b29f569) | Theorem | Proved | Complete |
 | [`CollatzWork.mechanicalEnvelope`](https://prove2.me/theorems/5863cf7a-a910-47f6-a635-efb2c38f6a16) | Theorem | Proved | Complete |
 | [`CollatzWork.mechanical_fifteen_failure`](https://prove2.me/theorems/96764711-599f-46ff-94ce-0dea1b78aefc) | Theorem | Proved | Complete |
-| `CollatzWork.mechanical_large_bound` | Theorem | Not recorded | Publication queued |
+| [`CollatzWork.mechanical_large_bound`](https://prove2.me/theorems/f93360e7-e6c2-49dc-b488-bccd535b8dcf) | Theorem | Proved | Complete |
 | [`CollatzWork.mechanical_twelve_identity`](https://prove2.me/theorems/e93c53b0-7420-4a91-8668-03f6ce000233) | Theorem | Proved | Complete |
 | [`CollatzWork.mechanical_twelve_propagation`](https://prove2.me/theorems/2ed47ecf-e0d6-42ed-a52e-d3767d4e5b1d) | Theorem | Proved | Complete |
 | [`CollatzWork.mersenne_prefix_nondecreasing`](https://prove2.me/theorems/b272cd6a-e89d-40fe-9818-fb10781c88df) | Theorem | Proved | Complete |
@@ -107,35 +107,35 @@ Theorems are counted as Proved only when the receipt records both the completed 
 | [`CollatzWork.prefixSeparation`](https://prove2.me/theorems/defa3756-0706-4c04-a9cd-f8ff010feb02) | Theorem | Proved | Complete |
 | [`CollatzWork.refinedChild_arithmetic`](https://prove2.me/theorems/594f8677-1771-4e05-b2cc-c76cc0bc9a4c) | Theorem | Proved | Complete |
 | [`CollatzWork.refinedChild_iter`](https://prove2.me/theorems/f0dcf59b-ecea-4e3f-a064-d93bd5364ac2) | Theorem | Proved | Complete |
-| [`CollatzWork.refinedMersenneChild_coalesces`](https://prove2.me/theorems/7a4756a0-a7ad-43b8-9f5c-42397c87d235) | Theorem | Open | Proof queued |
-| `CollatzWork.refinedParent_converges_iff_child` | Theorem | Not recorded | Not submitted |
-| `CollatzWork.refinedParent_converges_of_smaller` | Theorem | Not recorded | Not submitted |
-| `CollatzWork.refinedParent_has_smaller_coalescence` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.refinedMersenneChild_coalesces`](https://prove2.me/theorems/7a4756a0-a7ad-43b8-9f5c-42397c87d235) | Theorem | Proved | Complete |
+| [`CollatzWork.refinedParent_converges_iff_child`](https://prove2.me/theorems/1b6793e3-6342-43b2-bf3d-e8363fbfb9e3) | Theorem | Proved | Complete |
+| [`CollatzWork.refinedParent_converges_of_smaller`](https://prove2.me/theorems/d65f56ca-45c5-4a5c-a9d6-bce87e44aae6) | Theorem | Proved | Complete |
+| [`CollatzWork.refinedParent_has_smaller_coalescence`](https://prove2.me/theorems/79575c6c-8e26-4b1e-9f00-2022b29f942e) | Theorem | Proved | Complete |
 | [`CollatzWork.refinedParent_iter`](https://prove2.me/theorems/fa870f89-6bd2-4f2f-9198-b10b088a7466) | Theorem | Proved | Complete |
-| `CollatzWork.residueAncestor` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.residueAncestor`](https://prove2.me/theorems/733ae530-875c-4cd4-a2ee-09ca0b17d13f) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_factor_unit`](https://prove2.me/theorems/5c2f713b-7fc9-42d4-bf60-3c054b203b22) | Theorem | Proved | Complete |
-| `CollatzWork.residueAncestor_normalized` | Theorem | Not recorded | Not submitted |
-| `CollatzWork.residueAncestor_of_divisibility` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.residueAncestor_normalized`](https://prove2.me/theorems/e1bdc3a9-dd1b-4088-80af-b818ec8ae0e8) | Theorem | Proved | Complete |
+| [`CollatzWork.residueAncestor_of_divisibility`](https://prove2.me/theorems/16987834-c232-44c0-9668-9661994efe0f) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_prefix_one`](https://prove2.me/theorems/b9d54efe-9330-4384-bd03-cc8e8e6e7f9b) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_prefix_two`](https://prove2.me/theorems/fc0cfdb8-bd14-4d2e-bd75-5e1e95422717) | Theorem | Proved | Complete |
-| `CollatzWork.residueAncestor_refinedTail` | Theorem | Not recorded | Publication queued |
+| [`CollatzWork.residueAncestor_refinedTail`](https://prove2.me/theorems/fc80b9a8-0837-4f9c-bbc0-91c677c1e8c9) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_tail11`](https://prove2.me/theorems/21495ad9-72df-43c4-9269-f273becc1694) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_tail173`](https://prove2.me/theorems/8c1759df-1bdc-4df3-8135-927f5a37bca6) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_tail38`](https://prove2.me/theorems/e4ec1606-f654-4a26-be63-535bae1d6402) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_tail65`](https://prove2.me/theorems/a720be97-7db8-4e1f-ba95-2517d51df831) | Theorem | Proved | Complete |
 | [`CollatzWork.residueAncestor_tail92`](https://prove2.me/theorems/ad9d7e89-a7b3-4468-9e37-d1e812eaa49d) | Theorem | Proved | Complete |
-| `CollatzWork.rootDescent` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.rootDescent`](https://prove2.me/theorems/3575d832-8662-4e06-a366-bb03a7bf15bc) | Theorem | Proved | Complete |
 | [`CollatzWork.rootDescentAncestor`](https://prove2.me/theorems/6f12f293-f9ea-48ba-9875-eef0ea62d1e9) | Theorem | Proved | Complete |
-| `CollatzWork.rootDescentBurst` | Theorem | Not recorded | Publication queued |
-| `CollatzWork.rootDescent_converges_of_smaller` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.rootDescentBurst`](https://prove2.me/theorems/504e7ac6-886b-470e-acb2-b549a9d87263) | Theorem | Proved | Complete |
+| [`CollatzWork.rootDescent_converges_of_smaller`](https://prove2.me/theorems/45da6a85-77b6-460a-81db-4757da00e128) | Theorem | Proved | Complete |
 | [`CollatzWork.shiftedEnvelope_compose`](https://prove2.me/theorems/f8859650-b352-4011-b63e-0a199247b495) | Theorem | Proved | Complete |
 | [`CollatzWork.shortcutIter_OOE`](https://prove2.me/theorems/88411db5-b8c0-4e8c-8de1-a8ef3acf857b) | Theorem | Proved | Complete |
 | [`CollatzWork.smallerCoalescenceCriterion`](https://prove2.me/theorems/b519ee3e-5f30-4b56-81b9-acd859fba7c1) | Theorem | Proved | Complete |
 | [`CollatzWork.terminalEnvelope_compose`](https://prove2.me/theorems/867a7add-a6d6-499a-9c4c-2553c36cde4a) | Theorem | Proved | Complete |
-| `CollatzWork.twoBurstDescent` | Theorem | Not recorded | Not submitted |
-| `CollatzWork.twoBurst_converges_of_smaller` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.twoBurstDescent`](https://prove2.me/theorems/7404fa0a-5058-4531-a776-41031cd23211) | Theorem | Proved | Complete |
+| [`CollatzWork.twoBurst_converges_of_smaller`](https://prove2.me/theorems/56b3984a-432a-461d-90f6-8d4c22cbe928) | Theorem | Proved | Complete |
 | [`CollatzWork.twoBurst_power_margin`](https://prove2.me/theorems/7f0c4a0f-09c0-48fd-8585-80687fb53c7c) | Theorem | Proved | Complete |
-| `CollatzWork.universalMechanicalQuarterCertificate` | Theorem | Not recorded | Not submitted |
+| [`CollatzWork.universalMechanicalQuarterCertificate`](https://prove2.me/theorems/41962b91-ad7f-4d4e-a94e-5fc4f3045edc) | Theorem | Proved | Complete |
 | [`ArchiveAlternatingGrowth`](https://prove2.me/theorems/8d3bcba5-651a-478c-a15f-70215d2641a7) | Definition | Definition | Complete |
 | [`ArchiveDescent`](https://prove2.me/theorems/2ddd9e76-8d52-4740-9b06-281561ed2d86) | Definition | Definition | Complete |
 | [`CollatzWork.AffineRepetitionStatement`](https://prove2.me/theorems/9848ab79-5911-4edb-9f4e-eb9787852f38) | Definition | Definition | Complete |

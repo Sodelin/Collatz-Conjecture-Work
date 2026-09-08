@@ -1,5 +1,5 @@
 {
-  "complete": false,
+  "complete": true,
   "events": [
     {
       "action": "credential_exchange_before",
@@ -6949,8 +6949,2786 @@
       "at": 1788881648.9614375,
       "key": "thm:CollatzWork.mechanical_large_bound",
       "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881697.9692464,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881708.4320557,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881708.5208333,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881708.5616283,
+      "key": "thm:CollatzWork.excursionChain_converges_of_smaller",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881708.6116824,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881708.6848476,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788881718.8942847,
+      "key": "thm:CollatzWork.excursionChain_converges_of_smaller",
+      "status": "Proved"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881733.2161305,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881743.0256767,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881743.1018653,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881743.1329124,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881743.954508,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881759.2203753,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881769.8770163,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881769.8981752,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881770.0510387,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881781.685408,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788881781.8041413,
+      "intent_id": "7541ae34992e40e39f327496dbfb4f55",
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "payload_sha256": "e9f642a382812e7ea134c877a3a908d8551eeca7f425cbe335f2f5e07b115eb6"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788881795.7816439,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "submission_id": "120be635-2223-4cd6-9ec5-7b253f03708c"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881805.9298964,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881820.864913,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881851.2412133,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881851.2537532,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881851.3161905,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "COMPILING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881851.319154,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788881861.435454,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788881870.1843808,
+      "intent_id": "5953fbe2f5c349198a1d79a7cd98a750",
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "payload_sha256": "a265e4ee9bcf41b152be4aab5338b9b81690042a795080b5ae91055bbf21c799"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788881870.3354132,
+      "intent_id": "cee932fe0d2a48b280867845e2367792",
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "payload_sha256": "b6234f48ba7588109896f522783d1681bb66edb35989264428e7b29d3fe3949b"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788881880.9897819,
+      "job_id": "63255582-ff22-43db-beee-b644f0f13a0b",
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788881881.0196102,
+      "job_id": "7bee2ae6-7aa7-4e61-91ba-fad4ff232164",
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881896.1555493,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881906.4550433,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881906.547458,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881906.5617557,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881906.5850282,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881914.9298828,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788881915.058191,
+      "intent_id": "d81ea48caa904a608bc09eb912c01262",
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "payload_sha256": "771d9f2aa4d438c75bc47b84a2f0a7d39390d3154c22068ac5a5473e8e122af5"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788881923.6646113,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "submission_id": "829ed27a-d61c-4374-ae9c-b68ca112d9c6"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881935.2863662,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881944.9812982,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881953.9733856,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881953.9849977,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881954.0551124,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881954.065735,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881954.0788922,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881966.62382,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881975.255154,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881975.3674474,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881975.4318159,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881975.533451,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881975.6260123,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788881988.385466,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881996.5518403,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788881996.5973043,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881996.60223,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788881996.6706738,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882005.245403,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882005.379612,
+      "intent_id": "2d2950bd78ef41afbea364f58eb1194f",
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "payload_sha256": "aec3cee1fa58834f48b84767efb9e5a8c66b7ea37b1e10f6491ae98f8fefeb96"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882014.4853857,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "submission_id": "0f2436d8-fe33-4776-a74e-dadef2a535ed"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882024.8310332,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882037.7920878,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882051.3992193,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882051.4504206,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882051.5121543,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882051.567002,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882052.2969856,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882064.3460252,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882075.524192,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882075.5723464,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882075.575499,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882075.580449,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882075.6386852,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882087.6799858,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882096.7690427,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882096.7746565,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882096.8219821,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882096.9261527,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882097.9025064,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882106.8378303,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882117.4854512,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882117.4934006,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882117.5480251,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882117.554211,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882117.6537468,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882129.3854487,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882137.8074348,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882137.949511,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882138.02043,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882138.228752,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882138.7007768,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882151.6736367,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882160.1799545,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882160.2592285,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882160.282742,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882160.3279986,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882160.3396168,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882168.3944457,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882176.784689,
+      "intent_id": "1eb65ae3090a4f3d87cbc8dba93fcda8",
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "payload_sha256": "95d45811be66f98f590d02972c649f56288e209da3f70d458e2ac1f2e6aaadeb"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882185.0261214,
+      "job_id": "f01800ce-2099-4deb-bd64-0140701de9ac",
+      "key": "thm:CollatzWork.residueAncestor_normalized"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882193.85836,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882210.0593657,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882219.5658507,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882219.619659,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882219.6552083,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882230.2017195,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882230.3463452,
+      "intent_id": "441fc7a6962a4b9481d52328b840f650",
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "payload_sha256": "2155066f33e68c9598fbf48840304809dc9d186ff462fb9be93fb1163d07d912"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882230.4137437,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882230.5397856,
+      "intent_id": "380902e4c1694cb78fbf95191b541b7c",
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "payload_sha256": "4eccd574384def7262834f7ee34097fbeae7e10527b61a28b116032e0e862046"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882239.42285,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "submission_id": "e9f56be3-9716-4099-a23d-0e2d1f21d676"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882239.5738509,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "submission_id": "da28fb97-820c-42bc-82ee-53de86436068"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882248.5180836,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882248.5298302,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882263.2358952,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882272.1478758,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882272.1905735,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882272.217623,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882272.3209968,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882272.3398557,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882281.582317,
+      "key": "thm:CollatzWork.rootDescentBurst",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882290.1205096,
+      "intent_id": "3eac424605004f6199e2fd5211481fc4",
+      "key": "thm:CollatzWork.rootDescent",
+      "payload_sha256": "22295fa0e3ae79ea73bfe7b16a217fdc7e4b1eefb227b393b05120e5a75fd6c3"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882290.1623287,
+      "intent_id": "532134815fb7416ca26da0a3ded478e9",
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "payload_sha256": "3dc218fbacbb46829ae74c08c528c7073c00bb268a388743377f3d9960c48981"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882319.0333703,
+      "job_id": "3012d75c-6471-40c5-a198-a0772a7f97f8",
+      "key": "thm:CollatzWork.rootDescent"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882319.2608163,
+      "job_id": "2a9b5253-729e-40ec-9283-5a4bd5c3d390",
+      "key": "thm:CollatzWork.twoBurstDescent"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882329.1116815,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882329.1893053,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882338.0743494,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882355.7847788,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882355.7874708,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882355.8359604,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882355.8602283,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882355.9263763,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882356.8414104,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882363.4855413,
+      "key": "thm:CollatzWork.mechanical_large_bound",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882373.917565,
+      "intent_id": "9ba673407abe497aa6a9924f966ae2d8",
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "payload_sha256": "8a43957ef6c392472b777cbc766dd8162ccad9eb4fd5d62abfbb23e5ae5da5fb"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882382.010697,
+      "job_id": "afe58dc5-3462-47a1-9e8f-741fb467de88",
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882389.481121,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882399.2805357,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882407.6385715,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882407.7448757,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882407.7529936,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882407.7696927,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882407.809061,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "COMPILING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882407.8157547,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882421.5994542,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882429.393002,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882429.508884,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882429.554122,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882429.562085,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882429.6190562,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882441.1758475,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882441.2978733,
+      "intent_id": "a019847b9e6d4bc0b40b20382e6db08d",
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "payload_sha256": "754834822bd4763be5f90042a4895700fc565af0ff96277c40136a82a7f1328c"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882450.2999275,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "submission_id": "bd51b043-3c23-4f59-9be5-e3b1db683bd1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882457.8488724,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882469.2273786,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882477.901756,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882477.9946423,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882478.0307326,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882478.0977635,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882478.1146846,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882478.1379745,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882487.715344,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882496.5234723,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882496.716663,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882496.7286484,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882496.731678,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882496.7775285,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882496.7818508,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882505.3140283,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882505.3243582,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882513.6970136,
+      "intent_id": "fe549b81759f4f6baf2fa19bca5fed90",
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "payload_sha256": "66cb3e441066ce496ba8b60d9c3d3404d0ba721fe08738d361b65948422d0a49"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882523.4774916,
+      "job_id": "dcc61c5a-e118-4bfb-abdc-b14f8e058b72",
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882533.7631376,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882548.9121058,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882558.2496347,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882558.7017121,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882558.706533,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882567.1046598,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882567.1842904,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882567.2616997,
+      "intent_id": "a61c08cb03ac435a8a9c0053247d3d3e",
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "payload_sha256": "36a29e8d2de1e4897b015b5d31b8e8f2fcc8541dd5e787a71afb4a25cac7cd0d"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882567.3443186,
+      "intent_id": "d96de25d8ce64bd9b8bea654c0768064",
+      "key": "thm:CollatzWork.rootDescent",
+      "payload_sha256": "7b8f9504c22acdcd83705aed88c46b5dfc802b5cdef6799aa2fe9f0307f62bc8"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882577.7286503,
+      "key": "thm:CollatzWork.rootDescent",
+      "submission_id": "f2358b20-d45b-460a-94e6-9ef0fb39a560"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882577.8032236,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "submission_id": "3887a74c-aa21-4f0f-82d7-fae3035dd0f6"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882585.4165647,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882585.455022,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882594.715493,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882606.9187057,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "COMPILING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882607.0083795,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882607.0438263,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882607.0956209,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882607.1161315,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882622.476304,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882632.4353788,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882632.4438777,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882632.4650433,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882632.617697,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882642.6255276,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882642.7532344,
+      "intent_id": "559b64c296ea44feb63b38264796d335",
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "payload_sha256": "c350f6a70f363a41df9ba2db26bfbc38bd0d3211be93fcf645f94648155a4737"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882655.2050273,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "submission_id": "f2845004-abdc-4798-9c52-164b90fc1cf8"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882668.987817,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882680.6579087,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882690.8981657,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882690.930727,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882690.9830115,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882690.9974353,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882691.0270503,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882703.435837,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882713.4348187,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882713.4857259,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882713.4914455,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882713.5033567,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882713.60722,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882726.3041475,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882735.2909827,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882735.3735976,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882735.4188354,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882735.5072083,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882745.7400079,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882745.8723216,
+      "intent_id": "3cd6be059b814018b4dd893dc3d0b41b",
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "payload_sha256": "6217c4b89401cc319ec3ea4e4a50e740349d9fcd1e6d078877198ec928bd2f9f"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882745.9340556,
+      "key": "thm:CollatzWork.residueAncestor_normalized",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882755.4126244,
+      "intent_id": "b90ca2aa16b4451d8d2872d48db0cc79",
+      "key": "thm:CollatzWork.residueAncestor",
+      "payload_sha256": "4a180a92487b4a1bebfc86f7063651b56e7fe79bc8014db4e34a735796401321"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788882755.4449492,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "submission_id": "08c0aa29-f787-4a3e-b635-7c8908f7c092"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882764.9538932,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882765.0250645,
+      "job_id": "56383a75-2f9c-4b3d-ba3c-6238d41bd381",
+      "key": "thm:CollatzWork.residueAncestor"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882779.4831142,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882791.8742023,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882801.529072,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882801.5354416,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882801.6446753,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882801.6827707,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882801.7848642,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882814.7795029,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882825.6314716,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882825.6372402,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882825.6854286,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882825.6979685,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882825.7725456,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882837.768952,
+      "key": "thm:CollatzWork.twoBurstDescent",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882837.7724051,
+      "key": "thm:CollatzWork.rootDescent",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882848.1742933,
+      "intent_id": "491dc9f3691344519bc1a785692d3b34",
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "payload_sha256": "aab9672a1bbc61a55e7007cc8dad2b19c37ded06f248a54cb71e146265b868ab"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882849.463234,
+      "intent_id": "6af96297ec2f4c9384c60dc4953312c9",
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "payload_sha256": "452d25ae9980f4b10f751b4779639f2ae291ae1ec502f96616a3da26198914df"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882857.5863488,
+      "job_id": "b03deaca-5048-4778-a269-1346690ce221",
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882858.2822,
+      "job_id": "2822a70d-1482-4289-b0ef-917975984649",
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882866.8010805,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882866.9058025,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882881.505358,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882893.4641557,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882893.472235,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882893.5342388,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882893.659136,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PENDING"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882893.7113492,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882902.9192414,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788882913.158548,
+      "intent_id": "987f96f2d2144564b79a7adff4c03454",
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "payload_sha256": "85037733b98c7188f9f1b24fc17f71fe7d754374151b856ee80c440e1f7fdc1b"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788882923.5883505,
+      "job_id": "8f35652f-b633-4f72-b9cc-ee961047e30f",
+      "key": "thm:CollatzWork.firstContractionQuarterGap"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882931.985412,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "COMPILING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788882968.2381485,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788882978.2163594,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882995.7878351,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882995.8463297,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882995.8524466,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788882995.858139,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788882995.889397,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "status": "Proved"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882995.9852452,
+      "intent_id": "455c6901091b4ab8ae4d7b5534370b94",
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "payload_sha256": "38dfbc3e0530e1595cca74d73b7cc14b38386e6c4419ab2e9a2a876e08e4a5fa"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882996.3690574,
+      "intent_id": "ddd6ed633e5e4296ad98c2e64b9946bd",
+      "key": "thm:CollatzWork.residueAncestor",
+      "payload_sha256": "d4f4243d4209ce92698746d477c4decb5beeb6111114e0e1f0fea08edc270a65"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882996.41292,
+      "intent_id": "19a4b9fb745548d8a91d4cb345a1dc00",
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "payload_sha256": "a681a6bb4270e317c820b9f99130c3ace9f301de6715c67a370a2986ebf53b76"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788882996.4159572,
+      "intent_id": "6576cd05114544f4bbba272537403c58",
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "payload_sha256": "bfa75563c9b21c389bb631b0c23e542787443d482cde8ee7825d16d0c04b046f"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788883008.086146,
+      "key": "thm:CollatzWork.residueAncestor",
+      "submission_id": "eda5aeab-2ada-4425-a725-591c464f8173"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788883008.1049478,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "submission_id": "f4441abc-e122-4c36-acb6-952584240f8e"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788883008.2422469,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "submission_id": "d32b3ae5-2e1c-4e73-a28f-acb051a40d4a"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788883008.7405872,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "submission_id": "9ad2ae9a-0b7e-41fd-a25a-28e16fb5f220"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883017.6310174,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883017.6961827,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883017.7695408,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883017.817659,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883028.0137148,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883036.535939,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "PENDING"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883036.5613763,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883036.6146555,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883036.6406536,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788883058.8537645,
+      "key": "thm:CollatzWork.residueAncestor",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788883058.9708192,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "status": "Proved"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788883059.075573,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_before",
+      "at": 1788883067.2425077,
+      "intent_id": "8e46a1836b6a481a8c399d5ec670a95d",
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "payload_sha256": "66cf6f15cd67c1ff60702859401b3ebd566cbab3281e51d289bb4b38125d95d1"
+    },
+    {
+      "action": "publish_after",
+      "at": 1788883075.5309153,
+      "job_id": "e782791a-7ea4-4485-8fc0-97784cc5279d",
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788883083.6095214,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "COMPILING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883093.989392,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883101.9767313,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788883111.364447,
+      "key": "thm:CollatzWork.firstContractionQuarterGap",
+      "status": "Proved"
+    },
+    {
+      "action": "publish_polled",
+      "at": 1788883111.3916712,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "PUBLISHED"
+    },
+    {
+      "action": "verify_before",
+      "at": 1788883111.5194478,
+      "intent_id": "2fc960aa55504132aba0e0697beb8c9c",
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "payload_sha256": "d926f96ee07a7a41d6ea8e0b2be998fc10878e311e57f9a8f69d5032e4b10468"
+    },
+    {
+      "action": "verify_after",
+      "at": 1788883121.9406714,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "submission_id": "b6637200-37b6-4c6e-9324-8cc37b2259b7"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883129.7026372,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883139.4073076,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883147.3647811,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "PENDING"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883155.7965012,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "verify_polled",
+      "at": 1788883164.3208585,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "ACCEPTED"
+    },
+    {
+      "action": "theorem_status_checked",
+      "at": 1788883172.5032802,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility",
+      "status": "Proved"
+    },
+    {
+      "action": "final_catalog_page_checked",
+      "at": 1788883180.1696496,
+      "page": 0
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883187.9757307,
+      "key": "def:CollatzWork.Disproof.PolynomialRatchet"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883187.992085,
+      "key": "def:ArchiveDescent"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.0158436,
+      "key": "def:ArchiveAlternatingGrowth"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.075531,
+      "key": "def:CollatzWork.Disproof.FiniteResidueFirstIntegral"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.1042166,
+      "key": "def:CollatzWork.Disproof.BranchingCenter"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.1299663,
+      "key": "def:CollatzWork.ConvergenceStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.1456084,
+      "key": "def:CollatzWork.AffineRepetitionStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883188.399934,
+      "key": "def:CollatzWork.BlockArithmetic"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.1021726,
+      "key": "def:CollatzWork.FirstContractionStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.2534733,
+      "key": "def:CollatzWork.FinitePaletteObstructionStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.2582521,
+      "key": "def:CollatzWork.InverseWordBoundaryStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.262164,
+      "key": "def:CollatzWork.PrefixCollisionStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.265227,
+      "key": "def:CollatzWork.QuarterGapUniversalStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.2735898,
+      "key": "def:CollatzWork.ExcursionBudgetStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.3415933,
+      "key": "def:CollatzWork.FloorPower"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883196.3467708,
+      "key": "def:CollatzWork.QuarterGapStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.0566888,
+      "key": "def:CollatzWork.RootDescentStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.1129775,
+      "key": "def:CollatzWork.RefinedMersenneChild"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.1681662,
+      "key": "def:CollatzWork.YAHFiniteObstructionStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.1999352,
+      "key": "def:CollatzWork.TwoBurstStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.2063358,
+      "key": "def:CollatzWork.ResidueAncestorStatement"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.211648,
+      "key": "thm:BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.3436062,
+      "key": "thm:BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883205.3950381,
+      "key": "def:CollatzWork.YAHFiniteObstruction"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.287138,
+      "key": "thm:BlindCollatz.RepetitionBound.no_infinite_alternating_blocks"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.294197,
+      "key": "thm:BlindCollatz.RepetitionBound.telescope"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.3193872,
+      "key": "thm:BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.3294623,
+      "key": "thm:BlindCollatz.RepetitionBound.alternating_repetition_bound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.344077,
+      "key": "thm:BlindCollatz.AlternatingGrowth.ordinary_five"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.3505797,
+      "key": "thm:BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883213.3771508,
+      "key": "thm:BlindCollatz.AlternatingGrowth.odd_exponents_one_two"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883214.1841903,
+      "key": "thm:BlindCollatz.RepetitionBound.affine_repetition_bound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.7164483,
+      "key": "thm:CollatzWork.Disproof.quotientDegreesVanish"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.771469,
+      "key": "thm:CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.7897305,
+      "key": "thm:CollatzWork.Disproof.secondRotatedDeterminantCoefficients"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.8046603,
+      "key": "thm:CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.8692248,
+      "key": "thm:CollatzWork.Disproof.noNonresonantContentGain"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883221.9280417,
+      "key": "thm:CollatzWork.Disproof.firstRotatedDeterminantCoefficients"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883222.4806118,
+      "key": "thm:BlindCollatz.descent_iff_convergence"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883222.5502713,
+      "key": "thm:CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883231.898467,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883241.151983,
+      "key": "thm:CollatzWork.Disproof.twoPumpSyzygy"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883241.2091875,
+      "key": "thm:CollatzWork.YAH.edgeCertificate_cancellation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883241.3358426,
+      "key": "thm:CollatzWork.YAH.edgeCertificate_shape"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883241.3519425,
+      "key": "thm:CollatzWork.Disproof.twoPowerOddNormalFormUnique"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883242.1961374,
+      "key": "thm:CollatzWork.Disproof.twoPumpCoefficientDependencies"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883244.9666457,
+      "key": "thm:CollatzWork.YAH.edgeCertificate_canonically_embeddable"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883246.6074562,
+      "key": "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883246.765199,
+      "key": "thm:CollatzWork.Disproof.twoPumpConstantObstructionVanishes"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883256.3242838,
+      "key": "thm:CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883256.3523462,
+      "key": "thm:CollatzWork.YAH.noTwoStateEdgeAdditiveOrder"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883256.3980317,
+      "key": "thm:CollatzWork.YAH.ffPumpWord_canonical"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883256.4652138,
+      "key": "thm:CollatzWork.YAH.noTwoStateSymbolAdditiveOrder"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883256.5184748,
+      "key": "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883257.2763798,
+      "key": "thm:CollatzWork.YAH.symbolCertificate_cancellation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883257.3022316,
+      "key": "thm:CollatzWork.YAH.symbolCertificate_canonically_embeddable"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883257.494028,
+      "key": "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5087638,
+      "key": "thm:CollatzWork.YAH.yah13_forces_ff_negative"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5461996,
+      "key": "thm:CollatzWork.YAH.unlabelledRows_semantic"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5712066,
+      "key": "thm:CollatzWork.YAH.twoState_rule_equations"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5746589,
+      "key": "thm:CollatzWork.YAH.weightedGapSum_pos"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5810816,
+      "key": "thm:CollatzWork.YAH.unlabelledCertificate_shape"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5914452,
+      "key": "thm:CollatzWork.YAH.symbolCertificate_shape"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.5981703,
+      "key": "thm:CollatzWork.YAH.unlabelledCertificate_cancellation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883265.702028,
+      "key": "thm:CollatzWork.YAH.unlabelledRows_legal"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.754025,
+      "key": "thm:CollatzWork.compatibleProduct_mod_four"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.796311,
+      "key": "thm:CollatzWork.converges_iff_of_coalesces"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.8122408,
+      "key": "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.8387349,
+      "key": "thm:CollatzWork.affineQuarterCertificate"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.862538,
+      "key": "thm:CollatzWork.affineRepetitionBound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883273.9399476,
+      "key": "thm:CollatzWork.converges_shortcutIter_iff"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883282.5739965,
+      "key": "thm:CollatzWork.descentCriterion"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883282.6149223,
+      "key": "thm:CollatzWork.excursionBudgetDescent"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883282.6769202,
+      "key": "thm:CollatzWork.excursionChainEnvelope"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883282.7087746,
+      "key": "thm:CollatzWork.equalSlopeWitness"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883283.5224438,
+      "key": "thm:CollatzWork.excursionChain_converges_of_smaller"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883284.1808958,
+      "key": "thm:CollatzWork.affineRecurrenceTelescope"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883285.5104718,
+      "key": "thm:CollatzWork.equalSlopeSmaller"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883286.2907906,
+      "key": "thm:CollatzWork.blockNumerator12_exact_bound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883290.9135633,
+      "key": "thm:CollatzWork.firstContraction_quarter_of_certificate"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883290.9185557,
+      "key": "thm:CollatzWork.excursionChain_terminal_descent"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.0171173,
+      "key": "thm:CollatzWork.firstContractionThirdGap"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.224902,
+      "key": "thm:CollatzWork.finitePalette_path_obstruction"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.2328658,
+      "key": "thm:CollatzWork.firstContractionTime"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.4143016,
+      "key": "thm:CollatzWork.finitePaletteObstruction"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.61691,
+      "key": "thm:CollatzWork.finiteRepetitionBound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883291.6232264,
+      "key": "thm:CollatzWork.firstContractionQuarterGap"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883299.7423162,
+      "key": "thm:CollatzWork.floorPower_mul"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883299.872092,
+      "key": "thm:CollatzWork.mechanical_twelve_identity"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883299.8763087,
+      "key": "thm:CollatzWork.mechanical_large_bound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883299.9400973,
+      "key": "thm:CollatzWork.mechanical_twelve_propagation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883300.0141244,
+      "key": "thm:CollatzWork.mechanical_fifteen_failure"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883300.023081,
+      "key": "thm:CollatzWork.mechanicalCoarseBound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883300.7436445,
+      "key": "thm:CollatzWork.fixedRatioDivisibility"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883300.9514327,
+      "key": "thm:CollatzWork.mechanicalEnvelope"
+    },
+    {
+      "action": "environment_checked",
+      "at": 1788883313.9746807,
+      "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "toolchain": "leanprover/lean4:v4.33.1"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.3931472,
+      "key": "thm:CollatzWork.orbitAffine"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.4612126,
+      "key": "thm:CollatzWork.oddRun"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.465364,
+      "key": "thm:CollatzWork.noInfiniteExpandingAffineBlocks"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.4904838,
+      "key": "thm:CollatzWork.mersenne_prefix_nondecreasing"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.5979462,
+      "key": "thm:CollatzWork.prefixCollision"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.618126,
+      "key": "thm:CollatzWork.parityPrefix_dvd_sub_of_le"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883322.7064779,
+      "key": "thm:CollatzWork.prefixReturnBernoulli"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883329.0949366,
+      "key": "thm:CollatzWork.noInfinitePositiveRecurrence"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.6958215,
+      "key": "thm:CollatzWork.refinedMersenneChild_coalesces"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.7974734,
+      "key": "thm:CollatzWork.refinedChild_arithmetic"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.805926,
+      "key": "thm:CollatzWork.refinedParent_has_smaller_coalescence"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.8109965,
+      "key": "thm:CollatzWork.prefixSeparation"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.8276746,
+      "key": "thm:CollatzWork.prefixReturnNumericalBound"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.8458319,
+      "key": "thm:CollatzWork.refinedParent_converges_of_smaller"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883331.8622823,
+      "key": "thm:CollatzWork.refinedChild_iter"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883337.9304163,
+      "key": "thm:CollatzWork.refinedParent_converges_iff_child"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.151791,
+      "key": "thm:CollatzWork.residueAncestor"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.2616756,
+      "key": "thm:CollatzWork.residueAncestor_factor_unit"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.2739015,
+      "key": "thm:CollatzWork.residueAncestor_prefix_one"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.286471,
+      "key": "thm:CollatzWork.residueAncestor_of_divisibility"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.2909122,
+      "key": "thm:CollatzWork.residueAncestor_refinedTail"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.3050373,
+      "key": "thm:CollatzWork.refinedParent_iter"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.37129,
+      "key": "thm:CollatzWork.residueAncestor_prefix_two"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883340.4209497,
+      "key": "thm:CollatzWork.residueAncestor_normalized"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.2831802,
+      "key": "thm:CollatzWork.residueAncestor_tail92"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.2986739,
+      "key": "thm:CollatzWork.rootDescentAncestor"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.3030035,
+      "key": "thm:CollatzWork.rootDescentBurst"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.3059058,
+      "key": "thm:CollatzWork.residueAncestor_tail38"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.342522,
+      "key": "thm:CollatzWork.residueAncestor_tail11"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.3885999,
+      "key": "thm:CollatzWork.rootDescent"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.4345767,
+      "key": "thm:CollatzWork.residueAncestor_tail65"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883349.4687586,
+      "key": "thm:CollatzWork.residueAncestor_tail173"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883357.8975208,
+      "key": "thm:CollatzWork.shiftedEnvelope_compose"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883357.9525635,
+      "key": "thm:CollatzWork.twoBurstDescent"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883357.985011,
+      "key": "thm:CollatzWork.twoBurst_converges_of_smaller"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883358.002682,
+      "key": "thm:CollatzWork.rootDescent_converges_of_smaller"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883358.0926259,
+      "key": "thm:CollatzWork.smallerCoalescenceCriterion"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883359.2430732,
+      "key": "thm:CollatzWork.twoBurst_power_margin"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883359.4171066,
+      "key": "thm:CollatzWork.shortcutIter_OOE"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883359.440932,
+      "key": "thm:CollatzWork.terminalEnvelope_compose"
+    },
+    {
+      "action": "final_item_checked",
+      "at": 1788883367.3347628,
+      "key": "thm:CollatzWork.universalMechanicalQuarterCertificate"
+    },
+    {
+      "action": "final_verification_passed",
+      "at": 1788883367.339405,
+      "count": 135
     }
   ],
+  "final_verification": {
+    "checked": [
+      "def:CollatzWork.Disproof.PolynomialRatchet",
+      "def:ArchiveDescent",
+      "def:ArchiveAlternatingGrowth",
+      "def:CollatzWork.Disproof.FiniteResidueFirstIntegral",
+      "def:CollatzWork.Disproof.BranchingCenter",
+      "def:CollatzWork.ConvergenceStatement",
+      "def:CollatzWork.AffineRepetitionStatement",
+      "def:CollatzWork.BlockArithmetic",
+      "def:CollatzWork.FirstContractionStatement",
+      "def:CollatzWork.FinitePaletteObstructionStatement",
+      "def:CollatzWork.InverseWordBoundaryStatement",
+      "def:CollatzWork.PrefixCollisionStatement",
+      "def:CollatzWork.QuarterGapUniversalStatement",
+      "def:CollatzWork.ExcursionBudgetStatement",
+      "def:CollatzWork.FloorPower",
+      "def:CollatzWork.QuarterGapStatement",
+      "def:CollatzWork.RootDescentStatement",
+      "def:CollatzWork.RefinedMersenneChild",
+      "def:CollatzWork.YAHFiniteObstructionStatement",
+      "def:CollatzWork.TwoBurstStatement",
+      "def:CollatzWork.ResidueAncestorStatement",
+      "thm:BlindCollatz.AlternatingGrowth.goodBlocks_each_block_grows",
+      "thm:BlindCollatz.AlternatingGrowth.arbitrarily_long_expansion",
+      "def:CollatzWork.YAHFiniteObstruction",
+      "thm:BlindCollatz.RepetitionBound.no_infinite_alternating_blocks",
+      "thm:BlindCollatz.RepetitionBound.telescope",
+      "thm:BlindCollatz.AlternatingGrowth.shortcut_three_eq_ordinary_five",
+      "thm:BlindCollatz.RepetitionBound.alternating_repetition_bound",
+      "thm:BlindCollatz.AlternatingGrowth.ordinary_five",
+      "thm:BlindCollatz.RepetitionBound.no_infinite_expanding_affine_blocks",
+      "thm:BlindCollatz.AlternatingGrowth.odd_exponents_one_two",
+      "thm:BlindCollatz.RepetitionBound.affine_repetition_bound",
+      "thm:CollatzWork.Disproof.quotientDegreesVanish",
+      "thm:CollatzWork.Disproof.FiniteResidueFirstIntegral.commutator_transitive_forces_constant",
+      "thm:CollatzWork.Disproof.secondRotatedDeterminantCoefficients",
+      "thm:CollatzWork.Disproof.BranchingCenter.centerTwoPowerOddNormalFormUnique",
+      "thm:CollatzWork.Disproof.noNonresonantContentGain",
+      "thm:CollatzWork.Disproof.firstRotatedDeterminantCoefficients",
+      "thm:BlindCollatz.descent_iff_convergence",
+      "thm:CollatzWork.Disproof.BranchingCenter.branchingCenterEquationRigid",
+      "thm:CollatzWork.Disproof.twoPumpSyzygy",
+      "thm:CollatzWork.YAH.edgeCertificate_cancellation",
+      "thm:CollatzWork.YAH.edgeCertificate_shape",
+      "thm:CollatzWork.Disproof.twoPowerOddNormalFormUnique",
+      "thm:CollatzWork.Disproof.twoPumpCoefficientDependencies",
+      "thm:CollatzWork.YAH.edgeCertificate_canonically_embeddable",
+      "thm:CollatzWork.YAH.evalCoefficients_weightedCoefficient",
+      "thm:CollatzWork.Disproof.twoPumpConstantObstructionVanishes",
+      "thm:CollatzWork.YAH.noBoundedBelowCanonicalFFPumpWords",
+      "thm:CollatzWork.YAH.noTwoStateEdgeAdditiveOrder",
+      "thm:CollatzWork.YAH.ffPumpWord_canonical",
+      "thm:CollatzWork.YAH.noTwoStateSymbolAdditiveOrder",
+      "thm:CollatzWork.YAH.noTwoStateSymbolCertificateOrientation",
+      "thm:CollatzWork.YAH.symbolCertificate_cancellation",
+      "thm:CollatzWork.YAH.symbolCertificate_canonically_embeddable",
+      "thm:CollatzWork.YAH.noTwoStateEdgeCertificateOrientation",
+      "thm:CollatzWork.YAH.yah13_forces_ff_negative",
+      "thm:CollatzWork.YAH.unlabelledRows_semantic",
+      "thm:CollatzWork.YAH.twoState_rule_equations",
+      "thm:CollatzWork.YAH.weightedGapSum_pos",
+      "thm:CollatzWork.YAH.unlabelledCertificate_shape",
+      "thm:CollatzWork.YAH.symbolCertificate_shape",
+      "thm:CollatzWork.YAH.unlabelledCertificate_cancellation",
+      "thm:CollatzWork.YAH.unlabelledRows_legal",
+      "thm:CollatzWork.compatibleProduct_mod_four",
+      "thm:CollatzWork.converges_iff_of_coalesces",
+      "thm:CollatzWork.allPositiveConverge_of_smallerCoalescence",
+      "thm:CollatzWork.affineQuarterCertificate",
+      "thm:CollatzWork.affineRepetitionBound",
+      "thm:CollatzWork.converges_shortcutIter_iff",
+      "thm:CollatzWork.descentCriterion",
+      "thm:CollatzWork.excursionBudgetDescent",
+      "thm:CollatzWork.excursionChainEnvelope",
+      "thm:CollatzWork.equalSlopeWitness",
+      "thm:CollatzWork.excursionChain_converges_of_smaller",
+      "thm:CollatzWork.affineRecurrenceTelescope",
+      "thm:CollatzWork.equalSlopeSmaller",
+      "thm:CollatzWork.blockNumerator12_exact_bound",
+      "thm:CollatzWork.firstContraction_quarter_of_certificate",
+      "thm:CollatzWork.excursionChain_terminal_descent",
+      "thm:CollatzWork.firstContractionThirdGap",
+      "thm:CollatzWork.finitePalette_path_obstruction",
+      "thm:CollatzWork.firstContractionTime",
+      "thm:CollatzWork.finitePaletteObstruction",
+      "thm:CollatzWork.finiteRepetitionBound",
+      "thm:CollatzWork.firstContractionQuarterGap",
+      "thm:CollatzWork.floorPower_mul",
+      "thm:CollatzWork.mechanical_twelve_identity",
+      "thm:CollatzWork.mechanical_large_bound",
+      "thm:CollatzWork.mechanical_twelve_propagation",
+      "thm:CollatzWork.mechanical_fifteen_failure",
+      "thm:CollatzWork.mechanicalCoarseBound",
+      "thm:CollatzWork.fixedRatioDivisibility",
+      "thm:CollatzWork.mechanicalEnvelope",
+      "thm:CollatzWork.orbitAffine",
+      "thm:CollatzWork.oddRun",
+      "thm:CollatzWork.noInfiniteExpandingAffineBlocks",
+      "thm:CollatzWork.mersenne_prefix_nondecreasing",
+      "thm:CollatzWork.prefixCollision",
+      "thm:CollatzWork.parityPrefix_dvd_sub_of_le",
+      "thm:CollatzWork.prefixReturnBernoulli",
+      "thm:CollatzWork.noInfinitePositiveRecurrence",
+      "thm:CollatzWork.refinedMersenneChild_coalesces",
+      "thm:CollatzWork.refinedChild_arithmetic",
+      "thm:CollatzWork.refinedParent_has_smaller_coalescence",
+      "thm:CollatzWork.prefixSeparation",
+      "thm:CollatzWork.prefixReturnNumericalBound",
+      "thm:CollatzWork.refinedParent_converges_of_smaller",
+      "thm:CollatzWork.refinedChild_iter",
+      "thm:CollatzWork.refinedParent_converges_iff_child",
+      "thm:CollatzWork.residueAncestor",
+      "thm:CollatzWork.residueAncestor_factor_unit",
+      "thm:CollatzWork.residueAncestor_prefix_one",
+      "thm:CollatzWork.residueAncestor_of_divisibility",
+      "thm:CollatzWork.residueAncestor_refinedTail",
+      "thm:CollatzWork.refinedParent_iter",
+      "thm:CollatzWork.residueAncestor_prefix_two",
+      "thm:CollatzWork.residueAncestor_normalized",
+      "thm:CollatzWork.residueAncestor_tail92",
+      "thm:CollatzWork.rootDescentAncestor",
+      "thm:CollatzWork.rootDescentBurst",
+      "thm:CollatzWork.residueAncestor_tail38",
+      "thm:CollatzWork.residueAncestor_tail11",
+      "thm:CollatzWork.rootDescent",
+      "thm:CollatzWork.residueAncestor_tail65",
+      "thm:CollatzWork.residueAncestor_tail173",
+      "thm:CollatzWork.shiftedEnvelope_compose",
+      "thm:CollatzWork.twoBurstDescent",
+      "thm:CollatzWork.twoBurst_converges_of_smaller",
+      "thm:CollatzWork.rootDescent_converges_of_smaller",
+      "thm:CollatzWork.smallerCoalescenceCriterion",
+      "thm:CollatzWork.twoBurst_power_margin",
+      "thm:CollatzWork.shortcutIter_OOE",
+      "thm:CollatzWork.terminalEnvelope_compose",
+      "thm:CollatzWork.universalMechanicalQuarterCertificate"
+    ],
+    "page": 1,
+    "scan_done": true,
+    "seen": [
+      "00acab94-a987-4fa6-ba4c-0f35800e8b61",
+      "00b514a8-f36c-42af-8f09-8d6a09b962e7",
+      "032b92f5-c811-48ac-ace2-f8dca7093ec6",
+      "0a2c561c-3852-456d-a787-0619b8152e7c",
+      "0ccb2e74-d509-4df1-b0c5-48b8f3b51b81",
+      "0ce8f54a-42a3-4dbf-9637-b8ee25965e7d",
+      "0d051019-4133-41de-9c30-9a89a9b04044",
+      "0d7e1856-58c8-432b-bfcd-8aa3a8b3bc96",
+      "1366b49f-b885-4446-bb2a-4e4b8ac51fe1",
+      "161e7d22-1105-46dc-9f4b-0f1bd104b914",
+      "1620f3bf-077a-454a-8186-727768c6d1e4",
+      "16987834-c232-44c0-9668-9661994efe0f",
+      "1b6793e3-6342-43b2-bf3d-e8363fbfb9e3",
+      "1b715050-d455-4dce-b858-7c0c570f3794",
+      "20cb5a4c-f739-412f-878b-78c3025a897e",
+      "21495ad9-72df-43c4-9269-f273becc1694",
+      "2b72d336-b81e-4b32-ae57-ab37efbfc839",
+      "2ddd9e76-8d52-4740-9b06-281561ed2d86",
+      "2eb8326e-dac3-48c6-8a99-fe986b29f569",
+      "2ed47ecf-e0d6-42ed-a52e-d3767d4e5b1d",
+      "2f99c6c4-ab83-481f-9ac4-ae2c9f6c5089",
+      "308d40c5-949d-4bbe-ae66-bd5798365416",
+      "353a1972-c911-49ab-be95-f62dc1a67fed",
+      "3575d832-8662-4e06-a366-bb03a7bf15bc",
+      "3c7d04a2-5509-415b-b688-4217d106a32c",
+      "3d8d9a76-b449-4d4b-b287-cf39d4cd48b1",
+      "3fc908ca-1fb7-4575-aa0d-66dc859820bd",
+      "4028cf3b-d8e3-4d53-9c71-bc5bbbf5870c",
+      "41962b91-ad7f-4d4e-a94e-5fc4f3045edc",
+      "41f492cd-cac7-485b-82b1-63dad71e1d2e",
+      "42e87e34-6c08-45a7-85d0-b43ac627fddd",
+      "43616edc-aa29-47f8-98a8-32c6281761d2",
+      "45da6a85-77b6-460a-81db-4757da00e128",
+      "47b12a72-945c-4397-8379-f6e986a6f9b7",
+      "49f2be96-a787-44ab-990d-5183f3605f68",
+      "4c2c58f7-0114-45e5-9fce-dacee3d0dd57",
+      "4f29f620-8801-4586-ae62-2201215a698d",
+      "4f4d5f5f-de2c-4d35-ae80-73864751db42",
+      "504e7ac6-886b-470e-acb2-b549a9d87263",
+      "518450be-9771-4712-b505-a8c5d2776c42",
+      "56b3984a-432a-461d-90f6-8d4c22cbe928",
+      "56d7ecf3-8df8-480a-bd77-14beb1a6d885",
+      "5863cf7a-a910-47f6-a635-efb2c38f6a16",
+      "5943ba6a-67e3-45d5-9e42-014cd1874a14",
+      "594f8677-1771-4e05-b2cc-c76cc0bc9a4c",
+      "5c2f713b-7fc9-42d4-bf60-3c054b203b22",
+      "61d6b061-68d7-4997-a966-8c86736ae9c2",
+      "681c467e-ac99-4f64-ac3d-dbab3ea365dc",
+      "6937a79e-84c1-4adc-940b-d8bdbbfd72b8",
+      "696ed07e-7b85-4e01-936a-ab82053caafc",
+      "6998ec0d-16e6-450a-9946-cb34a3b0b021",
+      "6b659e13-6233-4fb9-8c3e-b4a2ef4e992c",
+      "6c8d03fd-a065-4885-8b65-cd0a12a0acf4",
+      "6c950448-f248-405b-a230-35e4edd15291",
+      "6f12f293-f9ea-48ba-9875-eef0ea62d1e9",
+      "6f8a420f-40dd-4c42-8c76-5eeab38928ff",
+      "71b97693-398f-40e6-bb31-e0ecc4f0dc2e",
+      "733ae530-875c-4cd4-a2ee-09ca0b17d13f",
+      "7404fa0a-5058-4531-a776-41031cd23211",
+      "758723d5-5f48-4a4a-b16c-133c1b2ee3c5",
+      "75e4eef2-bb6e-4eb7-bd8a-583e797f7b66",
+      "781bc06b-c2b3-47b4-bec8-19f9d2826b90",
+      "79575c6c-8e26-4b1e-9f00-2022b29f942e",
+      "7a4756a0-a7ad-43b8-9f5c-42397c87d235",
+      "7e0eb9b4-ef13-4a82-a20f-5ebdfd3e2279",
+      "7f0c4a0f-09c0-48fd-8585-80687fb53c7c",
+      "82e8e276-d3bd-401e-9839-b81845c4d284",
+      "867a7add-a6d6-499a-9c4c-2553c36cde4a",
+      "88411db5-b8c0-4e8c-8de1-a8ef3acf857b",
+      "8ba0ae62-dd07-423c-b3aa-4103e5fa261a",
+      "8bb7c762-4fed-40b2-a205-165a5875098e",
+      "8c1759df-1bdc-4df3-8135-927f5a37bca6",
+      "8c6ddccd-32c0-458e-8622-5c19ecfc230a",
+      "8c871a1a-846d-4dbf-90fc-c11cc366863a",
+      "8d3bcba5-651a-478c-a15f-70215d2641a7",
+      "8ff97deb-b38c-4883-aff6-f2edd3c7abcf",
+      "96764711-599f-46ff-94ce-0dea1b78aefc",
+      "981ff528-b648-4a66-ac32-55e3c8450be3",
+      "9848ab79-5911-4edb-9f4e-eb9787852f38",
+      "9fa1413c-8d90-4f1e-9b6f-277f91b1eab0",
+      "a0bd3239-2bc6-40a6-90a6-c4311de0e5f2",
+      "a5d3085b-54fa-4ca0-b602-87a5ba5aa605",
+      "a720be97-7db8-4e1f-ba95-2517d51df831",
+      "a90d9d2e-f349-478e-9eec-b2f6e19fd597",
+      "a99b933a-8abe-4ec1-9b2c-8f021c0f1012",
+      "ad9d7e89-a7b3-4468-9e37-d1e812eaa49d",
+      "aef7cb8a-5af2-4004-a00e-e0803693838a",
+      "b09eeea8-bfca-4444-9192-376eaa9e494d",
+      "b272cd6a-e89d-40fe-9818-fb10781c88df",
+      "b519ee3e-5f30-4b56-81b9-acd859fba7c1",
+      "b573597d-6a15-4ea7-94a0-3429c1c29a40",
+      "b9b7691c-834d-44a5-b5b8-c4ad19b591cb",
+      "b9d54efe-9330-4384-bd03-cc8e8e6e7f9b",
+      "be485078-fae7-4786-bf0b-991a3d5510c3",
+      "be6b5824-bc07-4147-9819-dd44f1914f5a",
+      "bfeb9af0-716f-4c5e-97f9-eb90ebea541a",
+      "c08d2937-7fe4-44d6-a63f-4425e699020d",
+      "c38054c3-fb4e-4d4c-86e8-63b6152785f6",
+      "c7267dec-a097-4b76-9bda-2b2ad47b0f8d",
+      "c8f74a85-42ec-403c-a523-4010d3c89522",
+      "cbf34df0-bec4-48b2-8a8f-487104b9aef1",
+      "ccde0010-414a-4eba-ab0e-d53d3db5fcdd",
+      "cefde706-a4c5-4d8b-84b7-b7778ad04572",
+      "d42647af-0c58-4cd6-90c9-32ffa1a70475",
+      "d65f56ca-45c5-4a5c-a9d6-bce87e44aae6",
+      "d7c5e5fd-dce5-4515-bb16-85d2b5a38b3e",
+      "d920c106-0366-40fd-95f6-5d645b27639b",
+      "dc74c4bd-625d-49f3-82f6-9200bfbb63fd",
+      "defa3756-0706-4c04-a9cd-f8ff010feb02",
+      "df88763e-9d1b-4cec-84a2-ec9299bac367",
+      "e1bdc3a9-dd1b-4088-80af-b818ec8ae0e8",
+      "e1d99afd-d06c-443f-bdb4-a18afad40096",
+      "e32dd3c1-8e13-4786-afc7-4d4db7399724",
+      "e4531988-b89c-4d11-855f-d74fb7fb0b0d",
+      "e4ec1606-f654-4a26-be63-535bae1d6402",
+      "e8d7e1bf-3594-460c-8151-0094809a2bb5",
+      "e93c53b0-7420-4a91-8668-03f6ce000233",
+      "ea2a8652-edc2-48f3-b4c5-4a3d1c0b371b",
+      "ecb76b43-8ef8-4404-a65e-5e88f6ffde3b",
+      "eda51838-bf7d-4834-a85b-4fe1044f68c7",
+      "f0dcf59b-ecea-4e3f-a064-d93bd5364ac2",
+      "f1827d2a-53e6-4fd1-a372-53bfee69021e",
+      "f1ad46f4-5652-4802-afb0-62629a3bed84",
+      "f22cb99c-527d-4d7e-9cac-c550caa8b071",
+      "f37e1dd6-9501-4704-9c75-cd9044c181cb",
+      "f3a54825-e548-4f8c-b169-0317a655ffed",
+      "f5731192-af64-48c1-90ce-877686e5e8fb",
+      "f8859650-b352-4011-b63e-0a199247b495",
+      "f93360e7-e6c2-49dc-b488-bccd535b8dcf",
+      "fa870f89-6bd2-4f2f-9198-b10b088a7466",
+      "faab55d3-e9b1-465a-97f5-820481f4219f",
+      "fc0cfdb8-bd14-4d2e-bd75-5e1e95422717",
+      "fc80b9a8-0837-4f9c-bbc0-91c677c1e8c9",
+      "fe09db2b-7d5a-40f9-8b58-fc8622eade60",
+      "fe19079d-9980-40eb-8861-d6f3068d437a"
+    ]
+  },
   "items": {
     "def:ArchiveAlternatingGrowth": {
       "api_url": "https://prove2.me/api/v1/theorems/8d3bcba5-651a-478c-a15f-70215d2641a7",
@@ -7762,11 +10540,11 @@
       "intent_id": "ececc8555e4a4f948f2538315134b137",
       "job_id": "a96a08c9-15db-4c14-b5bf-d1c5ab78a5a5",
       "publish_status": "PUBLISHED",
-      "remote_status": "Open",
-      "status": "verify_queued",
+      "remote_status": "Proved",
+      "status": "complete",
       "submission_id": "b6bc681a-cffb-4f8c-9d38-a7e53c8a3995",
       "theorem_id": "d920c106-0366-40fd-95f6-5d645b27639b",
-      "verify_status": "PENDING"
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.excursionChain_terminal_descent": {
       "api_url": "https://prove2.me/api/v1/theorems/8ba0ae62-dd07-423c-b3aa-4103e5fa261a",
@@ -7813,7 +10591,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.firstContractionQuarterGap": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/a90d9d2e-f349-478e-9eec-b2f6e19fd597",
+      "intent_id": "455c6901091b4ab8ae4d7b5534370b94",
+      "job_id": "8f35652f-b633-4f72-b9cc-ee961047e30f",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "9ad2ae9a-0b7e-41fd-a25a-28e16fb5f220",
+      "theorem_id": "a90d9d2e-f349-478e-9eec-b2f6e19fd597",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.firstContractionThirdGap": {
       "api_url": "https://prove2.me/api/v1/theorems/f22cb99c-527d-4d7e-9cac-c550caa8b071",
@@ -7904,10 +10690,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.mechanical_large_bound": {
-      "intent_id": "852e5a3ead0242cda1e643224941abeb",
+      "api_url": "https://prove2.me/api/v1/theorems/f93360e7-e6c2-49dc-b488-bccd535b8dcf",
+      "intent_id": "2d2950bd78ef41afbea364f58eb1194f",
       "job_id": "7dbea438-dbda-45e1-9ff5-9879b783424e",
-      "publish_status": "PENDING",
-      "status": "publish_queued"
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "0f2436d8-fe33-4776-a74e-dadef2a535ed",
+      "theorem_id": "f93360e7-e6c2-49dc-b488-bccd535b8dcf",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.mechanical_twelve_identity": {
       "api_url": "https://prove2.me/api/v1/theorems/e93c53b0-7420-4a91-8668-03f6ce000233",
@@ -8068,20 +10859,44 @@
       "intent_id": "1343001591c6462ba6cbd8247bddfcd6",
       "job_id": "88bcf7fd-c340-4fa2-86dd-5fc1e692fc5b",
       "publish_status": "PUBLISHED",
-      "remote_status": "Open",
-      "status": "verify_queued",
+      "remote_status": "Proved",
+      "status": "complete",
       "submission_id": "5e3d2aa2-4d29-4a78-8853-1b92bb82ed11",
       "theorem_id": "7a4756a0-a7ad-43b8-9f5c-42397c87d235",
-      "verify_status": "PENDING"
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.refinedParent_converges_iff_child": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/1b6793e3-6342-43b2-bf3d-e8363fbfb9e3",
+      "intent_id": "441fc7a6962a4b9481d52328b840f650",
+      "job_id": "63255582-ff22-43db-beee-b644f0f13a0b",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "da28fb97-820c-42bc-82ee-53de86436068",
+      "theorem_id": "1b6793e3-6342-43b2-bf3d-e8363fbfb9e3",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.refinedParent_converges_of_smaller": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/d65f56ca-45c5-4a5c-a9d6-bce87e44aae6",
+      "intent_id": "3cd6be059b814018b4dd893dc3d0b41b",
+      "job_id": "dcc61c5a-e118-4bfb-abdc-b14f8e058b72",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "08c0aa29-f787-4a3e-b635-7c8908f7c092",
+      "theorem_id": "d65f56ca-45c5-4a5c-a9d6-bce87e44aae6",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.refinedParent_has_smaller_coalescence": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/79575c6c-8e26-4b1e-9f00-2022b29f942e",
+      "intent_id": "380902e4c1694cb78fbf95191b541b7c",
+      "job_id": "7bee2ae6-7aa7-4e61-91ba-fad4ff232164",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "e9f56be3-9716-4099-a23d-0e2d1f21d676",
+      "theorem_id": "79575c6c-8e26-4b1e-9f00-2022b29f942e",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.refinedParent_iter": {
       "api_url": "https://prove2.me/api/v1/theorems/fa870f89-6bd2-4f2f-9198-b10b088a7466",
@@ -8095,7 +10910,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/733ae530-875c-4cd4-a2ee-09ca0b17d13f",
+      "intent_id": "ddd6ed633e5e4296ad98c2e64b9946bd",
+      "job_id": "56383a75-2f9c-4b3d-ba3c-6238d41bd381",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "eda5aeab-2ada-4425-a725-591c464f8173",
+      "theorem_id": "733ae530-875c-4cd4-a2ee-09ca0b17d13f",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_factor_unit": {
       "api_url": "https://prove2.me/api/v1/theorems/5c2f713b-7fc9-42d4-bf60-3c054b203b22",
@@ -8109,10 +10932,26 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_normalized": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/e1bdc3a9-dd1b-4088-80af-b818ec8ae0e8",
+      "intent_id": "a019847b9e6d4bc0b40b20382e6db08d",
+      "job_id": "f01800ce-2099-4deb-bd64-0140701de9ac",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "bd51b043-3c23-4f59-9be5-e3b1db683bd1",
+      "theorem_id": "e1bdc3a9-dd1b-4088-80af-b818ec8ae0e8",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_of_divisibility": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/16987834-c232-44c0-9668-9661994efe0f",
+      "intent_id": "2fc960aa55504132aba0e0697beb8c9c",
+      "job_id": "e782791a-7ea4-4485-8fc0-97784cc5279d",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "b6637200-37b6-4c6e-9324-8cc37b2259b7",
+      "theorem_id": "16987834-c232-44c0-9668-9661994efe0f",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_prefix_one": {
       "api_url": "https://prove2.me/api/v1/theorems/b9d54efe-9330-4384-bd03-cc8e8e6e7f9b",
@@ -8137,10 +10976,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_refinedTail": {
-      "intent_id": "9f24f7a296f645e6be75b6e968556ced",
+      "api_url": "https://prove2.me/api/v1/theorems/fc80b9a8-0837-4f9c-bbc0-91c677c1e8c9",
+      "intent_id": "7541ae34992e40e39f327496dbfb4f55",
       "job_id": "841d16c4-4f52-486f-9130-25840dd7b427",
-      "publish_status": "PENDING",
-      "status": "publish_queued"
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "120be635-2223-4cd6-9ec5-7b253f03708c",
+      "theorem_id": "fc80b9a8-0837-4f9c-bbc0-91c677c1e8c9",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.residueAncestor_tail11": {
       "api_url": "https://prove2.me/api/v1/theorems/21495ad9-72df-43c4-9269-f273becc1694",
@@ -8198,7 +11042,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.rootDescent": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/3575d832-8662-4e06-a366-bb03a7bf15bc",
+      "intent_id": "d96de25d8ce64bd9b8bea654c0768064",
+      "job_id": "3012d75c-6471-40c5-a198-a0772a7f97f8",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "f2358b20-d45b-460a-94e6-9ef0fb39a560",
+      "theorem_id": "3575d832-8662-4e06-a366-bb03a7bf15bc",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.rootDescentAncestor": {
       "api_url": "https://prove2.me/api/v1/theorems/6f12f293-f9ea-48ba-9875-eef0ea62d1e9",
@@ -8212,13 +11064,26 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.rootDescentBurst": {
-      "intent_id": "6d17419110574d2ea8887d7e061e9fef",
+      "api_url": "https://prove2.me/api/v1/theorems/504e7ac6-886b-470e-acb2-b549a9d87263",
+      "intent_id": "d81ea48caa904a608bc09eb912c01262",
       "job_id": "572b2e09-0b6b-47fa-962c-6ddbcb1077e3",
-      "publish_status": "PENDING",
-      "status": "publish_queued"
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "829ed27a-d61c-4374-ae9c-b68ca112d9c6",
+      "theorem_id": "504e7ac6-886b-470e-acb2-b549a9d87263",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.rootDescent_converges_of_smaller": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/45da6a85-77b6-460a-81db-4757da00e128",
+      "intent_id": "6576cd05114544f4bbba272537403c58",
+      "job_id": "2822a70d-1482-4289-b0ef-917975984649",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "f4441abc-e122-4c36-acb6-952584240f8e",
+      "theorem_id": "45da6a85-77b6-460a-81db-4757da00e128",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.shiftedEnvelope_compose": {
       "api_url": "https://prove2.me/api/v1/theorems/f8859650-b352-4011-b63e-0a199247b495",
@@ -8265,10 +11130,26 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.twoBurstDescent": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/7404fa0a-5058-4531-a776-41031cd23211",
+      "intent_id": "a61c08cb03ac435a8a9c0053247d3d3e",
+      "job_id": "2a9b5253-729e-40ec-9283-5a4bd5c3d390",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "3887a74c-aa21-4f0f-82d7-fae3035dd0f6",
+      "theorem_id": "7404fa0a-5058-4531-a776-41031cd23211",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.twoBurst_converges_of_smaller": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/56b3984a-432a-461d-90f6-8d4c22cbe928",
+      "intent_id": "19a4b9fb745548d8a91d4cb345a1dc00",
+      "job_id": "b03deaca-5048-4778-a269-1346690ce221",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "d32b3ae5-2e1c-4e73-a28f-acb051a40d4a",
+      "theorem_id": "56b3984a-432a-461d-90f6-8d4c22cbe928",
+      "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.twoBurst_power_margin": {
       "api_url": "https://prove2.me/api/v1/theorems/7f0c4a0f-09c0-48fd-8585-80687fb53c7c",
@@ -8282,7 +11163,15 @@
       "verify_status": "ACCEPTED"
     },
     "thm:CollatzWork.universalMechanicalQuarterCertificate": {
-      "status": "new"
+      "api_url": "https://prove2.me/api/v1/theorems/41962b91-ad7f-4d4e-a94e-5fc4f3045edc",
+      "intent_id": "559b64c296ea44feb63b38264796d335",
+      "job_id": "afe58dc5-3462-47a1-9e8f-741fb467de88",
+      "publish_status": "PUBLISHED",
+      "remote_status": "Proved",
+      "status": "complete",
+      "submission_id": "f2845004-abdc-4798-9c52-164b90fc1cf8",
+      "theorem_id": "41962b91-ad7f-4d4e-a94e-5fc4f3045edc",
+      "verify_status": "ACCEPTED"
     }
   },
   "manifest_amendments": [

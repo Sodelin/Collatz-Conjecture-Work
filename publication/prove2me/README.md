@@ -1,6 +1,6 @@
 # Prove2Me publication record
 
-Prepared 2026-09-08 for Sodelin. **Publication is in progress.** See [PUBLICATION_STATUS.json](PUBLICATION_STATUS.json) for the recorded server checkpoint and [PUBLIC_RESULTS.md](PUBLIC_RESULTS.md) for the proof and definition links derived from individual receipts. This directory contains source audits, validated imports, and a resumable publication client. A local build or queued submission is not evidence of remote acceptance.
+Prepared 2026-09-08 for Sodelin. **Publication complete: 137 theorem entries are server-verified and marked `Proved`; all 31 definition bundles are accepted.** See [PUBLICATION_STATUS.json](PUBLICATION_STATUS.json) for the final server results and [PUBLIC_RESULTS.md](PUBLIC_RESULTS.md) for the proof and definition links derived from individual receipts. This directory contains source audits, validated imports, and a resumable publication client. A local build or queued submission is not evidence of remote acceptance.
 
 ## Source coverage
 
@@ -21,7 +21,7 @@ See [source-projects.json](source-projects.json) for repository links, source ha
 - [projects/](projects/) contains the other three pinned source kits, audit evidence, reproduction scripts, plans, and candidate imports.
 - [client/README.md](client/README.md) documents the upload manifest, offline checks, authenticated execution, and recovery. Its 28 offline integration and recovery tests passed, including asynchronous job handling, interrupted requests, environment mismatch, and final status verification.
 - [COLLABORATION.md](COLLABORATION.md) records the existing Collatz mission and two public proved lemmas, with the definition bridges needed before reuse.
-- [PUBLIC_RESULTS.md](PUBLIC_RESULTS.md) derives each project's accepted theorem and definition counts from [receipts/](receipts/), and provides direct public links. Its counts can be partial while publication is in progress.
+- [PUBLIC_RESULTS.md](PUBLIC_RESULTS.md) derives each project's accepted theorem and definition counts from [receipts/](receipts/), and provides direct public links. All four project receipts record completed final catalog verification.
 - [supporting/README.md](supporting/README.md) presents the supporting research and historical recovery gaps; [reuse/README.md](reuse/README.md) records the separate public-proof reuse work.
 
 Source compilation and upload compilation are separate checks. Splitting a project can change imports, helper order, namespaces, and simplification context. Each candidate's manifest and validation files record its actual state. A manifest with `pending` or `failed` validation, or an unconfirmed environment pin, must not be executed as a completed import.

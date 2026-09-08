@@ -181,7 +181,7 @@
     "candidate_type_comparison": "passed",
     "metadata_status": "passed",
     "platform_environment_pin": "0df444a360eaa60ab8c11dca51a86af692955474",
-    "remote_status": "in_progress",
+    "remote_status": "completed",
     "receipt": "receipts/collatz.json"
   },
   "other_research_not_lean": [
@@ -199,7 +199,7 @@
     }
   ],
   "publication_status": {
-    "remote_status": "in_progress",
+    "remote_status": "completed",
     "signed_in_account": "Sodelin",
     "api_key_status": "authorized_created_and_privately_stored; expires2026-10-08",
     "source_files_compiled": 49,
@@ -207,12 +207,14 @@
     "candidate_definition_bundles": 31,
     "academic_metadata_review": "passed",
     "live_environment_pin": "passed",
-    "server_verification": "in_progress",
+    "server_verification": "passed",
     "public_results": "PUBLIC_RESULTS.md",
     "checkpoint": "PUBLICATION_STATUS.json",
     "client_tests_passed": 28,
     "completion_condition": "All 137 target solution jobs complete successfully and their theorem catalog entries read Proved; all 31 definition bundles are accepted.",
-    "counting_scope": "137 exported target nodes from 49 source Lean files, with smaller supporting proofs retained in consuming solutions. No claim to 137 solved conjectures, exhaustive source declaration count, novelty, or full historical archive recovery."
+    "counting_scope": "137 exported target nodes from 49 source Lean files, with smaller supporting proofs retained in consuming solutions. No claim to 137 solved conjectures, exhaustive source declaration count, novelty, or full historical archive recovery.",
+    "server_verified_theorem_nodes": 137,
+    "server_accepted_definition_bundles": 31
   },
   "supporting_research_catalog": "supporting/catalog.json",
   "supporting_research": {

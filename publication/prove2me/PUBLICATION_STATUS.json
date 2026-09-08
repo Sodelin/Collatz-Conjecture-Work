@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-08T15:34:36.918166+00:00",
+  "checked_at": "2026-09-08T16:03:14.196490+00:00",
   "account": "Sodelin",
   "projects": [
     {
@@ -7,10 +7,10 @@
       "source": "https://github.com/Sodelin/Collatz-Conjecture-Work",
       "source_commit": "026aa4ad4be6453a005ab950b160a9f2204c5271",
       "expected_theorems": 113,
-      "proved_theorems": 96,
+      "proved_theorems": 113,
       "expected_definitions": 22,
       "published_definitions": 22,
-      "final_verification_passed": false,
+      "final_verification_passed": true,
       "receipt": "receipts/collatz.json",
       "failed_items": [],
       "uncertain_items": []
@@ -55,7 +55,7 @@
       "uncertain_items": []
     }
   ],
-  "complete": false,
-  "proved_theorems": 120,
+  "complete": true,
+  "proved_theorems": 137,
   "published_definitions": 31
 }
